@@ -1,0 +1,566 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9E71BDB39D000BCBFF4 /* FeedController.swift */; };
+		623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */; };
+		627355AA1BD8079400F7124A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355A91BD8079400F7124A /* AppDelegate.swift */; };
+		627355AC1BD8079400F7124A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355AB1BD8079400F7124A /* ViewController.swift */; };
+		627355AF1BD8079400F7124A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627355AD1BD8079400F7124A /* Main.storyboard */; };
+		627355B11BD8079400F7124A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627355B01BD8079400F7124A /* Assets.xcassets */; };
+		627355B41BD8079400F7124A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627355B21BD8079400F7124A /* LaunchScreen.storyboard */; };
+		627355BF1BD8079400F7124A /* TatariTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355BE1BD8079400F7124A /* TatariTests.swift */; };
+		627355CA1BD8079400F7124A /* TatariUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355C91BD8079400F7124A /* TatariUITests.swift */; };
+		627355E01BD80CAA00F7124A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627355DE1BD80CAA00F7124A /* FBSDKCoreKit.framework */; };
+		627355E11BD80CAA00F7124A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627355DF1BD80CAA00F7124A /* FBSDKLoginKit.framework */; };
+		627355E41BD80DAD00F7124A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627355E31BD80DAD00F7124A /* Bolts.framework */; };
+		627355EA1BD813DC00F7124A /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355E91BD813DC00F7124A /* MainController.swift */; };
+		62939ED01BDC488600CAB491 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62939ECF1BDC488600CAB491 /* VoteController.swift */; };
+		62939ED21BDD39F300CAB491 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62939ED11BDD39F300CAB491 /* SearchController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		627355BB1BD8079400F7124A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6273559E1BD8079400F7124A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 627355A51BD8079400F7124A;
+			remoteInfo = Tatari;
+		};
+		627355C61BD8079400F7124A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6273559E1BD8079400F7124A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 627355A51BD8079400F7124A;
+			remoteInfo = Tatari;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		623DA9E71BDB39D000BCBFF4 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		627355A61BD8079400F7124A /* Tatari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tatari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		627355A91BD8079400F7124A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		627355AB1BD8079400F7124A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		627355AE1BD8079400F7124A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		627355B01BD8079400F7124A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		627355B31BD8079400F7124A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		627355B51BD8079400F7124A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627355BA1BD8079400F7124A /* TatariTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TatariTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		627355BE1BD8079400F7124A /* TatariTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TatariTests.swift; sourceTree = "<group>"; };
+		627355C01BD8079400F7124A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627355C51BD8079400F7124A /* TatariUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TatariUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		627355C91BD8079400F7124A /* TatariUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TatariUITests.swift; sourceTree = "<group>"; };
+		627355CB1BD8079400F7124A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627355DE1BD80CAA00F7124A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		627355DF1BD80CAA00F7124A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		627355E21BD80CC700F7124A /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
+		627355E31BD80DAD00F7124A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		627355E91BD813DC00F7124A /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainController.swift; path = ../MainController.swift; sourceTree = "<group>"; };
+		62939ECF1BDC488600CAB491 /* VoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
+		62939ED11BDD39F300CAB491 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		627355A31BD8079400F7124A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627355E41BD80DAD00F7124A /* Bolts.framework in Frameworks */,
+				627355E11BD80CAA00F7124A /* FBSDKLoginKit.framework in Frameworks */,
+				627355E01BD80CAA00F7124A /* FBSDKCoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627355B71BD8079400F7124A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627355C21BD8079400F7124A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6273559D1BD8079400F7124A = {
+			isa = PBXGroup;
+			children = (
+				627355A81BD8079400F7124A /* Tatari */,
+				627355BD1BD8079400F7124A /* TatariTests */,
+				627355C81BD8079400F7124A /* TatariUITests */,
+				627355A71BD8079400F7124A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		627355A71BD8079400F7124A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627355A61BD8079400F7124A /* Tatari.app */,
+				627355BA1BD8079400F7124A /* TatariTests.xctest */,
+				627355C51BD8079400F7124A /* TatariUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		627355A81BD8079400F7124A /* Tatari */ = {
+			isa = PBXGroup;
+			children = (
+				627355DB1BD80B3E00F7124A /* Frameworks */,
+				627355A91BD8079400F7124A /* AppDelegate.swift */,
+				627355E21BD80CC700F7124A /* Bridging-Header.h */,
+				627355E91BD813DC00F7124A /* MainController.swift */,
+				627355AB1BD8079400F7124A /* ViewController.swift */,
+				627355AD1BD8079400F7124A /* Main.storyboard */,
+				62939ED11BDD39F300CAB491 /* SearchController.swift */,
+				62939ECF1BDC488600CAB491 /* VoteController.swift */,
+				623DA9E71BDB39D000BCBFF4 /* FeedController.swift */,
+				627355B01BD8079400F7124A /* Assets.xcassets */,
+				627355B21BD8079400F7124A /* LaunchScreen.storyboard */,
+				627355B51BD8079400F7124A /* Info.plist */,
+			);
+			path = Tatari;
+			sourceTree = "<group>";
+		};
+		627355BD1BD8079400F7124A /* TatariTests */ = {
+			isa = PBXGroup;
+			children = (
+				627355BE1BD8079400F7124A /* TatariTests.swift */,
+				627355C01BD8079400F7124A /* Info.plist */,
+			);
+			path = TatariTests;
+			sourceTree = "<group>";
+		};
+		627355C81BD8079400F7124A /* TatariUITests */ = {
+			isa = PBXGroup;
+			children = (
+				627355C91BD8079400F7124A /* TatariUITests.swift */,
+				627355CB1BD8079400F7124A /* Info.plist */,
+			);
+			path = TatariUITests;
+			sourceTree = "<group>";
+		};
+		627355DB1BD80B3E00F7124A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */,
+				627355E31BD80DAD00F7124A /* Bolts.framework */,
+				627355DE1BD80CAA00F7124A /* FBSDKCoreKit.framework */,
+				627355DF1BD80CAA00F7124A /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		627355A51BD8079400F7124A /* Tatari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627355CE1BD8079400F7124A /* Build configuration list for PBXNativeTarget "Tatari" */;
+			buildPhases = (
+				627355A21BD8079400F7124A /* Sources */,
+				627355A31BD8079400F7124A /* Frameworks */,
+				627355A41BD8079400F7124A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tatari;
+			productName = Tatari;
+			productReference = 627355A61BD8079400F7124A /* Tatari.app */;
+			productType = "com.apple.product-type.application";
+		};
+		627355B91BD8079400F7124A /* TatariTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627355D11BD8079400F7124A /* Build configuration list for PBXNativeTarget "TatariTests" */;
+			buildPhases = (
+				627355B61BD8079400F7124A /* Sources */,
+				627355B71BD8079400F7124A /* Frameworks */,
+				627355B81BD8079400F7124A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				627355BC1BD8079400F7124A /* PBXTargetDependency */,
+			);
+			name = TatariTests;
+			productName = TatariTests;
+			productReference = 627355BA1BD8079400F7124A /* TatariTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		627355C41BD8079400F7124A /* TatariUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627355D41BD8079400F7124A /* Build configuration list for PBXNativeTarget "TatariUITests" */;
+			buildPhases = (
+				627355C11BD8079400F7124A /* Sources */,
+				627355C21BD8079400F7124A /* Frameworks */,
+				627355C31BD8079400F7124A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				627355C71BD8079400F7124A /* PBXTargetDependency */,
+			);
+			name = TatariUITests;
+			productName = TatariUITests;
+			productReference = 627355C51BD8079400F7124A /* TatariUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6273559E1BD8079400F7124A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Caio Araújo";
+				TargetAttributes = {
+					627355A51BD8079400F7124A = {
+						CreatedOnToolsVersion = 7.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					627355B91BD8079400F7124A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 627355A51BD8079400F7124A;
+					};
+					627355C41BD8079400F7124A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 627355A51BD8079400F7124A;
+					};
+				};
+			};
+			buildConfigurationList = 627355A11BD8079400F7124A /* Build configuration list for PBXProject "Tatari" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6273559D1BD8079400F7124A;
+			productRefGroup = 627355A71BD8079400F7124A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				627355A51BD8079400F7124A /* Tatari */,
+				627355B91BD8079400F7124A /* TatariTests */,
+				627355C41BD8079400F7124A /* TatariUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		627355A41BD8079400F7124A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627355B41BD8079400F7124A /* LaunchScreen.storyboard in Resources */,
+				627355B11BD8079400F7124A /* Assets.xcassets in Resources */,
+				627355AF1BD8079400F7124A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627355B81BD8079400F7124A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627355C31BD8079400F7124A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627355A21BD8079400F7124A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627355AC1BD8079400F7124A /* ViewController.swift in Sources */,
+				627355EA1BD813DC00F7124A /* MainController.swift in Sources */,
+				627355AA1BD8079400F7124A /* AppDelegate.swift in Sources */,
+				62939ED21BDD39F300CAB491 /* SearchController.swift in Sources */,
+				62939ED01BDC488600CAB491 /* VoteController.swift in Sources */,
+				623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */,
+				623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627355B61BD8079400F7124A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627355BF1BD8079400F7124A /* TatariTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		627355C11BD8079400F7124A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627355CA1BD8079400F7124A /* TatariUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		627355BC1BD8079400F7124A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 627355A51BD8079400F7124A /* Tatari */;
+			targetProxy = 627355BB1BD8079400F7124A /* PBXContainerItemProxy */;
+		};
+		627355C71BD8079400F7124A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 627355A51BD8079400F7124A /* Tatari */;
+			targetProxy = 627355C61BD8079400F7124A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		627355AD1BD8079400F7124A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				627355AE1BD8079400F7124A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		627355B21BD8079400F7124A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				627355B31BD8079400F7124A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		627355CC1BD8079400F7124A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		627355CD1BD8079400F7124A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		627355CF1BD8079400F7124A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tatari",
+				);
+				INFOPLIST_FILE = Tatari/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		627355D01BD8079400F7124A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Tatari",
+				);
+				INFOPLIST_FILE = Tatari/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Bridging-Header.h";
+			};
+			name = Release;
+		};
+		627355D21BD8079400F7124A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TatariTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.brcin.bepid.cla2.TatariTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tatari.app/Tatari";
+			};
+			name = Debug;
+		};
+		627355D31BD8079400F7124A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TatariTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.brcin.bepid.cla2.TatariTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tatari.app/Tatari";
+			};
+			name = Release;
+		};
+		627355D51BD8079400F7124A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TatariUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.brcin.bepid.cla2.TatariUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tatari;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		627355D61BD8079400F7124A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TatariUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.brcin.bepid.cla2.TatariUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tatari;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		627355A11BD8079400F7124A /* Build configuration list for PBXProject "Tatari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627355CC1BD8079400F7124A /* Debug */,
+				627355CD1BD8079400F7124A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627355CE1BD8079400F7124A /* Build configuration list for PBXNativeTarget "Tatari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627355CF1BD8079400F7124A /* Debug */,
+				627355D01BD8079400F7124A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627355D11BD8079400F7124A /* Build configuration list for PBXNativeTarget "TatariTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627355D21BD8079400F7124A /* Debug */,
+				627355D31BD8079400F7124A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627355D41BD8079400F7124A /* Build configuration list for PBXNativeTarget "TatariUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627355D51BD8079400F7124A /* Debug */,
+				627355D61BD8079400F7124A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6273559E1BD8079400F7124A /* Project object */;
+}
