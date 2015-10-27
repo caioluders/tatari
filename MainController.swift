@@ -37,6 +37,7 @@ class MainController: UIViewController,CLLocationManagerDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
+         self.navigationController?.navigationBarHidden = true
         // Accelerometer and Gyro
         motionManager.startAccelerometerUpdates()
         motionManager.startGyroUpdates()

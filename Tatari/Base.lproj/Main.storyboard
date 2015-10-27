@@ -79,40 +79,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
-                                <rect key="frame" x="20" y="102" width="55" height="30"/>
-                                <state key="normal" title="settings"/>
-                                <connections>
-                                    <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
-                                <rect key="frame" x="95" y="102" width="31" height="30"/>
-                                <state key="normal" title="feed"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                <rect key="frame" x="0.0" y="82.5" width="375" height="584.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
+                                <rect key="frame" x="65" y="52" width="30" height="30"/>
+                                <state key="normal" title="feed" image="info icon"/>
                                 <connections>
                                     <segue destination="pVq-cJ-qf5" kind="show" id="iXg-pb-qJj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
-                                <rect key="frame" x="153" y="102" width="30" height="30"/>
-                                <state key="normal" title="vote"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
+                                <rect key="frame" x="108" y="52" width="24.5" height="30"/>
+                                <state key="normal" title="vote" image="concurso icon"/>
                                 <connections>
                                     <segue destination="OTj-vo-FEF" kind="show" identifier="vote_segue" id="o3Z-IF-C5t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
-                                <rect key="frame" x="209" y="102" width="47" height="30"/>
-                                <state key="normal" title="search"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
+                                <rect key="frame" x="146" y="52" width="27.5" height="30"/>
+                                <state key="normal" title="search" image="pesquisar icon"/>
                                 <connections>
                                     <segue destination="Saa-Bf-t3S" kind="show" id="bF2-q1-Vrj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mapa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Inc-sI-buK">
-                                <rect key="frame" x="166" y="318" width="43" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bepifantasy_smaller" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-lJ-0qI">
+                                <rect key="frame" x="128" y="17" width="113" height="32"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
+                                <rect key="frame" x="20" y="52" width="30" height="30"/>
+                                <state key="normal" title="settings" image="conf icon"/>
+                                <connections>
+                                    <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -211,5 +211,11 @@
     </scenes>
     <resources>
         <image name="Bepifantasy" width="257" height="55"/>
+        <image name="Bepifantasy_smaller" width="111" height="25"/>
+        <image name="concurso icon" width="25" height="30"/>
+        <image name="conf icon" width="30" height="30"/>
+        <image name="info icon" width="30" height="30"/>
+        <image name="mapa" width="375" height="584"/>
+        <image name="pesquisar icon" width="29" height="31"/>
     </resources>
 </document>
