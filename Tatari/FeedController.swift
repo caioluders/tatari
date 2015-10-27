@@ -18,6 +18,10 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var bgImage = UIImage(named: "Background")
+        self.tableView.backgroundView = UIImageView(image: bgImage)
+        self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        
         var mutable_result =  NSMutableDictionary()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
@@ -44,6 +48,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:FeedTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("feedcell")! as! FeedTableViewCell
         cell.lblTitle.text = self.items[indexPath.row]
+        cell.txtBody.text = "hueheuheueheuheuehueheuheuehueheuehueheuheuehueheuheuheueh"
         
         return cell
     }
