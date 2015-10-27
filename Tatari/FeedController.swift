@@ -33,7 +33,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         })
         var nib = UINib(nibName: "feedCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "feedcell")
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     override func didReceiveMemoryWarning() {

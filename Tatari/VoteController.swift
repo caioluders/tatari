@@ -19,6 +19,13 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var bgImage = UIImage(named: "Background")
+        self.tableView.backgroundView = UIImageView(image: bgImage)
+        self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        
+        var nib = UINib(nibName: "votoCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "votocell")
+        
         var mutable_result =  NSMutableDictionary()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         self.HTTPPostJSON("http://45.55.146.229:116/poll", jsonObj: mutable_result, callback: { (data,error) -> Void in
@@ -31,9 +38,6 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         })
         
         vote_for(1)
-
-
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,15 +50,19 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
+        let cell:VotoTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("votocell")! as! VotoTableViewCell
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        cell.lblName.text = "Seketh Bárbara"
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("oi")
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 430
     }
     
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{
