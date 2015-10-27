@@ -27,6 +27,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print(object["title"].stringValue) // Title of the update
             }
         })
+        var nib = UINib(nibName: "feedCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "feedcell")
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
@@ -40,15 +42,18 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell
-        
-        cell.textLabel?.text = self.items[indexPath.row]
+        var cell:FeedTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("feedcell")! as! FeedTableViewCell
+        cell.lblTitle.text = self.items[indexPath.row]
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("oi")
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 170
     }
     
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{
