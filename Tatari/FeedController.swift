@@ -12,15 +12,45 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet
     var tableView: UITableView!
+    @IBOutlet weak var activityFeed: UIActivityIndicatorView!
     var items: [String] = ["We", "Heart", "Swift"]
+    var itemsTitle: [String] = []
+    var itemsBody: [String] = []
     lazy var data = NSMutableData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var bgImage = UIImage(named: "Background")
+        self.tableView.separatorStyle = .None
+        
+        let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
         self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        
+        self.activityFeed.startAnimating()
+        self.activityFeed.hidesWhenStopped = true
+        
+        let mutable_result =  NSMutableDictionary()
+        mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
+            for (wtf,object) in json {
+                print(object["text"].stringValue) // Text of the update
+                print(object["title"].stringValue) // Title of the update
+                self.itemsTitle.append(object["text"].stringValue)
+                self.itemsBody.append(object["text"].stringValue)
+            }
+            self.tableView.reloadData()
+            self.activityFeed.stopAnimating()
+        })
+        
+        var nib = UINib(nibName: "feedCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "feedcell")
+    }
+    /**
+    override func viewDidAppear(animated: Bool) {
+        self.activityFeed.startAnimating()
+        self.activityFeed.hidesWhenStopped = true
         
         var mutable_result =  NSMutableDictionary()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
@@ -29,25 +59,30 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             for (wtf,object) in json {
                 print(object["text"].stringValue) // Text of the update
                 print(object["title"].stringValue) // Title of the update
+                self.itemsTitle.append(object["text"].stringValue)
+                self.itemsBody.append(object["text"].stringValue)
+                self.tableView.reloadData()
+                self.activityFeed.stopAnimating()
             }
         })
-        var nib = UINib(nibName: "feedCell", bundle: nil)
-        self.tableView.registerNib(nib, forCellReuseIdentifier: "feedcell")
+        
     }
-
+    **/
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count;
+        return self.itemsTitle.count;
+        //return self.items.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:FeedTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("feedcell")! as! FeedTableViewCell
-        cell.lblTitle.text = self.items[indexPath.row]
-        cell.txtBody.text = "hueheuheueheuheuehueheuheuehueheuehueheuheuehueheuheuheueh"
+        cell.lblTitle.text = self.itemsTitle[indexPath.row]
+        cell.txtBody.text = self.itemsBody[indexPath.row]
+        //cell.lblTitle.text = self.items[indexPath.row]
         
         return cell
     }
