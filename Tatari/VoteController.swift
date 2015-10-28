@@ -12,28 +12,42 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet
     var tableView: UITableView!
+    @IBOutlet weak var activityVote: UIActivityIndicatorView!
     var items: [String] = ["We", "Heart", "Swift"]
+    var pictures: [UIImage] = []
+    var names: [String] = []
     lazy var data = NSMutableData()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var bgImage = UIImage(named: "Background")
+        self.tableView.separatorStyle = .None
+        
+        self.activityVote.startAnimating()
+        self.activityVote.hidesWhenStopped = true
+        
+        let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
         self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
         
-        var nib = UINib(nibName: "votoCell", bundle: nil)
+        let nib = UINib(nibName: "votoCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "votocell")
         
-        var mutable_result =  NSMutableDictionary()
+        let mutable_result =  NSMutableDictionary()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         self.HTTPPostJSON("http://45.55.146.229:116/poll", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (wtf,object) in json {
                 let imageData = NSData(base64EncodedString: object["img"].stringValue,options: NSDataBase64DecodingOptions(rawValue: 0))
                 let image = UIImage(data: imageData!) // the image
-                let desc = object["desc"].stringValue // the description
+                self.pictures.append(image!)
+                self.names.append("Seketh Bárbara Scharnhorst")
+                //let desc = object["desc"].stringValue // the description
+            }
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+                self.tableView.reloadData()
+                self.activityVote.stopAnimating()
             }
         })
         
@@ -46,13 +60,15 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count;
+        return self.pictures.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:VotoTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("votocell")! as! VotoTableViewCell
         
-        cell.lblName.text = "Seketh Bárbara"
+        cell.lblName.text = self.names[indexPath.row]
+        cell.imgPerson.image = self.pictures[indexPath.row]
+        //cell.imgPerson.image = UIImage(named: "Bepifantasy")
         
         return cell
     }

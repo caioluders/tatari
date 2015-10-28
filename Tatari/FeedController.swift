@@ -40,11 +40,14 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.itemsTitle.append(object["text"].stringValue)
                 self.itemsBody.append(object["text"].stringValue)
             }
-            self.tableView.reloadData()
-            self.activityFeed.stopAnimating()
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+                self.tableView.reloadData()
+                self.activityFeed.stopAnimating()
+            }
+            
         })
         
-        var nib = UINib(nibName: "feedCell", bundle: nil)
+        let nib = UINib(nibName: "feedCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "feedcell")
     }
     /**
