@@ -68,9 +68,14 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.lblName.text = self.names[indexPath.row]
         cell.imgPerson.image = self.pictures[indexPath.row]
-        //cell.imgPerson.image = UIImage(named: "Bepifantasy")
+        cell.btVote.addTarget(self, action: "buttonVoteAction:", forControlEvents: UIControlEvents.TouchUpInside)
         
         return cell
+    }
+    
+    func buttonVoteAction(sender:UIButton!)
+    {
+        print("Heart button tapped")
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

@@ -123,25 +123,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                <rect key="frame" x="0.0" y="83" width="375" height="585"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
-                                <rect key="frame" x="65" y="52" width="30" height="30"/>
+                                <rect key="frame" x="65" y="72" width="30" height="30"/>
                                 <state key="normal" title="feed" image="info icon"/>
                                 <connections>
                                     <segue destination="pVq-cJ-qf5" kind="show" id="iXg-pb-qJj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
-                                <rect key="frame" x="108" y="52" width="25" height="30"/>
+                                <rect key="frame" x="108" y="72" width="25" height="30"/>
                                 <state key="normal" title="vote" image="concurso icon"/>
                                 <connections>
                                     <segue destination="OTj-vo-FEF" kind="show" identifier="vote_segue" id="o3Z-IF-C5t"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
-                                <rect key="frame" x="146" y="52" width="28" height="30"/>
+                                <rect key="frame" x="146" y="72" width="28" height="30"/>
                                 <state key="normal" title="search" image="pesquisar icon"/>
                                 <connections>
                                     <segue destination="Saa-Bf-t3S" kind="show" id="bF2-q1-Vrj"/>
@@ -151,12 +148,20 @@
                                 <rect key="frame" x="128" y="17" width="113" height="32"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
-                                <rect key="frame" x="20" y="52" width="30" height="30"/>
+                                <rect key="frame" x="20" y="72" width="30" height="30"/>
                                 <state key="normal" title="settings" image="conf icon"/>
                                 <connections>
                                     <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
                                 </connections>
                             </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjK-7o-YRN">
+                                <rect key="frame" x="0.0" y="110" width="375" height="558"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                        <rect key="frame" x="0.0" y="-13" width="375" height="585"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

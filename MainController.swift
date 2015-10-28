@@ -37,8 +37,7 @@ class MainController: UIViewController,CLLocationManagerDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        let image = UIImage(named: "Bepifantasy_smaller")
-        self.navigationItem.titleView = UIImageView(image: image)
+        self.navigationItem.title = "Home"
         //self.navigationController?.navigationBarHidden = true
         // Accelerometer and Gyro
         motionManager.startAccelerometerUpdates()
