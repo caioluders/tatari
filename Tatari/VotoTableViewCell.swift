@@ -10,6 +10,7 @@ import UIKit
 
 class VotoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblVoteCount: UILabel!
     @IBOutlet weak var btVote: UIButton!
     @IBOutlet weak var imgPerson: UIImageView!
     @IBOutlet weak var lblName: UILabel!

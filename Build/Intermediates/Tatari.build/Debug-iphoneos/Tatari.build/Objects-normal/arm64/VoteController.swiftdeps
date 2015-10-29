@@ -6,71 +6,74 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14VoteController", ""]
 provides-dynamic-lookup:
-- "data"
-- "JSONStringify"
-- "buttonVoteAction"
+- "HTTPsendRequest"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
 - "viewDidLoad"
-- "vote_for"
-- "names"
-- "HTTPPostJSON"
+- "data"
 - "items"
+- "names"
 - "activityVote"
+- "vote_for"
+- "votou"
 - "pictures"
 - "didReceiveMemoryWarning"
-- "HTTPsendRequest"
+- "buttonVoteAction"
+- "HTTPPostJSON"
+- "JSONStringify"
 depends-top-level:
-- !private "NSData"
-- "UIActivityIndicatorView"
-- "NSURLConnectionDelegate"
-- !private "UIImageView"
-- !private "dispatch_get_main_queue"
-- !private "Dictionary"
-- "UITableViewCell"
-- "Void"
-- !private "dispatch_async"
-- "AnyObject"
-- "StringLiteralType"
-- !private "=="
-- !private "NSDataBase64DecodingOptions"
-- !private "print"
-- "Bool"
-- !private "FBSDKAccessToken"
-- !private "NSJSONWritingOptions"
 - "UITableView"
-- "UITableViewDataSource"
-- !private "NSURLSession"
-- "UIImage"
-- !private "!="
-- "UITableViewDelegate"
-- !private "VotoTableViewCell"
-- !private "NSUTF8StringEncoding"
-- !private "+"
-- "VoteController"
-- !private "BooleanLiteralType"
+- "NSURLConnectionDelegate"
+- !private "UIViewContentMode"
+- !private "NSJSONSerialization"
+- "Bool"
+- !private "=="
 - !private "UIControlEvents"
-- !private "NSString"
+- !private "+"
+- !private "dispatch_get_main_queue"
+- !private "UINib"
+- "UITableViewDelegate"
+- !private "dispatch_async"
+- !private "NSURL"
+- "UITableViewDataSource"
 - "UIViewController"
-- "NSIndexPath"
-- "Int"
+- "VoteController"
+- !private "NSString"
+- !private "NSUTF8StringEncoding"
+- !private "FBSDKAccessToken"
+- !private "NSDataBase64DecodingOptions"
+- !private "NSJSONWritingOptions"
 - !private "JSON"
 - "CGFloat"
-- !private "UIViewContentMode"
+- "AnyObject"
+- "UIActivityIndicatorView"
+- !private "UnicodeScalarType"
+- !private "Dictionary"
+- "BooleanLiteralType"
+- "UIImage"
 - "NSMutableURLRequest"
-- !private "UINib"
-- !private "NSURL"
-- !private "NSMutableDictionary"
-- "NSMutableData"
+- !private "!="
+- !private "print"
+- !private "VotoTableViewCell"
 - "String"
+- "StringLiteralType"
 - !private "FBSDKGraphRequest"
-- !private "NSError"
-- !private "FBSDKGraphRequestConnection"
-- !private "NSJSONSerialization"
+- !private "NSMutableDictionary"
+- "NSIndexPath"
+- "Int"
+- !private "NSURLSession"
+- "UITableViewCell"
+- "Void"
 - "UIButton"
+- !private "NSError"
+- !private "UIImageView"
+- !private "UIControlState"
+- "NSMutableData"
+- !private "NSData"
+- !private "FBSDKGraphRequestConnection"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -93,6 +96,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
 - !private ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
+- !private ["PSs9AnyObject", "UIControlState"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UIImageView"]
 - !private ["PSs9AnyObject", "UINib"]
@@ -124,6 +128,7 @@ depends-member:
 - !private ["PSs9AnyObject", "isValidJSONObject"]
 - ["PSs9AnyObject", "items"]
 - !private ["PSs9AnyObject", "lblName"]
+- !private ["PSs9AnyObject", "lblVoteCount"]
 - !private ["PSs9AnyObject", "localizedDescription"]
 - ["PSs9AnyObject", "names"]
 - !private ["PSs9AnyObject", "navigationItem"]
@@ -148,6 +153,7 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
 - !private ["PSs9AnyObject", "separatorStyle"]
+- !private ["PSs9AnyObject", "setImage"]
 - !private ["PSs9AnyObject", "setObject"]
 - !private ["PSs9AnyObject", "sharedSession"]
 - !private ["PSs9AnyObject", "startAnimating"]
@@ -162,6 +168,7 @@ depends-member:
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", "vote_for"]
+- ["PSs9AnyObject", "votou"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Generator"]
 - !private ["Sa", "Index"]
@@ -173,6 +180,7 @@ depends-member:
 - !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "Normal"]
 - !private ["PSs23ArrayLiteralConvertible", "PrettyPrinted"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
 - !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
@@ -230,6 +238,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
+- !private ["PSs11CVarArgType", "UIControlState"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UIImageView"]
 - !private ["PSs11CVarArgType", "UINib"]
@@ -260,6 +269,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "isValidJSONObject"]
 - ["PSs11CVarArgType", "items"]
 - !private ["PSs11CVarArgType", "lblName"]
+- !private ["PSs11CVarArgType", "lblVoteCount"]
 - !private ["PSs11CVarArgType", "localizedDescription"]
 - ["PSs11CVarArgType", "names"]
 - !private ["PSs11CVarArgType", "navigationItem"]
@@ -284,6 +294,7 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
 - !private ["PSs11CVarArgType", "separatorStyle"]
+- !private ["PSs11CVarArgType", "setImage"]
 - !private ["PSs11CVarArgType", "setObject"]
 - !private ["PSs11CVarArgType", "sharedSession"]
 - !private ["PSs11CVarArgType", "startAnimating"]
@@ -297,6 +308,7 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", "vote_for"]
+- ["PSs11CVarArgType", "votou"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
 - !private ["PSs14CollectionType", "Generator"]
@@ -361,6 +373,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
+- !private ["PSs23CustomStringConvertible", "UIControlState"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UIImageView"]
 - !private ["PSs23CustomStringConvertible", "UINib"]
@@ -396,6 +409,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "isValidJSONObject"]
 - ["PSs23CustomStringConvertible", "items"]
 - !private ["PSs23CustomStringConvertible", "lblName"]
+- !private ["PSs23CustomStringConvertible", "lblVoteCount"]
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - ["PSs23CustomStringConvertible", "names"]
 - !private ["PSs23CustomStringConvertible", "navigationItem"]
@@ -420,6 +434,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["PSs23CustomStringConvertible", "separatorStyle"]
+- !private ["PSs23CustomStringConvertible", "setImage"]
 - !private ["PSs23CustomStringConvertible", "setObject"]
 - !private ["PSs23CustomStringConvertible", "sharedSession"]
 - !private ["PSs23CustomStringConvertible", "startAnimating"]
@@ -435,6 +450,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", "vote_for"]
+- ["PSs23CustomStringConvertible", "votou"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["VSs10Dictionary", "Key"]
 - !private ["VSs10Dictionary", "Value"]
@@ -473,12 +489,14 @@ depends-member:
 - !private ["PSs9Equatable", "NSURLSession"]
 - !private ["PSs9Equatable", "NSUTF8StringEncoding"]
 - !private ["PSs9Equatable", "None"]
+- !private ["PSs9Equatable", "Normal"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
 - !private ["PSs9Equatable", "ScaleAspectFit"]
 - !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "SubSequence"]
 - !private ["PSs9Equatable", "TouchUpInside"]
 - !private ["PSs9Equatable", "UIControlEvents"]
+- !private ["PSs9Equatable", "UIControlState"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UIImageView"]
 - !private ["PSs9Equatable", "UINib"]
@@ -512,6 +530,7 @@ depends-member:
 - !private ["PSs9Equatable", "isValidJSONObject"]
 - ["PSs9Equatable", "items"]
 - !private ["PSs9Equatable", "lblName"]
+- !private ["PSs9Equatable", "lblVoteCount"]
 - !private ["PSs9Equatable", "localizedDescription"]
 - ["PSs9Equatable", "names"]
 - !private ["PSs9Equatable", "navigationItem"]
@@ -536,6 +555,7 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
 - !private ["PSs9Equatable", "separatorStyle"]
+- !private ["PSs9Equatable", "setImage"]
 - !private ["PSs9Equatable", "setObject"]
 - !private ["PSs9Equatable", "sharedSession"]
 - !private ["PSs9Equatable", "startAnimating"]
@@ -551,6 +571,7 @@ depends-member:
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", "vote_for"]
+- ["PSs9Equatable", "votou"]
 - ["PSs9Equatable", ""]
 - !private ["PSs9ErrorType", "localizedDescription"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "Generator"]
@@ -604,6 +625,7 @@ depends-member:
 - !private ["PSs8Hashable", "ScaleAspectFit"]
 - !private ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIControlEvents"]
+- !private ["PSs8Hashable", "UIControlState"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UIImageView"]
 - !private ["PSs8Hashable", "UINib"]
@@ -635,6 +657,7 @@ depends-member:
 - !private ["PSs8Hashable", "isValidJSONObject"]
 - ["PSs8Hashable", "items"]
 - !private ["PSs8Hashable", "lblName"]
+- !private ["PSs8Hashable", "lblVoteCount"]
 - !private ["PSs8Hashable", "localizedDescription"]
 - ["PSs8Hashable", "names"]
 - !private ["PSs8Hashable", "navigationItem"]
@@ -659,6 +682,7 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
 - !private ["PSs8Hashable", "separatorStyle"]
+- !private ["PSs8Hashable", "setImage"]
 - !private ["PSs8Hashable", "setObject"]
 - !private ["PSs8Hashable", "sharedSession"]
 - !private ["PSs8Hashable", "startAnimating"]
@@ -672,6 +696,7 @@ depends-member:
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", "vote_for"]
+- ["PSs8Hashable", "votou"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["PSs9Indexable", "Generator"]
@@ -769,6 +794,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
+- !private ["PSo8NSCoding", "UIControlState"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageView"]
 - !private ["PSo8NSCoding", "UINib"]
@@ -796,6 +822,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "lblName"]
+- !private ["PSo8NSCoding", "lblVoteCount"]
 - !private ["PSo8NSCoding", "localizedDescription"]
 - ["PSo8NSCoding", "names"]
 - !private ["PSo8NSCoding", "navigationItem"]
@@ -819,6 +846,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - !private ["PSo8NSCoding", "separatorStyle"]
+- !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setObject"]
 - !private ["PSo8NSCoding", "startAnimating"]
 - !private ["PSo8NSCoding", "stopAnimating"]
@@ -830,6 +858,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "vote_for"]
+- ["PSo8NSCoding", "votou"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "HTTPBody"]
 - !private ["PSo9NSCopying", "HTTPMethod"]
@@ -868,6 +897,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
@@ -905,6 +935,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", "vote_for"]
+- ["PSo26NSExtensionRequestHandling", "votou"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo17NSFastEnumeration", "setObject"]
@@ -956,6 +987,7 @@ depends-member:
 - ["CSo8NSObject", "UIActivityIndicatorView"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIControlEvents"]
+- !private ["CSo8NSObject", "UIControlState"]
 - ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UINib"]
@@ -991,6 +1023,7 @@ depends-member:
 - !private ["CSo8NSObject", "isValidJSONObject"]
 - ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "lblName"]
+- !private ["CSo8NSObject", "lblVoteCount"]
 - !private ["CSo8NSObject", "localizedDescription"]
 - ["CSo8NSObject", "names"]
 - !private ["CSo8NSObject", "navigationItem"]
@@ -1015,6 +1048,7 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - !private ["CSo8NSObject", "separatorStyle"]
+- !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setObject"]
 - !private ["CSo8NSObject", "sharedSession"]
 - !private ["CSo8NSObject", "startAnimating"]
@@ -1028,6 +1062,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "vote_for"]
+- ["CSo8NSObject", "votou"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
 - !private ["PSo16NSObjectProtocol", "FBSDKGraphRequest"]
 - !private ["PSo16NSObjectProtocol", "HTTPBody"]
@@ -1049,6 +1084,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
+- !private ["PSo16NSObjectProtocol", "UIControlState"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageView"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
@@ -1079,6 +1115,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isValidJSONObject"]
 - ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "lblName"]
+- !private ["PSo16NSObjectProtocol", "lblVoteCount"]
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - ["PSo16NSObjectProtocol", "names"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
@@ -1103,6 +1140,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - !private ["PSo16NSObjectProtocol", "separatorStyle"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setObject"]
 - !private ["PSo16NSObjectProtocol", "sharedSession"]
 - !private ["PSo16NSObjectProtocol", "startAnimating"]
@@ -1116,6 +1154,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "vote_for"]
+- ["PSo16NSObjectProtocol", "votou"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "HTTPBody"]
 - !private ["PSo14NSSecureCoding", "HTTPMethod"]
@@ -1150,6 +1189,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo23NSURLConnectionDelegate", "String"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlEvents"]
+- !private ["PSo23NSURLConnectionDelegate", "UIControlState"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImage"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImageView"]
 - !private ["PSo23NSURLConnectionDelegate", "UINib"]
@@ -1180,6 +1220,7 @@ depends-member:
 - ["PSo23NSURLConnectionDelegate", "tableView"]
 - ["PSo23NSURLConnectionDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo23NSURLConnectionDelegate", "vote_for"]
+- !private ["PSo23NSURLConnectionDelegate", "votou"]
 - ["PSo23NSURLConnectionDelegate", ""]
 - !private ["CSo12NSURLRequest", "HTTPBody"]
 - !private ["CSo12NSURLRequest", "HTTPMethod"]
@@ -1197,6 +1238,7 @@ depends-member:
 - !private ["PSs21NilLiteralConvertible", "init"]
 - !private ["PSs21NilLiteralConvertible", "stringValue"]
 - !private ["PSs21NilLiteralConvertible", "subscript"]
+- !private ["PSs13OptionSetType", "Normal"]
 - !private ["PSs13OptionSetType", "PrettyPrinted"]
 - !private ["PSs13OptionSetType", "TouchUpInside"]
 - !private ["PSs13OptionSetType", "init"]
@@ -1216,6 +1258,7 @@ depends-member:
 - !private ["PSs16RawRepresentable", "Generator"]
 - !private ["PSs16RawRepresentable", "Index"]
 - !private ["PSs16RawRepresentable", "None"]
+- !private ["PSs16RawRepresentable", "Normal"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "ScaleAspectFit"]
 - !private ["PSs16RawRepresentable", "SubSequence"]
@@ -1238,6 +1281,7 @@ depends-member:
 - !private ["PSs12SequenceType", "setObject"]
 - !private ["PSs12SequenceType", "stringValue"]
 - !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs14SetAlgebraType", "Normal"]
 - !private ["PSs14SetAlgebraType", "PrettyPrinted"]
 - !private ["PSs14SetAlgebraType", "TouchUpInside"]
 - !private ["PSs14SetAlgebraType", "init"]
@@ -1277,9 +1321,11 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "imgPerson"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "lblName"]
+- !private ["PSo29UIAccessibilityIdentification", "lblVoteCount"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "separatorStyle"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "startAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "stopAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
@@ -1297,9 +1343,11 @@ depends-member:
 - !private ["PSo12UIAppearance", "imgPerson"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "lblName"]
+- !private ["PSo12UIAppearance", "lblVoteCount"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "separatorStyle"]
+- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "startAnimating"]
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo12UIAppearance", "tag"]
@@ -1323,6 +1371,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
+- !private ["PSo21UIAppearanceContainer", "UIControlState"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageView"]
 - !private ["PSo21UIAppearanceContainer", "UINib"]
@@ -1347,6 +1396,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "items"]
 - !private ["PSo21UIAppearanceContainer", "lblName"]
+- !private ["PSo21UIAppearanceContainer", "lblVoteCount"]
 - ["PSo21UIAppearanceContainer", "names"]
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
@@ -1368,6 +1418,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UIAppearanceContainer", "separatorStyle"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "startAnimating"]
 - !private ["PSo21UIAppearanceContainer", "stopAnimating"]
 - ["PSo21UIAppearanceContainer", "tableView"]
@@ -1376,8 +1427,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "vote_for"]
+- ["PSo21UIAppearanceContainer", "votou"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "tag"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - !private ["PSo18UIContentContainer", "FBSDKGraphRequest"]
@@ -1398,6 +1451,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
+- !private ["PSo18UIContentContainer", "UIControlState"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageView"]
 - !private ["PSo18UIContentContainer", "UINib"]
@@ -1435,10 +1489,13 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "vote_for"]
+- ["PSo18UIContentContainer", "votou"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "setImage"]
 - !private ["CSo9UIControl", "tag"]
 - !private ["VSC15UIControlEvents", "TouchUpInside"]
+- !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
 - !private ["PSo17UICoordinateSpace", "btVote"]
@@ -1449,9 +1506,11 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "imgPerson"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "lblName"]
+- !private ["PSo17UICoordinateSpace", "lblVoteCount"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "separatorStyle"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "startAnimating"]
 - !private ["PSo17UICoordinateSpace", "stopAnimating"]
 - !private ["PSo17UICoordinateSpace", "tag"]
@@ -1466,9 +1525,11 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "imgPerson"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "lblName"]
+- !private ["PSo13UIDynamicItem", "lblVoteCount"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "separatorStyle"]
+- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "startAnimating"]
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo13UIDynamicItem", "tag"]
@@ -1476,6 +1537,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "btVote"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblName"]
+- !private ["PSo27UIGestureRecognizerDelegate", "lblVoteCount"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "init"]
@@ -1510,6 +1572,7 @@ depends-member:
 - ["CSo11UIResponder", "UIActivityIndicatorView"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
+- !private ["CSo11UIResponder", "UIControlState"]
 - ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UINib"]
@@ -1538,6 +1601,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "items"]
 - !private ["CSo11UIResponder", "lblName"]
+- !private ["CSo11UIResponder", "lblVoteCount"]
 - ["CSo11UIResponder", "names"]
 - !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
@@ -1559,6 +1623,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - !private ["CSo11UIResponder", "separatorStyle"]
+- !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "startAnimating"]
 - !private ["CSo11UIResponder", "stopAnimating"]
 - ["CSo11UIResponder", "tableView"]
@@ -1567,6 +1632,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "vote_for"]
+- ["CSo11UIResponder", "votou"]
 - !private ["CSo12UIScrollView", "backgroundView"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "registerNib"]
@@ -1591,6 +1657,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
+- !private ["PSo20UIScrollViewDelegate", "UIControlState"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIImageView"]
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
@@ -1621,6 +1688,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "vote_for"]
+- !private ["PSo20UIScrollViewDelegate", "votou"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
 - !private ["PSo16UIStateRestoring", "FBSDKGraphRequest"]
@@ -1641,6 +1709,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
+- !private ["PSo16UIStateRestoring", "UIControlState"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageView"]
 - !private ["PSo16UIStateRestoring", "UINib"]
@@ -1678,6 +1747,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "vote_for"]
+- ["PSo16UIStateRestoring", "votou"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "backgroundView"]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
@@ -1688,6 +1758,7 @@ depends-member:
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "imgPerson"]
 - !private ["CSo15UITableViewCell", "lblName"]
+- !private ["CSo15UITableViewCell", "lblVoteCount"]
 - !private ["OSC29UITableViewCellSeparatorStyle", "None"]
 - !private ["PSo21UITableViewDataSource", "FBSDKAccessToken"]
 - !private ["PSo21UITableViewDataSource", "FBSDKGraphRequest"]
@@ -1708,6 +1779,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSUTF8StringEncoding"]
 - !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
+- !private ["PSo21UITableViewDataSource", "UIControlState"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UIImageView"]
 - !private ["PSo21UITableViewDataSource", "UINib"]
@@ -1738,6 +1810,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo21UITableViewDataSource", "vote_for"]
+- !private ["PSo21UITableViewDataSource", "votou"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "FBSDKAccessToken"]
 - !private ["PSo19UITableViewDelegate", "FBSDKGraphRequest"]
@@ -1758,6 +1831,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
+- !private ["PSo19UITableViewDelegate", "UIControlState"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UIImageView"]
 - !private ["PSo19UITableViewDelegate", "UINib"]
@@ -1788,6 +1862,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo19UITableViewDelegate", "vote_for"]
+- !private ["PSo19UITableViewDelegate", "votou"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
 - !private ["PSo18UITraitEnvironment", "FBSDKGraphRequest"]
@@ -1808,6 +1883,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
+- !private ["PSo18UITraitEnvironment", "UIControlState"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageView"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
@@ -1832,6 +1908,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "items"]
 - !private ["PSo18UITraitEnvironment", "lblName"]
+- !private ["PSo18UITraitEnvironment", "lblVoteCount"]
 - ["PSo18UITraitEnvironment", "names"]
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
@@ -1853,6 +1930,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - !private ["PSo18UITraitEnvironment", "separatorStyle"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "startAnimating"]
 - !private ["PSo18UITraitEnvironment", "stopAnimating"]
 - ["PSo18UITraitEnvironment", "tableView"]
@@ -1861,6 +1939,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", "vote_for"]
+- ["PSo18UITraitEnvironment", "votou"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "backgroundView"]
@@ -1872,9 +1951,11 @@ depends-member:
 - !private ["CSo6UIView", "imgPerson"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "lblName"]
+- !private ["CSo6UIView", "lblVoteCount"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "separatorStyle"]
+- !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "startAnimating"]
 - !private ["CSo6UIView", "stopAnimating"]
 - !private ["CSo6UIView", "tag"]
@@ -1908,6 +1989,7 @@ depends-member:
 - ["CSo16UIViewController", "UIActivityIndicatorView"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
+- !private ["CSo16UIViewController", "UIControlState"]
 - ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIImageView"]
 - !private ["CSo16UIViewController", "UINib"]
@@ -1949,6 +2031,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "vote_for"]
+- ["CSo16UIViewController", "votou"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
 - !private ["VSs6UInt16", "deinit"]
@@ -1992,6 +2075,7 @@ depends-member:
 - ["C6Tatari14VoteController", "UIActivityIndicatorView"]
 - ["C6Tatari14VoteController", "UIButton"]
 - !private ["C6Tatari14VoteController", "UIControlEvents"]
+- !private ["C6Tatari14VoteController", "UIControlState"]
 - ["C6Tatari14VoteController", "UIImage"]
 - !private ["C6Tatari14VoteController", "UIImageView"]
 - !private ["C6Tatari14VoteController", "UINib"]
@@ -2034,9 +2118,11 @@ depends-member:
 - ["C6Tatari14VoteController", "viewDidLoad"]
 - ["C6Tatari14VoteController", "viewForZoomingInScrollView"]
 - ["C6Tatari14VoteController", "vote_for"]
+- ["C6Tatari14VoteController", "votou"]
 - !private ["C6Tatari17VotoTableViewCell", "btVote"]
 - !private ["C6Tatari17VotoTableViewCell", "imgPerson"]
 - !private ["C6Tatari17VotoTableViewCell", "lblName"]
+- !private ["C6Tatari17VotoTableViewCell", "lblVoteCount"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
 - !private ["PSs10_ArrayType", "SubSequence"]
@@ -2111,9 +2197,11 @@ depends-member:
 - !private ["PSs12_Reflectable", "imgPerson"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "lblName"]
+- !private ["PSs12_Reflectable", "lblVoteCount"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "separatorStyle"]
+- !private ["PSs12_Reflectable", "setImage"]
 - !private ["PSs12_Reflectable", "setObject"]
 - !private ["PSs12_Reflectable", "startAnimating"]
 - !private ["PSs12_Reflectable", "stopAnimating"]
@@ -2225,6 +2313,7 @@ depends-nominal:
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "VSC15UIControlEvents"
+- !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - !private "PSo27UIGestureRecognizerDelegate"
@@ -2334,4 +2423,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "7864d7f171a98443fd4d94cbda8d079e"
+interface-hash: "316fde6d3a707908fa80519a21e9da0a"

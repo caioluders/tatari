@@ -17,10 +17,12 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var pictures: [UIImage] = []
     var names: [String] = []
     lazy var data = NSMutableData()
-
+    var votou: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         self.navigationItem.title = "Concurso de Fantasias"
         self.tableView.separatorStyle = .None
@@ -43,7 +45,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let imageData = NSData(base64EncodedString: object["img"].stringValue,options: NSDataBase64DecodingOptions(rawValue: 0))
                 let image = UIImage(data: imageData!) // the image
                 self.pictures.append(image!)
-                self.names.append("Seketh Bárbara Scharnhorst")
+                self.names.append("Seketh Scharnhorst")
                 //let desc = object["desc"].stringValue // the description
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
@@ -71,6 +73,11 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.imgPerson.image = self.pictures[indexPath.row]
         cell.btVote.tag = indexPath.row
         cell.btVote.addTarget(self, action: "buttonVoteAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        cell.lblVoteCount.text = "0"
+        
+        if (self.votou == true){
+            cell.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
+        }
         
         return cell
     }
@@ -78,6 +85,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func buttonVoteAction(sender:UIButton!)
     {
         vote_for(sender.tag)
+        self.votou = true
+        self.tableView.reloadData()
         print("votou "+String(sender.tag))
     }
     

@@ -123,6 +123,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                <rect key="frame" x="0.0" y="82" width="375" height="585"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
                                 <rect key="frame" x="65" y="72" width="30" height="30"/>
                                 <state key="normal" title="feed" image="info icon"/>
@@ -154,9 +157,6 @@
                                     <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                <rect key="frame" x="0.0" y="82" width="375" height="585"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
                                 <rect key="frame" x="49" y="518" width="41.5" height="50"/>
                                 <state key="normal" image="banheiro"/>
@@ -319,7 +319,7 @@
     </scenes>
     <resources>
         <image name="Avisos" width="60" height="25"/>
-        <image name="Background" width="364" height="684"/>
+        <image name="Background" width="364" height="592"/>
         <image name="Background 2" width="375" height="104"/>
         <image name="Bepifantasy" width="257" height="55"/>
         <image name="Bepifantasy_smaller" width="111" height="25"/>
