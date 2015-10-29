@@ -22,6 +22,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Concurso de Fantasias"
         self.tableView.separatorStyle = .None
         
         self.activityVote.startAnimating()
@@ -51,7 +52,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
         })
         
-        vote_for(1)
+        //vote_for(1)
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +76,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func buttonVoteAction(sender:UIButton!)
     {
+        vote_for(1)
         print("Heart button tapped")
     }
     

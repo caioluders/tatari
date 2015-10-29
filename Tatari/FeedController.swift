@@ -21,6 +21,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Avisos"
         self.tableView.separatorStyle = .None
         
         let bgImage = UIImage(named: "Background")

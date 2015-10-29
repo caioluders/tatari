@@ -12,7 +12,8 @@ class SearchController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationItem.title = "Pessoas"
         search_people("ca") // search test
     }
 
