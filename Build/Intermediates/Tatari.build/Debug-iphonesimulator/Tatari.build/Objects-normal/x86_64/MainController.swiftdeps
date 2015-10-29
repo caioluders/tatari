@@ -7,49 +7,49 @@ provides-member:
 - ["C6Tatari14MainController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "viewWillDisappear"
-- "locationManager"
-- "locationManager"
+- "viewWillAppear"
 - "btSauda"
 - "updateSensorDataArray"
-- "viewWillAppear"
+- "locationManager"
+- "locationManager"
 - "motionManager"
+- "viewWillDisappear"
 - "accuracyChanged"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "kCLLocationAccuracyKilometer"
-- !private "+="
-- !private "UIAlertAction"
-- !private "UIAlertController"
-- !private "||"
-- "String"
-- !private "!="
-- !private "=="
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "kCLLocationAccuracyHundredMeters"
-- !private "StringLiteralType"
-- "UISegmentedControl"
-- !private "Array"
-- "AnyObject"
-- !private "kCLLocationAccuracyBest"
-- "CLLocation"
-- !private "NSURL"
-- !private "+"
-- !private "print"
-- !private "NSURLSession"
-- "Bool"
-- !private "kCLLocationAccuracyThreeKilometers"
 - "CMMotionManager"
-- "CLLocationManager"
-- "UIViewController"
-- !private "NSURLRequest"
-- !private "Void"
-- "CLLocationManagerDelegate"
-- !private "CLAuthorizationStatus"
-- "MainController"
-- !private "MKPointAnnotation"
-- !private "BooleanLiteralType"
+- !private "StringLiteralType"
+- !private "+"
+- !private "!="
 - !private "kCLLocationAccuracyBestForNavigation"
+- "CLLocationManagerDelegate"
+- !private "Array"
+- !private "||"
+- "MainController"
+- !private "NSURLRequest"
+- !private "CLAuthorizationStatus"
+- !private "=="
+- !private "UIAlertController"
+- "CLLocation"
+- !private "kCLLocationAccuracyBest"
+- !private "Void"
+- !private "NSURLSession"
+- "String"
+- !private "+="
+- !private "MKPointAnnotation"
+- !private "kCLLocationAccuracyThreeKilometers"
+- "UIViewController"
+- !private "UIAlertAction"
+- "UISegmentedControl"
+- !private "BooleanLiteralType"
+- !private "kCLLocationAccuracyKilometer"
+- !private "print"
+- "CLLocationManager"
+- "AnyObject"
+- !private "kCLLocationAccuracyHundredMeters"
+- "Bool"
+- !private "NSURL"
+- !private "kCLLocationAccuracyNearestTenMeters"
 depends-member:
 - !private ["PSs9AnyObject", "CLAuthorizationStatus"]
 - !private ["PSs9AnyObject", "CLLocationManager"]
@@ -1000,6 +1000,47 @@ depends-member:
 - !private ["CSo9UIControl", "selectedSegmentIndex"]
 - !private ["PSo17UICoordinateSpace", "selectedSegmentIndex"]
 - !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
+- !private ["PSo18UIFocusEnvironment", "CLAuthorizationStatus"]
+- !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
+- ["PSo18UIFocusEnvironment", "CMMotionManager"]
+- !private ["PSo18UIFocusEnvironment", "MKPointAnnotation"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "NSURLRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSURLSession"]
+- ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- ["PSo18UIFocusEnvironment", "accuracyChanged"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- ["PSo18UIFocusEnvironment", "btSauda"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "getAccelerometerData"]
+- ["PSo18UIFocusEnvironment", "getGyroData"]
+- ["PSo18UIFocusEnvironment", "getLocationData"]
+- ["PSo18UIFocusEnvironment", "getMagnetometerData"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBest"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBestForNavigation"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyHundredMeters"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyKilometer"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyThreeKilometers"]
+- ["PSo18UIFocusEnvironment", "locationManager"]
+- ["PSo18UIFocusEnvironment", "locationManager.storage"]
+- ["PSo18UIFocusEnvironment", "locationManagerDidPauseLocationUpdates"]
+- ["PSo18UIFocusEnvironment", "locationManagerDidResumeLocationUpdates"]
+- ["PSo18UIFocusEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo18UIFocusEnvironment", "motionManager"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
+- ["PSo18UIFocusEnvironment", "sensorDataArray"]
+- ["PSo18UIFocusEnvironment", "updateSensorDataArray"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- ["PSo18UIFocusEnvironment", "viewWillDisappear"]
+- ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo16UINavigationItem", "title"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -1205,6 +1246,7 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
@@ -1334,6 +1376,7 @@ depends-nominal:
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - !private "CSo18UISegmentedControl"
@@ -1357,6 +1400,7 @@ depends-nominal:
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
 - "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"

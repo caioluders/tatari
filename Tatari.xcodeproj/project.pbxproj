@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFC61BDFE6E80098A62D /* feedCell.xib */; settings = {ASSET_TAGS = (); }; };
-		42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFCA1BE0006D0098A62D /* votoCell.xib */; settings = {ASSET_TAGS = (); }; };
-		42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFC61BDFE6E80098A62D /* feedCell.xib */; };
+		42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */; };
+		42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFCA1BE0006D0098A62D /* votoCell.xib */; };
+		42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */; };
 		623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9E71BDB39D000BCBFF4 /* FeedController.swift */; };
 		623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */; };
 		627355AA1BD8079400F7124A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355A91BD8079400F7124A /* AppDelegate.swift */; };
@@ -464,7 +464,7 @@
 					"$(PROJECT_DIR)/Tatari",
 				);
 				INFOPLIST_FILE = Tatari/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,7 +481,7 @@
 					"$(PROJECT_DIR)/Tatari",
 				);
 				INFOPLIST_FILE = Tatari/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,6 +10,10 @@ import UIKit
 
 class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSource , NSURLConnectionDelegate {
 
+    @IBAction func btParticipar(sender: AnyObject) {
+        
+        
+    }
     @IBOutlet
     var tableView: UITableView!
     @IBOutlet weak var activityVote: UIActivityIndicatorView!

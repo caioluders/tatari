@@ -6,60 +6,60 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14FeedController", ""]
 provides-dynamic-lookup:
-- "items"
-- "viewDidLoad"
-- "itemsBody"
-- "data"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "activityFeed"
-- "didReceiveMemoryWarning"
-- "HTTPPostJSON"
 - "JSONStringify"
-- "HTTPsendRequest"
+- "didReceiveMemoryWarning"
+- "items"
+- "data"
 - "itemsTitle"
+- "HTTPsendRequest"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
+- "activityFeed"
+- "HTTPPostJSON"
+- "itemsBody"
 depends-top-level:
-- !private "dispatch_get_main_queue"
-- !private "UIImage"
-- "UITableViewCell"
-- !private "JSON"
-- !private "UIViewContentMode"
-- "String"
-- "AnyObject"
-- !private "NSMutableDictionary"
-- "UITableViewDelegate"
 - "StringLiteralType"
-- !private "NSString"
-- !private "UINib"
-- "UITableViewDataSource"
+- !private "NSUTF8StringEncoding"
+- !private "NSURLSession"
+- "String"
+- "FeedController"
+- !private "FBSDKAccessToken"
+- !private "UIViewContentMode"
+- !private "JSON"
+- "UIActivityIndicatorView"
+- !private "NSMutableDictionary"
+- "NSMutableData"
+- "AnyObject"
+- "UITableViewDelegate"
+- "UITableViewCell"
 - !private "UIImageView"
 - !private "NSURL"
-- !private "NSData"
+- !private "UIImage"
 - "NSURLConnectionDelegate"
-- !private "NSURLSession"
-- !private "FeedTableViewCell"
-- "CGFloat"
-- "UIActivityIndicatorView"
-- "UITableView"
-- !private "!="
-- "FeedController"
-- !private "NSJSONWritingOptions"
-- !private "BooleanLiteralType"
-- "NSMutableData"
-- !private "print"
-- "NSIndexPath"
 - "Bool"
-- "UIViewController"
-- !private "NSUTF8StringEncoding"
+- "CGFloat"
+- "UITableViewDataSource"
+- !private "NSString"
+- !private "UINib"
+- !private "!="
+- !private "BooleanLiteralType"
+- "UITableView"
+- "Void"
+- !private "NSJSONWritingOptions"
 - "Int"
 - !private "dispatch_async"
-- !private "NSJSONSerialization"
-- !private "FBSDKAccessToken"
-- "Void"
+- "UIViewController"
 - "NSMutableURLRequest"
+- !private "dispatch_get_main_queue"
+- !private "NSJSONSerialization"
+- "NSIndexPath"
+- !private "print"
+- !private "FeedTableViewCell"
+- !private "NSData"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "HTTPBody"]
@@ -83,6 +83,7 @@ depends-member:
 - !private ["PSs9AnyObject", "UIViewContentMode"]
 - ["PSs9AnyObject", "activityFeed"]
 - !private ["PSs9AnyObject", "addValue"]
+- !private ["PSs9AnyObject", "allowsSelection"]
 - !private ["PSs9AnyObject", "backgroundView"]
 - ["PSs9AnyObject", "connection"]
 - ["PSs9AnyObject", "connectionShouldUseCredentialStorage"]
@@ -98,6 +99,7 @@ depends-member:
 - !private ["PSs9AnyObject", "dispatch_async"]
 - !private ["PSs9AnyObject", "dispatch_get_main_queue"]
 - !private ["PSs9AnyObject", "hidesWhenStopped"]
+- ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "isValidJSONObject"]
 - ["PSs9AnyObject", "items"]
@@ -204,6 +206,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIViewContentMode"]
 - ["PSs11CVarArgType", "activityFeed"]
 - !private ["PSs11CVarArgType", "addValue"]
+- !private ["PSs11CVarArgType", "allowsSelection"]
 - !private ["PSs11CVarArgType", "backgroundView"]
 - ["PSs11CVarArgType", "connection"]
 - ["PSs11CVarArgType", "connectionShouldUseCredentialStorage"]
@@ -219,6 +222,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "dispatch_async"]
 - !private ["PSs11CVarArgType", "dispatch_get_main_queue"]
 - !private ["PSs11CVarArgType", "hidesWhenStopped"]
+- ["PSs11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "isValidJSONObject"]
 - ["PSs11CVarArgType", "items"]
@@ -319,6 +323,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "activityFeed"]
 - !private ["PSs23CustomStringConvertible", "addValue"]
+- !private ["PSs23CustomStringConvertible", "allowsSelection"]
 - !private ["PSs23CustomStringConvertible", "append"]
 - !private ["PSs23CustomStringConvertible", "backgroundView"]
 - ["PSs23CustomStringConvertible", "connection"]
@@ -336,6 +341,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dispatch_async"]
 - !private ["PSs23CustomStringConvertible", "dispatch_get_main_queue"]
 - !private ["PSs23CustomStringConvertible", "hidesWhenStopped"]
+- ["PSs23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "isValidJSONObject"]
 - ["PSs23CustomStringConvertible", "items"]
@@ -419,6 +425,7 @@ depends-member:
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - ["PSs9Equatable", "activityFeed"]
 - !private ["PSs9Equatable", "addValue"]
+- !private ["PSs9Equatable", "allowsSelection"]
 - !private ["PSs9Equatable", "backgroundView"]
 - ["PSs9Equatable", "connection"]
 - ["PSs9Equatable", "connectionShouldUseCredentialStorage"]
@@ -434,6 +441,7 @@ depends-member:
 - !private ["PSs9Equatable", "dispatch_async"]
 - !private ["PSs9Equatable", "dispatch_get_main_queue"]
 - !private ["PSs9Equatable", "hidesWhenStopped"]
+- ["PSs9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "isValidJSONObject"]
 - ["PSs9Equatable", "items"]
@@ -528,6 +536,7 @@ depends-member:
 - ["C6Tatari14FeedController", "didReceiveMemoryWarning"]
 - !private ["C6Tatari14FeedController", "dispatch_async"]
 - !private ["C6Tatari14FeedController", "dispatch_get_main_queue"]
+- ["C6Tatari14FeedController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C6Tatari14FeedController", "init"]
 - ["C6Tatari14FeedController", "items"]
 - ["C6Tatari14FeedController", "itemsBody"]
@@ -591,6 +600,7 @@ depends-member:
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - ["PSs8Hashable", "activityFeed"]
 - !private ["PSs8Hashable", "addValue"]
+- !private ["PSs8Hashable", "allowsSelection"]
 - !private ["PSs8Hashable", "backgroundView"]
 - ["PSs8Hashable", "connection"]
 - ["PSs8Hashable", "connectionShouldUseCredentialStorage"]
@@ -606,6 +616,7 @@ depends-member:
 - !private ["PSs8Hashable", "dispatch_async"]
 - !private ["PSs8Hashable", "dispatch_get_main_queue"]
 - !private ["PSs8Hashable", "hidesWhenStopped"]
+- ["PSs8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "isValidJSONObject"]
 - ["PSs8Hashable", "items"]
@@ -734,6 +745,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIViewContentMode"]
 - ["PSo8NSCoding", "activityFeed"]
 - !private ["PSo8NSCoding", "addValue"]
+- !private ["PSo8NSCoding", "allowsSelection"]
 - !private ["PSo8NSCoding", "backgroundView"]
 - ["PSo8NSCoding", "connection"]
 - ["PSo8NSCoding", "connectionShouldUseCredentialStorage"]
@@ -747,6 +759,7 @@ depends-member:
 - !private ["PSo8NSCoding", "dispatch_async"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
 - !private ["PSo8NSCoding", "hidesWhenStopped"]
+- ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "items"]
 - ["PSo8NSCoding", "itemsBody"]
@@ -826,6 +839,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
+- ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "items"]
 - ["PSo26NSExtensionRequestHandling", "itemsBody"]
@@ -904,6 +918,7 @@ depends-member:
 - ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "activityFeed"]
 - !private ["CSo8NSObject", "addValue"]
+- !private ["CSo8NSObject", "allowsSelection"]
 - !private ["CSo8NSObject", "backgroundView"]
 - ["CSo8NSObject", "connection"]
 - ["CSo8NSObject", "connectionShouldUseCredentialStorage"]
@@ -919,6 +934,7 @@ depends-member:
 - !private ["CSo8NSObject", "dispatch_async"]
 - !private ["CSo8NSObject", "dispatch_get_main_queue"]
 - !private ["CSo8NSObject", "hidesWhenStopped"]
+- ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isValidJSONObject"]
 - ["CSo8NSObject", "items"]
@@ -980,6 +996,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIViewContentMode"]
 - ["PSo16NSObjectProtocol", "activityFeed"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
+- !private ["PSo16NSObjectProtocol", "allowsSelection"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
 - ["PSo16NSObjectProtocol", "connection"]
 - ["PSo16NSObjectProtocol", "connectionShouldUseCredentialStorage"]
@@ -995,6 +1012,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dispatch_async"]
 - !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
 - !private ["PSo16NSObjectProtocol", "hidesWhenStopped"]
+- ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isValidJSONObject"]
 - ["PSo16NSObjectProtocol", "items"]
@@ -1072,6 +1090,7 @@ depends-member:
 - ["PSo23NSURLConnectionDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo23NSURLConnectionDelegate", "dispatch_async"]
 - !private ["PSo23NSURLConnectionDelegate", "dispatch_get_main_queue"]
+- ["PSo23NSURLConnectionDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo23NSURLConnectionDelegate", "itemsBody"]
 - !private ["PSo23NSURLConnectionDelegate", "itemsTitle"]
 - !private ["PSo23NSURLConnectionDelegate", "navigationItem"]
@@ -1169,6 +1188,7 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "stringValue"]
 - !private ["PSs24StringLiteralConvertible", "subscript"]
+- !private ["PSo29UIAccessibilityIdentification", "allowsSelection"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundView"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
@@ -1185,6 +1205,7 @@ depends-member:
 - !private ["CSo23UIActivityIndicatorView", "hidesWhenStopped"]
 - !private ["CSo23UIActivityIndicatorView", "startAnimating"]
 - !private ["CSo23UIActivityIndicatorView", "stopAnimating"]
+- !private ["PSo12UIAppearance", "allowsSelection"]
 - !private ["PSo12UIAppearance", "backgroundView"]
 - !private ["PSo12UIAppearance", "contentMode"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
@@ -1217,6 +1238,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "UIViewContentMode"]
 - ["PSo21UIAppearanceContainer", "activityFeed"]
+- !private ["PSo21UIAppearanceContainer", "allowsSelection"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
 - ["PSo21UIAppearanceContainer", "connection"]
 - ["PSo21UIAppearanceContainer", "connectionShouldUseCredentialStorage"]
@@ -1228,6 +1250,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dispatch_async"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
 - !private ["PSo21UIAppearanceContainer", "hidesWhenStopped"]
+- ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "items"]
 - ["PSo21UIAppearanceContainer", "itemsBody"]
@@ -1286,6 +1309,7 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
+- ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "items"]
 - ["PSo18UIContentContainer", "itemsBody"]
@@ -1310,6 +1334,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "allowsSelection"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
@@ -1323,6 +1348,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "stopAnimating"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "txtBody"]
+- !private ["PSo13UIDynamicItem", "allowsSelection"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
@@ -1336,6 +1362,70 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "txtBody"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
+- ["PSo18UIFocusEnvironment", "HTTPPostJSON"]
+- ["PSo18UIFocusEnvironment", "HTTPsendRequest"]
+- !private ["PSo18UIFocusEnvironment", "JSON"]
+- ["PSo18UIFocusEnvironment", "JSONStringify"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
+- ["PSo18UIFocusEnvironment", "NSMutableData"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableURLRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSString"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "NSURLSession"]
+- !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
+- !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIImageView"]
+- !private ["PSo18UIFocusEnvironment", "UINib"]
+- !private ["PSo18UIFocusEnvironment", "UIViewContentMode"]
+- ["PSo18UIFocusEnvironment", "activityFeed"]
+- !private ["PSo18UIFocusEnvironment", "allowsSelection"]
+- !private ["PSo18UIFocusEnvironment", "backgroundView"]
+- ["PSo18UIFocusEnvironment", "connection"]
+- ["PSo18UIFocusEnvironment", "connectionShouldUseCredentialStorage"]
+- !private ["PSo18UIFocusEnvironment", "contentMode"]
+- ["PSo18UIFocusEnvironment", "data"]
+- ["PSo18UIFocusEnvironment", "data.storage"]
+- !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "dispatch_async"]
+- !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
+- !private ["PSo18UIFocusEnvironment", "hidesWhenStopped"]
+- ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "items"]
+- ["PSo18UIFocusEnvironment", "itemsBody"]
+- ["PSo18UIFocusEnvironment", "itemsTitle"]
+- !private ["PSo18UIFocusEnvironment", "lblTitle"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "registerNib"]
+- !private ["PSo18UIFocusEnvironment", "reloadData"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndScrollingAnimation"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidEndZooming"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidScroll"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidScrollToTop"]
+- ["PSo18UIFocusEnvironment", "scrollViewDidZoom"]
+- ["PSo18UIFocusEnvironment", "scrollViewShouldScrollToTop"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginDecelerating"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginDragging"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillBeginZooming"]
+- ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
+- ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- !private ["PSo18UIFocusEnvironment", "separatorStyle"]
+- !private ["PSo18UIFocusEnvironment", "startAnimating"]
+- !private ["PSo18UIFocusEnvironment", "stopAnimating"]
+- ["PSo18UIFocusEnvironment", "tableView"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "txtBody"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
+- ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblTitle"]
 - !private ["PSo27UIGestureRecognizerDelegate", "txtBody"]
 - !private ["CSo7UIImage", "init"]
@@ -1375,6 +1465,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIViewContentMode"]
 - ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "activityFeed"]
+- !private ["CSo11UIResponder", "allowsSelection"]
 - !private ["CSo11UIResponder", "backgroundView"]
 - ["CSo11UIResponder", "connection"]
 - ["CSo11UIResponder", "connectionShouldUseCredentialStorage"]
@@ -1386,6 +1477,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dispatch_async"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
 - !private ["CSo11UIResponder", "hidesWhenStopped"]
+- ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "items"]
 - ["CSo11UIResponder", "itemsBody"]
@@ -1417,6 +1509,7 @@ depends-member:
 - !private ["CSo11UIResponder", "txtBody"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
+- !private ["CSo12UIScrollView", "allowsSelection"]
 - !private ["CSo12UIScrollView", "backgroundView"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo12UIScrollView", "registerNib"]
@@ -1446,6 +1539,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
+- ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "itemsBody"]
 - !private ["PSo20UIScrollViewDelegate", "itemsTitle"]
 - !private ["PSo20UIScrollViewDelegate", "navigationItem"]
@@ -1493,6 +1587,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
+- ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "items"]
 - ["PSo16UIStateRestoring", "itemsBody"]
@@ -1517,6 +1612,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITableView", "allowsSelection"]
 - !private ["CSo11UITableView", "backgroundView"]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "registerNib"]
@@ -1549,6 +1645,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "connectionShouldUseCredentialStorage"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
+- ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UITableViewDataSource", "itemsBody"]
 - !private ["PSo21UITableViewDataSource", "itemsTitle"]
 - !private ["PSo21UITableViewDataSource", "navigationItem"]
@@ -1593,6 +1690,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
+- ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo19UITableViewDelegate", "itemsBody"]
 - !private ["PSo19UITableViewDelegate", "itemsTitle"]
 - !private ["PSo19UITableViewDelegate", "navigationItem"]
@@ -1636,6 +1734,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "UIViewContentMode"]
 - ["PSo18UITraitEnvironment", "activityFeed"]
+- !private ["PSo18UITraitEnvironment", "allowsSelection"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
 - ["PSo18UITraitEnvironment", "connection"]
 - ["PSo18UITraitEnvironment", "connectionShouldUseCredentialStorage"]
@@ -1647,6 +1746,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dispatch_async"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UITraitEnvironment", "hidesWhenStopped"]
+- ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "items"]
 - ["PSo18UITraitEnvironment", "itemsBody"]
@@ -1679,6 +1779,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "allowsSelection"]
 - !private ["CSo6UIView", "backgroundView"]
 - !private ["CSo6UIView", "contentMode"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
@@ -1731,6 +1832,7 @@ depends-member:
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
+- ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "items"]
 - ["CSo16UIViewController", "itemsBody"]
@@ -1786,6 +1888,8 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "append"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs24_ImageLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
 - !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
@@ -1815,6 +1919,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "allowsSelection"]
 - !private ["PSs12_Reflectable", "append"]
 - !private ["PSs12_Reflectable", "backgroundView"]
 - !private ["PSs12_Reflectable", "contentMode"]
@@ -1928,6 +2033,7 @@ depends-nominal:
 - "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UIImage"
 - !private "CSo11UIImageView"
@@ -1961,6 +2067,8 @@ depends-nominal:
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
 - !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs24_ImageLiteralConvertible"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"

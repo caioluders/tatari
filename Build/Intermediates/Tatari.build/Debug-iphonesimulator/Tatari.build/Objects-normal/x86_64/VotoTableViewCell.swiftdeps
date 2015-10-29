@@ -6,16 +6,17 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17VotoTableViewCell", ""]
 provides-dynamic-lookup:
-- "btVote"
-- "awakeFromNib"
-- "lblName"
 - "imgPerson"
+- "awakeFromNib"
+- "btVote"
 - "setSelected"
+- "lblVoteCount"
+- "lblName"
 depends-top-level:
 - "UIButton"
 - "UITableViewCell"
-- "UILabel"
 - "VotoTableViewCell"
+- "UILabel"
 - "UIImageView"
 - "Bool"
 depends-member:
@@ -24,6 +25,7 @@ depends-member:
 - ["PSs9AnyObject", "imgPerson"]
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "lblName"]
+- ["PSs9AnyObject", "lblVoteCount"]
 - ["PSs9AnyObject", "setSelected"]
 - ["PSs9AnyObject", ""]
 - ["PSs11CVarArgType", "awakeFromNib"]
@@ -31,6 +33,7 @@ depends-member:
 - ["PSs11CVarArgType", "imgPerson"]
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "lblName"]
+- ["PSs11CVarArgType", "lblVoteCount"]
 - ["PSs11CVarArgType", "setSelected"]
 - ["PSs11CVarArgType", ""]
 - ["PSs23CustomStringConvertible", "awakeFromNib"]
@@ -38,6 +41,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "imgPerson"]
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "lblName"]
+- ["PSs23CustomStringConvertible", "lblVoteCount"]
 - ["PSs23CustomStringConvertible", "setSelected"]
 - ["PSs23CustomStringConvertible", ""]
 - ["PSs9Equatable", "awakeFromNib"]
@@ -45,6 +49,7 @@ depends-member:
 - ["PSs9Equatable", "imgPerson"]
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "lblName"]
+- ["PSs9Equatable", "lblVoteCount"]
 - ["PSs9Equatable", "setSelected"]
 - ["PSs9Equatable", ""]
 - ["PSs8Hashable", "awakeFromNib"]
@@ -52,6 +57,7 @@ depends-member:
 - ["PSs8Hashable", "imgPerson"]
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "lblName"]
+- ["PSs8Hashable", "lblVoteCount"]
 - ["PSs8Hashable", "setSelected"]
 - ["PSs8Hashable", ""]
 - ["PSo8NSCoding", "awakeFromNib"]
@@ -59,6 +65,7 @@ depends-member:
 - ["PSo8NSCoding", "imgPerson"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "lblName"]
+- ["PSo8NSCoding", "lblVoteCount"]
 - ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bool"]
@@ -70,12 +77,14 @@ depends-member:
 - ["CSo8NSObject", "imgPerson"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "lblName"]
+- ["CSo8NSObject", "lblVoteCount"]
 - ["CSo8NSObject", "setSelected"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
 - ["PSo16NSObjectProtocol", "btVote"]
 - ["PSo16NSObjectProtocol", "imgPerson"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "lblName"]
+- ["PSo16NSObjectProtocol", "lblVoteCount"]
 - ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
@@ -83,6 +92,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "imgPerson"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "lblName"]
+- ["PSo29UIAccessibilityIdentification", "lblVoteCount"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - ["PSo12UIAppearance", "awakeFromNib"]
@@ -90,6 +100,7 @@ depends-member:
 - ["PSo12UIAppearance", "imgPerson"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "lblName"]
+- ["PSo12UIAppearance", "lblVoteCount"]
 - ["PSo12UIAppearance", "setSelected"]
 - ["PSo12UIAppearance", ""]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
@@ -97,6 +108,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "imgPerson"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "lblName"]
+- ["PSo21UIAppearanceContainer", "lblVoteCount"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
@@ -104,6 +116,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "imgPerson"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "lblName"]
+- ["PSo17UICoordinateSpace", "lblVoteCount"]
 - ["PSo17UICoordinateSpace", "setSelected"]
 - ["PSo17UICoordinateSpace", ""]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
@@ -111,13 +124,23 @@ depends-member:
 - ["PSo13UIDynamicItem", "imgPerson"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "lblName"]
+- ["PSo13UIDynamicItem", "lblVoteCount"]
 - ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "btVote"]
+- ["PSo18UIFocusEnvironment", "imgPerson"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "lblName"]
+- ["PSo18UIFocusEnvironment", "lblVoteCount"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", ""]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
 - ["PSo27UIGestureRecognizerDelegate", "btVote"]
 - ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
 - ["PSo27UIGestureRecognizerDelegate", "init"]
 - ["PSo27UIGestureRecognizerDelegate", "lblName"]
+- ["PSo27UIGestureRecognizerDelegate", "lblVoteCount"]
 - ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - ["CSo11UIResponder", "Bool"]
@@ -129,6 +152,7 @@ depends-member:
 - ["CSo11UIResponder", "imgPerson"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "lblName"]
+- ["CSo11UIResponder", "lblVoteCount"]
 - ["CSo11UIResponder", "setSelected"]
 - ["CSo15UITableViewCell", "Bool"]
 - ["CSo15UITableViewCell", "UIButton"]
@@ -139,6 +163,7 @@ depends-member:
 - ["CSo15UITableViewCell", "imgPerson"]
 - ["CSo15UITableViewCell", "init"]
 - ["CSo15UITableViewCell", "lblName"]
+- ["CSo15UITableViewCell", "lblVoteCount"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", ""]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
@@ -146,6 +171,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "imgPerson"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "lblName"]
+- ["PSo18UITraitEnvironment", "lblVoteCount"]
 - ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
@@ -157,6 +183,7 @@ depends-member:
 - ["CSo6UIView", "imgPerson"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "lblName"]
+- ["CSo6UIView", "lblVoteCount"]
 - ["CSo6UIView", "setSelected"]
 - ["C6Tatari17VotoTableViewCell", "Bool"]
 - ["C6Tatari17VotoTableViewCell", "UIButton"]
@@ -168,12 +195,14 @@ depends-member:
 - ["C6Tatari17VotoTableViewCell", "imgPerson"]
 - ["C6Tatari17VotoTableViewCell", "init"]
 - ["C6Tatari17VotoTableViewCell", "lblName"]
+- ["C6Tatari17VotoTableViewCell", "lblVoteCount"]
 - ["C6Tatari17VotoTableViewCell", "setSelected"]
 - ["PSs12_Reflectable", "awakeFromNib"]
 - ["PSs12_Reflectable", "btVote"]
 - ["PSs12_Reflectable", "imgPerson"]
 - ["PSs12_Reflectable", "init"]
 - ["PSs12_Reflectable", "lblName"]
+- ["PSs12_Reflectable", "lblVoteCount"]
 - ["PSs12_Reflectable", "setSelected"]
 - ["PSs12_Reflectable", ""]
 depends-nominal:
@@ -190,6 +219,7 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - "PSo27UIGestureRecognizerDelegate"
 - "CSo11UIResponder"
 - "CSo15UITableViewCell"
@@ -257,4 +287,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "0838258d537eccdac0ad2a383578970d"
+interface-hash: "e3517e2057ffde60ad9ef6561602a194"
