@@ -74,6 +74,9 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         
         
+        var image : UIImage = UIImage(named:"bar")!
+        add_photo(image) // EXEMPLO DE USO !!!! PEGUE A IMG , JOGUE LA , PRONTO
+        
         
         self.navigationItem.title = "Concurso de Fantasias"
         self.tableView.separatorStyle = .None
@@ -237,6 +240,32 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
 
        
+    }
+    
+    func add_photo(img:UIImage) {
+    
+        var imageData = UIImagePNGRepresentation(img)
+        let base64String = imageData!.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
+        
+        
+        var mutable_result =  NSMutableDictionary()
+        mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
+        mutable_result.setObject(base64String,forKey:"img")
+        var request = FBSDKGraphRequest(graphPath:"/me", parameters:["fields": "id,name"]);
+        
+        request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
+            if error == nil {
+                mutable_result.setObject(result["id"] as! NSString,forKey:"fb_id")
+                mutable_result.setObject(result["name"] as! NSString,forKey:"name")
+                print(mutable_result)
+                self.HTTPPostJSON("http://45.55.146.229:116/new_photo", jsonObj: mutable_result, callback: { (data,error) -> Void in
+                    print(data)
+                })
+            } else {
+                print("Error Getting Friends \(error)");
+            }
+        }
+
     }
 
 }
