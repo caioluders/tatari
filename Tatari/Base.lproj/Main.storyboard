@@ -154,45 +154,40 @@
                                     <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjK-7o-YRN">
-                                <rect key="frame" x="0.0" y="110" width="375" height="558"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                        <rect key="frame" x="0.0" y="-13" width="375" height="585"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-gL-pOW">
-                                        <rect key="frame" x="73" y="365" width="41.5" height="50"/>
-                                        <state key="normal" image="bar"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
-                                        <rect key="frame" x="0.0" y="276" width="41.5" height="50"/>
-                                        <state key="normal" image="saida"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
-                                        <rect key="frame" x="112" y="235" width="41.5" height="50"/>
-                                        <state key="normal" image="elevador"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-KH-lpG">
-                                        <rect key="frame" x="0.0" y="197" width="41.5" height="50"/>
-                                        <state key="normal" image="escada"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnF-EJ-Pnq">
-                                        <rect key="frame" x="134" y="126" width="41.5" height="50"/>
-                                        <state key="normal" image="academia"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8D-fG-FyN">
-                                        <rect key="frame" x="73" y="33" width="41.5" height="50"/>
-                                        <state key="normal" image="sauna"/>
-                                        <connections>
-                                            <action selector="btSauda:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="UV6-SE-5QL"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
-                                        <rect key="frame" x="55" y="433" width="41.5" height="50"/>
-                                        <state key="normal" image="banheiro"/>
-                                    </button>
-                                </subviews>
-                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                <rect key="frame" x="0.0" y="82" width="375" height="585"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
+                                <rect key="frame" x="49" y="518" width="41.5" height="50"/>
+                                <state key="normal" image="banheiro"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-gL-pOW">
+                                <rect key="frame" x="76" y="440" width="41.5" height="50"/>
+                                <state key="normal" image="bar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
+                                <rect key="frame" x="0.0" y="372" width="41.5" height="50"/>
+                                <state key="normal" image="saida"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-KH-lpG">
+                                <rect key="frame" x="0.0" y="309" width="41.5" height="50"/>
+                                <state key="normal" image="escada"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnF-EJ-Pnq">
+                                <rect key="frame" x="128" y="228" width="41.5" height="50"/>
+                                <state key="normal" image="academia"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8D-fG-FyN">
+                                <rect key="frame" x="76" y="124" width="41.5" height="50"/>
+                                <state key="normal" image="sauna"/>
+                                <connections>
+                                    <action selector="btSauda:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="UV6-SE-5QL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
+                                <rect key="frame" x="113" y="330" width="41.5" height="50"/>
+                                <state key="normal" image="elevador"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -346,10 +341,10 @@
         <image name="conf icon" width="30" height="30"/>
         <image name="elevador" width="42" height="50"/>
         <image name="escada" width="42" height="50"/>
-        <image name="info icon" width="30" height="30"/>
+        <image name="info icon" width="27" height="27"/>
         <image name="log out" width="60" height="20"/>
         <image name="mapa" width="375" height="584"/>
-        <image name="pesquisar icon" width="29" height="31"/>
+        <image name="pesquisar icon" width="27" height="27"/>
         <image name="saida" width="43" height="50"/>
         <image name="sauna" width="42" height="50"/>
         <image name="visibilidade" width="187" height="48"/>
