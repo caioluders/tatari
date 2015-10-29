@@ -18,6 +18,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var items: [String] = ["We", "Heart", "Swift"]
     var pictures: [UIImage] = []
     var names: [String] = []
+    var ids: [String] = []
     lazy var data = NSMutableData()
     var votou: Bool = false
     
@@ -31,6 +32,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.activityVote.startAnimating()
         self.activityVote.hidesWhenStopped = true
+        
+        self.tableView.allowsSelection = false
         
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
@@ -48,6 +51,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let image = UIImage(data: imageData!) // the image
                 self.pictures.append(image!)
                 self.names.append("Seketh Scharnhorst")
+                self.ids.append(object["id"].stringValue)
                 //let desc = object["desc"].stringValue // the description
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
@@ -76,6 +80,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.btVote.tag = indexPath.row
         cell.btVote.addTarget(self, action: "buttonVoteAction:", forControlEvents: UIControlEvents.TouchUpInside)
         cell.lblVoteCount.text = "0"
+        cell.btVote.tag = Int(self.ids[indexPath.row])!
         
         if (self.votou == true){
             cell.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
