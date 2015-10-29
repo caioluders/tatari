@@ -118,15 +118,40 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 @class NSIndexPath;
 @class UITableViewCell;
 @class NSMutableURLRequest;
+@class UIActivityIndicatorView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Tatari14FeedController")
 @interface FeedController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UITableViewDelegate>
 @property (nonatomic) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityFeed;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsTitle;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsBody;
 @property (nonatomic) NSMutableData * __nonnull data;
 - (void)viewDidLoad;
+
+/// override func viewDidAppear(animated: Bool) { self.activityFeed.startAnimating() self.activityFeed.hidesWhenStopped = true
+///
+/// <code>var mutable_result =  NSMutableDictionary()
+/// mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+/// self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
+///     let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
+///     for (wtf,object) in json {
+///         print(object["text"].stringValue) // Text of the update
+///         print(object["title"].stringValue) // Title of the update
+///         self.itemsTitle.append(object["text"].stringValue)
+///         self.itemsBody.append(object["text"].stringValue)
+///         self.tableView.reloadData()
+///         self.activityFeed.stopAnimating()
+///     }
+/// })
+/// 
+/// </code>
+/// }
+///
+/// <ul><li></li></ul>
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
@@ -168,6 +193,7 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @property (nonatomic) CLLocationManager * __null_unspecified locationManager;
 - (IBAction)accuracyChanged:(UISegmentedControl * __nonnull)sender;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateToLocation:(CLLocation * __nonnull)newLocation fromLocation:(CLLocation * __nonnull)oldLocation;
+- (IBAction)btSauda:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -209,16 +235,23 @@ SWIFT_CLASS("_TtC6Tatari14ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
+@class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari14VoteController")
 @interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UITableViewDelegate>
 @property (nonatomic) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityVote;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
+@property (nonatomic, copy) NSArray<UIImage *> * __nonnull pictures;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull names;
 @property (nonatomic) NSMutableData * __nonnull data;
+@property (nonatomic) BOOL votou;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)buttonVoteAction:(UIButton * __null_unspecified)sender;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
@@ -229,11 +262,11 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 @class UIImageView;
 
 SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 @interface VotoTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblVoteCount;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btVote;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgPerson;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblName;

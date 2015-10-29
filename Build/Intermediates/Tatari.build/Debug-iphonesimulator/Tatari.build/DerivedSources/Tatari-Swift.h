@@ -246,6 +246,7 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 @property (nonatomic, copy) NSArray<UIImage *> * __nonnull pictures;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull names;
 @property (nonatomic) NSMutableData * __nonnull data;
+@property (nonatomic) BOOL votou;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -265,6 +266,7 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 
 SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 @interface VotoTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblVoteCount;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btVote;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgPerson;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblName;
