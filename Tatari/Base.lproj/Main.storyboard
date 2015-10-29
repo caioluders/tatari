@@ -183,6 +183,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8D-fG-FyN">
                                         <rect key="frame" x="73" y="33" width="41.5" height="50"/>
                                         <state key="normal" image="sauna"/>
+                                        <connections>
+                                            <action selector="btSauda:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="UV6-SE-5QL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
                                         <rect key="frame" x="55" y="433" width="41.5" height="50"/>
