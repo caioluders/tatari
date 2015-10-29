@@ -6,43 +6,43 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14ViewController", ""]
 provides-dynamic-lookup:
-- "loginButtonDidLogOut"
+- "getFBUserData"
 - "JSONStringify"
+- "HTTPsendRequest"
+- "loginButtonDidLogOut"
+- "viewDidLoad"
 - "loginButton"
 - "HTTPPostJSON"
 - "viewDidAppear"
-- "getFBUserData"
-- "HTTPsendRequest"
-- "viewDidLoad"
 depends-top-level:
-- "UIViewController"
-- !private "StringLiteralType"
-- !private "NSString"
-- !private "NSUTF8StringEncoding"
-- "FBSDKLoginManagerLoginResult"
-- !private "NSJSONSerialization"
-- "Void"
-- !private "NSJSONWritingOptions"
 - "AnyObject"
-- !private "FBSDKAccessToken"
-- !private "Array"
-- !private "=="
-- "ViewController"
-- "Bool"
 - !private "Dictionary"
-- !private "NSData"
-- "FBSDKLoginButtonDelegate"
-- "BooleanLiteralType"
+- !private "NSMutableDictionary"
 - "String"
+- "BooleanLiteralType"
 - "NSMutableURLRequest"
-- !private "!="
+- !private "FBSDKAccessToken"
+- !private "NSData"
 - !private "FBSDKGraphRequest"
+- !private "NSString"
 - !private "NSURLSession"
 - !private "NSURL"
 - "FBSDKLoginButton"
-- !private "NSMutableDictionary"
-- !private "print"
+- !private "NSJSONSerialization"
 - "NSError"
+- "Bool"
+- !private "StringLiteralType"
+- !private "NSJSONWritingOptions"
+- "Void"
+- "FBSDKLoginButtonDelegate"
+- "UIViewController"
+- !private "!="
+- "FBSDKLoginManagerLoginResult"
+- !private "=="
+- "ViewController"
+- !private "print"
+- !private "NSUTF8StringEncoding"
+- !private "Array"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -687,6 +687,35 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "readPermissions"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKGraphRequest"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKLoginButton"]
+- ["PSo18UIFocusEnvironment", "HTTPPostJSON"]
+- ["PSo18UIFocusEnvironment", "HTTPsendRequest"]
+- ["PSo18UIFocusEnvironment", "JSONStringify"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableURLRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSString"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "NSURLSession"]
+- !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
+- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "center"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "getFBUserData"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "loginButton"]
+- ["PSo18UIFocusEnvironment", "loginButtonDidLogOut"]
+- ["PSo18UIFocusEnvironment", "loginButtonWillLogin"]
+- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "readPermissions"]
+- !private ["PSo18UIFocusEnvironment", "view"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
@@ -856,6 +885,7 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Key"]
@@ -953,6 +983,7 @@ depends-nominal:
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
@@ -968,6 +999,7 @@ depends-nominal:
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
 - !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs21_ObjectiveCBridgeable"
 - !private "VSs26_OptionalNilComparisonType"
 - "PSs12_Reflectable"

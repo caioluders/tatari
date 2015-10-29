@@ -7,34 +7,34 @@ provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
+- "HTTPsendRequest"
+- "HTTPPostJSON"
 - "JSONStringify"
 - "didReceiveMemoryWarning"
 - "search_people"
-- "HTTPsendRequest"
-- "HTTPPostJSON"
 depends-top-level:
+- !private "Array"
+- !private "!="
+- !private "FBSDKAccessToken"
+- !private "NSData"
 - "BooleanLiteralType"
+- "String"
+- !private "NSJSONSerialization"
+- "UIViewController"
+- "AnyObject"
+- "NSMutableURLRequest"
 - !private "print"
-- "NSString"
-- "Bool"
+- "Void"
+- !private "NSURLSession"
+- !private "StringLiteralType"
+- "SearchController"
 - !private "NSUTF8StringEncoding"
 - !private "NSJSONWritingOptions"
-- !private "!="
-- !private "NSURL"
-- "UIViewController"
-- !private "NSData"
-- !private "NSURLSession"
-- "Void"
-- "NSMutableURLRequest"
-- !private "FBSDKAccessToken"
-- "String"
-- !private "Array"
-- "AnyObject"
-- !private "StringLiteralType"
 - !private "NSMutableDictionary"
+- "Bool"
 - !private "JSON"
-- "SearchController"
-- !private "NSJSONSerialization"
+- "NSString"
+- !private "NSURL"
 depends-member:
 - !private ["PSs9AnyObject", "Element"]
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
@@ -527,6 +527,26 @@ depends-member:
 - ["PSo18UIContentContainer", "search_people"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
+- ["PSo18UIFocusEnvironment", "HTTPPostJSON"]
+- ["PSo18UIFocusEnvironment", "HTTPsendRequest"]
+- !private ["PSo18UIFocusEnvironment", "JSON"]
+- ["PSo18UIFocusEnvironment", "JSONStringify"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableURLRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSString"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "NSURLSession"]
+- !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "search_people"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo16UINavigationItem", "title"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -628,6 +648,7 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
@@ -706,6 +727,7 @@ depends-nominal:
 - !private "PSs24StringLiteralConvertible"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - "PSo16UIStateRestoring"
@@ -720,6 +742,7 @@ depends-nominal:
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
 - !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs21_ObjectiveCBridgeable"
 - !private "VSs26_OptionalNilComparisonType"
 - "PSs12_Reflectable"

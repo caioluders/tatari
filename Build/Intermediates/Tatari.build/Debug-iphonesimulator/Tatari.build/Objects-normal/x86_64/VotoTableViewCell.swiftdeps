@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17VotoTableViewCell", ""]
 provides-dynamic-lookup:
-- "awakeFromNib"
-- "setSelected"
 - "imgPerson"
+- "awakeFromNib"
 - "btVote"
-- "lblName"
+- "setSelected"
 - "lblVoteCount"
+- "lblName"
 depends-top-level:
-- "UILabel"
-- "Bool"
-- "UIImageView"
 - "UIButton"
 - "UITableViewCell"
 - "VotoTableViewCell"
+- "UILabel"
+- "UIImageView"
+- "Bool"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "btVote"]
@@ -127,6 +127,14 @@ depends-member:
 - ["PSo13UIDynamicItem", "lblVoteCount"]
 - ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "btVote"]
+- ["PSo18UIFocusEnvironment", "imgPerson"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "lblName"]
+- ["PSo18UIFocusEnvironment", "lblVoteCount"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", ""]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
 - ["PSo27UIGestureRecognizerDelegate", "btVote"]
 - ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
@@ -211,6 +219,7 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - "PSo27UIGestureRecognizerDelegate"
 - "CSo11UIResponder"
 - "CSo15UITableViewCell"

@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17FeedTableViewCell", ""]
 provides-dynamic-lookup:
-- "setSelected"
 - "awakeFromNib"
-- "lblTitle"
+- "setSelected"
 - "txtBody"
+- "lblTitle"
 depends-top-level:
-- "FeedTableViewCell"
-- "UITableViewCell"
-- "UILabel"
-- "UITextView"
 - "Bool"
+- "FeedTableViewCell"
+- "UITextView"
+- "UILabel"
+- "UITableViewCell"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "init"]
@@ -106,6 +106,12 @@ depends-member:
 - ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", "txtBody"]
 - ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "lblTitle"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", "txtBody"]
+- ["PSo18UIFocusEnvironment", ""]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
 - ["PSo27UIGestureRecognizerDelegate", "init"]
 - ["PSo27UIGestureRecognizerDelegate", "lblTitle"]
@@ -164,6 +170,7 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - "PSo27UIGestureRecognizerDelegate"
 - "CSo11UIResponder"
 - "CSo15UITableViewCell"
