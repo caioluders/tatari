@@ -31,6 +31,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.activityFeed.startAnimating()
         self.activityFeed.hidesWhenStopped = true
         
+        self.tableView.allowsSelection = false
+        
         let mutable_result =  NSMutableDictionary()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
@@ -51,27 +53,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let nib = UINib(nibName: "feedCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "feedcell")
     }
-    /**
-    override func viewDidAppear(animated: Bool) {
-        self.activityFeed.startAnimating()
-        self.activityFeed.hidesWhenStopped = true
-        
-        var mutable_result =  NSMutableDictionary()
-        mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
-        self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
-            let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
-            for (wtf,object) in json {
-                print(object["text"].stringValue) // Text of the update
-                print(object["title"].stringValue) // Title of the update
-                self.itemsTitle.append(object["text"].stringValue)
-                self.itemsBody.append(object["text"].stringValue)
-                self.tableView.reloadData()
-                self.activityFeed.stopAnimating()
-            }
-        })
-        
-    }
-    **/
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

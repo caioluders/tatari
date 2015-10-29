@@ -31,6 +31,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.activityVote.startAnimating()
         self.activityVote.hidesWhenStopped = true
         
+        self.tableView.allowsSelection = false
+        
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
         self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
