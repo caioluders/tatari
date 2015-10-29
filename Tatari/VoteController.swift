@@ -69,6 +69,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.lblName.text = self.names[indexPath.row]
         cell.imgPerson.image = self.pictures[indexPath.row]
+        cell.btVote.tag = indexPath.row
         cell.btVote.addTarget(self, action: "buttonVoteAction:", forControlEvents: UIControlEvents.TouchUpInside)
         
         return cell
@@ -76,8 +77,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func buttonVoteAction(sender:UIButton!)
     {
-        vote_for(1)
-        print("Heart button tapped")
+        vote_for(sender.tag)
+        print("votou "+String(sender.tag))
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
