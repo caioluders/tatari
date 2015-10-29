@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427C42361BE2BE1700F3A219 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427C42351BE2BE1700F3A219 /* AVFoundation.framework */; };
 		42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFC61BDFE6E80098A62D /* feedCell.xib */; };
 		42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */; };
 		42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFCA1BE0006D0098A62D /* votoCell.xib */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		427C42351BE2BE1700F3A219 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		42F4CFC61BDFE6E80098A62D /* feedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = feedCell.xib; path = ../feedCell.xib; sourceTree = "<group>"; };
 		42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		42F4CFCA1BE0006D0098A62D /* votoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = votoCell.xib; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				427C42361BE2BE1700F3A219 /* AVFoundation.framework in Frameworks */,
 				627355E41BD80DAD00F7124A /* Bolts.framework in Frameworks */,
 				627355E11BD80CAA00F7124A /* FBSDKLoginKit.framework in Frameworks */,
 				627355E01BD80CAA00F7124A /* FBSDKCoreKit.framework in Frameworks */,
@@ -105,6 +108,7 @@
 		6273559D1BD8079400F7124A = {
 			isa = PBXGroup;
 			children = (
+				427C42351BE2BE1700F3A219 /* AVFoundation.framework */,
 				627355A81BD8079400F7124A /* Tatari */,
 				627355BD1BD8079400F7124A /* TatariTests */,
 				627355C81BD8079400F7124A /* TatariUITests */,
@@ -464,7 +468,7 @@
 					"$(PROJECT_DIR)/Tatari",
 				);
 				INFOPLIST_FILE = Tatari/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,7 +485,7 @@
 					"$(PROJECT_DIR)/Tatari",
 				);
 				INFOPLIST_FILE = Tatari/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";

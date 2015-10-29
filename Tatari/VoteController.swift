@@ -7,14 +7,60 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSource , NSURLConnectionDelegate {
+class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSource , NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var imagePicker: UIImagePickerController!
+    
 
     @IBAction func btParticipar(sender: AnyObject) {
         
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
+            print("Button capture")
+            
+            
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum;
+            imagePicker.allowsEditing = false
+            
+            self.presentViewController(imagePicker, animated: true, completion: nil)
+        }
         
+//        if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
+//            var picker = UIImagePickerController()
+//            picker.delegate = self
+//            picker.sourceType = UIImagePickerControllerSourceType.Camera
+//            picker.mediaTypes = [kUTTypeImage as String]
+//            picker.allowsEditing = true
+//            self.presentViewController(picker, animated: true, completion: nil)
+//        }
+//        else{
+//            NSLog("No Camera.")
+//        }
     }
-    @IBOutlet
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let mediaType = info[UIImagePickerControllerMediaType] as! String
+        var originalImage:UIImage?, editedImage:UIImage?, imageToSave:UIImage?
+        let compResult:CFComparisonResult = CFStringCompare(mediaType as NSString!, kUTTypeImage, CFStringCompareFlags.CompareCaseInsensitive)
+        if ( compResult == CFComparisonResult.CompareEqualTo ) {
+            
+            editedImage = info[UIImagePickerControllerEditedImage] as! UIImage?
+            originalImage = info[UIImagePickerControllerOriginalImage] as! UIImage?
+            
+            if ( editedImage != nil ) {
+                imageToSave = editedImage
+            } else {
+                imageToSave = originalImage
+            }
+            //Do stuff with imgView.image (send to server)
+        }
+        picker.dismissViewControllerAnimated(true, completion: nil)
+        print("hum")
+    }
+    
+    
     var tableView: UITableView!
     @IBOutlet weak var activityVote: UIActivityIndicatorView!
     var items: [String] = ["We", "Heart", "Swift"]

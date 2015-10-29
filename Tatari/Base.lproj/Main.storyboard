@@ -274,7 +274,7 @@
                                 <rect key="frame" x="233" y="64" width="122" height="31"/>
                                 <state key="normal" image="Participar"/>
                                 <connections>
-                                    <action selector="btParticipar:" destination="OTj-vo-FEF" eventType="touchUpInside" id="BZT-T7-aaZ"/>
+                                    <action selector="btParticipar:" destination="OTj-vo-FEF" eventType="touchUpInside" id="Eom-2D-GBk"/>
                                 </connections>
                             </button>
                         </subviews>

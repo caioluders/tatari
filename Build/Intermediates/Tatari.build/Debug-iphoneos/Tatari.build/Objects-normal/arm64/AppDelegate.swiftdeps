@@ -6,27 +6,27 @@ provides-nominal:
 provides-member:
 - ["C6Tatari11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillTerminate"
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
 - "window"
 - "application"
 - "application"
-- "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
+- "applicationWillEnterForeground"
+- "applicationWillTerminate"
+- "applicationWillResignActive"
 depends-top-level:
-- !private "FBSDKApplicationDelegate"
-- "AppDelegate"
-- !private "FBSDKAppEvents"
-- "String"
-- "NSURL"
-- "UIApplication"
-- "AnyObject"
-- "Bool"
-- "NSObject"
-- "UIResponder"
 - "UIApplicationDelegate"
 - "UIWindow"
+- "AnyObject"
+- "UIResponder"
+- "UIApplication"
+- "Bool"
+- "NSURL"
+- "String"
+- "AppDelegate"
+- "NSObject"
+- !private "FBSDKAppEvents"
+- !private "FBSDKApplicationDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAppEvents"]
 - !private ["PSs9AnyObject", "FBSDKApplicationDelegate"]

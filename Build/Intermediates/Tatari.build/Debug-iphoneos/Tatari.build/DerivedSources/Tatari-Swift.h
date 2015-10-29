@@ -214,13 +214,16 @@ SWIFT_CLASS("_TtC6Tatari14ViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImagePickerController;
 @class UIImage;
 @class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari14VoteController")
-@interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UITableViewDelegate>
+@interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate>
+@property (nonatomic, strong) UIImagePickerController * __null_unspecified imagePicker;
 - (IBAction)btParticipar:(id __nonnull)sender;
-@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
+- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
+@property (nonatomic, strong) UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityVote;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
 @property (nonatomic, copy) NSArray<UIImage *> * __nonnull pictures;
