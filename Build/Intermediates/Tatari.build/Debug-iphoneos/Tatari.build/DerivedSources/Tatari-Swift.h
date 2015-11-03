@@ -221,18 +221,19 @@ SWIFT_CLASS("_TtC6Tatari14ViewController")
 SWIFT_CLASS("_TtC6Tatari14VoteController")
 @interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate>
 @property (nonatomic, strong) UIImagePickerController * __null_unspecified imagePicker;
-- (IBAction)btParticipar:(id __nonnull)sender;
-- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
 @property (nonatomic, strong) UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityVote;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
 @property (nonatomic, copy) NSArray<UIImage *> * __nonnull pictures;
+@property (nonatomic, copy) NSArray<NSNumber *> * __nonnull qtdVotes;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull names;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull ids;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
 @property (nonatomic) BOOL votou;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)btParticipar:(id __nonnull)sender;
+- (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)buttonVoteAction:(UIButton * __null_unspecified)sender;
@@ -242,6 +243,7 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)vote_for:(NSInteger)id;
+- (void)add_photo:(UIImage * __nonnull)img;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
