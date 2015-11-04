@@ -65,17 +65,15 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     if ( object["img"].stringValue != "" ) {
                         let imageData = NSData(base64EncodedString: object["img"].stringValue,options: NSDataBase64DecodingOptions(rawValue: 0))
                         let image = UIImage(data: imageData!) // the image
-                        var qtdVotesThisPic = Int(object["votes"].count)
+                        print(object["votes"])
+                        let qtdVotesThisPic = Int(object["votes"].count)
                         self.pictures.append(image!)
                         
-                        self.names.append("Seketh Scharnhorst")
+                        self.names.append(object["name"].stringValue)
                         self.ids.append(object["id"].stringValue)
-//                        if (containts(qtdVotes, id)){
-//                            qtdVotes = qtdVotes - 1
-//                        }
+                        
                         self.qtdVotes.append(qtdVotesThisPic)
                         
-                        //let desc = object["desc"].stringValue // the description
                     }
                     
                 }
@@ -236,9 +234,6 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func vote_for(id:Int) {
         // Function for make the vote , use it with the didSelectRowAtIndexPath func
         
-        // NAO TA FUNCIONANDO SA PORRA
-        // SAD
-        
         var mutable_result =  NSMutableDictionary()
         mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
         
@@ -262,7 +257,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func add_photo(img:UIImage) {
     
-        var imageData = UIImagePNGRepresentation(img)
+        var imageData = UIImageJPEGRepresentation(img,0.5)
         let base64String = imageData!.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
         
         
@@ -276,7 +271,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if error == nil {
                 mutable_result.setObject(result["id"] as! NSString,forKey:"fb_id")
                 mutable_result.setObject(result["name"] as! NSString,forKey:"name")
-                print(mutable_result)
+//                print(mutable_result)
                 self.HTTPPostJSON("http://45.55.146.229:116/new_photo", jsonObj: mutable_result, callback: { (data,error) -> Void in
                     //print(data)
                 })
