@@ -18,6 +18,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var items: [String] = ["We", "Heart", "Swift"]
     var pictures: [UIImage] = []
     var qtdVotes: [Int] = []
+    var voted: [Int] = []
     var names: [String] = []
     var ids: [String] = []
     lazy var data = NSMutableData()
@@ -67,6 +68,10 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let image = UIImage(data: imageData!) // the image
                         print(object["votes"])
                         let qtdVotesThisPic = Int(object["votes"].count)
+                        
+//                        if (object["votes"].contains(id)) {
+//                        
+//                        }
                         self.pictures.append(image!)
                         
                         self.names.append(object["name"].stringValue)
@@ -91,17 +96,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func btParticipar(sender: AnyObject) {
-        
-        //        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.SavedPhotosAlbum){
-        //            print("Button capture")
-        //
-        //            //imagePicker.delegate = self
-        //            imagePicker.sourceType = UIImagePickerControllerSourceType.SavedPhotosAlbum;
-        //            imagePicker.allowsEditing = false
-        //
-        //            self.presentViewController(imagePicker, animated: true, completion: nil)
-        //        }
-        
+
         if (UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)){
             var picker = UIImagePickerController()
             picker.delegate = self
@@ -271,13 +266,16 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if error == nil {
                 mutable_result.setObject(result["id"] as! NSString,forKey:"fb_id")
                 mutable_result.setObject(result["name"] as! NSString,forKey:"name")
-//                print(mutable_result)
                 self.HTTPPostJSON("http://45.55.146.229:116/new_photo", jsonObj: mutable_result, callback: { (data,error) -> Void in
                     //print(data)
                 })
             } else {
                 print("Error Getting Friends \(error)");
             }
+        }
+        
+        dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+            self.tableView.reloadData()
         }
 
     }
