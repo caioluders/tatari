@@ -237,7 +237,7 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull names;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull ids;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
-@property (nonatomic) BOOL votou;
+@property (nonatomic, copy) NSString * __nonnull idBotaoVoto;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btParticipar:(id __nonnull)sender;

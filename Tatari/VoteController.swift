@@ -22,7 +22,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var names: [String] = []
     var ids: [String] = []
     lazy var data = NSMutableData()
-    var votou: Bool = false
+    var idBotaoVoto: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,35 +50,29 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!,error:&err)
             print(err)
             
-            var id  = ""
-            var request = FBSDKGraphRequest(graphPath:"/me", parameters:["fields": "id,name"]);
-            
-            request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
-                if error == nil {
-                    id = result["id"] as! NSString as String
-                } else {
-                    print("Error Getting Friends \(error)");
-                }
-            }
             
             if(err == nil) {
-                for (wtf,object) in json {
+                for (_,object) in json {
                     if ( object["img"].stringValue != "" ) {
                         let imageData = NSData(base64EncodedString: object["img"].stringValue,options: NSDataBase64DecodingOptions(rawValue: 0))
                         let image = UIImage(data: imageData!) // the image
-                        print(object["votes"])
-                        let qtdVotesThisPic = Int(object["votes"].count)
+                        let name = object["name"].stringValue
+                        let id = object["id"].stringValue
+                        var votes: [String] = []
+                        for (_,id_vote) in object["votes"]{
+                            votes.append(id_vote.stringValue)
+                        }
+                        let qtdVotesThisPic = Int(votes.count)
                         
-//                        if (object["votes"].contains(id)) {
-//                        
-//                        }
+                        if (votes.contains("109156226113347")){
+                            print("já votou, querido")
+                            self.idBotaoVoto = id
+                        }
                         self.pictures.append(image!)
                         
-                        self.names.append(object["name"].stringValue)
-                        self.ids.append(object["id"].stringValue)
-                        
+                        self.names.append(name)
+                        self.ids.append(id)
                         self.qtdVotes.append(qtdVotesThisPic)
-                        
                     }
                     
                 }
@@ -144,7 +138,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.lblVoteCount.text = String(self.qtdVotes[indexPath.row])
         cell.btVote.tag = Int(self.ids[indexPath.row])!
         
-        if (self.votou == true){
+        if (self.ids[indexPath.row] == self.idBotaoVoto){
             cell.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
         }
         
@@ -154,7 +148,6 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func buttonVoteAction(sender:UIButton!)
     {
         vote_for(sender.tag)
-        self.votou = true
         self.tableView.reloadData()
         print("votou "+String(sender.tag))
     }
@@ -272,10 +265,10 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             } else {
                 print("Error Getting Friends \(error)");
             }
-        }
-        
-        dispatch_async(dispatch_get_main_queue()) { [unowned self] in
-            self.tableView.reloadData()
+            
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+                self.tableView.reloadData()
+            }
         }
 
     }

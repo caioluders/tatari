@@ -1,13 +1,13 @@
 version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
 options: "ec57051884289eb52bc4d905664e5e14"
-build_time: [500060433, 420514000]
+build_time: [500066527, 741972000]
 inputs:
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VotoTableViewCell.swift": [499403789, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SearchController.swift": [500060433, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SwiftyJSON.swift": [499226986, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedTableViewCell.swift": [499283004, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/MainController.swift": [500058055, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedController.swift": [499461174, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/AppDelegate.swift": [499226986, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ViewController.swift": [499226986, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VoteController.swift": [500045095, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SearchController.swift": [500060433, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedTableViewCell.swift": [499283004, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/AppDelegate.swift": [499226986, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SwiftyJSON.swift": [499226986, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedController.swift": [499461174, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VoteController.swift": [500066527, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VotoTableViewCell.swift": [499403789, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/MainController.swift": [500058055, 0]
