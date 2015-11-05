@@ -334,12 +334,16 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Saa-Bf-t3S" id="bSf-7G-mGU"/>
+                                    <outlet property="delegate" destination="Saa-Bf-t3S" id="U5j-nd-5I4"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="tblSearchResults" destination="DhB-Os-weJ" id="1SO-k6-qZI"/>
+                        <outlet property="tableView" destination="DhB-Os-weJ" id="Cm6-bz-SH7"/>
                         <outlet property="txtFieldSearch" destination="mPI-Mx-NWb" id="UNT-Le-Xkh"/>
                     </connections>
                 </viewController>

@@ -10,17 +10,20 @@ import UIKit
 
 class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var tblSearchResults: UITableView!
+  
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtFieldSearch: UITextField!
     var people: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tableView.delegate = self
+        
         self.navigationItem.title = "Pessoas"
         txtFieldSearch.delegate = self
         txtFieldSearch.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
-        search_people("ca") // search test
+        //search_people("ca") // search test
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,10 +49,12 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
                 self.people.append(object["name"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
-                self.tblSearchResults.reloadData()
+                self.tableView.reloadData()
             }
             print(json)
+            print(self.people.count)
         })
+        self.people = []
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,10 +62,11 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier( "personCell", forIndexPath: indexPath)
+        //let cell = tableView.dequeueReusableCellWithIdentifier( "personCell", forIndexPath: indexPath)
+        var cell = tableView.dequeueReusableCellWithIdentifier("personCell")! as UITableViewCell
         
         // Configure the cell...
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
+        cell.textLabel?.text = self.people[indexPath.row]
         
         return cell
     }

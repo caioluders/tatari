@@ -198,7 +198,7 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         
         url += "&gy_x="+sensorDataArray[5].1+"&gy_z="+sensorDataArray[7].1+"&gy_y="+sensorDataArray[6].1
         
-        url += "&mf_x="+sensorDataArray[8].1+"&mf_y="+sensorDataArray[9].1+"&mf_z="+sensorDataArray[10].1
+        //url += "&mf_x="+sensorDataArray[8].1+"&mf_y="+sensorDataArray[9].1+"&mf_z="+sensorDataArray[10].1
         
         let url2 = NSURL(string:url)
         print(url)

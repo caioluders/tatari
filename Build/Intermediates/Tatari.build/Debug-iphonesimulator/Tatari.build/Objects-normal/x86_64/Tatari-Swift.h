@@ -187,7 +187,7 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
-@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tblSearchResults;
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
 - (void)viewDidLoad;
