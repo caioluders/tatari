@@ -23,7 +23,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         self.navigationItem.title = "Pessoas"
         txtFieldSearch.delegate = self
         txtFieldSearch.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
-        //search_people("ca") // search test
+        send_chall("1042704092427256", challenge_desc: "Beba mais!")
     }
 
     override func didReceiveMemoryWarning() {
@@ -127,5 +127,16 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
                 NSUTF8StringEncoding)!
             request.HTTPBody = data
             HTTPsendRequest(request,callback: callback)
+    }
+    
+    func send_chall(fb_id:NSString , challenge_desc:NSString) -> Void {
+        let mutable_result =  NSMutableDictionary()
+        mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
+        mutable_result.setObject(fb_id,forKey:"fb_id")
+        mutable_result.setObject(challenge_desc,forKey:"challenge")
+        
+        self.HTTPPostJSON("http://45.55.146.229:116/new_challenge", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            print(data)
+        })
     }
 }

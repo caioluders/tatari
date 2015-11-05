@@ -37,7 +37,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let defaults = NSUserDefaults.standardUserDefaults()
         
         let fb_id = defaults.stringForKey("fb_id")
-        mutable_result.setObject(fb_id!,forKey:"fb_id")
+        
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         
         self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
@@ -55,13 +55,15 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         })
         
+        mutable_result.setObject("1042704092427256",forKey:"fb_id")
+        
         self.HTTPPostJSON("http://45.55.146.229:116/challs", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (wtf,object) in json {
                 
                 // mesma coisa de cima
-//                print(object["text"].stringValue) // Text of the update
-//                print(object["title"].stringValue) // Title of the update
+                print(object["text"].stringValue) // Text of the update
+                print(object["title"].stringValue) // Title of the update
 //                self.itemsTitle.append(object["text"].stringValue)
 //                self.itemsBody.append(object["text"].stringValue)
             }
