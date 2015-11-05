@@ -6,95 +6,95 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14VoteController", ""]
 provides-dynamic-lookup:
-- "JSONStringify"
+- "HTTPsendRequest"
+- "add_photo"
+- "idBotaoVoto"
 - "names"
-- "btParticipar"
-- "imagePickerController"
-- "items"
-- "votou"
 - "qtdVotes"
 - "didReceiveMemoryWarning"
-- "HTTPPostJSON"
-- "ids"
-- "buttonVoteAction"
-- "HTTPsendRequest"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "vote_for"
-- "voted"
-- "add_photo"
-- "data"
 - "imagePicker"
-- "viewDidLoad"
+- "items"
 - "pictures"
+- "vote_for"
+- "buttonVoteAction"
 - "activityVote"
+- "imagePickerController"
+- "btParticipar"
+- "data"
+- "JSONStringify"
+- "voted"
+- "viewDidLoad"
+- "HTTPPostJSON"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "ids"
 depends-top-level:
-- !private "FBSDKGraphRequest"
-- !private "UIImagePickerControllerSourceType"
-- !private "CFStringCompareFlags"
-- "UITableViewCell"
-- !private "NSUTF8StringEncoding"
-- "CGFloat"
-- !private "NSError"
-- !private "NSJSONSerialization"
-- !private "NSMutableDictionary"
-- !private "VotoTableViewCell"
-- !private "dispatch_async"
-- !private "NSURL"
-- !private "dispatch_get_main_queue"
 - !private "CFStringCompare"
-- !private "NSDataBase64DecodingOptions"
-- !private "NSJSONWritingOptions"
-- "UIViewController"
-- !private "NSString"
+- "CGFloat"
+- "UITableViewDelegate"
 - !private "CFComparisonResult"
-- "VoteController"
+- "UITableViewDataSource"
+- !private "UINib"
+- !private "BooleanLiteralType"
+- !private "UIImagePickerControllerSourceType"
+- !private "NSURLSession"
+- !private "!="
+- !private "NSURL"
 - !private "FBSDKGraphRequestConnection"
 - !private "+"
-- !private "UIImageView"
 - "AnyObject"
-- !private "NSDataBase64EncodingOptions"
-- !private "NSLog"
-- "UIButton"
-- !private "NSData"
-- !private "NSURLSession"
-- "Bool"
-- !private "UIImagePickerControllerMediaType"
-- "Void"
-- !private "UIControlState"
-- "UIActivityIndicatorView"
-- "StringLiteralType"
-- "UIImagePickerControllerDelegate"
-- "NSIndexPath"
-- "NSURLConnectionDelegate"
-- "UIImagePickerController"
 - "UIImage"
-- "UITableViewDataSource"
-- !private "print"
-- "UITableViewDelegate"
-- "NSMutableData"
-- !private "FBSDKAccessToken"
-- !private "UINib"
-- "UITableView"
-- "Int"
-- !private "UIImagePickerControllerOriginalImage"
-- !private "UIViewContentMode"
-- "BooleanLiteralType"
-- "Dictionary"
-- !private "kUTTypeImage"
-- !private "UIControlEvents"
 - !private "Array"
-- !private "=="
-- !private "UIImageJPEGRepresentation"
-- "NSMutableURLRequest"
-- !private "UIImagePickerControllerEditedImage"
+- !private "UIImagePickerControllerMediaType"
+- !private "NSUTF8StringEncoding"
+- !private "print"
 - !private "JSON"
+- !private "FBSDKGraphRequest"
+- !private "UIControlState"
+- !private "CFStringCompareFlags"
+- !private "Dictionary"
+- !private "NSData"
+- "UITableView"
+- !private "VotoTableViewCell"
+- !private "NSLog"
+- "NSIndexPath"
+- "StringLiteralType"
+- "VoteController"
+- !private "NSJSONWritingOptions"
 - "UINavigationControllerDelegate"
+- !private "NSError"
+- "UIActivityIndicatorView"
+- !private "UIImagePickerControllerEditedImage"
+- "UIButton"
+- "UITableViewCell"
+- "UIImagePickerController"
+- "NSMutableData"
+- "NSMutableURLRequest"
+- "Int"
+- "NSURLConnectionDelegate"
+- "Void"
+- "UIImagePickerControllerDelegate"
 - "String"
-- !private "!="
+- !private "dispatch_async"
+- !private "FBSDKAccessToken"
+- !private "UIImageJPEGRepresentation"
+- !private "NSDataBase64DecodingOptions"
+- !private "UIImageView"
+- !private "NSDataBase64EncodingOptions"
+- !private "dispatch_get_main_queue"
+- "Bool"
+- !private "NSMutableDictionary"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "=="
+- !private "NSJSONSerialization"
+- !private "kUTTypeImage"
+- "UIViewController"
+- !private "UIControlEvents"
+- !private "UIViewContentMode"
+- !private "NSString"
 depends-member:
 - !private ["PSs9AnyObject", "CFComparisonResult"]
 - !private ["PSs9AnyObject", "CFStringCompare"]
@@ -162,6 +162,7 @@ depends-member:
 - !private ["PSs9AnyObject", "dispatch_async"]
 - !private ["PSs9AnyObject", "dispatch_get_main_queue"]
 - !private ["PSs9AnyObject", "hidesWhenStopped"]
+- ["PSs9AnyObject", "idBotaoVoto"]
 - ["PSs9AnyObject", "ids"]
 - !private ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "imagePicker"]
@@ -223,7 +224,6 @@ depends-member:
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", "vote_for"]
 - ["PSs9AnyObject", "voted"]
-- ["PSs9AnyObject", "votou"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "Generator"]
@@ -231,6 +231,7 @@ depends-member:
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
+- !private ["Sa", "contains"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "subscript"]
@@ -244,6 +245,7 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
+- !private ["PSs23ArrayLiteralConvertible", "contains"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
 - !private ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["PSs23ArrayLiteralConvertible", "stringValue"]
@@ -263,7 +265,6 @@ depends-member:
 - !private ["PSs25BooleanLiteralConvertible", "SubSequence"]
 - !private ["PSs25BooleanLiteralConvertible", "_Element"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
-- !private ["PSs25BooleanLiteralConvertible", "count"]
 - !private ["PSs25BooleanLiteralConvertible", "init"]
 - !private ["PSs25BooleanLiteralConvertible", "stringValue"]
 - !private ["PSs25BooleanLiteralConvertible", "subscript"]
@@ -272,7 +273,6 @@ depends-member:
 - !private ["PSs11BooleanType", "SubSequence"]
 - !private ["PSs11BooleanType", "_Element"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
-- !private ["PSs11BooleanType", "count"]
 - !private ["PSs11BooleanType", "init"]
 - !private ["PSs11BooleanType", "stringValue"]
 - !private ["PSs11BooleanType", "subscript"]
@@ -349,6 +349,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "dispatch_async"]
 - !private ["PSs11CVarArgType", "dispatch_get_main_queue"]
 - !private ["PSs11CVarArgType", "hidesWhenStopped"]
+- ["PSs11CVarArgType", "idBotaoVoto"]
 - ["PSs11CVarArgType", "ids"]
 - !private ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "imagePicker"]
@@ -409,7 +410,6 @@ depends-member:
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", "vote_for"]
 - ["PSs11CVarArgType", "voted"]
-- ["PSs11CVarArgType", "votou"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
 - !private ["PSs14CollectionType", "Element"]
@@ -420,6 +420,7 @@ depends-member:
 - !private ["PSs14CollectionType", "Value"]
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
+- !private ["PSs14CollectionType", "contains"]
 - !private ["PSs14CollectionType", "count"]
 - !private ["PSs14CollectionType", "init"]
 - !private ["PSs14CollectionType", "stringValue"]
@@ -431,7 +432,6 @@ depends-member:
 - !private ["PSs10Comparable", "SubSequence"]
 - !private ["PSs10Comparable", "_DisabledRangeIndex"]
 - !private ["PSs10Comparable", "_Element"]
-- !private ["PSs10Comparable", "count"]
 - !private ["PSs10Comparable", "dataUsingEncoding"]
 - !private ["PSs10Comparable", "init"]
 - !private ["PSs10Comparable", "stringValue"]
@@ -445,6 +445,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - !private ["PSs28CustomDebugStringConvertible", "append"]
+- !private ["PSs28CustomDebugStringConvertible", "contains"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
@@ -512,6 +513,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "buttonVoteAction"]
 - ["PSs23CustomStringConvertible", "connection"]
 - ["PSs23CustomStringConvertible", "connectionShouldUseCredentialStorage"]
+- !private ["PSs23CustomStringConvertible", "contains"]
 - !private ["PSs23CustomStringConvertible", "contentMode"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "currentAccessToken"]
@@ -527,6 +529,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dispatch_async"]
 - !private ["PSs23CustomStringConvertible", "dispatch_get_main_queue"]
 - !private ["PSs23CustomStringConvertible", "hidesWhenStopped"]
+- ["PSs23CustomStringConvertible", "idBotaoVoto"]
 - ["PSs23CustomStringConvertible", "ids"]
 - !private ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "imagePicker"]
@@ -589,7 +592,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", "vote_for"]
 - ["PSs23CustomStringConvertible", "voted"]
-- ["PSs23CustomStringConvertible", "votou"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["VSs10Dictionary", "Index"]
 - !private ["VSs10Dictionary", "Key"]
@@ -602,7 +604,6 @@ depends-member:
 - !private ["PSs28DictionaryLiteralConvertible", "SubSequence"]
 - !private ["PSs28DictionaryLiteralConvertible", "Value"]
 - !private ["PSs28DictionaryLiteralConvertible", "_Element"]
-- !private ["PSs28DictionaryLiteralConvertible", "count"]
 - !private ["PSs28DictionaryLiteralConvertible", "init"]
 - !private ["PSs28DictionaryLiteralConvertible", "setObject"]
 - !private ["PSs28DictionaryLiteralConvertible", "stringValue"]
@@ -677,7 +678,6 @@ depends-member:
 - ["PSs9Equatable", "connection"]
 - ["PSs9Equatable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9Equatable", "contentMode"]
-- !private ["PSs9Equatable", "count"]
 - !private ["PSs9Equatable", "currentAccessToken"]
 - ["PSs9Equatable", "data"]
 - ["PSs9Equatable", "data.storage"]
@@ -691,6 +691,7 @@ depends-member:
 - !private ["PSs9Equatable", "dispatch_async"]
 - !private ["PSs9Equatable", "dispatch_get_main_queue"]
 - !private ["PSs9Equatable", "hidesWhenStopped"]
+- ["PSs9Equatable", "idBotaoVoto"]
 - ["PSs9Equatable", "ids"]
 - !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "imagePicker"]
@@ -753,14 +754,12 @@ depends-member:
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", "vote_for"]
 - ["PSs9Equatable", "voted"]
-- ["PSs9Equatable", "votou"]
 - ["PSs9Equatable", ""]
 - !private ["PSs9ErrorType", "localizedDescription"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "Generator"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "Index"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "SubSequence"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "_Element"]
-- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "count"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "stringValue"]
@@ -776,7 +775,6 @@ depends-member:
 - !private ["PSs23FloatLiteralConvertible", "Index"]
 - !private ["PSs23FloatLiteralConvertible", "SubSequence"]
 - !private ["PSs23FloatLiteralConvertible", "_Element"]
-- !private ["PSs23FloatLiteralConvertible", "count"]
 - !private ["PSs23FloatLiteralConvertible", "init"]
 - !private ["PSs23FloatLiteralConvertible", "stringValue"]
 - !private ["PSs23FloatLiteralConvertible", "subscript"]
@@ -858,6 +856,7 @@ depends-member:
 - !private ["PSs8Hashable", "dispatch_async"]
 - !private ["PSs8Hashable", "dispatch_get_main_queue"]
 - !private ["PSs8Hashable", "hidesWhenStopped"]
+- ["PSs8Hashable", "idBotaoVoto"]
 - ["PSs8Hashable", "ids"]
 - !private ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "imagePicker"]
@@ -918,7 +917,6 @@ depends-member:
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", "vote_for"]
 - ["PSs8Hashable", "voted"]
-- ["PSs8Hashable", "votou"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
 - !private ["PSs9Indexable", "Element"]
@@ -929,6 +927,7 @@ depends-member:
 - !private ["PSs9Indexable", "Value"]
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
+- !private ["PSs9Indexable", "contains"]
 - !private ["PSs9Indexable", "count"]
 - !private ["PSs9Indexable", "init"]
 - !private ["PSs9Indexable", "stringValue"]
@@ -951,7 +950,6 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs25IntegerLiteralConvertible", "SubSequence"]
 - !private ["PSs25IntegerLiteralConvertible", "_Element"]
-- !private ["PSs25IntegerLiteralConvertible", "count"]
 - !private ["PSs25IntegerLiteralConvertible", "init"]
 - !private ["PSs25IntegerLiteralConvertible", "stringValue"]
 - !private ["PSs25IntegerLiteralConvertible", "subscript"]
@@ -962,7 +960,6 @@ depends-member:
 - !private ["V6Tatari4JSON", "Index"]
 - !private ["V6Tatari4JSON", "SubSequence"]
 - !private ["V6Tatari4JSON", "_Element"]
-- !private ["V6Tatari4JSON", "count"]
 - !private ["V6Tatari4JSON", "deinit"]
 - !private ["V6Tatari4JSON", "init"]
 - !private ["V6Tatari4JSON", "stringValue"]
@@ -986,6 +983,7 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "SubSequence"]
 - !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "append"]
+- !private ["PSs21MutableCollectionType", "contains"]
 - !private ["PSs21MutableCollectionType", "count"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Element"]
@@ -994,6 +992,7 @@ depends-member:
 - !private ["PSs16MutableIndexable", "SubSequence"]
 - !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "append"]
+- !private ["PSs16MutableIndexable", "contains"]
 - !private ["PSs16MutableIndexable", "count"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - !private ["PSs16MutableSliceable", "Element"]
@@ -1002,6 +1001,7 @@ depends-member:
 - !private ["PSs16MutableSliceable", "SubSequence"]
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
+- !private ["PSs16MutableSliceable", "contains"]
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CFComparisonResult"]
@@ -1067,6 +1067,7 @@ depends-member:
 - !private ["PSo8NSCoding", "dispatch_async"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
 - !private ["PSo8NSCoding", "hidesWhenStopped"]
+- ["PSo8NSCoding", "idBotaoVoto"]
 - ["PSo8NSCoding", "ids"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imagePicker"]
@@ -1123,7 +1124,6 @@ depends-member:
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "vote_for"]
 - ["PSo8NSCoding", "voted"]
-- ["PSo8NSCoding", "votou"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "HTTPBody"]
 - !private ["PSo9NSCopying", "HTTPMethod"]
@@ -1196,6 +1196,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
+- ["PSo26NSExtensionRequestHandling", "idBotaoVoto"]
 - ["PSo26NSExtensionRequestHandling", "ids"]
 - ["PSo26NSExtensionRequestHandling", "imagePicker"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
@@ -1235,7 +1236,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", "vote_for"]
 - ["PSo26NSExtensionRequestHandling", "voted"]
-- ["PSo26NSExtensionRequestHandling", "votou"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo17NSFastEnumeration", "setObject"]
@@ -1336,6 +1336,7 @@ depends-member:
 - !private ["CSo8NSObject", "dispatch_async"]
 - !private ["CSo8NSObject", "dispatch_get_main_queue"]
 - !private ["CSo8NSObject", "hidesWhenStopped"]
+- ["CSo8NSObject", "idBotaoVoto"]
 - ["CSo8NSObject", "ids"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePicker"]
@@ -1396,7 +1397,6 @@ depends-member:
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "vote_for"]
 - ["CSo8NSObject", "voted"]
-- ["CSo8NSObject", "votou"]
 - !private ["PSo16NSObjectProtocol", "CFComparisonResult"]
 - !private ["PSo16NSObjectProtocol", "CFStringCompare"]
 - !private ["PSo16NSObjectProtocol", "CFStringCompareFlags"]
@@ -1462,6 +1462,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dispatch_async"]
 - !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
 - !private ["PSo16NSObjectProtocol", "hidesWhenStopped"]
+- ["PSo16NSObjectProtocol", "idBotaoVoto"]
 - ["PSo16NSObjectProtocol", "ids"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imagePicker"]
@@ -1522,7 +1523,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "vote_for"]
 - ["PSo16NSObjectProtocol", "voted"]
-- ["PSo16NSObjectProtocol", "votou"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "HTTPBody"]
 - !private ["PSo14NSSecureCoding", "HTTPMethod"]
@@ -1581,6 +1581,7 @@ depends-member:
 - ["PSo23NSURLConnectionDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo23NSURLConnectionDelegate", "dispatch_async"]
 - !private ["PSo23NSURLConnectionDelegate", "dispatch_get_main_queue"]
+- !private ["PSo23NSURLConnectionDelegate", "idBotaoVoto"]
 - !private ["PSo23NSURLConnectionDelegate", "ids"]
 - ["PSo23NSURLConnectionDelegate", "imagePickerController"]
 - ["PSo23NSURLConnectionDelegate", "imagePickerControllerDidCancel"]
@@ -1612,7 +1613,6 @@ depends-member:
 - ["PSo23NSURLConnectionDelegate", "tableView"]
 - ["PSo23NSURLConnectionDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo23NSURLConnectionDelegate", "vote_for"]
-- !private ["PSo23NSURLConnectionDelegate", "votou"]
 - ["PSo23NSURLConnectionDelegate", ""]
 - !private ["CSo12NSURLRequest", "HTTPBody"]
 - !private ["CSo12NSURLRequest", "HTTPMethod"]
@@ -1627,7 +1627,6 @@ depends-member:
 - ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs21NilLiteralConvertible", "SubSequence"]
 - !private ["PSs21NilLiteralConvertible", "_Element"]
-- !private ["PSs21NilLiteralConvertible", "count"]
 - !private ["PSs21NilLiteralConvertible", "init"]
 - !private ["PSs21NilLiteralConvertible", "stringValue"]
 - !private ["PSs21NilLiteralConvertible", "subscript"]
@@ -1650,6 +1649,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
+- !private ["PSs30RangeReplaceableCollectionType", "contains"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Camera"]
@@ -1665,7 +1665,6 @@ depends-member:
 - !private ["PSs16RawRepresentable", "SubSequence"]
 - !private ["PSs16RawRepresentable", "TouchUpInside"]
 - !private ["PSs16RawRepresentable", "_Element"]
-- !private ["PSs16RawRepresentable", "count"]
 - !private ["PSs16RawRepresentable", "init"]
 - !private ["PSs16RawRepresentable", "stringValue"]
 - !private ["PSs16RawRepresentable", "subscript"]
@@ -1678,6 +1677,7 @@ depends-member:
 - !private ["PSs12SequenceType", "Value"]
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
+- !private ["PSs12SequenceType", "contains"]
 - !private ["PSs12SequenceType", "count"]
 - !private ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "setObject"]
@@ -1698,7 +1698,6 @@ depends-member:
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
-- !private ["VSs5Slice", "count"]
 - !private ["VSs5Slice", "stringValue"]
 - !private ["PSs10Streamable", "dataUsingEncoding"]
 - !private ["PSs10Streamable", "init"]
@@ -1714,7 +1713,6 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "Index"]
 - !private ["PSs24StringLiteralConvertible", "SubSequence"]
 - !private ["PSs24StringLiteralConvertible", "_Element"]
-- !private ["PSs24StringLiteralConvertible", "count"]
 - !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "stringValue"]
@@ -1819,6 +1817,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dispatch_async"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
 - !private ["PSo21UIAppearanceContainer", "hidesWhenStopped"]
+- ["PSo21UIAppearanceContainer", "idBotaoVoto"]
 - ["PSo21UIAppearanceContainer", "ids"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imagePicker"]
@@ -1870,7 +1869,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "vote_for"]
 - ["PSo21UIAppearanceContainer", "voted"]
-- ["PSo21UIAppearanceContainer", "votou"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "setImage"]
@@ -1925,6 +1923,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
+- ["PSo18UIContentContainer", "idBotaoVoto"]
 - ["PSo18UIContentContainer", "ids"]
 - ["PSo18UIContentContainer", "imagePicker"]
 - ["PSo18UIContentContainer", "imagePickerController"]
@@ -1964,7 +1963,6 @@ depends-member:
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "vote_for"]
 - ["PSo18UIContentContainer", "voted"]
-- ["PSo18UIContentContainer", "votou"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
 - !private ["CSo9UIControl", "setImage"]
@@ -2068,6 +2066,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dispatch_async"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UIFocusEnvironment", "hidesWhenStopped"]
+- ["PSo18UIFocusEnvironment", "idBotaoVoto"]
 - ["PSo18UIFocusEnvironment", "ids"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imagePicker"]
@@ -2119,7 +2118,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", "vote_for"]
 - ["PSo18UIFocusEnvironment", "voted"]
-- ["PSo18UIFocusEnvironment", "votou"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "btVote"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
@@ -2175,6 +2173,7 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dispatch_async"]
 - !private ["PSo31UIImagePickerControllerDelegate", "dispatch_get_main_queue"]
+- !private ["PSo31UIImagePickerControllerDelegate", "idBotaoVoto"]
 - !private ["PSo31UIImagePickerControllerDelegate", "ids"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
@@ -2206,7 +2205,6 @@ depends-member:
 - ["PSo31UIImagePickerControllerDelegate", "tableView"]
 - ["PSo31UIImagePickerControllerDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo31UIImagePickerControllerDelegate", "vote_for"]
-- !private ["PSo31UIImagePickerControllerDelegate", "votou"]
 - ["PSo31UIImagePickerControllerDelegate", ""]
 - !private ["OSC33UIImagePickerControllerSourceType", "Camera"]
 - !private ["CSo11UIImageView", "image"]
@@ -2261,6 +2259,7 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_async"]
 - !private ["PSo30UINavigationControllerDelegate", "dispatch_get_main_queue"]
+- !private ["PSo30UINavigationControllerDelegate", "idBotaoVoto"]
 - !private ["PSo30UINavigationControllerDelegate", "ids"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
@@ -2292,7 +2291,6 @@ depends-member:
 - ["PSo30UINavigationControllerDelegate", "tableView"]
 - ["PSo30UINavigationControllerDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo30UINavigationControllerDelegate", "vote_for"]
-- !private ["PSo30UINavigationControllerDelegate", "votou"]
 - ["PSo30UINavigationControllerDelegate", ""]
 - !private ["CSo16UINavigationItem", "title"]
 - !private ["CSo5UINib", "init"]
@@ -2365,6 +2363,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dispatch_async"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
 - !private ["CSo11UIResponder", "hidesWhenStopped"]
+- ["CSo11UIResponder", "idBotaoVoto"]
 - ["CSo11UIResponder", "ids"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imagePicker"]
@@ -2416,7 +2415,6 @@ depends-member:
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "vote_for"]
 - ["CSo11UIResponder", "voted"]
-- ["CSo11UIResponder", "votou"]
 - !private ["CSo12UIScrollView", "allowsSelection"]
 - !private ["CSo12UIScrollView", "backgroundView"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
@@ -2465,6 +2463,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
+- !private ["PSo20UIScrollViewDelegate", "idBotaoVoto"]
 - !private ["PSo20UIScrollViewDelegate", "ids"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
 - ["PSo20UIScrollViewDelegate", "imagePickerControllerDidCancel"]
@@ -2496,7 +2495,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "vote_for"]
-- !private ["PSo20UIScrollViewDelegate", "votou"]
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CFComparisonResult"]
 - !private ["PSo16UIStateRestoring", "CFStringCompare"]
@@ -2548,6 +2546,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
+- ["PSo16UIStateRestoring", "idBotaoVoto"]
 - ["PSo16UIStateRestoring", "ids"]
 - ["PSo16UIStateRestoring", "imagePicker"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
@@ -2587,7 +2586,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "vote_for"]
 - ["PSo16UIStateRestoring", "voted"]
-- ["PSo16UIStateRestoring", "votou"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "allowsSelection"]
 - !private ["CSo11UITableView", "backgroundView"]
@@ -2643,6 +2641,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "connectionShouldUseCredentialStorage"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
+- !private ["PSo21UITableViewDataSource", "idBotaoVoto"]
 - !private ["PSo21UITableViewDataSource", "ids"]
 - ["PSo21UITableViewDataSource", "imagePickerController"]
 - ["PSo21UITableViewDataSource", "imagePickerControllerDidCancel"]
@@ -2674,7 +2673,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo21UITableViewDataSource", "vote_for"]
-- !private ["PSo21UITableViewDataSource", "votou"]
 - ["PSo21UITableViewDataSource", ""]
 - !private ["PSo19UITableViewDelegate", "CFComparisonResult"]
 - !private ["PSo19UITableViewDelegate", "CFStringCompare"]
@@ -2718,6 +2716,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
+- !private ["PSo19UITableViewDelegate", "idBotaoVoto"]
 - !private ["PSo19UITableViewDelegate", "ids"]
 - ["PSo19UITableViewDelegate", "imagePickerController"]
 - ["PSo19UITableViewDelegate", "imagePickerControllerDidCancel"]
@@ -2749,7 +2748,6 @@ depends-member:
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo19UITableViewDelegate", "vote_for"]
-- !private ["PSo19UITableViewDelegate", "votou"]
 - ["PSo19UITableViewDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "CFComparisonResult"]
 - !private ["PSo18UITraitEnvironment", "CFStringCompare"]
@@ -2808,6 +2806,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dispatch_async"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UITraitEnvironment", "hidesWhenStopped"]
+- ["PSo18UITraitEnvironment", "idBotaoVoto"]
 - ["PSo18UITraitEnvironment", "ids"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imagePicker"]
@@ -2859,7 +2858,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", "vote_for"]
 - ["PSo18UITraitEnvironment", "voted"]
-- ["PSo18UITraitEnvironment", "votou"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "allowsSelection"]
@@ -2944,6 +2942,7 @@ depends-member:
 - !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
+- ["CSo16UIViewController", "idBotaoVoto"]
 - ["CSo16UIViewController", "ids"]
 - ["CSo16UIViewController", "imagePicker"]
 - ["CSo16UIViewController", "imagePickerController"]
@@ -2983,7 +2982,6 @@ depends-member:
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "vote_for"]
 - ["CSo16UIViewController", "voted"]
-- ["CSo16UIViewController", "votou"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
 - !private ["VSs6UInt16", "deinit"]
@@ -2995,7 +2993,6 @@ depends-member:
 - !private ["PSs31UnicodeScalarLiteralConvertible", "Index"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "SubSequence"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "_Element"]
-- !private ["PSs31UnicodeScalarLiteralConvertible", "count"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "stringValue"]
@@ -3060,6 +3057,7 @@ depends-member:
 - ["C6Tatari14VoteController", "didReceiveMemoryWarning"]
 - !private ["C6Tatari14VoteController", "dispatch_async"]
 - !private ["C6Tatari14VoteController", "dispatch_get_main_queue"]
+- ["C6Tatari14VoteController", "idBotaoVoto"]
 - ["C6Tatari14VoteController", "ids"]
 - ["C6Tatari14VoteController", "imagePicker"]
 - ["C6Tatari14VoteController", "imagePickerController"]
@@ -3096,7 +3094,6 @@ depends-member:
 - ["C6Tatari14VoteController", "viewForZoomingInScrollView"]
 - ["C6Tatari14VoteController", "vote_for"]
 - ["C6Tatari14VoteController", "voted"]
-- ["C6Tatari14VoteController", "votou"]
 - !private ["C6Tatari17VotoTableViewCell", "btVote"]
 - !private ["C6Tatari17VotoTableViewCell", "imgPerson"]
 - !private ["C6Tatari17VotoTableViewCell", "lblName"]
@@ -3107,6 +3104,7 @@ depends-member:
 - !private ["PSs10_ArrayType", "SubSequence"]
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "append"]
+- !private ["PSs10_ArrayType", "contains"]
 - !private ["PSs10_ArrayType", "count"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
@@ -3129,6 +3127,7 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "SubSequence"]
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "append"]
+- !private ["PSs24_DestructorSafeContainer", "contains"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs32_FileReferenceLiteralConvertible", "init"]
@@ -3154,6 +3153,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
+- !private ["PSs21_ObjectiveCBridgeable", "contains"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
@@ -3178,6 +3178,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "append"]
 - !private ["PSs12_Reflectable", "backgroundView"]
 - !private ["PSs12_Reflectable", "btVote"]
+- !private ["PSs12_Reflectable", "contains"]
 - !private ["PSs12_Reflectable", "contentMode"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "dataUsingEncoding"]
@@ -3428,4 +3429,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "39dd1434e5b1996f850015c1365e98eb"
+interface-hash: "6c0f0a87a667970019567c8371507a9e"
