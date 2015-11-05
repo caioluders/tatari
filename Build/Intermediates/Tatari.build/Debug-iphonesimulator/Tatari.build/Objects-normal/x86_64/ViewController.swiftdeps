@@ -6,43 +6,44 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14ViewController", ""]
 provides-dynamic-lookup:
-- "JSONStringify"
-- "viewDidAppear"
-- "loginButton"
-- "HTTPsendRequest"
-- "HTTPPostJSON"
-- "getFBUserData"
 - "loginButtonDidLogOut"
+- "getFBUserData"
+- "HTTPPostJSON"
+- "HTTPsendRequest"
+- "loginButton"
 - "viewDidLoad"
+- "viewDidAppear"
+- "JSONStringify"
 depends-top-level:
-- !private "FBSDKGraphRequest"
-- !private "StringLiteralType"
-- "FBSDKLoginManagerLoginResult"
-- !private "FBSDKAccessToken"
-- !private "NSMutableDictionary"
-- !private "NSUTF8StringEncoding"
-- "UIViewController"
-- !private "!="
-- !private "NSString"
-- !private "NSURLSession"
-- !private "NSData"
-- !private "NSJSONSerialization"
-- !private "=="
-- "ViewController"
-- !private "NSJSONWritingOptions"
-- "AnyObject"
-- "FBSDKLoginButton"
-- "BooleanLiteralType"
-- "Void"
-- "NSMutableURLRequest"
-- !private "Dictionary"
-- "FBSDKLoginButtonDelegate"
-- "String"
-- !private "Array"
 - !private "NSURL"
-- "Bool"
-- "NSError"
 - !private "print"
+- !private "=="
+- "UIViewController"
+- "Bool"
+- !private "NSJSONSerialization"
+- !private "NSUTF8StringEncoding"
+- "FBSDKLoginButton"
+- !private "Array"
+- "ViewController"
+- !private "NSString"
+- "Void"
+- !private "Dictionary"
+- !private "StringLiteralType"
+- "AnyObject"
+- !private "NSMutableDictionary"
+- !private "FBSDKGraphRequest"
+- !private "NSUserDefaults"
+- "NSError"
+- !private "NSJSONWritingOptions"
+- "String"
+- !private "FBSDKAccessToken"
+- !private "NSData"
+- !private "NSURLSession"
+- "NSMutableURLRequest"
+- "BooleanLiteralType"
+- !private "!="
+- "FBSDKLoginButtonDelegate"
+- "FBSDKLoginManagerLoginResult"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -60,6 +61,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSURL"]
 - !private ["PSs9AnyObject", "NSURLSession"]
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "addSubview"]
 - !private ["PSs9AnyObject", "addValue"]
 - !private ["PSs9AnyObject", "center"]
@@ -83,8 +85,12 @@ depends-member:
 - !private ["PSs9AnyObject", "readPermissions"]
 - !private ["PSs9AnyObject", "resume"]
 - !private ["PSs9AnyObject", "setObject"]
+- !private ["PSs9AnyObject", "setValue"]
 - !private ["PSs9AnyObject", "sharedSession"]
+- !private ["PSs9AnyObject", "standardUserDefaults"]
 - !private ["PSs9AnyObject", "startWithCompletionHandler"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs9AnyObject", "synchronize"]
 - !private ["PSs9AnyObject", "tokenString"]
 - !private ["PSs9AnyObject", "view"]
 - ["PSs9AnyObject", "viewDidAppear"]
@@ -115,6 +121,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURL"]
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["PSs11CVarArgType", "NSUserDefaults"]
 - !private ["PSs11CVarArgType", "addSubview"]
 - !private ["PSs11CVarArgType", "addValue"]
 - !private ["PSs11CVarArgType", "center"]
@@ -137,8 +144,12 @@ depends-member:
 - !private ["PSs11CVarArgType", "readPermissions"]
 - !private ["PSs11CVarArgType", "resume"]
 - !private ["PSs11CVarArgType", "setObject"]
+- !private ["PSs11CVarArgType", "setValue"]
 - !private ["PSs11CVarArgType", "sharedSession"]
+- !private ["PSs11CVarArgType", "standardUserDefaults"]
 - !private ["PSs11CVarArgType", "startWithCompletionHandler"]
+- !private ["PSs11CVarArgType", "subscript"]
+- !private ["PSs11CVarArgType", "synchronize"]
 - !private ["PSs11CVarArgType", "tokenString"]
 - !private ["PSs11CVarArgType", "view"]
 - ["PSs11CVarArgType", "viewDidAppear"]
@@ -176,6 +187,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURL"]
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addSubview"]
@@ -201,8 +213,12 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "readPermissions"]
 - !private ["PSs23CustomStringConvertible", "resume"]
 - !private ["PSs23CustomStringConvertible", "setObject"]
+- !private ["PSs23CustomStringConvertible", "setValue"]
 - !private ["PSs23CustomStringConvertible", "sharedSession"]
+- !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "startWithCompletionHandler"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "synchronize"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
 - !private ["PSs23CustomStringConvertible", "view"]
 - ["PSs23CustomStringConvertible", "viewDidAppear"]
@@ -214,6 +230,7 @@ depends-member:
 - !private ["PSs28DictionaryLiteralConvertible", "Value"]
 - !private ["PSs28DictionaryLiteralConvertible", "init"]
 - !private ["PSs28DictionaryLiteralConvertible", "setObject"]
+- !private ["PSs28DictionaryLiteralConvertible", "subscript"]
 - !private ["PSs9Equatable", "FBSDKAccessToken"]
 - !private ["PSs9Equatable", "FBSDKGraphRequest"]
 - !private ["PSs9Equatable", "FBSDKLoginButton"]
@@ -231,6 +248,7 @@ depends-member:
 - !private ["PSs9Equatable", "NSURL"]
 - !private ["PSs9Equatable", "NSURLSession"]
 - !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addSubview"]
@@ -256,8 +274,12 @@ depends-member:
 - !private ["PSs9Equatable", "readPermissions"]
 - !private ["PSs9Equatable", "resume"]
 - !private ["PSs9Equatable", "setObject"]
+- !private ["PSs9Equatable", "setValue"]
 - !private ["PSs9Equatable", "sharedSession"]
+- !private ["PSs9Equatable", "standardUserDefaults"]
 - !private ["PSs9Equatable", "startWithCompletionHandler"]
+- !private ["PSs9Equatable", "subscript"]
+- !private ["PSs9Equatable", "synchronize"]
 - !private ["PSs9Equatable", "tokenString"]
 - !private ["PSs9Equatable", "view"]
 - ["PSs9Equatable", "viewDidAppear"]
@@ -295,6 +317,7 @@ depends-member:
 - !private ["PSo24FBSDKLoginButtonDelegate", "NSURL"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "NSURLSession"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "NSUTF8StringEncoding"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "NSUserDefaults"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "getFBUserData"]
 - ["PSo24FBSDKLoginButtonDelegate", "loginButton"]
 - ["PSo24FBSDKLoginButtonDelegate", "loginButtonDidLogOut"]
@@ -323,6 +346,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSURL"]
 - !private ["PSs8Hashable", "NSURLSession"]
 - !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addSubview"]
 - !private ["PSs8Hashable", "addValue"]
@@ -347,8 +371,12 @@ depends-member:
 - !private ["PSs8Hashable", "readPermissions"]
 - !private ["PSs8Hashable", "resume"]
 - !private ["PSs8Hashable", "setObject"]
+- !private ["PSs8Hashable", "setValue"]
 - !private ["PSs8Hashable", "sharedSession"]
+- !private ["PSs8Hashable", "standardUserDefaults"]
 - !private ["PSs8Hashable", "startWithCompletionHandler"]
+- !private ["PSs8Hashable", "subscript"]
+- !private ["PSs8Hashable", "synchronize"]
 - !private ["PSs8Hashable", "tokenString"]
 - !private ["PSs8Hashable", "view"]
 - ["PSs8Hashable", "viewDidAppear"]
@@ -381,6 +409,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "NSURLSession"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
+- !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addValue"]
 - !private ["PSo8NSCoding", "center"]
@@ -397,6 +426,7 @@ depends-member:
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "readPermissions"]
 - !private ["PSo8NSCoding", "setObject"]
+- !private ["PSo8NSCoding", "subscript"]
 - !private ["PSo8NSCoding", "tokenString"]
 - !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidAppear"]
@@ -412,9 +442,11 @@ depends-member:
 - !private ["PSo9NSCopying", "localizedDescription"]
 - !private ["PSo9NSCopying", "resume"]
 - !private ["PSo9NSCopying", "setObject"]
+- !private ["PSo9NSCopying", "subscript"]
 - !private ["PSo9NSCopying", "tokenString"]
 - !private ["CSo12NSDictionary", "init"]
 - !private ["CSo12NSDictionary", "setObject"]
+- !private ["CSo12NSDictionary", "subscript"]
 - !private ["CSo7NSError", "deinit"]
 - !private ["CSo7NSError", "localizedDescription"]
 - !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
@@ -431,6 +463,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - ["PSo26NSExtensionRequestHandling", "getFBUserData"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "loginButton"]
@@ -444,6 +477,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo17NSFastEnumeration", "setObject"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
 - !private ["CSo19NSJSONSerialization", "dataWithJSONObject"]
 - !private ["CSo19NSJSONSerialization", "isValidJSONObject"]
 - !private ["VSC20NSJSONWritingOptions", "PrettyPrinted"]
@@ -454,8 +488,10 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "setObject"]
+- !private ["PSo16NSMutableCopying", "subscript"]
 - !private ["CSo19NSMutableDictionary", "init"]
 - !private ["CSo19NSMutableDictionary", "setObject"]
+- !private ["CSo19NSMutableDictionary", "subscript"]
 - !private ["CSo19NSMutableURLRequest", "HTTPBody"]
 - !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
 - !private ["CSo19NSMutableURLRequest", "addValue"]
@@ -481,6 +517,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSURLSession"]
 - !private ["CSo8NSObject", "NSUTF8StringEncoding"]
+- !private ["CSo8NSObject", "NSUserDefaults"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -506,8 +543,12 @@ depends-member:
 - !private ["CSo8NSObject", "readPermissions"]
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "sharedSession"]
+- !private ["CSo8NSObject", "standardUserDefaults"]
 - !private ["CSo8NSObject", "startWithCompletionHandler"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "synchronize"]
 - !private ["CSo8NSObject", "tokenString"]
 - !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidAppear"]
@@ -528,6 +569,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - !private ["PSo16NSObjectProtocol", "center"]
@@ -550,8 +592,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "readPermissions"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "sharedSession"]
+- !private ["PSo16NSObjectProtocol", "standardUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "startWithCompletionHandler"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "synchronize"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
 - !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
@@ -565,6 +611,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "localizedDescription"]
 - !private ["PSo14NSSecureCoding", "setObject"]
+- !private ["PSo14NSSecureCoding", "subscript"]
 - !private ["PSo14NSSecureCoding", "tokenString"]
 - !private ["CSo8NSString", "dataUsingEncoding"]
 - !private ["CSo8NSString", "deinit"]
@@ -578,6 +625,9 @@ depends-member:
 - !private ["CSo12NSURLSession", "sharedSession"]
 - !private ["CSo20NSURLSessionDataTask", "resume"]
 - !private ["CSo16NSURLSessionTask", "resume"]
+- !private ["CSo14NSUserDefaults", "setValue"]
+- !private ["CSo14NSUserDefaults", "standardUserDefaults"]
+- !private ["CSo14NSUserDefaults", "synchronize"]
 - ["PSs21NilLiteralConvertible", "Some"]
 - !private ["PSs13OptionSetType", "PrettyPrinted"]
 - !private ["PSs13OptionSetType", "init"]
@@ -594,6 +644,7 @@ depends-member:
 - !private ["PSs12SequenceType", "contains"]
 - !private ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "setObject"]
+- !private ["PSs12SequenceType", "subscript"]
 - !private ["VSs3Set", "Generator"]
 - !private ["VSs3Set", "contains"]
 - !private ["PSs14SetAlgebraType", "PrettyPrinted"]
@@ -629,6 +680,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
+- !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -662,6 +714,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "NSURLSession"]
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
+- !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - ["PSo18UIContentContainer", "getFBUserData"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "loginButton"]
@@ -701,6 +754,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
+- !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -735,6 +789,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSURLSession"]
 - !private ["CSo11UIResponder", "NSUTF8StringEncoding"]
+- !private ["CSo11UIResponder", "NSUserDefaults"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addSubview"]
@@ -765,6 +820,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "NSURLSession"]
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
+- !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - ["PSo16UIStateRestoring", "getFBUserData"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "loginButton"]
@@ -790,6 +846,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
+- !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -829,6 +886,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSURL"]
 - !private ["CSo16UIViewController", "NSURLSession"]
 - !private ["CSo16UIViewController", "NSUTF8StringEncoding"]
+- !private ["CSo16UIViewController", "NSUserDefaults"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "getFBUserData"]
@@ -863,6 +921,7 @@ depends-member:
 - !private ["C6Tatari14ViewController", "NSURL"]
 - !private ["C6Tatari14ViewController", "NSURLSession"]
 - !private ["C6Tatari14ViewController", "NSUTF8StringEncoding"]
+- !private ["C6Tatari14ViewController", "NSUserDefaults"]
 - ["C6Tatari14ViewController", "String"]
 - ["C6Tatari14ViewController", "Void"]
 - ["C6Tatari14ViewController", "deinit"]
@@ -908,6 +967,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "readPermissions"]
 - !private ["PSs12_Reflectable", "setObject"]
+- !private ["PSs12_Reflectable", "subscript"]
 depends-nominal:
 - "PSs9AnyObject"
 - !private "Sa"
@@ -961,6 +1021,7 @@ depends-nominal:
 - !private "CSo12NSURLSession"
 - !private "CSo20NSURLSessionDataTask"
 - !private "CSo16NSURLSessionTask"
+- !private "CSo14NSUserDefaults"
 - "PSs21NilLiteralConvertible"
 - !private "PSs13OptionSetType"
 - "Sq"

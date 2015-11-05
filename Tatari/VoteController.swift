@@ -43,6 +43,12 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let nib = UINib(nibName: "votoCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "votocell")
         
+        self.getDataFromServer()
+    }
+    
+    func getDataFromServer(){
+        self.cleanAllArrays()
+        self.activityVote.startAnimating()
         let mutable_result =  NSMutableDictionary()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         self.HTTPPostJSON("http://45.55.146.229:116/poll", jsonObj: mutable_result, callback: { (data,error) -> Void in
@@ -82,6 +88,15 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 }
             }
         })
+    
+    }
+    
+    func cleanAllArrays(){
+        self.pictures = []
+        self.names = []
+        self.ids = []
+        self.qtdVotes = []
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -148,7 +163,6 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func buttonVoteAction(sender:UIButton!)
     {
         vote_for(sender.tag)
-        self.tableView.reloadData()
         print("votou "+String(sender.tag))
     }
     
@@ -265,10 +279,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             } else {
                 print("Error Getting Friends \(error)");
             }
-            
-            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
-                self.tableView.reloadData()
-            }
+            self.getDataFromServer()
         }
 
     }
