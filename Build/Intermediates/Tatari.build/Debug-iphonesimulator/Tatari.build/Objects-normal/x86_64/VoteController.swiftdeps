@@ -6,93 +6,94 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14VoteController", ""]
 provides-dynamic-lookup:
-- "ids"
-- "add_photo"
-- "names"
-- "items"
-- "imagePicker"
-- "btParticipar"
-- "HTTPsendRequest"
-- "data"
-- "activityVote"
-- "imagePickerController"
 - "JSONStringify"
-- "pictures"
-- "viewDidLoad"
-- "HTTPPostJSON"
-- "vote_for"
-- "buttonVoteAction"
+- "names"
+- "btParticipar"
+- "imagePickerController"
+- "items"
 - "votou"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "qtdVotes"
 - "didReceiveMemoryWarning"
+- "HTTPPostJSON"
+- "ids"
+- "buttonVoteAction"
+- "HTTPsendRequest"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "vote_for"
+- "voted"
+- "add_photo"
+- "data"
+- "imagePicker"
+- "viewDidLoad"
+- "pictures"
+- "activityVote"
 depends-top-level:
-- !private "dispatch_get_main_queue"
-- "StringLiteralType"
-- !private "NSURLSession"
-- !private "NSDataBase64EncodingOptions"
-- "VoteController"
-- "AnyObject"
-- !private "dispatch_async"
-- !private "NSLog"
-- !private "print"
-- !private "UIControlState"
-- !private "UINib"
-- !private "UnicodeScalarType"
-- !private "NSString"
-- !private "UIImagePickerControllerEditedImage"
-- !private "NSURL"
-- !private "FBSDKGraphRequestConnection"
-- "NSIndexPath"
-- "Void"
-- !private "UIControlEvents"
-- "UIImage"
-- "UIButton"
-- !private "NSError"
 - !private "FBSDKGraphRequest"
-- !private "NSDataBase64DecodingOptions"
-- !private "kUTTypeImage"
-- "CGFloat"
-- "UIActivityIndicatorView"
-- "NSMutableURLRequest"
-- "Bool"
-- "UIImagePickerController"
-- "UITableViewCell"
-- !private "Array"
-- "String"
-- !private "NSMutableDictionary"
-- !private "CFStringCompare"
-- !private "Dictionary"
-- "UINavigationControllerDelegate"
-- !private "=="
-- !private "UIImagePickerControllerOriginalImage"
-- !private "FBSDKAccessToken"
-- !private "+"
-- !private "CFComparisonResult"
 - !private "UIImagePickerControllerSourceType"
-- "NSURLConnectionDelegate"
-- !private "UIImageView"
-- !private "NSData"
-- "UIImagePickerControllerDelegate"
-- !private "NSJSONSerialization"
-- "BooleanLiteralType"
-- !private "UIImagePNGRepresentation"
-- "UITableViewDelegate"
-- "UIViewController"
-- "UITableView"
-- "UITableViewDataSource"
-- "NSMutableData"
-- !private "VotoTableViewCell"
-- !private "UIImagePickerControllerMediaType"
-- "Int"
-- !private "UIViewContentMode"
-- !private "JSON"
-- !private "NSJSONWritingOptions"
-- !private "NSUTF8StringEncoding"
 - !private "CFStringCompareFlags"
+- "UITableViewCell"
+- !private "NSUTF8StringEncoding"
+- "CGFloat"
+- !private "NSError"
+- !private "NSJSONSerialization"
+- !private "NSMutableDictionary"
+- !private "VotoTableViewCell"
+- !private "dispatch_async"
+- !private "NSURL"
+- !private "dispatch_get_main_queue"
+- !private "CFStringCompare"
+- !private "NSDataBase64DecodingOptions"
+- !private "NSJSONWritingOptions"
+- "UIViewController"
+- !private "NSString"
+- !private "CFComparisonResult"
+- "VoteController"
+- !private "FBSDKGraphRequestConnection"
+- !private "+"
+- !private "UIImageView"
+- "AnyObject"
+- !private "NSDataBase64EncodingOptions"
+- !private "NSLog"
+- "UIButton"
+- !private "NSData"
+- !private "NSURLSession"
+- "Bool"
+- !private "UIImagePickerControllerMediaType"
+- "Void"
+- !private "UIControlState"
+- "UIActivityIndicatorView"
+- "StringLiteralType"
+- "UIImagePickerControllerDelegate"
+- "NSIndexPath"
+- "NSURLConnectionDelegate"
+- "UIImagePickerController"
+- "UIImage"
+- "UITableViewDataSource"
+- !private "print"
+- "UITableViewDelegate"
+- "NSMutableData"
+- !private "FBSDKAccessToken"
+- !private "UINib"
+- "UITableView"
+- "Int"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "UIViewContentMode"
+- "BooleanLiteralType"
+- "Dictionary"
+- !private "kUTTypeImage"
+- !private "UIControlEvents"
+- !private "Array"
+- !private "=="
+- !private "UIImageJPEGRepresentation"
+- "NSMutableURLRequest"
+- !private "UIImagePickerControllerEditedImage"
+- !private "JSON"
+- "UINavigationControllerDelegate"
+- "String"
 - !private "!="
 depends-member:
 - !private ["PSs9AnyObject", "CFComparisonResult"]
@@ -124,7 +125,7 @@ depends-member:
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "UIControlState"]
 - !private ["PSs9AnyObject", "UIImage"]
-- !private ["PSs9AnyObject", "UIImagePNGRepresentation"]
+- !private ["PSs9AnyObject", "UIImageJPEGRepresentation"]
 - !private ["PSs9AnyObject", "UIImagePickerController"]
 - !private ["PSs9AnyObject", "UIImagePickerControllerEditedImage"]
 - !private ["PSs9AnyObject", "UIImagePickerControllerMediaType"]
@@ -186,6 +187,7 @@ depends-member:
 - ["PSs9AnyObject", "pictures"]
 - !private ["PSs9AnyObject", "presentViewController"]
 - !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", "qtdVotes"]
 - !private ["PSs9AnyObject", "registerNib"]
 - !private ["PSs9AnyObject", "reloadData"]
 - !private ["PSs9AnyObject", "resume"]
@@ -220,6 +222,7 @@ depends-member:
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", "vote_for"]
+- ["PSs9AnyObject", "voted"]
 - ["PSs9AnyObject", "votou"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Element"]
@@ -310,7 +313,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UIControlState"]
 - !private ["PSs11CVarArgType", "UIImage"]
-- !private ["PSs11CVarArgType", "UIImagePNGRepresentation"]
+- !private ["PSs11CVarArgType", "UIImageJPEGRepresentation"]
 - !private ["PSs11CVarArgType", "UIImagePickerController"]
 - !private ["PSs11CVarArgType", "UIImagePickerControllerEditedImage"]
 - !private ["PSs11CVarArgType", "UIImagePickerControllerMediaType"]
@@ -371,6 +374,7 @@ depends-member:
 - ["PSs11CVarArgType", "pictures"]
 - !private ["PSs11CVarArgType", "presentViewController"]
 - !private ["PSs11CVarArgType", "print"]
+- ["PSs11CVarArgType", "qtdVotes"]
 - !private ["PSs11CVarArgType", "registerNib"]
 - !private ["PSs11CVarArgType", "reloadData"]
 - !private ["PSs11CVarArgType", "resume"]
@@ -404,6 +408,7 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", "vote_for"]
+- ["PSs11CVarArgType", "voted"]
 - ["PSs11CVarArgType", "votou"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
@@ -481,7 +486,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UIControlState"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
-- !private ["PSs23CustomStringConvertible", "UIImagePNGRepresentation"]
+- !private ["PSs23CustomStringConvertible", "UIImageJPEGRepresentation"]
 - !private ["PSs23CustomStringConvertible", "UIImagePickerController"]
 - !private ["PSs23CustomStringConvertible", "UIImagePickerControllerEditedImage"]
 - !private ["PSs23CustomStringConvertible", "UIImagePickerControllerMediaType"]
@@ -547,6 +552,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "pictures"]
 - !private ["PSs23CustomStringConvertible", "presentViewController"]
 - !private ["PSs23CustomStringConvertible", "print"]
+- ["PSs23CustomStringConvertible", "qtdVotes"]
 - !private ["PSs23CustomStringConvertible", "registerNib"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "resume"]
@@ -582,6 +588,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", "vote_for"]
+- ["PSs23CustomStringConvertible", "voted"]
 - ["PSs23CustomStringConvertible", "votou"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["VSs10Dictionary", "Index"]
@@ -644,7 +651,7 @@ depends-member:
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UIControlState"]
 - !private ["PSs9Equatable", "UIImage"]
-- !private ["PSs9Equatable", "UIImagePNGRepresentation"]
+- !private ["PSs9Equatable", "UIImageJPEGRepresentation"]
 - !private ["PSs9Equatable", "UIImagePickerController"]
 - !private ["PSs9Equatable", "UIImagePickerControllerEditedImage"]
 - !private ["PSs9Equatable", "UIImagePickerControllerMediaType"]
@@ -709,6 +716,7 @@ depends-member:
 - ["PSs9Equatable", "pictures"]
 - !private ["PSs9Equatable", "presentViewController"]
 - !private ["PSs9Equatable", "print"]
+- ["PSs9Equatable", "qtdVotes"]
 - !private ["PSs9Equatable", "registerNib"]
 - !private ["PSs9Equatable", "reloadData"]
 - !private ["PSs9Equatable", "resume"]
@@ -744,6 +752,7 @@ depends-member:
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", "vote_for"]
+- ["PSs9Equatable", "voted"]
 - ["PSs9Equatable", "votou"]
 - ["PSs9Equatable", ""]
 - !private ["PSs9ErrorType", "localizedDescription"]
@@ -812,7 +821,7 @@ depends-member:
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UIControlState"]
 - !private ["PSs8Hashable", "UIImage"]
-- !private ["PSs8Hashable", "UIImagePNGRepresentation"]
+- !private ["PSs8Hashable", "UIImageJPEGRepresentation"]
 - !private ["PSs8Hashable", "UIImagePickerController"]
 - !private ["PSs8Hashable", "UIImagePickerControllerEditedImage"]
 - !private ["PSs8Hashable", "UIImagePickerControllerMediaType"]
@@ -874,6 +883,7 @@ depends-member:
 - ["PSs8Hashable", "pictures"]
 - !private ["PSs8Hashable", "presentViewController"]
 - !private ["PSs8Hashable", "print"]
+- ["PSs8Hashable", "qtdVotes"]
 - !private ["PSs8Hashable", "registerNib"]
 - !private ["PSs8Hashable", "reloadData"]
 - !private ["PSs8Hashable", "resume"]
@@ -907,6 +917,7 @@ depends-member:
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", "vote_for"]
+- ["PSs8Hashable", "voted"]
 - ["PSs8Hashable", "votou"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
@@ -1022,7 +1033,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIControlState"]
 - !private ["PSo8NSCoding", "UIImage"]
-- !private ["PSo8NSCoding", "UIImagePNGRepresentation"]
+- !private ["PSo8NSCoding", "UIImageJPEGRepresentation"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerEditedImage"]
 - !private ["PSo8NSCoding", "UIImagePickerControllerMediaType"]
@@ -1080,6 +1091,7 @@ depends-member:
 - ["PSo8NSCoding", "pictures"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "qtdVotes"]
 - !private ["PSo8NSCoding", "registerNib"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
@@ -1110,6 +1122,7 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "vote_for"]
+- ["PSo8NSCoding", "voted"]
 - ["PSo8NSCoding", "votou"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "HTTPBody"]
@@ -1160,7 +1173,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
-- !private ["PSo26NSExtensionRequestHandling", "UIImagePNGRepresentation"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImageJPEGRepresentation"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerEditedImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerControllerMediaType"]
@@ -1202,6 +1215,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "pictures"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "qtdVotes"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -1220,6 +1234,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", "vote_for"]
+- ["PSo26NSExtensionRequestHandling", "voted"]
 - ["PSo26NSExtensionRequestHandling", "votou"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "init"]
@@ -1280,7 +1295,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIControlState"]
 - ["CSo8NSObject", "UIImage"]
-- !private ["CSo8NSObject", "UIImagePNGRepresentation"]
+- !private ["CSo8NSObject", "UIImageJPEGRepresentation"]
 - ["CSo8NSObject", "UIImagePickerController"]
 - !private ["CSo8NSObject", "UIImagePickerControllerEditedImage"]
 - !private ["CSo8NSObject", "UIImagePickerControllerMediaType"]
@@ -1346,6 +1361,7 @@ depends-member:
 - ["CSo8NSObject", "pictures"]
 - !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "qtdVotes"]
 - !private ["CSo8NSObject", "registerNib"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "resume"]
@@ -1379,6 +1395,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "vote_for"]
+- ["CSo8NSObject", "voted"]
 - ["CSo8NSObject", "votou"]
 - !private ["PSo16NSObjectProtocol", "CFComparisonResult"]
 - !private ["PSo16NSObjectProtocol", "CFStringCompare"]
@@ -1409,7 +1426,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIControlState"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
-- !private ["PSo16NSObjectProtocol", "UIImagePNGRepresentation"]
+- !private ["PSo16NSObjectProtocol", "UIImageJPEGRepresentation"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerController"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerControllerEditedImage"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerControllerMediaType"]
@@ -1470,6 +1487,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "pictures"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "qtdVotes"]
 - !private ["PSo16NSObjectProtocol", "registerNib"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "resume"]
@@ -1503,6 +1521,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "vote_for"]
+- ["PSo16NSObjectProtocol", "voted"]
 - ["PSo16NSObjectProtocol", "votou"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "HTTPBody"]
@@ -1547,7 +1566,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "UIControlEvents"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlState"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImage"]
-- !private ["PSo23NSURLConnectionDelegate", "UIImagePNGRepresentation"]
+- !private ["PSo23NSURLConnectionDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImagePickerController"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImagePickerControllerEditedImage"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImagePickerControllerMediaType"]
@@ -1576,6 +1595,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "pictures"]
 - !private ["PSo23NSURLConnectionDelegate", "presentViewController"]
 - !private ["PSo23NSURLConnectionDelegate", "print"]
+- !private ["PSo23NSURLConnectionDelegate", "qtdVotes"]
 - ["PSo23NSURLConnectionDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo23NSURLConnectionDelegate", "scrollViewDidEndDragging"]
 - ["PSo23NSURLConnectionDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1769,7 +1789,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIControlState"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
-- !private ["PSo21UIAppearanceContainer", "UIImagePNGRepresentation"]
+- !private ["PSo21UIAppearanceContainer", "UIImageJPEGRepresentation"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerEditedImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerControllerMediaType"]
@@ -1822,6 +1842,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pictures"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "qtdVotes"]
 - !private ["PSo21UIAppearanceContainer", "registerNib"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
@@ -1848,6 +1869,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "vote_for"]
+- ["PSo21UIAppearanceContainer", "voted"]
 - ["PSo21UIAppearanceContainer", "votou"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo8UIButton", "addTarget"]
@@ -1880,7 +1902,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIControlState"]
 - !private ["PSo18UIContentContainer", "UIImage"]
-- !private ["PSo18UIContentContainer", "UIImagePNGRepresentation"]
+- !private ["PSo18UIContentContainer", "UIImageJPEGRepresentation"]
 - !private ["PSo18UIContentContainer", "UIImagePickerController"]
 - !private ["PSo18UIContentContainer", "UIImagePickerControllerEditedImage"]
 - !private ["PSo18UIContentContainer", "UIImagePickerControllerMediaType"]
@@ -1922,6 +1944,7 @@ depends-member:
 - ["PSo18UIContentContainer", "pictures"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "qtdVotes"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1940,6 +1963,7 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "vote_for"]
+- ["PSo18UIContentContainer", "voted"]
 - ["PSo18UIContentContainer", "votou"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "addTarget"]
@@ -2014,7 +2038,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIControlState"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
-- !private ["PSo18UIFocusEnvironment", "UIImagePNGRepresentation"]
+- !private ["PSo18UIFocusEnvironment", "UIImageJPEGRepresentation"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerEditedImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerControllerMediaType"]
@@ -2067,6 +2091,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pictures"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "qtdVotes"]
 - !private ["PSo18UIFocusEnvironment", "registerNib"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
@@ -2093,6 +2118,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", "vote_for"]
+- ["PSo18UIFocusEnvironment", "voted"]
 - ["PSo18UIFocusEnvironment", "votou"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "btVote"]
@@ -2134,7 +2160,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlEvents"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlState"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImage"]
-- !private ["PSo31UIImagePickerControllerDelegate", "UIImagePNGRepresentation"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerControllerEditedImage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerControllerMediaType"]
@@ -2163,6 +2189,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "pictures"]
 - !private ["PSo31UIImagePickerControllerDelegate", "presentViewController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "print"]
+- !private ["PSo31UIImagePickerControllerDelegate", "qtdVotes"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewDidEndDragging"]
 - ["PSo31UIImagePickerControllerDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -2219,7 +2246,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "UIControlEvents"]
 - !private ["PSo30UINavigationControllerDelegate", "UIControlState"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImage"]
-- !private ["PSo30UINavigationControllerDelegate", "UIImagePNGRepresentation"]
+- !private ["PSo30UINavigationControllerDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerEditedImage"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerControllerMediaType"]
@@ -2248,6 +2275,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "pictures"]
 - !private ["PSo30UINavigationControllerDelegate", "presentViewController"]
 - !private ["PSo30UINavigationControllerDelegate", "print"]
+- !private ["PSo30UINavigationControllerDelegate", "qtdVotes"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewDidEndDragging"]
 - ["PSo30UINavigationControllerDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -2303,7 +2331,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIControlState"]
 - ["CSo11UIResponder", "UIImage"]
-- !private ["CSo11UIResponder", "UIImagePNGRepresentation"]
+- !private ["CSo11UIResponder", "UIImageJPEGRepresentation"]
 - ["CSo11UIResponder", "UIImagePickerController"]
 - !private ["CSo11UIResponder", "UIImagePickerControllerEditedImage"]
 - !private ["CSo11UIResponder", "UIImagePickerControllerMediaType"]
@@ -2360,6 +2388,7 @@ depends-member:
 - ["CSo11UIResponder", "pictures"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "qtdVotes"]
 - !private ["CSo11UIResponder", "registerNib"]
 - !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
@@ -2386,6 +2415,7 @@ depends-member:
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "vote_for"]
+- ["CSo11UIResponder", "voted"]
 - ["CSo11UIResponder", "votou"]
 - !private ["CSo12UIScrollView", "allowsSelection"]
 - !private ["CSo12UIScrollView", "backgroundView"]
@@ -2420,7 +2450,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlState"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
-- !private ["PSo20UIScrollViewDelegate", "UIImagePNGRepresentation"]
+- !private ["PSo20UIScrollViewDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerController"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerControllerEditedImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerControllerMediaType"]
@@ -2449,6 +2479,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "pictures"]
 - !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "qtdVotes"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -2494,7 +2525,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIControlState"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
-- !private ["PSo16UIStateRestoring", "UIImagePNGRepresentation"]
+- !private ["PSo16UIStateRestoring", "UIImageJPEGRepresentation"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerController"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerControllerEditedImage"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerControllerMediaType"]
@@ -2536,6 +2567,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "pictures"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "qtdVotes"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -2554,6 +2586,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "vote_for"]
+- ["PSo16UIStateRestoring", "voted"]
 - ["PSo16UIStateRestoring", "votou"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "allowsSelection"]
@@ -2595,7 +2628,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
 - !private ["PSo21UITableViewDataSource", "UIControlState"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
-- !private ["PSo21UITableViewDataSource", "UIImagePNGRepresentation"]
+- !private ["PSo21UITableViewDataSource", "UIImageJPEGRepresentation"]
 - !private ["PSo21UITableViewDataSource", "UIImagePickerController"]
 - !private ["PSo21UITableViewDataSource", "UIImagePickerControllerEditedImage"]
 - !private ["PSo21UITableViewDataSource", "UIImagePickerControllerMediaType"]
@@ -2624,6 +2657,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "pictures"]
 - !private ["PSo21UITableViewDataSource", "presentViewController"]
 - !private ["PSo21UITableViewDataSource", "print"]
+- !private ["PSo21UITableViewDataSource", "qtdVotes"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -2669,7 +2703,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
 - !private ["PSo19UITableViewDelegate", "UIControlState"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
-- !private ["PSo19UITableViewDelegate", "UIImagePNGRepresentation"]
+- !private ["PSo19UITableViewDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo19UITableViewDelegate", "UIImagePickerController"]
 - !private ["PSo19UITableViewDelegate", "UIImagePickerControllerEditedImage"]
 - !private ["PSo19UITableViewDelegate", "UIImagePickerControllerMediaType"]
@@ -2698,6 +2732,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "pictures"]
 - !private ["PSo19UITableViewDelegate", "presentViewController"]
 - !private ["PSo19UITableViewDelegate", "print"]
+- !private ["PSo19UITableViewDelegate", "qtdVotes"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -2743,7 +2778,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIControlState"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
-- !private ["PSo18UITraitEnvironment", "UIImagePNGRepresentation"]
+- !private ["PSo18UITraitEnvironment", "UIImageJPEGRepresentation"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerControllerEditedImage"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerControllerMediaType"]
@@ -2796,6 +2831,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pictures"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "qtdVotes"]
 - !private ["PSo18UITraitEnvironment", "registerNib"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
@@ -2822,6 +2858,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", "vote_for"]
+- ["PSo18UITraitEnvironment", "voted"]
 - ["PSo18UITraitEnvironment", "votou"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
@@ -2880,7 +2917,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIControlState"]
 - ["CSo16UIViewController", "UIImage"]
-- !private ["CSo16UIViewController", "UIImagePNGRepresentation"]
+- !private ["CSo16UIViewController", "UIImageJPEGRepresentation"]
 - ["CSo16UIViewController", "UIImagePickerController"]
 - !private ["CSo16UIViewController", "UIImagePickerControllerEditedImage"]
 - !private ["CSo16UIViewController", "UIImagePickerControllerMediaType"]
@@ -2926,6 +2963,7 @@ depends-member:
 - ["CSo16UIViewController", "pictures"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "qtdVotes"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -2944,6 +2982,7 @@ depends-member:
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "vote_for"]
+- ["CSo16UIViewController", "voted"]
 - ["CSo16UIViewController", "votou"]
 - ["CSo16UIViewController", ""]
 - !private ["Su", "deinit"]
@@ -2996,7 +3035,7 @@ depends-member:
 - !private ["C6Tatari14VoteController", "UIControlEvents"]
 - !private ["C6Tatari14VoteController", "UIControlState"]
 - ["C6Tatari14VoteController", "UIImage"]
-- !private ["C6Tatari14VoteController", "UIImagePNGRepresentation"]
+- !private ["C6Tatari14VoteController", "UIImageJPEGRepresentation"]
 - ["C6Tatari14VoteController", "UIImagePickerController"]
 - !private ["C6Tatari14VoteController", "UIImagePickerControllerEditedImage"]
 - !private ["C6Tatari14VoteController", "UIImagePickerControllerMediaType"]
@@ -3038,6 +3077,7 @@ depends-member:
 - ["C6Tatari14VoteController", "pictures"]
 - !private ["C6Tatari14VoteController", "presentViewController"]
 - !private ["C6Tatari14VoteController", "print"]
+- ["C6Tatari14VoteController", "qtdVotes"]
 - ["C6Tatari14VoteController", "scrollViewDidEndDecelerating"]
 - ["C6Tatari14VoteController", "scrollViewDidEndDragging"]
 - ["C6Tatari14VoteController", "scrollViewDidEndScrollingAnimation"]
@@ -3055,6 +3095,7 @@ depends-member:
 - ["C6Tatari14VoteController", "viewDidLoad"]
 - ["C6Tatari14VoteController", "viewForZoomingInScrollView"]
 - ["C6Tatari14VoteController", "vote_for"]
+- ["C6Tatari14VoteController", "voted"]
 - ["C6Tatari14VoteController", "votou"]
 - !private ["C6Tatari17VotoTableViewCell", "btVote"]
 - !private ["C6Tatari17VotoTableViewCell", "imgPerson"]
@@ -3387,4 +3428,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "276999a31b8870bfc490fd2e1a955e87"
+interface-hash: "39dd1434e5b1996f850015c1365e98eb"

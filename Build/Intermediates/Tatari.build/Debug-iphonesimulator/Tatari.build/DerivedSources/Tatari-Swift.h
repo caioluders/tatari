@@ -182,13 +182,20 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @property (nonatomic, readonly) BOOL isBool;
 @end
 
+@class UITextField;
 @class NSString;
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
-@interface SearchController : UIViewController
+@interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tblSearchResults;
+@property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)textFieldDidChange:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
@@ -225,6 +232,8 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityVote;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
 @property (nonatomic, copy) NSArray<UIImage *> * __nonnull pictures;
+@property (nonatomic, copy) NSArray<NSNumber *> * __nonnull qtdVotes;
+@property (nonatomic, copy) NSArray<NSNumber *> * __nonnull voted;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull names;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull ids;
 @property (nonatomic, strong) NSMutableData * __nonnull data;

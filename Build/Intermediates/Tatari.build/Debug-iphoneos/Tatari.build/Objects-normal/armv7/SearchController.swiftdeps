@@ -1,0 +1,809 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SearchController"
+provides-nominal:
+- "C6Tatari16SearchController"
+provides-member:
+- ["C6Tatari16SearchController", ""]
+provides-dynamic-lookup:
+- "HTTPsendRequest"
+- "JSONStringify"
+- "search_people"
+- "HTTPPostJSON"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+depends-top-level:
+- !private "StringLiteralType"
+- "AnyObject"
+- !private "!="
+- !private "NSURLSession"
+- !private "Array"
+- !private "FBSDKAccessToken"
+- !private "print"
+- "String"
+- "Void"
+- !private "NSURL"
+- "NSMutableURLRequest"
+- "NSString"
+- !private "JSON"
+- !private "NSData"
+- "SearchController"
+- !private "NSUTF8StringEncoding"
+- "BooleanLiteralType"
+- !private "NSMutableDictionary"
+- !private "NSJSONSerialization"
+- "UIViewController"
+- !private "NSJSONWritingOptions"
+- "Bool"
+depends-member:
+- !private ["PSs9AnyObject", "Element"]
+- !private ["PSs9AnyObject", "FBSDKAccessToken"]
+- !private ["PSs9AnyObject", "HTTPBody"]
+- !private ["PSs9AnyObject", "HTTPMethod"]
+- ["PSs9AnyObject", "HTTPPostJSON"]
+- ["PSs9AnyObject", "HTTPsendRequest"]
+- !private ["PSs9AnyObject", "JSON"]
+- ["PSs9AnyObject", "JSONStringify"]
+- !private ["PSs9AnyObject", "NSJSONSerialization"]
+- !private ["PSs9AnyObject", "NSJSONWritingOptions"]
+- !private ["PSs9AnyObject", "NSMutableDictionary"]
+- !private ["PSs9AnyObject", "NSMutableURLRequest"]
+- !private ["PSs9AnyObject", "NSString"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "NSURLSession"]
+- !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- !private ["PSs9AnyObject", "addValue"]
+- !private ["PSs9AnyObject", "currentAccessToken"]
+- !private ["PSs9AnyObject", "dataTaskWithRequest"]
+- !private ["PSs9AnyObject", "dataUsingEncoding"]
+- !private ["PSs9AnyObject", "dataWithJSONObject"]
+- !private ["PSs9AnyObject", "deinit"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "isValidJSONObject"]
+- !private ["PSs9AnyObject", "localizedDescription"]
+- !private ["PSs9AnyObject", "navigationItem"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "resume"]
+- ["PSs9AnyObject", "search_people"]
+- !private ["PSs9AnyObject", "setObject"]
+- !private ["PSs9AnyObject", "sharedSession"]
+- !private ["PSs9AnyObject", "title"]
+- !private ["PSs9AnyObject", "tokenString"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "deinit"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "PrettyPrinted"]
+- !private ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "init"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "init"]
+- !private ["PSs11CVarArgType", "Element"]
+- !private ["PSs11CVarArgType", "FBSDKAccessToken"]
+- !private ["PSs11CVarArgType", "HTTPBody"]
+- !private ["PSs11CVarArgType", "HTTPMethod"]
+- ["PSs11CVarArgType", "HTTPPostJSON"]
+- ["PSs11CVarArgType", "HTTPsendRequest"]
+- !private ["PSs11CVarArgType", "JSON"]
+- ["PSs11CVarArgType", "JSONStringify"]
+- !private ["PSs11CVarArgType", "NSJSONSerialization"]
+- !private ["PSs11CVarArgType", "NSJSONWritingOptions"]
+- !private ["PSs11CVarArgType", "NSMutableDictionary"]
+- !private ["PSs11CVarArgType", "NSMutableURLRequest"]
+- !private ["PSs11CVarArgType", "NSString"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "NSURLSession"]
+- !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["PSs11CVarArgType", "addValue"]
+- !private ["PSs11CVarArgType", "currentAccessToken"]
+- !private ["PSs11CVarArgType", "dataTaskWithRequest"]
+- !private ["PSs11CVarArgType", "dataUsingEncoding"]
+- !private ["PSs11CVarArgType", "dataWithJSONObject"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "isValidJSONObject"]
+- !private ["PSs11CVarArgType", "localizedDescription"]
+- !private ["PSs11CVarArgType", "navigationItem"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "resume"]
+- ["PSs11CVarArgType", "search_people"]
+- !private ["PSs11CVarArgType", "setObject"]
+- !private ["PSs11CVarArgType", "sharedSession"]
+- !private ["PSs11CVarArgType", "title"]
+- !private ["PSs11CVarArgType", "tokenString"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs14CollectionType", "init"]
+- !private ["PSs10Comparable", "dataUsingEncoding"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "FBSDKAccessToken"]
+- !private ["PSs23CustomStringConvertible", "HTTPBody"]
+- !private ["PSs23CustomStringConvertible", "HTTPMethod"]
+- ["PSs23CustomStringConvertible", "HTTPPostJSON"]
+- ["PSs23CustomStringConvertible", "HTTPsendRequest"]
+- !private ["PSs23CustomStringConvertible", "JSON"]
+- ["PSs23CustomStringConvertible", "JSONStringify"]
+- !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
+- !private ["PSs23CustomStringConvertible", "NSJSONWritingOptions"]
+- !private ["PSs23CustomStringConvertible", "NSMutableDictionary"]
+- !private ["PSs23CustomStringConvertible", "NSMutableURLRequest"]
+- !private ["PSs23CustomStringConvertible", "NSString"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "NSURLSession"]
+- !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addValue"]
+- !private ["PSs23CustomStringConvertible", "currentAccessToken"]
+- !private ["PSs23CustomStringConvertible", "dataTaskWithRequest"]
+- !private ["PSs23CustomStringConvertible", "dataUsingEncoding"]
+- !private ["PSs23CustomStringConvertible", "dataWithJSONObject"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "isValidJSONObject"]
+- !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- !private ["PSs23CustomStringConvertible", "navigationItem"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "resume"]
+- ["PSs23CustomStringConvertible", "search_people"]
+- !private ["PSs23CustomStringConvertible", "setObject"]
+- !private ["PSs23CustomStringConvertible", "sharedSession"]
+- !private ["PSs23CustomStringConvertible", "title"]
+- !private ["PSs23CustomStringConvertible", "tokenString"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "deinit"]
+- !private ["PSs28DictionaryLiteralConvertible", "init"]
+- !private ["PSs28DictionaryLiteralConvertible", "setObject"]
+- !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "Element"]
+- !private ["PSs9Equatable", "FBSDKAccessToken"]
+- !private ["PSs9Equatable", "HTTPBody"]
+- !private ["PSs9Equatable", "HTTPMethod"]
+- ["PSs9Equatable", "HTTPPostJSON"]
+- ["PSs9Equatable", "HTTPsendRequest"]
+- !private ["PSs9Equatable", "JSON"]
+- ["PSs9Equatable", "JSONStringify"]
+- !private ["PSs9Equatable", "NSJSONSerialization"]
+- !private ["PSs9Equatable", "NSJSONWritingOptions"]
+- !private ["PSs9Equatable", "NSMutableDictionary"]
+- !private ["PSs9Equatable", "NSMutableURLRequest"]
+- !private ["PSs9Equatable", "NSString"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "NSURLSession"]
+- !private ["PSs9Equatable", "NSUTF8StringEncoding"]
+- !private ["PSs9Equatable", "PrettyPrinted"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addValue"]
+- !private ["PSs9Equatable", "currentAccessToken"]
+- !private ["PSs9Equatable", "dataTaskWithRequest"]
+- !private ["PSs9Equatable", "dataUsingEncoding"]
+- !private ["PSs9Equatable", "dataWithJSONObject"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "isValidJSONObject"]
+- !private ["PSs9Equatable", "localizedDescription"]
+- !private ["PSs9Equatable", "navigationItem"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "resume"]
+- ["PSs9Equatable", "search_people"]
+- !private ["PSs9Equatable", "setObject"]
+- !private ["PSs9Equatable", "sharedSession"]
+- !private ["PSs9Equatable", "title"]
+- !private ["PSs9Equatable", "tokenString"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs9ErrorType", "localizedDescription"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["CSo16FBSDKAccessToken", "currentAccessToken"]
+- !private ["CSo16FBSDKAccessToken", "tokenString"]
+- !private ["PSo12FBSDKCopying", "currentAccessToken"]
+- !private ["PSo12FBSDKCopying", "tokenString"]
+- !private ["PSs23FloatLiteralConvertible", "init"]
+- !private ["PSs8Hashable", "Element"]
+- !private ["PSs8Hashable", "FBSDKAccessToken"]
+- !private ["PSs8Hashable", "HTTPBody"]
+- !private ["PSs8Hashable", "HTTPMethod"]
+- ["PSs8Hashable", "HTTPPostJSON"]
+- ["PSs8Hashable", "HTTPsendRequest"]
+- !private ["PSs8Hashable", "JSON"]
+- ["PSs8Hashable", "JSONStringify"]
+- !private ["PSs8Hashable", "NSJSONSerialization"]
+- !private ["PSs8Hashable", "NSJSONWritingOptions"]
+- !private ["PSs8Hashable", "NSMutableDictionary"]
+- !private ["PSs8Hashable", "NSMutableURLRequest"]
+- !private ["PSs8Hashable", "NSString"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "NSURLSession"]
+- !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addValue"]
+- !private ["PSs8Hashable", "currentAccessToken"]
+- !private ["PSs8Hashable", "dataTaskWithRequest"]
+- !private ["PSs8Hashable", "dataUsingEncoding"]
+- !private ["PSs8Hashable", "dataWithJSONObject"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "isValidJSONObject"]
+- !private ["PSs8Hashable", "localizedDescription"]
+- !private ["PSs8Hashable", "navigationItem"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "resume"]
+- ["PSs8Hashable", "search_people"]
+- !private ["PSs8Hashable", "setObject"]
+- !private ["PSs8Hashable", "sharedSession"]
+- !private ["PSs8Hashable", "title"]
+- !private ["PSs8Hashable", "tokenString"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs9Indexable", "init"]
+- !private ["Si", "deinit"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["V6Tatari4JSON", "deinit"]
+- !private ["V6Tatari4JSON", "init"]
+- !private ["P6Tatari17JSONSubscriptType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["CSo7NSArray", "Element"]
+- !private ["PSo8NSCoding", "Element"]
+- !private ["PSo8NSCoding", "FBSDKAccessToken"]
+- !private ["PSo8NSCoding", "HTTPBody"]
+- !private ["PSo8NSCoding", "HTTPMethod"]
+- ["PSo8NSCoding", "HTTPPostJSON"]
+- ["PSo8NSCoding", "HTTPsendRequest"]
+- !private ["PSo8NSCoding", "JSON"]
+- ["PSo8NSCoding", "JSONStringify"]
+- !private ["PSo8NSCoding", "NSJSONSerialization"]
+- !private ["PSo8NSCoding", "NSJSONWritingOptions"]
+- !private ["PSo8NSCoding", "NSMutableDictionary"]
+- !private ["PSo8NSCoding", "NSMutableURLRequest"]
+- !private ["PSo8NSCoding", "NSString"]
+- !private ["PSo8NSCoding", "NSURL"]
+- !private ["PSo8NSCoding", "NSURLSession"]
+- !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
+- !private ["PSo8NSCoding", "addValue"]
+- !private ["PSo8NSCoding", "currentAccessToken"]
+- !private ["PSo8NSCoding", "dataUsingEncoding"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "localizedDescription"]
+- !private ["PSo8NSCoding", "navigationItem"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "search_people"]
+- !private ["PSo8NSCoding", "setObject"]
+- !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "tokenString"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "Element"]
+- !private ["PSo9NSCopying", "HTTPBody"]
+- !private ["PSo9NSCopying", "HTTPMethod"]
+- !private ["PSo9NSCopying", "addValue"]
+- !private ["PSo9NSCopying", "currentAccessToken"]
+- !private ["PSo9NSCopying", "dataUsingEncoding"]
+- !private ["PSo9NSCopying", "deinit"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "localizedDescription"]
+- !private ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "setObject"]
+- !private ["PSo9NSCopying", "tokenString"]
+- !private ["CSo12NSDictionary", "init"]
+- !private ["CSo12NSDictionary", "setObject"]
+- !private ["CSo7NSError", "localizedDescription"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
+- ["PSo26NSExtensionRequestHandling", "HTTPPostJSON"]
+- ["PSo26NSExtensionRequestHandling", "HTTPsendRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "JSON"]
+- ["PSo26NSExtensionRequestHandling", "JSONStringify"]
+- !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
+- !private ["PSo26NSExtensionRequestHandling", "NSJSONWritingOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMutableDictionary"]
+- !private ["PSo26NSExtensionRequestHandling", "NSMutableURLRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "NSString"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURL"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
+- !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "search_people"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "Element"]
+- !private ["PSo17NSFastEnumeration", "init"]
+- !private ["PSo17NSFastEnumeration", "setObject"]
+- !private ["CSo19NSJSONSerialization", "dataWithJSONObject"]
+- !private ["CSo19NSJSONSerialization", "isValidJSONObject"]
+- !private ["VSC20NSJSONWritingOptions", "PrettyPrinted"]
+- !private ["VSC20NSJSONWritingOptions", "init"]
+- !private ["PSo16NSMutableCopying", "Element"]
+- !private ["PSo16NSMutableCopying", "HTTPBody"]
+- !private ["PSo16NSMutableCopying", "HTTPMethod"]
+- !private ["PSo16NSMutableCopying", "addValue"]
+- !private ["PSo16NSMutableCopying", "dataUsingEncoding"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "setObject"]
+- !private ["CSo19NSMutableDictionary", "init"]
+- !private ["CSo19NSMutableDictionary", "setObject"]
+- !private ["CSo19NSMutableURLRequest", "HTTPBody"]
+- !private ["CSo19NSMutableURLRequest", "HTTPMethod"]
+- !private ["CSo19NSMutableURLRequest", "addValue"]
+- !private ["CSo19NSMutableURLRequest", "init"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Element"]
+- !private ["CSo8NSObject", "FBSDKAccessToken"]
+- !private ["CSo8NSObject", "HTTPBody"]
+- !private ["CSo8NSObject", "HTTPMethod"]
+- ["CSo8NSObject", "HTTPPostJSON"]
+- ["CSo8NSObject", "HTTPsendRequest"]
+- !private ["CSo8NSObject", "JSON"]
+- ["CSo8NSObject", "JSONStringify"]
+- !private ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSJSONSerialization"]
+- !private ["CSo8NSObject", "NSJSONWritingOptions"]
+- !private ["CSo8NSObject", "NSMutableDictionary"]
+- ["CSo8NSObject", "NSMutableURLRequest"]
+- ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "NSURLSession"]
+- !private ["CSo8NSObject", "NSUTF8StringEncoding"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addValue"]
+- !private ["CSo8NSObject", "currentAccessToken"]
+- !private ["CSo8NSObject", "dataTaskWithRequest"]
+- !private ["CSo8NSObject", "dataUsingEncoding"]
+- !private ["CSo8NSObject", "dataWithJSONObject"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isValidJSONObject"]
+- !private ["CSo8NSObject", "localizedDescription"]
+- !private ["CSo8NSObject", "navigationItem"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "resume"]
+- ["CSo8NSObject", "search_people"]
+- !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "sharedSession"]
+- !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "tokenString"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Element"]
+- !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
+- !private ["PSo16NSObjectProtocol", "HTTPBody"]
+- !private ["PSo16NSObjectProtocol", "HTTPMethod"]
+- ["PSo16NSObjectProtocol", "HTTPPostJSON"]
+- ["PSo16NSObjectProtocol", "HTTPsendRequest"]
+- !private ["PSo16NSObjectProtocol", "JSON"]
+- ["PSo16NSObjectProtocol", "JSONStringify"]
+- !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
+- !private ["PSo16NSObjectProtocol", "NSJSONWritingOptions"]
+- !private ["PSo16NSObjectProtocol", "NSMutableDictionary"]
+- !private ["PSo16NSObjectProtocol", "NSMutableURLRequest"]
+- !private ["PSo16NSObjectProtocol", "NSString"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "NSURLSession"]
+- !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- !private ["PSo16NSObjectProtocol", "addValue"]
+- !private ["PSo16NSObjectProtocol", "currentAccessToken"]
+- !private ["PSo16NSObjectProtocol", "dataTaskWithRequest"]
+- !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
+- !private ["PSo16NSObjectProtocol", "dataWithJSONObject"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isValidJSONObject"]
+- !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "resume"]
+- ["PSo16NSObjectProtocol", "search_people"]
+- !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "sharedSession"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "tokenString"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "Element"]
+- !private ["PSo14NSSecureCoding", "HTTPBody"]
+- !private ["PSo14NSSecureCoding", "HTTPMethod"]
+- !private ["PSo14NSSecureCoding", "addValue"]
+- !private ["PSo14NSSecureCoding", "currentAccessToken"]
+- !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["PSo14NSSecureCoding", "setObject"]
+- !private ["PSo14NSSecureCoding", "tokenString"]
+- !private ["CSo8NSString", "dataUsingEncoding"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["CSo12NSURLRequest", "HTTPBody"]
+- !private ["CSo12NSURLRequest", "HTTPMethod"]
+- !private ["CSo12NSURLRequest", "addValue"]
+- !private ["CSo12NSURLRequest", "init"]
+- !private ["CSo12NSURLSession", "dataTaskWithRequest"]
+- !private ["CSo12NSURLSession", "sharedSession"]
+- !private ["CSo20NSURLSessionDataTask", "resume"]
+- !private ["CSo16NSURLSessionTask", "resume"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- !private ["PSs21NilLiteralConvertible", "init"]
+- !private ["PSs13OptionSetType", "PrettyPrinted"]
+- !private ["PSs13OptionSetType", "init"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs16RawRepresentable", "PrettyPrinted"]
+- !private ["PSs16RawRepresentable", "init"]
+- ["C6Tatari16SearchController", "AnyObject"]
+- ["C6Tatari16SearchController", "Bool"]
+- !private ["C6Tatari16SearchController", "FBSDKAccessToken"]
+- ["C6Tatari16SearchController", "HTTPPostJSON"]
+- ["C6Tatari16SearchController", "HTTPsendRequest"]
+- !private ["C6Tatari16SearchController", "JSON"]
+- ["C6Tatari16SearchController", "JSONStringify"]
+- !private ["C6Tatari16SearchController", "NSData"]
+- !private ["C6Tatari16SearchController", "NSJSONSerialization"]
+- !private ["C6Tatari16SearchController", "NSJSONWritingOptions"]
+- !private ["C6Tatari16SearchController", "NSMutableDictionary"]
+- ["C6Tatari16SearchController", "NSMutableURLRequest"]
+- ["C6Tatari16SearchController", "NSString"]
+- !private ["C6Tatari16SearchController", "NSURL"]
+- !private ["C6Tatari16SearchController", "NSURLSession"]
+- !private ["C6Tatari16SearchController", "NSUTF8StringEncoding"]
+- ["C6Tatari16SearchController", "String"]
+- ["C6Tatari16SearchController", "Void"]
+- ["C6Tatari16SearchController", "deinit"]
+- ["C6Tatari16SearchController", "didReceiveMemoryWarning"]
+- ["C6Tatari16SearchController", "init"]
+- !private ["C6Tatari16SearchController", "navigationItem"]
+- !private ["C6Tatari16SearchController", "print"]
+- ["C6Tatari16SearchController", "search_people"]
+- ["C6Tatari16SearchController", "viewDidLoad"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "setObject"]
+- !private ["PSs14SetAlgebraType", "PrettyPrinted"]
+- !private ["PSs14SetAlgebraType", "init"]
+- !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["SS", "dataUsingEncoding"]
+- !private ["SS", "deinit"]
+- !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
+- ["PSo21UIAppearanceContainer", "HTTPPostJSON"]
+- ["PSo21UIAppearanceContainer", "HTTPsendRequest"]
+- !private ["PSo21UIAppearanceContainer", "JSON"]
+- ["PSo21UIAppearanceContainer", "JSONStringify"]
+- !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
+- !private ["PSo21UIAppearanceContainer", "NSJSONWritingOptions"]
+- !private ["PSo21UIAppearanceContainer", "NSMutableDictionary"]
+- !private ["PSo21UIAppearanceContainer", "NSMutableURLRequest"]
+- !private ["PSo21UIAppearanceContainer", "NSString"]
+- !private ["PSo21UIAppearanceContainer", "NSURL"]
+- !private ["PSo21UIAppearanceContainer", "NSURLSession"]
+- !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "search_people"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
+- ["PSo18UIContentContainer", "HTTPPostJSON"]
+- ["PSo18UIContentContainer", "HTTPsendRequest"]
+- !private ["PSo18UIContentContainer", "JSON"]
+- ["PSo18UIContentContainer", "JSONStringify"]
+- !private ["PSo18UIContentContainer", "NSJSONSerialization"]
+- !private ["PSo18UIContentContainer", "NSJSONWritingOptions"]
+- !private ["PSo18UIContentContainer", "NSMutableDictionary"]
+- !private ["PSo18UIContentContainer", "NSMutableURLRequest"]
+- !private ["PSo18UIContentContainer", "NSString"]
+- !private ["PSo18UIContentContainer", "NSURL"]
+- !private ["PSo18UIContentContainer", "NSURLSession"]
+- !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "search_people"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
+- ["PSo18UIFocusEnvironment", "HTTPPostJSON"]
+- ["PSo18UIFocusEnvironment", "HTTPsendRequest"]
+- !private ["PSo18UIFocusEnvironment", "JSON"]
+- ["PSo18UIFocusEnvironment", "JSONStringify"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
+- !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
+- !private ["PSo18UIFocusEnvironment", "NSMutableURLRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSString"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "NSURLSession"]
+- !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- ["PSo18UIFocusEnvironment", "search_people"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo16UINavigationItem", "title"]
+- ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "FBSDKAccessToken"]
+- ["CSo11UIResponder", "HTTPPostJSON"]
+- ["CSo11UIResponder", "HTTPsendRequest"]
+- !private ["CSo11UIResponder", "JSON"]
+- ["CSo11UIResponder", "JSONStringify"]
+- !private ["CSo11UIResponder", "NSData"]
+- !private ["CSo11UIResponder", "NSJSONSerialization"]
+- !private ["CSo11UIResponder", "NSJSONWritingOptions"]
+- !private ["CSo11UIResponder", "NSMutableDictionary"]
+- ["CSo11UIResponder", "NSMutableURLRequest"]
+- ["CSo11UIResponder", "NSString"]
+- !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "NSURLSession"]
+- !private ["CSo11UIResponder", "NSUTF8StringEncoding"]
+- ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "Void"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationItem"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "search_people"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
+- ["PSo16UIStateRestoring", "HTTPPostJSON"]
+- ["PSo16UIStateRestoring", "HTTPsendRequest"]
+- !private ["PSo16UIStateRestoring", "JSON"]
+- ["PSo16UIStateRestoring", "JSONStringify"]
+- !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
+- !private ["PSo16UIStateRestoring", "NSJSONWritingOptions"]
+- !private ["PSo16UIStateRestoring", "NSMutableDictionary"]
+- !private ["PSo16UIStateRestoring", "NSMutableURLRequest"]
+- !private ["PSo16UIStateRestoring", "NSString"]
+- !private ["PSo16UIStateRestoring", "NSURL"]
+- !private ["PSo16UIStateRestoring", "NSURLSession"]
+- !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "search_people"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
+- ["PSo18UITraitEnvironment", "HTTPPostJSON"]
+- ["PSo18UITraitEnvironment", "HTTPsendRequest"]
+- !private ["PSo18UITraitEnvironment", "JSON"]
+- ["PSo18UITraitEnvironment", "JSONStringify"]
+- !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
+- !private ["PSo18UITraitEnvironment", "NSJSONWritingOptions"]
+- !private ["PSo18UITraitEnvironment", "NSMutableDictionary"]
+- !private ["PSo18UITraitEnvironment", "NSMutableURLRequest"]
+- !private ["PSo18UITraitEnvironment", "NSString"]
+- !private ["PSo18UITraitEnvironment", "NSURL"]
+- !private ["PSo18UITraitEnvironment", "NSURLSession"]
+- !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "search_people"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "FBSDKAccessToken"]
+- ["CSo16UIViewController", "HTTPPostJSON"]
+- ["CSo16UIViewController", "HTTPsendRequest"]
+- !private ["CSo16UIViewController", "JSON"]
+- ["CSo16UIViewController", "JSONStringify"]
+- !private ["CSo16UIViewController", "NSData"]
+- !private ["CSo16UIViewController", "NSJSONSerialization"]
+- !private ["CSo16UIViewController", "NSJSONWritingOptions"]
+- !private ["CSo16UIViewController", "NSMutableDictionary"]
+- ["CSo16UIViewController", "NSMutableURLRequest"]
+- ["CSo16UIViewController", "NSString"]
+- !private ["CSo16UIViewController", "NSURL"]
+- !private ["CSo16UIViewController", "NSURLSession"]
+- !private ["CSo16UIViewController", "NSUTF8StringEncoding"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "Void"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationItem"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "search_people"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Element"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "dataUsingEncoding"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "setObject"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs9ErrorType"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "CSo16FBSDKAccessToken"
+- !private "PSo12FBSDKCopying"
+- !private "PSs23FloatLiteralConvertible"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "Si"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "V6Tatari4JSON"
+- !private "P6Tatari17JSONSubscriptType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "CSo7NSArray"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo12NSDictionary"
+- !private "CSo7NSError"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
+- !private "CSo19NSJSONSerialization"
+- !private "VSC20NSJSONWritingOptions"
+- !private "PSo16NSMutableCopying"
+- !private "CSo19NSMutableDictionary"
+- !private "CSo19NSMutableURLRequest"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- !private "CSo12NSURLRequest"
+- !private "CSo12NSURLSession"
+- !private "CSo20NSURLSessionDataTask"
+- !private "CSo16NSURLSessionTask"
+- "PSs21NilLiteralConvertible"
+- !private "PSs13OptionSetType"
+- "Sq"
+- !private "PSs16OutputStreamType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs16RawRepresentable"
+- "C6Tatari16SearchController"
+- !private "PSs12SequenceType"
+- !private "PSs14SetAlgebraType"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- !private "CSo16UINavigationItem"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+interface-hash: "6e1be6807bdfa22388a5dd05f11495dd"
