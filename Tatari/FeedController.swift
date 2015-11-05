@@ -34,7 +34,12 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.allowsSelection = false
         
         let mutable_result =  NSMutableDictionary()
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        let fb_id = defaults.stringForKey("fb_id")
+        mutable_result.setObject(fb_id!,forKey:"fb_id")
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        
         self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (wtf,object) in json {
@@ -42,6 +47,23 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print(object["title"].stringValue) // Title of the update
                 self.itemsTitle.append(object["text"].stringValue)
                 self.itemsBody.append(object["text"].stringValue)
+            }
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+                self.tableView.reloadData()
+                self.activityFeed.stopAnimating()
+            }
+            
+        })
+        
+        self.HTTPPostJSON("http://45.55.146.229:116/challs", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
+            for (wtf,object) in json {
+                
+                // mesma coisa de cima
+//                print(object["text"].stringValue) // Text of the update
+//                print(object["title"].stringValue) // Title of the update
+//                self.itemsTitle.append(object["text"].stringValue)
+//                self.itemsBody.append(object["text"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()

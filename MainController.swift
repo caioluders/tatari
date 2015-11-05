@@ -88,8 +88,8 @@ class MainController: UIViewController,CLLocationManagerDelegate {
             magnetometerData += [("MagnetctField y" , "\(data!.magneticField.y)")]
             magnetometerData += [("MagnetctField z" , "\(data!.magneticField.z)")]
         } else {
-            magnetometerData += [("MagnetctField x" , "Not authorized")]
-            magnetometerData += [("MagnetctField y" , "Not authorized")]
+            magnetometerData += [("MagnetctField x" , "nope")]
+            magnetometerData += [("MagnetctField y" , "nope")]
         }
         
         return magnetometerData
@@ -112,8 +112,8 @@ class MainController: UIViewController,CLLocationManagerDelegate {
             
             
         }  else {
-            locationData += [("Latitude","Not authorized")]
-            locationData += [("Longitude","Not authorized")]
+            locationData += [("Latitude","nope")]
+            locationData += [("Longitude","nope")]
         }
         
         return locationData
@@ -192,7 +192,8 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         sensorDataArray += getGyroData()
         sensorDataArray += getMagnetometerData()
         
-        var url: String = "http://waho.io:116/send?lat="+sensorDataArray[0].1+"&long="+sensorDataArray[1].1
+        
+        var url: String = "http://waho.io:116/send?lat="+(sensorDataArray[0].1 )+"&long="+sensorDataArray[1].1
         
         url += "&ac_y="+sensorDataArray[3].1+"&ac_x="+sensorDataArray[2].1+"&ac_z="+sensorDataArray[4].1
         

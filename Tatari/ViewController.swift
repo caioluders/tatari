@@ -62,6 +62,11 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
                 if (error == nil){
                     let resultdict = result as! NSMutableDictionary
+                    let defaults = NSUserDefaults.standardUserDefaults()
+                    
+                    defaults.setValue(resultdict["id"] as! String, forKey: "fb_id")
+                    
+                    defaults.synchronize()
                     let mutable_result =  NSMutableDictionary(dictionary:resultdict)
                     print(mutable_result)
                     mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
