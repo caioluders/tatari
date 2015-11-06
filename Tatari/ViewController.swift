@@ -68,8 +68,10 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
                     
                     defaults.synchronize()
                     let mutable_result =  NSMutableDictionary(dictionary:resultdict)
-                    print(mutable_result)
                     mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+                    let push_woosh = PushNotificationManager.pushManager()
+                    mutable_result.setObject(push_woosh.getPushToken(),forKey:"device_token")
+                    print(mutable_result)
                     self.HTTPPostJSON("http://45.55.146.229:116/user", jsonObj: mutable_result, callback: { (data,error) -> Void in
                         print(data)
                    })

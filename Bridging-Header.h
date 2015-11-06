@@ -13,3 +13,5 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 #endif
+
+#import <Pushwoosh/PushNotificationManager.h>

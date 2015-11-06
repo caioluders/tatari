@@ -28,6 +28,10 @@
 		627355EA1BD813DC00F7124A /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355E91BD813DC00F7124A /* MainController.swift */; };
 		62939ED01BDC488600CAB491 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62939ECF1BDC488600CAB491 /* VoteController.swift */; };
 		62939ED21BDD39F300CAB491 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62939ED11BDD39F300CAB491 /* SearchController.swift */; };
+		62E068221BEC668C001455E7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068211BEC668C001455E7 /* libz.tbd */; };
+		62E068241BEC6782001455E7 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068231BEC6782001455E7 /* libstdc++.tbd */; };
+		62E068261BEC6834001455E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068251BEC6834001455E7 /* SystemConfiguration.framework */; };
+		62E068281BEC6856001455E7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068271BEC6856001455E7 /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +58,6 @@
 		42F4CFCA1BE0006D0098A62D /* votoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = votoCell.xib; sourceTree = "<group>"; };
 		42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotoTableViewCell.swift; sourceTree = "<group>"; };
 		6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
-		6206FF641BEBF5DE009CE341 /* Tatari-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tatari-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		623DA9E71BDB39D000BCBFF4 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		627355A61BD8079400F7124A /* Tatari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tatari.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +80,10 @@
 		627355E91BD813DC00F7124A /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainController.swift; path = ../MainController.swift; sourceTree = "<group>"; };
 		62939ECF1BDC488600CAB491 /* VoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
 		62939ED11BDD39F300CAB491 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		62E068211BEC668C001455E7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		62E068231BEC6782001455E7 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		62E068251BEC6834001455E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		62E068271BEC6856001455E7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +91,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E068281BEC6856001455E7 /* ImageIO.framework in Frameworks */,
+				62E068261BEC6834001455E7 /* SystemConfiguration.framework in Frameworks */,
+				62E068241BEC6782001455E7 /* libstdc++.tbd in Frameworks */,
+				62E068221BEC668C001455E7 /* libz.tbd in Frameworks */,
 				427C42361BE2BE1700F3A219 /* AVFoundation.framework in Frameworks */,
 				627355E41BD80DAD00F7124A /* Bolts.framework in Frameworks */,
 				627355E11BD80CAA00F7124A /* FBSDKLoginKit.framework in Frameworks */,
@@ -147,7 +158,6 @@
 				42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */,
 				627355B01BD8079400F7124A /* Assets.xcassets */,
 				627355B21BD8079400F7124A /* LaunchScreen.storyboard */,
-				6206FF641BEBF5DE009CE341 /* Tatari-Bridging-Header.h */,
 				627355B51BD8079400F7124A /* Info.plist */,
 			);
 			path = Tatari;
@@ -174,6 +184,10 @@
 		627355DB1BD80B3E00F7124A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				62E068271BEC6856001455E7 /* ImageIO.framework */,
+				62E068251BEC6834001455E7 /* SystemConfiguration.framework */,
+				62E068231BEC6782001455E7 /* libstdc++.tbd */,
+				62E068211BEC668C001455E7 /* libz.tbd */,
 				6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */,
 				427C42351BE2BE1700F3A219 /* AVFoundation.framework */,
 				623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */,
@@ -252,9 +266,12 @@
 				TargetAttributes = {
 					627355A51BD8079400F7124A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = P6BZVZZ56C;
+						DevelopmentTeam = EHBSXGFU8H;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};

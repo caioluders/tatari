@@ -23,7 +23,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         self.navigationItem.title = "Pessoas"
         txtFieldSearch.delegate = self
         txtFieldSearch.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
-        send_chall("1042704092427256", challenge_desc: "Beba mais!")
+        // send_chall("708388879297355", challenge_desc: "Beba mais!")
     }
 
     override func didReceiveMemoryWarning() {
