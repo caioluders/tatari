@@ -45,7 +45,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             for (wtf,object) in json {
                 print(object["text"].stringValue) // Text of the update
                 print(object["title"].stringValue) // Title of the update
-                self.itemsTitle.append(object["text"].stringValue)
+                self.itemsTitle.append(object["title"].stringValue)
                 self.itemsBody.append(object["text"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in

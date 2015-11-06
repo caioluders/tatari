@@ -193,18 +193,22 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 
 @class UITextField;
 @class NSString;
+@class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull imgPeople;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)buttonDesafiarAction:(UIButton * __null_unspecified)sender;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
@@ -232,7 +236,6 @@ SWIFT_CLASS("_TtC6Tatari14ViewController")
 
 @class UIImagePickerController;
 @class UIImage;
-@class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari14VoteController")
 @interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate>
@@ -275,6 +278,23 @@ SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btVote;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgPerson;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblName;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6Tatari19personTableViewCell")
+@interface personTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgPessoa;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblCurtir;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblDesafiar;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblFacebook;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btCurtir;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btFacebook;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btDesafiar;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblNome;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
