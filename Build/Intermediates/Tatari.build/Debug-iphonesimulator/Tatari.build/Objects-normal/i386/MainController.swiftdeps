@@ -6,50 +6,50 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14MainController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "btSauda"
-- "locationManager"
-- "locationManager"
-- "viewWillAppear"
-- "motionManager"
-- "accuracyChanged"
-- "updateSensorDataArray"
-- "viewDidLoad"
 - "viewWillDisappear"
+- "accuracyChanged"
+- "didReceiveMemoryWarning"
+- "motionManager"
+- "updateSensorDataArray"
+- "viewWillAppear"
+- "locationManager"
+- "locationManager"
+- "viewDidLoad"
 depends-top-level:
+- "String"
 - !private "StringLiteralType"
-- !private "UIAlertController"
-- "CMMotionManager"
-- !private "NSURLSession"
-- !private "NSURLRequest"
-- "CLLocationManagerDelegate"
+- "CLLocation"
+- !private "!="
 - "CLLocationManager"
 - !private "print"
-- "Bool"
-- "UIViewController"
-- "MainController"
+- !private "NSURL"
+- !private "kCLLocationAccuracyBest"
+- !private "kCLLocationAccuracyThreeKilometers"
+- "CLLocationManagerDelegate"
 - !private "MKPointAnnotation"
-- !private "kCLLocationAccuracyBestForNavigation"
-- "String"
-- !private "!="
-- !private "Void"
-- !private "=="
-- !private "CLAuthorizationStatus"
+- !private "kCLLocationAccuracyHundredMeters"
 - !private "+="
 - !private "kCLLocationAccuracyKilometer"
-- !private "UIAlertAction"
-- !private "||"
-- "CLLocation"
-- !private "NSURL"
-- !private "kCLLocationAccuracyHundredMeters"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "Array"
-- !private "kCLLocationAccuracyBest"
+- !private "NSURLRequest"
+- "UIViewController"
 - "UISegmentedControl"
-- !private "BooleanLiteralType"
-- !private "kCLLocationAccuracyThreeKilometers"
+- !private "=="
+- !private "Array"
 - "AnyObject"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private "kCLLocationAccuracyBestForNavigation"
+- !private "||"
+- "CMMotionManager"
 - !private "+"
+- !private "UIAlertAction"
+- !private "UIAlertController"
+- !private "BooleanLiteralType"
+- !private "CLAuthorizationStatus"
+- "Bool"
+- !private "NSURLSession"
+- !private "Void"
+- "MainController"
 depends-member:
 - !private ["PSs9AnyObject", "CLAuthorizationStatus"]
 - !private ["PSs9AnyObject", "CLLocationManager"]
@@ -1000,6 +1000,47 @@ depends-member:
 - !private ["CSo9UIControl", "selectedSegmentIndex"]
 - !private ["PSo17UICoordinateSpace", "selectedSegmentIndex"]
 - !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
+- !private ["PSo18UIFocusEnvironment", "CLAuthorizationStatus"]
+- !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
+- ["PSo18UIFocusEnvironment", "CMMotionManager"]
+- !private ["PSo18UIFocusEnvironment", "MKPointAnnotation"]
+- !private ["PSo18UIFocusEnvironment", "NSURL"]
+- !private ["PSo18UIFocusEnvironment", "NSURLRequest"]
+- !private ["PSo18UIFocusEnvironment", "NSURLSession"]
+- ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- ["PSo18UIFocusEnvironment", "accuracyChanged"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
+- ["PSo18UIFocusEnvironment", "btSauda"]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "getAccelerometerData"]
+- ["PSo18UIFocusEnvironment", "getGyroData"]
+- ["PSo18UIFocusEnvironment", "getLocationData"]
+- ["PSo18UIFocusEnvironment", "getMagnetometerData"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBest"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBestForNavigation"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyHundredMeters"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyKilometer"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyNearestTenMeters"]
+- !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyThreeKilometers"]
+- ["PSo18UIFocusEnvironment", "locationManager"]
+- ["PSo18UIFocusEnvironment", "locationManager.storage"]
+- ["PSo18UIFocusEnvironment", "locationManagerDidPauseLocationUpdates"]
+- ["PSo18UIFocusEnvironment", "locationManagerDidResumeLocationUpdates"]
+- ["PSo18UIFocusEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
+- ["PSo18UIFocusEnvironment", "motionManager"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
+- ["PSo18UIFocusEnvironment", "sensorDataArray"]
+- ["PSo18UIFocusEnvironment", "updateSensorDataArray"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", "viewWillAppear"]
+- ["PSo18UIFocusEnvironment", "viewWillDisappear"]
+- ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo16UINavigationItem", "title"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
@@ -1205,6 +1246,7 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - ["PSs24_DestructorSafeContainer", "init"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
+- !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
@@ -1334,6 +1376,7 @@ depends-nominal:
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
 - !private "CSo18UISegmentedControl"
@@ -1357,6 +1400,7 @@ depends-nominal:
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
 - "PSs24_DestructorSafeContainer"
+- !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"
@@ -1425,5 +1469,6 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
 interface-hash: "63d7f6b33b5757708700512f1c7f9c59"

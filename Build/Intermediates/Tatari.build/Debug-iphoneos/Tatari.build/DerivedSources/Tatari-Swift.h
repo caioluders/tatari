@@ -193,6 +193,7 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 
 @class UITextField;
 @class NSString;
+@class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
@@ -206,6 +207,7 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)buttonDesafiarAction:(UIButton * __null_unspecified)sender;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
@@ -234,7 +236,6 @@ SWIFT_CLASS("_TtC6Tatari14ViewController")
 
 @class UIImagePickerController;
 @class UIImage;
-@class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari14VoteController")
 @interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate>

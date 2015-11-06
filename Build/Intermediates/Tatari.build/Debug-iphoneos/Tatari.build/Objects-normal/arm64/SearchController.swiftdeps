@@ -6,59 +6,65 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
-- "textFieldDidChange"
+- "HTTPsendRequest"
+- "viewDidLoad"
+- "send_chall"
+- "JSONStringify"
 - "txtFieldSearch"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "HTTPPostJSON"
 - "search_people"
-- "JSONStringify"
-- "didReceiveMemoryWarning"
-- "people"
-- "HTTPsendRequest"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "send_chall"
 - "imgPeople"
-- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "buttonDesafiarAction"
+- "people"
+- "textFieldDidChange"
 depends-top-level:
-- "AnyObject"
-- !private "FBSDKAccessToken"
-- !private "NSURLSession"
+- "Void"
 - "UITextField"
-- !private "NSUTF8StringEncoding"
-- !private "print"
-- "SearchController"
-- !private "StringLiteralType"
-- "UITableViewCell"
 - "Bool"
-- "NSString"
-- !private "NSData"
-- !private "Array"
-- "UITextFieldDelegate"
-- !private "UIImage"
-- !private "!="
-- !private "UIControlEvents"
-- !private "NSURL"
-- "NSIndexPath"
-- "NSMutableURLRequest"
-- "UITableViewDataSource"
-- !private "dispatch_async"
+- !private "FBSDKAccessToken"
+- "CGFloat"
 - !private "dispatch_get_main_queue"
+- "UITextFieldDelegate"
+- "NSMutableURLRequest"
+- !private "UIControlEvents"
+- "UITableView"
+- !private "dispatch_async"
+- !private "UIAlertAction"
+- !private "NSUTF8StringEncoding"
+- "Int"
+- !private "BooleanLiteralType"
+- !private "personTableViewCell"
+- "UIButton"
+- !private "NSMutableDictionary"
+- !private "UINib"
+- !private "NSURLSession"
+- "String"
+- "SearchController"
+- "UITableViewCell"
+- !private "UIImage"
+- !private "UIAlertControllerStyle"
+- "NSIndexPath"
+- !private "StringLiteralType"
+- !private "NSJSONWritingOptions"
+- "NSString"
+- !private "!="
+- !private "NSURL"
+- !private "UIAlertActionStyle"
+- !private "NSJSONSerialization"
+- "UITableViewDataSource"
+- !private "UIAlertController"
+- "UIViewController"
 - "UITableViewDelegate"
 - !private "JSON"
-- "String"
-- "CGFloat"
-- !private "NSMutableDictionary"
-- "Int"
-- !private "UINib"
-- "UIViewController"
-- !private "NSJSONSerialization"
-- "BooleanLiteralType"
-- "UITableView"
-- !private "personTableViewCell"
-- !private "NSJSONWritingOptions"
-- "Void"
+- !private "print"
+- "AnyObject"
+- !private "NSData"
+- !private "Array"
 depends-member:
 - !private ["PSs9AnyObject", "Element"]
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
@@ -78,11 +84,18 @@ depends-member:
 - !private ["PSs9AnyObject", "NSURLSession"]
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
 - !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "UIAlertAction"]
+- !private ["PSs9AnyObject", "UIAlertActionStyle"]
+- !private ["PSs9AnyObject", "UIAlertController"]
+- !private ["PSs9AnyObject", "UIAlertControllerStyle"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UINib"]
+- !private ["PSs9AnyObject", "addAction"]
 - !private ["PSs9AnyObject", "addTarget"]
 - !private ["PSs9AnyObject", "addValue"]
+- !private ["PSs9AnyObject", "btDesafiar"]
+- ["PSs9AnyObject", "buttonDesafiarAction"]
 - !private ["PSs9AnyObject", "currentAccessToken"]
 - !private ["PSs9AnyObject", "dataTaskWithRequest"]
 - !private ["PSs9AnyObject", "dataUsingEncoding"]
@@ -104,6 +117,7 @@ depends-member:
 - !private ["PSs9AnyObject", "navigationItem"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - ["PSs9AnyObject", "people"]
+- !private ["PSs9AnyObject", "presentViewController"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "registerNib"]
 - !private ["PSs9AnyObject", "reloadData"]
@@ -157,6 +171,7 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
 - !private ["PSs23ArrayLiteralConvertible", "PrettyPrinted"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
@@ -208,11 +223,18 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "UIAlertAction"]
+- !private ["PSs11CVarArgType", "UIAlertActionStyle"]
+- !private ["PSs11CVarArgType", "UIAlertController"]
+- !private ["PSs11CVarArgType", "UIAlertControllerStyle"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UINib"]
+- !private ["PSs11CVarArgType", "addAction"]
 - !private ["PSs11CVarArgType", "addTarget"]
 - !private ["PSs11CVarArgType", "addValue"]
+- !private ["PSs11CVarArgType", "btDesafiar"]
+- ["PSs11CVarArgType", "buttonDesafiarAction"]
 - !private ["PSs11CVarArgType", "currentAccessToken"]
 - !private ["PSs11CVarArgType", "dataTaskWithRequest"]
 - !private ["PSs11CVarArgType", "dataUsingEncoding"]
@@ -233,6 +255,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "navigationItem"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - ["PSs11CVarArgType", "people"]
+- !private ["PSs11CVarArgType", "presentViewController"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "registerNib"]
 - !private ["PSs11CVarArgType", "reloadData"]
@@ -327,14 +350,21 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIAlertAction"]
+- !private ["PSs23CustomStringConvertible", "UIAlertActionStyle"]
+- !private ["PSs23CustomStringConvertible", "UIAlertController"]
+- !private ["PSs23CustomStringConvertible", "UIAlertControllerStyle"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UINib"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addAction"]
 - !private ["PSs23CustomStringConvertible", "addTarget"]
 - !private ["PSs23CustomStringConvertible", "addValue"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "btDesafiar"]
+- ["PSs23CustomStringConvertible", "buttonDesafiarAction"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "currentAccessToken"]
 - !private ["PSs23CustomStringConvertible", "dataTaskWithRequest"]
@@ -356,6 +386,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "navigationItem"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["PSs23CustomStringConvertible", "people"]
+- !private ["PSs23CustomStringConvertible", "presentViewController"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "registerNib"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
@@ -406,6 +437,8 @@ depends-member:
 - !private ["PSs28DictionaryLiteralConvertible", "stringValue"]
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
+- !private ["PSs9Equatable", "Alert"]
+- !private ["PSs9Equatable", "Default"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "EditingChanged"]
 - !private ["PSs9Equatable", "Element"]
@@ -431,14 +464,22 @@ depends-member:
 - !private ["PSs9Equatable", "PrettyPrinted"]
 - !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "SubSequence"]
+- !private ["PSs9Equatable", "TouchUpInside"]
+- !private ["PSs9Equatable", "UIAlertAction"]
+- !private ["PSs9Equatable", "UIAlertActionStyle"]
+- !private ["PSs9Equatable", "UIAlertController"]
+- !private ["PSs9Equatable", "UIAlertControllerStyle"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UINib"]
 - !private ["PSs9Equatable", "_DisabledRangeIndex"]
 - !private ["PSs9Equatable", "_Element"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addAction"]
 - !private ["PSs9Equatable", "addTarget"]
 - !private ["PSs9Equatable", "addValue"]
+- !private ["PSs9Equatable", "btDesafiar"]
+- ["PSs9Equatable", "buttonDesafiarAction"]
 - !private ["PSs9Equatable", "currentAccessToken"]
 - !private ["PSs9Equatable", "dataTaskWithRequest"]
 - !private ["PSs9Equatable", "dataUsingEncoding"]
@@ -459,6 +500,7 @@ depends-member:
 - !private ["PSs9Equatable", "navigationItem"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - ["PSs9Equatable", "people"]
+- !private ["PSs9Equatable", "presentViewController"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "registerNib"]
 - !private ["PSs9Equatable", "reloadData"]
@@ -523,6 +565,8 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
 - !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
 - !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Alert"]
+- !private ["PSs8Hashable", "Default"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "Element"]
 - !private ["PSs8Hashable", "FBSDKAccessToken"]
@@ -543,12 +587,19 @@ depends-member:
 - !private ["PSs8Hashable", "NSURLSession"]
 - !private ["PSs8Hashable", "NSUTF8StringEncoding"]
 - !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "UIAlertAction"]
+- !private ["PSs8Hashable", "UIAlertActionStyle"]
+- !private ["PSs8Hashable", "UIAlertController"]
+- !private ["PSs8Hashable", "UIAlertControllerStyle"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UINib"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addAction"]
 - !private ["PSs8Hashable", "addTarget"]
 - !private ["PSs8Hashable", "addValue"]
+- !private ["PSs8Hashable", "btDesafiar"]
+- ["PSs8Hashable", "buttonDesafiarAction"]
 - !private ["PSs8Hashable", "currentAccessToken"]
 - !private ["PSs8Hashable", "dataTaskWithRequest"]
 - !private ["PSs8Hashable", "dataUsingEncoding"]
@@ -569,6 +620,7 @@ depends-member:
 - !private ["PSs8Hashable", "navigationItem"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - ["PSs8Hashable", "people"]
+- !private ["PSs8Hashable", "presentViewController"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "registerNib"]
 - !private ["PSs8Hashable", "reloadData"]
@@ -699,11 +751,18 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURLSession"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIAlertAction"]
+- !private ["PSo8NSCoding", "UIAlertActionStyle"]
+- !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIAlertControllerStyle"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UINib"]
+- !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "addValue"]
+- !private ["PSo8NSCoding", "btDesafiar"]
+- ["PSo8NSCoding", "buttonDesafiarAction"]
 - !private ["PSo8NSCoding", "currentAccessToken"]
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -721,6 +780,7 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "people"]
+- !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "registerNib"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -789,9 +849,15 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIAlertControllerStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
+- !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- ["PSo26NSExtensionRequestHandling", "buttonDesafiarAction"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
@@ -801,6 +867,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - ["PSo26NSExtensionRequestHandling", "people"]
+- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -874,6 +941,11 @@ depends-member:
 - !private ["CSo8NSObject", "NSURLSession"]
 - !private ["CSo8NSObject", "NSUTF8StringEncoding"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIAlertAction"]
+- !private ["CSo8NSObject", "UIAlertActionStyle"]
+- !private ["CSo8NSObject", "UIAlertController"]
+- !private ["CSo8NSObject", "UIAlertControllerStyle"]
+- ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UINib"]
@@ -881,8 +953,11 @@ depends-member:
 - ["CSo8NSObject", "UITableViewCell"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "addValue"]
+- !private ["CSo8NSObject", "btDesafiar"]
+- ["CSo8NSObject", "buttonDesafiarAction"]
 - !private ["CSo8NSObject", "currentAccessToken"]
 - !private ["CSo8NSObject", "dataTaskWithRequest"]
 - !private ["CSo8NSObject", "dataUsingEncoding"]
@@ -904,6 +979,7 @@ depends-member:
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "people"]
 - !private ["CSo8NSObject", "personTableViewCell"]
+- !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "registerNib"]
 - !private ["CSo8NSObject", "reloadData"]
@@ -959,11 +1035,18 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
+- !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
+- !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
+- !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
+- !private ["PSo16NSObjectProtocol", "btDesafiar"]
+- ["PSo16NSObjectProtocol", "buttonDesafiarAction"]
 - !private ["PSo16NSObjectProtocol", "currentAccessToken"]
 - !private ["PSo16NSObjectProtocol", "dataTaskWithRequest"]
 - !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
@@ -984,6 +1067,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "people"]
+- !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "registerNib"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
@@ -1055,6 +1139,7 @@ depends-member:
 - !private ["PSs21NilLiteralConvertible", "subscript"]
 - !private ["PSs13OptionSetType", "EditingChanged"]
 - !private ["PSs13OptionSetType", "PrettyPrinted"]
+- !private ["PSs13OptionSetType", "TouchUpInside"]
 - !private ["PSs13OptionSetType", "init"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -1071,11 +1156,14 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
+- !private ["PSs16RawRepresentable", "Alert"]
+- !private ["PSs16RawRepresentable", "Default"]
 - !private ["PSs16RawRepresentable", "EditingChanged"]
 - !private ["PSs16RawRepresentable", "Generator"]
 - !private ["PSs16RawRepresentable", "Index"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "SubSequence"]
+- !private ["PSs16RawRepresentable", "TouchUpInside"]
 - !private ["PSs16RawRepresentable", "_Element"]
 - !private ["PSs16RawRepresentable", "init"]
 - !private ["PSs16RawRepresentable", "stringValue"]
@@ -1100,6 +1188,11 @@ depends-member:
 - !private ["C6Tatari16SearchController", "NSURLSession"]
 - !private ["C6Tatari16SearchController", "NSUTF8StringEncoding"]
 - ["C6Tatari16SearchController", "String"]
+- !private ["C6Tatari16SearchController", "UIAlertAction"]
+- !private ["C6Tatari16SearchController", "UIAlertActionStyle"]
+- !private ["C6Tatari16SearchController", "UIAlertController"]
+- !private ["C6Tatari16SearchController", "UIAlertControllerStyle"]
+- ["C6Tatari16SearchController", "UIButton"]
 - !private ["C6Tatari16SearchController", "UIControlEvents"]
 - !private ["C6Tatari16SearchController", "UIImage"]
 - !private ["C6Tatari16SearchController", "UINib"]
@@ -1107,6 +1200,7 @@ depends-member:
 - ["C6Tatari16SearchController", "UITableViewCell"]
 - ["C6Tatari16SearchController", "UITextField"]
 - ["C6Tatari16SearchController", "Void"]
+- ["C6Tatari16SearchController", "buttonDesafiarAction"]
 - ["C6Tatari16SearchController", "deinit"]
 - ["C6Tatari16SearchController", "didReceiveMemoryWarning"]
 - !private ["C6Tatari16SearchController", "dispatch_async"]
@@ -1118,6 +1212,7 @@ depends-member:
 - ["C6Tatari16SearchController", "numberOfSectionsInTableView"]
 - ["C6Tatari16SearchController", "people"]
 - !private ["C6Tatari16SearchController", "personTableViewCell"]
+- !private ["C6Tatari16SearchController", "presentViewController"]
 - !private ["C6Tatari16SearchController", "print"]
 - ["C6Tatari16SearchController", "scrollViewDidEndDecelerating"]
 - ["C6Tatari16SearchController", "scrollViewDidEndDragging"]
@@ -1160,6 +1255,7 @@ depends-member:
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "EditingChanged"]
 - !private ["PSs14SetAlgebraType", "PrettyPrinted"]
+- !private ["PSs14SetAlgebraType", "TouchUpInside"]
 - !private ["PSs14SetAlgebraType", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
@@ -1190,6 +1286,7 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "stringValue"]
 - !private ["PSs24StringLiteralConvertible", "subscript"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- !private ["PSo29UIAccessibilityIdentification", "btDesafiar"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
@@ -1199,7 +1296,13 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["CSo13UIAlertAction", "init"]
+- !private ["OSC18UIAlertActionStyle", "Default"]
+- !private ["CSo17UIAlertController", "addAction"]
+- !private ["CSo17UIAlertController", "init"]
+- !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "addTarget"]
+- !private ["PSo12UIAppearance", "btDesafiar"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "image"]
@@ -1223,10 +1326,17 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UINib"]
+- !private ["PSo21UIAppearanceContainer", "addAction"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
+- !private ["PSo21UIAppearanceContainer", "btDesafiar"]
+- ["PSo21UIAppearanceContainer", "buttonDesafiarAction"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -1241,6 +1351,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "people"]
+- !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "registerNib"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -1273,6 +1384,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "addTarget"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - ["PSo18UIContentContainer", "HTTPPostJSON"]
 - ["PSo18UIContentContainer", "HTTPsendRequest"]
@@ -1288,9 +1400,15 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURLSession"]
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIAlertAction"]
+- !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
+- !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIAlertControllerStyle"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UINib"]
+- !private ["PSo18UIContentContainer", "addAction"]
+- ["PSo18UIContentContainer", "buttonDesafiarAction"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
@@ -1300,6 +1418,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - ["PSo18UIContentContainer", "people"]
+- !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -1333,7 +1452,9 @@ depends-member:
 - !private ["CSo9UIControl", "delegate"]
 - !private ["CSo9UIControl", "text"]
 - !private ["VSC15UIControlEvents", "EditingChanged"]
+- !private ["VSC15UIControlEvents", "TouchUpInside"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
+- !private ["PSo17UICoordinateSpace", "btDesafiar"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "image"]
@@ -1343,6 +1464,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
+- !private ["PSo13UIDynamicItem", "btDesafiar"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "image"]
@@ -1366,10 +1488,17 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIAlertControllerStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UINib"]
+- !private ["PSo18UIFocusEnvironment", "addAction"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
+- !private ["PSo18UIFocusEnvironment", "btDesafiar"]
+- ["PSo18UIFocusEnvironment", "buttonDesafiarAction"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -1384,6 +1513,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "people"]
+- !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "registerNib"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -1416,6 +1546,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "btDesafiar"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imgPessoa"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblNome"]
 - !private ["CSo7UIImage", "init"]
@@ -1446,6 +1577,11 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURLSession"]
 - !private ["CSo11UIResponder", "NSUTF8StringEncoding"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIAlertAction"]
+- !private ["CSo11UIResponder", "UIAlertActionStyle"]
+- !private ["CSo11UIResponder", "UIAlertController"]
+- !private ["CSo11UIResponder", "UIAlertControllerStyle"]
+- ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UINib"]
@@ -1453,7 +1589,10 @@ depends-member:
 - ["CSo11UIResponder", "UITableViewCell"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "Void"]
+- !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addTarget"]
+- !private ["CSo11UIResponder", "btDesafiar"]
+- ["CSo11UIResponder", "buttonDesafiarAction"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -1469,6 +1608,7 @@ depends-member:
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "people"]
 - !private ["CSo11UIResponder", "personTableViewCell"]
+- !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "registerNib"]
 - !private ["CSo11UIResponder", "reloadData"]
@@ -1519,6 +1659,10 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSURLSession"]
 - !private ["PSo20UIScrollViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertAction"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertActionStyle"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
+- !private ["PSo20UIScrollViewDelegate", "UIAlertControllerStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
@@ -1529,6 +1673,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "people"]
+- !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
@@ -1570,9 +1715,15 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURLSession"]
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIAlertAction"]
+- !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
+- !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIAlertControllerStyle"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UINib"]
+- !private ["PSo16UIStateRestoring", "addAction"]
+- ["PSo16UIStateRestoring", "buttonDesafiarAction"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
@@ -1582,6 +1733,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - ["PSo16UIStateRestoring", "people"]
+- !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -1615,6 +1767,7 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo15UITableViewCell", "btDesafiar"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "imgPessoa"]
 - !private ["CSo15UITableViewCell", "lblNome"]
@@ -1633,6 +1786,10 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSURLSession"]
 - !private ["PSo21UITableViewDataSource", "NSUTF8StringEncoding"]
 - !private ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "UIAlertAction"]
+- !private ["PSo21UITableViewDataSource", "UIAlertActionStyle"]
+- !private ["PSo21UITableViewDataSource", "UIAlertController"]
+- !private ["PSo21UITableViewDataSource", "UIAlertControllerStyle"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UINib"]
@@ -1643,6 +1800,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "navigationItem"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "people"]
+- !private ["PSo21UITableViewDataSource", "presentViewController"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
@@ -1684,6 +1842,10 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSURLSession"]
 - !private ["PSo19UITableViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "UIAlertAction"]
+- !private ["PSo19UITableViewDelegate", "UIAlertActionStyle"]
+- !private ["PSo19UITableViewDelegate", "UIAlertController"]
+- !private ["PSo19UITableViewDelegate", "UIAlertControllerStyle"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UINib"]
@@ -1694,6 +1856,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "navigationItem"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "people"]
+- !private ["PSo19UITableViewDelegate", "presentViewController"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
@@ -1738,6 +1901,10 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "NSURLSession"]
 - !private ["PSo19UITextFieldDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo19UITextFieldDelegate", "String"]
+- !private ["PSo19UITextFieldDelegate", "UIAlertAction"]
+- !private ["PSo19UITextFieldDelegate", "UIAlertActionStyle"]
+- !private ["PSo19UITextFieldDelegate", "UIAlertController"]
+- !private ["PSo19UITextFieldDelegate", "UIAlertControllerStyle"]
 - !private ["PSo19UITextFieldDelegate", "UIControlEvents"]
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
 - !private ["PSo19UITextFieldDelegate", "UINib"]
@@ -1748,6 +1915,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "navigationItem"]
 - ["PSo19UITextFieldDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITextFieldDelegate", "people"]
+- !private ["PSo19UITextFieldDelegate", "presentViewController"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDragging"]
@@ -1795,10 +1963,17 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
+- !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
+- !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
+- !private ["PSo18UITraitEnvironment", "addAction"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
+- !private ["PSo18UITraitEnvironment", "btDesafiar"]
+- ["PSo18UITraitEnvironment", "buttonDesafiarAction"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -1813,6 +1988,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "people"]
+- !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "registerNib"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -1846,6 +2022,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
+- !private ["CSo6UIView", "btDesafiar"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "image"]
@@ -1874,6 +2051,11 @@ depends-member:
 - !private ["CSo16UIViewController", "NSURLSession"]
 - !private ["CSo16UIViewController", "NSUTF8StringEncoding"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIAlertAction"]
+- !private ["CSo16UIViewController", "UIAlertActionStyle"]
+- !private ["CSo16UIViewController", "UIAlertController"]
+- !private ["CSo16UIViewController", "UIAlertControllerStyle"]
+- ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UINib"]
@@ -1881,6 +2063,8 @@ depends-member:
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "Void"]
+- !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "buttonDesafiarAction"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
@@ -1891,6 +2075,7 @@ depends-member:
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - ["CSo16UIViewController", "people"]
 - !private ["CSo16UIViewController", "personTableViewCell"]
+- !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
@@ -1993,6 +2178,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "btDesafiar"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "dataUsingEncoding"]
 - !private ["PSs12_Reflectable", "delegate"]
@@ -2010,6 +2196,7 @@ depends-member:
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["C6Tatari19personTableViewCell", "btDesafiar"]
 - !private ["C6Tatari19personTableViewCell", "imgPessoa"]
 - !private ["C6Tatari19personTableViewCell", "lblNome"]
 depends-nominal:
@@ -2099,8 +2286,13 @@ depends-nominal:
 - !private "PSs30StringInterpolationConvertible"
 - !private "PSs24StringLiteralConvertible"
 - !private "PSo29UIAccessibilityIdentification"
+- !private "CSo13UIAlertAction"
+- !private "OSC18UIAlertActionStyle"
+- !private "CSo17UIAlertController"
+- !private "OSC22UIAlertControllerStyle"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "VSC15UIControlEvents"
@@ -2212,4 +2404,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "50c731f711797aa9f380dba86c232bf4"
+interface-hash: "b3f40f6b482dd4983dc6acb273bf1689"
