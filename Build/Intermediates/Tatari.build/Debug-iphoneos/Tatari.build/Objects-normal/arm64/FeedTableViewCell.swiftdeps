@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17FeedTableViewCell", ""]
 provides-dynamic-lookup:
-- "lblTitle"
-- "txtBody"
-- "setSelected"
 - "awakeFromNib"
+- "setSelected"
+- "txtBody"
+- "lblTitle"
 depends-top-level:
-- "UITextView"
-- "FeedTableViewCell"
-- "UILabel"
 - "UITableViewCell"
+- "FeedTableViewCell"
+- "UITextView"
 - "Bool"
+- "UILabel"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "init"]
@@ -236,5 +236,6 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
 interface-hash: "90af5f85719266775bbab352f7098e57"

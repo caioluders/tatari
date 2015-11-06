@@ -14,7 +14,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtFieldSearch: UITextField!
     var people: [String] = []
-    
+    var imgPeople: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +24,9 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         txtFieldSearch.delegate = self
         txtFieldSearch.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
         // send_chall("708388879297355", challenge_desc: "Beba mais!")
+        
+        let nib = UINib(nibName: "personCell", bundle: nil)
+        self.tableView.registerNib(nib, forCellReuseIdentifier: "personcell")
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +50,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (wtf,object) in json {
                 self.people.append(object["name"].stringValue)
+                self.imgPeople.append(object["picture"]["data"]["url"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
@@ -55,6 +59,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             print(self.people.count)
         })
         self.people = []
+        self.imgPeople = []
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,13 +67,20 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCellWithIdentifier( "personCell", forIndexPath: indexPath)
-        var cell = tableView.dequeueReusableCellWithIdentifier("personCell")! as UITableViewCell
         
-        // Configure the cell...
-        cell.textLabel?.text = self.people[indexPath.row]
+        var cell:personTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("personcell")! as! personTableViewCell
+        
+        cell.lblNome.text = self.people[indexPath.row]
+        
+        let url = NSURL(string: self.imgPeople[indexPath.row])
+        let data = NSData(contentsOfURL: url!)
+        cell.imgPessoa.image = UIImage(data: data!)
         
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 150
     }
 
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{

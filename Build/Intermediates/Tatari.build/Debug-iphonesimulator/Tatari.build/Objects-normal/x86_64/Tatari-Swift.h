@@ -93,15 +93,20 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import FBSDKLoginKit;
 #endif
 
+#import "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
 @class UIApplication;
 @class NSObject;
 @class NSURL;
+@class NSData;
+@class NSError;
+@class PushNotificationManager;
 
 SWIFT_CLASS("_TtC6Tatari11AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PushNotificationDelegate>
 @property (nonatomic, strong) UIWindow * __nullable window;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
 - (BOOL)application:(UIApplication * __nonnull)application openURL:(NSURL * __nonnull)url sourceApplication:(NSString * __nullable)sourceApplication annotation:(id __nullable)annotation;
@@ -110,6 +115,10 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * __nonnull)application;
+- (void)application:(UIApplication * __nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * __nonnull)deviceToken;
+- (void)application:(UIApplication * __nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError * __nonnull)error;
+- (void)application:(UIApplication * __nonnull)application didReceiveRemoteNotification:(NSDictionary * __nonnull)userInfo;
+- (void)onPushAccepted:(PushNotificationManager * __null_unspecified)pushManager withNotification:(NSDictionary * __null_unspecified)pushNotification onStart:(BOOL)onStart;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -206,7 +215,6 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
-@class NSError;
 
 SWIFT_CLASS("_TtC6Tatari14ViewController")
 @interface ViewController : UIViewController <FBSDKLoginButtonDelegate>
@@ -240,6 +248,8 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 @property (nonatomic, strong) NSMutableData * __nonnull data;
 @property (nonatomic, copy) NSString * __nonnull idBotaoVoto;
 - (void)viewDidLoad;
+- (void)getDataFromServer;
+- (void)cleanAllArrays;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btParticipar:(id __nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * __nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * __nonnull)info;

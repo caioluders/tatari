@@ -3,14 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>P6BZVZZ56C.br.ufpe.cla2.Tatari</string>
+	<string>P6BZVZZ56C.br.ufpe.cla2g.Tatari</string>
+	<key>aps-environment</key>
+	<string>development</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>P6BZVZZ56C</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>P6BZVZZ56C.br.ufpe.cla2.Tatari</string>
+		<string>P6BZVZZ56C.br.ufpe.cla2g.Tatari</string>
 	</array>
 </dict>
 </plist>

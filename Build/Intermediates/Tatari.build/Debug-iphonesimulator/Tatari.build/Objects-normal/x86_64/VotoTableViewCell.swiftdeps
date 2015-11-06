@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17VotoTableViewCell", ""]
 provides-dynamic-lookup:
+- "imgPerson"
 - "lblName"
-- "btVote"
 - "setSelected"
 - "lblVoteCount"
-- "imgPerson"
+- "btVote"
 - "awakeFromNib"
 depends-top-level:
-- "UIButton"
-- "VotoTableViewCell"
-- "UITableViewCell"
 - "UIImageView"
+- "UITableViewCell"
 - "Bool"
 - "UILabel"
+- "UIButton"
+- "VotoTableViewCell"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "btVote"]
@@ -286,5 +286,6 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "e3517e2057ffde60ad9ef6561602a194"

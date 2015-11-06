@@ -6,44 +6,45 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14ViewController", ""]
 provides-dynamic-lookup:
-- "loginButtonDidLogOut"
-- "getFBUserData"
 - "HTTPPostJSON"
-- "HTTPsendRequest"
-- "loginButton"
-- "viewDidLoad"
 - "viewDidAppear"
+- "loginButton"
+- "getFBUserData"
 - "JSONStringify"
+- "HTTPsendRequest"
+- "viewDidLoad"
+- "loginButtonDidLogOut"
 depends-top-level:
-- !private "NSURL"
-- !private "print"
+- !private "!="
+- !private "PushNotificationManager"
+- !private "FBSDKAccessToken"
+- "Void"
 - !private "=="
-- "UIViewController"
-- "Bool"
+- !private "NSData"
+- "FBSDKLoginManagerLoginResult"
+- !private "StringLiteralType"
 - !private "NSJSONSerialization"
 - !private "NSUTF8StringEncoding"
-- "FBSDKLoginButton"
-- !private "Array"
-- "ViewController"
 - !private "NSString"
-- "Void"
-- !private "Dictionary"
-- !private "StringLiteralType"
-- "AnyObject"
-- !private "NSMutableDictionary"
-- !private "FBSDKGraphRequest"
-- !private "NSUserDefaults"
-- "NSError"
+- "ViewController"
 - !private "NSJSONWritingOptions"
-- "String"
-- !private "FBSDKAccessToken"
-- !private "NSData"
 - !private "NSURLSession"
 - "NSMutableURLRequest"
-- "BooleanLiteralType"
-- !private "!="
+- "AnyObject"
+- "UIViewController"
+- "Bool"
+- !private "Dictionary"
+- "NSError"
+- !private "print"
+- "String"
 - "FBSDKLoginButtonDelegate"
-- "FBSDKLoginManagerLoginResult"
+- !private "NSMutableDictionary"
+- "BooleanLiteralType"
+- !private "FBSDKGraphRequest"
+- "FBSDKLoginButton"
+- !private "NSURL"
+- !private "Array"
+- !private "NSUserDefaults"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -62,6 +63,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSURLSession"]
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
 - !private ["PSs9AnyObject", "NSUserDefaults"]
+- !private ["PSs9AnyObject", "PushNotificationManager"]
 - !private ["PSs9AnyObject", "addSubview"]
 - !private ["PSs9AnyObject", "addValue"]
 - !private ["PSs9AnyObject", "center"]
@@ -82,6 +84,7 @@ depends-member:
 - ["PSs9AnyObject", "loginButtonWillLogin"]
 - !private ["PSs9AnyObject", "performSegueWithIdentifier"]
 - !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "pushManager"]
 - !private ["PSs9AnyObject", "readPermissions"]
 - !private ["PSs9AnyObject", "resume"]
 - !private ["PSs9AnyObject", "setObject"]
@@ -122,6 +125,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "PushNotificationManager"]
 - !private ["PSs11CVarArgType", "addSubview"]
 - !private ["PSs11CVarArgType", "addValue"]
 - !private ["PSs11CVarArgType", "center"]
@@ -141,6 +145,7 @@ depends-member:
 - ["PSs11CVarArgType", "loginButtonWillLogin"]
 - !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
 - !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "pushManager"]
 - !private ["PSs11CVarArgType", "readPermissions"]
 - !private ["PSs11CVarArgType", "resume"]
 - !private ["PSs11CVarArgType", "setObject"]
@@ -188,6 +193,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "PushNotificationManager"]
 - !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addSubview"]
@@ -210,6 +216,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "loginButtonWillLogin"]
 - !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
 - !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "pushManager"]
 - !private ["PSs23CustomStringConvertible", "readPermissions"]
 - !private ["PSs23CustomStringConvertible", "resume"]
 - !private ["PSs23CustomStringConvertible", "setObject"]
@@ -250,6 +257,7 @@ depends-member:
 - !private ["PSs9Equatable", "NSUTF8StringEncoding"]
 - !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
+- !private ["PSs9Equatable", "PushNotificationManager"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addSubview"]
 - !private ["PSs9Equatable", "addValue"]
@@ -271,6 +279,7 @@ depends-member:
 - ["PSs9Equatable", "loginButtonWillLogin"]
 - !private ["PSs9Equatable", "performSegueWithIdentifier"]
 - !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "pushManager"]
 - !private ["PSs9Equatable", "readPermissions"]
 - !private ["PSs9Equatable", "resume"]
 - !private ["PSs9Equatable", "setObject"]
@@ -318,6 +327,7 @@ depends-member:
 - !private ["PSo24FBSDKLoginButtonDelegate", "NSURLSession"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "NSUserDefaults"]
+- !private ["PSo24FBSDKLoginButtonDelegate", "PushNotificationManager"]
 - !private ["PSo24FBSDKLoginButtonDelegate", "getFBUserData"]
 - ["PSo24FBSDKLoginButtonDelegate", "loginButton"]
 - ["PSo24FBSDKLoginButtonDelegate", "loginButtonDidLogOut"]
@@ -347,6 +357,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSURLSession"]
 - !private ["PSs8Hashable", "NSUTF8StringEncoding"]
 - !private ["PSs8Hashable", "NSUserDefaults"]
+- !private ["PSs8Hashable", "PushNotificationManager"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addSubview"]
 - !private ["PSs8Hashable", "addValue"]
@@ -368,6 +379,7 @@ depends-member:
 - ["PSs8Hashable", "loginButtonWillLogin"]
 - !private ["PSs8Hashable", "performSegueWithIdentifier"]
 - !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "pushManager"]
 - !private ["PSs8Hashable", "readPermissions"]
 - !private ["PSs8Hashable", "resume"]
 - !private ["PSs8Hashable", "setObject"]
@@ -410,6 +422,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURLSession"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
+- !private ["PSo8NSCoding", "PushNotificationManager"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "addValue"]
 - !private ["PSo8NSCoding", "center"]
@@ -464,6 +477,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
+- !private ["PSo26NSExtensionRequestHandling", "PushNotificationManager"]
 - ["PSo26NSExtensionRequestHandling", "getFBUserData"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "loginButton"]
@@ -518,6 +532,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSURLSession"]
 - !private ["CSo8NSObject", "NSUTF8StringEncoding"]
 - !private ["CSo8NSObject", "NSUserDefaults"]
+- !private ["CSo8NSObject", "PushNotificationManager"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addSubview"]
@@ -540,6 +555,7 @@ depends-member:
 - ["CSo8NSObject", "loginButtonWillLogin"]
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "pushManager"]
 - !private ["CSo8NSObject", "readPermissions"]
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "setObject"]
@@ -570,6 +586,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
+- !private ["PSo16NSObjectProtocol", "PushNotificationManager"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - !private ["PSo16NSObjectProtocol", "center"]
@@ -589,6 +606,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "loginButtonWillLogin"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "pushManager"]
 - !private ["PSo16NSObjectProtocol", "readPermissions"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "setObject"]
@@ -634,9 +652,11 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["CSo23PushNotificationManager", "pushManager"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "init"]
+- !private ["PSo28SKPaymentTransactionObserver", "pushManager"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Key"]
@@ -681,6 +701,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
+- !private ["PSo21UIAppearanceContainer", "PushNotificationManager"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "center"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -715,6 +736,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURLSession"]
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
+- !private ["PSo18UIContentContainer", "PushNotificationManager"]
 - ["PSo18UIContentContainer", "getFBUserData"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "loginButton"]
@@ -755,6 +777,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
+- !private ["PSo18UIFocusEnvironment", "PushNotificationManager"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "center"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -790,6 +813,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURLSession"]
 - !private ["CSo11UIResponder", "NSUTF8StringEncoding"]
 - !private ["CSo11UIResponder", "NSUserDefaults"]
+- !private ["CSo11UIResponder", "PushNotificationManager"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addSubview"]
@@ -821,6 +845,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURLSession"]
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
+- !private ["PSo16UIStateRestoring", "PushNotificationManager"]
 - ["PSo16UIStateRestoring", "getFBUserData"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "loginButton"]
@@ -847,6 +872,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
+- !private ["PSo18UITraitEnvironment", "PushNotificationManager"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "center"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -887,6 +913,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSURLSession"]
 - !private ["CSo16UIViewController", "NSUTF8StringEncoding"]
 - !private ["CSo16UIViewController", "NSUserDefaults"]
+- !private ["CSo16UIViewController", "PushNotificationManager"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "getFBUserData"]
@@ -922,6 +949,7 @@ depends-member:
 - !private ["C6Tatari14ViewController", "NSURLSession"]
 - !private ["C6Tatari14ViewController", "NSUTF8StringEncoding"]
 - !private ["C6Tatari14ViewController", "NSUserDefaults"]
+- !private ["C6Tatari14ViewController", "PushNotificationManager"]
 - ["C6Tatari14ViewController", "String"]
 - ["C6Tatari14ViewController", "Void"]
 - ["C6Tatari14ViewController", "deinit"]
@@ -1026,8 +1054,10 @@ depends-nominal:
 - !private "PSs13OptionSetType"
 - "Sq"
 - !private "PSs16OutputStreamType"
+- !private "CSo23PushNotificationManager"
 - !private "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
+- !private "PSo28SKPaymentTransactionObserver"
 - !private "PSs12SequenceType"
 - !private "VSs3Set"
 - !private "PSs14SetAlgebraType"
@@ -1123,5 +1153,6 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "b40dc4099af926e62748dce2c5f0862f"

@@ -6,30 +6,41 @@ provides-nominal:
 provides-member:
 - ["C6Tatari11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
-- "application"
-- "application"
 - "window"
+- "applicationWillEnterForeground"
+- "application"
+- "application"
+- "application"
+- "application"
+- "application"
+- "onPushAccepted"
+- "applicationWillResignActive"
+- "applicationDidEnterBackground"
 - "applicationDidBecomeActive"
 - "applicationWillTerminate"
-- "applicationWillEnterForeground"
-- "applicationWillResignActive"
 depends-top-level:
-- "UIApplication"
+- "PushNotificationManager"
+- "PushNotificationDelegate"
 - "NSObject"
-- "String"
 - "UIApplicationDelegate"
-- !private "FBSDKApplicationDelegate"
+- !private "StringLiteralType"
 - !private "FBSDKAppEvents"
-- "NSURL"
 - "AnyObject"
 - "UIWindow"
-- "UIResponder"
+- "NSURL"
 - "AppDelegate"
+- !private "print"
 - "Bool"
+- "NSData"
+- !private "FBSDKApplicationDelegate"
+- "UIResponder"
+- "String"
+- "NSError"
+- "UIApplication"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAppEvents"]
 - !private ["PSs9AnyObject", "FBSDKApplicationDelegate"]
+- !private ["PSs9AnyObject", "PushNotificationManager"]
 - !private ["PSs9AnyObject", "activateApp"]
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]
@@ -43,7 +54,25 @@ depends-member:
 - ["PSs9AnyObject", "applicationWillEnterForeground"]
 - ["PSs9AnyObject", "applicationWillResignActive"]
 - ["PSs9AnyObject", "applicationWillTerminate"]
+- !private ["PSs9AnyObject", "delegate"]
+- !private ["PSs9AnyObject", "handlePushReceived"]
+- !private ["PSs9AnyObject", "handlePushRegistration"]
+- !private ["PSs9AnyObject", "handlePushRegistrationFailure"]
 - ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSs9AnyObject", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSs9AnyObject", "onInAppClosed"]
+- ["PSs9AnyObject", "onInAppDisplayed"]
+- ["PSs9AnyObject", "onPushAccepted"]
+- ["PSs9AnyObject", "onPushReceived"]
+- ["PSs9AnyObject", "onRichPageBackTapped"]
+- ["PSs9AnyObject", "onRichPageButtonTapped"]
+- ["PSs9AnyObject", "onTagsFailedToReceive"]
+- ["PSs9AnyObject", "onTagsReceived"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "pushManager"]
+- !private ["PSs9AnyObject", "registerForPushNotifications"]
+- !private ["PSs9AnyObject", "sendAppOpen"]
 - !private ["PSs9AnyObject", "sharedInstance"]
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
@@ -51,8 +80,11 @@ depends-member:
 - ["C6Tatari11AppDelegate", "Bool"]
 - !private ["C6Tatari11AppDelegate", "FBSDKAppEvents"]
 - !private ["C6Tatari11AppDelegate", "FBSDKApplicationDelegate"]
+- ["C6Tatari11AppDelegate", "NSData"]
+- ["C6Tatari11AppDelegate", "NSError"]
 - ["C6Tatari11AppDelegate", "NSObject"]
 - ["C6Tatari11AppDelegate", "NSURL"]
+- ["C6Tatari11AppDelegate", "PushNotificationManager"]
 - ["C6Tatari11AppDelegate", "String"]
 - ["C6Tatari11AppDelegate", "UIApplication"]
 - ["C6Tatari11AppDelegate", "UIWindow"]
@@ -70,9 +102,22 @@ depends-member:
 - ["C6Tatari11AppDelegate", "applicationWillTerminate"]
 - ["C6Tatari11AppDelegate", "deinit"]
 - ["C6Tatari11AppDelegate", "init"]
+- ["C6Tatari11AppDelegate", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["C6Tatari11AppDelegate", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["C6Tatari11AppDelegate", "onInAppClosed"]
+- ["C6Tatari11AppDelegate", "onInAppDisplayed"]
+- ["C6Tatari11AppDelegate", "onPushAccepted"]
+- ["C6Tatari11AppDelegate", "onPushReceived"]
+- ["C6Tatari11AppDelegate", "onRichPageBackTapped"]
+- ["C6Tatari11AppDelegate", "onRichPageButtonTapped"]
+- ["C6Tatari11AppDelegate", "onTagsFailedToReceive"]
+- ["C6Tatari11AppDelegate", "onTagsReceived"]
+- !private ["C6Tatari11AppDelegate", "print"]
 - ["C6Tatari11AppDelegate", "window"]
+- !private ["Sb", "deinit"]
 - !private ["PSs11CVarArgType", "FBSDKAppEvents"]
 - !private ["PSs11CVarArgType", "FBSDKApplicationDelegate"]
+- !private ["PSs11CVarArgType", "PushNotificationManager"]
 - !private ["PSs11CVarArgType", "activateApp"]
 - ["PSs11CVarArgType", "application"]
 - ["PSs11CVarArgType", "applicationDidBecomeActive"]
@@ -86,12 +131,34 @@ depends-member:
 - ["PSs11CVarArgType", "applicationWillEnterForeground"]
 - ["PSs11CVarArgType", "applicationWillResignActive"]
 - ["PSs11CVarArgType", "applicationWillTerminate"]
+- !private ["PSs11CVarArgType", "delegate"]
+- !private ["PSs11CVarArgType", "handlePushReceived"]
+- !private ["PSs11CVarArgType", "handlePushRegistration"]
+- !private ["PSs11CVarArgType", "handlePushRegistrationFailure"]
 - ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSs11CVarArgType", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSs11CVarArgType", "onInAppClosed"]
+- ["PSs11CVarArgType", "onInAppDisplayed"]
+- ["PSs11CVarArgType", "onPushAccepted"]
+- ["PSs11CVarArgType", "onPushReceived"]
+- ["PSs11CVarArgType", "onRichPageBackTapped"]
+- ["PSs11CVarArgType", "onRichPageButtonTapped"]
+- ["PSs11CVarArgType", "onTagsFailedToReceive"]
+- ["PSs11CVarArgType", "onTagsReceived"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "pushManager"]
+- !private ["PSs11CVarArgType", "registerForPushNotifications"]
+- !private ["PSs11CVarArgType", "sendAppOpen"]
 - !private ["PSs11CVarArgType", "sharedInstance"]
 - ["PSs11CVarArgType", "window"]
 - ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "FBSDKAppEvents"]
 - !private ["PSs23CustomStringConvertible", "FBSDKApplicationDelegate"]
+- !private ["PSs23CustomStringConvertible", "PushNotificationManager"]
 - !private ["PSs23CustomStringConvertible", "activateApp"]
 - ["PSs23CustomStringConvertible", "application"]
 - ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
@@ -105,12 +172,32 @@ depends-member:
 - ["PSs23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["PSs23CustomStringConvertible", "applicationWillResignActive"]
 - ["PSs23CustomStringConvertible", "applicationWillTerminate"]
+- !private ["PSs23CustomStringConvertible", "delegate"]
+- !private ["PSs23CustomStringConvertible", "handlePushReceived"]
+- !private ["PSs23CustomStringConvertible", "handlePushRegistration"]
+- !private ["PSs23CustomStringConvertible", "handlePushRegistrationFailure"]
 - ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSs23CustomStringConvertible", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSs23CustomStringConvertible", "onInAppClosed"]
+- ["PSs23CustomStringConvertible", "onInAppDisplayed"]
+- ["PSs23CustomStringConvertible", "onPushAccepted"]
+- ["PSs23CustomStringConvertible", "onPushReceived"]
+- ["PSs23CustomStringConvertible", "onRichPageBackTapped"]
+- ["PSs23CustomStringConvertible", "onRichPageButtonTapped"]
+- ["PSs23CustomStringConvertible", "onTagsFailedToReceive"]
+- ["PSs23CustomStringConvertible", "onTagsReceived"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "pushManager"]
+- !private ["PSs23CustomStringConvertible", "registerForPushNotifications"]
+- !private ["PSs23CustomStringConvertible", "sendAppOpen"]
 - !private ["PSs23CustomStringConvertible", "sharedInstance"]
 - ["PSs23CustomStringConvertible", "window"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "FBSDKAppEvents"]
 - !private ["PSs9Equatable", "FBSDKApplicationDelegate"]
+- !private ["PSs9Equatable", "PushNotificationManager"]
 - !private ["PSs9Equatable", "activateApp"]
 - ["PSs9Equatable", "application"]
 - ["PSs9Equatable", "applicationDidBecomeActive"]
@@ -124,15 +211,36 @@ depends-member:
 - ["PSs9Equatable", "applicationWillEnterForeground"]
 - ["PSs9Equatable", "applicationWillResignActive"]
 - ["PSs9Equatable", "applicationWillTerminate"]
+- !private ["PSs9Equatable", "delegate"]
+- !private ["PSs9Equatable", "handlePushReceived"]
+- !private ["PSs9Equatable", "handlePushRegistration"]
+- !private ["PSs9Equatable", "handlePushRegistrationFailure"]
 - ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSs9Equatable", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSs9Equatable", "onInAppClosed"]
+- ["PSs9Equatable", "onInAppDisplayed"]
+- ["PSs9Equatable", "onPushAccepted"]
+- ["PSs9Equatable", "onPushReceived"]
+- ["PSs9Equatable", "onRichPageBackTapped"]
+- ["PSs9Equatable", "onRichPageButtonTapped"]
+- ["PSs9Equatable", "onTagsFailedToReceive"]
+- ["PSs9Equatable", "onTagsReceived"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "pushManager"]
+- !private ["PSs9Equatable", "registerForPushNotifications"]
+- !private ["PSs9Equatable", "sendAppOpen"]
 - !private ["PSs9Equatable", "sharedInstance"]
 - ["PSs9Equatable", "window"]
 - ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["CSo14FBSDKAppEvents", "activateApp"]
 - !private ["CSo24FBSDKApplicationDelegate", "application"]
 - !private ["CSo24FBSDKApplicationDelegate", "sharedInstance"]
+- !private ["Sf", "deinit"]
 - !private ["PSs8Hashable", "FBSDKAppEvents"]
 - !private ["PSs8Hashable", "FBSDKApplicationDelegate"]
+- !private ["PSs8Hashable", "PushNotificationManager"]
 - !private ["PSs8Hashable", "activateApp"]
 - ["PSs8Hashable", "application"]
 - ["PSs8Hashable", "applicationDidBecomeActive"]
@@ -146,16 +254,47 @@ depends-member:
 - ["PSs8Hashable", "applicationWillEnterForeground"]
 - ["PSs8Hashable", "applicationWillResignActive"]
 - ["PSs8Hashable", "applicationWillTerminate"]
+- !private ["PSs8Hashable", "delegate"]
+- !private ["PSs8Hashable", "handlePushReceived"]
+- !private ["PSs8Hashable", "handlePushRegistration"]
+- !private ["PSs8Hashable", "handlePushRegistrationFailure"]
 - ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSs8Hashable", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSs8Hashable", "onInAppClosed"]
+- ["PSs8Hashable", "onInAppDisplayed"]
+- ["PSs8Hashable", "onPushAccepted"]
+- ["PSs8Hashable", "onPushReceived"]
+- ["PSs8Hashable", "onRichPageBackTapped"]
+- ["PSs8Hashable", "onRichPageButtonTapped"]
+- ["PSs8Hashable", "onTagsFailedToReceive"]
+- ["PSs8Hashable", "onTagsReceived"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "pushManager"]
+- !private ["PSs8Hashable", "registerForPushNotifications"]
+- !private ["PSs8Hashable", "sendAppOpen"]
 - !private ["PSs8Hashable", "sharedInstance"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
+- !private ["P6Tatari17JSONSubscriptType", "init"]
+- !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "FBSDKAppEvents"]
 - !private ["CSo8NSObject", "FBSDKApplicationDelegate"]
+- ["CSo8NSObject", "NSData"]
+- ["CSo8NSObject", "NSError"]
 - ["CSo8NSObject", "NSObject"]
 - ["CSo8NSObject", "NSURL"]
+- ["CSo8NSObject", "PushNotificationManager"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIWindow"]
@@ -172,11 +311,30 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "handlePushReceived"]
+- !private ["CSo8NSObject", "handlePushRegistration"]
+- !private ["CSo8NSObject", "handlePushRegistrationFailure"]
 - ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["CSo8NSObject", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["CSo8NSObject", "onInAppClosed"]
+- ["CSo8NSObject", "onInAppDisplayed"]
+- ["CSo8NSObject", "onPushAccepted"]
+- ["CSo8NSObject", "onPushReceived"]
+- ["CSo8NSObject", "onRichPageBackTapped"]
+- ["CSo8NSObject", "onRichPageButtonTapped"]
+- ["CSo8NSObject", "onTagsFailedToReceive"]
+- ["CSo8NSObject", "onTagsReceived"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "pushManager"]
+- !private ["CSo8NSObject", "registerForPushNotifications"]
+- !private ["CSo8NSObject", "sendAppOpen"]
 - !private ["CSo8NSObject", "sharedInstance"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAppEvents"]
 - !private ["PSo16NSObjectProtocol", "FBSDKApplicationDelegate"]
+- !private ["PSo16NSObjectProtocol", "PushNotificationManager"]
 - !private ["PSo16NSObjectProtocol", "activateApp"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
@@ -190,13 +348,82 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "handlePushReceived"]
+- !private ["PSo16NSObjectProtocol", "handlePushRegistration"]
+- !private ["PSo16NSObjectProtocol", "handlePushRegistrationFailure"]
 - ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSo16NSObjectProtocol", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSo16NSObjectProtocol", "onInAppClosed"]
+- ["PSo16NSObjectProtocol", "onInAppDisplayed"]
+- ["PSo16NSObjectProtocol", "onPushAccepted"]
+- ["PSo16NSObjectProtocol", "onPushReceived"]
+- ["PSo16NSObjectProtocol", "onRichPageBackTapped"]
+- ["PSo16NSObjectProtocol", "onRichPageButtonTapped"]
+- ["PSo16NSObjectProtocol", "onTagsFailedToReceive"]
+- ["PSo16NSObjectProtocol", "onTagsReceived"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "pushManager"]
+- !private ["PSo16NSObjectProtocol", "registerForPushNotifications"]
+- !private ["PSo16NSObjectProtocol", "sendAppOpen"]
 - !private ["PSo16NSObjectProtocol", "sharedInstance"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "init"]
 - !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "init"]
+- !private ["PSo24PushNotificationDelegate", "FBSDKAppEvents"]
+- !private ["PSo24PushNotificationDelegate", "FBSDKApplicationDelegate"]
+- !private ["PSo24PushNotificationDelegate", "PushNotificationManager"]
+- ["PSo24PushNotificationDelegate", "application"]
+- ["PSo24PushNotificationDelegate", "applicationDidBecomeActive"]
+- ["PSo24PushNotificationDelegate", "applicationDidEnterBackground"]
+- ["PSo24PushNotificationDelegate", "applicationDidFinishLaunching"]
+- ["PSo24PushNotificationDelegate", "applicationDidReceiveMemoryWarning"]
+- ["PSo24PushNotificationDelegate", "applicationProtectedDataDidBecomeAvailable"]
+- ["PSo24PushNotificationDelegate", "applicationProtectedDataWillBecomeUnavailable"]
+- ["PSo24PushNotificationDelegate", "applicationShouldRequestHealthAuthorization"]
+- ["PSo24PushNotificationDelegate", "applicationSignificantTimeChange"]
+- ["PSo24PushNotificationDelegate", "applicationWillEnterForeground"]
+- ["PSo24PushNotificationDelegate", "applicationWillResignActive"]
+- ["PSo24PushNotificationDelegate", "applicationWillTerminate"]
+- ["PSo24PushNotificationDelegate", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSo24PushNotificationDelegate", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSo24PushNotificationDelegate", "onInAppClosed"]
+- ["PSo24PushNotificationDelegate", "onInAppDisplayed"]
+- ["PSo24PushNotificationDelegate", "onPushAccepted"]
+- ["PSo24PushNotificationDelegate", "onPushReceived"]
+- ["PSo24PushNotificationDelegate", "onRichPageBackTapped"]
+- ["PSo24PushNotificationDelegate", "onRichPageButtonTapped"]
+- ["PSo24PushNotificationDelegate", "onTagsFailedToReceive"]
+- ["PSo24PushNotificationDelegate", "onTagsReceived"]
+- !private ["PSo24PushNotificationDelegate", "print"]
+- ["PSo24PushNotificationDelegate", "window"]
+- ["PSo24PushNotificationDelegate", ""]
+- !private ["CSo23PushNotificationManager", "delegate"]
+- !private ["CSo23PushNotificationManager", "handlePushReceived"]
+- !private ["CSo23PushNotificationManager", "handlePushRegistration"]
+- !private ["CSo23PushNotificationManager", "handlePushRegistrationFailure"]
+- !private ["CSo23PushNotificationManager", "pushManager"]
+- !private ["CSo23PushNotificationManager", "registerForPushNotifications"]
+- !private ["CSo23PushNotificationManager", "sendAppOpen"]
+- !private ["PSo28SKPaymentTransactionObserver", "delegate"]
+- !private ["PSo28SKPaymentTransactionObserver", "handlePushReceived"]
+- !private ["PSo28SKPaymentTransactionObserver", "handlePushRegistration"]
+- !private ["PSo28SKPaymentTransactionObserver", "handlePushRegistrationFailure"]
+- !private ["PSo28SKPaymentTransactionObserver", "pushManager"]
+- !private ["PSo28SKPaymentTransactionObserver", "registerForPushNotifications"]
+- !private ["PSo28SKPaymentTransactionObserver", "sendAppOpen"]
+- !private ["PSs10Streamable", "init"]
+- !private ["SS", "init"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
+- !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo21UIApplicationDelegate", "FBSDKAppEvents"]
 - !private ["PSo21UIApplicationDelegate", "FBSDKApplicationDelegate"]
+- !private ["PSo21UIApplicationDelegate", "PushNotificationManager"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -209,14 +436,28 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- ["PSo21UIApplicationDelegate", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["PSo21UIApplicationDelegate", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["PSo21UIApplicationDelegate", "onInAppClosed"]
+- ["PSo21UIApplicationDelegate", "onInAppDisplayed"]
+- ["PSo21UIApplicationDelegate", "onPushAccepted"]
+- ["PSo21UIApplicationDelegate", "onPushReceived"]
+- ["PSo21UIApplicationDelegate", "onRichPageBackTapped"]
+- ["PSo21UIApplicationDelegate", "onRichPageButtonTapped"]
+- ["PSo21UIApplicationDelegate", "onTagsFailedToReceive"]
+- ["PSo21UIApplicationDelegate", "onTagsReceived"]
+- !private ["PSo21UIApplicationDelegate", "print"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FBSDKAppEvents"]
 - !private ["CSo11UIResponder", "FBSDKApplicationDelegate"]
+- ["CSo11UIResponder", "NSData"]
+- ["CSo11UIResponder", "NSError"]
 - ["CSo11UIResponder", "NSObject"]
 - ["CSo11UIResponder", "NSURL"]
+- ["CSo11UIResponder", "PushNotificationManager"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -233,22 +474,88 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "onDidFailToRegisterForRemoteNotificationsWithError"]
+- ["CSo11UIResponder", "onDidRegisterForRemoteNotificationsWithDeviceToken"]
+- ["CSo11UIResponder", "onInAppClosed"]
+- ["CSo11UIResponder", "onInAppDisplayed"]
+- ["CSo11UIResponder", "onPushAccepted"]
+- ["CSo11UIResponder", "onPushReceived"]
+- ["CSo11UIResponder", "onRichPageBackTapped"]
+- ["CSo11UIResponder", "onRichPageButtonTapped"]
+- ["CSo11UIResponder", "onTagsFailedToReceive"]
+- ["CSo11UIResponder", "onTagsReceived"]
+- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
+- !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "init"]
 depends-nominal:
 - "PSs9AnyObject"
 - "C6Tatari11AppDelegate"
+- !private "Sb"
 - "PSs11CVarArgType"
+- !private "VSs9Character"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- !private "Sd"
 - "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
 - !private "CSo14FBSDKAppEvents"
 - !private "CSo24FBSDKApplicationDelegate"
+- !private "Sf"
 - "PSs8Hashable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
+- !private "P6Tatari17JSONSubscriptType"
+- !private "PSs14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - !private "Sq"
+- !private "PSs16OutputStreamType"
+- "PSo24PushNotificationDelegate"
+- !private "CSo23PushNotificationManager"
+- !private "PSo28SKPaymentTransactionObserver"
+- !private "PSs10Streamable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
 - "PSo21UIApplicationDelegate"
 - "CSo11UIResponder"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
@@ -308,5 +615,6 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "9f5507a935bed6ac28b0f1c27c3fe41b"
+interface-hash: "f5e2f2dd3b481e46906220c46818583b"

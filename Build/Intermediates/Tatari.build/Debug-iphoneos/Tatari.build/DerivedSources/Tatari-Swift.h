@@ -93,15 +93,20 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import FBSDKLoginKit;
 #endif
 
+#import "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
 @class UIApplication;
 @class NSObject;
 @class NSURL;
+@class NSData;
+@class NSError;
+@class PushNotificationManager;
 
 SWIFT_CLASS("_TtC6Tatari11AppDelegate")
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, PushNotificationDelegate>
 @property (nonatomic, strong) UIWindow * __nullable window;
 - (BOOL)application:(UIApplication * __nonnull)application didFinishLaunchingWithOptions:(NSDictionary * __nullable)launchOptions;
 - (BOOL)application:(UIApplication * __nonnull)application openURL:(NSURL * __nonnull)url sourceApplication:(NSString * __nullable)sourceApplication annotation:(id __nullable)annotation;
@@ -110,6 +115,10 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 - (void)applicationWillEnterForeground:(UIApplication * __nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * __nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * __nonnull)application;
+- (void)application:(UIApplication * __nonnull)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData * __nonnull)deviceToken;
+- (void)application:(UIApplication * __nonnull)application didFailToRegisterForRemoteNotificationsWithError:(NSError * __nonnull)error;
+- (void)application:(UIApplication * __nonnull)application didReceiveRemoteNotification:(NSDictionary * __nonnull)userInfo;
+- (void)onPushAccepted:(PushNotificationManager * __null_unspecified)pushManager withNotification:(NSDictionary * __null_unspecified)pushNotification onStart:(BOOL)onStart;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -190,12 +199,14 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull imgPeople;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
@@ -206,7 +217,6 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
-@class NSError;
 
 SWIFT_CLASS("_TtC6Tatari14ViewController")
 @interface ViewController : UIViewController <FBSDKLoginButtonDelegate>
@@ -267,6 +277,23 @@ SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btVote;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgPerson;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblName;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6Tatari19personTableViewCell")
+@interface personTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgPessoa;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblCurtir;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblDesafiar;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblFacebook;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btCurtir;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btFacebook;
+@property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btDesafiar;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblNome;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;

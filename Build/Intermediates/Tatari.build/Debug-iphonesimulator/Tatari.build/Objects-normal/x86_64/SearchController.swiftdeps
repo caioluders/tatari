@@ -6,53 +6,53 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "textFieldDidChange"
-- "txtFieldSearch"
-- "JSONStringify"
-- "send_chall"
-- "HTTPsendRequest"
-- "HTTPPostJSON"
-- "search_people"
-- "tableView"
-- "tableView"
-- "tableView"
 - "people"
+- "search_people"
+- "textFieldDidChange"
+- "tableView"
+- "tableView"
+- "tableView"
+- "JSONStringify"
+- "HTTPPostJSON"
 - "viewDidLoad"
+- "send_chall"
+- "txtFieldSearch"
+- "HTTPsendRequest"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "Array"
-- "NSIndexPath"
-- "SearchController"
-- !private "NSUTF8StringEncoding"
-- !private "FBSDKAccessToken"
-- "BooleanLiteralType"
 - !private "NSURL"
-- "UITextField"
-- "UIViewController"
-- "AnyObject"
-- "NSString"
-- "NSMutableURLRequest"
-- !private "dispatch_async"
-- "Void"
-- "UITableViewCell"
 - !private "NSJSONWritingOptions"
-- !private "StringLiteralType"
-- !private "NSJSONSerialization"
-- !private "!="
-- !private "NSData"
-- !private "dispatch_get_main_queue"
-- "Bool"
-- "String"
-- "UITableView"
-- !private "UIControlEvents"
-- !private "NSMutableDictionary"
-- !private "NSURLSession"
-- "UITextFieldDelegate"
 - "UITableViewDelegate"
-- !private "print"
-- !private "JSON"
+- !private "StringLiteralType"
+- !private "NSURLSession"
 - "UITableViewDataSource"
 - "Int"
+- !private "!="
+- !private "NSData"
+- !private "JSON"
+- !private "NSUTF8StringEncoding"
+- !private "NSMutableDictionary"
+- "BooleanLiteralType"
+- "NSIndexPath"
+- "UIViewController"
+- !private "UIControlEvents"
+- "String"
+- "UITableView"
+- !private "FBSDKAccessToken"
+- "AnyObject"
+- !private "NSJSONSerialization"
+- "UITextField"
+- !private "dispatch_get_main_queue"
+- "SearchController"
+- "NSMutableURLRequest"
+- "Void"
+- !private "Array"
+- "NSString"
+- "Bool"
+- !private "dispatch_async"
+- "UITextFieldDelegate"
+- "UITableViewCell"
+- !private "print"
 depends-member:
 - !private ["PSs9AnyObject", "Element"]
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
@@ -1419,7 +1419,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo20UIScrollViewDelegate", "search_people"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
-- !private ["PSo20UIScrollViewDelegate", "send_chall"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "textField"]
 - ["PSo20UIScrollViewDelegate", "textFieldDidBeginEditing"]
@@ -1523,7 +1522,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - !private ["PSo21UITableViewDataSource", "search_people"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
-- !private ["PSo21UITableViewDataSource", "send_chall"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "textField"]
 - ["PSo21UITableViewDataSource", "textFieldDidBeginEditing"]
@@ -1571,7 +1569,6 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo19UITableViewDelegate", "search_people"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
-- !private ["PSo19UITableViewDelegate", "send_chall"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "textField"]
 - ["PSo19UITableViewDelegate", "textFieldDidBeginEditing"]
@@ -1622,7 +1619,6 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo19UITextFieldDelegate", "search_people"]
 - ["PSo19UITextFieldDelegate", "sectionIndexTitlesForTableView"]
-- !private ["PSo19UITextFieldDelegate", "send_chall"]
 - ["PSo19UITextFieldDelegate", "tableView"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
@@ -2041,5 +2037,6 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "7095f757f22fc3ace938f4d8a89a13cf"

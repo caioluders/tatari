@@ -1,0 +1,379 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "personTableViewCell"
+provides-nominal:
+- "C6Tatari19personTableViewCell"
+provides-member:
+- ["C6Tatari19personTableViewCell", ""]
+provides-dynamic-lookup:
+- "lblFacebook"
+- "setSelected"
+- "btCurtir"
+- "lblCurtir"
+- "btDesafiar"
+- "awakeFromNib"
+- "lblDesafiar"
+- "imgPessoa"
+- "lblNome"
+- "btFacebook"
+depends-top-level:
+- "Bool"
+- "personTableViewCell"
+- "UIButton"
+- "UIImageView"
+- "UITableViewCell"
+- "UILabel"
+depends-member:
+- ["PSs9AnyObject", "awakeFromNib"]
+- ["PSs9AnyObject", "btCurtir"]
+- ["PSs9AnyObject", "btDesafiar"]
+- ["PSs9AnyObject", "btFacebook"]
+- ["PSs9AnyObject", "imgPessoa"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "lblCurtir"]
+- ["PSs9AnyObject", "lblDesafiar"]
+- ["PSs9AnyObject", "lblFacebook"]
+- ["PSs9AnyObject", "lblNome"]
+- ["PSs9AnyObject", "setSelected"]
+- ["PSs9AnyObject", ""]
+- ["PSs11CVarArgType", "awakeFromNib"]
+- ["PSs11CVarArgType", "btCurtir"]
+- ["PSs11CVarArgType", "btDesafiar"]
+- ["PSs11CVarArgType", "btFacebook"]
+- ["PSs11CVarArgType", "imgPessoa"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "lblCurtir"]
+- ["PSs11CVarArgType", "lblDesafiar"]
+- ["PSs11CVarArgType", "lblFacebook"]
+- ["PSs11CVarArgType", "lblNome"]
+- ["PSs11CVarArgType", "setSelected"]
+- ["PSs11CVarArgType", ""]
+- ["PSs23CustomStringConvertible", "awakeFromNib"]
+- ["PSs23CustomStringConvertible", "btCurtir"]
+- ["PSs23CustomStringConvertible", "btDesafiar"]
+- ["PSs23CustomStringConvertible", "btFacebook"]
+- ["PSs23CustomStringConvertible", "imgPessoa"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "lblCurtir"]
+- ["PSs23CustomStringConvertible", "lblDesafiar"]
+- ["PSs23CustomStringConvertible", "lblFacebook"]
+- ["PSs23CustomStringConvertible", "lblNome"]
+- ["PSs23CustomStringConvertible", "setSelected"]
+- ["PSs23CustomStringConvertible", ""]
+- ["PSs9Equatable", "awakeFromNib"]
+- ["PSs9Equatable", "btCurtir"]
+- ["PSs9Equatable", "btDesafiar"]
+- ["PSs9Equatable", "btFacebook"]
+- ["PSs9Equatable", "imgPessoa"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "lblCurtir"]
+- ["PSs9Equatable", "lblDesafiar"]
+- ["PSs9Equatable", "lblFacebook"]
+- ["PSs9Equatable", "lblNome"]
+- ["PSs9Equatable", "setSelected"]
+- ["PSs9Equatable", ""]
+- ["PSs8Hashable", "awakeFromNib"]
+- ["PSs8Hashable", "btCurtir"]
+- ["PSs8Hashable", "btDesafiar"]
+- ["PSs8Hashable", "btFacebook"]
+- ["PSs8Hashable", "imgPessoa"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "lblCurtir"]
+- ["PSs8Hashable", "lblDesafiar"]
+- ["PSs8Hashable", "lblFacebook"]
+- ["PSs8Hashable", "lblNome"]
+- ["PSs8Hashable", "setSelected"]
+- ["PSs8Hashable", ""]
+- ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "btCurtir"]
+- ["PSo8NSCoding", "btDesafiar"]
+- ["PSo8NSCoding", "btFacebook"]
+- ["PSo8NSCoding", "imgPessoa"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "lblCurtir"]
+- ["PSo8NSCoding", "lblDesafiar"]
+- ["PSo8NSCoding", "lblFacebook"]
+- ["PSo8NSCoding", "lblNome"]
+- ["PSo8NSCoding", "setSelected"]
+- ["PSo8NSCoding", ""]
+- ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "btCurtir"]
+- ["CSo8NSObject", "btDesafiar"]
+- ["CSo8NSObject", "btFacebook"]
+- ["CSo8NSObject", "imgPessoa"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "lblCurtir"]
+- ["CSo8NSObject", "lblDesafiar"]
+- ["CSo8NSObject", "lblFacebook"]
+- ["CSo8NSObject", "lblNome"]
+- ["CSo8NSObject", "setSelected"]
+- ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "btCurtir"]
+- ["PSo16NSObjectProtocol", "btDesafiar"]
+- ["PSo16NSObjectProtocol", "btFacebook"]
+- ["PSo16NSObjectProtocol", "imgPessoa"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "lblCurtir"]
+- ["PSo16NSObjectProtocol", "lblDesafiar"]
+- ["PSo16NSObjectProtocol", "lblFacebook"]
+- ["PSo16NSObjectProtocol", "lblNome"]
+- ["PSo16NSObjectProtocol", "setSelected"]
+- ["PSo16NSObjectProtocol", ""]
+- ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "btCurtir"]
+- ["PSo29UIAccessibilityIdentification", "btDesafiar"]
+- ["PSo29UIAccessibilityIdentification", "btFacebook"]
+- ["PSo29UIAccessibilityIdentification", "imgPessoa"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "lblCurtir"]
+- ["PSo29UIAccessibilityIdentification", "lblDesafiar"]
+- ["PSo29UIAccessibilityIdentification", "lblFacebook"]
+- ["PSo29UIAccessibilityIdentification", "lblNome"]
+- ["PSo29UIAccessibilityIdentification", "setSelected"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "btCurtir"]
+- ["PSo12UIAppearance", "btDesafiar"]
+- ["PSo12UIAppearance", "btFacebook"]
+- ["PSo12UIAppearance", "imgPessoa"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "lblCurtir"]
+- ["PSo12UIAppearance", "lblDesafiar"]
+- ["PSo12UIAppearance", "lblFacebook"]
+- ["PSo12UIAppearance", "lblNome"]
+- ["PSo12UIAppearance", "setSelected"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "btCurtir"]
+- ["PSo21UIAppearanceContainer", "btDesafiar"]
+- ["PSo21UIAppearanceContainer", "btFacebook"]
+- ["PSo21UIAppearanceContainer", "imgPessoa"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "lblCurtir"]
+- ["PSo21UIAppearanceContainer", "lblDesafiar"]
+- ["PSo21UIAppearanceContainer", "lblFacebook"]
+- ["PSo21UIAppearanceContainer", "lblNome"]
+- ["PSo21UIAppearanceContainer", "setSelected"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "btCurtir"]
+- ["PSo17UICoordinateSpace", "btDesafiar"]
+- ["PSo17UICoordinateSpace", "btFacebook"]
+- ["PSo17UICoordinateSpace", "imgPessoa"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "lblCurtir"]
+- ["PSo17UICoordinateSpace", "lblDesafiar"]
+- ["PSo17UICoordinateSpace", "lblFacebook"]
+- ["PSo17UICoordinateSpace", "lblNome"]
+- ["PSo17UICoordinateSpace", "setSelected"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "btCurtir"]
+- ["PSo13UIDynamicItem", "btDesafiar"]
+- ["PSo13UIDynamicItem", "btFacebook"]
+- ["PSo13UIDynamicItem", "imgPessoa"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "lblCurtir"]
+- ["PSo13UIDynamicItem", "lblDesafiar"]
+- ["PSo13UIDynamicItem", "lblFacebook"]
+- ["PSo13UIDynamicItem", "lblNome"]
+- ["PSo13UIDynamicItem", "setSelected"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "btCurtir"]
+- ["PSo18UIFocusEnvironment", "btDesafiar"]
+- ["PSo18UIFocusEnvironment", "btFacebook"]
+- ["PSo18UIFocusEnvironment", "imgPessoa"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "lblCurtir"]
+- ["PSo18UIFocusEnvironment", "lblDesafiar"]
+- ["PSo18UIFocusEnvironment", "lblFacebook"]
+- ["PSo18UIFocusEnvironment", "lblNome"]
+- ["PSo18UIFocusEnvironment", "setSelected"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "btCurtir"]
+- ["PSo27UIGestureRecognizerDelegate", "btDesafiar"]
+- ["PSo27UIGestureRecognizerDelegate", "btFacebook"]
+- ["PSo27UIGestureRecognizerDelegate", "imgPessoa"]
+- ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "lblCurtir"]
+- ["PSo27UIGestureRecognizerDelegate", "lblDesafiar"]
+- ["PSo27UIGestureRecognizerDelegate", "lblFacebook"]
+- ["PSo27UIGestureRecognizerDelegate", "lblNome"]
+- ["PSo27UIGestureRecognizerDelegate", "setSelected"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "btCurtir"]
+- ["CSo11UIResponder", "btDesafiar"]
+- ["CSo11UIResponder", "btFacebook"]
+- ["CSo11UIResponder", "imgPessoa"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "lblCurtir"]
+- ["CSo11UIResponder", "lblDesafiar"]
+- ["CSo11UIResponder", "lblFacebook"]
+- ["CSo11UIResponder", "lblNome"]
+- ["CSo11UIResponder", "setSelected"]
+- ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UIButton"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "btCurtir"]
+- ["CSo15UITableViewCell", "btDesafiar"]
+- ["CSo15UITableViewCell", "btFacebook"]
+- ["CSo15UITableViewCell", "imgPessoa"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "lblCurtir"]
+- ["CSo15UITableViewCell", "lblDesafiar"]
+- ["CSo15UITableViewCell", "lblFacebook"]
+- ["CSo15UITableViewCell", "lblNome"]
+- ["CSo15UITableViewCell", "setSelected"]
+- ["CSo15UITableViewCell", ""]
+- ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "btCurtir"]
+- ["PSo18UITraitEnvironment", "btDesafiar"]
+- ["PSo18UITraitEnvironment", "btFacebook"]
+- ["PSo18UITraitEnvironment", "imgPessoa"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "lblCurtir"]
+- ["PSo18UITraitEnvironment", "lblDesafiar"]
+- ["PSo18UITraitEnvironment", "lblFacebook"]
+- ["PSo18UITraitEnvironment", "lblNome"]
+- ["PSo18UITraitEnvironment", "setSelected"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UIButton"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "btCurtir"]
+- ["CSo6UIView", "btDesafiar"]
+- ["CSo6UIView", "btFacebook"]
+- ["CSo6UIView", "imgPessoa"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "lblCurtir"]
+- ["CSo6UIView", "lblDesafiar"]
+- ["CSo6UIView", "lblFacebook"]
+- ["CSo6UIView", "lblNome"]
+- ["CSo6UIView", "setSelected"]
+- ["PSs12_Reflectable", "awakeFromNib"]
+- ["PSs12_Reflectable", "btCurtir"]
+- ["PSs12_Reflectable", "btDesafiar"]
+- ["PSs12_Reflectable", "btFacebook"]
+- ["PSs12_Reflectable", "imgPessoa"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "lblCurtir"]
+- ["PSs12_Reflectable", "lblDesafiar"]
+- ["PSs12_Reflectable", "lblFacebook"]
+- ["PSs12_Reflectable", "lblNome"]
+- ["PSs12_Reflectable", "setSelected"]
+- ["PSs12_Reflectable", ""]
+- ["C6Tatari19personTableViewCell", "Bool"]
+- ["C6Tatari19personTableViewCell", "UIButton"]
+- ["C6Tatari19personTableViewCell", "UIImageView"]
+- ["C6Tatari19personTableViewCell", "UILabel"]
+- ["C6Tatari19personTableViewCell", "awakeFromNib"]
+- ["C6Tatari19personTableViewCell", "btCurtir"]
+- ["C6Tatari19personTableViewCell", "btDesafiar"]
+- ["C6Tatari19personTableViewCell", "btFacebook"]
+- ["C6Tatari19personTableViewCell", "deinit"]
+- ["C6Tatari19personTableViewCell", "imgPessoa"]
+- ["C6Tatari19personTableViewCell", "init"]
+- ["C6Tatari19personTableViewCell", "lblCurtir"]
+- ["C6Tatari19personTableViewCell", "lblDesafiar"]
+- ["C6Tatari19personTableViewCell", "lblFacebook"]
+- ["C6Tatari19personTableViewCell", "lblNome"]
+- ["C6Tatari19personTableViewCell", "setSelected"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "PSo27UIGestureRecognizerDelegate"
+- "CSo11UIResponder"
+- "CSo15UITableViewCell"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- "PSs12_Reflectable"
+- "C6Tatari19personTableViewCell"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+interface-hash: "a13d50685ef6410e56c1ad65c20b6b75"

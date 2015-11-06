@@ -56,6 +56,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!,error:&err)
             print(err)
             
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let idString = defaults.stringForKey("fb_id")
             
             if(err == nil) {
                 for (_,object) in json {
@@ -70,7 +72,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         }
                         let qtdVotesThisPic = Int(votes.count)
                         
-                        if (votes.contains("109156226113347")){
+                        if (votes.contains(idString!)){
                             print("já votou, querido")
                             self.idBotaoVoto = id
                         }
@@ -96,7 +98,6 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.names = []
         self.ids = []
         self.qtdVotes = []
-
     }
 
     override func didReceiveMemoryWarning() {
