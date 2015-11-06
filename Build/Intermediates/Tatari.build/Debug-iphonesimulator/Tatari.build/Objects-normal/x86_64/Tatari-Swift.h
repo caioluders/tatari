@@ -199,6 +199,7 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

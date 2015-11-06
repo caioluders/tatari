@@ -6,52 +6,53 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "textFieldDidChange"
 - "txtFieldSearch"
 - "JSONStringify"
-- "HTTPPostJSON"
+- "send_chall"
 - "HTTPsendRequest"
-- "didReceiveMemoryWarning"
-- "people"
-- "tableView"
-- "tableView"
-- "tableView"
-- "viewDidLoad"
+- "HTTPPostJSON"
 - "search_people"
-- "textFieldDidChange"
+- "tableView"
+- "tableView"
+- "tableView"
+- "people"
+- "viewDidLoad"
 depends-top-level:
-- !private "StringLiteralType"
-- "NSMutableURLRequest"
-- "UITextField"
-- "SearchController"
-- "Void"
-- "UITextFieldDelegate"
-- !private "dispatch_get_main_queue"
-- "Int"
-- "UITableViewDataSource"
-- !private "!="
-- "UITableViewDelegate"
-- !private "dispatch_async"
-- "NSString"
-- !private "UIControlEvents"
-- !private "JSON"
-- "UITableViewCell"
-- !private "NSJSONSerialization"
-- "Bool"
-- "AnyObject"
-- !private "print"
-- !private "NSURLSession"
-- !private "NSData"
-- "NSIndexPath"
-- "BooleanLiteralType"
-- !private "NSJSONWritingOptions"
-- "UITableView"
-- "String"
-- !private "NSMutableDictionary"
-- !private "NSUTF8StringEncoding"
 - !private "Array"
-- !private "NSURL"
-- "UIViewController"
+- "NSIndexPath"
+- "SearchController"
+- !private "NSUTF8StringEncoding"
 - !private "FBSDKAccessToken"
+- "BooleanLiteralType"
+- !private "NSURL"
+- "UITextField"
+- "UIViewController"
+- "AnyObject"
+- "NSString"
+- "NSMutableURLRequest"
+- !private "dispatch_async"
+- "Void"
+- "UITableViewCell"
+- !private "NSJSONWritingOptions"
+- !private "StringLiteralType"
+- !private "NSJSONSerialization"
+- !private "!="
+- !private "NSData"
+- !private "dispatch_get_main_queue"
+- "Bool"
+- "String"
+- "UITableView"
+- !private "UIControlEvents"
+- !private "NSMutableDictionary"
+- !private "NSURLSession"
+- "UITextFieldDelegate"
+- "UITableViewDelegate"
+- !private "print"
+- !private "JSON"
+- "UITableViewDataSource"
+- "Int"
 depends-member:
 - !private ["PSs9AnyObject", "Element"]
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
@@ -69,6 +70,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSURL"]
 - !private ["PSs9AnyObject", "NSURLSession"]
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
+- !private ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "addTarget"]
 - !private ["PSs9AnyObject", "addValue"]
@@ -107,6 +109,7 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "search_people"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
+- ["PSs9AnyObject", "send_chall"]
 - !private ["PSs9AnyObject", "setObject"]
 - !private ["PSs9AnyObject", "sharedSession"]
 - ["PSs9AnyObject", "tableView"]
@@ -189,6 +192,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURL"]
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
+- !private ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "addTarget"]
 - !private ["PSs11CVarArgType", "addValue"]
@@ -226,6 +230,7 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "search_people"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
+- ["PSs11CVarArgType", "send_chall"]
 - !private ["PSs11CVarArgType", "setObject"]
 - !private ["PSs11CVarArgType", "sharedSession"]
 - ["PSs11CVarArgType", "tableView"]
@@ -298,6 +303,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURL"]
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
+- !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
@@ -340,6 +346,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "search_people"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
+- ["PSs23CustomStringConvertible", "send_chall"]
 - !private ["PSs23CustomStringConvertible", "setObject"]
 - !private ["PSs23CustomStringConvertible", "sharedSession"]
 - !private ["PSs23CustomStringConvertible", "stringValue"]
@@ -393,6 +400,7 @@ depends-member:
 - !private ["PSs9Equatable", "NSURLSession"]
 - !private ["PSs9Equatable", "NSUTF8StringEncoding"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
+- !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "SubSequence"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "_DisabledRangeIndex"]
@@ -434,6 +442,7 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "search_people"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
+- ["PSs9Equatable", "send_chall"]
 - !private ["PSs9Equatable", "setObject"]
 - !private ["PSs9Equatable", "sharedSession"]
 - !private ["PSs9Equatable", "stringValue"]
@@ -497,6 +506,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSURL"]
 - !private ["PSs8Hashable", "NSURLSession"]
 - !private ["PSs8Hashable", "NSUTF8StringEncoding"]
+- !private ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addTarget"]
@@ -535,6 +545,7 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "search_people"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
+- ["PSs8Hashable", "send_chall"]
 - !private ["PSs8Hashable", "setObject"]
 - !private ["PSs8Hashable", "sharedSession"]
 - ["PSs8Hashable", "tableView"]
@@ -598,9 +609,11 @@ depends-member:
 - !private ["P6Tatari17JSONSubscriptType", "Distance"]
 - !private ["P6Tatari17JSONSubscriptType", "IntegerLiteralType"]
 - !private ["P6Tatari17JSONSubscriptType", "dataUsingEncoding"]
+- !private ["P6Tatari17JSONSubscriptType", "init"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
 - !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
@@ -642,6 +655,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "NSURLSession"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
+- !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "addValue"]
@@ -675,6 +689,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "search_people"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
+- ["PSo8NSCoding", "send_chall"]
 - !private ["PSo8NSCoding", "setObject"]
 - ["PSo8NSCoding", "tableView"]
 - !private ["PSo8NSCoding", "text"]
@@ -722,6 +737,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
@@ -746,6 +762,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "search_people"]
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
+- ["PSo26NSExtensionRequestHandling", "send_chall"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
 - ["PSo26NSExtensionRequestHandling", "textField"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidBeginEditing"]
@@ -843,6 +860,7 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "search_people"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
+- ["CSo8NSObject", "send_chall"]
 - !private ["CSo8NSObject", "setObject"]
 - !private ["CSo8NSObject", "sharedSession"]
 - ["CSo8NSObject", "tableView"]
@@ -877,6 +895,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
+- !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
@@ -914,6 +933,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "search_people"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
+- ["PSo16NSObjectProtocol", "send_chall"]
 - !private ["PSo16NSObjectProtocol", "setObject"]
 - !private ["PSo16NSObjectProtocol", "sharedSession"]
 - ["PSo16NSObjectProtocol", "tableView"]
@@ -970,6 +990,7 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
@@ -1037,6 +1058,7 @@ depends-member:
 - ["C6Tatari16SearchController", "scrollViewWillEndDragging"]
 - ["C6Tatari16SearchController", "search_people"]
 - ["C6Tatari16SearchController", "sectionIndexTitlesForTableView"]
+- ["C6Tatari16SearchController", "send_chall"]
 - ["C6Tatari16SearchController", "tableView"]
 - ["C6Tatari16SearchController", "textField"]
 - ["C6Tatari16SearchController", "textFieldDidBeginEditing"]
@@ -1074,11 +1096,14 @@ depends-member:
 - !private ["VSs5Slice", "_Element"]
 - !private ["VSs5Slice", "stringValue"]
 - !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
 - !private ["SS", "dataUsingEncoding"]
 - !private ["SS", "deinit"]
+- !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "Generator"]
 - !private ["PSs24StringLiteralConvertible", "Index"]
 - !private ["PSs24StringLiteralConvertible", "SubSequence"]
@@ -1112,6 +1137,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
+- !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
@@ -1140,6 +1166,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "search_people"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
+- ["PSo21UIAppearanceContainer", "send_chall"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textField"]
@@ -1168,6 +1195,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "NSURLSession"]
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
+- !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
@@ -1192,6 +1220,7 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
 - ["PSo18UIContentContainer", "search_people"]
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
+- ["PSo18UIContentContainer", "send_chall"]
 - ["PSo18UIContentContainer", "tableView"]
 - ["PSo18UIContentContainer", "textField"]
 - ["PSo18UIContentContainer", "textFieldDidBeginEditing"]
@@ -1234,6 +1263,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
+- !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
@@ -1262,6 +1292,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "search_people"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UIFocusEnvironment", "send_chall"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textField"]
@@ -1334,6 +1365,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "search_people"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
+- ["CSo11UIResponder", "send_chall"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textField"]
@@ -1364,6 +1396,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSURL"]
 - !private ["PSo20UIScrollViewDelegate", "NSURLSession"]
 - !private ["PSo20UIScrollViewDelegate", "NSUTF8StringEncoding"]
+- !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
@@ -1386,6 +1419,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo20UIScrollViewDelegate", "search_people"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo20UIScrollViewDelegate", "send_chall"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "textField"]
 - ["PSo20UIScrollViewDelegate", "textFieldDidBeginEditing"]
@@ -1410,6 +1444,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "NSURLSession"]
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
+- !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
@@ -1434,6 +1469,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
 - ["PSo16UIStateRestoring", "search_people"]
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
+- ["PSo16UIStateRestoring", "send_chall"]
 - ["PSo16UIStateRestoring", "tableView"]
 - ["PSo16UIStateRestoring", "textField"]
 - ["PSo16UIStateRestoring", "textFieldDidBeginEditing"]
@@ -1464,6 +1500,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSURL"]
 - !private ["PSo21UITableViewDataSource", "NSURLSession"]
 - !private ["PSo21UITableViewDataSource", "NSUTF8StringEncoding"]
+- !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
@@ -1486,6 +1523,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "scrollViewWillEndDragging"]
 - !private ["PSo21UITableViewDataSource", "search_people"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
+- !private ["PSo21UITableViewDataSource", "send_chall"]
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "textField"]
 - ["PSo21UITableViewDataSource", "textFieldDidBeginEditing"]
@@ -1510,6 +1548,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSURL"]
 - !private ["PSo19UITableViewDelegate", "NSURLSession"]
 - !private ["PSo19UITableViewDelegate", "NSUTF8StringEncoding"]
+- !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
@@ -1532,6 +1571,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo19UITableViewDelegate", "search_people"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITableViewDelegate", "send_chall"]
 - ["PSo19UITableViewDelegate", "tableView"]
 - ["PSo19UITableViewDelegate", "textField"]
 - ["PSo19UITableViewDelegate", "textFieldDidBeginEditing"]
@@ -1559,6 +1599,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "NSURL"]
 - !private ["PSo19UITextFieldDelegate", "NSURLSession"]
 - !private ["PSo19UITextFieldDelegate", "NSUTF8StringEncoding"]
+- !private ["PSo19UITextFieldDelegate", "String"]
 - !private ["PSo19UITextFieldDelegate", "UIControlEvents"]
 - !private ["PSo19UITextFieldDelegate", "dispatch_async"]
 - !private ["PSo19UITextFieldDelegate", "dispatch_get_main_queue"]
@@ -1581,6 +1622,7 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo19UITextFieldDelegate", "search_people"]
 - ["PSo19UITextFieldDelegate", "sectionIndexTitlesForTableView"]
+- !private ["PSo19UITextFieldDelegate", "send_chall"]
 - ["PSo19UITextFieldDelegate", "tableView"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
@@ -1611,6 +1653,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
+- !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
@@ -1639,6 +1682,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "search_people"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
+- ["PSo18UITraitEnvironment", "send_chall"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textField"]
@@ -1707,6 +1751,7 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
 - ["CSo16UIViewController", "search_people"]
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
+- ["CSo16UIViewController", "send_chall"]
 - ["CSo16UIViewController", "tableView"]
 - ["CSo16UIViewController", "textField"]
 - ["CSo16UIViewController", "textFieldDidBeginEditing"]
@@ -1738,11 +1783,15 @@ depends-member:
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
@@ -1772,6 +1821,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
@@ -1992,4 +2042,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "2730b143dfc6cafb0a21f3ebfddb6467"
+interface-hash: "7095f757f22fc3ace938f4d8a89a13cf"
