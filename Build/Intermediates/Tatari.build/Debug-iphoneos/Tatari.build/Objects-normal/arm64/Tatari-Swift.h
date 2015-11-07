@@ -193,6 +193,7 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 
 @class UITextField;
 @class NSString;
+@class UIAlertController;
 @class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
@@ -201,15 +202,15 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull imgPeople;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)presentVC:(UIAlertController * __nonnull)controller;
 - (void)buttonDesafiarAction:(UIButton * __null_unspecified)sender;
-- (void)buttonCurtirAction:(UIButton * __null_unspecified)sender;
-- (void)buttonFacebookAction:(UIButton * __null_unspecified)sender;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
@@ -297,8 +298,12 @@ SWIFT_CLASS("_TtC6Tatari19personTableViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btFacebook;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btDesafiar;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblNome;
+@property (nonatomic, copy) NSString * __nonnull fbId;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (IBAction)btFacebookPressed:(UIButton * __nonnull)sender;
+- (IBAction)btDesafiarPressed:(UIButton * __nonnull)sender;
+- (IBAction)btCurtirPressed:(id __nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

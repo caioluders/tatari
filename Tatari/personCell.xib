@@ -11,20 +11,22 @@
             <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JHf-Nh-qFc" id="XBd-Al-LgS">
-                <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="335" height="149.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-sK-Jph">
                         <rect key="frame" x="122" y="63" width="52" height="53"/>
                         <state key="normal" image="Facebook"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niH-XS-RY1">
-                        <rect key="frame" x="199" y="63" width="51" height="52"/>
-                        <state key="normal" image="Dado"/>
+                        <connections>
+                            <action selector="btFacebookPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="PSP-Fr-QLS"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-wi-jAy">
                         <rect key="frame" x="267" y="64" width="54" height="49"/>
                         <state key="normal" image="Heart"/>
+                        <connections>
+                            <action selector="btCurtirPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="U5D-Or-zUd"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-IP-pcT">
                         <rect key="frame" x="115" y="119" width="66" height="21"/>
@@ -53,6 +55,13 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niH-XS-RY1">
+                        <rect key="frame" x="199" y="63" width="51" height="52"/>
+                        <state key="normal" image="Dado"/>
+                        <connections>
+                            <action selector="btDesafiarPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="QWg-Uk-LAp"/>
+                        </connections>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>

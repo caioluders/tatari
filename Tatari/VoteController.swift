@@ -84,6 +84,13 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     }
                     
                 }
+                
+                //Show newest uploads first
+                self.pictures = self.pictures.reverse()
+                self.names = self.names.reverse()
+                self.ids = self.ids.reverse()
+                self.qtdVotes = self.qtdVotes.reverse()
+                
                 dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                     self.tableView.reloadData()
                     self.activityVote.stopAnimating()

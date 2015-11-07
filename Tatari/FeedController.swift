@@ -48,6 +48,11 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.itemsTitle.append(object["title"].stringValue)
                 self.itemsBody.append(object["text"].stringValue)
             }
+            
+            //Show newest messages first
+            self.itemsTitle =  self.itemsTitle.reverse()
+            self.itemsBody =  self.itemsBody.reverse()
+            
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
                 self.activityFeed.stopAnimating()

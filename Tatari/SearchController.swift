@@ -15,6 +15,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     @IBOutlet weak var txtFieldSearch: UITextField!
     var people: [String] = []
     var imgPeople: [String] = []
+    var fbIds: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +52,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             for (wtf,object) in json {
                 self.people.append(object["name"].stringValue)
                 self.imgPeople.append(object["picture"]["data"]["url"].stringValue)
+                self.fbIds.append(object["id"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
@@ -60,6 +62,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         })
         self.people = []
         self.imgPeople = []
+        self.fbIds = []
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,11 +78,16 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         let url = NSURL(string: self.imgPeople[indexPath.row])
         let data = NSData(contentsOfURL: url!)
         cell.imgPessoa.image = UIImage(data: data!)
-        cell.btDesafiar.addTarget(self, action: "buttonDesafiarAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        cell.btCurtir.addTarget(self, action: "buttonCurtirAction:", forControlEvents: UIControlEvents.TouchUpInside)
-        cell.btFacebook.addTarget(self, action: "buttonFacebookAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        cell.fbId = fbIds[indexPath.row]
+        
+        //cell.btDesafiar.addTarget(self, action: "buttonDesafiarAction:", forControlEvents: UIControlEvents.TouchUpInside)
         
         return cell
+    }
+    
+    func presentVC(controller: UIAlertController){
+        print("chamou")
+        //presentViewController(controller, animated: true, completion: nil)
     }
     
     func buttonDesafiarAction(sender:UIButton!){
@@ -114,13 +122,6 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         presentViewController(alertController, animated: true, completion: nil)
     }
     
-    func buttonCurtirAction(sender:UIButton!){
-        print("curtir")
-    }
-    
-    func buttonFacebookAction(sender:UIButton!){
-        print("facebook")
-    }
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 150
     }
