@@ -15,6 +15,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     var people: [String] = []
     var imgPeople: [UIImage] = []
     var fbIds: [String] = []
+    var dataPerson: [(String, UIImage, String)] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,7 +50,6 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     func search_people(ssearch:NSString) -> Void {
         // Function to make the autocomplete search
         // uses the callback to get the result
-        
         var json: JSON = JSON([])
         
         var mutable_result =  NSMutableDictionary()
@@ -57,22 +57,39 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         mutable_result.setObject(ssearch,forKey:"search")
         self.HTTPPostJSON("http://45.55.146.229:116/search_people", jsonObj: mutable_result, callback: { (data,error) -> Void in
             json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
-            for (wtf,object) in json {
-                self.people.append(object["name"].stringValue)
+            
+            var name = ""
+            var fbId = ""
+            var image: UIImage = UIImage()
+            
+            for (_,object) in json {
                 let url = NSURL(string: object["picture"]["data"]["url"].stringValue)
                 let data = NSData(contentsOfURL: url!)
+                
                 self.imgPeople.append(UIImage(data: data!)!)
+                
+                name = object["name"].stringValue
+                fbId = object["id"].stringValue
+                image = UIImage(data: data!)!
+                
+                self.dataPerson.append((name,image,fbId))
+                self.people.append(object["name"].stringValue)
+                
                 self.fbIds.append(object["id"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
             }
-            print(json)
+            print("DATA PERSON "+String(self.dataPerson.count))
             print(self.people.count)
+            print(self.imgPeople.count)
+            print(self.fbIds.count)
         })
+        
         self.people = []
         self.imgPeople = []
         self.fbIds = []
+        self.dataPerson = []
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

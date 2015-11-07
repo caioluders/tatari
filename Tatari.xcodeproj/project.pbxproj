@@ -279,7 +279,7 @@
 				TargetAttributes = {
 					627355A51BD8079400F7124A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = EHBSXGFU8H;
+						DevelopmentTeam = P6BZVZZ56C;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -514,7 +514,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2d.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";
@@ -537,7 +537,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2d.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";
