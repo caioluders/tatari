@@ -208,6 +208,8 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)buttonDesafiarAction:(UIButton * __null_unspecified)sender;
+- (void)buttonCurtirAction:(UIButton * __null_unspecified)sender;
+- (void)buttonFacebookAction:(UIButton * __null_unspecified)sender;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
