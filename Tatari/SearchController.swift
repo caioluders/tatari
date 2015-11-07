@@ -10,6 +10,7 @@ import UIKit
 
 class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var activityLoadingSearch: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtFieldSearch: UITextField!
     var people: [String] = []
@@ -21,6 +22,11 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         super.viewDidLoad()
         
         self.tableView.delegate = self
+        let bgImage = UIImage(named: "Background")
+        self.tableView.backgroundView = UIImageView(image: bgImage)
+        self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        
+        self.activityLoadingSearch.hidesWhenStopped = true
         
         self.navigationItem.title = "Pessoas"
         self.tableView.allowsSelection = false
@@ -35,17 +41,18 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         view.addGestureRecognizer(tap)
     }
     
-    func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     func textFieldDidChange(textField: UITextField) {
+        self.activityLoadingSearch.startAnimating()
         search_people(txtFieldSearch.text!)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.txtFieldSearch.resignFirstResponder()
+        return true;
     }
     
     func search_people(ssearch:NSString) -> Void {
@@ -93,6 +100,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
+                self.activityLoadingSearch.stopAnimating()
             }
             print("DATA PERSON "+String(self.dataPerson.count))
             print(self.people.count)

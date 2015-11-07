@@ -308,7 +308,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pessoas" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-eW-2x6">
                                 <rect key="frame" x="113" y="17" width="150" height="31"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesquisar por pessoas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-Mx-NWb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesquisar por pessoas" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-Mx-NWb">
                                 <rect key="frame" x="20" y="72" width="335" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -321,10 +321,15 @@
                                     <outlet property="delegate" destination="Saa-Bf-t3S" id="U5j-nd-5I4"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="S4J-bd-dmI">
+                                <rect key="frame" x="169" y="130" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="activityLoadingSearch" destination="S4J-bd-dmI" id="9mh-CJ-UYA"/>
                         <outlet property="tableView" destination="DhB-Os-weJ" id="Cm6-bz-SH7"/>
                         <outlet property="txtFieldSearch" destination="mPI-Mx-NWb" id="UNT-Le-Xkh"/>
                         <segue destination="ncg-kN-VOe" kind="show" identifier="oi" id="l4Z-mQ-ZKs"/>

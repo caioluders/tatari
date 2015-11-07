@@ -221,6 +221,7 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityLoadingSearch;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
@@ -228,9 +229,9 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull idsLikes;
 - (void)viewDidLoad;
-- (void)dismissKeyboard;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
