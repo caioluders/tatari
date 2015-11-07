@@ -10,7 +10,6 @@ import UIKit
 
 class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
-  
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtFieldSearch: UITextField!
     var people: [String] = []
@@ -28,6 +27,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         
         let nib = UINib(nibName: "personCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "personcell")
+        
+        //search_people("ca")
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,16 +85,22 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         let data = NSData(contentsOfURL: url!)
         cell.imgPessoa.image = UIImage(data: data!)
         cell.fbId = fbIds[indexPath.row]
-        
-        //cell.btDesafiar.addTarget(self, action: "buttonDesafiarAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        cell.btDesafiar.tag = indexPath.row
+        cell.btDesafiar.addTarget(self, action: "buttonDesafiarAction:", forControlEvents: UIControlEvents.TouchUpInside)
         
         return cell
     }
     
-    func showChallengePopUp(fbId: String){
+    override func viewDidAppear(animated: Bool) {
+        //self.performSegueWithIdentifier("oi", sender: nil)
+    }
+    
+    func showChallengeView(fbId: String){
         print("chamou "+fbId)
-        
-        
+        //self.txtFieldSearch.enabled = false
+        //var nextVC = DesafiosViewController()
+        //self.navigationController?.pushViewController(nextVC, animated: true)
+        self.performSegueWithIdentifier("oi", sender: nil)
     }
     
     func buttonDesafiarAction(sender:UIButton!){
@@ -101,31 +108,63 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         
         
         let challenge1 = UIAlertAction(title: "Dê uma bebida pro mais gato(a)", style: UIAlertActionStyle.Default, handler: {(alert :UIAlertAction!) in
-            print("OK button tapped")
+            print("Challenge 1")
+            var thisFbId = self.fbIds[sender.tag]
+            print(thisFbId)
+            self.send_chall(thisFbId, challenge_desc: "Dê uma bebida pro mais gato(a)")
         })
         alertController.addAction(challenge1)
         
         let challenge2 = UIAlertAction(title: "Vá ao bar se quiser um beijo", style: UIAlertActionStyle.Default, handler: {(alert :UIAlertAction!) in
-            print("OK button tapped")
+            print("Challenge 2")
+            var thisFbId = self.fbIds[sender.tag]
+            print(thisFbId)
+            self.send_chall(thisFbId, challenge_desc: "Vá ao bar se quiser um beijo")
         })
         alertController.addAction(challenge2)
         
         let challenge3 = UIAlertAction(title: "Vire uma dose e grite 'AI PAPAI'!", style: UIAlertActionStyle.Default, handler: {(alert :UIAlertAction!) in
-            print("OK button tapped")
+            print("Challenge 3")
+            var thisFbId = self.fbIds[sender.tag]
+            print(thisFbId)
+            self.send_chall(thisFbId, challenge_desc: "Vire uma dose e grite 'AI PAPAI'!")
         })
         alertController.addAction(challenge3)
         
         let challenge4 = UIAlertAction(title: "Mostre que vocé é top nos falsetes", style: UIAlertActionStyle.Default, handler: {(alert :UIAlertAction!) in
-            print("OK button tapped")
+            print("Challenge 4")
+            var thisFbId = self.fbIds[sender.tag]
+            print(thisFbId)
+            self.send_chall(thisFbId, challenge_desc: "Mostre que vocé é top nos falsetes")
         })
         alertController.addAction(challenge4)
         
         let challenge5 = UIAlertAction(title: "Desce até o chão rodando", style: UIAlertActionStyle.Default, handler: {(alert :UIAlertAction!) in
-            print("OK button tapped")
+            print("Challenge 5")
+            var thisFbId = self.fbIds[sender.tag]
+            print(thisFbId)
+            self.send_chall(thisFbId, challenge_desc: "Desce até o chão rodando")
         })
         alertController.addAction(challenge5)
         
+        let cancelar = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: {(alert :UIAlertAction!) in
+            print("Cancelar")
+        })
+        alertController.addAction(cancelar)
+        
         presentViewController(alertController, animated: true, completion: nil)
+       
+    }
+    
+    func send_chall(fb_id:NSString , challenge_desc:NSString) -> Void {
+        let mutable_result =  NSMutableDictionary()
+        mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
+        mutable_result.setObject(fb_id,forKey:"fb_id")
+        mutable_result.setObject(challenge_desc,forKey:"challenge")
+        
+        self.HTTPPostJSON("http://45.55.146.229:116/new_challenge", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            print(data)
+        })
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

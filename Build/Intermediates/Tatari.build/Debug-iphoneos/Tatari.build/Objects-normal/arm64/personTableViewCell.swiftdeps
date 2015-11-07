@@ -8,53 +8,52 @@ provides-member:
 - ["C6Tatari19personTableViewCell", ""]
 - ["CSo13UIApplication", "tryURL"]
 provides-dynamic-lookup:
-- "HTTPsendRequest"
-- "lblFacebook"
+- "lblNome"
 - "btDesafiarPressed"
-- "tryURL"
-- "JSONStringify"
-- "send_chall"
-- "fbId"
-- "btFacebook"
-- "btCurtir"
-- "awakeFromNib"
-- "btCurtirPressed"
+- "btDesafiar"
+- "imgPessoa"
 - "HTTPPostJSON"
 - "lblDesafiar"
-- "btDesafiar"
-- "setSelected"
-- "lblNome"
+- "JSONStringify"
+- "btFacebook"
 - "btFacebookPressed"
+- "lblFacebook"
+- "fbId"
+- "HTTPsendRequest"
+- "send_chall"
+- "setSelected"
+- "tryURL"
 - "lblCurtir"
-- "imgPessoa"
+- "btCurtirPressed"
+- "btCurtir"
+- "awakeFromNib"
 depends-top-level:
-- "AnyObject"
-- !private "NSData"
-- "Void"
-- "NSString"
-- !private "NSURL"
-- "NSMutableURLRequest"
-- !private "Array"
-- !private "SearchController"
-- !private "NSMutableDictionary"
-- "String"
-- !private "NSUTF8StringEncoding"
-- "StringLiteralType"
 - !private "NSJSONSerialization"
 - "UIApplication"
-- !private "NSURLSession"
-- !private "FBSDKAccessToken"
-- !private "+"
-- !private "NSJSONWritingOptions"
-- !private "print"
-- "personTableViewCell"
-- "Bool"
-- "UIImageView"
 - "BooleanLiteralType"
-- "UIButton"
-- "UILabel"
-- !private "!="
 - "UITableViewCell"
+- "NSString"
+- !private "Array"
+- !private "NSURLSession"
+- "personTableViewCell"
+- "UIButton"
+- "UIImageView"
+- "AnyObject"
+- !private "NSUTF8StringEncoding"
+- "UILabel"
+- "NSMutableURLRequest"
+- !private "FBSDKAccessToken"
+- !private "NSData"
+- !private "+"
+- "String"
+- "StringLiteralType"
+- "Bool"
+- !private "NSMutableDictionary"
+- !private "print"
+- !private "NSURL"
+- !private "NSJSONWritingOptions"
+- !private "!="
+- "Void"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "HTTPBody"]
@@ -70,7 +69,6 @@ depends-member:
 - !private ["PSs9AnyObject", "NSURL"]
 - !private ["PSs9AnyObject", "NSURLSession"]
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
-- !private ["PSs9AnyObject", "SearchController"]
 - !private ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIApplication"]
 - !private ["PSs9AnyObject", "addValue"]
@@ -103,7 +101,6 @@ depends-member:
 - ["PSs9AnyObject", "setSelected"]
 - !private ["PSs9AnyObject", "sharedApplication"]
 - !private ["PSs9AnyObject", "sharedSession"]
-- !private ["PSs9AnyObject", "showChallengePopUp"]
 - !private ["PSs9AnyObject", "tokenString"]
 - ["PSs9AnyObject", "tryURL"]
 - ["PSs9AnyObject", ""]
@@ -144,7 +141,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURL"]
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
-- !private ["PSs11CVarArgType", "SearchController"]
 - !private ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIApplication"]
 - !private ["PSs11CVarArgType", "addValue"]
@@ -177,7 +173,6 @@ depends-member:
 - ["PSs11CVarArgType", "setSelected"]
 - !private ["PSs11CVarArgType", "sharedApplication"]
 - !private ["PSs11CVarArgType", "sharedSession"]
-- !private ["PSs11CVarArgType", "showChallengePopUp"]
 - !private ["PSs11CVarArgType", "tokenString"]
 - ["PSs11CVarArgType", "tryURL"]
 - ["PSs11CVarArgType", ""]
@@ -217,7 +212,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURL"]
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
-- !private ["PSs23CustomStringConvertible", "SearchController"]
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIApplication"]
@@ -253,7 +247,6 @@ depends-member:
 - ["PSs23CustomStringConvertible", "setSelected"]
 - !private ["PSs23CustomStringConvertible", "sharedApplication"]
 - !private ["PSs23CustomStringConvertible", "sharedSession"]
-- !private ["PSs23CustomStringConvertible", "showChallengePopUp"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
 - ["PSs23CustomStringConvertible", "tryURL"]
 - ["PSs23CustomStringConvertible", ""]
@@ -276,7 +269,6 @@ depends-member:
 - !private ["PSs9Equatable", "NSURLSession"]
 - !private ["PSs9Equatable", "NSUTF8StringEncoding"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
-- !private ["PSs9Equatable", "SearchController"]
 - !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "UIApplication"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
@@ -310,7 +302,6 @@ depends-member:
 - ["PSs9Equatable", "setSelected"]
 - !private ["PSs9Equatable", "sharedApplication"]
 - !private ["PSs9Equatable", "sharedSession"]
-- !private ["PSs9Equatable", "showChallengePopUp"]
 - !private ["PSs9Equatable", "tokenString"]
 - ["PSs9Equatable", "tryURL"]
 - ["PSs9Equatable", ""]
@@ -340,7 +331,6 @@ depends-member:
 - !private ["PSs8Hashable", "NSURL"]
 - !private ["PSs8Hashable", "NSURLSession"]
 - !private ["PSs8Hashable", "NSUTF8StringEncoding"]
-- !private ["PSs8Hashable", "SearchController"]
 - !private ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIApplication"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
@@ -374,7 +364,6 @@ depends-member:
 - ["PSs8Hashable", "setSelected"]
 - !private ["PSs8Hashable", "sharedApplication"]
 - !private ["PSs8Hashable", "sharedSession"]
-- !private ["PSs8Hashable", "showChallengePopUp"]
 - !private ["PSs8Hashable", "tokenString"]
 - ["PSs8Hashable", "tryURL"]
 - ["PSs8Hashable", ""]
@@ -430,7 +419,6 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "NSURLSession"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
-- !private ["PSo8NSCoding", "SearchController"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "addValue"]
@@ -455,7 +443,6 @@ depends-member:
 - ["PSo8NSCoding", "send_chall"]
 - !private ["PSo8NSCoding", "setObject"]
 - ["PSo8NSCoding", "setSelected"]
-- !private ["PSo8NSCoding", "showChallengePopUp"]
 - !private ["PSo8NSCoding", "tokenString"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "HTTPBody"]
@@ -472,8 +459,6 @@ depends-member:
 - !private ["CSo12NSDictionary", "init"]
 - !private ["CSo12NSDictionary", "setObject"]
 - !private ["CSo7NSError", "localizedDescription"]
-- !private ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "showChallengePopUp"]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo17NSFastEnumeration", "setObject"]
 - !private ["CSo19NSJSONSerialization", "dataWithJSONObject"]
@@ -509,7 +494,6 @@ depends-member:
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSURLSession"]
 - !private ["CSo8NSObject", "NSUTF8StringEncoding"]
-- !private ["CSo8NSObject", "SearchController"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIButton"]
@@ -546,7 +530,6 @@ depends-member:
 - ["CSo8NSObject", "setSelected"]
 - !private ["CSo8NSObject", "sharedApplication"]
 - !private ["CSo8NSObject", "sharedSession"]
-- !private ["CSo8NSObject", "showChallengePopUp"]
 - !private ["CSo8NSObject", "tokenString"]
 - ["CSo8NSObject", "tryURL"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
@@ -563,7 +546,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
-- !private ["PSo16NSObjectProtocol", "SearchController"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
@@ -596,7 +578,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "setSelected"]
 - !private ["PSo16NSObjectProtocol", "sharedApplication"]
 - !private ["PSo16NSObjectProtocol", "sharedSession"]
-- !private ["PSo16NSObjectProtocol", "showChallengePopUp"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
 - ["PSo16NSObjectProtocol", "tryURL"]
 - ["PSo16NSObjectProtocol", ""]
@@ -637,8 +618,6 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "init"]
-- !private ["C6Tatari16SearchController", "init"]
-- !private ["C6Tatari16SearchController", "showChallengePopUp"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -675,7 +654,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "NSURL"]
 - !private ["PSo29UIAccessibilityIdentification", "NSURLSession"]
 - !private ["PSo29UIAccessibilityIdentification", "NSUTF8StringEncoding"]
-- !private ["PSo29UIAccessibilityIdentification", "SearchController"]
 - !private ["PSo29UIAccessibilityIdentification", "String"]
 - !private ["PSo29UIAccessibilityIdentification", "UIApplication"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
@@ -708,7 +686,6 @@ depends-member:
 - !private ["PSo12UIAppearance", "NSURL"]
 - !private ["PSo12UIAppearance", "NSURLSession"]
 - !private ["PSo12UIAppearance", "NSUTF8StringEncoding"]
-- !private ["PSo12UIAppearance", "SearchController"]
 - !private ["PSo12UIAppearance", "String"]
 - !private ["PSo12UIAppearance", "UIApplication"]
 - ["PSo12UIAppearance", "awakeFromNib"]
@@ -741,7 +718,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
-- !private ["PSo21UIAppearanceContainer", "SearchController"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
@@ -761,7 +737,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "send_chall"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
-- !private ["PSo21UIAppearanceContainer", "showChallengePopUp"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo13UIApplication", "NSURL"]
 - ["CSo13UIApplication", "String"]
@@ -770,8 +745,6 @@ depends-member:
 - !private ["CSo13UIApplication", "openURL"]
 - !private ["CSo13UIApplication", "sharedApplication"]
 - ["CSo13UIApplication", "tryURL"]
-- !private ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "showChallengePopUp"]
 - !private ["PSo17UICoordinateSpace", "FBSDKAccessToken"]
 - ["PSo17UICoordinateSpace", "HTTPPostJSON"]
 - ["PSo17UICoordinateSpace", "HTTPsendRequest"]
@@ -784,7 +757,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "NSURL"]
 - !private ["PSo17UICoordinateSpace", "NSURLSession"]
 - !private ["PSo17UICoordinateSpace", "NSUTF8StringEncoding"]
-- !private ["PSo17UICoordinateSpace", "SearchController"]
 - !private ["PSo17UICoordinateSpace", "String"]
 - !private ["PSo17UICoordinateSpace", "UIApplication"]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
@@ -817,7 +789,6 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "NSURL"]
 - !private ["PSo13UIDynamicItem", "NSURLSession"]
 - !private ["PSo13UIDynamicItem", "NSUTF8StringEncoding"]
-- !private ["PSo13UIDynamicItem", "SearchController"]
 - !private ["PSo13UIDynamicItem", "String"]
 - !private ["PSo13UIDynamicItem", "UIApplication"]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
@@ -850,7 +821,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
-- !private ["PSo18UIFocusEnvironment", "SearchController"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - ["PSo18UIFocusEnvironment", "awakeFromNib"]
@@ -870,7 +840,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "send_chall"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
-- !private ["PSo18UIFocusEnvironment", "showChallengePopUp"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "FBSDKAccessToken"]
 - ["PSo27UIGestureRecognizerDelegate", "HTTPPostJSON"]
@@ -884,7 +853,6 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "NSURL"]
 - !private ["PSo27UIGestureRecognizerDelegate", "NSURLSession"]
 - !private ["PSo27UIGestureRecognizerDelegate", "NSUTF8StringEncoding"]
-- !private ["PSo27UIGestureRecognizerDelegate", "SearchController"]
 - !private ["PSo27UIGestureRecognizerDelegate", "String"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIApplication"]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
@@ -920,7 +888,6 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSURLSession"]
 - !private ["CSo11UIResponder", "NSUTF8StringEncoding"]
-- !private ["CSo11UIResponder", "SearchController"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIButton"]
@@ -947,12 +914,7 @@ depends-member:
 - ["CSo11UIResponder", "send_chall"]
 - ["CSo11UIResponder", "setSelected"]
 - !private ["CSo11UIResponder", "sharedApplication"]
-- !private ["CSo11UIResponder", "showChallengePopUp"]
 - ["CSo11UIResponder", "tryURL"]
-- !private ["PSo20UIScrollViewDelegate", "init"]
-- !private ["PSo20UIScrollViewDelegate", "showChallengePopUp"]
-- !private ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "showChallengePopUp"]
 - ["CSo15UITableViewCell", "AnyObject"]
 - ["CSo15UITableViewCell", "Bool"]
 - !private ["CSo15UITableViewCell", "FBSDKAccessToken"]
@@ -968,7 +930,6 @@ depends-member:
 - !private ["CSo15UITableViewCell", "NSURL"]
 - !private ["CSo15UITableViewCell", "NSURLSession"]
 - !private ["CSo15UITableViewCell", "NSUTF8StringEncoding"]
-- !private ["CSo15UITableViewCell", "SearchController"]
 - ["CSo15UITableViewCell", "String"]
 - !private ["CSo15UITableViewCell", "UIApplication"]
 - ["CSo15UITableViewCell", "UIButton"]
@@ -993,12 +954,6 @@ depends-member:
 - ["CSo15UITableViewCell", "send_chall"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", ""]
-- !private ["PSo21UITableViewDataSource", "init"]
-- !private ["PSo21UITableViewDataSource", "showChallengePopUp"]
-- !private ["PSo19UITableViewDelegate", "init"]
-- !private ["PSo19UITableViewDelegate", "showChallengePopUp"]
-- !private ["PSo19UITextFieldDelegate", "init"]
-- !private ["PSo19UITextFieldDelegate", "showChallengePopUp"]
 - !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
 - ["PSo18UITraitEnvironment", "HTTPPostJSON"]
 - ["PSo18UITraitEnvironment", "HTTPsendRequest"]
@@ -1011,7 +966,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
-- !private ["PSo18UITraitEnvironment", "SearchController"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
@@ -1031,7 +985,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "send_chall"]
 - ["PSo18UITraitEnvironment", "setSelected"]
-- !private ["PSo18UITraitEnvironment", "showChallengePopUp"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "AnyObject"]
 - ["CSo6UIView", "Bool"]
@@ -1048,7 +1001,6 @@ depends-member:
 - !private ["CSo6UIView", "NSURL"]
 - !private ["CSo6UIView", "NSURLSession"]
 - !private ["CSo6UIView", "NSUTF8StringEncoding"]
-- !private ["CSo6UIView", "SearchController"]
 - ["CSo6UIView", "String"]
 - !private ["CSo6UIView", "UIApplication"]
 - ["CSo6UIView", "UIButton"]
@@ -1072,8 +1024,6 @@ depends-member:
 - !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "send_chall"]
 - ["CSo6UIView", "setSelected"]
-- !private ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "showChallengePopUp"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs10_ArrayType", "Element"]
@@ -1136,7 +1086,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "NSURL"]
 - !private ["PSs12_Reflectable", "NSURLSession"]
 - !private ["PSs12_Reflectable", "NSUTF8StringEncoding"]
-- !private ["PSs12_Reflectable", "SearchController"]
 - ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "String"]
 - !private ["PSs12_Reflectable", "SubSequence"]
@@ -1182,7 +1131,6 @@ depends-member:
 - !private ["C6Tatari19personTableViewCell", "NSURL"]
 - !private ["C6Tatari19personTableViewCell", "NSURLSession"]
 - !private ["C6Tatari19personTableViewCell", "NSUTF8StringEncoding"]
-- !private ["C6Tatari19personTableViewCell", "SearchController"]
 - ["C6Tatari19personTableViewCell", "String"]
 - !private ["C6Tatari19personTableViewCell", "UIApplication"]
 - ["C6Tatari19personTableViewCell", "UIButton"]
@@ -1247,7 +1195,6 @@ depends-nominal:
 - !private "PSo9NSCopying"
 - !private "CSo12NSDictionary"
 - !private "CSo7NSError"
-- !private "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
 - !private "CSo19NSJSONSerialization"
 - !private "VSC20NSJSONWritingOptions"
@@ -1270,7 +1217,6 @@ depends-nominal:
 - !private "PSs21RandomAccessIndexType"
 - !private "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
-- !private "C6Tatari16SearchController"
 - !private "PSs12SequenceType"
 - !private "PSs14SetAlgebraType"
 - !private "PSs17SignedIntegerType"
@@ -1284,21 +1230,14 @@ depends-nominal:
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "CSo13UIApplication"
-- !private "PSo18UIContentContainer"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "PSo27UIGestureRecognizerDelegate"
 - "CSo11UIResponder"
-- !private "PSo20UIScrollViewDelegate"
-- !private "PSo16UIStateRestoring"
 - "CSo15UITableViewCell"
-- !private "PSo21UITableViewDataSource"
-- !private "PSo19UITableViewDelegate"
-- !private "PSo19UITextFieldDelegate"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "CSo16UIViewController"
 - !private "PSs31UnicodeScalarLiteralConvertible"
 - !private "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"

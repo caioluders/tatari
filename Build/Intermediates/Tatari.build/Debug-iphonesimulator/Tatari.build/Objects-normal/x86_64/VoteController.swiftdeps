@@ -6,98 +6,99 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14VoteController", ""]
 provides-dynamic-lookup:
-- "HTTPPostJSON"
-- "ids"
-- "JSONStringify"
-- "idBotaoVoto"
-- "buttonVoteAction"
-- "items"
-- "imagePicker"
-- "didReceiveMemoryWarning"
-- "qtdVotes"
-- "imagePickerController"
-- "pictures"
-- "cleanAllArrays"
 - "activityVote"
-- "add_photo"
+- "cleanAllArrays"
 - "names"
 - "data"
-- "vote_for"
-- "voted"
-- "getDataFromServer"
+- "add_photo"
 - "btParticipar"
-- "HTTPsendRequest"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "vote_for"
+- "items"
+- "qtdVotes"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "ids"
+- "buttonVoteAction"
+- "HTTPPostJSON"
+- "imagePickerController"
+- "HTTPsendRequest"
+- "getDataFromServer"
+- "imagePicker"
+- "voted"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "idBotaoVoto"
+- "JSONStringify"
+- "pictures"
+- "idsVotadas"
 depends-top-level:
-- !private "CFStringCompareFlags"
-- !private "NSURL"
-- !private "NSDataBase64EncodingOptions"
-- !private "dispatch_get_main_queue"
-- !private "CFComparisonResult"
-- "UIImage"
-- !private "FBSDKGraphRequest"
-- !private "NSJSONWritingOptions"
-- !private "FBSDKGraphRequestConnection"
-- "UINavigationControllerDelegate"
-- "String"
-- "StringLiteralType"
-- !private "NSData"
-- !private "NSJSONSerialization"
-- !private "NSUTF8StringEncoding"
-- "AnyObject"
-- !private "kUTTypeImage"
-- !private "CFStringCompare"
-- !private "NSUserDefaults"
-- !private "UIViewContentMode"
-- "NSMutableURLRequest"
-- !private "UINib"
-- !private "NSError"
-- !private "NSDataBase64DecodingOptions"
-- !private "VotoTableViewCell"
-- !private "UIImagePickerControllerSourceType"
-- !private "UIImageJPEGRepresentation"
-- "Bool"
-- "UIViewController"
-- !private "!="
-- "UITableViewCell"
-- "Int"
-- !private "Array"
-- !private "NSLog"
-- "CGFloat"
-- !private "Dictionary"
-- !private "=="
-- !private "UIImagePickerControllerEditedImage"
-- !private "NSMutableDictionary"
-- !private "UIImagePickerControllerMediaType"
-- !private "NSString"
-- !private "UIControlState"
-- "UIImagePickerController"
-- "NSIndexPath"
-- "VoteController"
-- "UIButton"
-- !private "+"
-- "UITableView"
-- !private "UIImagePickerControllerOriginalImage"
-- "UITableViewDelegate"
-- "NSMutableData"
-- !private "JSON"
-- !private "NSURLSession"
-- "UITableViewDataSource"
-- "Void"
-- !private "UIImageView"
-- !private "print"
-- "UIImagePickerControllerDelegate"
-- !private "UIControlEvents"
-- "NSURLConnectionDelegate"
-- !private "BooleanLiteralType"
 - !private "dispatch_async"
-- "UIActivityIndicatorView"
+- !private "UINib"
+- !private "UIImagePickerControllerOriginalImage"
+- "StringLiteralType"
+- !private "+"
+- !private "UIControlState"
+- !private "Dictionary"
+- !private "CFComparisonResult"
+- !private "print"
+- !private "NSURL"
+- !private "CFStringCompare"
 - !private "FBSDKAccessToken"
+- "UIViewController"
+- "UITableViewDelegate"
+- !private "!="
+- "UITableViewDataSource"
+- !private "JSON"
+- !private "BooleanLiteralType"
+- !private "UIImageJPEGRepresentation"
+- !private "UIControlEvents"
+- "AnyObject"
+- !private "NSJSONWritingOptions"
+- "NSIndexPath"
+- !private "FBSDKGraphRequestConnection"
+- "NSMutableURLRequest"
+- !private "NSUTF8StringEncoding"
+- "UINavigationControllerDelegate"
+- !private "Array"
+- "String"
+- "UIImagePickerControllerDelegate"
+- "UITableViewCell"
+- !private "dispatch_get_main_queue"
+- !private "UIImagePickerControllerMediaType"
+- "NSURLConnectionDelegate"
+- !private "VotoTableViewCell"
+- !private "CFStringCompareFlags"
+- "UIImage"
+- "Void"
+- "Int"
+- !private "NSLog"
+- "UITableView"
+- !private "UIImagePickerControllerSourceType"
+- "VoteController"
+- !private "=="
+- !private "UIImageView"
+- !private "NSURLSession"
+- !private "NSString"
+- "Bool"
+- "NSMutableData"
+- !private "UIImagePickerControllerEditedImage"
+- !private "NSData"
+- "CGFloat"
+- "UIButton"
+- "UIImagePickerController"
+- !private "NSUserDefaults"
+- !private "NSJSONSerialization"
+- !private "NSDataBase64EncodingOptions"
+- !private "kUTTypeImage"
+- "UIActivityIndicatorView"
+- !private "NSMutableDictionary"
+- !private "NSDataBase64DecodingOptions"
+- !private "FBSDKGraphRequest"
+- !private "NSError"
+- !private "UIViewContentMode"
 depends-member:
 - !private ["PSs9AnyObject", "CFComparisonResult"]
 - !private ["PSs9AnyObject", "CFStringCompare"]
@@ -170,6 +171,7 @@ depends-member:
 - !private ["PSs9AnyObject", "hidesWhenStopped"]
 - ["PSs9AnyObject", "idBotaoVoto"]
 - ["PSs9AnyObject", "ids"]
+- ["PSs9AnyObject", "idsVotadas"]
 - !private ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "imagePicker"]
 - ["PSs9AnyObject", "imagePickerController"]
@@ -367,6 +369,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "hidesWhenStopped"]
 - ["PSs11CVarArgType", "idBotaoVoto"]
 - ["PSs11CVarArgType", "ids"]
+- ["PSs11CVarArgType", "idsVotadas"]
 - !private ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "imagePicker"]
 - ["PSs11CVarArgType", "imagePickerController"]
@@ -556,6 +559,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "hidesWhenStopped"]
 - ["PSs23CustomStringConvertible", "idBotaoVoto"]
 - ["PSs23CustomStringConvertible", "ids"]
+- ["PSs23CustomStringConvertible", "idsVotadas"]
 - !private ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "imagePicker"]
 - ["PSs23CustomStringConvertible", "imagePickerController"]
@@ -725,6 +729,7 @@ depends-member:
 - !private ["PSs9Equatable", "hidesWhenStopped"]
 - ["PSs9Equatable", "idBotaoVoto"]
 - ["PSs9Equatable", "ids"]
+- ["PSs9Equatable", "idsVotadas"]
 - !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "imagePicker"]
 - ["PSs9Equatable", "imagePickerController"]
@@ -897,6 +902,7 @@ depends-member:
 - !private ["PSs8Hashable", "hidesWhenStopped"]
 - ["PSs8Hashable", "idBotaoVoto"]
 - ["PSs8Hashable", "ids"]
+- ["PSs8Hashable", "idsVotadas"]
 - !private ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "imagePicker"]
 - ["PSs8Hashable", "imagePickerController"]
@@ -1123,6 +1129,7 @@ depends-member:
 - !private ["PSo8NSCoding", "hidesWhenStopped"]
 - ["PSo8NSCoding", "idBotaoVoto"]
 - ["PSo8NSCoding", "ids"]
+- ["PSo8NSCoding", "idsVotadas"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imagePicker"]
 - ["PSo8NSCoding", "imagePickerController"]
@@ -1255,6 +1262,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "getDataFromServer"]
 - ["PSo26NSExtensionRequestHandling", "idBotaoVoto"]
 - ["PSo26NSExtensionRequestHandling", "ids"]
+- ["PSo26NSExtensionRequestHandling", "idsVotadas"]
 - ["PSo26NSExtensionRequestHandling", "imagePicker"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
@@ -1398,6 +1406,7 @@ depends-member:
 - !private ["CSo8NSObject", "hidesWhenStopped"]
 - ["CSo8NSObject", "idBotaoVoto"]
 - ["CSo8NSObject", "ids"]
+- ["CSo8NSObject", "idsVotadas"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePicker"]
 - ["CSo8NSObject", "imagePickerController"]
@@ -1529,6 +1538,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "hidesWhenStopped"]
 - ["PSo16NSObjectProtocol", "idBotaoVoto"]
 - ["PSo16NSObjectProtocol", "ids"]
+- ["PSo16NSObjectProtocol", "idsVotadas"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imagePicker"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
@@ -1653,6 +1663,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "getDataFromServer"]
 - !private ["PSo23NSURLConnectionDelegate", "idBotaoVoto"]
 - !private ["PSo23NSURLConnectionDelegate", "ids"]
+- !private ["PSo23NSURLConnectionDelegate", "idsVotadas"]
 - ["PSo23NSURLConnectionDelegate", "imagePickerController"]
 - ["PSo23NSURLConnectionDelegate", "imagePickerControllerDidCancel"]
 - ["PSo23NSURLConnectionDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1900,6 +1911,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "hidesWhenStopped"]
 - ["PSo21UIAppearanceContainer", "idBotaoVoto"]
 - ["PSo21UIAppearanceContainer", "ids"]
+- ["PSo21UIAppearanceContainer", "idsVotadas"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imagePicker"]
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
@@ -2009,6 +2021,7 @@ depends-member:
 - ["PSo18UIContentContainer", "getDataFromServer"]
 - ["PSo18UIContentContainer", "idBotaoVoto"]
 - ["PSo18UIContentContainer", "ids"]
+- ["PSo18UIContentContainer", "idsVotadas"]
 - ["PSo18UIContentContainer", "imagePicker"]
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
@@ -2155,6 +2168,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "hidesWhenStopped"]
 - ["PSo18UIFocusEnvironment", "idBotaoVoto"]
 - ["PSo18UIFocusEnvironment", "ids"]
+- ["PSo18UIFocusEnvironment", "idsVotadas"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imagePicker"]
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
@@ -2265,6 +2279,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "getDataFromServer"]
 - !private ["PSo31UIImagePickerControllerDelegate", "idBotaoVoto"]
 - !private ["PSo31UIImagePickerControllerDelegate", "ids"]
+- !private ["PSo31UIImagePickerControllerDelegate", "idsVotadas"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
 - ["PSo31UIImagePickerControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2354,6 +2369,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "getDataFromServer"]
 - !private ["PSo30UINavigationControllerDelegate", "idBotaoVoto"]
 - !private ["PSo30UINavigationControllerDelegate", "ids"]
+- !private ["PSo30UINavigationControllerDelegate", "idsVotadas"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
 - ["PSo30UINavigationControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2461,6 +2477,7 @@ depends-member:
 - !private ["CSo11UIResponder", "hidesWhenStopped"]
 - ["CSo11UIResponder", "idBotaoVoto"]
 - ["CSo11UIResponder", "ids"]
+- ["CSo11UIResponder", "idsVotadas"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imagePicker"]
 - ["CSo11UIResponder", "imagePickerController"]
@@ -2564,6 +2581,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "getDataFromServer"]
 - !private ["PSo20UIScrollViewDelegate", "idBotaoVoto"]
 - !private ["PSo20UIScrollViewDelegate", "ids"]
+- !private ["PSo20UIScrollViewDelegate", "idsVotadas"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
 - ["PSo20UIScrollViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2650,6 +2668,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "getDataFromServer"]
 - ["PSo16UIStateRestoring", "idBotaoVoto"]
 - ["PSo16UIStateRestoring", "ids"]
+- ["PSo16UIStateRestoring", "idsVotadas"]
 - ["PSo16UIStateRestoring", "imagePicker"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
@@ -2748,6 +2767,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "getDataFromServer"]
 - !private ["PSo21UITableViewDataSource", "idBotaoVoto"]
 - !private ["PSo21UITableViewDataSource", "ids"]
+- !private ["PSo21UITableViewDataSource", "idsVotadas"]
 - ["PSo21UITableViewDataSource", "imagePickerController"]
 - ["PSo21UITableViewDataSource", "imagePickerControllerDidCancel"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -2826,6 +2846,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "getDataFromServer"]
 - !private ["PSo19UITableViewDelegate", "idBotaoVoto"]
 - !private ["PSo19UITableViewDelegate", "ids"]
+- !private ["PSo19UITableViewDelegate", "idsVotadas"]
 - ["PSo19UITableViewDelegate", "imagePickerController"]
 - ["PSo19UITableViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2919,6 +2940,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "hidesWhenStopped"]
 - ["PSo18UITraitEnvironment", "idBotaoVoto"]
 - ["PSo18UITraitEnvironment", "ids"]
+- ["PSo18UITraitEnvironment", "idsVotadas"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imagePicker"]
 - ["PSo18UITraitEnvironment", "imagePickerController"]
@@ -3058,6 +3080,7 @@ depends-member:
 - ["CSo16UIViewController", "getDataFromServer"]
 - ["CSo16UIViewController", "idBotaoVoto"]
 - ["CSo16UIViewController", "ids"]
+- ["CSo16UIViewController", "idsVotadas"]
 - ["CSo16UIViewController", "imagePicker"]
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
@@ -3176,6 +3199,7 @@ depends-member:
 - ["C6Tatari14VoteController", "getDataFromServer"]
 - ["C6Tatari14VoteController", "idBotaoVoto"]
 - ["C6Tatari14VoteController", "ids"]
+- ["C6Tatari14VoteController", "idsVotadas"]
 - ["C6Tatari14VoteController", "imagePicker"]
 - ["C6Tatari14VoteController", "imagePickerController"]
 - ["C6Tatari14VoteController", "imagePickerControllerDidCancel"]
@@ -3561,4 +3585,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "a4407e8244c204d580345c743e92d80a"
+interface-hash: "9cfabba3137ee80d8eb38dd5a9983063"

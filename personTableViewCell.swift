@@ -54,10 +54,13 @@ class personTableViewCell: UITableViewCell {
     }
     
     @IBAction func btDesafiarPressed(sender: UIButton) {
-        print("desafiar")
-        let searchVC = SearchController()       
-        searchVC.showChallengePopUp(self.fbId)
-        
+        print("desafiar "+self.fbId)
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewControllerWithIdentifier("search") as! SearchController
+//        //vc.performSegueWithIdentifier("oi", sender: nil)
+//        vc.showChallengeView(self.fbId)
+//        let searchVC = SearchController()
+//        searchVC.showChallengeView(self.fbId)
     }
     
     @IBAction func btCurtirPressed(sender: AnyObject) {

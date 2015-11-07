@@ -6,24 +6,25 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17VotoTableViewCell", ""]
 provides-dynamic-lookup:
+- "btVotePressed"
 - "lblName"
+- "btVote"
+- "lblVoteCount"
 - "awakeFromNib"
 - "setSelected"
 - "imgPerson"
-- "btVotePressed"
-- "btVote"
-- "lblVoteCount"
 depends-top-level:
-- "UITableViewCell"
-- !private "UIImage"
 - "Bool"
-- "UIImageView"
-- "UILabel"
-- "UIButton"
-- !private "UIControlState"
 - !private "StringLiteralType"
-- "AnyObject"
+- !private "UIControlState"
+- !private "print"
 - "VotoTableViewCell"
+- "AnyObject"
+- "UITableViewCell"
+- "UIImageView"
+- "UIButton"
+- "UILabel"
+- !private "UIImage"
 depends-member:
 - !private ["PSs9AnyObject", "UIControlState"]
 - !private ["PSs9AnyObject", "UIImage"]
@@ -34,6 +35,7 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - ["PSs9AnyObject", "lblName"]
 - ["PSs9AnyObject", "lblVoteCount"]
+- !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "setImage"]
 - ["PSs9AnyObject", "setSelected"]
 - ["PSs9AnyObject", ""]
@@ -47,6 +49,7 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - ["PSs11CVarArgType", "lblName"]
 - ["PSs11CVarArgType", "lblVoteCount"]
+- !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "setImage"]
 - ["PSs11CVarArgType", "setSelected"]
 - ["PSs11CVarArgType", ""]
@@ -59,6 +62,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - ["PSs23CustomStringConvertible", "lblName"]
 - ["PSs23CustomStringConvertible", "lblVoteCount"]
+- !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "setImage"]
 - ["PSs23CustomStringConvertible", "setSelected"]
 - ["PSs23CustomStringConvertible", ""]
@@ -72,6 +76,7 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - ["PSs9Equatable", "lblName"]
 - ["PSs9Equatable", "lblVoteCount"]
+- !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "setImage"]
 - ["PSs9Equatable", "setSelected"]
 - ["PSs9Equatable", ""]
@@ -84,6 +89,7 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - ["PSs8Hashable", "lblName"]
 - ["PSs8Hashable", "lblVoteCount"]
+- !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "setImage"]
 - ["PSs8Hashable", "setSelected"]
 - ["PSs8Hashable", ""]
@@ -96,6 +102,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "lblName"]
 - ["PSo8NSCoding", "lblVoteCount"]
+- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "setImage"]
 - ["PSo8NSCoding", "setSelected"]
 - ["PSo8NSCoding", ""]
@@ -113,6 +120,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "lblName"]
 - ["CSo8NSObject", "lblVoteCount"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "setImage"]
 - ["CSo8NSObject", "setSelected"]
 - !private ["PSo16NSObjectProtocol", "UIControlState"]
@@ -124,6 +132,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "lblName"]
 - ["PSo16NSObjectProtocol", "lblVoteCount"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "setImage"]
 - ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
@@ -140,6 +149,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "lblName"]
 - ["PSo29UIAccessibilityIdentification", "lblVoteCount"]
+- !private ["PSo29UIAccessibilityIdentification", "print"]
 - !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
 - ["PSo29UIAccessibilityIdentification", ""]
@@ -152,6 +162,7 @@ depends-member:
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "lblName"]
 - ["PSo12UIAppearance", "lblVoteCount"]
+- !private ["PSo12UIAppearance", "print"]
 - !private ["PSo12UIAppearance", "setImage"]
 - ["PSo12UIAppearance", "setSelected"]
 - ["PSo12UIAppearance", ""]
@@ -164,6 +175,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "lblName"]
 - ["PSo21UIAppearanceContainer", "lblVoteCount"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "setImage"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -179,6 +191,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "lblName"]
 - ["PSo17UICoordinateSpace", "lblVoteCount"]
+- !private ["PSo17UICoordinateSpace", "print"]
 - !private ["PSo17UICoordinateSpace", "setImage"]
 - ["PSo17UICoordinateSpace", "setSelected"]
 - ["PSo17UICoordinateSpace", ""]
@@ -191,6 +204,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "lblName"]
 - ["PSo13UIDynamicItem", "lblVoteCount"]
+- !private ["PSo13UIDynamicItem", "print"]
 - !private ["PSo13UIDynamicItem", "setImage"]
 - ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", ""]
@@ -203,6 +217,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "lblName"]
 - ["PSo18UIFocusEnvironment", "lblVoteCount"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "setImage"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -215,6 +230,7 @@ depends-member:
 - ["PSo27UIGestureRecognizerDelegate", "init"]
 - ["PSo27UIGestureRecognizerDelegate", "lblName"]
 - ["PSo27UIGestureRecognizerDelegate", "lblVoteCount"]
+- !private ["PSo27UIGestureRecognizerDelegate", "print"]
 - ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
 - !private ["CSo7UIImage", "init"]
@@ -232,6 +248,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "lblName"]
 - ["CSo11UIResponder", "lblVoteCount"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "setImage"]
 - ["CSo11UIResponder", "setSelected"]
 - ["CSo15UITableViewCell", "AnyObject"]
@@ -248,6 +265,7 @@ depends-member:
 - ["CSo15UITableViewCell", "init"]
 - ["CSo15UITableViewCell", "lblName"]
 - ["CSo15UITableViewCell", "lblVoteCount"]
+- !private ["CSo15UITableViewCell", "print"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", ""]
 - !private ["PSo18UITraitEnvironment", "UIControlState"]
@@ -259,6 +277,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "lblName"]
 - ["PSo18UITraitEnvironment", "lblVoteCount"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "setImage"]
 - ["PSo18UITraitEnvironment", "setSelected"]
 - ["PSo18UITraitEnvironment", ""]
@@ -276,6 +295,7 @@ depends-member:
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "lblName"]
 - ["CSo6UIView", "lblVoteCount"]
+- !private ["CSo6UIView", "print"]
 - !private ["CSo6UIView", "setImage"]
 - ["CSo6UIView", "setSelected"]
 - ["C6Tatari17VotoTableViewCell", "AnyObject"]
@@ -293,6 +313,7 @@ depends-member:
 - ["C6Tatari17VotoTableViewCell", "init"]
 - ["C6Tatari17VotoTableViewCell", "lblName"]
 - ["C6Tatari17VotoTableViewCell", "lblVoteCount"]
+- !private ["C6Tatari17VotoTableViewCell", "print"]
 - ["C6Tatari17VotoTableViewCell", "setSelected"]
 - !private ["PSs24_ImageLiteralConvertible", "init"]
 - !private ["PSs12_Reflectable", "UIControlState"]
@@ -304,6 +325,7 @@ depends-member:
 - ["PSs12_Reflectable", "init"]
 - ["PSs12_Reflectable", "lblName"]
 - ["PSs12_Reflectable", "lblVoteCount"]
+- !private ["PSs12_Reflectable", "print"]
 - !private ["PSs12_Reflectable", "setImage"]
 - ["PSs12_Reflectable", "setSelected"]
 - ["PSs12_Reflectable", ""]

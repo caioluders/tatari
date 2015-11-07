@@ -27,6 +27,7 @@ class VotoTableViewCell: UITableViewCell {
     }
     @IBAction func btVotePressed(sender: AnyObject) {
         self.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
+        print("preencheu o coração")
     }
 
 }
