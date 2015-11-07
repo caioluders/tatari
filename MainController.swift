@@ -201,14 +201,15 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         
         //url += "&mf_x="+sensorDataArray[8].1+"&mf_y="+sensorDataArray[9].1+"&mf_z="+sensorDataArray[10].1
         
-        let url2 = NSURL(string:url)
+        let url2 = NSURL(string:url)!
         print(url)
         //        let url = NSURL(string: "http://waho.io/tatari")
-        let request = NSURLRequest(URL: url2!)
+        let request : NSURLRequest = NSURLRequest(URL: url2)
         let session = NSURLSession.sharedSession()
-        session.dataTaskWithRequest(request) { (data, response, error) -> Void in
-            
-        }
+        let queue:NSOperationQueue = NSOperationQueue()
+        NSURLConnection.sendAsynchronousRequest(request, queue: queue, completionHandler:{ (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
+            var err: NSError
+        })
     }
     
     @IBAction func btSauda(sender: AnyObject) {
