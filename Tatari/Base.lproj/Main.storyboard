@@ -128,21 +128,14 @@
                                 <rect key="frame" x="0.0" y="82" width="375" height="585"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
-                                <rect key="frame" x="65" y="72" width="30" height="30"/>
+                                <rect key="frame" x="131" y="65" width="40" height="41"/>
                                 <state key="normal" title="feed" image="info icon"/>
                                 <connections>
                                     <segue destination="pVq-cJ-qf5" kind="show" id="iXg-pb-qJj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
-                                <rect key="frame" x="108" y="72" width="25" height="30"/>
-                                <state key="normal" title="vote" image="concurso icon"/>
-                                <connections>
-                                    <segue destination="OTj-vo-FEF" kind="show" identifier="vote_segue" id="o3Z-IF-C5t"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
-                                <rect key="frame" x="146" y="72" width="28" height="30"/>
+                                <rect key="frame" x="305" y="65" width="40" height="41"/>
                                 <state key="normal" title="search" image="pesquisar icon"/>
                                 <connections>
                                     <segue destination="Saa-Bf-t3S" kind="show" id="bF2-q1-Vrj"/>
@@ -152,7 +145,7 @@
                                 <rect key="frame" x="128" y="17" width="113" height="32"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
-                                <rect key="frame" x="20" y="72" width="30" height="30"/>
+                                <rect key="frame" x="46" y="65" width="41" height="41"/>
                                 <state key="normal" title="settings" image="conf icon"/>
                                 <connections>
                                     <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
@@ -188,6 +181,13 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
                                 <rect key="frame" x="113" y="330" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
+                                <rect key="frame" x="228" y="65" width="33" height="41"/>
+                                <state key="normal" title="vote" image="concurso icon"/>
+                                <connections>
+                                    <segue destination="OTj-vo-FEF" kind="show" identifier="vote_segue" id="o3Z-IF-C5t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -354,14 +354,14 @@
         <image name="academia" width="43" height="50"/>
         <image name="banheiro" width="42" height="50"/>
         <image name="bar" width="42" height="50"/>
-        <image name="concurso icon" width="25" height="30"/>
-        <image name="conf icon" width="30" height="30"/>
+        <image name="concurso icon" width="33" height="41"/>
+        <image name="conf icon" width="41" height="41"/>
         <image name="elevador" width="42" height="50"/>
         <image name="escada" width="42" height="50"/>
-        <image name="info icon" width="27" height="27"/>
+        <image name="info icon" width="40" height="41"/>
         <image name="log out" width="60" height="20"/>
         <image name="mapa" width="375" height="584"/>
-        <image name="pesquisar icon" width="27" height="27"/>
+        <image name="pesquisar icon" width="40" height="41"/>
         <image name="saida" width="43" height="50"/>
         <image name="sauna" width="42" height="50"/>
         <image name="visibilidade" width="187" height="48"/>
