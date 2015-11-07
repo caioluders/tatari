@@ -90,9 +90,10 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         return cell
     }
     
-    func presentVC(controller: UIAlertController){
-        print("chamou")
-        //presentViewController(controller, animated: true, completion: nil)
+    func showChallengePopUp(fbId: String){
+        print("chamou "+fbId)
+        
+        
     }
     
     func buttonDesafiarAction(sender:UIButton!){

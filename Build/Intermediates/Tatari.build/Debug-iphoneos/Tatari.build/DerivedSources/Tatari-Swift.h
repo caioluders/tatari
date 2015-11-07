@@ -193,7 +193,6 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 
 @class UITextField;
 @class NSString;
-@class UIAlertController;
 @class UIButton;
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
@@ -209,7 +208,7 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)presentVC:(UIAlertController * __nonnull)controller;
+- (void)showChallengePopUp:(NSString * __nonnull)fbId;
 - (void)buttonDesafiarAction:(UIButton * __null_unspecified)sender;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;

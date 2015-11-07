@@ -6,42 +6,33 @@ provides-nominal:
 provides-member:
 - ["C6Tatari19personTableViewCell", ""]
 provides-dynamic-lookup:
+- "fbId"
 - "lblFacebook"
 - "btDesafiarPressed"
-- "awakeFromNib"
-- "imgPessoa"
 - "btDesafiar"
-- "btCurtirPressed"
-- "btFacebook"
-- "setSelected"
-- "lblNome"
-- "lblDesafiar"
-- "lblCurtir"
-- "btCurtir"
-- "fbId"
 - "btFacebookPressed"
+- "btFacebook"
+- "lblDesafiar"
+- "imgPessoa"
+- "setSelected"
+- "btCurtir"
+- "awakeFromNib"
+- "lblCurtir"
+- "lblNome"
+- "btCurtirPressed"
 depends-top-level:
-- "UITableViewCell"
-- !private "UIAlertController"
-- !private "UIAlertAction"
-- !private "UIAlertActionStyle"
-- !private "UIAlertControllerStyle"
 - "UIButton"
-- "UIImageView"
 - "UILabel"
+- !private "print"
+- "AnyObject"
+- "Bool"
+- "UIImageView"
+- "UITableViewCell"
+- !private "SearchController"
 - "StringLiteralType"
 - "personTableViewCell"
-- !private "SearchController"
-- "Bool"
-- "AnyObject"
-- !private "print"
 depends-member:
 - !private ["PSs9AnyObject", "SearchController"]
-- !private ["PSs9AnyObject", "UIAlertAction"]
-- !private ["PSs9AnyObject", "UIAlertActionStyle"]
-- !private ["PSs9AnyObject", "UIAlertController"]
-- !private ["PSs9AnyObject", "UIAlertControllerStyle"]
-- !private ["PSs9AnyObject", "addAction"]
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "btCurtir"]
 - ["PSs9AnyObject", "btCurtirPressed"]
@@ -56,16 +47,11 @@ depends-member:
 - ["PSs9AnyObject", "lblDesafiar"]
 - ["PSs9AnyObject", "lblFacebook"]
 - ["PSs9AnyObject", "lblNome"]
-- !private ["PSs9AnyObject", "presentVC"]
 - !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "setSelected"]
+- !private ["PSs9AnyObject", "showChallengePopUp"]
 - ["PSs9AnyObject", ""]
 - !private ["PSs11CVarArgType", "SearchController"]
-- !private ["PSs11CVarArgType", "UIAlertAction"]
-- !private ["PSs11CVarArgType", "UIAlertActionStyle"]
-- !private ["PSs11CVarArgType", "UIAlertController"]
-- !private ["PSs11CVarArgType", "UIAlertControllerStyle"]
-- !private ["PSs11CVarArgType", "addAction"]
 - ["PSs11CVarArgType", "awakeFromNib"]
 - ["PSs11CVarArgType", "btCurtir"]
 - ["PSs11CVarArgType", "btCurtirPressed"]
@@ -80,16 +66,11 @@ depends-member:
 - ["PSs11CVarArgType", "lblDesafiar"]
 - ["PSs11CVarArgType", "lblFacebook"]
 - ["PSs11CVarArgType", "lblNome"]
-- !private ["PSs11CVarArgType", "presentVC"]
 - !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "setSelected"]
+- !private ["PSs11CVarArgType", "showChallengePopUp"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs23CustomStringConvertible", "SearchController"]
-- !private ["PSs23CustomStringConvertible", "UIAlertAction"]
-- !private ["PSs23CustomStringConvertible", "UIAlertActionStyle"]
-- !private ["PSs23CustomStringConvertible", "UIAlertController"]
-- !private ["PSs23CustomStringConvertible", "UIAlertControllerStyle"]
-- !private ["PSs23CustomStringConvertible", "addAction"]
 - ["PSs23CustomStringConvertible", "awakeFromNib"]
 - ["PSs23CustomStringConvertible", "btCurtir"]
 - ["PSs23CustomStringConvertible", "btCurtirPressed"]
@@ -104,18 +85,11 @@ depends-member:
 - ["PSs23CustomStringConvertible", "lblDesafiar"]
 - ["PSs23CustomStringConvertible", "lblFacebook"]
 - ["PSs23CustomStringConvertible", "lblNome"]
-- !private ["PSs23CustomStringConvertible", "presentVC"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "setSelected"]
+- !private ["PSs23CustomStringConvertible", "showChallengePopUp"]
 - ["PSs23CustomStringConvertible", ""]
-- !private ["PSs9Equatable", "Alert"]
-- !private ["PSs9Equatable", "Default"]
 - !private ["PSs9Equatable", "SearchController"]
-- !private ["PSs9Equatable", "UIAlertAction"]
-- !private ["PSs9Equatable", "UIAlertActionStyle"]
-- !private ["PSs9Equatable", "UIAlertController"]
-- !private ["PSs9Equatable", "UIAlertControllerStyle"]
-- !private ["PSs9Equatable", "addAction"]
 - ["PSs9Equatable", "awakeFromNib"]
 - ["PSs9Equatable", "btCurtir"]
 - ["PSs9Equatable", "btCurtirPressed"]
@@ -130,18 +104,11 @@ depends-member:
 - ["PSs9Equatable", "lblDesafiar"]
 - ["PSs9Equatable", "lblFacebook"]
 - ["PSs9Equatable", "lblNome"]
-- !private ["PSs9Equatable", "presentVC"]
 - !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "setSelected"]
+- !private ["PSs9Equatable", "showChallengePopUp"]
 - ["PSs9Equatable", ""]
-- !private ["PSs8Hashable", "Alert"]
-- !private ["PSs8Hashable", "Default"]
 - !private ["PSs8Hashable", "SearchController"]
-- !private ["PSs8Hashable", "UIAlertAction"]
-- !private ["PSs8Hashable", "UIAlertActionStyle"]
-- !private ["PSs8Hashable", "UIAlertController"]
-- !private ["PSs8Hashable", "UIAlertControllerStyle"]
-- !private ["PSs8Hashable", "addAction"]
 - ["PSs8Hashable", "awakeFromNib"]
 - ["PSs8Hashable", "btCurtir"]
 - ["PSs8Hashable", "btCurtirPressed"]
@@ -156,16 +123,11 @@ depends-member:
 - ["PSs8Hashable", "lblDesafiar"]
 - ["PSs8Hashable", "lblFacebook"]
 - ["PSs8Hashable", "lblNome"]
-- !private ["PSs8Hashable", "presentVC"]
 - !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "setSelected"]
+- !private ["PSs8Hashable", "showChallengePopUp"]
 - ["PSs8Hashable", ""]
 - !private ["PSo8NSCoding", "SearchController"]
-- !private ["PSo8NSCoding", "UIAlertAction"]
-- !private ["PSo8NSCoding", "UIAlertActionStyle"]
-- !private ["PSo8NSCoding", "UIAlertController"]
-- !private ["PSo8NSCoding", "UIAlertControllerStyle"]
-- !private ["PSo8NSCoding", "addAction"]
 - ["PSo8NSCoding", "awakeFromNib"]
 - ["PSo8NSCoding", "btCurtir"]
 - ["PSo8NSCoding", "btCurtirPressed"]
@@ -180,25 +142,18 @@ depends-member:
 - ["PSo8NSCoding", "lblDesafiar"]
 - ["PSo8NSCoding", "lblFacebook"]
 - ["PSo8NSCoding", "lblNome"]
-- !private ["PSo8NSCoding", "presentVC"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "setSelected"]
+- !private ["PSo8NSCoding", "showChallengePopUp"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "presentVC"]
+- !private ["PSo26NSExtensionRequestHandling", "showChallengePopUp"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "SearchController"]
-- !private ["CSo8NSObject", "UIAlertAction"]
-- !private ["CSo8NSObject", "UIAlertActionStyle"]
-- !private ["CSo8NSObject", "UIAlertController"]
-- !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
-- !private ["CSo8NSObject", "addAction"]
 - ["CSo8NSObject", "awakeFromNib"]
 - ["CSo8NSObject", "btCurtir"]
 - ["CSo8NSObject", "btCurtirPressed"]
@@ -213,15 +168,10 @@ depends-member:
 - ["CSo8NSObject", "lblDesafiar"]
 - ["CSo8NSObject", "lblFacebook"]
 - ["CSo8NSObject", "lblNome"]
-- !private ["CSo8NSObject", "presentVC"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "setSelected"]
+- !private ["CSo8NSObject", "showChallengePopUp"]
 - !private ["PSo16NSObjectProtocol", "SearchController"]
-- !private ["PSo16NSObjectProtocol", "UIAlertAction"]
-- !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
-- !private ["PSo16NSObjectProtocol", "UIAlertController"]
-- !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
-- !private ["PSo16NSObjectProtocol", "addAction"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
 - ["PSo16NSObjectProtocol", "btCurtir"]
 - ["PSo16NSObjectProtocol", "btCurtirPressed"]
@@ -236,20 +186,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "lblDesafiar"]
 - ["PSo16NSObjectProtocol", "lblFacebook"]
 - ["PSo16NSObjectProtocol", "lblNome"]
-- !private ["PSo16NSObjectProtocol", "presentVC"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "setSelected"]
+- !private ["PSo16NSObjectProtocol", "showChallengePopUp"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["Sq", "deinit"]
-- !private ["PSs16RawRepresentable", "Alert"]
-- !private ["PSs16RawRepresentable", "Default"]
 - !private ["C6Tatari16SearchController", "init"]
-- !private ["C6Tatari16SearchController", "presentVC"]
+- !private ["C6Tatari16SearchController", "showChallengePopUp"]
 - !private ["PSo29UIAccessibilityIdentification", "SearchController"]
-- !private ["PSo29UIAccessibilityIdentification", "UIAlertAction"]
-- !private ["PSo29UIAccessibilityIdentification", "UIAlertActionStyle"]
-- !private ["PSo29UIAccessibilityIdentification", "UIAlertController"]
-- !private ["PSo29UIAccessibilityIdentification", "UIAlertControllerStyle"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
 - ["PSo29UIAccessibilityIdentification", "btCurtir"]
 - ["PSo29UIAccessibilityIdentification", "btCurtirPressed"]
@@ -267,16 +210,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "print"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
 - ["PSo29UIAccessibilityIdentification", ""]
-- !private ["CSo13UIAlertAction", "init"]
-- !private ["OSC18UIAlertActionStyle", "Default"]
-- !private ["CSo17UIAlertController", "addAction"]
-- !private ["CSo17UIAlertController", "init"]
-- !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "SearchController"]
-- !private ["PSo12UIAppearance", "UIAlertAction"]
-- !private ["PSo12UIAppearance", "UIAlertActionStyle"]
-- !private ["PSo12UIAppearance", "UIAlertController"]
-- !private ["PSo12UIAppearance", "UIAlertControllerStyle"]
 - ["PSo12UIAppearance", "awakeFromNib"]
 - ["PSo12UIAppearance", "btCurtir"]
 - ["PSo12UIAppearance", "btCurtirPressed"]
@@ -295,11 +229,6 @@ depends-member:
 - ["PSo12UIAppearance", "setSelected"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "SearchController"]
-- !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
-- !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
-- !private ["PSo21UIAppearanceContainer", "UIAlertController"]
-- !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
-- !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
 - ["PSo21UIAppearanceContainer", "btCurtir"]
 - ["PSo21UIAppearanceContainer", "btCurtirPressed"]
@@ -314,18 +243,13 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "lblDesafiar"]
 - ["PSo21UIAppearanceContainer", "lblFacebook"]
 - ["PSo21UIAppearanceContainer", "lblNome"]
-- !private ["PSo21UIAppearanceContainer", "presentVC"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
+- !private ["PSo21UIAppearanceContainer", "showChallengePopUp"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "addAction"]
 - !private ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "presentVC"]
+- !private ["PSo18UIContentContainer", "showChallengePopUp"]
 - !private ["PSo17UICoordinateSpace", "SearchController"]
-- !private ["PSo17UICoordinateSpace", "UIAlertAction"]
-- !private ["PSo17UICoordinateSpace", "UIAlertActionStyle"]
-- !private ["PSo17UICoordinateSpace", "UIAlertController"]
-- !private ["PSo17UICoordinateSpace", "UIAlertControllerStyle"]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
 - ["PSo17UICoordinateSpace", "btCurtir"]
 - ["PSo17UICoordinateSpace", "btCurtirPressed"]
@@ -344,10 +268,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "setSelected"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "SearchController"]
-- !private ["PSo13UIDynamicItem", "UIAlertAction"]
-- !private ["PSo13UIDynamicItem", "UIAlertActionStyle"]
-- !private ["PSo13UIDynamicItem", "UIAlertController"]
-- !private ["PSo13UIDynamicItem", "UIAlertControllerStyle"]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
 - ["PSo13UIDynamicItem", "btCurtir"]
 - ["PSo13UIDynamicItem", "btCurtirPressed"]
@@ -366,11 +286,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "setSelected"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "SearchController"]
-- !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
-- !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
-- !private ["PSo18UIFocusEnvironment", "UIAlertController"]
-- !private ["PSo18UIFocusEnvironment", "UIAlertControllerStyle"]
-- !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "awakeFromNib"]
 - ["PSo18UIFocusEnvironment", "btCurtir"]
 - ["PSo18UIFocusEnvironment", "btCurtirPressed"]
@@ -385,15 +300,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "lblDesafiar"]
 - ["PSo18UIFocusEnvironment", "lblFacebook"]
 - ["PSo18UIFocusEnvironment", "lblNome"]
-- !private ["PSo18UIFocusEnvironment", "presentVC"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
+- !private ["PSo18UIFocusEnvironment", "showChallengePopUp"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "SearchController"]
-- !private ["PSo27UIGestureRecognizerDelegate", "UIAlertAction"]
-- !private ["PSo27UIGestureRecognizerDelegate", "UIAlertActionStyle"]
-- !private ["PSo27UIGestureRecognizerDelegate", "UIAlertController"]
-- !private ["PSo27UIGestureRecognizerDelegate", "UIAlertControllerStyle"]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
 - ["PSo27UIGestureRecognizerDelegate", "btCurtir"]
 - ["PSo27UIGestureRecognizerDelegate", "btCurtirPressed"]
@@ -414,14 +325,9 @@ depends-member:
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "SearchController"]
-- !private ["CSo11UIResponder", "UIAlertAction"]
-- !private ["CSo11UIResponder", "UIAlertActionStyle"]
-- !private ["CSo11UIResponder", "UIAlertController"]
-- !private ["CSo11UIResponder", "UIAlertControllerStyle"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
-- !private ["CSo11UIResponder", "addAction"]
 - ["CSo11UIResponder", "awakeFromNib"]
 - ["CSo11UIResponder", "btCurtir"]
 - ["CSo11UIResponder", "btCurtirPressed"]
@@ -436,21 +342,16 @@ depends-member:
 - ["CSo11UIResponder", "lblDesafiar"]
 - ["CSo11UIResponder", "lblFacebook"]
 - ["CSo11UIResponder", "lblNome"]
-- !private ["CSo11UIResponder", "presentVC"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "setSelected"]
+- !private ["CSo11UIResponder", "showChallengePopUp"]
 - !private ["PSo20UIScrollViewDelegate", "init"]
-- !private ["PSo20UIScrollViewDelegate", "presentVC"]
-- !private ["PSo16UIStateRestoring", "addAction"]
+- !private ["PSo20UIScrollViewDelegate", "showChallengePopUp"]
 - !private ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "presentVC"]
+- !private ["PSo16UIStateRestoring", "showChallengePopUp"]
 - ["CSo15UITableViewCell", "AnyObject"]
 - ["CSo15UITableViewCell", "Bool"]
 - !private ["CSo15UITableViewCell", "SearchController"]
-- !private ["CSo15UITableViewCell", "UIAlertAction"]
-- !private ["CSo15UITableViewCell", "UIAlertActionStyle"]
-- !private ["CSo15UITableViewCell", "UIAlertController"]
-- !private ["CSo15UITableViewCell", "UIAlertControllerStyle"]
 - ["CSo15UITableViewCell", "UIButton"]
 - ["CSo15UITableViewCell", "UIImageView"]
 - ["CSo15UITableViewCell", "UILabel"]
@@ -472,17 +373,12 @@ depends-member:
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", ""]
 - !private ["PSo21UITableViewDataSource", "init"]
-- !private ["PSo21UITableViewDataSource", "presentVC"]
+- !private ["PSo21UITableViewDataSource", "showChallengePopUp"]
 - !private ["PSo19UITableViewDelegate", "init"]
-- !private ["PSo19UITableViewDelegate", "presentVC"]
+- !private ["PSo19UITableViewDelegate", "showChallengePopUp"]
 - !private ["PSo19UITextFieldDelegate", "init"]
-- !private ["PSo19UITextFieldDelegate", "presentVC"]
+- !private ["PSo19UITextFieldDelegate", "showChallengePopUp"]
 - !private ["PSo18UITraitEnvironment", "SearchController"]
-- !private ["PSo18UITraitEnvironment", "UIAlertAction"]
-- !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
-- !private ["PSo18UITraitEnvironment", "UIAlertController"]
-- !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
-- !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
 - ["PSo18UITraitEnvironment", "btCurtir"]
 - ["PSo18UITraitEnvironment", "btCurtirPressed"]
@@ -497,17 +393,13 @@ depends-member:
 - ["PSo18UITraitEnvironment", "lblDesafiar"]
 - ["PSo18UITraitEnvironment", "lblFacebook"]
 - ["PSo18UITraitEnvironment", "lblNome"]
-- !private ["PSo18UITraitEnvironment", "presentVC"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "setSelected"]
+- !private ["PSo18UITraitEnvironment", "showChallengePopUp"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "AnyObject"]
 - ["CSo6UIView", "Bool"]
 - !private ["CSo6UIView", "SearchController"]
-- !private ["CSo6UIView", "UIAlertAction"]
-- !private ["CSo6UIView", "UIAlertActionStyle"]
-- !private ["CSo6UIView", "UIAlertController"]
-- !private ["CSo6UIView", "UIAlertControllerStyle"]
 - ["CSo6UIView", "UIButton"]
 - ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
@@ -527,14 +419,9 @@ depends-member:
 - ["CSo6UIView", "lblNome"]
 - !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "setSelected"]
-- !private ["CSo16UIViewController", "addAction"]
 - !private ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "presentVC"]
+- !private ["CSo16UIViewController", "showChallengePopUp"]
 - !private ["PSs12_Reflectable", "SearchController"]
-- !private ["PSs12_Reflectable", "UIAlertAction"]
-- !private ["PSs12_Reflectable", "UIAlertActionStyle"]
-- !private ["PSs12_Reflectable", "UIAlertController"]
-- !private ["PSs12_Reflectable", "UIAlertControllerStyle"]
 - ["PSs12_Reflectable", "awakeFromNib"]
 - ["PSs12_Reflectable", "btCurtir"]
 - ["PSs12_Reflectable", "btCurtirPressed"]
@@ -555,10 +442,6 @@ depends-member:
 - ["C6Tatari19personTableViewCell", "AnyObject"]
 - ["C6Tatari19personTableViewCell", "Bool"]
 - !private ["C6Tatari19personTableViewCell", "SearchController"]
-- !private ["C6Tatari19personTableViewCell", "UIAlertAction"]
-- !private ["C6Tatari19personTableViewCell", "UIAlertActionStyle"]
-- !private ["C6Tatari19personTableViewCell", "UIAlertController"]
-- !private ["C6Tatari19personTableViewCell", "UIAlertControllerStyle"]
 - ["C6Tatari19personTableViewCell", "UIButton"]
 - ["C6Tatari19personTableViewCell", "UIImageView"]
 - ["C6Tatari19personTableViewCell", "UILabel"]
@@ -586,18 +469,11 @@ depends-nominal:
 - "PSs9Equatable"
 - "PSs8Hashable"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
 - !private "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "Sq"
-- !private "PSs16RawRepresentable"
 - !private "C6Tatari16SearchController"
 - "PSo29UIAccessibilityIdentification"
-- !private "CSo13UIAlertAction"
-- !private "OSC18UIAlertActionStyle"
-- !private "CSo17UIAlertController"
-- !private "OSC22UIAlertControllerStyle"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "PSo18UIContentContainer"
