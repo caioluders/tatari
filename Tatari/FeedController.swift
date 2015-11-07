@@ -73,7 +73,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         })
         
-        //mutable_result.setObject("708388879297355",forKey:"fb_id")
+        mutable_result.setObject(fb_id!,forKey:"fb_id")
         
         self.HTTPPostJSON("http://45.55.146.229:116/challs", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
