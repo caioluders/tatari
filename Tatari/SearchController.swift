@@ -189,15 +189,4 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             request.HTTPBody = data
             HTTPsendRequest(request,callback: callback)
     }
-    
-    func send_chall(fb_id:NSString , challenge_desc:NSString) -> Void {
-        let mutable_result =  NSMutableDictionary()
-        mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
-        mutable_result.setObject(fb_id,forKey:"fb_id")
-        mutable_result.setObject(challenge_desc,forKey:"challenge")
-        
-        self.HTTPPostJSON("http://45.55.146.229:116/new_challenge", jsonObj: mutable_result, callback: { (data,error) -> Void in
-            print(data)
-        })
-    }
 }
