@@ -73,12 +73,12 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         })
         
-        mutable_result.setObject("708388879297355",forKey:"fb_id")
+        //mutable_result.setObject("708388879297355",forKey:"fb_id")
         
         self.HTTPPostJSON("http://45.55.146.229:116/challs", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (_,object) in json {
-                               
+                
                 self.challengeDict["title"] = object["title"].stringValue
                 self.challengeDict["body"] = object["text"].stringValue
                 self.challengeDict["id"] = object["_id"]["$oid"].stringValue
