@@ -287,6 +287,7 @@ SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblName;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (IBAction)btVotePressed:(id __nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
