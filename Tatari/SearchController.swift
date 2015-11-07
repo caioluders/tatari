@@ -13,7 +13,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtFieldSearch: UITextField!
     var people: [String] = []
-    var imgPeople: [String] = []
+    var imgPeople: [UIImage] = []
     var fbIds: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,7 +59,9 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (wtf,object) in json {
                 self.people.append(object["name"].stringValue)
-                self.imgPeople.append(object["picture"]["data"]["url"].stringValue)
+                let url = NSURL(string: object["picture"]["data"]["url"].stringValue)
+                let data = NSData(contentsOfURL: url!)
+                self.imgPeople.append(UIImage(data: data!)!)
                 self.fbIds.append(object["id"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
@@ -82,10 +84,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         var cell:personTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("personcell")! as! personTableViewCell
         
         cell.lblNome.text = self.people[indexPath.row]
-        
-        let url = NSURL(string: self.imgPeople[indexPath.row])
-        let data = NSData(contentsOfURL: url!)
-        cell.imgPessoa.image = UIImage(data: data!)
+        cell.imgPessoa.image = self.imgPeople[indexPath.row]
         cell.fbId = fbIds[indexPath.row]
         cell.btDesafiar.tag = indexPath.row
         cell.btDesafiar.addTarget(self, action: "buttonDesafiarAction:", forControlEvents: UIControlEvents.TouchUpInside)
