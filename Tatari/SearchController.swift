@@ -22,12 +22,21 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         self.tableView.delegate = self
         
         self.navigationItem.title = "Pessoas"
+        self.tableView.allowsSelection = false
         txtFieldSearch.delegate = self
         txtFieldSearch.addTarget(self, action: "textFieldDidChange:", forControlEvents: UIControlEvents.EditingChanged)
         // send_chall("708388879297355", challenge_desc: "Beba mais!")
         
         let nib = UINib(nibName: "personCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "personcell")
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,12 +80,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = self.tableView.dequeueReusableCellWithIdentifier("personcell") as! personTableViewCell!
-        
-        if (cell == nil) {
-            cell = personTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "personcell")
-        }
-
+        var cell:personTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("personcell")! as! personTableViewCell
         
         cell.lblNome.text = self.people[indexPath.row]
         
