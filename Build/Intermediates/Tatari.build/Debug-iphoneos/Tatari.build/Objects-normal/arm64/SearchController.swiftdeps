@@ -6,65 +6,67 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
-- "HTTPsendRequest"
-- "viewDidLoad"
+- "buttonFacebookAction"
+- "buttonCurtirAction"
 - "send_chall"
 - "JSONStringify"
-- "txtFieldSearch"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "HTTPPostJSON"
-- "search_people"
 - "imgPeople"
-- "didReceiveMemoryWarning"
-- "buttonDesafiarAction"
 - "people"
+- "HTTPPostJSON"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "textFieldDidChange"
+- "buttonDesafiarAction"
+- "viewDidLoad"
+- "HTTPsendRequest"
+- "search_people"
+- "didReceiveMemoryWarning"
+- "txtFieldSearch"
 depends-top-level:
-- "Void"
-- "UITextField"
-- "Bool"
-- !private "FBSDKAccessToken"
-- "CGFloat"
-- !private "dispatch_get_main_queue"
-- "UITextFieldDelegate"
-- "NSMutableURLRequest"
-- !private "UIControlEvents"
-- "UITableView"
-- !private "dispatch_async"
-- !private "UIAlertAction"
-- !private "NSUTF8StringEncoding"
-- "Int"
-- !private "BooleanLiteralType"
-- !private "personTableViewCell"
-- "UIButton"
-- !private "NSMutableDictionary"
-- !private "UINib"
 - !private "NSURLSession"
-- "String"
-- "SearchController"
+- !private "NSUTF8StringEncoding"
+- !private "NSURL"
+- !private "FBSDKAccessToken"
+- "UITextField"
+- "UITableViewDataSource"
+- !private "UIAlertActionStyle"
+- "UITableViewDelegate"
+- "UIButton"
 - "UITableViewCell"
-- !private "UIImage"
-- !private "UIAlertControllerStyle"
+- !private "NSJSONSerialization"
+- "CGFloat"
+- "NSMutableURLRequest"
 - "NSIndexPath"
 - !private "StringLiteralType"
+- !private "Array"
+- !private "UIImage"
+- !private "JSON"
+- "String"
+- !private "UIAlertControllerStyle"
+- !private "NSMutableDictionary"
+- !private "personTableViewCell"
+- "AnyObject"
+- "Int"
+- !private "dispatch_async"
+- "SearchController"
+- !private "UIControlEvents"
+- !private "!="
+- !private "dispatch_get_main_queue"
+- "UITextFieldDelegate"
+- "UIViewController"
+- !private "NSData"
 - !private "NSJSONWritingOptions"
 - "NSString"
-- !private "!="
-- !private "NSURL"
-- !private "UIAlertActionStyle"
-- !private "NSJSONSerialization"
-- "UITableViewDataSource"
-- !private "UIAlertController"
-- "UIViewController"
-- "UITableViewDelegate"
-- !private "JSON"
+- "Void"
+- !private "UINib"
+- "Bool"
 - !private "print"
-- "AnyObject"
-- !private "NSData"
-- !private "Array"
+- !private "UIAlertController"
+- "UITableView"
+- !private "BooleanLiteralType"
+- !private "UIAlertAction"
 depends-member:
 - !private ["PSs9AnyObject", "Element"]
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
@@ -94,8 +96,12 @@ depends-member:
 - !private ["PSs9AnyObject", "addAction"]
 - !private ["PSs9AnyObject", "addTarget"]
 - !private ["PSs9AnyObject", "addValue"]
+- !private ["PSs9AnyObject", "btCurtir"]
 - !private ["PSs9AnyObject", "btDesafiar"]
+- !private ["PSs9AnyObject", "btFacebook"]
+- ["PSs9AnyObject", "buttonCurtirAction"]
 - ["PSs9AnyObject", "buttonDesafiarAction"]
+- ["PSs9AnyObject", "buttonFacebookAction"]
 - !private ["PSs9AnyObject", "currentAccessToken"]
 - !private ["PSs9AnyObject", "dataTaskWithRequest"]
 - !private ["PSs9AnyObject", "dataUsingEncoding"]
@@ -233,8 +239,12 @@ depends-member:
 - !private ["PSs11CVarArgType", "addAction"]
 - !private ["PSs11CVarArgType", "addTarget"]
 - !private ["PSs11CVarArgType", "addValue"]
+- !private ["PSs11CVarArgType", "btCurtir"]
 - !private ["PSs11CVarArgType", "btDesafiar"]
+- !private ["PSs11CVarArgType", "btFacebook"]
+- ["PSs11CVarArgType", "buttonCurtirAction"]
 - ["PSs11CVarArgType", "buttonDesafiarAction"]
+- ["PSs11CVarArgType", "buttonFacebookAction"]
 - !private ["PSs11CVarArgType", "currentAccessToken"]
 - !private ["PSs11CVarArgType", "dataTaskWithRequest"]
 - !private ["PSs11CVarArgType", "dataUsingEncoding"]
@@ -363,8 +373,12 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "addTarget"]
 - !private ["PSs23CustomStringConvertible", "addValue"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "btCurtir"]
 - !private ["PSs23CustomStringConvertible", "btDesafiar"]
+- !private ["PSs23CustomStringConvertible", "btFacebook"]
+- ["PSs23CustomStringConvertible", "buttonCurtirAction"]
 - ["PSs23CustomStringConvertible", "buttonDesafiarAction"]
+- ["PSs23CustomStringConvertible", "buttonFacebookAction"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "currentAccessToken"]
 - !private ["PSs23CustomStringConvertible", "dataTaskWithRequest"]
@@ -478,8 +492,12 @@ depends-member:
 - !private ["PSs9Equatable", "addAction"]
 - !private ["PSs9Equatable", "addTarget"]
 - !private ["PSs9Equatable", "addValue"]
+- !private ["PSs9Equatable", "btCurtir"]
 - !private ["PSs9Equatable", "btDesafiar"]
+- !private ["PSs9Equatable", "btFacebook"]
+- ["PSs9Equatable", "buttonCurtirAction"]
 - ["PSs9Equatable", "buttonDesafiarAction"]
+- ["PSs9Equatable", "buttonFacebookAction"]
 - !private ["PSs9Equatable", "currentAccessToken"]
 - !private ["PSs9Equatable", "dataTaskWithRequest"]
 - !private ["PSs9Equatable", "dataUsingEncoding"]
@@ -598,8 +616,12 @@ depends-member:
 - !private ["PSs8Hashable", "addAction"]
 - !private ["PSs8Hashable", "addTarget"]
 - !private ["PSs8Hashable", "addValue"]
+- !private ["PSs8Hashable", "btCurtir"]
 - !private ["PSs8Hashable", "btDesafiar"]
+- !private ["PSs8Hashable", "btFacebook"]
+- ["PSs8Hashable", "buttonCurtirAction"]
 - ["PSs8Hashable", "buttonDesafiarAction"]
+- ["PSs8Hashable", "buttonFacebookAction"]
 - !private ["PSs8Hashable", "currentAccessToken"]
 - !private ["PSs8Hashable", "dataTaskWithRequest"]
 - !private ["PSs8Hashable", "dataUsingEncoding"]
@@ -761,8 +783,12 @@ depends-member:
 - !private ["PSo8NSCoding", "addAction"]
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "addValue"]
+- !private ["PSo8NSCoding", "btCurtir"]
 - !private ["PSo8NSCoding", "btDesafiar"]
+- !private ["PSo8NSCoding", "btFacebook"]
+- ["PSo8NSCoding", "buttonCurtirAction"]
 - ["PSo8NSCoding", "buttonDesafiarAction"]
+- ["PSo8NSCoding", "buttonFacebookAction"]
 - !private ["PSo8NSCoding", "currentAccessToken"]
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
 - !private ["PSo8NSCoding", "delegate"]
@@ -857,7 +883,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
+- ["PSo26NSExtensionRequestHandling", "buttonCurtirAction"]
 - ["PSo26NSExtensionRequestHandling", "buttonDesafiarAction"]
+- ["PSo26NSExtensionRequestHandling", "buttonFacebookAction"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
@@ -956,8 +984,12 @@ depends-member:
 - !private ["CSo8NSObject", "addAction"]
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "addValue"]
+- !private ["CSo8NSObject", "btCurtir"]
 - !private ["CSo8NSObject", "btDesafiar"]
+- !private ["CSo8NSObject", "btFacebook"]
+- ["CSo8NSObject", "buttonCurtirAction"]
 - ["CSo8NSObject", "buttonDesafiarAction"]
+- ["CSo8NSObject", "buttonFacebookAction"]
 - !private ["CSo8NSObject", "currentAccessToken"]
 - !private ["CSo8NSObject", "dataTaskWithRequest"]
 - !private ["CSo8NSObject", "dataUsingEncoding"]
@@ -1045,8 +1077,12 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addAction"]
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
+- !private ["PSo16NSObjectProtocol", "btCurtir"]
 - !private ["PSo16NSObjectProtocol", "btDesafiar"]
+- !private ["PSo16NSObjectProtocol", "btFacebook"]
+- ["PSo16NSObjectProtocol", "buttonCurtirAction"]
 - ["PSo16NSObjectProtocol", "buttonDesafiarAction"]
+- ["PSo16NSObjectProtocol", "buttonFacebookAction"]
 - !private ["PSo16NSObjectProtocol", "currentAccessToken"]
 - !private ["PSo16NSObjectProtocol", "dataTaskWithRequest"]
 - !private ["PSo16NSObjectProtocol", "dataUsingEncoding"]
@@ -1200,7 +1236,9 @@ depends-member:
 - ["C6Tatari16SearchController", "UITableViewCell"]
 - ["C6Tatari16SearchController", "UITextField"]
 - ["C6Tatari16SearchController", "Void"]
+- ["C6Tatari16SearchController", "buttonCurtirAction"]
 - ["C6Tatari16SearchController", "buttonDesafiarAction"]
+- ["C6Tatari16SearchController", "buttonFacebookAction"]
 - ["C6Tatari16SearchController", "deinit"]
 - ["C6Tatari16SearchController", "didReceiveMemoryWarning"]
 - !private ["C6Tatari16SearchController", "dispatch_async"]
@@ -1286,7 +1324,9 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "stringValue"]
 - !private ["PSs24StringLiteralConvertible", "subscript"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
+- !private ["PSo29UIAccessibilityIdentification", "btCurtir"]
 - !private ["PSo29UIAccessibilityIdentification", "btDesafiar"]
+- !private ["PSo29UIAccessibilityIdentification", "btFacebook"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "image"]
@@ -1302,7 +1342,9 @@ depends-member:
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "addTarget"]
+- !private ["PSo12UIAppearance", "btCurtir"]
 - !private ["PSo12UIAppearance", "btDesafiar"]
+- !private ["PSo12UIAppearance", "btFacebook"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "image"]
@@ -1335,8 +1377,12 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
+- !private ["PSo21UIAppearanceContainer", "btCurtir"]
 - !private ["PSo21UIAppearanceContainer", "btDesafiar"]
+- !private ["PSo21UIAppearanceContainer", "btFacebook"]
+- ["PSo21UIAppearanceContainer", "buttonCurtirAction"]
 - ["PSo21UIAppearanceContainer", "buttonDesafiarAction"]
+- ["PSo21UIAppearanceContainer", "buttonFacebookAction"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -1408,7 +1454,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UINib"]
 - !private ["PSo18UIContentContainer", "addAction"]
+- ["PSo18UIContentContainer", "buttonCurtirAction"]
 - ["PSo18UIContentContainer", "buttonDesafiarAction"]
+- ["PSo18UIContentContainer", "buttonFacebookAction"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
@@ -1454,7 +1502,9 @@ depends-member:
 - !private ["VSC15UIControlEvents", "EditingChanged"]
 - !private ["VSC15UIControlEvents", "TouchUpInside"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
+- !private ["PSo17UICoordinateSpace", "btCurtir"]
 - !private ["PSo17UICoordinateSpace", "btDesafiar"]
+- !private ["PSo17UICoordinateSpace", "btFacebook"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "image"]
@@ -1464,7 +1514,9 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
+- !private ["PSo13UIDynamicItem", "btCurtir"]
 - !private ["PSo13UIDynamicItem", "btDesafiar"]
+- !private ["PSo13UIDynamicItem", "btFacebook"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "image"]
@@ -1497,8 +1549,12 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
+- !private ["PSo18UIFocusEnvironment", "btCurtir"]
 - !private ["PSo18UIFocusEnvironment", "btDesafiar"]
+- !private ["PSo18UIFocusEnvironment", "btFacebook"]
+- ["PSo18UIFocusEnvironment", "buttonCurtirAction"]
 - ["PSo18UIFocusEnvironment", "buttonDesafiarAction"]
+- ["PSo18UIFocusEnvironment", "buttonFacebookAction"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -1546,7 +1602,9 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "btCurtir"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btDesafiar"]
+- !private ["PSo27UIGestureRecognizerDelegate", "btFacebook"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imgPessoa"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblNome"]
 - !private ["CSo7UIImage", "init"]
@@ -1591,8 +1649,12 @@ depends-member:
 - ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addTarget"]
+- !private ["CSo11UIResponder", "btCurtir"]
 - !private ["CSo11UIResponder", "btDesafiar"]
+- !private ["CSo11UIResponder", "btFacebook"]
+- ["CSo11UIResponder", "buttonCurtirAction"]
 - ["CSo11UIResponder", "buttonDesafiarAction"]
+- ["CSo11UIResponder", "buttonFacebookAction"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -1723,7 +1785,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UINib"]
 - !private ["PSo16UIStateRestoring", "addAction"]
+- ["PSo16UIStateRestoring", "buttonCurtirAction"]
 - ["PSo16UIStateRestoring", "buttonDesafiarAction"]
+- ["PSo16UIStateRestoring", "buttonFacebookAction"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
@@ -1767,7 +1831,9 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo15UITableViewCell", "btCurtir"]
 - !private ["CSo15UITableViewCell", "btDesafiar"]
+- !private ["CSo15UITableViewCell", "btFacebook"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "imgPessoa"]
 - !private ["CSo15UITableViewCell", "lblNome"]
@@ -1972,8 +2038,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
+- !private ["PSo18UITraitEnvironment", "btCurtir"]
 - !private ["PSo18UITraitEnvironment", "btDesafiar"]
+- !private ["PSo18UITraitEnvironment", "btFacebook"]
+- ["PSo18UITraitEnvironment", "buttonCurtirAction"]
 - ["PSo18UITraitEnvironment", "buttonDesafiarAction"]
+- ["PSo18UITraitEnvironment", "buttonFacebookAction"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
@@ -2022,7 +2092,9 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
+- !private ["CSo6UIView", "btCurtir"]
 - !private ["CSo6UIView", "btDesafiar"]
+- !private ["CSo6UIView", "btFacebook"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "image"]
@@ -2064,7 +2136,9 @@ depends-member:
 - ["CSo16UIViewController", "UITextField"]
 - ["CSo16UIViewController", "Void"]
 - !private ["CSo16UIViewController", "addAction"]
+- ["CSo16UIViewController", "buttonCurtirAction"]
 - ["CSo16UIViewController", "buttonDesafiarAction"]
+- ["CSo16UIViewController", "buttonFacebookAction"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
@@ -2178,7 +2252,9 @@ depends-member:
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "btCurtir"]
 - !private ["PSs12_Reflectable", "btDesafiar"]
+- !private ["PSs12_Reflectable", "btFacebook"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "dataUsingEncoding"]
 - !private ["PSs12_Reflectable", "delegate"]
@@ -2196,7 +2272,9 @@ depends-member:
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["C6Tatari19personTableViewCell", "btCurtir"]
 - !private ["C6Tatari19personTableViewCell", "btDesafiar"]
+- !private ["C6Tatari19personTableViewCell", "btFacebook"]
 - !private ["C6Tatari19personTableViewCell", "imgPessoa"]
 - !private ["C6Tatari19personTableViewCell", "lblNome"]
 depends-nominal:
@@ -2404,4 +2482,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "b3f40f6b482dd4983dc6acb273bf1689"
+interface-hash: "2a693933919f3c642411bde291d65181"

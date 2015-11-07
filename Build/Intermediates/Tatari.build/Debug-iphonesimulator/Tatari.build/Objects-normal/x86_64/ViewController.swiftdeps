@@ -6,45 +6,45 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14ViewController", ""]
 provides-dynamic-lookup:
-- "JSONStringify"
-- "viewDidAppear"
+- "loginButtonDidLogOut"
+- "viewDidLoad"
+- "getFBUserData"
 - "loginButton"
 - "HTTPsendRequest"
-- "loginButtonDidLogOut"
-- "getFBUserData"
 - "HTTPPostJSON"
-- "viewDidLoad"
+- "viewDidAppear"
+- "JSONStringify"
 depends-top-level:
-- !private "!="
-- "NSError"
+- "FBSDKLoginManagerLoginResult"
+- !private "NSData"
+- !private "NSString"
+- "Bool"
+- "BooleanLiteralType"
+- "NSMutableURLRequest"
+- "Void"
+- "FBSDKLoginButtonDelegate"
 - !private "Array"
 - !private "NSUserDefaults"
-- !private "NSUTF8StringEncoding"
-- "String"
-- "UIViewController"
-- !private "NSString"
-- !private "NSURLSession"
-- !private "FBSDKGraphRequest"
-- "BooleanLiteralType"
-- "AnyObject"
-- "ViewController"
-- !private "NSMutableDictionary"
-- "FBSDKLoginButton"
-- !private "PushNotificationManager"
-- !private "NSData"
-- !private "NSJSONSerialization"
 - !private "FBSDKAccessToken"
-- !private "=="
-- "Void"
-- !private "NSJSONWritingOptions"
 - !private "print"
-- "NSMutableURLRequest"
 - !private "Dictionary"
-- "FBSDKLoginButtonDelegate"
+- "NSError"
+- "ViewController"
+- !private "NSJSONWritingOptions"
+- !private "PushNotificationManager"
+- "UIViewController"
 - !private "StringLiteralType"
-- "FBSDKLoginManagerLoginResult"
+- !private "!="
+- !private "NSJSONSerialization"
+- "FBSDKLoginButton"
+- "AnyObject"
+- !private "NSUTF8StringEncoding"
+- !private "FBSDKGraphRequest"
+- !private "NSURLSession"
 - !private "NSURL"
-- "Bool"
+- !private "=="
+- !private "NSMutableDictionary"
+- "String"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -74,6 +74,7 @@ depends-member:
 - !private ["PSs9AnyObject", "deinit"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "getFBUserData"]
+- !private ["PSs9AnyObject", "getPushToken"]
 - !private ["PSs9AnyObject", "grantedPermissions"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "isCancelled"]
@@ -135,6 +136,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "dataWithJSONObject"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "getFBUserData"]
+- !private ["PSs11CVarArgType", "getPushToken"]
 - !private ["PSs11CVarArgType", "grantedPermissions"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "isCancelled"]
@@ -206,6 +208,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dataWithJSONObject"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "getFBUserData"]
+- !private ["PSs23CustomStringConvertible", "getPushToken"]
 - !private ["PSs23CustomStringConvertible", "grantedPermissions"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "isCancelled"]
@@ -269,6 +272,7 @@ depends-member:
 - !private ["PSs9Equatable", "dataWithJSONObject"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "getFBUserData"]
+- !private ["PSs9Equatable", "getPushToken"]
 - !private ["PSs9Equatable", "grantedPermissions"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "isCancelled"]
@@ -369,6 +373,7 @@ depends-member:
 - !private ["PSs8Hashable", "dataWithJSONObject"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "getFBUserData"]
+- !private ["PSs8Hashable", "getPushToken"]
 - !private ["PSs8Hashable", "grantedPermissions"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "isCancelled"]
@@ -545,6 +550,7 @@ depends-member:
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "getFBUserData"]
+- !private ["CSo8NSObject", "getPushToken"]
 - !private ["CSo8NSObject", "grantedPermissions"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isCancelled"]
@@ -596,6 +602,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dataWithJSONObject"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "getFBUserData"]
+- !private ["PSo16NSObjectProtocol", "getPushToken"]
 - !private ["PSo16NSObjectProtocol", "grantedPermissions"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isCancelled"]
@@ -652,10 +659,12 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["CSo23PushNotificationManager", "getPushToken"]
 - !private ["CSo23PushNotificationManager", "pushManager"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "init"]
+- !private ["PSo28SKPaymentTransactionObserver", "getPushToken"]
 - !private ["PSo28SKPaymentTransactionObserver", "pushManager"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
