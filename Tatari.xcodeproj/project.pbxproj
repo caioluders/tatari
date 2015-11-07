@@ -15,6 +15,7 @@
 		42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */; };
 		42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFCA1BE0006D0098A62D /* votoCell.xib */; };
 		42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */; };
+		42FA91881BEDB5BF00D3849E /* DesafiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */; };
 		6206FF631BEBF5B8009CE341 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */; };
 		623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9E71BDB39D000BCBFF4 /* FeedController.swift */; };
 		623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */; };
@@ -63,6 +64,7 @@
 		42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		42F4CFCA1BE0006D0098A62D /* votoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = votoCell.xib; sourceTree = "<group>"; };
 		42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotoTableViewCell.swift; sourceTree = "<group>"; };
+		42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesafiosViewController.swift; path = ../DesafiosViewController.swift; sourceTree = "<group>"; };
 		6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		623DA9E71BDB39D000BCBFF4 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				627355A91BD8079400F7124A /* AppDelegate.swift */,
 				627355E21BD80CC700F7124A /* Bridging-Header.h */,
 				627355E91BD813DC00F7124A /* MainController.swift */,
+				42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */,
 				627355AB1BD8079400F7124A /* ViewController.swift */,
 				627355AD1BD8079400F7124A /* Main.storyboard */,
 				62939ED11BDD39F300CAB491 /* SearchController.swift */,
@@ -276,7 +279,7 @@
 				TargetAttributes = {
 					627355A51BD8079400F7124A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = EHBSXGFU8H;
+						DevelopmentTeam = P6BZVZZ56C;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -359,6 +362,7 @@
 				62939ED01BDC488600CAB491 /* VoteController.swift in Sources */,
 				623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */,
 				42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */,
+				42FA91881BEDB5BF00D3849E /* DesafiosViewController.swift in Sources */,
 				420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */,
 				623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */,
 			);
@@ -510,7 +514,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2d.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";
@@ -533,7 +537,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2d.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";

@@ -14,6 +14,7 @@ class VotoTableViewCell: UITableViewCell {
     @IBOutlet weak var btVote: UIButton!
     @IBOutlet weak var imgPerson: UIImageView!
     @IBOutlet weak var lblName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,6 +24,10 @@ class VotoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    @IBAction func btVotePressed(sender: AnyObject) {
+        self.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
+        print("preencheu o coração")
     }
 
 }

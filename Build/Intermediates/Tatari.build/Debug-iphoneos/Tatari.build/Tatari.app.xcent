@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>P6BZVZZ56C.br.ufpe.cla2g.Tatari</string>
+	<string>P6BZVZZ56C.br.ufpe.cla2d.Tatari</string>
 	<key>aps-environment</key>
 	<string>development</string>
 	<key>com.apple.developer.team-identifier</key>
@@ -12,7 +12,7 @@
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>P6BZVZZ56C.br.ufpe.cla2g.Tatari</string>
+		<string>P6BZVZZ56C.br.ufpe.cla2d.Tatari</string>
 	</array>
 </dict>
 </plist>

@@ -21,6 +21,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var voted: [Int] = []
     var names: [String] = []
     var ids: [String] = []
+    var idsVotadas: [String] = []
     lazy var data = NSMutableData()
     var idBotaoVoto: String = ""
     
@@ -75,6 +76,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         if (votes.contains(idString!)){
                             print("já votou, querido")
                             self.idBotaoVoto = id
+                            self.idsVotadas.append(id)
                         }
                         self.pictures.append(image!)
                         
@@ -144,6 +146,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
             //Do stuff with imgView.image (send to server)
             add_photo(imageToSave!)
         }
+        
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
     
@@ -161,7 +164,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.lblVoteCount.text = String(self.qtdVotes[indexPath.row])
         cell.btVote.tag = Int(self.ids[indexPath.row])!
         
-        if (self.ids[indexPath.row] == self.idBotaoVoto){
+        if (self.idsVotadas.contains(self.ids[indexPath.row])){
             cell.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
         }
         

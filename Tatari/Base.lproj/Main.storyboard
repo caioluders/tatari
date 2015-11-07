@@ -128,21 +128,14 @@
                                 <rect key="frame" x="0.0" y="82" width="375" height="585"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
-                                <rect key="frame" x="65" y="72" width="30" height="30"/>
+                                <rect key="frame" x="131" y="65" width="40" height="41"/>
                                 <state key="normal" title="feed" image="info icon"/>
                                 <connections>
                                     <segue destination="pVq-cJ-qf5" kind="show" id="iXg-pb-qJj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
-                                <rect key="frame" x="108" y="72" width="25" height="30"/>
-                                <state key="normal" title="vote" image="concurso icon"/>
-                                <connections>
-                                    <segue destination="OTj-vo-FEF" kind="show" identifier="vote_segue" id="o3Z-IF-C5t"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
-                                <rect key="frame" x="146" y="72" width="28" height="30"/>
+                                <rect key="frame" x="305" y="65" width="40" height="41"/>
                                 <state key="normal" title="search" image="pesquisar icon"/>
                                 <connections>
                                     <segue destination="Saa-Bf-t3S" kind="show" id="bF2-q1-Vrj"/>
@@ -152,7 +145,7 @@
                                 <rect key="frame" x="128" y="17" width="113" height="32"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
-                                <rect key="frame" x="20" y="72" width="30" height="30"/>
+                                <rect key="frame" x="46" y="65" width="41" height="41"/>
                                 <state key="normal" title="settings" image="conf icon"/>
                                 <connections>
                                     <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
@@ -188,6 +181,13 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
                                 <rect key="frame" x="113" y="330" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
+                                <rect key="frame" x="228" y="65" width="33" height="41"/>
+                                <state key="normal" title="vote" image="concurso icon"/>
+                                <connections>
+                                    <segue destination="OTj-vo-FEF" kind="show" identifier="vote_segue" id="o3Z-IF-C5t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -274,7 +274,7 @@
                                 <rect key="frame" x="128" y="17" width="113" height="31"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8x3-WP-VB1">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <rect key="frame" x="170" y="314" width="37" height="37"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                         </subviews>
@@ -292,7 +292,7 @@
         <!--Search Controller-->
         <scene sceneID="Epu-W3-8Sz">
             <objects>
-                <viewController id="Saa-Bf-t3S" customClass="SearchController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Saa-Bf-t3S" customClass="SearchController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bmz-0S-lHP"/>
                         <viewControllerLayoutGuide type="bottom" id="UHc-gd-MRH"/>
@@ -312,10 +312,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-Os-weJ">
                                 <rect key="frame" x="20" y="131" width="335" height="501"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" id="jPq-Tq-dMN">
-                                    <rect key="frame" x="0.0" y="0.0" width="335" height="603"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
                                 <connections>
                                     <outlet property="dataSource" destination="Saa-Bf-t3S" id="bSf-7G-mGU"/>
                                     <outlet property="delegate" destination="Saa-Bf-t3S" id="U5j-nd-5I4"/>
@@ -327,21 +323,45 @@
                     <connections>
                         <outlet property="tableView" destination="DhB-Os-weJ" id="Cm6-bz-SH7"/>
                         <outlet property="txtFieldSearch" destination="mPI-Mx-NWb" id="UNT-Le-Xkh"/>
+                        <segue destination="ncg-kN-VOe" kind="show" identifier="oi" id="l4Z-mQ-ZKs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGB-aw-DOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184.5" y="1801.5"/>
+            <point key="canvasLocation" x="2184.5" y="1795.5"/>
+        </scene>
+        <!--Desafios View Controller-->
+        <scene sceneID="B9D-sA-I5v">
+            <objects>
+                <viewController storyboardIdentifier="desafios" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ncg-kN-VOe" customClass="DesafiosViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="36o-01-a0R"/>
+                        <viewControllerLayoutGuide type="bottom" id="6JM-4L-e5p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EWw-01-Lcg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Desafios" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-Mw-RSz">
+                                <rect key="frame" x="27" y="92" width="320" height="510"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uxz-FS-vbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2721" y="1778"/>
         </scene>
     </scenes>
     <resources>
         <image name="Avisos" width="60" height="25"/>
-        <image name="Background" width="364" height="592"/>
         <image name="Background 2" width="375" height="104"/>
         <image name="Bepifantasy" width="257" height="55"/>
         <image name="Bepifantasy_smaller" width="111" height="25"/>
         <image name="Concurso" width="89" height="21"/>
         <image name="Configuracoes" width="134" height="25"/>
+        <image name="Desafios" width="320" height="510"/>
         <image name="Participar" width="112" height="22"/>
         <image name="Pessoas" width="78" height="21"/>
         <image name="Pin Avatar" width="111" height="173"/>
@@ -354,14 +374,14 @@
         <image name="academia" width="43" height="50"/>
         <image name="banheiro" width="42" height="50"/>
         <image name="bar" width="42" height="50"/>
-        <image name="concurso icon" width="25" height="30"/>
-        <image name="conf icon" width="30" height="30"/>
+        <image name="concurso icon" width="33" height="41"/>
+        <image name="conf icon" width="41" height="41"/>
         <image name="elevador" width="42" height="50"/>
         <image name="escada" width="42" height="50"/>
-        <image name="info icon" width="27" height="27"/>
+        <image name="info icon" width="40" height="41"/>
         <image name="log out" width="60" height="20"/>
         <image name="mapa" width="375" height="584"/>
-        <image name="pesquisar icon" width="27" height="27"/>
+        <image name="pesquisar icon" width="40" height="41"/>
         <image name="saida" width="43" height="50"/>
         <image name="sauna" width="42" height="50"/>
         <image name="visibilidade" width="187" height="48"/>

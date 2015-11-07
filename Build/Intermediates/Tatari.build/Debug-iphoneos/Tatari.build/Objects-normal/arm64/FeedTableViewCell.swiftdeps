@@ -6,16 +6,16 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17FeedTableViewCell", ""]
 provides-dynamic-lookup:
-- "awakeFromNib"
+- "lblTitle"
 - "setSelected"
 - "txtBody"
-- "lblTitle"
+- "awakeFromNib"
 depends-top-level:
-- "UITableViewCell"
-- "FeedTableViewCell"
+- "UILabel"
 - "UITextView"
 - "Bool"
-- "UILabel"
+- "UITableViewCell"
+- "FeedTableViewCell"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "init"]
