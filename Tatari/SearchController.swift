@@ -68,7 +68,12 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell:personTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("personcell")! as! personTableViewCell
+        var cell = self.tableView.dequeueReusableCellWithIdentifier("personcell") as! personTableViewCell!
+        
+        if (cell == nil) {
+            cell = personTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "personcell")
+        }
+
         
         cell.lblNome.text = self.people[indexPath.row]
         
