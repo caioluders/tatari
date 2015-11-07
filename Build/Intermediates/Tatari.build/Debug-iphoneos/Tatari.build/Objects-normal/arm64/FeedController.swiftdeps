@@ -6,63 +6,71 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14FeedController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "itemsTitle"
-- "viewDidLoad"
-- "activityFeed"
-- "HTTPsendRequest"
-- "JSONStringify"
-- "didReceiveMemoryWarning"
+- "itemsBody"
+- "arraySorted"
 - "items"
+- "challengeDict"
+- "didReceiveMemoryWarning"
+- "arrayOfMessages"
+- "viewDidLoad"
 - "data"
 - "HTTPPostJSON"
-- "itemsBody"
+- "itemsTitle"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "JSONStringify"
+- "messageDict"
+- "activityFeed"
+- "HTTPsendRequest"
 depends-top-level:
-- "AnyObject"
-- "String"
-- !private "NSData"
-- !private "NSString"
-- !private "NSJSONSerialization"
-- "NSIndexPath"
-- "CGFloat"
-- "UIActivityIndicatorView"
-- !private "UIImageView"
-- "UIViewController"
-- "NSURLConnectionDelegate"
-- "UITableViewDelegate"
-- !private "UINib"
-- !private "NSUserDefaults"
-- !private "dispatch_async"
-- "UITableViewDataSource"
-- !private "dispatch_get_main_queue"
-- !private "NSJSONWritingOptions"
-- "UITableView"
-- !private "NSURLSession"
-- !private "NSURL"
-- "StringLiteralType"
-- !private "!="
-- !private "FBSDKAccessToken"
-- !private "FeedTableViewCell"
-- !private "UIViewContentMode"
-- "Void"
 - "FeedController"
-- "UITableViewCell"
-- "NSMutableURLRequest"
-- !private "print"
-- "Int"
+- "StringLiteralType"
 - "Bool"
-- !private "NSUTF8StringEncoding"
-- "NSMutableData"
-- !private "UIImage"
-- !private "BooleanLiteralType"
-- !private "JSON"
+- !private "dispatch_get_main_queue"
+- !private "NSURL"
+- "Array"
+- "AnyObject"
+- "NSMutableURLRequest"
+- !private "UIImageView"
+- !private "print"
+- !private "UIViewContentMode"
 - !private "NSMutableDictionary"
-- !private "+"
+- !private "NSJSONSerialization"
+- !private "!="
+- "UIViewController"
+- "String"
+- !private "NSUTF8StringEncoding"
+- !private "UINib"
+- "UITableView"
+- "Void"
+- !private "FBSDKAccessToken"
+- !private "dispatch_async"
+- "NSIndexPath"
+- "UITableViewDataSource"
+- "Int"
+- !private "NSJSONWritingOptions"
+- "UITableViewDelegate"
+- "NSURLConnectionDelegate"
+- !private "JSON"
+- !private "BooleanLiteralType"
+- "Dictionary"
+- "UITableViewCell"
+- "UIActivityIndicatorView"
+- "NSMutableData"
+- !private ">"
+- !private "NSString"
+- !private "NSURLSession"
+- !private "FeedTableViewCell"
+- "CGFloat"
+- !private "NSUserDefaults"
+- !private "UIImage"
+- !private "NSData"
 depends-member:
+- ["PSs9AnyObject", "Array"]
+- ["PSs9AnyObject", "Dictionary"]
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "HTTPBody"]
 - !private ["PSs9AnyObject", "HTTPMethod"]
@@ -87,7 +95,10 @@ depends-member:
 - ["PSs9AnyObject", "activityFeed"]
 - !private ["PSs9AnyObject", "addValue"]
 - !private ["PSs9AnyObject", "allowsSelection"]
+- ["PSs9AnyObject", "arrayOfMessages"]
+- ["PSs9AnyObject", "arraySorted"]
 - !private ["PSs9AnyObject", "backgroundView"]
+- ["PSs9AnyObject", "challengeDict"]
 - ["PSs9AnyObject", "connection"]
 - ["PSs9AnyObject", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9AnyObject", "contentMode"]
@@ -111,6 +122,7 @@ depends-member:
 - ["PSs9AnyObject", "itemsTitle"]
 - !private ["PSs9AnyObject", "lblTitle"]
 - !private ["PSs9AnyObject", "localizedDescription"]
+- ["PSs9AnyObject", "messageDict"]
 - !private ["PSs9AnyObject", "navigationItem"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - !private ["PSs9AnyObject", "print"]
@@ -153,7 +165,8 @@ depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
-- !private ["Sa", "reverse"]
+- ["Sa", "init"]
+- !private ["Sa", "sort"]
 - !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
@@ -162,18 +175,16 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
-- !private ["PSs23ArrayLiteralConvertible", "init"]
-- !private ["PSs23ArrayLiteralConvertible", "reverse"]
+- ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "sort"]
 - !private ["PSs23ArrayLiteralConvertible", "stringValue"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
-- !private ["PSs22BidirectionalIndexType", "Stride"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
-- !private ["PSs21BitwiseOperationsType", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["PSs25BooleanLiteralConvertible", "Generator"]
 - !private ["PSs25BooleanLiteralConvertible", "Index"]
@@ -192,6 +203,8 @@ depends-member:
 - !private ["PSs11BooleanType", "stringValue"]
 - !private ["PSs11BooleanType", "subscript"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- ["PSs11CVarArgType", "Array"]
+- ["PSs11CVarArgType", "Dictionary"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "FBSDKAccessToken"]
 - !private ["PSs11CVarArgType", "HTTPBody"]
@@ -211,7 +224,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
-- !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UIImageView"]
 - !private ["PSs11CVarArgType", "UINib"]
@@ -219,7 +231,10 @@ depends-member:
 - ["PSs11CVarArgType", "activityFeed"]
 - !private ["PSs11CVarArgType", "addValue"]
 - !private ["PSs11CVarArgType", "allowsSelection"]
+- ["PSs11CVarArgType", "arrayOfMessages"]
+- ["PSs11CVarArgType", "arraySorted"]
 - !private ["PSs11CVarArgType", "backgroundView"]
+- ["PSs11CVarArgType", "challengeDict"]
 - ["PSs11CVarArgType", "connection"]
 - ["PSs11CVarArgType", "connectionShouldUseCredentialStorage"]
 - !private ["PSs11CVarArgType", "contentMode"]
@@ -242,6 +257,7 @@ depends-member:
 - ["PSs11CVarArgType", "itemsTitle"]
 - !private ["PSs11CVarArgType", "lblTitle"]
 - !private ["PSs11CVarArgType", "localizedDescription"]
+- ["PSs11CVarArgType", "messageDict"]
 - !private ["PSs11CVarArgType", "navigationItem"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["PSs11CVarArgType", "print"]
@@ -283,15 +299,14 @@ depends-member:
 - !private ["PSs14CollectionType", "_Element"]
 - !private ["PSs14CollectionType", "append"]
 - !private ["PSs14CollectionType", "count"]
-- !private ["PSs14CollectionType", "init"]
-- !private ["PSs14CollectionType", "reverse"]
+- ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "sort"]
 - !private ["PSs14CollectionType", "stringValue"]
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "Generator"]
 - !private ["PSs10Comparable", "Index"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
-- !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "SubSequence"]
 - !private ["PSs10Comparable", "_DisabledRangeIndex"]
 - !private ["PSs10Comparable", "_Element"]
@@ -307,10 +322,12 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "append"]
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
-- !private ["PSs28CustomDebugStringConvertible", "init"]
-- !private ["PSs28CustomDebugStringConvertible", "reverse"]
+- ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "sort"]
 - !private ["PSs28CustomDebugStringConvertible", "stringValue"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- ["PSs23CustomStringConvertible", "Array"]
+- ["PSs23CustomStringConvertible", "Dictionary"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - !private ["PSs23CustomStringConvertible", "FBSDKAccessToken"]
 - !private ["PSs23CustomStringConvertible", "Generator"]
@@ -332,7 +349,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
-- !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UIImageView"]
@@ -344,7 +360,10 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "addValue"]
 - !private ["PSs23CustomStringConvertible", "allowsSelection"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- ["PSs23CustomStringConvertible", "arrayOfMessages"]
+- ["PSs23CustomStringConvertible", "arraySorted"]
 - !private ["PSs23CustomStringConvertible", "backgroundView"]
+- ["PSs23CustomStringConvertible", "challengeDict"]
 - ["PSs23CustomStringConvertible", "connection"]
 - ["PSs23CustomStringConvertible", "connectionShouldUseCredentialStorage"]
 - !private ["PSs23CustomStringConvertible", "contentMode"]
@@ -368,13 +387,13 @@ depends-member:
 - ["PSs23CustomStringConvertible", "itemsTitle"]
 - !private ["PSs23CustomStringConvertible", "lblTitle"]
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- ["PSs23CustomStringConvertible", "messageDict"]
 - !private ["PSs23CustomStringConvertible", "navigationItem"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "registerNib"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "resume"]
-- !private ["PSs23CustomStringConvertible", "reverse"]
 - !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -392,6 +411,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "separatorStyle"]
 - !private ["PSs23CustomStringConvertible", "setObject"]
 - !private ["PSs23CustomStringConvertible", "sharedSession"]
+- !private ["PSs23CustomStringConvertible", "sort"]
 - !private ["PSs23CustomStringConvertible", "standardUserDefaults"]
 - !private ["PSs23CustomStringConvertible", "startAnimating"]
 - !private ["PSs23CustomStringConvertible", "stopAnimating"]
@@ -406,14 +426,25 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Generator"]
+- !private ["VSs10Dictionary", "Index"]
+- !private ["VSs10Dictionary", "SubSequence"]
+- !private ["VSs10Dictionary", "_Element"]
+- !private ["VSs10Dictionary", "deinit"]
+- ["VSs10Dictionary", "init"]
+- !private ["VSs10Dictionary", "subscript"]
+- !private ["VSs15DictionaryIndex", "Distance"]
+- !private ["VSs15DictionaryIndex", "_DisabledRangeIndex"]
 - !private ["PSs28DictionaryLiteralConvertible", "Generator"]
 - !private ["PSs28DictionaryLiteralConvertible", "Index"]
 - !private ["PSs28DictionaryLiteralConvertible", "SubSequence"]
 - !private ["PSs28DictionaryLiteralConvertible", "_Element"]
-- !private ["PSs28DictionaryLiteralConvertible", "init"]
+- ["PSs28DictionaryLiteralConvertible", "init"]
 - !private ["PSs28DictionaryLiteralConvertible", "setObject"]
 - !private ["PSs28DictionaryLiteralConvertible", "stringValue"]
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- ["PSs9Equatable", "Array"]
+- ["PSs9Equatable", "Dictionary"]
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "FBSDKAccessToken"]
 - !private ["PSs9Equatable", "Generator"]
@@ -438,7 +469,6 @@ depends-member:
 - !private ["PSs9Equatable", "None"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
 - !private ["PSs9Equatable", "ScaleAspectFit"]
-- !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "SubSequence"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UIImageView"]
@@ -450,7 +480,10 @@ depends-member:
 - ["PSs9Equatable", "activityFeed"]
 - !private ["PSs9Equatable", "addValue"]
 - !private ["PSs9Equatable", "allowsSelection"]
+- ["PSs9Equatable", "arrayOfMessages"]
+- ["PSs9Equatable", "arraySorted"]
 - !private ["PSs9Equatable", "backgroundView"]
+- ["PSs9Equatable", "challengeDict"]
 - ["PSs9Equatable", "connection"]
 - ["PSs9Equatable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9Equatable", "contentMode"]
@@ -473,6 +506,7 @@ depends-member:
 - ["PSs9Equatable", "itemsTitle"]
 - !private ["PSs9Equatable", "lblTitle"]
 - !private ["PSs9Equatable", "localizedDescription"]
+- ["PSs9Equatable", "messageDict"]
 - !private ["PSs9Equatable", "navigationItem"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "print"]
@@ -524,8 +558,10 @@ depends-member:
 - !private ["PSo12FBSDKCopying", "currentAccessToken"]
 - !private ["PSo12FBSDKCopying", "tokenString"]
 - ["C6Tatari14FeedController", "AnyObject"]
+- ["C6Tatari14FeedController", "Array"]
 - ["C6Tatari14FeedController", "Bool"]
 - ["C6Tatari14FeedController", "CGFloat"]
+- ["C6Tatari14FeedController", "Dictionary"]
 - !private ["C6Tatari14FeedController", "FBSDKAccessToken"]
 - !private ["C6Tatari14FeedController", "FeedTableViewCell"]
 - ["C6Tatari14FeedController", "HTTPPostJSON"]
@@ -555,6 +591,9 @@ depends-member:
 - !private ["C6Tatari14FeedController", "UIViewContentMode"]
 - ["C6Tatari14FeedController", "Void"]
 - ["C6Tatari14FeedController", "activityFeed"]
+- ["C6Tatari14FeedController", "arrayOfMessages"]
+- ["C6Tatari14FeedController", "arraySorted"]
+- ["C6Tatari14FeedController", "challengeDict"]
 - ["C6Tatari14FeedController", "connection"]
 - ["C6Tatari14FeedController", "connectionShouldUseCredentialStorage"]
 - ["C6Tatari14FeedController", "data"]
@@ -568,6 +607,7 @@ depends-member:
 - ["C6Tatari14FeedController", "items"]
 - ["C6Tatari14FeedController", "itemsBody"]
 - ["C6Tatari14FeedController", "itemsTitle"]
+- ["C6Tatari14FeedController", "messageDict"]
 - !private ["C6Tatari14FeedController", "navigationItem"]
 - ["C6Tatari14FeedController", "numberOfSectionsInTableView"]
 - !private ["C6Tatari14FeedController", "print"]
@@ -598,9 +638,10 @@ depends-member:
 - !private ["PSs23FloatLiteralConvertible", "subscript"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
-- !private ["PSs16ForwardIndexType", "Stride"]
 - !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
 - !private ["PSs13GeneratorType", "Element"]
+- ["PSs8Hashable", "Array"]
+- ["PSs8Hashable", "Dictionary"]
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "FBSDKAccessToken"]
 - !private ["PSs8Hashable", "HTTPBody"]
@@ -622,7 +663,6 @@ depends-member:
 - !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "None"]
 - !private ["PSs8Hashable", "ScaleAspectFit"]
-- !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UIImageView"]
 - !private ["PSs8Hashable", "UINib"]
@@ -631,7 +671,10 @@ depends-member:
 - ["PSs8Hashable", "activityFeed"]
 - !private ["PSs8Hashable", "addValue"]
 - !private ["PSs8Hashable", "allowsSelection"]
+- ["PSs8Hashable", "arrayOfMessages"]
+- ["PSs8Hashable", "arraySorted"]
 - !private ["PSs8Hashable", "backgroundView"]
+- ["PSs8Hashable", "challengeDict"]
 - ["PSs8Hashable", "connection"]
 - ["PSs8Hashable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs8Hashable", "contentMode"]
@@ -654,6 +697,7 @@ depends-member:
 - ["PSs8Hashable", "itemsTitle"]
 - !private ["PSs8Hashable", "lblTitle"]
 - !private ["PSs8Hashable", "localizedDescription"]
+- ["PSs8Hashable", "messageDict"]
 - !private ["PSs8Hashable", "navigationItem"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - !private ["PSs8Hashable", "print"]
@@ -696,22 +740,19 @@ depends-member:
 - !private ["PSs9Indexable", "_Element"]
 - !private ["PSs9Indexable", "append"]
 - !private ["PSs9Indexable", "count"]
-- !private ["PSs9Indexable", "init"]
-- !private ["PSs9Indexable", "reverse"]
+- ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "sort"]
 - !private ["PSs9Indexable", "stringValue"]
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs21IntegerArithmeticType", "Stride"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
 - !private ["PSs25IntegerLiteralConvertible", "Generator"]
 - !private ["PSs25IntegerLiteralConvertible", "Index"]
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs25IntegerLiteralConvertible", "Stride"]
 - !private ["PSs25IntegerLiteralConvertible", "SubSequence"]
 - !private ["PSs25IntegerLiteralConvertible", "_Element"]
 - !private ["PSs25IntegerLiteralConvertible", "init"]
@@ -719,7 +760,6 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "subscript"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
-- !private ["PSs11IntegerType", "Stride"]
 - !private ["V6Tatari4JSON", "Generator"]
 - !private ["V6Tatari4JSON", "Index"]
 - !private ["V6Tatari4JSON", "SubSequence"]
@@ -735,11 +775,9 @@ depends-member:
 - !private ["V6Tatari9JSONIndex", "deinit"]
 - !private ["P6Tatari17JSONSubscriptType", "Distance"]
 - !private ["P6Tatari17JSONSubscriptType", "IntegerLiteralType"]
-- !private ["P6Tatari17JSONSubscriptType", "Stride"]
 - !private ["P6Tatari17JSONSubscriptType", "dataUsingEncoding"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
-- !private ["PSs14MirrorPathType", "Stride"]
 - !private ["PSs14MirrorPathType", "dataUsingEncoding"]
 - !private ["PSs21MutableCollectionType", "Generator"]
 - !private ["PSs21MutableCollectionType", "Index"]
@@ -747,7 +785,8 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "_Element"]
 - !private ["PSs21MutableCollectionType", "append"]
 - !private ["PSs21MutableCollectionType", "count"]
-- !private ["PSs21MutableCollectionType", "reverse"]
+- ["PSs21MutableCollectionType", "init"]
+- !private ["PSs21MutableCollectionType", "sort"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
@@ -755,7 +794,8 @@ depends-member:
 - !private ["PSs16MutableIndexable", "_Element"]
 - !private ["PSs16MutableIndexable", "append"]
 - !private ["PSs16MutableIndexable", "count"]
-- !private ["PSs16MutableIndexable", "reverse"]
+- ["PSs16MutableIndexable", "init"]
+- !private ["PSs16MutableIndexable", "sort"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
@@ -763,8 +803,11 @@ depends-member:
 - !private ["PSs16MutableSliceable", "_Element"]
 - !private ["PSs16MutableSliceable", "append"]
 - !private ["PSs16MutableSliceable", "count"]
-- !private ["PSs16MutableSliceable", "reverse"]
+- ["PSs16MutableSliceable", "init"]
+- !private ["PSs16MutableSliceable", "sort"]
 - !private ["PSs16MutableSliceable", "subscript"]
+- ["PSo8NSCoding", "Array"]
+- ["PSo8NSCoding", "Dictionary"]
 - !private ["PSo8NSCoding", "FBSDKAccessToken"]
 - !private ["PSo8NSCoding", "HTTPBody"]
 - !private ["PSo8NSCoding", "HTTPMethod"]
@@ -789,7 +832,10 @@ depends-member:
 - ["PSo8NSCoding", "activityFeed"]
 - !private ["PSo8NSCoding", "addValue"]
 - !private ["PSo8NSCoding", "allowsSelection"]
+- ["PSo8NSCoding", "arrayOfMessages"]
+- ["PSo8NSCoding", "arraySorted"]
 - !private ["PSo8NSCoding", "backgroundView"]
+- ["PSo8NSCoding", "challengeDict"]
 - ["PSo8NSCoding", "connection"]
 - ["PSo8NSCoding", "connectionShouldUseCredentialStorage"]
 - !private ["PSo8NSCoding", "contentMode"]
@@ -809,6 +855,7 @@ depends-member:
 - ["PSo8NSCoding", "itemsTitle"]
 - !private ["PSo8NSCoding", "lblTitle"]
 - !private ["PSo8NSCoding", "localizedDescription"]
+- ["PSo8NSCoding", "messageDict"]
 - !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "print"]
@@ -856,6 +903,8 @@ depends-member:
 - !private ["CSo12NSDictionary", "init"]
 - !private ["CSo12NSDictionary", "setObject"]
 - !private ["CSo7NSError", "localizedDescription"]
+- ["PSo26NSExtensionRequestHandling", "Array"]
+- ["PSo26NSExtensionRequestHandling", "Dictionary"]
 - !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
 - ["PSo26NSExtensionRequestHandling", "HTTPPostJSON"]
 - ["PSo26NSExtensionRequestHandling", "HTTPsendRequest"]
@@ -876,6 +925,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
 - !private ["PSo26NSExtensionRequestHandling", "UIViewContentMode"]
 - ["PSo26NSExtensionRequestHandling", "activityFeed"]
+- ["PSo26NSExtensionRequestHandling", "arrayOfMessages"]
+- ["PSo26NSExtensionRequestHandling", "arraySorted"]
+- ["PSo26NSExtensionRequestHandling", "challengeDict"]
 - ["PSo26NSExtensionRequestHandling", "connection"]
 - ["PSo26NSExtensionRequestHandling", "connectionShouldUseCredentialStorage"]
 - ["PSo26NSExtensionRequestHandling", "data"]
@@ -888,6 +940,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "items"]
 - ["PSo26NSExtensionRequestHandling", "itemsBody"]
 - ["PSo26NSExtensionRequestHandling", "itemsTitle"]
+- ["PSo26NSExtensionRequestHandling", "messageDict"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -929,8 +982,10 @@ depends-member:
 - !private ["CSo19NSMutableURLRequest", "addValue"]
 - !private ["CSo19NSMutableURLRequest", "init"]
 - ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Array"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
+- ["CSo8NSObject", "Dictionary"]
 - !private ["CSo8NSObject", "FBSDKAccessToken"]
 - !private ["CSo8NSObject", "FeedTableViewCell"]
 - !private ["CSo8NSObject", "HTTPBody"]
@@ -964,7 +1019,10 @@ depends-member:
 - ["CSo8NSObject", "activityFeed"]
 - !private ["CSo8NSObject", "addValue"]
 - !private ["CSo8NSObject", "allowsSelection"]
+- ["CSo8NSObject", "arrayOfMessages"]
+- ["CSo8NSObject", "arraySorted"]
 - !private ["CSo8NSObject", "backgroundView"]
+- ["CSo8NSObject", "challengeDict"]
 - ["CSo8NSObject", "connection"]
 - ["CSo8NSObject", "connectionShouldUseCredentialStorage"]
 - !private ["CSo8NSObject", "contentMode"]
@@ -987,6 +1045,7 @@ depends-member:
 - ["CSo8NSObject", "itemsTitle"]
 - !private ["CSo8NSObject", "lblTitle"]
 - !private ["CSo8NSObject", "localizedDescription"]
+- ["CSo8NSObject", "messageDict"]
 - !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "print"]
@@ -1021,6 +1080,8 @@ depends-member:
 - !private ["CSo8NSObject", "txtBody"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- ["PSo16NSObjectProtocol", "Array"]
+- ["PSo16NSObjectProtocol", "Dictionary"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
 - !private ["PSo16NSObjectProtocol", "HTTPBody"]
 - !private ["PSo16NSObjectProtocol", "HTTPMethod"]
@@ -1045,7 +1106,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "activityFeed"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - !private ["PSo16NSObjectProtocol", "allowsSelection"]
+- ["PSo16NSObjectProtocol", "arrayOfMessages"]
+- ["PSo16NSObjectProtocol", "arraySorted"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
+- ["PSo16NSObjectProtocol", "challengeDict"]
 - ["PSo16NSObjectProtocol", "connection"]
 - ["PSo16NSObjectProtocol", "connectionShouldUseCredentialStorage"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
@@ -1068,6 +1132,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "itemsTitle"]
 - !private ["PSo16NSObjectProtocol", "lblTitle"]
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- ["PSo16NSObjectProtocol", "messageDict"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -1117,6 +1182,8 @@ depends-member:
 - !private ["CSo8NSString", "deinit"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo5NSURL", "init"]
+- ["PSo23NSURLConnectionDelegate", "Array"]
+- ["PSo23NSURLConnectionDelegate", "Dictionary"]
 - !private ["PSo23NSURLConnectionDelegate", "FBSDKAccessToken"]
 - !private ["PSo23NSURLConnectionDelegate", "HTTPPostJSON"]
 - !private ["PSo23NSURLConnectionDelegate", "HTTPsendRequest"]
@@ -1137,13 +1204,15 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "UINib"]
 - !private ["PSo23NSURLConnectionDelegate", "UIViewContentMode"]
 - !private ["PSo23NSURLConnectionDelegate", "activityFeed"]
+- !private ["PSo23NSURLConnectionDelegate", "arrayOfMessages"]
+- !private ["PSo23NSURLConnectionDelegate", "arraySorted"]
+- !private ["PSo23NSURLConnectionDelegate", "challengeDict"]
 - ["PSo23NSURLConnectionDelegate", "connection"]
 - ["PSo23NSURLConnectionDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo23NSURLConnectionDelegate", "dispatch_async"]
 - !private ["PSo23NSURLConnectionDelegate", "dispatch_get_main_queue"]
 - ["PSo23NSURLConnectionDelegate", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSo23NSURLConnectionDelegate", "itemsBody"]
-- !private ["PSo23NSURLConnectionDelegate", "itemsTitle"]
+- !private ["PSo23NSURLConnectionDelegate", "messageDict"]
 - !private ["PSo23NSURLConnectionDelegate", "navigationItem"]
 - ["PSo23NSURLConnectionDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo23NSURLConnectionDelegate", "print"]
@@ -1188,14 +1257,15 @@ depends-member:
 - !private ["PSs16OutputStreamType", "dataUsingEncoding"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
-- !private ["PSs21RandomAccessIndexType", "Stride"]
+- !private ["VSs5Range", "deinit"]
 - !private ["PSs30RangeReplaceableCollectionType", "Generator"]
 - !private ["PSs30RangeReplaceableCollectionType", "Index"]
 - !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["PSs30RangeReplaceableCollectionType", "_Element"]
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
-- !private ["PSs30RangeReplaceableCollectionType", "reverse"]
+- ["PSs30RangeReplaceableCollectionType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "sort"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Generator"]
 - !private ["PSs16RawRepresentable", "Index"]
@@ -1214,28 +1284,26 @@ depends-member:
 - !private ["PSs12SequenceType", "_Element"]
 - !private ["PSs12SequenceType", "append"]
 - !private ["PSs12SequenceType", "count"]
-- !private ["PSs12SequenceType", "init"]
-- !private ["PSs12SequenceType", "reverse"]
+- ["PSs12SequenceType", "init"]
 - !private ["PSs12SequenceType", "setObject"]
+- !private ["PSs12SequenceType", "sort"]
 - !private ["PSs12SequenceType", "stringValue"]
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "PrettyPrinted"]
 - !private ["PSs14SetAlgebraType", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs17SignedIntegerType", "Stride"]
 - !private ["PSs16SignedNumberType", "Distance"]
 - !private ["PSs16SignedNumberType", "IntegerLiteralType"]
-- !private ["PSs16SignedNumberType", "Stride"]
 - !private ["VSs5Slice", "Generator"]
 - !private ["VSs5Slice", "Index"]
 - !private ["VSs5Slice", "SubSequence"]
 - !private ["VSs5Slice", "_Element"]
 - !private ["VSs5Slice", "stringValue"]
+- !private ["VSs5Slice", "subscript"]
 - !private ["PSs10Streamable", "dataUsingEncoding"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
-- !private ["PSs10Strideable", "Stride"]
 - !private ["SS", "dataUsingEncoding"]
 - !private ["SS", "deinit"]
 - !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
@@ -1278,6 +1346,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "txtBody"]
+- ["PSo21UIAppearanceContainer", "Array"]
+- ["PSo21UIAppearanceContainer", "Dictionary"]
 - !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
 - ["PSo21UIAppearanceContainer", "HTTPPostJSON"]
 - ["PSo21UIAppearanceContainer", "HTTPsendRequest"]
@@ -1299,7 +1369,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIViewContentMode"]
 - ["PSo21UIAppearanceContainer", "activityFeed"]
 - !private ["PSo21UIAppearanceContainer", "allowsSelection"]
+- ["PSo21UIAppearanceContainer", "arrayOfMessages"]
+- ["PSo21UIAppearanceContainer", "arraySorted"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
+- ["PSo21UIAppearanceContainer", "challengeDict"]
 - ["PSo21UIAppearanceContainer", "connection"]
 - ["PSo21UIAppearanceContainer", "connectionShouldUseCredentialStorage"]
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
@@ -1316,6 +1389,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "itemsBody"]
 - ["PSo21UIAppearanceContainer", "itemsTitle"]
 - !private ["PSo21UIAppearanceContainer", "lblTitle"]
+- ["PSo21UIAppearanceContainer", "messageDict"]
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -1343,6 +1417,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "Array"]
+- ["PSo18UIContentContainer", "Dictionary"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - ["PSo18UIContentContainer", "HTTPPostJSON"]
 - ["PSo18UIContentContainer", "HTTPsendRequest"]
@@ -1363,6 +1439,9 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UINib"]
 - !private ["PSo18UIContentContainer", "UIViewContentMode"]
 - ["PSo18UIContentContainer", "activityFeed"]
+- ["PSo18UIContentContainer", "arrayOfMessages"]
+- ["PSo18UIContentContainer", "arraySorted"]
+- ["PSo18UIContentContainer", "challengeDict"]
 - ["PSo18UIContentContainer", "connection"]
 - ["PSo18UIContentContainer", "connectionShouldUseCredentialStorage"]
 - ["PSo18UIContentContainer", "data"]
@@ -1375,6 +1454,7 @@ depends-member:
 - ["PSo18UIContentContainer", "items"]
 - ["PSo18UIContentContainer", "itemsBody"]
 - ["PSo18UIContentContainer", "itemsTitle"]
+- ["PSo18UIContentContainer", "messageDict"]
 - !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -1423,6 +1503,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "txtBody"]
+- ["PSo18UIFocusEnvironment", "Array"]
+- ["PSo18UIFocusEnvironment", "Dictionary"]
 - !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
 - ["PSo18UIFocusEnvironment", "HTTPPostJSON"]
 - ["PSo18UIFocusEnvironment", "HTTPsendRequest"]
@@ -1444,7 +1526,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIViewContentMode"]
 - ["PSo18UIFocusEnvironment", "activityFeed"]
 - !private ["PSo18UIFocusEnvironment", "allowsSelection"]
+- ["PSo18UIFocusEnvironment", "arrayOfMessages"]
+- ["PSo18UIFocusEnvironment", "arraySorted"]
 - !private ["PSo18UIFocusEnvironment", "backgroundView"]
+- ["PSo18UIFocusEnvironment", "challengeDict"]
 - ["PSo18UIFocusEnvironment", "connection"]
 - ["PSo18UIFocusEnvironment", "connectionShouldUseCredentialStorage"]
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
@@ -1461,6 +1546,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "itemsBody"]
 - ["PSo18UIFocusEnvironment", "itemsTitle"]
 - !private ["PSo18UIFocusEnvironment", "lblTitle"]
+- ["PSo18UIFocusEnvironment", "messageDict"]
 - !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -1497,8 +1583,10 @@ depends-member:
 - !private ["CSo16UINavigationItem", "title"]
 - !private ["CSo5UINib", "init"]
 - ["CSo11UIResponder", "AnyObject"]
+- ["CSo11UIResponder", "Array"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
+- ["CSo11UIResponder", "Dictionary"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
 - !private ["CSo11UIResponder", "FeedTableViewCell"]
 - ["CSo11UIResponder", "HTTPPostJSON"]
@@ -1529,7 +1617,10 @@ depends-member:
 - ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "activityFeed"]
 - !private ["CSo11UIResponder", "allowsSelection"]
+- ["CSo11UIResponder", "arrayOfMessages"]
+- ["CSo11UIResponder", "arraySorted"]
 - !private ["CSo11UIResponder", "backgroundView"]
+- ["CSo11UIResponder", "challengeDict"]
 - ["CSo11UIResponder", "connection"]
 - ["CSo11UIResponder", "connectionShouldUseCredentialStorage"]
 - !private ["CSo11UIResponder", "contentMode"]
@@ -1546,6 +1637,7 @@ depends-member:
 - ["CSo11UIResponder", "itemsBody"]
 - ["CSo11UIResponder", "itemsTitle"]
 - !private ["CSo11UIResponder", "lblTitle"]
+- ["CSo11UIResponder", "messageDict"]
 - !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "print"]
@@ -1579,6 +1671,8 @@ depends-member:
 - !private ["CSo12UIScrollView", "reloadData"]
 - !private ["CSo12UIScrollView", "separatorStyle"]
 - !private ["CSo12UIScrollView", "text"]
+- ["PSo20UIScrollViewDelegate", "Array"]
+- ["PSo20UIScrollViewDelegate", "Dictionary"]
 - !private ["PSo20UIScrollViewDelegate", "FBSDKAccessToken"]
 - !private ["PSo20UIScrollViewDelegate", "HTTPPostJSON"]
 - !private ["PSo20UIScrollViewDelegate", "HTTPsendRequest"]
@@ -1599,13 +1693,15 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
 - !private ["PSo20UIScrollViewDelegate", "UIViewContentMode"]
 - !private ["PSo20UIScrollViewDelegate", "activityFeed"]
+- !private ["PSo20UIScrollViewDelegate", "arrayOfMessages"]
+- !private ["PSo20UIScrollViewDelegate", "arraySorted"]
+- !private ["PSo20UIScrollViewDelegate", "challengeDict"]
 - ["PSo20UIScrollViewDelegate", "connection"]
 - ["PSo20UIScrollViewDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSo20UIScrollViewDelegate", "itemsBody"]
-- !private ["PSo20UIScrollViewDelegate", "itemsTitle"]
+- !private ["PSo20UIScrollViewDelegate", "messageDict"]
 - !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
@@ -1625,6 +1721,8 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "tableView"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
+- ["PSo16UIStateRestoring", "Array"]
+- ["PSo16UIStateRestoring", "Dictionary"]
 - !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
 - ["PSo16UIStateRestoring", "HTTPPostJSON"]
 - ["PSo16UIStateRestoring", "HTTPsendRequest"]
@@ -1645,6 +1743,9 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UINib"]
 - !private ["PSo16UIStateRestoring", "UIViewContentMode"]
 - ["PSo16UIStateRestoring", "activityFeed"]
+- ["PSo16UIStateRestoring", "arrayOfMessages"]
+- ["PSo16UIStateRestoring", "arraySorted"]
+- ["PSo16UIStateRestoring", "challengeDict"]
 - ["PSo16UIStateRestoring", "connection"]
 - ["PSo16UIStateRestoring", "connectionShouldUseCredentialStorage"]
 - ["PSo16UIStateRestoring", "data"]
@@ -1657,6 +1758,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "items"]
 - ["PSo16UIStateRestoring", "itemsBody"]
 - ["PSo16UIStateRestoring", "itemsTitle"]
+- ["PSo16UIStateRestoring", "messageDict"]
 - !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -1687,6 +1789,8 @@ depends-member:
 - !private ["CSo15UITableViewCell", "lblTitle"]
 - !private ["CSo15UITableViewCell", "txtBody"]
 - !private ["OSC29UITableViewCellSeparatorStyle", "None"]
+- ["PSo21UITableViewDataSource", "Array"]
+- ["PSo21UITableViewDataSource", "Dictionary"]
 - !private ["PSo21UITableViewDataSource", "FBSDKAccessToken"]
 - !private ["PSo21UITableViewDataSource", "HTTPPostJSON"]
 - !private ["PSo21UITableViewDataSource", "HTTPsendRequest"]
@@ -1707,13 +1811,15 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UINib"]
 - !private ["PSo21UITableViewDataSource", "UIViewContentMode"]
 - !private ["PSo21UITableViewDataSource", "activityFeed"]
+- !private ["PSo21UITableViewDataSource", "arrayOfMessages"]
+- !private ["PSo21UITableViewDataSource", "arraySorted"]
+- !private ["PSo21UITableViewDataSource", "challengeDict"]
 - ["PSo21UITableViewDataSource", "connection"]
 - ["PSo21UITableViewDataSource", "connectionShouldUseCredentialStorage"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSo21UITableViewDataSource", "itemsBody"]
-- !private ["PSo21UITableViewDataSource", "itemsTitle"]
+- !private ["PSo21UITableViewDataSource", "messageDict"]
 - !private ["PSo21UITableViewDataSource", "navigationItem"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "print"]
@@ -1733,6 +1839,8 @@ depends-member:
 - ["PSo21UITableViewDataSource", "tableView"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
+- ["PSo19UITableViewDelegate", "Array"]
+- ["PSo19UITableViewDelegate", "Dictionary"]
 - !private ["PSo19UITableViewDelegate", "FBSDKAccessToken"]
 - !private ["PSo19UITableViewDelegate", "HTTPPostJSON"]
 - !private ["PSo19UITableViewDelegate", "HTTPsendRequest"]
@@ -1753,13 +1861,15 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UINib"]
 - !private ["PSo19UITableViewDelegate", "UIViewContentMode"]
 - !private ["PSo19UITableViewDelegate", "activityFeed"]
+- !private ["PSo19UITableViewDelegate", "arrayOfMessages"]
+- !private ["PSo19UITableViewDelegate", "arraySorted"]
+- !private ["PSo19UITableViewDelegate", "challengeDict"]
 - ["PSo19UITableViewDelegate", "connection"]
 - ["PSo19UITableViewDelegate", "connectionShouldUseCredentialStorage"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
-- !private ["PSo19UITableViewDelegate", "itemsBody"]
-- !private ["PSo19UITableViewDelegate", "itemsTitle"]
+- !private ["PSo19UITableViewDelegate", "messageDict"]
 - !private ["PSo19UITableViewDelegate", "navigationItem"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "print"]
@@ -1782,6 +1892,8 @@ depends-member:
 - !private ["PSo11UITextInput", "text"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["CSo10UITextView", "text"]
+- ["PSo18UITraitEnvironment", "Array"]
+- ["PSo18UITraitEnvironment", "Dictionary"]
 - !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
 - ["PSo18UITraitEnvironment", "HTTPPostJSON"]
 - ["PSo18UITraitEnvironment", "HTTPsendRequest"]
@@ -1803,7 +1915,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIViewContentMode"]
 - ["PSo18UITraitEnvironment", "activityFeed"]
 - !private ["PSo18UITraitEnvironment", "allowsSelection"]
+- ["PSo18UITraitEnvironment", "arrayOfMessages"]
+- ["PSo18UITraitEnvironment", "arraySorted"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
+- ["PSo18UITraitEnvironment", "challengeDict"]
 - ["PSo18UITraitEnvironment", "connection"]
 - ["PSo18UITraitEnvironment", "connectionShouldUseCredentialStorage"]
 - !private ["PSo18UITraitEnvironment", "contentMode"]
@@ -1820,6 +1935,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "itemsBody"]
 - ["PSo18UITraitEnvironment", "itemsTitle"]
 - !private ["PSo18UITraitEnvironment", "lblTitle"]
+- ["PSo18UITraitEnvironment", "messageDict"]
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -1863,8 +1979,10 @@ depends-member:
 - !private ["CSo6UIView", "txtBody"]
 - !private ["OSC17UIViewContentMode", "ScaleAspectFit"]
 - ["CSo16UIViewController", "AnyObject"]
+- ["CSo16UIViewController", "Array"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
+- ["CSo16UIViewController", "Dictionary"]
 - !private ["CSo16UIViewController", "FBSDKAccessToken"]
 - !private ["CSo16UIViewController", "FeedTableViewCell"]
 - ["CSo16UIViewController", "HTTPPostJSON"]
@@ -1894,6 +2012,9 @@ depends-member:
 - !private ["CSo16UIViewController", "UIViewContentMode"]
 - ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "activityFeed"]
+- ["CSo16UIViewController", "arrayOfMessages"]
+- ["CSo16UIViewController", "arraySorted"]
+- ["CSo16UIViewController", "challengeDict"]
 - ["CSo16UIViewController", "connection"]
 - ["CSo16UIViewController", "connectionShouldUseCredentialStorage"]
 - ["CSo16UIViewController", "data"]
@@ -1906,6 +2027,7 @@ depends-member:
 - ["CSo16UIViewController", "items"]
 - ["CSo16UIViewController", "itemsBody"]
 - ["CSo16UIViewController", "itemsTitle"]
+- ["CSo16UIViewController", "messageDict"]
 - !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - !private ["CSo16UIViewController", "print"]
@@ -1940,13 +2062,13 @@ depends-member:
 - !private ["PSs10_ArrayType", "_Element"]
 - !private ["PSs10_ArrayType", "append"]
 - !private ["PSs10_ArrayType", "count"]
-- !private ["PSs10_ArrayType", "reverse"]
+- ["PSs10_ArrayType", "init"]
+- !private ["PSs10_ArrayType", "sort"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
-- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
@@ -1958,43 +2080,39 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "_Element"]
 - !private ["PSs24_DestructorSafeContainer", "append"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
-- !private ["PSs24_DestructorSafeContainer", "reverse"]
+- ["PSs24_DestructorSafeContainer", "init"]
+- !private ["PSs24_DestructorSafeContainer", "sort"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs24_ImageLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
-- !private ["PSs14_Incrementable", "Stride"]
 - !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
 - !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
-- !private ["PSs22_IntegerArithmeticType", "Stride"]
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
-- !private ["PSs12_IntegerType", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "append"]
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
-- !private ["PSs21_ObjectiveCBridgeable", "reverse"]
+- ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "sort"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
-- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
 - !private ["PSs12_Reflectable", "Distance"]
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - ["PSs12_Reflectable", "Some"]
-- !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
@@ -2006,13 +2124,13 @@ depends-member:
 - !private ["PSs12_Reflectable", "dataUsingEncoding"]
 - !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs12_Reflectable", "hidesWhenStopped"]
-- !private ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "lblTitle"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
-- !private ["PSs12_Reflectable", "reverse"]
 - !private ["PSs12_Reflectable", "separatorStyle"]
 - !private ["PSs12_Reflectable", "setObject"]
+- !private ["PSs12_Reflectable", "sort"]
 - !private ["PSs12_Reflectable", "startAnimating"]
 - !private ["PSs12_Reflectable", "stopAnimating"]
 - !private ["PSs12_Reflectable", "subscript"]
@@ -2020,14 +2138,12 @@ depends-member:
 - !private ["PSs12_Reflectable", "txtBody"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
-- !private ["PSs18_SignedIntegerType", "Stride"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
-- !private ["PSs11_Strideable", "Stride"]
 depends-nominal:
 - "PSs9AnyObject"
-- !private "Sa"
-- !private "PSs23ArrayLiteralConvertible"
+- "Sa"
+- "PSs23ArrayLiteralConvertible"
 - !private "VSs10ArraySlice"
 - !private "PSs22BidirectionalIndexType"
 - !private "PSs21BitwiseOperationsType"
@@ -2036,11 +2152,13 @@ depends-nominal:
 - !private "PSs11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - "PSs11CVarArgType"
-- !private "PSs14CollectionType"
+- "PSs14CollectionType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
-- !private "PSs28DictionaryLiteralConvertible"
+- "VSs10Dictionary"
+- !private "VSs15DictionaryIndex"
+- "PSs28DictionaryLiteralConvertible"
 - "PSs9Equatable"
 - !private "PSs9ErrorType"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
@@ -2053,7 +2171,7 @@ depends-nominal:
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
 - !private "SQ"
-- !private "PSs9Indexable"
+- "PSs9Indexable"
 - !private "VSs17IndexingGenerator"
 - !private "Si"
 - !private "PSs21IntegerArithmeticType"
@@ -2064,9 +2182,9 @@ depends-nominal:
 - !private "V6Tatari9JSONIndex"
 - !private "P6Tatari17JSONSubscriptType"
 - !private "PSs14MirrorPathType"
-- !private "PSs21MutableCollectionType"
-- !private "PSs16MutableIndexable"
-- !private "PSs16MutableSliceable"
+- "PSs21MutableCollectionType"
+- "PSs16MutableIndexable"
+- "PSs16MutableSliceable"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "CSo6NSData"
@@ -2097,9 +2215,10 @@ depends-nominal:
 - "Sq"
 - !private "PSs16OutputStreamType"
 - !private "PSs21RandomAccessIndexType"
-- !private "PSs30RangeReplaceableCollectionType"
+- !private "VSs5Range"
+- "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
-- !private "PSs12SequenceType"
+- "PSs12SequenceType"
 - !private "PSs14SetAlgebraType"
 - !private "PSs17SignedIntegerType"
 - !private "PSs16SignedNumberType"
@@ -2141,7 +2260,7 @@ depends-nominal:
 - !private "OSC17UIViewContentMode"
 - "CSo16UIViewController"
 - !private "PSs31UnicodeScalarLiteralConvertible"
-- !private "PSs10_ArrayType"
+- "PSs10_ArrayType"
 - !private "PSs33_BuiltinBooleanLiteralConvertible"
 - !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "PSs33_BuiltinIntegerLiteralConvertible"
@@ -2149,13 +2268,13 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
-- !private "PSs24_DestructorSafeContainer"
+- "PSs24_DestructorSafeContainer"
 - !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs24_ImageLiteralConvertible"
 - !private "PSs14_Incrementable"
 - !private "PSs22_IntegerArithmeticType"
 - !private "PSs12_IntegerType"
-- !private "PSs21_ObjectiveCBridgeable"
+- "PSs21_ObjectiveCBridgeable"
 - !private "VSs26_OptionalNilComparisonType"
 - !private "PSs22_RandomAccessAmbiguity"
 - "PSs12_Reflectable"
@@ -2222,4 +2341,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "a9c23e366b690d07c9e52fc44e323754"
+interface-hash: "7ceefd84fb9194cde344a8fe9bd946d7"

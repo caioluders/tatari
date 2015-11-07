@@ -157,6 +157,10 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsTitle;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsBody;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arrayOfMessages;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arraySorted;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull messageDict;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull challengeDict;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;

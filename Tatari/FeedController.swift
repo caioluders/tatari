@@ -16,6 +16,10 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var items: [String] = ["We", "Heart", "Swift"]
     var itemsTitle: [String] = []
     var itemsBody: [String] = []
+    var arrayOfMessages = Array<Dictionary<String, String>>()
+    var arraySorted = Array<Dictionary<String, String>>()
+    var messageDict = Dictionary<String, String>()
+    var challengeDict = Dictionary<String, String>()
     lazy var data = NSMutableData()
     
     override func viewDidLoad() {
@@ -34,8 +38,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.allowsSelection = false
         
         let mutable_result =  NSMutableDictionary()
-        let defaults = NSUserDefaults.standardUserDefaults()
         
+        let defaults = NSUserDefaults.standardUserDefaults()
         let fb_id = defaults.stringForKey("fb_id")
         
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
@@ -43,15 +47,24 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (_,object) in json {
-                print(object["text"].stringValue) // Text of the update
-                print(object["title"].stringValue) // Title of the update
-                self.itemsTitle.append(object["title"].stringValue)
-                self.itemsBody.append(object["text"].stringValue)
+                
+                self.messageDict["title"] = object["title"].stringValue
+                self.messageDict["body"] = object["text"].stringValue
+                self.messageDict["id"] = object["_id"]["$oid"].stringValue
+                
+                self.arrayOfMessages.append(self.messageDict)
             }
             
             //Show newest messages first
-            self.itemsTitle =  self.itemsTitle.reverse()
-            self.itemsBody =  self.itemsBody.reverse()
+            
+            self.arraySorted = self.arrayOfMessages.sort() {
+                (dictOne, dictTwo) -> Bool in
+                let d1 = dictOne["id"]! as String;
+                let d2 = dictTwo["id"]! as String;
+                
+                return d1 > d2
+                
+            };
             
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
@@ -60,18 +73,28 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
         })
         
-        mutable_result.setObject("1042704092427256",forKey:"fb_id")
+        mutable_result.setObject("708388879297355",forKey:"fb_id")
         
         self.HTTPPostJSON("http://45.55.146.229:116/challs", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             for (_,object) in json {
+                               
+                self.challengeDict["title"] = object["title"].stringValue
+                self.challengeDict["body"] = object["text"].stringValue
+                self.challengeDict["id"] = object["_id"]["$oid"].stringValue
                 
-                // mesma coisa de cima
-                print("CHALLENGE "+object["text"].stringValue) // Text of the update
-                print("CHALLENGE "+object["title"].stringValue) // Title of the update
-                self.itemsTitle.append("DESAFIO: "+object["text"].stringValue)
-                self.itemsBody.append(object["text"].stringValue)
+                self.arrayOfMessages.append(self.challengeDict)
             }
+            
+            self.arraySorted = self.arrayOfMessages.sort() {
+                (dictOne, dictTwo) -> Bool in
+                let d1 = dictOne["id"]! as String;
+                let d2 = dictTwo["id"]! as String;
+                
+                return d1 > d2
+                
+            };
+            
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
                 self.activityFeed.stopAnimating()
@@ -90,15 +113,17 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.itemsTitle.count;
+        return self.arraySorted.count;
         //return self.items.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:FeedTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("feedcell")! as! FeedTableViewCell
-        cell.lblTitle.text = self.itemsTitle[indexPath.row]
-        cell.txtBody.text = self.itemsBody[indexPath.row]
-        //cell.lblTitle.text = self.items[indexPath.row]
+        cell.lblTitle.text = self.arraySorted[indexPath.row]["title"]
+        cell.txtBody.text = self.arraySorted[indexPath.row]["body"]
+        
+//        cell.lblTitle.text = self.itemsTitle[indexPath.row]
+//        cell.txtBody.text = self.itemsBody[indexPath.row]
         
         return cell
     }
