@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4201EE6F1BEE55440045CDC1 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */; };
 		420682F91BED3207003E4C84 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420682F81BED3207003E4C84 /* Pushwoosh.framework */; };
 		420683011BED3A95003E4C84 /* personCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420683001BED3A95003E4C84 /* personCell.xib */; };
 		420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420683021BED3E15003E4C84 /* personTableViewCell.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		420682F81BED3207003E4C84 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		420683001BED3A95003E4C84 /* personCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personCell.xib; sourceTree = "<group>"; };
 		420683021BED3E15003E4C84 /* personTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = personTableViewCell.swift; path = ../personTableViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */,
 				627355AB1BD8079400F7124A /* ViewController.swift */,
 				627355AD1BD8079400F7124A /* Main.storyboard */,
+				4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */,
 				62939ED11BDD39F300CAB491 /* SearchController.swift */,
 				62939ECF1BDC488600CAB491 /* VoteController.swift */,
 				623DA9E71BDB39D000BCBFF4 /* FeedController.swift */,
@@ -356,6 +359,7 @@
 			files = (
 				627355AC1BD8079400F7124A /* ViewController.swift in Sources */,
 				42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */,
+				4201EE6F1BEE55440045CDC1 /* ConfigViewController.swift in Sources */,
 				627355EA1BD813DC00F7124A /* MainController.swift in Sources */,
 				627355AA1BD8079400F7124A /* AppDelegate.swift in Sources */,
 				62939ED21BDD39F300CAB491 /* SearchController.swift in Sources */,

@@ -125,6 +125,15 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
+@interface ConfigViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6Tatari22DesafiosViewController")
 @interface DesafiosViewController : UIViewController
 - (void)viewDidLoad;
@@ -200,6 +209,7 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @property (nonatomic, readonly) BOOL isBool;
 @end
 
+@class UIImage;
 @class UITextField;
 @class NSString;
 @class UIButton;
@@ -209,9 +219,10 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
-@property (nonatomic, copy) NSArray<NSString *> * __nonnull imgPeople;
+@property (nonatomic, copy) NSArray<UIImage *> * __nonnull imgPeople;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
 - (void)viewDidLoad;
+- (void)dismissKeyboard;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
@@ -252,7 +263,6 @@ SWIFT_CLASS("_TtC6Tatari14ViewController")
 @end
 
 @class UIImagePickerController;
-@class UIImage;
 
 SWIFT_CLASS("_TtC6Tatari14VoteController")
 @interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate>

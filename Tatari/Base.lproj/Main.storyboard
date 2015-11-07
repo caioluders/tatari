@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="1037.5" y="200.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Config View Controller-->
         <scene sceneID="VYA-Rh-qay">
             <objects>
-                <viewController id="3Ai-Qg-ERc" sceneMemberID="viewController">
+                <viewController id="3Ai-Qg-ERc" customClass="ConfigViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6h5-FD-WMH"/>
                         <viewControllerLayoutGuide type="bottom" id="yns-Z3-up9"/>
@@ -100,6 +100,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtK-UP-MIH">
                                 <rect key="frame" x="154" y="602" width="60" height="22"/>
                                 <state key="normal" image="log out"/>
+                                <connections>
+                                    <action selector="btLogoutPressed:" destination="3Ai-Qg-ERc" eventType="touchUpInside" id="Pgt-a1-cCk"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
                                 <rect key="frame" x="129" y="109" width="111" height="173"/>
