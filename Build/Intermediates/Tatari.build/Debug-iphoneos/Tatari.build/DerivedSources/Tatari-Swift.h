@@ -125,6 +125,16 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
+@interface ConfigViewController : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (IBAction)btLogoutPressed:(id __nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6Tatari22DesafiosViewController")
 @interface DesafiosViewController : UIViewController
 - (void)viewDidLoad;
@@ -212,6 +222,7 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
 @property (nonatomic, copy) NSArray<UIImage *> * __nonnull imgPeople;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull idsLikes;
 - (void)viewDidLoad;
 - (void)dismissKeyboard;
 - (void)didReceiveMemoryWarning;

@@ -64,6 +64,7 @@ class personTableViewCell: UITableViewCell {
     }
     
     @IBAction func btCurtirPressed(sender: AnyObject) {
+        print("cutir")
         let mutable_result =  NSMutableDictionary()
         mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
         mutable_result.setObject(self.fbId,forKey:"liked_fb_id")

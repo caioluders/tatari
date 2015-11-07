@@ -16,6 +16,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     var imgPeople: [UIImage] = []
     var fbIds: [String] = []
     var dataPerson: [(String, UIImage, String)] = []
+    var idsLikes: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -58,6 +59,9 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         self.HTTPPostJSON("http://45.55.146.229:116/search_people", jsonObj: mutable_result, callback: { (data,error) -> Void in
             json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let idString = defaults.stringForKey("fb_id")
+            
             var name = ""
             var fbId = ""
             var image: UIImage = UIImage()
@@ -76,6 +80,16 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
                 self.people.append(object["name"].stringValue)
                 
                 self.fbIds.append(object["id"].stringValue)
+                
+                var likes: [String] = []
+                for (_,id_like) in object["likes"]{
+                    likes.append(id_like.stringValue)
+                }
+                
+                if (likes.contains(idString!)){
+                    print("hum, deu like")
+                    self.idsLikes.append(fbId)
+                }
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
@@ -105,6 +119,9 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         cell.fbId = fbIds[indexPath.row]
         cell.btDesafiar.tag = indexPath.row
         cell.btDesafiar.addTarget(self, action: "buttonDesafiarAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        if(self.idsLikes.contains(fbIds[indexPath.row])){
+            cell.btCurtir.setImage(UIImage(named: "Heart Full"), forState: UIControlState.Normal)
+        }
         
         return cell
     }

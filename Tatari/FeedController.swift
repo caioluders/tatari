@@ -42,7 +42,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
-            for (wtf,object) in json {
+            for (_,object) in json {
                 print(object["text"].stringValue) // Text of the update
                 print(object["title"].stringValue) // Title of the update
                 self.itemsTitle.append(object["title"].stringValue)
@@ -64,13 +64,13 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.HTTPPostJSON("http://45.55.146.229:116/challs", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
-            for (wtf,object) in json {
+            for (_,object) in json {
                 
                 // mesma coisa de cima
-                print(object["text"].stringValue) // Text of the update
-                print(object["title"].stringValue) // Title of the update
-//                self.itemsTitle.append(object["text"].stringValue)
-//                self.itemsBody.append(object["text"].stringValue)
+                print("CHALLENGE "+object["text"].stringValue) // Text of the update
+                print("CHALLENGE "+object["title"].stringValue) // Title of the update
+                self.itemsTitle.append("DESAFIO: "+object["text"].stringValue)
+                self.itemsBody.append(object["text"].stringValue)
             }
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
