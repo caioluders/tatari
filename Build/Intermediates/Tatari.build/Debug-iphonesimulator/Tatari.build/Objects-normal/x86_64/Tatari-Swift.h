@@ -129,6 +129,7 @@ SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @interface ConfigViewController : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)btLogoutPressed:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -156,6 +157,10 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsTitle;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsBody;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arrayOfMessages;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arraySorted;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull messageDict;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull challengeDict;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
@@ -216,15 +221,17 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityLoadingSearch;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
 @property (nonatomic, copy) NSArray<UIImage *> * __nonnull imgPeople;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull idsLikes;
 - (void)viewDidLoad;
-- (void)dismissKeyboard;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
