@@ -31,11 +31,11 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
         self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        self.tableView.allowsSelection = false
         
         self.activityFeed.startAnimating()
-        self.activityFeed.hidesWhenStopped = true
+        self.activityFeed.hidesWhenStopped = true       
         
-        self.tableView.allowsSelection = false
         
         let mutable_result =  NSMutableDictionary()
         

@@ -25,6 +25,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
         self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        self.tableView.allowsSelection = false
+        self.tableView.separatorStyle = .None
         
         self.activityLoadingSearch.hidesWhenStopped = true
         
