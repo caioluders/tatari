@@ -15,27 +15,27 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-sK-Jph">
-                        <rect key="frame" x="122" y="63" width="52" height="53"/>
+                        <rect key="frame" x="132" y="75" width="32" height="33"/>
                         <state key="normal" image="Facebook"/>
                         <connections>
                             <action selector="btFacebookPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="PSP-Fr-QLS"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-wi-jAy">
-                        <rect key="frame" x="267" y="64" width="54" height="49"/>
+                        <rect key="frame" x="277" y="79" width="34" height="29"/>
                         <state key="normal" image="Heart"/>
                         <connections>
                             <action selector="btCurtirPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="U5D-Or-zUd"/>
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-IP-pcT">
-                        <rect key="frame" x="115" y="119" width="66" height="21"/>
+                        <rect key="frame" x="115" y="107" width="66" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="desafiar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTq-3q-ue2">
-                        <rect key="frame" x="193" y="119" width="62" height="21"/>
+                        <rect key="frame" x="193" y="107" width="62" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -50,18 +50,21 @@
                         <rect key="frame" x="8" y="25" width="100" height="100"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="curtir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-tw-FTb">
-                        <rect key="frame" x="274" y="119" width="41" height="21"/>
+                        <rect key="frame" x="274" y="107" width="41" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niH-XS-RY1">
-                        <rect key="frame" x="199" y="63" width="51" height="52"/>
+                        <rect key="frame" x="209" y="76" width="31" height="32"/>
                         <state key="normal" image="Dado"/>
                         <connections>
                             <action selector="btDesafiarPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="QWg-Uk-LAp"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="b6u-eD-ubd">
+                        <rect key="frame" x="134" y="133" width="66" height="13"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -81,5 +84,6 @@
         <image name="Dado" width="55" height="54"/>
         <image name="Facebook" width="53" height="54"/>
         <image name="Heart" width="54" height="49"/>
+        <image name="Pontos" width="66" height="13"/>
     </resources>
 </document>
