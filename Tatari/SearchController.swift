@@ -41,6 +41,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -137,7 +138,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     }
     
     override func viewDidAppear(animated: Bool) {
-        //self.performSegueWithIdentifier("oi", sender: nil)
+        self.activityLoadingSearch.startAnimating()
+        search_people(txtFieldSearch.text!)
     }
     
     func showChallengeView(fbId: String){
