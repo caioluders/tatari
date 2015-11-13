@@ -17,6 +17,7 @@
 		42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFCA1BE0006D0098A62D /* votoCell.xib */; };
 		42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */; };
 		42FA91881BEDB5BF00D3849E /* DesafiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */; };
+		42FC42EC1BF66D5800E5AF51 /* BorderFeedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FC42EB1BF66D5800E5AF51 /* BorderFeedCellView.swift */; };
 		6206FF631BEBF5B8009CE341 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */; };
 		623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9E71BDB39D000BCBFF4 /* FeedController.swift */; };
 		623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */; };
@@ -67,6 +68,7 @@
 		42F4CFCA1BE0006D0098A62D /* votoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = votoCell.xib; sourceTree = "<group>"; };
 		42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotoTableViewCell.swift; sourceTree = "<group>"; };
 		42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesafiosViewController.swift; path = ../DesafiosViewController.swift; sourceTree = "<group>"; };
+		42FC42EB1BF66D5800E5AF51 /* BorderFeedCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderFeedCellView.swift; sourceTree = "<group>"; };
 		6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		623DA9E71BDB39D000BCBFF4 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
@@ -131,6 +133,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42FC42ED1BF66D8900E5AF51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				627355E91BD813DC00F7124A /* MainController.swift */,
+				42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */,
+				627355AB1BD8079400F7124A /* ViewController.swift */,
+				4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */,
+				62939ED11BDD39F300CAB491 /* SearchController.swift */,
+				62939ECF1BDC488600CAB491 /* VoteController.swift */,
+				623DA9E71BDB39D000BCBFF4 /* FeedController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		42FC42EE1BF66DA700E5AF51 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				42F4CFC61BDFE6E80098A62D /* feedCell.xib */,
+				420683001BED3A95003E4C84 /* personCell.xib */,
+				42F4CFCA1BE0006D0098A62D /* votoCell.xib */,
+				42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */,
+				420683021BED3E15003E4C84 /* personTableViewCell.swift */,
+				42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		6273559D1BD8079400F7124A = {
 			isa = PBXGroup;
 			children = (
@@ -157,20 +186,10 @@
 				627355DB1BD80B3E00F7124A /* Frameworks */,
 				627355A91BD8079400F7124A /* AppDelegate.swift */,
 				627355E21BD80CC700F7124A /* Bridging-Header.h */,
-				627355E91BD813DC00F7124A /* MainController.swift */,
-				42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */,
-				627355AB1BD8079400F7124A /* ViewController.swift */,
+				42FC42ED1BF66D8900E5AF51 /* Controllers */,
+				42FC42EE1BF66DA700E5AF51 /* Cells */,
 				627355AD1BD8079400F7124A /* Main.storyboard */,
-				4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */,
-				62939ED11BDD39F300CAB491 /* SearchController.swift */,
-				62939ECF1BDC488600CAB491 /* VoteController.swift */,
-				623DA9E71BDB39D000BCBFF4 /* FeedController.swift */,
-				42F4CFC61BDFE6E80098A62D /* feedCell.xib */,
-				420683001BED3A95003E4C84 /* personCell.xib */,
-				42F4CFCA1BE0006D0098A62D /* votoCell.xib */,
-				42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */,
-				420683021BED3E15003E4C84 /* personTableViewCell.swift */,
-				42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */,
+				42FC42EB1BF66D5800E5AF51 /* BorderFeedCellView.swift */,
 				627355B01BD8079400F7124A /* Assets.xcassets */,
 				627355B21BD8079400F7124A /* LaunchScreen.storyboard */,
 				627355B51BD8079400F7124A /* Info.plist */,
@@ -367,6 +386,7 @@
 				623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */,
 				42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */,
 				42FA91881BEDB5BF00D3849E /* DesafiosViewController.swift in Sources */,
+				42FC42EC1BF66D5800E5AF51 /* BorderFeedCellView.swift in Sources */,
 				420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */,
 				623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */,
 			);

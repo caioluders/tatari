@@ -32,6 +32,10 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="ri1-kA-u9k">
                         <rect key="frame" x="154" y="152" width="66" height="13"/>
                     </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1a-64-LE2" customClass="BorderFeedCellView" customModule="Tatari" customModuleProvider="target">
+                        <rect key="frame" x="67" y="25" width="240" height="128"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
