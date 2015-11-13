@@ -122,8 +122,16 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.lblTitle.text = self.arraySorted[indexPath.row]["title"]
         cell.txtBody.text = self.arraySorted[indexPath.row]["body"]
         
-//        cell.lblTitle.text = self.itemsTitle[indexPath.row]
-//        cell.txtBody.text = self.itemsBody[indexPath.row]
+        //Select cell icon
+        var messageTagType: String
+        messageTagType = String(self.arraySorted[indexPath.row]["tag"])
+        if (messageTagType == "desafio"){
+            cell.imgMessageTagType.image = UIImage(named: "DesafioCellIcon")
+        }else if(messageTagType == "like"){
+            cell.imgMessageTagType.image = UIImage(named: "LikeCellIcon")
+        }else{
+            cell.imgMessageTagType.image = UIImage(named: "OrganizadorCellIcon")
+        }
         
         return cell
     }

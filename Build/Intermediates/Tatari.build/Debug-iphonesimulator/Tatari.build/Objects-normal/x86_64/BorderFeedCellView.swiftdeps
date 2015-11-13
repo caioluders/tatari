@@ -8,16 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 - "drawRect"
 depends-top-level:
+- !private "UIColor"
 - !private "CGContextStrokePath"
 - "BorderFeedCellView"
-- !private "UIGraphicsGetCurrentContext"
-- !private "CGContextAddRect"
-- !private "CGContextSetLineWidth"
-- "CGRect"
-- !private "CGRectMake"
 - "UIView"
-- !private "UIColor"
+- !private "CGContextAddRect"
+- !private "UIGraphicsGetCurrentContext"
+- "CGRect"
 - !private "CGContextSetStrokeColorWithColor"
+- !private "CGRectMake"
+- !private "CGContextSetLineWidth"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "CGContextAddRect"]

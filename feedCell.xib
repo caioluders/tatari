@@ -14,9 +14,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="169.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Célula feed" translatesAutoresizingMaskIntoConstraints="NO" id="D5N-0s-JCI">
-                        <rect key="frame" x="20" y="0.0" width="335" height="148"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOt-Aa-Fnm">
                         <rect key="frame" x="80" y="23" width="215" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -36,10 +33,14 @@
                         <rect key="frame" x="67" y="25" width="240" height="128"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DesafioCellIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-LJ-zoe">
+                        <rect key="frame" x="16" y="25" width="36" height="36"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
+                <outlet property="imgMessageTagType" destination="bIB-LJ-zoe" id="Obu-Tg-t9u"/>
                 <outlet property="lblTitle" destination="sOt-Aa-Fnm" id="TlX-uJ-xHE"/>
                 <outlet property="txtBody" destination="Sfo-5F-pYZ" id="fxv-rS-THL"/>
             </connections>
@@ -47,7 +48,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Célula feed" width="335" height="148"/>
+        <image name="DesafioCellIcon" width="36" height="36"/>
         <image name="Pontos" width="66" height="13"/>
     </resources>
 </document>

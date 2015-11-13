@@ -15,7 +15,7 @@ class BorderFeedCellView: UIView {
         CGContextSetLineWidth(context, 4.0)
         CGContextSetStrokeColorWithColor(context,
             UIColor.blueColor().CGColor)
-        let rectangle = CGRectMake(60,170,200,80)
+        let rectangle = CGRectMake(0,0,200,80)
         CGContextAddRect(context, rectangle)
         CGContextStrokePath(context)
     }
