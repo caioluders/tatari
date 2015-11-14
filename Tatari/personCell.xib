@@ -22,60 +22,65 @@
                 <rect key="frame" x="0.0" y="0.0" width="335" height="149.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZ7-bw-sjg">
+                        <rect key="frame" x="0.0" y="0.5" width="335" height="128.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="curtir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-tw-FTb">
+                        <rect key="frame" x="269" y="97" width="30" height="18"/>
+                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="b6u-eD-ubd">
+                        <rect key="frame" x="134" y="133" width="66" height="13"/>
+                    </imageView>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVS-sK-Jph">
-                        <rect key="frame" x="122" y="76" width="32" height="33"/>
+                        <rect key="frame" x="123" y="68" width="30" height="31"/>
                         <state key="normal" image="Facebook"/>
                         <connections>
                             <action selector="btFacebookPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="PSP-Fr-QLS"/>
                         </connections>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-IP-pcT">
-                        <rect key="frame" x="112" y="107" width="52" height="18"/>
-                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="desafiar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTq-3q-ue2">
-                        <rect key="frame" x="191" y="107" width="44" height="18"/>
-                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZT-28-u9N">
-                        <rect key="frame" x="112" y="25" width="215" height="30"/>
-                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="25"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRy-5p-TFJ">
-                        <rect key="frame" x="8" y="25" width="100" height="100"/>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="curtir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-tw-FTb">
-                        <rect key="frame" x="268" y="107" width="30" height="18"/>
-                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niH-XS-RY1">
-                        <rect key="frame" x="198" y="77" width="31" height="32"/>
-                        <state key="normal" image="Dado"/>
-                        <connections>
-                            <action selector="btDesafiarPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="QWg-Uk-LAp"/>
-                        </connections>
-                    </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="b6u-eD-ubd">
-                        <rect key="frame" x="134" y="133" width="66" height="13"/>
-                    </imageView>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-wi-jAy">
-                        <rect key="frame" x="266" y="80" width="34" height="29"/>
+                        <rect key="frame" x="266" y="69" width="35" height="30"/>
                         <state key="normal" image="Heart"/>
                         <connections>
                             <action selector="btCurtirPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="U5D-Or-zUd"/>
                         </connections>
                     </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX5-IP-pcT">
+                        <rect key="frame" x="112" y="97" width="52" height="18"/>
+                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="desafiar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTq-3q-ue2">
+                        <rect key="frame" x="192" y="97" width="44" height="18"/>
+                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZT-28-u9N">
+                        <rect key="frame" x="112" y="15" width="215" height="30"/>
+                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="25"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRy-5p-TFJ">
+                        <rect key="frame" x="8" y="15" width="100" height="100"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niH-XS-RY1">
+                        <rect key="frame" x="199" y="69" width="29" height="30"/>
+                        <state key="normal" image="Dado"/>
+                        <connections>
+                            <action selector="btDesafiarPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="QWg-Uk-LAp"/>
+                        </connections>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="borderView" destination="mZ7-bw-sjg" id="F5o-vv-3GL"/>
                 <outlet property="btCurtir" destination="vQh-wi-jAy" id="xkb-l4-02p"/>
                 <outlet property="btDesafiar" destination="niH-XS-RY1" id="n4y-Sj-lXq"/>
                 <outlet property="btFacebook" destination="bVS-sK-Jph" id="db8-ab-Cp0"/>

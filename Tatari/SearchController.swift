@@ -134,6 +134,10 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             cell.btCurtir.setImage(UIImage(named: "Heart Full"), forState: UIControlState.Normal)
         }
         
+        cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
+        cell.borderView.layer.borderWidth = 3
+        cell.borderView.layer.cornerRadius = 12
+        
         return cell
     }
     

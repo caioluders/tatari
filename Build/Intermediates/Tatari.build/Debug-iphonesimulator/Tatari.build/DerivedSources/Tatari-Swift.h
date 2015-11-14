@@ -87,8 +87,8 @@ typedef int swift_int3  __attribute__((__ext_vector_type__(3)));
 typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
-@import CoreGraphics;
 @import Foundation;
+@import CoreGraphics;
 @import CoreLocation;
 @import FBSDKLoginKit;
 #endif
@@ -122,16 +122,8 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSCoder;
-
-SWIFT_CLASS("_TtC6Tatari18BorderFeedCellView")
-@interface BorderFeedCellView : UIView
-- (void)drawRect:(CGRect)rect;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class NSBundle;
+@class NSCoder;
 
 SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @interface ConfigViewController : UIViewController
@@ -329,6 +321,7 @@ SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIView;
 
 SWIFT_CLASS("_TtC6Tatari19personTableViewCell")
 @interface personTableViewCell : UITableViewCell
@@ -340,6 +333,7 @@ SWIFT_CLASS("_TtC6Tatari19personTableViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btFacebook;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btDesafiar;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblNome;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified borderView;
 @property (nonatomic, copy) NSString * __nonnull fbId;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;

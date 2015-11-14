@@ -6,79 +6,81 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "textFieldShouldReturn"
-- "JSONStringify"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "imgPeople"
+- "textFieldShouldReturn"
 - "viewDidAppear"
-- "buttonDesafiarAction"
+- "JSONStringify"
 - "HTTPsendRequest"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "idsLikes"
 - "send_chall"
+- "showChallengeView"
 - "textFieldDidChange"
 - "fbIds"
-- "txtFieldSearch"
-- "didReceiveMemoryWarning"
 - "search_people"
-- "people"
-- "showChallengeView"
+- "idsLikes"
 - "activityLoadingSearch"
+- "viewDidLoad"
 - "HTTPPostJSON"
+- "people"
+- "didReceiveMemoryWarning"
+- "buttonDesafiarAction"
+- "txtFieldSearch"
 depends-top-level:
-- !private "NSURLSession"
-- !private "UINib"
-- !private "JSON"
-- !private "UIAlertAction"
-- !private "UIControlState"
-- !private "NSUserDefaults"
-- !private "NSData"
 - "UIImage"
-- !private "UIAlertController"
-- !private "FBSDKAccessToken"
-- "String"
-- !private "UIAlertControllerStyle"
-- !private "dispatch_get_main_queue"
-- "CGFloat"
-- !private "NSURL"
-- !private "dispatch_async"
-- !private "NSJSONWritingOptions"
-- "AnyObject"
-- !private "NSUTF8StringEncoding"
-- !private "Array"
+- !private "UIControlState"
 - "NSIndexPath"
-- "Bool"
-- "UITextField"
-- "UIViewController"
-- "SearchController"
-- "UITableViewCell"
-- "NSString"
-- !private "UIImageView"
-- !private "UIAlertActionStyle"
-- !private "StringLiteralType"
 - "NSMutableURLRequest"
-- !private "!="
-- !private "UITapGestureRecognizer"
-- !private "NSMutableDictionary"
-- !private "UIControlEvents"
-- "Void"
-- "UIButton"
-- "UITableViewDataSource"
-- !private "personTableViewCell"
-- "UITableViewDelegate"
+- !private "JSON"
+- !private "NSUserDefaults"
+- !private "BooleanLiteralType"
+- !private "UIAlertControllerStyle"
+- !private "+"
+- !private "UIAlertController"
 - "UITableView"
+- !private "NSURLSession"
+- !private "!="
+- !private "NSMutableDictionary"
+- "CGFloat"
+- !private "Array"
+- "NSString"
+- !private "personTableViewCell"
+- !private "StringLiteralType"
+- "Bool"
+- !private "UIAlertActionStyle"
+- "UIButton"
+- !private "FBSDKAccessToken"
 - "UITextFieldDelegate"
 - "Int"
-- !private "BooleanLiteralType"
-- !private "NSJSONSerialization"
-- !private "+"
-- !private "UIViewContentMode"
+- "UITableViewDelegate"
 - "UIActivityIndicatorView"
+- !private "NSUTF8StringEncoding"
+- "UITableViewDataSource"
+- !private "UIViewContentMode"
+- !private "NSJSONWritingOptions"
+- "SearchController"
+- !private "UITapGestureRecognizer"
+- !private "UIAlertAction"
+- !private "NSURL"
+- !private "NSJSONSerialization"
+- !private "UIColor"
+- !private "UIImageView"
+- "String"
+- !private "UINib"
+- "UIViewController"
+- !private "UIControlEvents"
+- "UITextField"
 - !private "print"
+- !private "dispatch_async"
+- "Void"
+- !private "NSData"
+- !private "dispatch_get_main_queue"
+- "AnyObject"
+- "UITableViewCell"
 depends-member:
+- !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "Element"]
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "HTTPBody"]
@@ -102,6 +104,7 @@ depends-member:
 - !private ["PSs9AnyObject", "UIAlertActionStyle"]
 - !private ["PSs9AnyObject", "UIAlertController"]
 - !private ["PSs9AnyObject", "UIAlertControllerStyle"]
+- !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "UIControlState"]
 - !private ["PSs9AnyObject", "UIImage"]
@@ -116,10 +119,15 @@ depends-member:
 - !private ["PSs9AnyObject", "addValue"]
 - !private ["PSs9AnyObject", "allowsSelection"]
 - !private ["PSs9AnyObject", "backgroundView"]
+- !private ["PSs9AnyObject", "blackColor"]
+- !private ["PSs9AnyObject", "borderColor"]
+- !private ["PSs9AnyObject", "borderView"]
+- !private ["PSs9AnyObject", "borderWidth"]
 - !private ["PSs9AnyObject", "btCurtir"]
 - !private ["PSs9AnyObject", "btDesafiar"]
 - ["PSs9AnyObject", "buttonDesafiarAction"]
 - !private ["PSs9AnyObject", "contentMode"]
+- !private ["PSs9AnyObject", "cornerRadius"]
 - !private ["PSs9AnyObject", "currentAccessToken"]
 - ["PSs9AnyObject", "dataPerson"]
 - !private ["PSs9AnyObject", "dataTaskWithRequest"]
@@ -141,6 +149,7 @@ depends-member:
 - ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "isValidJSONObject"]
+- !private ["PSs9AnyObject", "layer"]
 - !private ["PSs9AnyObject", "lblNome"]
 - !private ["PSs9AnyObject", "localizedDescription"]
 - !private ["PSs9AnyObject", "navigationItem"]
@@ -246,7 +255,14 @@ depends-member:
 - !private ["PSs11BooleanType", "init"]
 - !private ["PSs11BooleanType", "stringValue"]
 - !private ["PSs11BooleanType", "subscript"]
+- !private ["CSo7CALayer", "borderColor"]
+- !private ["CSo7CALayer", "borderWidth"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "borderColor"]
+- !private ["PSo13CAMediaTiming", "borderWidth"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "CGColor"]
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "Element"]
 - !private ["PSs11CVarArgType", "FBSDKAccessToken"]
@@ -272,6 +288,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIAlertActionStyle"]
 - !private ["PSs11CVarArgType", "UIAlertController"]
 - !private ["PSs11CVarArgType", "UIAlertControllerStyle"]
+- !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UIControlState"]
 - !private ["PSs11CVarArgType", "UIImage"]
@@ -286,10 +303,15 @@ depends-member:
 - !private ["PSs11CVarArgType", "addValue"]
 - !private ["PSs11CVarArgType", "allowsSelection"]
 - !private ["PSs11CVarArgType", "backgroundView"]
+- !private ["PSs11CVarArgType", "blackColor"]
+- !private ["PSs11CVarArgType", "borderColor"]
+- !private ["PSs11CVarArgType", "borderView"]
+- !private ["PSs11CVarArgType", "borderWidth"]
 - !private ["PSs11CVarArgType", "btCurtir"]
 - !private ["PSs11CVarArgType", "btDesafiar"]
 - ["PSs11CVarArgType", "buttonDesafiarAction"]
 - !private ["PSs11CVarArgType", "contentMode"]
+- !private ["PSs11CVarArgType", "cornerRadius"]
 - !private ["PSs11CVarArgType", "currentAccessToken"]
 - ["PSs11CVarArgType", "dataPerson"]
 - !private ["PSs11CVarArgType", "dataTaskWithRequest"]
@@ -310,6 +332,7 @@ depends-member:
 - ["PSs11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "isValidJSONObject"]
+- !private ["PSs11CVarArgType", "layer"]
 - !private ["PSs11CVarArgType", "lblNome"]
 - !private ["PSs11CVarArgType", "localizedDescription"]
 - !private ["PSs11CVarArgType", "navigationItem"]
@@ -401,6 +424,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "stringValue"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "CGColor"]
 - !private ["PSs23CustomStringConvertible", "Distance"]
 - !private ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "FBSDKAccessToken"]
@@ -429,6 +453,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIAlertActionStyle"]
 - !private ["PSs23CustomStringConvertible", "UIAlertController"]
 - !private ["PSs23CustomStringConvertible", "UIAlertControllerStyle"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UIControlState"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
@@ -446,11 +471,16 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "allowsSelection"]
 - !private ["PSs23CustomStringConvertible", "append"]
 - !private ["PSs23CustomStringConvertible", "backgroundView"]
+- !private ["PSs23CustomStringConvertible", "blackColor"]
+- !private ["PSs23CustomStringConvertible", "borderColor"]
+- !private ["PSs23CustomStringConvertible", "borderView"]
+- !private ["PSs23CustomStringConvertible", "borderWidth"]
 - !private ["PSs23CustomStringConvertible", "btCurtir"]
 - !private ["PSs23CustomStringConvertible", "btDesafiar"]
 - ["PSs23CustomStringConvertible", "buttonDesafiarAction"]
 - !private ["PSs23CustomStringConvertible", "contains"]
 - !private ["PSs23CustomStringConvertible", "contentMode"]
+- !private ["PSs23CustomStringConvertible", "cornerRadius"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "currentAccessToken"]
 - ["PSs23CustomStringConvertible", "dataPerson"]
@@ -472,6 +502,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "isValidJSONObject"]
+- !private ["PSs23CustomStringConvertible", "layer"]
 - !private ["PSs23CustomStringConvertible", "lblNome"]
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - !private ["PSs23CustomStringConvertible", "navigationItem"]
@@ -541,6 +572,7 @@ depends-member:
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "Alert"]
+- !private ["PSs9Equatable", "CGColor"]
 - !private ["PSs9Equatable", "Cancel"]
 - !private ["PSs9Equatable", "Default"]
 - !private ["PSs9Equatable", "Distance"]
@@ -577,6 +609,7 @@ depends-member:
 - !private ["PSs9Equatable", "UIAlertActionStyle"]
 - !private ["PSs9Equatable", "UIAlertController"]
 - !private ["PSs9Equatable", "UIAlertControllerStyle"]
+- !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UIControlState"]
 - !private ["PSs9Equatable", "UIImage"]
@@ -594,10 +627,15 @@ depends-member:
 - !private ["PSs9Equatable", "addValue"]
 - !private ["PSs9Equatable", "allowsSelection"]
 - !private ["PSs9Equatable", "backgroundView"]
+- !private ["PSs9Equatable", "blackColor"]
+- !private ["PSs9Equatable", "borderColor"]
+- !private ["PSs9Equatable", "borderView"]
+- !private ["PSs9Equatable", "borderWidth"]
 - !private ["PSs9Equatable", "btCurtir"]
 - !private ["PSs9Equatable", "btDesafiar"]
 - ["PSs9Equatable", "buttonDesafiarAction"]
 - !private ["PSs9Equatable", "contentMode"]
+- !private ["PSs9Equatable", "cornerRadius"]
 - !private ["PSs9Equatable", "currentAccessToken"]
 - ["PSs9Equatable", "dataPerson"]
 - !private ["PSs9Equatable", "dataTaskWithRequest"]
@@ -618,6 +656,7 @@ depends-member:
 - ["PSs9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "isValidJSONObject"]
+- !private ["PSs9Equatable", "layer"]
 - !private ["PSs9Equatable", "lblNome"]
 - !private ["PSs9Equatable", "localizedDescription"]
 - !private ["PSs9Equatable", "navigationItem"]
@@ -701,6 +740,7 @@ depends-member:
 - !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "Alert"]
+- !private ["PSs8Hashable", "CGColor"]
 - !private ["PSs8Hashable", "Cancel"]
 - !private ["PSs8Hashable", "Default"]
 - !private ["PSs8Hashable", "Distance"]
@@ -730,6 +770,7 @@ depends-member:
 - !private ["PSs8Hashable", "UIAlertActionStyle"]
 - !private ["PSs8Hashable", "UIAlertController"]
 - !private ["PSs8Hashable", "UIAlertControllerStyle"]
+- !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UIControlState"]
 - !private ["PSs8Hashable", "UIImage"]
@@ -745,10 +786,15 @@ depends-member:
 - !private ["PSs8Hashable", "addValue"]
 - !private ["PSs8Hashable", "allowsSelection"]
 - !private ["PSs8Hashable", "backgroundView"]
+- !private ["PSs8Hashable", "blackColor"]
+- !private ["PSs8Hashable", "borderColor"]
+- !private ["PSs8Hashable", "borderView"]
+- !private ["PSs8Hashable", "borderWidth"]
 - !private ["PSs8Hashable", "btCurtir"]
 - !private ["PSs8Hashable", "btDesafiar"]
 - ["PSs8Hashable", "buttonDesafiarAction"]
 - !private ["PSs8Hashable", "contentMode"]
+- !private ["PSs8Hashable", "cornerRadius"]
 - !private ["PSs8Hashable", "currentAccessToken"]
 - ["PSs8Hashable", "dataPerson"]
 - !private ["PSs8Hashable", "dataTaskWithRequest"]
@@ -769,6 +815,7 @@ depends-member:
 - ["PSs8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "isValidJSONObject"]
+- !private ["PSs8Hashable", "layer"]
 - !private ["PSs8Hashable", "lblNome"]
 - !private ["PSs8Hashable", "localizedDescription"]
 - !private ["PSs8Hashable", "navigationItem"]
@@ -903,6 +950,7 @@ depends-member:
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["CSo7NSArray", "Element"]
+- !private ["PSo8NSCoding", "CGColor"]
 - !private ["PSo8NSCoding", "Element"]
 - !private ["PSo8NSCoding", "FBSDKAccessToken"]
 - !private ["PSo8NSCoding", "HTTPBody"]
@@ -926,6 +974,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIAlertActionStyle"]
 - !private ["PSo8NSCoding", "UIAlertController"]
 - !private ["PSo8NSCoding", "UIAlertControllerStyle"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIControlState"]
 - !private ["PSo8NSCoding", "UIImage"]
@@ -940,10 +989,15 @@ depends-member:
 - !private ["PSo8NSCoding", "addValue"]
 - !private ["PSo8NSCoding", "allowsSelection"]
 - !private ["PSo8NSCoding", "backgroundView"]
+- !private ["PSo8NSCoding", "blackColor"]
+- !private ["PSo8NSCoding", "borderColor"]
+- !private ["PSo8NSCoding", "borderView"]
+- !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "btCurtir"]
 - !private ["PSo8NSCoding", "btDesafiar"]
 - ["PSo8NSCoding", "buttonDesafiarAction"]
 - !private ["PSo8NSCoding", "contentMode"]
+- !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "currentAccessToken"]
 - ["PSo8NSCoding", "dataPerson"]
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
@@ -961,6 +1015,7 @@ depends-member:
 - !private ["PSo8NSCoding", "imgPessoa"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
 - !private ["PSo8NSCoding", "lblNome"]
 - !private ["PSo8NSCoding", "localizedDescription"]
 - !private ["PSo8NSCoding", "navigationItem"]
@@ -1013,10 +1068,12 @@ depends-member:
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "CGColor"]
 - !private ["PSo9NSCopying", "Element"]
 - !private ["PSo9NSCopying", "HTTPBody"]
 - !private ["PSo9NSCopying", "HTTPMethod"]
 - !private ["PSo9NSCopying", "addValue"]
+- !private ["PSo9NSCopying", "blackColor"]
 - !private ["PSo9NSCopying", "currentAccessToken"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "deinit"]
@@ -1050,6 +1107,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertActionStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertControllerStyle"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
@@ -1129,6 +1187,7 @@ depends-member:
 - !private ["CSo19NSMutableURLRequest", "init"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGColor"]
 - ["CSo8NSObject", "CGFloat"]
 - !private ["CSo8NSObject", "Element"]
 - !private ["CSo8NSObject", "FBSDKAccessToken"]
@@ -1157,6 +1216,7 @@ depends-member:
 - !private ["CSo8NSObject", "UIAlertController"]
 - !private ["CSo8NSObject", "UIAlertControllerStyle"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIControlState"]
 - ["CSo8NSObject", "UIImage"]
@@ -1175,10 +1235,15 @@ depends-member:
 - !private ["CSo8NSObject", "addValue"]
 - !private ["CSo8NSObject", "allowsSelection"]
 - !private ["CSo8NSObject", "backgroundView"]
+- !private ["CSo8NSObject", "blackColor"]
+- !private ["CSo8NSObject", "borderColor"]
+- !private ["CSo8NSObject", "borderView"]
+- !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "btCurtir"]
 - !private ["CSo8NSObject", "btDesafiar"]
 - ["CSo8NSObject", "buttonDesafiarAction"]
 - !private ["CSo8NSObject", "contentMode"]
+- !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "currentAccessToken"]
 - ["CSo8NSObject", "dataPerson"]
 - !private ["CSo8NSObject", "dataTaskWithRequest"]
@@ -1199,6 +1264,7 @@ depends-member:
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isValidJSONObject"]
+- !private ["CSo8NSObject", "layer"]
 - !private ["CSo8NSObject", "lblNome"]
 - !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "navigationItem"]
@@ -1255,6 +1321,7 @@ depends-member:
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
+- !private ["PSo16NSObjectProtocol", "CGColor"]
 - !private ["PSo16NSObjectProtocol", "Element"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
 - !private ["PSo16NSObjectProtocol", "HTTPBody"]
@@ -1278,6 +1345,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIAlertActionStyle"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
 - !private ["PSo16NSObjectProtocol", "UIAlertControllerStyle"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIControlState"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
@@ -1292,10 +1360,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - !private ["PSo16NSObjectProtocol", "allowsSelection"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
+- !private ["PSo16NSObjectProtocol", "blackColor"]
+- !private ["PSo16NSObjectProtocol", "borderColor"]
+- !private ["PSo16NSObjectProtocol", "borderView"]
+- !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "btCurtir"]
 - !private ["PSo16NSObjectProtocol", "btDesafiar"]
 - ["PSo16NSObjectProtocol", "buttonDesafiarAction"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "currentAccessToken"]
 - ["PSo16NSObjectProtocol", "dataPerson"]
 - !private ["PSo16NSObjectProtocol", "dataTaskWithRequest"]
@@ -1316,6 +1389,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isValidJSONObject"]
+- !private ["PSo16NSObjectProtocol", "layer"]
 - !private ["PSo16NSObjectProtocol", "lblNome"]
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "navigationItem"]
@@ -1372,10 +1446,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "CGColor"]
 - !private ["PSo14NSSecureCoding", "Element"]
 - !private ["PSo14NSSecureCoding", "HTTPBody"]
 - !private ["PSo14NSSecureCoding", "HTTPMethod"]
 - !private ["PSo14NSSecureCoding", "addValue"]
+- !private ["PSo14NSSecureCoding", "blackColor"]
 - !private ["PSo14NSSecureCoding", "currentAccessToken"]
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -1469,6 +1545,7 @@ depends-member:
 - !private ["C6Tatari16SearchController", "UIAlertController"]
 - !private ["C6Tatari16SearchController", "UIAlertControllerStyle"]
 - ["C6Tatari16SearchController", "UIButton"]
+- !private ["C6Tatari16SearchController", "UIColor"]
 - !private ["C6Tatari16SearchController", "UIControlEvents"]
 - !private ["C6Tatari16SearchController", "UIControlState"]
 - ["C6Tatari16SearchController", "UIImage"]
@@ -1578,6 +1655,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsSelection"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundView"]
+- !private ["PSo29UIAccessibilityIdentification", "borderView"]
 - !private ["PSo29UIAccessibilityIdentification", "btCurtir"]
 - !private ["PSo29UIAccessibilityIdentification", "btDesafiar"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
@@ -1588,6 +1666,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "image"]
 - !private ["PSo29UIAccessibilityIdentification", "imgPessoa"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "lblNome"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
@@ -1611,6 +1690,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "allowsSelection"]
 - !private ["PSo12UIAppearance", "backgroundView"]
+- !private ["PSo12UIAppearance", "borderView"]
 - !private ["PSo12UIAppearance", "btCurtir"]
 - !private ["PSo12UIAppearance", "btDesafiar"]
 - !private ["PSo12UIAppearance", "contentMode"]
@@ -1621,6 +1701,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "image"]
 - !private ["PSo12UIAppearance", "imgPessoa"]
 - !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "lblNome"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
@@ -1651,6 +1732,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIAlertActionStyle"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertControllerStyle"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIControlState"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
@@ -1664,6 +1746,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "allowsSelection"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
+- !private ["PSo21UIAppearanceContainer", "borderView"]
 - !private ["PSo21UIAppearanceContainer", "btCurtir"]
 - !private ["PSo21UIAppearanceContainer", "btDesafiar"]
 - ["PSo21UIAppearanceContainer", "buttonDesafiarAction"]
@@ -1683,6 +1766,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "imgPessoa"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
 - !private ["PSo21UIAppearanceContainer", "lblNome"]
 - !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
@@ -1733,6 +1817,8 @@ depends-member:
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "tag"]
+- !private ["CSo7UIColor", "CGColor"]
+- !private ["CSo7UIColor", "blackColor"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - ["PSo18UIContentContainer", "HTTPPostJSON"]
 - ["PSo18UIContentContainer", "HTTPsendRequest"]
@@ -1753,6 +1839,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIAlertActionStyle"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
 - !private ["PSo18UIContentContainer", "UIAlertControllerStyle"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIControlState"]
 - !private ["PSo18UIContentContainer", "UIImage"]
@@ -1822,6 +1909,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "allowsSelection"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
+- !private ["PSo17UICoordinateSpace", "borderView"]
 - !private ["PSo17UICoordinateSpace", "btCurtir"]
 - !private ["PSo17UICoordinateSpace", "btDesafiar"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
@@ -1832,6 +1920,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "image"]
 - !private ["PSo17UICoordinateSpace", "imgPessoa"]
 - !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
 - !private ["PSo17UICoordinateSpace", "lblNome"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
@@ -1846,6 +1935,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "allowsSelection"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
+- !private ["PSo13UIDynamicItem", "borderView"]
 - !private ["PSo13UIDynamicItem", "btCurtir"]
 - !private ["PSo13UIDynamicItem", "btDesafiar"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
@@ -1856,6 +1946,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "image"]
 - !private ["PSo13UIDynamicItem", "imgPessoa"]
 - !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "lblNome"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
@@ -1886,6 +1977,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIAlertActionStyle"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertControllerStyle"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIControlState"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
@@ -1899,6 +1991,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "allowsSelection"]
 - !private ["PSo18UIFocusEnvironment", "backgroundView"]
+- !private ["PSo18UIFocusEnvironment", "borderView"]
 - !private ["PSo18UIFocusEnvironment", "btCurtir"]
 - !private ["PSo18UIFocusEnvironment", "btDesafiar"]
 - ["PSo18UIFocusEnvironment", "buttonDesafiarAction"]
@@ -1918,6 +2011,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "imgPessoa"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
 - !private ["PSo18UIFocusEnvironment", "lblNome"]
 - !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
@@ -1966,6 +2060,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "borderView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btCurtir"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btDesafiar"]
 - !private ["PSo27UIGestureRecognizerDelegate", "fbId"]
@@ -2008,6 +2103,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UIAlertController"]
 - !private ["CSo11UIResponder", "UIAlertControllerStyle"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIControlState"]
 - ["CSo11UIResponder", "UIImage"]
@@ -2025,6 +2121,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "allowsSelection"]
 - !private ["CSo11UIResponder", "backgroundView"]
+- !private ["CSo11UIResponder", "borderView"]
 - !private ["CSo11UIResponder", "btCurtir"]
 - !private ["CSo11UIResponder", "btDesafiar"]
 - ["CSo11UIResponder", "buttonDesafiarAction"]
@@ -2044,6 +2141,7 @@ depends-member:
 - !private ["CSo11UIResponder", "imgPessoa"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
 - !private ["CSo11UIResponder", "lblNome"]
 - !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
@@ -2118,6 +2216,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UIAlertActionStyle"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertController"]
 - !private ["PSo20UIScrollViewDelegate", "UIAlertControllerStyle"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlState"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
@@ -2186,6 +2285,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIAlertActionStyle"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
 - !private ["PSo16UIStateRestoring", "UIAlertControllerStyle"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIControlState"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
@@ -2249,6 +2349,7 @@ depends-member:
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "separatorStyle"]
+- !private ["CSo15UITableViewCell", "borderView"]
 - !private ["CSo15UITableViewCell", "btCurtir"]
 - !private ["CSo15UITableViewCell", "btDesafiar"]
 - !private ["CSo15UITableViewCell", "deinit"]
@@ -2276,6 +2377,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "UIAlertActionStyle"]
 - !private ["PSo21UITableViewDataSource", "UIAlertController"]
 - !private ["PSo21UITableViewDataSource", "UIAlertControllerStyle"]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
 - !private ["PSo21UITableViewDataSource", "UIControlState"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
@@ -2344,6 +2446,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "UIAlertActionStyle"]
 - !private ["PSo19UITableViewDelegate", "UIAlertController"]
 - !private ["PSo19UITableViewDelegate", "UIAlertControllerStyle"]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
 - !private ["PSo19UITableViewDelegate", "UIControlState"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
@@ -2417,6 +2520,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "UIAlertActionStyle"]
 - !private ["PSo19UITextFieldDelegate", "UIAlertController"]
 - !private ["PSo19UITextFieldDelegate", "UIAlertControllerStyle"]
+- !private ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "UIControlEvents"]
 - !private ["PSo19UITextFieldDelegate", "UIControlState"]
 - !private ["PSo19UITextFieldDelegate", "UIImage"]
@@ -2493,6 +2597,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIAlertActionStyle"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
 - !private ["PSo18UITraitEnvironment", "UIAlertControllerStyle"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIControlState"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
@@ -2506,6 +2611,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "allowsSelection"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
+- !private ["PSo18UITraitEnvironment", "borderView"]
 - !private ["PSo18UITraitEnvironment", "btCurtir"]
 - !private ["PSo18UITraitEnvironment", "btDesafiar"]
 - ["PSo18UITraitEnvironment", "buttonDesafiarAction"]
@@ -2525,6 +2631,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "imgPessoa"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
 - !private ["PSo18UITraitEnvironment", "lblNome"]
 - !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
@@ -2576,6 +2683,7 @@ depends-member:
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "allowsSelection"]
 - !private ["CSo6UIView", "backgroundView"]
+- !private ["CSo6UIView", "borderView"]
 - !private ["CSo6UIView", "btCurtir"]
 - !private ["CSo6UIView", "btDesafiar"]
 - !private ["CSo6UIView", "contentMode"]
@@ -2586,6 +2694,7 @@ depends-member:
 - !private ["CSo6UIView", "image"]
 - !private ["CSo6UIView", "imgPessoa"]
 - !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "lblNome"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
@@ -2624,6 +2733,7 @@ depends-member:
 - !private ["CSo16UIViewController", "UIAlertController"]
 - !private ["CSo16UIViewController", "UIAlertControllerStyle"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIControlState"]
 - ["CSo16UIViewController", "UIImage"]
@@ -2715,6 +2825,8 @@ depends-member:
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "CGColor"]
+- !private ["PSs24_ColorLiteralConvertible", "blackColor"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
@@ -2764,6 +2876,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "allowsSelection"]
 - !private ["PSs12_Reflectable", "append"]
 - !private ["PSs12_Reflectable", "backgroundView"]
+- !private ["PSs12_Reflectable", "borderView"]
 - !private ["PSs12_Reflectable", "btCurtir"]
 - !private ["PSs12_Reflectable", "btDesafiar"]
 - !private ["PSs12_Reflectable", "contains"]
@@ -2777,6 +2890,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "image"]
 - !private ["PSs12_Reflectable", "imgPessoa"]
 - !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "layer"]
 - !private ["PSs12_Reflectable", "lblNome"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
@@ -2793,6 +2907,7 @@ depends-member:
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["C6Tatari19personTableViewCell", "borderView"]
 - !private ["C6Tatari19personTableViewCell", "btCurtir"]
 - !private ["C6Tatari19personTableViewCell", "btDesafiar"]
 - !private ["C6Tatari19personTableViewCell", "fbId"]
@@ -2808,6 +2923,8 @@ depends-nominal:
 - !private "Sb"
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
 - !private "V12CoreGraphics7CGFloat"
 - "PSs11CVarArgType"
 - !private "PSs14CollectionType"
@@ -2894,6 +3011,7 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo8UIButton"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "VSC15UIControlEvents"
@@ -2936,6 +3054,7 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - !private "PSs24_DestructorSafeContainer"
 - !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs24_ImageLiteralConvertible"

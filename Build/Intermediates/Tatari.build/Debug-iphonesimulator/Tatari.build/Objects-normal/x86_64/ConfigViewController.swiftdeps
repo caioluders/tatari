@@ -7,12 +7,12 @@ provides-member:
 - ["C6Tatari20ConfigViewController", ""]
 provides-dynamic-lookup:
 - "btLogoutPressed"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "ConfigViewController"
-- "UIViewController"
 - "AnyObject"
+- "UIViewController"
+- "ConfigViewController"
 - !private "FBSDKLoginManager"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKLoginManager"]
