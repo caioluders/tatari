@@ -11,8 +11,11 @@ import UIKit
 class FeedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var txtBody: UITextView!
     @IBOutlet weak var imgMessageTagType: UIImageView!
+    
+    @IBOutlet weak var txtBody: UILabel!
+    @IBOutlet weak var borderView: UIView!
+    @IBOutlet weak var cnstHeightBorderView: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()

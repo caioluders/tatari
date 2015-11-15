@@ -133,6 +133,13 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.imgMessageTagType.image = UIImage(named: "OrganizadorCellIcon")
         }
         
+        cell.cnstHeightBorderView.constant = cell.txtBody.frame.height + 70
+        
+        cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
+        cell.borderView.layer.borderWidth = 1
+        cell.borderView.layer.cornerRadius = 12
+        
+        
         return cell
     }
     
@@ -141,7 +148,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 170
+        return 150
     }
     
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{

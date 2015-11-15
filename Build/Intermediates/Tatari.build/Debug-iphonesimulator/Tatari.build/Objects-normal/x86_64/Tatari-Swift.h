@@ -176,14 +176,17 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @end
 
 @class UILabel;
-@class UITextView;
 @class UIImageView;
+@class UIView;
+@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 @interface FeedTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblTitle;
-@property (nonatomic, weak) IBOutlet UITextView * __null_unspecified txtBody;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgMessageTagType;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified txtBody;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified borderView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified cnstHeightBorderView;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -321,7 +324,6 @@ SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIView;
 
 SWIFT_CLASS("_TtC6Tatari19personTableViewCell")
 @interface personTableViewCell : UITableViewCell
