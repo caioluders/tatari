@@ -1,0 +1,325 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BorderFeedCellView"
+provides-nominal:
+- "C6Tatari18BorderFeedCellView"
+provides-member:
+- ["C6Tatari18BorderFeedCellView", ""]
+provides-dynamic-lookup:
+- "drawRect"
+depends-top-level:
+- !private "UIColor"
+- !private "CGContextStrokePath"
+- "BorderFeedCellView"
+- "UIView"
+- !private "CGContextAddRect"
+- !private "UIGraphicsGetCurrentContext"
+- "CGRect"
+- !private "CGContextSetStrokeColorWithColor"
+- !private "CGRectMake"
+- !private "CGContextSetLineWidth"
+depends-member:
+- !private ["PSs9AnyObject", "CGColor"]
+- !private ["PSs9AnyObject", "CGContextAddRect"]
+- !private ["PSs9AnyObject", "CGContextSetLineWidth"]
+- !private ["PSs9AnyObject", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs9AnyObject", "CGContextStrokePath"]
+- !private ["PSs9AnyObject", "CGRectMake"]
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UIGraphicsGetCurrentContext"]
+- !private ["PSs9AnyObject", "blueColor"]
+- ["PSs9AnyObject", "drawRect"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", ""]
+- !private ["C6Tatari18BorderFeedCellView", "CGContextAddRect"]
+- !private ["C6Tatari18BorderFeedCellView", "CGContextSetLineWidth"]
+- !private ["C6Tatari18BorderFeedCellView", "CGContextSetStrokeColorWithColor"]
+- !private ["C6Tatari18BorderFeedCellView", "CGContextStrokePath"]
+- ["C6Tatari18BorderFeedCellView", "CGRect"]
+- !private ["C6Tatari18BorderFeedCellView", "CGRectMake"]
+- !private ["C6Tatari18BorderFeedCellView", "UIColor"]
+- !private ["C6Tatari18BorderFeedCellView", "UIGraphicsGetCurrentContext"]
+- ["C6Tatari18BorderFeedCellView", "deinit"]
+- ["C6Tatari18BorderFeedCellView", "drawRect"]
+- ["C6Tatari18BorderFeedCellView", "init"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "CGColor"]
+- !private ["PSs11CVarArgType", "CGContextAddRect"]
+- !private ["PSs11CVarArgType", "CGContextSetLineWidth"]
+- !private ["PSs11CVarArgType", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs11CVarArgType", "CGContextStrokePath"]
+- !private ["PSs11CVarArgType", "CGRectMake"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UIGraphicsGetCurrentContext"]
+- !private ["PSs11CVarArgType", "blueColor"]
+- ["PSs11CVarArgType", "drawRect"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "CGColor"]
+- !private ["PSs23CustomStringConvertible", "CGContextAddRect"]
+- !private ["PSs23CustomStringConvertible", "CGContextSetLineWidth"]
+- !private ["PSs23CustomStringConvertible", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs23CustomStringConvertible", "CGContextStrokePath"]
+- !private ["PSs23CustomStringConvertible", "CGRectMake"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UIGraphicsGetCurrentContext"]
+- !private ["PSs23CustomStringConvertible", "blueColor"]
+- ["PSs23CustomStringConvertible", "drawRect"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CGColor"]
+- !private ["PSs9Equatable", "CGContextAddRect"]
+- !private ["PSs9Equatable", "CGContextSetLineWidth"]
+- !private ["PSs9Equatable", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs9Equatable", "CGContextStrokePath"]
+- !private ["PSs9Equatable", "CGRectMake"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UIGraphicsGetCurrentContext"]
+- !private ["PSs9Equatable", "blueColor"]
+- ["PSs9Equatable", "drawRect"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "CGColor"]
+- !private ["PSs8Hashable", "CGContextAddRect"]
+- !private ["PSs8Hashable", "CGContextSetLineWidth"]
+- !private ["PSs8Hashable", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs8Hashable", "CGContextStrokePath"]
+- !private ["PSs8Hashable", "CGRectMake"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UIGraphicsGetCurrentContext"]
+- !private ["PSs8Hashable", "blueColor"]
+- ["PSs8Hashable", "drawRect"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "CGColor"]
+- !private ["PSo8NSCoding", "CGContextAddRect"]
+- !private ["PSo8NSCoding", "CGContextSetLineWidth"]
+- !private ["PSo8NSCoding", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo8NSCoding", "CGContextStrokePath"]
+- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIGraphicsGetCurrentContext"]
+- !private ["PSo8NSCoding", "blueColor"]
+- ["PSo8NSCoding", "drawRect"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "CGColor"]
+- !private ["PSo9NSCopying", "blueColor"]
+- !private ["CSo8NSObject", "CGColor"]
+- !private ["CSo8NSObject", "CGContextAddRect"]
+- !private ["CSo8NSObject", "CGContextSetLineWidth"]
+- !private ["CSo8NSObject", "CGContextSetStrokeColorWithColor"]
+- !private ["CSo8NSObject", "CGContextStrokePath"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIGraphicsGetCurrentContext"]
+- !private ["CSo8NSObject", "blueColor"]
+- ["CSo8NSObject", "drawRect"]
+- ["CSo8NSObject", "init"]
+- !private ["PSo16NSObjectProtocol", "CGColor"]
+- !private ["PSo16NSObjectProtocol", "CGContextAddRect"]
+- !private ["PSo16NSObjectProtocol", "CGContextSetLineWidth"]
+- !private ["PSo16NSObjectProtocol", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo16NSObjectProtocol", "CGContextStrokePath"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIGraphicsGetCurrentContext"]
+- !private ["PSo16NSObjectProtocol", "blueColor"]
+- ["PSo16NSObjectProtocol", "drawRect"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "CGColor"]
+- !private ["PSo14NSSecureCoding", "blueColor"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextAddRect"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextSetLineWidth"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo29UIAccessibilityIdentification", "CGContextStrokePath"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRectMake"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
+- !private ["PSo29UIAccessibilityIdentification", "UIGraphicsGetCurrentContext"]
+- ["PSo29UIAccessibilityIdentification", "drawRect"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CGContextAddRect"]
+- !private ["PSo12UIAppearance", "CGContextSetLineWidth"]
+- !private ["PSo12UIAppearance", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo12UIAppearance", "CGContextStrokePath"]
+- !private ["PSo12UIAppearance", "CGRectMake"]
+- !private ["PSo12UIAppearance", "UIColor"]
+- !private ["PSo12UIAppearance", "UIGraphicsGetCurrentContext"]
+- ["PSo12UIAppearance", "drawRect"]
+- ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CGContextAddRect"]
+- !private ["PSo21UIAppearanceContainer", "CGContextSetLineWidth"]
+- !private ["PSo21UIAppearanceContainer", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo21UIAppearanceContainer", "CGContextStrokePath"]
+- !private ["PSo21UIAppearanceContainer", "CGRectMake"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIGraphicsGetCurrentContext"]
+- ["PSo21UIAppearanceContainer", "drawRect"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "CGColor"]
+- !private ["CSo7UIColor", "blueColor"]
+- !private ["PSo17UICoordinateSpace", "CGContextAddRect"]
+- !private ["PSo17UICoordinateSpace", "CGContextSetLineWidth"]
+- !private ["PSo17UICoordinateSpace", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo17UICoordinateSpace", "CGContextStrokePath"]
+- !private ["PSo17UICoordinateSpace", "CGRectMake"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
+- !private ["PSo17UICoordinateSpace", "UIGraphicsGetCurrentContext"]
+- ["PSo17UICoordinateSpace", "drawRect"]
+- ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CGContextAddRect"]
+- !private ["PSo13UIDynamicItem", "CGContextSetLineWidth"]
+- !private ["PSo13UIDynamicItem", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo13UIDynamicItem", "CGContextStrokePath"]
+- !private ["PSo13UIDynamicItem", "CGRectMake"]
+- !private ["PSo13UIDynamicItem", "UIColor"]
+- !private ["PSo13UIDynamicItem", "UIGraphicsGetCurrentContext"]
+- ["PSo13UIDynamicItem", "drawRect"]
+- ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "CGContextAddRect"]
+- !private ["PSo18UIFocusEnvironment", "CGContextSetLineWidth"]
+- !private ["PSo18UIFocusEnvironment", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo18UIFocusEnvironment", "CGContextStrokePath"]
+- !private ["PSo18UIFocusEnvironment", "CGRectMake"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIGraphicsGetCurrentContext"]
+- ["PSo18UIFocusEnvironment", "drawRect"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "CGContextAddRect"]
+- !private ["CSo11UIResponder", "CGContextSetLineWidth"]
+- !private ["CSo11UIResponder", "CGContextSetStrokeColorWithColor"]
+- !private ["CSo11UIResponder", "CGContextStrokePath"]
+- ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIGraphicsGetCurrentContext"]
+- ["CSo11UIResponder", "drawRect"]
+- ["CSo11UIResponder", "init"]
+- !private ["PSo18UITraitEnvironment", "CGContextAddRect"]
+- !private ["PSo18UITraitEnvironment", "CGContextSetLineWidth"]
+- !private ["PSo18UITraitEnvironment", "CGContextSetStrokeColorWithColor"]
+- !private ["PSo18UITraitEnvironment", "CGContextStrokePath"]
+- !private ["PSo18UITraitEnvironment", "CGRectMake"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIGraphicsGetCurrentContext"]
+- ["PSo18UITraitEnvironment", "drawRect"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "CGContextAddRect"]
+- !private ["CSo6UIView", "CGContextSetLineWidth"]
+- !private ["CSo6UIView", "CGContextSetStrokeColorWithColor"]
+- !private ["CSo6UIView", "CGContextStrokePath"]
+- ["CSo6UIView", "CGRect"]
+- !private ["CSo6UIView", "CGRectMake"]
+- !private ["CSo6UIView", "UIColor"]
+- !private ["CSo6UIView", "UIGraphicsGetCurrentContext"]
+- ["CSo6UIView", "drawRect"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", ""]
+- !private ["PSs24_ColorLiteralConvertible", "CGColor"]
+- !private ["PSs24_ColorLiteralConvertible", "blueColor"]
+- !private ["PSs12_Reflectable", "CGContextAddRect"]
+- !private ["PSs12_Reflectable", "CGContextSetLineWidth"]
+- !private ["PSs12_Reflectable", "CGContextSetStrokeColorWithColor"]
+- !private ["PSs12_Reflectable", "CGContextStrokePath"]
+- !private ["PSs12_Reflectable", "CGRectMake"]
+- !private ["PSs12_Reflectable", "UIColor"]
+- !private ["PSs12_Reflectable", "UIGraphicsGetCurrentContext"]
+- ["PSs12_Reflectable", "drawRect"]
+- ["PSs12_Reflectable", "init"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- "C6Tatari18BorderFeedCellView"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "PSs24_ColorLiteralConvertible"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "7ef66ea1715a6bf7e50cdc856d57b6a4"

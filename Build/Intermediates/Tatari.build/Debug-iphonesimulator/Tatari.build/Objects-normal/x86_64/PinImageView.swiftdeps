@@ -1,0 +1,475 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "PinImageView"
+provides-nominal:
+- "C6Tatari12PinImageView"
+provides-member:
+- ["C6Tatari12PinImageView", ""]
+provides-dynamic-lookup:
+- "backgroundLayerColor"
+- "setBackgroundLayer"
+- "backgroundLayer"
+- "lineWidth"
+- "layoutSubviews"
+depends-top-level:
+- "UIColor"
+- !private "CGRectInset"
+- !private "/"
+- !private "=="
+- "UIView"
+- "CAShapeLayer"
+- "CGFloat"
+- !private "UIBezierPath"
+- "PinImageView"
+depends-member:
+- !private ["PSs9AnyObject", "CAShapeLayer"]
+- !private ["PSs9AnyObject", "CGColor"]
+- !private ["PSs9AnyObject", "CGPath"]
+- !private ["PSs9AnyObject", "CGRectInset"]
+- !private ["PSs9AnyObject", "UIBezierPath"]
+- ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "addSublayer"]
+- ["PSs9AnyObject", "backgroundLayer"]
+- ["PSs9AnyObject", "backgroundLayerColor"]
+- !private ["PSs9AnyObject", "bounds"]
+- !private ["PSs9AnyObject", "fillColor"]
+- !private ["PSs9AnyObject", "frame"]
+- ["PSs9AnyObject", "grayColor"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "layer"]
+- ["PSs9AnyObject", "layoutSubviews"]
+- ["PSs9AnyObject", "lineWidth"]
+- !private ["PSs9AnyObject", "path"]
+- ["PSs9AnyObject", "setBackgroundLayer"]
+- ["PSs9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "addSublayer"]
+- !private ["CSo7CALayer", "bounds"]
+- !private ["CSo7CALayer", "deinit"]
+- !private ["CSo7CALayer", "fillColor"]
+- !private ["CSo7CALayer", "frame"]
+- !private ["CSo7CALayer", "init"]
+- !private ["CSo7CALayer", "lineWidth"]
+- !private ["CSo7CALayer", "path"]
+- !private ["PSo13CAMediaTiming", "addSublayer"]
+- !private ["PSo13CAMediaTiming", "bounds"]
+- !private ["PSo13CAMediaTiming", "fillColor"]
+- !private ["PSo13CAMediaTiming", "frame"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "lineWidth"]
+- !private ["PSo13CAMediaTiming", "path"]
+- !private ["CSo12CAShapeLayer", "deinit"]
+- !private ["CSo12CAShapeLayer", "fillColor"]
+- !private ["CSo12CAShapeLayer", "frame"]
+- !private ["CSo12CAShapeLayer", "init"]
+- !private ["CSo12CAShapeLayer", "lineWidth"]
+- !private ["CSo12CAShapeLayer", "path"]
+- ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "CAShapeLayer"]
+- !private ["PSs11CVarArgType", "CGColor"]
+- !private ["PSs11CVarArgType", "CGPath"]
+- !private ["PSs11CVarArgType", "CGRectInset"]
+- !private ["PSs11CVarArgType", "UIBezierPath"]
+- ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "addSublayer"]
+- ["PSs11CVarArgType", "backgroundLayer"]
+- ["PSs11CVarArgType", "backgroundLayerColor"]
+- !private ["PSs11CVarArgType", "bounds"]
+- !private ["PSs11CVarArgType", "fillColor"]
+- !private ["PSs11CVarArgType", "frame"]
+- ["PSs11CVarArgType", "grayColor"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "layer"]
+- ["PSs11CVarArgType", "layoutSubviews"]
+- ["PSs11CVarArgType", "lineWidth"]
+- !private ["PSs11CVarArgType", "path"]
+- ["PSs11CVarArgType", "setBackgroundLayer"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "CAShapeLayer"]
+- !private ["PSs23CustomStringConvertible", "CGColor"]
+- !private ["PSs23CustomStringConvertible", "CGPath"]
+- !private ["PSs23CustomStringConvertible", "CGRectInset"]
+- !private ["PSs23CustomStringConvertible", "UIBezierPath"]
+- ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addSublayer"]
+- ["PSs23CustomStringConvertible", "backgroundLayer"]
+- ["PSs23CustomStringConvertible", "backgroundLayerColor"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
+- !private ["PSs23CustomStringConvertible", "fillColor"]
+- !private ["PSs23CustomStringConvertible", "frame"]
+- ["PSs23CustomStringConvertible", "grayColor"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "layer"]
+- ["PSs23CustomStringConvertible", "layoutSubviews"]
+- ["PSs23CustomStringConvertible", "lineWidth"]
+- !private ["PSs23CustomStringConvertible", "path"]
+- ["PSs23CustomStringConvertible", "setBackgroundLayer"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CAShapeLayer"]
+- !private ["PSs9Equatable", "CGColor"]
+- !private ["PSs9Equatable", "CGPath"]
+- !private ["PSs9Equatable", "CGRectInset"]
+- !private ["PSs9Equatable", "UIBezierPath"]
+- ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addSublayer"]
+- ["PSs9Equatable", "backgroundLayer"]
+- ["PSs9Equatable", "backgroundLayerColor"]
+- !private ["PSs9Equatable", "bounds"]
+- !private ["PSs9Equatable", "fillColor"]
+- !private ["PSs9Equatable", "frame"]
+- ["PSs9Equatable", "grayColor"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "layer"]
+- ["PSs9Equatable", "layoutSubviews"]
+- ["PSs9Equatable", "lineWidth"]
+- !private ["PSs9Equatable", "path"]
+- ["PSs9Equatable", "setBackgroundLayer"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "CAShapeLayer"]
+- !private ["PSs8Hashable", "CGColor"]
+- !private ["PSs8Hashable", "CGPath"]
+- !private ["PSs8Hashable", "CGRectInset"]
+- !private ["PSs8Hashable", "UIBezierPath"]
+- ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addSublayer"]
+- ["PSs8Hashable", "backgroundLayer"]
+- ["PSs8Hashable", "backgroundLayerColor"]
+- !private ["PSs8Hashable", "bounds"]
+- !private ["PSs8Hashable", "fillColor"]
+- !private ["PSs8Hashable", "frame"]
+- ["PSs8Hashable", "grayColor"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "layer"]
+- ["PSs8Hashable", "layoutSubviews"]
+- ["PSs8Hashable", "lineWidth"]
+- !private ["PSs8Hashable", "path"]
+- ["PSs8Hashable", "setBackgroundLayer"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSo8NSCoding", "CAShapeLayer"]
+- !private ["PSo8NSCoding", "CGColor"]
+- !private ["PSo8NSCoding", "CGPath"]
+- !private ["PSo8NSCoding", "CGRectInset"]
+- !private ["PSo8NSCoding", "UIBezierPath"]
+- ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "addSublayer"]
+- ["PSo8NSCoding", "backgroundLayer"]
+- ["PSo8NSCoding", "backgroundLayerColor"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "fillColor"]
+- !private ["PSo8NSCoding", "frame"]
+- ["PSo8NSCoding", "grayColor"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "layoutSubviews"]
+- ["PSo8NSCoding", "lineWidth"]
+- !private ["PSo8NSCoding", "path"]
+- ["PSo8NSCoding", "setBackgroundLayer"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "CGColor"]
+- !private ["PSo9NSCopying", "CGPath"]
+- ["PSo9NSCopying", "grayColor"]
+- !private ["PSo9NSCopying", "init"]
+- ["CSo8NSObject", "CAShapeLayer"]
+- !private ["CSo8NSObject", "CGColor"]
+- ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGPath"]
+- !private ["CSo8NSObject", "CGRectInset"]
+- !private ["CSo8NSObject", "UIBezierPath"]
+- ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "addSublayer"]
+- ["CSo8NSObject", "backgroundLayer"]
+- ["CSo8NSObject", "backgroundLayerColor"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "fillColor"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "grayColor"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "layoutSubviews"]
+- ["CSo8NSObject", "lineWidth"]
+- !private ["CSo8NSObject", "path"]
+- ["CSo8NSObject", "setBackgroundLayer"]
+- !private ["PSo16NSObjectProtocol", "CAShapeLayer"]
+- !private ["PSo16NSObjectProtocol", "CGColor"]
+- !private ["PSo16NSObjectProtocol", "CGPath"]
+- !private ["PSo16NSObjectProtocol", "CGRectInset"]
+- !private ["PSo16NSObjectProtocol", "UIBezierPath"]
+- ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "addSublayer"]
+- ["PSo16NSObjectProtocol", "backgroundLayer"]
+- ["PSo16NSObjectProtocol", "backgroundLayerColor"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "fillColor"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "grayColor"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "layoutSubviews"]
+- ["PSo16NSObjectProtocol", "lineWidth"]
+- !private ["PSo16NSObjectProtocol", "path"]
+- ["PSo16NSObjectProtocol", "setBackgroundLayer"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "CGColor"]
+- ["PSo14NSSecureCoding", "grayColor"]
+- !private ["Sq", "deinit"]
+- ["C6Tatari12PinImageView", "CAShapeLayer"]
+- ["C6Tatari12PinImageView", "CGFloat"]
+- !private ["C6Tatari12PinImageView", "CGRectInset"]
+- !private ["C6Tatari12PinImageView", "UIBezierPath"]
+- ["C6Tatari12PinImageView", "UIColor"]
+- ["C6Tatari12PinImageView", "backgroundLayer"]
+- ["C6Tatari12PinImageView", "backgroundLayerColor"]
+- !private ["C6Tatari12PinImageView", "bounds"]
+- ["C6Tatari12PinImageView", "deinit"]
+- ["C6Tatari12PinImageView", "init"]
+- !private ["C6Tatari12PinImageView", "layer"]
+- ["C6Tatari12PinImageView", "layoutSubviews"]
+- ["C6Tatari12PinImageView", "lineWidth"]
+- ["C6Tatari12PinImageView", "setBackgroundLayer"]
+- !private ["PSo29UIAccessibilityIdentification", "CAShapeLayer"]
+- !private ["PSo29UIAccessibilityIdentification", "CGRectInset"]
+- !private ["PSo29UIAccessibilityIdentification", "UIBezierPath"]
+- ["PSo29UIAccessibilityIdentification", "UIColor"]
+- ["PSo29UIAccessibilityIdentification", "backgroundLayer"]
+- ["PSo29UIAccessibilityIdentification", "backgroundLayerColor"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "layoutSubviews"]
+- ["PSo29UIAccessibilityIdentification", "lineWidth"]
+- ["PSo29UIAccessibilityIdentification", "setBackgroundLayer"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "CAShapeLayer"]
+- !private ["PSo12UIAppearance", "CGRectInset"]
+- !private ["PSo12UIAppearance", "UIBezierPath"]
+- ["PSo12UIAppearance", "UIColor"]
+- ["PSo12UIAppearance", "backgroundLayer"]
+- ["PSo12UIAppearance", "backgroundLayerColor"]
+- !private ["PSo12UIAppearance", "bounds"]
+- ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "layoutSubviews"]
+- ["PSo12UIAppearance", "lineWidth"]
+- ["PSo12UIAppearance", "setBackgroundLayer"]
+- ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "CAShapeLayer"]
+- !private ["PSo21UIAppearanceContainer", "CGRectInset"]
+- !private ["PSo21UIAppearanceContainer", "UIBezierPath"]
+- ["PSo21UIAppearanceContainer", "UIColor"]
+- ["PSo21UIAppearanceContainer", "backgroundLayer"]
+- ["PSo21UIAppearanceContainer", "backgroundLayerColor"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "layoutSubviews"]
+- ["PSo21UIAppearanceContainer", "lineWidth"]
+- ["PSo21UIAppearanceContainer", "setBackgroundLayer"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo12UIBezierPath", "CGPath"]
+- !private ["CSo12UIBezierPath", "init"]
+- !private ["CSo7UIColor", "CGColor"]
+- ["CSo7UIColor", "grayColor"]
+- !private ["PSo17UICoordinateSpace", "CAShapeLayer"]
+- !private ["PSo17UICoordinateSpace", "CGRectInset"]
+- !private ["PSo17UICoordinateSpace", "UIBezierPath"]
+- ["PSo17UICoordinateSpace", "UIColor"]
+- ["PSo17UICoordinateSpace", "backgroundLayer"]
+- ["PSo17UICoordinateSpace", "backgroundLayerColor"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "layoutSubviews"]
+- ["PSo17UICoordinateSpace", "lineWidth"]
+- ["PSo17UICoordinateSpace", "setBackgroundLayer"]
+- ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "CAShapeLayer"]
+- !private ["PSo13UIDynamicItem", "CGRectInset"]
+- !private ["PSo13UIDynamicItem", "UIBezierPath"]
+- ["PSo13UIDynamicItem", "UIColor"]
+- ["PSo13UIDynamicItem", "backgroundLayer"]
+- ["PSo13UIDynamicItem", "backgroundLayerColor"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "layoutSubviews"]
+- ["PSo13UIDynamicItem", "lineWidth"]
+- ["PSo13UIDynamicItem", "setBackgroundLayer"]
+- ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "CAShapeLayer"]
+- !private ["PSo18UIFocusEnvironment", "CGRectInset"]
+- !private ["PSo18UIFocusEnvironment", "UIBezierPath"]
+- ["PSo18UIFocusEnvironment", "UIColor"]
+- ["PSo18UIFocusEnvironment", "backgroundLayer"]
+- ["PSo18UIFocusEnvironment", "backgroundLayerColor"]
+- !private ["PSo18UIFocusEnvironment", "bounds"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
+- ["PSo18UIFocusEnvironment", "layoutSubviews"]
+- ["PSo18UIFocusEnvironment", "lineWidth"]
+- ["PSo18UIFocusEnvironment", "setBackgroundLayer"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "CAShapeLayer"]
+- ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "CGRectInset"]
+- !private ["CSo11UIResponder", "UIBezierPath"]
+- ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "backgroundLayer"]
+- ["CSo11UIResponder", "backgroundLayerColor"]
+- !private ["CSo11UIResponder", "bounds"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "layoutSubviews"]
+- ["CSo11UIResponder", "lineWidth"]
+- ["CSo11UIResponder", "setBackgroundLayer"]
+- !private ["PSo18UITraitEnvironment", "CAShapeLayer"]
+- !private ["PSo18UITraitEnvironment", "CGRectInset"]
+- !private ["PSo18UITraitEnvironment", "UIBezierPath"]
+- ["PSo18UITraitEnvironment", "UIColor"]
+- ["PSo18UITraitEnvironment", "backgroundLayer"]
+- ["PSo18UITraitEnvironment", "backgroundLayerColor"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "layoutSubviews"]
+- ["PSo18UITraitEnvironment", "lineWidth"]
+- ["PSo18UITraitEnvironment", "setBackgroundLayer"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "CAShapeLayer"]
+- ["CSo6UIView", "CGFloat"]
+- !private ["CSo6UIView", "CGRectInset"]
+- !private ["CSo6UIView", "UIBezierPath"]
+- ["CSo6UIView", "UIColor"]
+- ["CSo6UIView", "backgroundLayer"]
+- ["CSo6UIView", "backgroundLayerColor"]
+- !private ["CSo6UIView", "bounds"]
+- ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "layoutSubviews"]
+- ["CSo6UIView", "lineWidth"]
+- ["CSo6UIView", "setBackgroundLayer"]
+- ["CSo6UIView", ""]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs24_ColorLiteralConvertible", "CGColor"]
+- ["PSs24_ColorLiteralConvertible", "grayColor"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "CAShapeLayer"]
+- !private ["PSs12_Reflectable", "CGRectInset"]
+- !private ["PSs12_Reflectable", "UIBezierPath"]
+- ["PSs12_Reflectable", "UIColor"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- ["PSs12_Reflectable", "backgroundLayer"]
+- ["PSs12_Reflectable", "backgroundLayerColor"]
+- !private ["PSs12_Reflectable", "bounds"]
+- ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "layer"]
+- ["PSs12_Reflectable", "layoutSubviews"]
+- ["PSs12_Reflectable", "lineWidth"]
+- ["PSs12_Reflectable", "setBackgroundLayer"]
+- ["PSs12_Reflectable", ""]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "CSo12CAShapeLayer"
+- "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "SQ"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- !private "Sq"
+- "C6Tatari12PinImageView"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo12UIBezierPath"
+- "CSo7UIColor"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- "PSs24_ColorLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
+interface-hash: "a87032ca85b86d9706859556a6dbf88f"

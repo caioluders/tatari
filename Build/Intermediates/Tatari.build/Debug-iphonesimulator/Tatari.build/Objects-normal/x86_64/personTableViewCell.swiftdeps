@@ -8,52 +8,54 @@ provides-member:
 - ["C6Tatari19personTableViewCell", ""]
 - ["CSo13UIApplication", "tryURL"]
 provides-dynamic-lookup:
-- "imgPessoa"
-- "btFacebook"
-- "HTTPPostJSON"
-- "btDesafiar"
-- "tryURL"
-- "awakeFromNib"
-- "HTTPsendRequest"
-- "btDesafiarPressed"
-- "btCurtirPressed"
-- "fbId"
 - "JSONStringify"
-- "setSelected"
-- "lblDesafiar"
-- "lblCurtir"
-- "send_chall"
+- "tryURL"
 - "btCurtir"
-- "lblFacebook"
+- "btFacebook"
+- "imgPessoa"
+- "btDesafiarPressed"
+- "awakeFromNib"
+- "btDesafiar"
+- "fbId"
+- "lblDesafiar"
+- "setSelected"
+- "lblCurtir"
 - "btFacebookPressed"
+- "btCurtirPressed"
 - "lblNome"
+- "HTTPsendRequest"
+- "borderView"
+- "lblFacebook"
+- "send_chall"
+- "HTTPPostJSON"
 depends-top-level:
-- "UIImageView"
-- "BooleanLiteralType"
-- "UILabel"
-- !private "+"
-- !private "NSJSONWritingOptions"
-- !private "NSURLSession"
-- "NSMutableURLRequest"
-- !private "NSUTF8StringEncoding"
-- !private "!="
+- "UIView"
 - "String"
-- "AnyObject"
+- !private "!="
+- "BooleanLiteralType"
 - !private "NSMutableDictionary"
-- "Void"
-- !private "NSData"
-- "Bool"
-- !private "NSURL"
-- !private "print"
-- "UIApplication"
-- "personTableViewCell"
-- "NSString"
-- "StringLiteralType"
-- !private "NSJSONSerialization"
+- !private "NSUTF8StringEncoding"
 - "UIButton"
-- "UITableViewCell"
+- "UIApplication"
+- !private "NSURLSession"
 - !private "Array"
 - !private "FBSDKAccessToken"
+- "StringLiteralType"
+- "UITableViewCell"
+- !private "NSURL"
+- "AnyObject"
+- !private "NSJSONWritingOptions"
+- "UILabel"
+- "NSString"
+- !private "NSJSONSerialization"
+- "Bool"
+- "NSMutableURLRequest"
+- "personTableViewCell"
+- !private "NSData"
+- !private "print"
+- "Void"
+- "UIImageView"
+- !private "+"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "HTTPBody"]
@@ -73,6 +75,7 @@ depends-member:
 - !private ["PSs9AnyObject", "UIApplication"]
 - !private ["PSs9AnyObject", "addValue"]
 - ["PSs9AnyObject", "awakeFromNib"]
+- ["PSs9AnyObject", "borderView"]
 - ["PSs9AnyObject", "btCurtir"]
 - ["PSs9AnyObject", "btCurtirPressed"]
 - ["PSs9AnyObject", "btDesafiar"]
@@ -145,6 +148,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIApplication"]
 - !private ["PSs11CVarArgType", "addValue"]
 - ["PSs11CVarArgType", "awakeFromNib"]
+- ["PSs11CVarArgType", "borderView"]
 - ["PSs11CVarArgType", "btCurtir"]
 - ["PSs11CVarArgType", "btCurtirPressed"]
 - ["PSs11CVarArgType", "btDesafiar"]
@@ -219,6 +223,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addValue"]
 - ["PSs23CustomStringConvertible", "awakeFromNib"]
+- ["PSs23CustomStringConvertible", "borderView"]
 - ["PSs23CustomStringConvertible", "btCurtir"]
 - ["PSs23CustomStringConvertible", "btCurtirPressed"]
 - ["PSs23CustomStringConvertible", "btDesafiar"]
@@ -274,6 +279,7 @@ depends-member:
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addValue"]
 - ["PSs9Equatable", "awakeFromNib"]
+- ["PSs9Equatable", "borderView"]
 - ["PSs9Equatable", "btCurtir"]
 - ["PSs9Equatable", "btCurtirPressed"]
 - ["PSs9Equatable", "btDesafiar"]
@@ -336,6 +342,7 @@ depends-member:
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addValue"]
 - ["PSs8Hashable", "awakeFromNib"]
+- ["PSs8Hashable", "borderView"]
 - ["PSs8Hashable", "btCurtir"]
 - ["PSs8Hashable", "btCurtirPressed"]
 - ["PSs8Hashable", "btDesafiar"]
@@ -423,6 +430,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIApplication"]
 - !private ["PSo8NSCoding", "addValue"]
 - ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "borderView"]
 - ["PSo8NSCoding", "btCurtir"]
 - ["PSo8NSCoding", "btCurtirPressed"]
 - ["PSo8NSCoding", "btDesafiar"]
@@ -499,9 +507,11 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addValue"]
 - ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "borderView"]
 - ["CSo8NSObject", "btCurtir"]
 - ["CSo8NSObject", "btCurtirPressed"]
 - ["CSo8NSObject", "btDesafiar"]
@@ -550,6 +560,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIApplication"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "borderView"]
 - ["PSo16NSObjectProtocol", "btCurtir"]
 - ["PSo16NSObjectProtocol", "btCurtirPressed"]
 - ["PSo16NSObjectProtocol", "btDesafiar"]
@@ -657,6 +668,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "String"]
 - !private ["PSo29UIAccessibilityIdentification", "UIApplication"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "borderView"]
 - ["PSo29UIAccessibilityIdentification", "btCurtir"]
 - ["PSo29UIAccessibilityIdentification", "btCurtirPressed"]
 - ["PSo29UIAccessibilityIdentification", "btDesafiar"]
@@ -689,6 +701,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "String"]
 - !private ["PSo12UIAppearance", "UIApplication"]
 - ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "borderView"]
 - ["PSo12UIAppearance", "btCurtir"]
 - ["PSo12UIAppearance", "btCurtirPressed"]
 - ["PSo12UIAppearance", "btDesafiar"]
@@ -721,6 +734,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIApplication"]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "borderView"]
 - ["PSo21UIAppearanceContainer", "btCurtir"]
 - ["PSo21UIAppearanceContainer", "btCurtirPressed"]
 - ["PSo21UIAppearanceContainer", "btDesafiar"]
@@ -760,6 +774,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "String"]
 - !private ["PSo17UICoordinateSpace", "UIApplication"]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "borderView"]
 - ["PSo17UICoordinateSpace", "btCurtir"]
 - ["PSo17UICoordinateSpace", "btCurtirPressed"]
 - ["PSo17UICoordinateSpace", "btDesafiar"]
@@ -792,6 +807,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "String"]
 - !private ["PSo13UIDynamicItem", "UIApplication"]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "borderView"]
 - ["PSo13UIDynamicItem", "btCurtir"]
 - ["PSo13UIDynamicItem", "btCurtirPressed"]
 - ["PSo13UIDynamicItem", "btDesafiar"]
@@ -824,6 +840,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIApplication"]
 - ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "borderView"]
 - ["PSo18UIFocusEnvironment", "btCurtir"]
 - ["PSo18UIFocusEnvironment", "btCurtirPressed"]
 - ["PSo18UIFocusEnvironment", "btDesafiar"]
@@ -856,6 +873,7 @@ depends-member:
 - !private ["PSo27UIGestureRecognizerDelegate", "String"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIApplication"]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "borderView"]
 - ["PSo27UIGestureRecognizerDelegate", "btCurtir"]
 - ["PSo27UIGestureRecognizerDelegate", "btCurtirPressed"]
 - ["PSo27UIGestureRecognizerDelegate", "btDesafiar"]
@@ -893,8 +911,10 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIView"]
 - ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "borderView"]
 - ["CSo11UIResponder", "btCurtir"]
 - ["CSo11UIResponder", "btCurtirPressed"]
 - ["CSo11UIResponder", "btDesafiar"]
@@ -935,8 +955,10 @@ depends-member:
 - ["CSo15UITableViewCell", "UIButton"]
 - ["CSo15UITableViewCell", "UIImageView"]
 - ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "UIView"]
 - ["CSo15UITableViewCell", "Void"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "borderView"]
 - ["CSo15UITableViewCell", "btCurtir"]
 - ["CSo15UITableViewCell", "btCurtirPressed"]
 - ["CSo15UITableViewCell", "btDesafiar"]
@@ -969,6 +991,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIApplication"]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "borderView"]
 - ["PSo18UITraitEnvironment", "btCurtir"]
 - ["PSo18UITraitEnvironment", "btCurtirPressed"]
 - ["PSo18UITraitEnvironment", "btDesafiar"]
@@ -1006,8 +1029,10 @@ depends-member:
 - ["CSo6UIView", "UIButton"]
 - ["CSo6UIView", "UIImageView"]
 - ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "UIView"]
 - ["CSo6UIView", "Void"]
 - ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "borderView"]
 - ["CSo6UIView", "btCurtir"]
 - ["CSo6UIView", "btCurtirPressed"]
 - ["CSo6UIView", "btDesafiar"]
@@ -1093,6 +1118,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - ["PSs12_Reflectable", "awakeFromNib"]
+- ["PSs12_Reflectable", "borderView"]
 - ["PSs12_Reflectable", "btCurtir"]
 - ["PSs12_Reflectable", "btCurtirPressed"]
 - ["PSs12_Reflectable", "btDesafiar"]
@@ -1136,8 +1162,10 @@ depends-member:
 - ["C6Tatari19personTableViewCell", "UIButton"]
 - ["C6Tatari19personTableViewCell", "UIImageView"]
 - ["C6Tatari19personTableViewCell", "UILabel"]
+- ["C6Tatari19personTableViewCell", "UIView"]
 - ["C6Tatari19personTableViewCell", "Void"]
 - ["C6Tatari19personTableViewCell", "awakeFromNib"]
+- ["C6Tatari19personTableViewCell", "borderView"]
 - ["C6Tatari19personTableViewCell", "btCurtir"]
 - ["C6Tatari19personTableViewCell", "btCurtirPressed"]
 - ["C6Tatari19personTableViewCell", "btDesafiar"]
@@ -1320,4 +1348,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "e0bd65b652e57ce4c499504e927cc828"
+interface-hash: "b8e85fe8f2271268caedd372c6f6bfdf"

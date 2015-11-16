@@ -3,8 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Rodina-Regular.otf">
+            <string>Rodina-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -19,38 +23,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bepifantasy" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-OW-Hqk">
-                                <rect key="frame" x="56" y="211" width="262" height="73"/>
+                                <rect key="frame" x="56" y="216" width="262" height="73"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="aH1-CS-WRZ" kind="show" identifier="main_segue" id="WwR-sx-pjr"/>
+                        <segue destination="Og7-dJ-MU3" kind="show" identifier="main_segue" id="BES-nM-c7N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="438.5" y="200.5"/>
+            <point key="canvasLocation" x="-1847.5" y="921.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6mh-HD-0vB">
+        <!--Tab Bar Controller-->
+        <scene sceneID="GlR-TM-LEt">
             <objects>
-                <navigationController id="aH1-CS-WRZ" sceneMemberID="viewController">
+                <tabBarController id="Og7-dJ-MU3" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hRj-DC-AId">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="kzr-7A-oN8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="Kwk-kb-dqM" kind="relationship" relationship="rootViewController" id="knL-OJ-Z2G"/>
+                        <segue destination="3Ai-Qg-ERc" kind="relationship" relationship="viewControllers" id="dDo-68-2sH"/>
+                        <segue destination="pVq-cJ-qf5" kind="relationship" relationship="viewControllers" id="ezo-rp-eEp"/>
+                        <segue destination="Kwk-kb-dqM" kind="relationship" relationship="viewControllers" id="wqD-Sf-dNo"/>
+                        <segue destination="OTj-vo-FEF" kind="relationship" relationship="viewControllers" id="dcq-0E-kLE"/>
+                        <segue destination="Saa-Bf-t3S" kind="relationship" relationship="viewControllers" id="VCd-e7-hL4"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fko-HQ-GBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uw8-tw-9qs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037.5" y="200.5"/>
+            <point key="canvasLocation" x="-1272.5" y="941.5"/>
         </scene>
-        <!--Config View Controller-->
+        <!--Item-->
         <scene sceneID="VYA-Rh-qay">
             <objects>
                 <viewController id="3Ai-Qg-ERc" customClass="ConfigViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,12 +119,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tabConf" id="d7L-st-bxW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184.5" y="-569.5"/>
+            <point key="canvasLocation" x="-1600" y="126"/>
         </scene>
-        <!--Main Controller-->
+        <!--Item-->
         <scene sceneID="ck6-0f-9qJ">
             <objects>
                 <viewController storyboardIdentifier="MainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kwk-kb-dqM" customClass="MainController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -133,16 +143,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
                                 <rect key="frame" x="131" y="65" width="40" height="41"/>
                                 <state key="normal" title="feed" image="info icon"/>
-                                <connections>
-                                    <segue destination="pVq-cJ-qf5" kind="show" id="iXg-pb-qJj"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
                                 <rect key="frame" x="305" y="65" width="40" height="41"/>
                                 <state key="normal" title="search" image="pesquisar icon"/>
-                                <connections>
-                                    <segue destination="Saa-Bf-t3S" kind="show" id="bF2-q1-Vrj"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bepifantasy_smaller" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-lJ-0qI">
                                 <rect key="frame" x="128" y="17" width="113" height="32"/>
@@ -150,9 +154,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
                                 <rect key="frame" x="46" y="65" width="41" height="41"/>
                                 <state key="normal" title="settings" image="conf icon"/>
-                                <connections>
-                                    <segue destination="3Ai-Qg-ERc" kind="show" id="8W5-vr-Yt6"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
                                 <rect key="frame" x="298" y="555" width="42" height="50"/>
@@ -173,9 +174,6 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
                                 <rect key="frame" x="228" y="65" width="33" height="41"/>
                                 <state key="normal" title="vote" image="concurso icon"/>
-                                <connections>
-                                    <segue destination="OTj-vo-FEF" kind="show" identifier="vote_segue" id="o3Z-IF-C5t"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
                                 <rect key="frame" x="0.0" y="366" width="42" height="50"/>
@@ -196,13 +194,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tabTatari" id="avl-1V-G6D"/>
                     <navigationItem key="navigationItem" id="5kw-L4-XaM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kv-bT-k2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625.5" y="200.5"/>
+            <point key="canvasLocation" x="-1272.5" y="1853.5"/>
         </scene>
-        <!--Feed Controller-->
+        <!--Item-->
         <scene sceneID="JEN-iY-6CF">
             <objects>
                 <viewController storyboardIdentifier="FeedView" id="pVq-cJ-qf5" customClass="FeedController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,14 +213,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-xE-tIn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="pVq-cJ-qf5" id="FZH-6V-dBF"/>
-                                    <outlet property="delegate" destination="pVq-cJ-qf5" id="NSU-of-NCE"/>
-                                </connections>
-                            </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avisos" translatesAutoresizingMaskIntoConstraints="NO" id="i8T-qm-iMN">
                                 <rect key="frame" x="128" y="17" width="113" height="31"/>
                             </imageView>
@@ -229,12 +220,18 @@
                                 <rect key="frame" x="169" y="315" width="37" height="37"/>
                                 <color key="color" red="0.08235294118" green="0.086274509799999996" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-xE-tIn">
+                                <rect key="frame" x="17" y="0.0" width="335" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pVq-cJ-qf5" id="FZH-6V-dBF"/>
+                                    <outlet property="delegate" destination="pVq-cJ-qf5" id="NSU-of-NCE"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="CUx-xE-tIn" firstAttribute="leading" secondItem="d0I-ok-xCg" secondAttribute="leadingMargin" constant="-20" id="AJU-s5-xTS"/>
-                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tabFeed" id="6bb-hb-GPh"/>
                     <connections>
                         <outlet property="activityFeed" destination="whd-iv-BOA" id="CTg-pF-w9b"/>
                         <outlet property="tableView" destination="CUx-xE-tIn" id="uuK-VX-sMz"/>
@@ -242,9 +239,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytU-Js-ier" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184.5" y="200.5"/>
+            <point key="canvasLocation" x="-658.5" y="61.5"/>
         </scene>
-        <!--Vote Controller-->
+        <!--Item-->
         <scene sceneID="fpQ-Rn-YHe">
             <objects>
                 <viewController id="OTj-vo-FEF" customClass="VoteController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -284,6 +281,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tabConcurso" id="Bb2-7V-qux"/>
                     <connections>
                         <outlet property="activityVote" destination="8x3-WP-VB1" id="M5Q-RM-UPm"/>
                         <outlet property="tableView" destination="VWb-F9-M7U" id="0qR-RL-IwL"/>
@@ -291,9 +289,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmK-rI-gbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2192.5" y="981.5"/>
+            <point key="canvasLocation" x="-414" y="890"/>
         </scene>
-        <!--Search Controller-->
+        <!--Item-->
         <scene sceneID="Epu-W3-8Sz">
             <objects>
                 <viewController storyboardIdentifier="search" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Saa-Bf-t3S" customClass="SearchController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -310,10 +308,10 @@
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesquisar por pessoas" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-Mx-NWb">
                                 <rect key="frame" x="20" y="72" width="335" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-Os-weJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-Os-weJ">
                                 <rect key="frame" x="20" y="131" width="335" height="501"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -328,6 +326,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="tabPesquisa" id="XcQ-K4-yEl"/>
                     <connections>
                         <outlet property="activityLoadingSearch" destination="S4J-bd-dmI" id="9mh-CJ-UYA"/>
                         <outlet property="tableView" destination="DhB-Os-weJ" id="Cm6-bz-SH7"/>
@@ -337,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGB-aw-DOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2184.5" y="1795.5"/>
+            <point key="canvasLocation" x="160.5" y="1833.5"/>
         </scene>
         <!--Desafios View Controller-->
         <scene sceneID="B9D-sA-I5v">
@@ -360,7 +359,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uxz-FS-vbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2721" y="1778"/>
+            <point key="canvasLocation" x="676.5" y="1833.5"/>
         </scene>
     </scenes>
     <resources>
@@ -391,6 +390,11 @@
         <image name="mapa" width="375" height="538"/>
         <image name="pesquisar icon" width="40" height="41"/>
         <image name="saida" width="43" height="50"/>
+        <image name="tabConcurso" width="25" height="30"/>
+        <image name="tabConf" width="30" height="30"/>
+        <image name="tabFeed" width="30" height="30"/>
+        <image name="tabPesquisa" width="30" height="30"/>
+        <image name="tabTatari" width="31" height="31"/>
         <image name="visibilidade" width="187" height="48"/>
         <image name="visibilidade check text" width="125" height="36"/>
     </resources>

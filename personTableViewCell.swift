@@ -30,6 +30,7 @@ class personTableViewCell: UITableViewCell {
     @IBOutlet weak var btFacebook: UIButton!
     @IBOutlet weak var btDesafiar: UIButton!
     @IBOutlet weak var lblNome: UILabel!
+    @IBOutlet weak var borderView: UIView!
     
     var fbId = ""
     

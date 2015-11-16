@@ -25,6 +25,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
         self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        self.tableView.allowsSelection = false
+        self.tableView.separatorStyle = .None
         
         self.activityLoadingSearch.hidesWhenStopped = true
         
@@ -128,11 +130,16 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             cell.btCurtir.setImage(UIImage(named: "Heart Full"), forState: UIControlState.Normal)
         }
         
+        cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
+        cell.borderView.layer.borderWidth = 3
+        cell.borderView.layer.cornerRadius = 12
+        
         return cell
     }
     
     override func viewDidAppear(animated: Bool) {
-        //self.performSegueWithIdentifier("oi", sender: nil)
+        self.activityLoadingSearch.startAnimating()
+        search_people(txtFieldSearch.text!)
     }
     
     func showChallengeView(fbId: String){

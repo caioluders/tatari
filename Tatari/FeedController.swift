@@ -31,11 +31,11 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
         self.tableView.backgroundView?.contentMode = UIViewContentMode.ScaleAspectFit
+        self.tableView.allowsSelection = false
         
         self.activityFeed.startAnimating()
-        self.activityFeed.hidesWhenStopped = true
+        self.activityFeed.hidesWhenStopped = true       
         
-        self.tableView.allowsSelection = false
         
         let mutable_result =  NSMutableDictionary()
         
@@ -122,8 +122,23 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.lblTitle.text = self.arraySorted[indexPath.row]["title"]
         cell.txtBody.text = self.arraySorted[indexPath.row]["body"]
         
-//        cell.lblTitle.text = self.itemsTitle[indexPath.row]
-//        cell.txtBody.text = self.itemsBody[indexPath.row]
+        //Select cell icon
+        var messageTagType: String
+        messageTagType = String(self.arraySorted[indexPath.row]["tag"])
+        if (messageTagType == "desafio"){
+            cell.imgMessageTagType.image = UIImage(named: "DesafioCellIcon")
+        }else if(messageTagType == "like"){
+            cell.imgMessageTagType.image = UIImage(named: "LikeCellIcon")
+        }else{
+            cell.imgMessageTagType.image = UIImage(named: "OrganizadorCellIcon")
+        }
+        
+        cell.cnstHeightBorderView.constant = cell.txtBody.frame.height + 70
+        
+        cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
+        cell.borderView.layer.borderWidth = 1
+        cell.borderView.layer.cornerRadius = 12
+        
         
         return cell
     }
@@ -133,7 +148,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 170
+        return 150
     }
     
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{
