@@ -36,9 +36,6 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         
         let nib = UINib(nibName: "personCell", bundle: nil)
         self.tableView.registerNib(nib, forCellReuseIdentifier: "personcell")
-        
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        view.addGestureRecognizer(tap)
     }
     
     override func didReceiveMemoryWarning() {
@@ -57,7 +54,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     
     func search_people(ssearch:NSString) -> Void {
         // Function to make the autocomplete search
-        // uses the callback to get the result
+        // uses the callback to get the result3
         var json: JSON = JSON([])
         
         var mutable_result =  NSMutableDictionary()
