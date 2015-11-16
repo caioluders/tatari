@@ -73,11 +73,15 @@
 		</dict>
 	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>because i&apos;m need it</string>
+	<string>because i'm need it</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>gibe permission</string>
 	<key>Pushwoosh_APPID</key>
 	<string>FB2C5-F3D88</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Rodina-Regular.otf</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>
@@ -89,10 +93,6 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Rodina-Regular.otf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

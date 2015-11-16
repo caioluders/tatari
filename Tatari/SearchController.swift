@@ -11,6 +11,7 @@ import UIKit
 class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var activityLoadingSearch: UIActivityIndicatorView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var txtFieldSearch: UITextField!
     var people: [String] = []
@@ -18,6 +19,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     var fbIds: [String] = []
     var dataPerson: [(String, UIImage, String)] = []
     var idsLikes: [String] = []
+    var point : NSNumber = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,6 +64,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         var mutable_result =  NSMutableDictionary()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         mutable_result.setObject(ssearch,forKey:"search")
+        mutable_result.setObject(self.point,forKey:"pointer")
+        
         self.HTTPPostJSON("http://45.55.146.229:116/search_people", jsonObj: mutable_result, callback: { (data,error) -> Void in
             json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             

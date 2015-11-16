@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -138,61 +137,65 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                <rect key="frame" x="0.0" y="130" width="375" height="537"/>
+                                <rect key="frame" x="0.0" y="76" width="375" height="537"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
-                                <rect key="frame" x="131" y="65" width="40" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
+                                <rect key="frame" x="305" y="65" width="40" height="41"/>
                                 <state key="normal" title="feed" image="info icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
                                 <rect key="frame" x="305" y="65" width="40" height="41"/>
                                 <state key="normal" title="search" image="pesquisar icon"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bepifantasy_smaller" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-lJ-0qI">
                                 <rect key="frame" x="128" y="17" width="113" height="32"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
-                                <rect key="frame" x="46" y="65" width="41" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
+                                <rect key="frame" x="304" y="65" width="41" height="41"/>
                                 <state key="normal" title="settings" image="conf icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
-                                <rect key="frame" x="298" y="555" width="42" height="50"/>
-                                <state key="normal" image="banheiro"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-gL-pOW">
-                                <rect key="frame" x="199" y="585" width="42" height="50"/>
+                                <rect key="frame" x="206" y="544" width="42" height="50"/>
                                 <state key="normal" image="bar"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-KH-lpG">
-                                <rect key="frame" x="126" y="571" width="42" height="50"/>
+                                <rect key="frame" x="128" y="537" width="42" height="50"/>
                                 <state key="normal" image="escada"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
-                                <rect key="frame" x="20" y="579" width="42" height="50"/>
+                                <rect key="frame" x="20" y="511" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
-                                <rect key="frame" x="228" y="65" width="33" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
+                                <rect key="frame" x="312" y="65" width="33" height="41"/>
                                 <state key="normal" title="vote" image="concurso icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
-                                <rect key="frame" x="0.0" y="366" width="42" height="50"/>
+                                <rect key="frame" x="0.0" y="309" width="42" height="50"/>
                                 <state key="normal" image="saida"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-sz-h2B">
-                                <rect key="frame" x="59" y="366" width="42" height="50"/>
+                                <rect key="frame" x="59" y="309" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
-                                <rect key="frame" x="59" y="251" width="42" height="50"/>
+                                <rect key="frame" x="59" y="194" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZX-kJ-zw7">
-                                <rect key="frame" x="108" y="463" width="42" height="50"/>
-                                <state key="normal" image="escada"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
+                                <rect key="frame" x="299" y="502" width="42" height="50"/>
+                                <state key="normal" image="banheiro"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="grK-Nn-jRv"/>
+                                <exclude reference="Fnt-xz-YfC"/>
+                                <exclude reference="3k7-e2-9jj"/>
+                                <exclude reference="Y5Q-cR-bgj"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="tabTatari" id="avl-1V-G6D"/>
                     <navigationItem key="navigationItem" id="5kw-L4-XaM"/>
@@ -228,12 +231,17 @@
                                     <outlet property="delegate" destination="pVq-cJ-qf5" id="NSU-of-NCE"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cXU-Pt-u5W">
+                                <rect key="frame" x="-8" y="541" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="tabFeed" id="6bb-hb-GPh"/>
                     <connections>
                         <outlet property="activityFeed" destination="whd-iv-BOA" id="CTg-pF-w9b"/>
+                        <outlet property="spinner" destination="cXU-Pt-u5W" id="BlZ-02-zuF"/>
                         <outlet property="tableView" destination="CUx-xE-tIn" id="uuK-VX-sMz"/>
                     </connections>
                 </viewController>
