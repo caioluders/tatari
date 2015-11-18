@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C6Tatari22DesafiosViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
 - "UIViewController"
 - "DesafiosViewController"
@@ -156,5 +156,9 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/Toucan.swiftmodule/x86_64.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "a738f6ae0ec97a7e68f24dc0bfdede73"

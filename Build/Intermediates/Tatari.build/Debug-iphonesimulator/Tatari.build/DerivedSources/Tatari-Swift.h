@@ -122,14 +122,21 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
+@class UISwitch;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @interface ConfigViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified all_switch;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified friends_switch;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btLogoutPressed:(id __nonnull)sender;
+- (UIImage * __nonnull)maskImage:(UIImage * __nonnull)image mask:(UIImage * __nonnull)mask;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -184,7 +191,6 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @end
 
 @class UILabel;
-@class UIImageView;
 @class UIView;
 @class NSLayoutConstraint;
 
@@ -227,7 +233,6 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @property (nonatomic, readonly) BOOL isBool;
 @end
 
-@class UIImage;
 @class UITextField;
 @class NSString;
 @class UIButton;
