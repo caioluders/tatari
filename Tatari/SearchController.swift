@@ -62,6 +62,11 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         var json: JSON = JSON([])
         
         var mutable_result =  NSMutableDictionary()
+        self.people.removeAll()
+        self.imgPeople.removeAll()
+        self.fbIds.removeAll()
+        self.dataPerson.removeAll()
+        self.idsLikes.removeAll()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         mutable_result.setObject(ssearch,forKey:"search")
         mutable_result.setObject(self.point,forKey:"pointer")

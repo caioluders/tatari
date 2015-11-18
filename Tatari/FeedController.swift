@@ -43,9 +43,9 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.activityFeed.hidesWhenStopped = true       
         
         
-        refreshControl = UIRefreshControl()
+        self.refreshControl = UIRefreshControl()
         self.tableView.addSubview(refreshControl)
-//        refreshControl.addTarget(self, action: Selector("refresh_feed"), forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl.addTarget(self, action: Selector("refresh_feed"), forControlEvents: UIControlEvents.ValueChanged)
         
         load_feed()
         
@@ -74,7 +74,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.lblTitle.text = self.arraySorted[indexPath.row]["title"]
         cell.txtBody.text = self.arraySorted[indexPath.row]["body"]
         
-        //Select cell icon
         var messageTagType: String
         messageTagType = String(self.arraySorted[indexPath.row]["tag"])
         if (messageTagType == "desafio"){
@@ -99,8 +98,6 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if !loadingData && indexPath.row == 15 - 1 {
-            spinner.startAnimating()
-            loadingData = true
             load_feed()
         }
     }
@@ -181,7 +178,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             HTTPsendRequest(request,callback: callback)
     }
     
-    func load_feed() {
+    func load_feed(cfrc:Bool = false) {
+        
         let mutable_result =  NSMutableDictionary()
         
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -249,6 +247,81 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
         })
-
+    }
+    
+    func refresh_feed() {
+    
+        self.point = 0
+        
+        self.arrayOfMessages.removeAll()
+        
+        let mutable_result =  NSMutableDictionary()
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let fb_id = defaults.stringForKey("fb_id")
+        
+        mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        mutable_result.setObject(self.point,forKey:"pointer")
+        
+        self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
+            for (_,object) in json {
+                
+                print(object)
+                self.messageDict["title"] = object["title"].stringValue
+                self.messageDict["body"] = object["text"].stringValue
+                self.messageDict["id"] = object["_id"]["$oid"].stringValue
+                
+                self.arrayOfMessages.append(self.messageDict)
+            }
+            
+            //Show newest messages first
+            
+            self.arraySorted = self.arrayOfMessages.sort() {
+                (dictOne, dictTwo) -> Bool in
+                let d1 = dictOne["id"]! as String;
+                let d2 = dictTwo["id"]! as String;
+                
+                return d1 > d2
+                
+            };
+            
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+                self.tableView.reloadData()
+                self.activityFeed.stopAnimating()
+                self.point = self.point+15
+            }
+            
+        })
+        
+        mutable_result.setObject(fb_id!,forKey:"fb_id")
+        
+        self.HTTPPostJSON("http://45.55.146.229:116/challs", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
+            for (_,object) in json {
+                
+                self.challengeDict["title"] = object["title"].stringValue
+                self.challengeDict["body"] = object["text"].stringValue
+                self.challengeDict["id"] = object["_id"]["$oid"].stringValue
+                
+                self.arrayOfMessages.append(self.challengeDict)
+            }
+            
+            self.arraySorted = self.arrayOfMessages.sort() {
+                (dictOne, dictTwo) -> Bool in
+                let d1 = dictOne["id"]! as String;
+                let d2 = dictTwo["id"]! as String;
+                
+                return d1 > d2
+                
+            };
+            
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+                self.tableView.reloadData()
+                self.activityFeed.stopAnimating()
+            }
+            
+        })
+        self.refreshControl.endRefreshing()
     }
 }
