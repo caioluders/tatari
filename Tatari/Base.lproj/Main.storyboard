@@ -115,10 +115,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
                                 <rect key="frame" x="129" y="109" width="111" height="173"/>
                             </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQO-QO-3s1">
+                                <rect key="frame" x="226" y="372" width="51" height="31"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rq8-GW-AjH">
+                                <rect key="frame" x="226" y="411" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="tabConf" id="d7L-st-bxW"/>
+                    <connections>
+                        <outlet property="all_switch" destination="JQO-QO-3s1" id="cpA-YG-7d4"/>
+                        <outlet property="friends_switch" destination="Rq8-GW-AjH" id="8Hz-c0-2fJ"/>
+                        <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,17 +242,12 @@
                                     <outlet property="delegate" destination="pVq-cJ-qf5" id="NSU-of-NCE"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cXU-Pt-u5W">
-                                <rect key="frame" x="-8" y="541" width="37" height="37"/>
-                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="tabFeed" id="6bb-hb-GPh"/>
                     <connections>
                         <outlet property="activityFeed" destination="whd-iv-BOA" id="CTg-pF-w9b"/>
-                        <outlet property="spinner" destination="cXU-Pt-u5W" id="BlZ-02-zuF"/>
                         <outlet property="tableView" destination="CUx-xE-tIn" id="uuK-VX-sMz"/>
                     </connections>
                 </viewController>

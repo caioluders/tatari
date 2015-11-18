@@ -63,17 +63,16 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
                 if (error == nil){
                     let resultdict = result as! NSMutableDictionary
                     let defaults = NSUserDefaults.standardUserDefaults()
-                    
                     defaults.setValue(resultdict["id"] as! String, forKey: "fb_id")
-                    
+                    defaults.setValue(resultdict["picture"]!["data"]!!["url"]!! as! String, forKey: "fb_avatar")
                     defaults.synchronize()
                     let mutable_result =  NSMutableDictionary(dictionary:resultdict)
                     mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
                     let push_woosh = PushNotificationManager.pushManager()
                     
-                    // TODO: uncomment this (working with the simulator)
                     
-                    //mutable_result.setObject(push_woosh.getPushToken(),forKey:"device_token")
+                    
+                    
                     print(mutable_result)
                     self.HTTPPostJSON("http://45.55.146.229:116/user", jsonObj: mutable_result, callback: { (data,error) -> Void in
                         print(data)
