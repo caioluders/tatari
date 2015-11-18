@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C6Tatari22DesafiosViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "UIViewController"
 - "DesafiosViewController"

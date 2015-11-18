@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -25,7 +24,10 @@
                         <rect key="frame" x="15" y="23" width="320" height="121"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZR-JP-HKq">
-                                <rect key="frame" x="30" y="35" width="28" height="17"/>
+                                <rect key="frame" x="30" y="35" width="270" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="270" id="EYa-Ke-tid"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +56,7 @@
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="ri1-kA-u9k">
-                        <rect key="frame" x="134" y="152" width="66" height="13"/>
+                        <rect key="frame" x="134" y="164" width="66" height="13"/>
                     </imageView>
                 </subviews>
                 <constraints>
@@ -66,7 +68,7 @@
                     <constraint firstItem="jQ2-9C-wcr" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="top" constant="23" id="IDR-fO-FG3"/>
                     <constraint firstItem="jQ2-9C-wcr" firstAttribute="leading" secondItem="Dn1-SY-jh2" secondAttribute="leading" constant="15" id="Irn-hf-q9G"/>
                     <constraint firstItem="ri1-kA-u9k" firstAttribute="centerX" secondItem="Dn1-SY-jh2" secondAttribute="centerX" id="WOV-fd-C2S"/>
-                    <constraint firstItem="ri1-kA-u9k" firstAttribute="top" secondItem="jQ2-9C-wcr" secondAttribute="bottom" constant="8" id="qOd-ma-lgJ"/>
+                    <constraint firstItem="ri1-kA-u9k" firstAttribute="top" secondItem="jQ2-9C-wcr" secondAttribute="bottom" constant="20" id="qOd-ma-lgJ"/>
                     <constraint firstItem="sOt-Aa-Fnm" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="18" id="ubS-hi-o0y"/>
                 </constraints>
                 <variation key="default">

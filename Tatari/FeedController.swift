@@ -31,6 +31,8 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.navigationItem.title = "Avisos"
         self.tableView.separatorStyle = .None
+        self.tableView.estimatedRowHeight = 150.0
+        self.tableView.rowHeight = UITableViewAutomaticDimension
         
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
@@ -57,6 +59,11 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
+    func computeCellHeight(cell_height: CGFloat, indexArray: Int){
+        self.arraySorted[indexArray]["cell_height"] = String(cell_height)
+        print(self.arraySorted[indexArray]["cell_height"])
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arraySorted.count;
         //return self.items.count;
@@ -78,12 +85,14 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.imgMessageTagType.image = UIImage(named: "OrganizadorCellIcon")
         }
         
-        cell.cnstHeightBorderView.constant = cell.txtBody.frame.height + 70
+        cell.cnstHeightBorderView.constant = cell.txtBody.frame.height + 60
         
         cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
         cell.borderView.layer.borderWidth = 1
         cell.borderView.layer.cornerRadius = 12
-        
+
+        let cell_height = cell.txtBody.frame.height + 140
+        self.computeCellHeight(cell_height, indexArray: indexPath.row)
         
         return cell
     }
@@ -101,8 +110,18 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 150
+        let heightString :String = self.arraySorted[indexPath.row]["cell_height"]!
+        var height: CGFloat = 0
+        if let n = NSNumberFormatter().numberFromString(heightString) {
+            height = CGFloat(n)
+        }
+        return height
     }
+    
+//    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//            return UITableViewAutomaticDimension
+//    }
+    
     
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{
         

@@ -145,6 +145,7 @@ SWIFT_CLASS("_TtC6Tatari22DesafiosViewController")
 
 @class UITableView;
 @class NSMutableData;
+@class UIRefreshControl;
 @class NSIndexPath;
 @class UITableViewCell;
 @class NSMutableURLRequest;
@@ -154,6 +155,7 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @interface FeedController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UITableViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityFeed;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified spinner;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsTitle;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsBody;
@@ -161,16 +163,22 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arraySorted;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull messageDict;
 @property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull challengeDict;
+@property (nonatomic) NSInteger point;
+@property (nonatomic) BOOL loadingData;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
+@property (nonatomic, strong) UIRefreshControl * __null_unspecified refreshControl;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)computeCellHeight:(CGFloat)cell_height indexArray:(NSInteger)indexArray;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView willDisplayCell:(UITableViewCell * __nonnull)cell forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (void)load_feed;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -227,12 +235,14 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityLoadingSearch;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified spinner;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
 @property (nonatomic, copy) NSArray<UIImage *> * __nonnull imgPeople;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull idsLikes;
+@property (nonatomic, strong) NSNumber * __nonnull point;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
