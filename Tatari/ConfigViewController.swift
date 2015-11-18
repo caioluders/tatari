@@ -6,15 +6,27 @@
 //  Copyright © 2015 Caio Araújo. All rights reserved.
 //
 
+import Toucan
 import UIKit
 
 class ConfigViewController: UIViewController {
 
+    @IBOutlet weak var all_switch: UISwitch!
+    @IBOutlet weak var pin_avatar: UIImageView!
+    @IBOutlet weak var friends_switch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let avatar_url = NSURL(string: defaults.stringForKey("fb_avatar")!)
+        let data = NSData(contentsOfURL: avatar_url!)
+        let avatar_img = Toucan(image: UIImage(data: data!)!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
+        let maskingImage = Toucan(image: UIImage(named: "check2.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
+        
+        self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,4 +38,23 @@ class ConfigViewController: UIViewController {
         loginManager.logOut()
     }
 
+    
+    func maskImage(image:UIImage, mask:(UIImage))->UIImage{
+        
+        let imageReference = image.CGImage
+        let maskReference = mask.CGImage
+        
+        let imageMask = CGImageMaskCreate(CGImageGetWidth(maskReference),
+            CGImageGetHeight(maskReference),
+            CGImageGetBitsPerComponent(maskReference),
+            CGImageGetBitsPerPixel(maskReference),
+            CGImageGetBytesPerRow(maskReference),
+            CGImageGetDataProvider(maskReference), nil, true)
+        
+        let maskedReference = CGImageCreateWithMask(imageReference, imageMask)
+        
+        let maskedImage = UIImage(CGImage:maskedReference!)
+        
+        return maskedImage
+    }
 }
