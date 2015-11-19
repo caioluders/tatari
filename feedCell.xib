@@ -21,7 +21,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Srz-lE-xym">
-                        <rect key="frame" x="17.5" y="18.5" width="300" height="93"/>
+                        <rect key="frame" x="18" y="19" width="300" height="93"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="300" id="fAF-gM-3Ck"/>
