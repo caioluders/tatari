@@ -6,45 +6,45 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14ViewController", ""]
 provides-dynamic-lookup:
-- "HTTPsendRequest"
-- "viewDidLoad"
+- "JSONStringify"
 - "viewDidAppear"
 - "loginButtonDidLogOut"
-- "HTTPPostJSON"
+- "viewDidLoad"
 - "getFBUserData"
+- "HTTPsendRequest"
+- "HTTPPostJSON"
 - "loginButton"
-- "JSONStringify"
 depends-top-level:
-- "BooleanLiteralType"
-- !private "NSMutableDictionary"
-- !private "print"
-- "FBSDKLoginManagerLoginResult"
-- "Bool"
+- !private "FBSDKAccessToken"
+- !private "NSJSONSerialization"
 - "String"
 - !private "NSUserDefaults"
-- !private "NSURL"
-- "Void"
-- !private "NSJSONWritingOptions"
-- "FBSDKLoginButtonDelegate"
-- "NSError"
+- !private "NSMutableDictionary"
+- "BooleanLiteralType"
 - !private "!="
-- !private "Array"
-- !private "FBSDKGraphRequest"
-- "AnyObject"
-- !private "NSData"
-- !private "NSString"
-- "FBSDKLoginButton"
-- !private "NSJSONSerialization"
-- !private "StringLiteralType"
-- "UIViewController"
-- !private "NSUTF8StringEncoding"
-- !private "NSURLSession"
-- !private "Dictionary"
-- "ViewController"
 - !private "PushNotificationManager"
-- !private "FBSDKAccessToken"
+- !private "NSURL"
+- "Bool"
+- "UIViewController"
+- "FBSDKLoginButton"
+- !private "print"
+- "FBSDKLoginButtonDelegate"
+- "Void"
+- "NSError"
+- !private "NSString"
+- !private "NSURLSession"
+- "AnyObject"
+- !private "StringLiteralType"
+- !private "Dictionary"
+- !private "FBSDKGraphRequest"
+- !private "NSData"
 - "NSMutableURLRequest"
+- !private "Array"
+- !private "NSJSONWritingOptions"
+- "ViewController"
 - !private "=="
+- !private "NSUTF8StringEncoding"
+- "FBSDKLoginManagerLoginResult"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -74,7 +74,6 @@ depends-member:
 - !private ["PSs9AnyObject", "deinit"]
 - !private ["PSs9AnyObject", "delegate"]
 - ["PSs9AnyObject", "getFBUserData"]
-- !private ["PSs9AnyObject", "getPushToken"]
 - !private ["PSs9AnyObject", "grantedPermissions"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "isCancelled"]
@@ -136,7 +135,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "dataWithJSONObject"]
 - !private ["PSs11CVarArgType", "delegate"]
 - ["PSs11CVarArgType", "getFBUserData"]
-- !private ["PSs11CVarArgType", "getPushToken"]
 - !private ["PSs11CVarArgType", "grantedPermissions"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "isCancelled"]
@@ -208,7 +206,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dataWithJSONObject"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - ["PSs23CustomStringConvertible", "getFBUserData"]
-- !private ["PSs23CustomStringConvertible", "getPushToken"]
 - !private ["PSs23CustomStringConvertible", "grantedPermissions"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "isCancelled"]
@@ -272,7 +269,6 @@ depends-member:
 - !private ["PSs9Equatable", "dataWithJSONObject"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "getFBUserData"]
-- !private ["PSs9Equatable", "getPushToken"]
 - !private ["PSs9Equatable", "grantedPermissions"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "isCancelled"]
@@ -373,7 +369,6 @@ depends-member:
 - !private ["PSs8Hashable", "dataWithJSONObject"]
 - !private ["PSs8Hashable", "delegate"]
 - ["PSs8Hashable", "getFBUserData"]
-- !private ["PSs8Hashable", "getPushToken"]
 - !private ["PSs8Hashable", "grantedPermissions"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "isCancelled"]
@@ -550,7 +545,6 @@ depends-member:
 - !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "getFBUserData"]
-- !private ["CSo8NSObject", "getPushToken"]
 - !private ["CSo8NSObject", "grantedPermissions"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isCancelled"]
@@ -602,7 +596,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dataWithJSONObject"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "getFBUserData"]
-- !private ["PSo16NSObjectProtocol", "getPushToken"]
 - !private ["PSo16NSObjectProtocol", "grantedPermissions"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isCancelled"]
@@ -659,12 +652,10 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "dataUsingEncoding"]
-- !private ["CSo23PushNotificationManager", "getPushToken"]
 - !private ["CSo23PushNotificationManager", "pushManager"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "init"]
-- !private ["PSo28SKPaymentTransactionObserver", "getPushToken"]
 - !private ["PSo28SKPaymentTransactionObserver", "pushManager"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
@@ -1104,6 +1095,7 @@ depends-nominal:
 - !private "VSs26_OptionalNilComparisonType"
 - "PSs12_Reflectable"
 depends-dynamic-lookup:
+- !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
@@ -1163,5 +1155,9 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/Toucan.swiftmodule/arm.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan-Swift.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
 interface-hash: "b40dc4099af926e62748dce2c5f0862f"

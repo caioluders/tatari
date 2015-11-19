@@ -30,6 +30,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
                
         
         self.navigationItem.title = "Concurso de Fantasias"
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+        
         self.tableView.separatorStyle = .None
         
         self.activityVote.startAnimating()

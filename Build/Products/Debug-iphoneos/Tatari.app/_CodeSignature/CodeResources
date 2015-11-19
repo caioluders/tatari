@@ -30,13 +30,13 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		kCUfojns5hm70anPOxRYafKeTIA=
+		nbZuvDJQugOYZ2LO9PjKn6+biaE=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UYA2WhOiF2pK9ixa5f7OSF9NjJ0=
+			uzD/BdlwjrVOcdoSoqNEvziBlxY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -54,7 +54,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KETh/A54OPcUHqvLHymWsef9fj8=
+			Cnh3YI/GGahlTEIIZJsvdIsEl6g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -63,7 +63,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0y3MK5sDIu9AGHmYmW2P/3n+/yk=
+			6WuGGI0gPhPBMoW6+8jMO8LMOxw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -72,7 +72,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Szn1mHQ+6WvNhUXfF1WY3BLeOGM=
+			KKz2OH6yDTXaWWkpw0KbAzToH7g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IAeUQCPS6lCSKJIhljXL6sgOrDU=
+			gUq7Bfz/PBVbjC4Sug5Id2ISJwE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s3WZ0ugUFAvvf8HXgxeEg5ABGGU=
+			rHiwC1yC/rPXzQlzXQ2rBT+jruk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -108,7 +108,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MO19rCb3jcSPgkndDO2JtyiPB+Y=
+			xZ1tLzZMwWWM9uCwEOf+N6ydGpE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -117,7 +117,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ScT3GyyL3BEZmvK5EyNRsAfcPqI=
+			rteBuxZCtkfqmA8QlpmZcAc3W4Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -126,7 +126,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0HwIrfZ5WFQTrqr0eASo/p73YGU=
+			Eg/v5rOkjo0uDiUViucTLVChAVk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p/Edv/frvTK5SWmr/61nQCjLkT4=
+			JTN3mV9Jgu7KYvS2FLcvfbwret8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2LT5JbqOd8O95f8ZLaqRAYuF6E8=
+			AS2Ok0ppeHJ6L/7wHRgiJmX8M90=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -153,7 +153,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GrFWfOV0HUQBFbVpNuOE0F5TwEs=
+			XlSOvM37e9AA2cj+bQN0Fr+v1vQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -162,7 +162,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qUzMKBumP+ZzzVg0zEB8XMfwr0A=
+			26q0zsz1M+RWE7inCNFP2OOxmH4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			138B7LCOGgLJcuDtm/A6hK2IueA=
+			pQ/EJg7y6ytwamJXC/vbTTSfFiI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -180,11 +180,23 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hB8+fJGO3u3iqNHNr15Cemt6m+0=
+			/ynkEZ9v0v33QkyUAMzy2GQdTPs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Frameworks/Toucan.framework/Info.plist</key>
+		<data>
+		f2R5v/OFN81RmkJGqj6qwIbmV/k=
+		</data>
+		<key>Frameworks/Toucan.framework/Toucan</key>
+		<data>
+		b0p1LrigXWQpq0uae1GzpVPlFgA=
+		</data>
+		<key>Frameworks/Toucan.framework/_CodeSignature/CodeResources</key>
+		<data>
+		MhcRZgdXt5Dbe1LaMuOmKCs9d48=
+		</data>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
 		HFdJwM2eV19f3RivcWqA8ppB2Lc=
@@ -227,11 +239,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nKiXw0iJA6uJVavkQEeMRtjsZ20=
+		kuRg/yH/q7RinJ6ZrEjegwdQDLg=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>Rodina-Regular.otf</key>
+		<data>
+		vFGALm6AFfenYus1C88ZEwN88bc=
+		</data>
+		<key>check2.png</key>
+		<data>
+		BnQW+9w0ZkiDWMAN2Gxbe0fmNGM=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -239,15 +259,15 @@
 		</data>
 		<key>feedCell.nib</key>
 		<data>
-		/JE7jPYEi6U6TwMnd+dMiGzYlKQ=
+		UigpNA8Vc5kIuUQ5IQ4wHUQk4/o=
 		</data>
 		<key>personCell.nib</key>
 		<data>
-		13MfappRfRRhZZoBgvMMbq0wd9g=
+		UFZHPQosyGkD+qLcoxpv/pZtn4Q=
 		</data>
 		<key>votoCell.nib</key>
 		<data>
-		tcthC0c/Fhi4RVIEydiaox+a8iU=
+		2jVJvXHjsP8OmINEVKb0sDFif/k=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -278,13 +298,13 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		kCUfojns5hm70anPOxRYafKeTIA=
+		nbZuvDJQugOYZ2LO9PjKn6+biaE=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UYA2WhOiF2pK9ixa5f7OSF9NjJ0=
+			uzD/BdlwjrVOcdoSoqNEvziBlxY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -302,7 +322,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KETh/A54OPcUHqvLHymWsef9fj8=
+			Cnh3YI/GGahlTEIIZJsvdIsEl6g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -311,7 +331,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0y3MK5sDIu9AGHmYmW2P/3n+/yk=
+			6WuGGI0gPhPBMoW6+8jMO8LMOxw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -320,7 +340,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Szn1mHQ+6WvNhUXfF1WY3BLeOGM=
+			KKz2OH6yDTXaWWkpw0KbAzToH7g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -329,7 +349,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IAeUQCPS6lCSKJIhljXL6sgOrDU=
+			gUq7Bfz/PBVbjC4Sug5Id2ISJwE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -347,7 +367,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s3WZ0ugUFAvvf8HXgxeEg5ABGGU=
+			rHiwC1yC/rPXzQlzXQ2rBT+jruk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -356,7 +376,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MO19rCb3jcSPgkndDO2JtyiPB+Y=
+			xZ1tLzZMwWWM9uCwEOf+N6ydGpE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -365,7 +385,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ScT3GyyL3BEZmvK5EyNRsAfcPqI=
+			rteBuxZCtkfqmA8QlpmZcAc3W4Q=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -374,7 +394,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0HwIrfZ5WFQTrqr0eASo/p73YGU=
+			Eg/v5rOkjo0uDiUViucTLVChAVk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -383,7 +403,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			p/Edv/frvTK5SWmr/61nQCjLkT4=
+			JTN3mV9Jgu7KYvS2FLcvfbwret8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -392,7 +412,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2LT5JbqOd8O95f8ZLaqRAYuF6E8=
+			AS2Ok0ppeHJ6L/7wHRgiJmX8M90=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -401,7 +421,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GrFWfOV0HUQBFbVpNuOE0F5TwEs=
+			XlSOvM37e9AA2cj+bQN0Fr+v1vQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -410,7 +430,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qUzMKBumP+ZzzVg0zEB8XMfwr0A=
+			26q0zsz1M+RWE7inCNFP2OOxmH4=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -419,7 +439,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			138B7LCOGgLJcuDtm/A6hK2IueA=
+			pQ/EJg7y6ytwamJXC/vbTTSfFiI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -428,11 +448,23 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hB8+fJGO3u3iqNHNr15Cemt6m+0=
+			/ynkEZ9v0v33QkyUAMzy2GQdTPs=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Frameworks/Toucan.framework/Info.plist</key>
+		<data>
+		f2R5v/OFN81RmkJGqj6qwIbmV/k=
+		</data>
+		<key>Frameworks/Toucan.framework/Toucan</key>
+		<data>
+		b0p1LrigXWQpq0uae1GzpVPlFgA=
+		</data>
+		<key>Frameworks/Toucan.framework/_CodeSignature/CodeResources</key>
+		<data>
+		MhcRZgdXt5Dbe1LaMuOmKCs9d48=
+		</data>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
 		HFdJwM2eV19f3RivcWqA8ppB2Lc=
@@ -473,21 +505,29 @@
 		<data>
 		KVKtBPN/ZCNDvXx/52gSdwK0a68=
 		</data>
+		<key>Rodina-Regular.otf</key>
+		<data>
+		vFGALm6AFfenYus1C88ZEwN88bc=
+		</data>
+		<key>check2.png</key>
+		<data>
+		BnQW+9w0ZkiDWMAN2Gxbe0fmNGM=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		Fzw6VdFI3+JBwxCSucGzqGB3OsM=
 		</data>
 		<key>feedCell.nib</key>
 		<data>
-		/JE7jPYEi6U6TwMnd+dMiGzYlKQ=
+		UigpNA8Vc5kIuUQ5IQ4wHUQk4/o=
 		</data>
 		<key>personCell.nib</key>
 		<data>
-		13MfappRfRRhZZoBgvMMbq0wd9g=
+		UFZHPQosyGkD+qLcoxpv/pZtn4Q=
 		</data>
 		<key>votoCell.nib</key>
 		<data>
-		tcthC0c/Fhi4RVIEydiaox+a8iU=
+		2jVJvXHjsP8OmINEVKb0sDFif/k=
 		</data>
 	</dict>
 	<key>rules</key>

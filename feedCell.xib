@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -15,70 +14,56 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedcell" id="py3-Lh-rNX" customClass="FeedTableViewCell" customModule="Tatari" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="335" height="170"/>
+            <rect key="frame" x="0.0" y="0.0" width="335" height="130"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="py3-Lh-rNX" id="Dn1-SY-jh2">
-                <rect key="frame" x="0.0" y="0.0" width="335" height="169.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="335" height="129.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQ2-9C-wcr">
-                        <rect key="frame" x="15" y="23" width="320" height="121"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZR-JP-HKq">
-                                <rect key="frame" x="30" y="35" width="28" height="17"/>
-                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Srz-lE-xym">
+                        <rect key="frame" x="18" y="19" width="300" height="93"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="121" id="Bhk-XU-MvH"/>
-                            <constraint firstItem="8ZR-JP-HKq" firstAttribute="leading" secondItem="jQ2-9C-wcr" secondAttribute="leading" constant="30" id="Fm8-uj-SFD"/>
-                            <constraint firstItem="8ZR-JP-HKq" firstAttribute="top" secondItem="jQ2-9C-wcr" secondAttribute="top" constant="35" id="nEK-Pe-61E"/>
+                            <constraint firstAttribute="width" constant="300" id="fAF-gM-3Ck"/>
+                            <constraint firstAttribute="height" constant="93" id="hd9-gW-alQ"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOt-Aa-Fnm">
-                        <rect key="frame" x="152" y="26" width="32" height="19.5"/>
-                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="16"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DesafioCellIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-LJ-zoe">
+                        <rect key="frame" x="0.0" y="11" width="38" height="36"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZR-JP-HKq">
+                        <rect key="frame" x="39" y="66" width="269" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="269" id="ObP-mw-zvY"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="RmF-uJ-ZHI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DesafioCellIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-LJ-zoe">
-                        <rect key="frame" x="0.0" y="11" width="36" height="36"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="36" id="0xW-MU-TTr"/>
-                            <constraint firstAttribute="height" constant="36" id="580-Qp-NCG"/>
-                            <constraint firstAttribute="height" constant="36" id="nCl-v5-4hE"/>
-                            <constraint firstAttribute="width" constant="36" id="nwo-hu-BhD"/>
-                        </constraints>
-                    </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="ri1-kA-u9k">
-                        <rect key="frame" x="134" y="152" width="66" height="13"/>
-                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOt-Aa-Fnm">
+                        <rect key="frame" x="148" y="22" width="38" height="23"/>
+                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="19"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="jQ2-9C-wcr" secondAttribute="trailing" id="3ob-hX-w9o"/>
-                    <constraint firstItem="bIB-LJ-zoe" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="top" constant="11" id="3qg-Mx-PWX"/>
-                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="leading" secondItem="bIB-LJ-zoe" secondAttribute="trailing" constant="116" id="5lD-q2-4EG"/>
-                    <constraint firstItem="bIB-LJ-zoe" firstAttribute="leading" secondItem="Dn1-SY-jh2" secondAttribute="leading" id="Agy-lN-Rlq"/>
-                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="centerX" secondItem="Dn1-SY-jh2" secondAttribute="centerX" id="EYQ-P1-sTG"/>
-                    <constraint firstItem="jQ2-9C-wcr" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="top" constant="23" id="IDR-fO-FG3"/>
-                    <constraint firstItem="jQ2-9C-wcr" firstAttribute="leading" secondItem="Dn1-SY-jh2" secondAttribute="leading" constant="15" id="Irn-hf-q9G"/>
-                    <constraint firstItem="ri1-kA-u9k" firstAttribute="centerX" secondItem="Dn1-SY-jh2" secondAttribute="centerX" id="WOV-fd-C2S"/>
-                    <constraint firstItem="ri1-kA-u9k" firstAttribute="top" secondItem="jQ2-9C-wcr" secondAttribute="bottom" constant="8" id="qOd-ma-lgJ"/>
-                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="18" id="ubS-hi-o0y"/>
+                    <constraint firstItem="8ZR-JP-HKq" firstAttribute="leading" secondItem="Dn1-SY-jh2" secondAttribute="leadingMargin" constant="31" id="1Z4-TU-dec"/>
+                    <constraint firstItem="Srz-lE-xym" firstAttribute="centerY" secondItem="Dn1-SY-jh2" secondAttribute="centerY" id="BWl-xd-ueg"/>
+                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="14" id="GMd-14-NK0"/>
+                    <constraint firstItem="bIB-LJ-zoe" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="3" id="NFB-qD-czB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sOt-Aa-Fnm" secondAttribute="bottom" constant="76.5" id="WnX-wb-MjK"/>
+                    <constraint firstItem="Srz-lE-xym" firstAttribute="leading" secondItem="bIB-LJ-zoe" secondAttribute="trailing" constant="-20.5" id="cxE-0F-6s9"/>
+                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="centerX" secondItem="Dn1-SY-jh2" secondAttribute="centerX" id="k9S-yF-zFJ"/>
+                    <constraint firstItem="Srz-lE-xym" firstAttribute="centerX" secondItem="Dn1-SY-jh2" secondAttribute="centerX" id="lnU-9R-OxU"/>
+                    <constraint firstItem="8ZR-JP-HKq" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="58" id="vO3-wT-Owg"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="5lD-q2-4EG"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="borderView" destination="jQ2-9C-wcr" id="auL-Tt-jnA"/>
-                <outlet property="cnstHeightBorderView" destination="Bhk-XU-MvH" id="Yts-mO-hbR"/>
+                <outlet property="borderView" destination="Srz-lE-xym" id="ReA-PT-aHC"/>
+                <outlet property="cnstHeightBorderView" destination="hd9-gW-alQ" id="8f3-1m-Y9G"/>
                 <outlet property="imgMessageTagType" destination="bIB-LJ-zoe" id="Obu-Tg-t9u"/>
                 <outlet property="lblTitle" destination="sOt-Aa-Fnm" id="TlX-uJ-xHE"/>
                 <outlet property="txtBody" destination="8ZR-JP-HKq" id="wZT-ql-VrU"/>
@@ -88,6 +73,5 @@
     </objects>
     <resources>
         <image name="DesafioCellIcon" width="36" height="36"/>
-        <image name="Pontos" width="66" height="13"/>
     </resources>
 </document>

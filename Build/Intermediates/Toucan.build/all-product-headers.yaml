@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Toucan-Swift.h",
+          'external-contents': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Toucan.h",
+          'external-contents': "/Users/deborahmesquita1/Downloads/Toucan-master/Source/Toucan.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Intermediates/Toucan.build/Debug-iphonesimulator/Toucan.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

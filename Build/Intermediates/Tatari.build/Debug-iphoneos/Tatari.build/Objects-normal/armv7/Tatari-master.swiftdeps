@@ -1,16 +1,16 @@
 version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
-options: "725b34a2f4f36189a440ce9e2950e00a"
-build_time: [500585595, 874966000]
+options: "3b12430c874c90f2591069167b7c4f8d"
+build_time: [501200868, 602914000]
 inputs:
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VoteController.swift": [500181821, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ViewController.swift": [500161712, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedTableViewCell.swift": [499283004, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SearchController.swift": [500235161, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/AppDelegate.swift": [500150676, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/MainController.swift": [500251890, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/DesafiosViewController.swift": [500185790, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/personTableViewCell.swift": [500775360, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VotoTableViewCell.swift": [500181959, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ConfigViewController.swift": [500226685, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedController.swift": [501200062, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/AppDelegate.swift": [500150676, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VoteController.swift": [500181821, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ViewController.swift": [501190539, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SearchController.swift": [501200062, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SwiftyJSON.swift": [499226986, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedController.swift": [500232976, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/personTableViewCell.swift": [500226038, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedTableViewCell.swift": [500931929, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ConfigViewController.swift": [501190539, 0]
