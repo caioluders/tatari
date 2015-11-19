@@ -34,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1847.5" y="921.5"/>
+            <point key="canvasLocation" x="-1992" y="941"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GlR-TM-LEt">
@@ -132,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1013.5" y="125.5"/>
+            <point key="canvasLocation" x="-886" y="125"/>
         </scene>
         <!--Tatari-->
         <scene sceneID="ck6-0f-9qJ">
@@ -146,17 +146,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                <rect key="frame" x="0.0" y="81" width="375" height="537"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
-                                <rect key="frame" x="305" y="65" width="40" height="41"/>
-                                <state key="normal" title="feed" image="info icon"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
-                                <rect key="frame" x="305" y="65" width="40" height="41"/>
-                                <state key="normal" title="search" image="pesquisar icon"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bepifantasy_smaller" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-lJ-0qI">
                                 <rect key="frame" x="128" y="17" width="113" height="32"/>
                             </imageView>
@@ -196,14 +185,25 @@
                                 <rect key="frame" x="299" y="502" width="42" height="50"/>
                                 <state key="normal" image="banheiro"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                <rect key="frame" x="130" y="64" width="340" height="487"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
+                                <rect key="frame" x="305" y="65" width="40" height="41"/>
+                                <state key="normal" title="feed" image="info icon"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fnt-xz-YfC">
+                                <rect key="frame" x="305" y="65" width="40" height="41"/>
+                                <state key="normal" title="search" image="pesquisar icon"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="grK-Nn-jRv"/>
-                                <exclude reference="Fnt-xz-YfC"/>
                                 <exclude reference="3k7-e2-9jj"/>
                                 <exclude reference="Y5Q-cR-bgj"/>
+                                <exclude reference="grK-Nn-jRv"/>
+                                <exclude reference="Fnt-xz-YfC"/>
                             </mask>
                         </variation>
                     </view>
@@ -211,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kv-bT-k2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-685.5" y="1853.5"/>
+            <point key="canvasLocation" x="-390" y="1853"/>
         </scene>
         <!--Avisos-->
         <scene sceneID="JEN-iY-6CF">
@@ -228,20 +228,30 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avisos" translatesAutoresizingMaskIntoConstraints="NO" id="i8T-qm-iMN">
                                 <rect key="frame" x="128" y="17" width="113" height="31"/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="whd-iv-BOA">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
-                                <color key="color" red="0.08235294118" green="0.086274509799999996" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
-                            </activityIndicatorView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-xE-tIn">
-                                <rect key="frame" x="17" y="64" width="335" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-xE-tIn">
+                                <rect key="frame" x="133" y="64" width="335" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="J9d-lh-bp2"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="pVq-cJ-qf5" id="FZH-6V-dBF"/>
                                     <outlet property="delegate" destination="pVq-cJ-qf5" id="NSU-of-NCE"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="whd-iv-BOA">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="0.08235294118" green="0.086274509799999996" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CUx-xE-tIn" firstAttribute="centerX" secondItem="d0I-ok-xCg" secondAttribute="centerX" id="Nzc-AP-kpW"/>
+                            <constraint firstItem="CUx-xE-tIn" firstAttribute="centerY" secondItem="d0I-ok-xCg" secondAttribute="centerY" constant="7.5" id="eEr-uS-E2F"/>
+                            <constraint firstItem="CUx-xE-tIn" firstAttribute="top" secondItem="7Yz-vy-8Xq" secondAttribute="bottom" id="kvL-J4-FBy"/>
+                            <constraint firstItem="whd-iv-BOA" firstAttribute="centerY" secondItem="d0I-ok-xCg" secondAttribute="centerY" id="t4D-id-1kn"/>
+                            <constraint firstItem="whd-iv-BOA" firstAttribute="centerX" secondItem="CUx-xE-tIn" secondAttribute="centerX" id="tUi-O2-8cf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Avisos" id="6iY-YS-iQJ"/>
                     <connections>
@@ -251,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytU-Js-ier" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="515.5" y="61.5"/>
+            <point key="canvasLocation" x="635" y="61"/>
         </scene>
         <!--Concurso-->
         <scene sceneID="fpQ-Rn-YHe">
