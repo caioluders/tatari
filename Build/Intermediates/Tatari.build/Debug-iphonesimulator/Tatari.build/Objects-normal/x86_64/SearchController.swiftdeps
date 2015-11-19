@@ -6,84 +6,89 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
-- "textFieldShouldReturn"
-- "imgPeople"
-- "send_chall"
-- "HTTPsendRequest"
-- "buttonDesafiarAction"
-- "activityLoadingSearch"
-- "HTTPPostJSON"
-- "txtFieldSearch"
 - "idsLikes"
-- "fbIds"
-- "search_people"
-- "textFieldDidChange"
-- "viewDidAppear"
-- "spinner"
-- "didReceiveMemoryWarning"
+- "fbIdDesafiado"
+- "activityLoadingSearch"
 - "JSONStringify"
-- "showChallengeView"
-- "people"
 - "viewDidLoad"
+- "txtFieldSearch"
+- "viewDidAppear"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
+- "showChallengeView"
 - "point"
+- "imgPeople"
+- "HTTPPostJSON"
+- "HTTPsendRequest"
+- "people"
+- "send_chall"
+- "textFieldShouldReturn"
+- "didReceiveMemoryWarning"
+- "buttonDesafiarAction"
+- "textFieldDidChange"
+- "search_people"
+- "prepareForSegue"
+- "fbIds"
+- "spinner"
 depends-top-level:
-- "UIImage"
-- !private "BooleanLiteralType"
-- !private "personTableViewCell"
-- !private "Array"
-- !private "UIAlertControllerStyle"
-- "NSString"
-- !private "UIControlState"
-- !private "NSJSONWritingOptions"
-- "Int"
-- "CGFloat"
-- !private "+"
-- !private "UIAlertController"
-- "Void"
-- "UITableView"
-- "NSIndexPath"
-- !private "NSUserDefaults"
-- !private "!="
-- !private "NSFontAttributeName"
-- "UIButton"
-- !private "dispatch_get_main_queue"
-- !private "StringLiteralType"
-- !private "NSURL"
-- !private "dispatch_async"
-- !private "NSMutableDictionary"
 - !private "print"
-- "NSMutableURLRequest"
-- !private "Dictionary"
-- !private "UIImageView"
-- "UIActivityIndicatorView"
-- !private "NSURLSession"
-- !private "NSUTF8StringEncoding"
-- !private "UIAlertActionStyle"
-- !private "JSON"
-- !private "UIViewContentMode"
-- !private "FBSDKAccessToken"
-- !private "UIColor"
+- "StringLiteralType"
 - "UIViewController"
-- !private "NSJSONSerialization"
-- "SearchController"
-- !private "NSData"
-- !private "UIAlertAction"
-- "UITextField"
-- !private "UIControlEvents"
-- !private "UIFont"
-- "String"
-- "Bool"
+- !private "FBSDKAccessToken"
+- "UITableViewCell"
+- !private "personTableViewCell"
+- !private "NSMutableDictionary"
+- !private "UIColor"
+- !private "DesafiosViewController"
+- "Int"
 - !private "UINib"
-- "UITextFieldDelegate"
 - "UITableViewDelegate"
 - "NSNumber"
-- "AnyObject"
 - "UITableViewDataSource"
-- "UITableViewCell"
+- "AnyObject"
+- "UIButton"
+- !private "UIControlState"
+- "NSString"
+- !private "NSJSONWritingOptions"
+- "UITextFieldDelegate"
+- !private "NSJSONSerialization"
+- !private "UIAlertControllerStyle"
+- !private "UIImageView"
+- !private "Dictionary"
+- "SearchController"
+- !private "Array"
+- !private "NSURLSession"
+- "UIActivityIndicatorView"
+- !private "UIViewContentMode"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_async"
+- !private "UIAlertController"
+- "String"
+- !private "UIAlertActionStyle"
+- "UIImage"
+- "Bool"
+- "NSMutableURLRequest"
+- !private "NSURL"
+- "UITableView"
+- !private "UIControlEvents"
+- !private "+"
+- !private "NSUTF8StringEncoding"
+- !private "=="
+- !private "JSON"
+- "UIStoryboardSegue"
+- !private "UIFont"
+- "NSIndexPath"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "NSUserDefaults"
+- !private "UIAlertAction"
+- "Void"
+- !private "NSFontAttributeName"
+- "UITextField"
+- !private "NSData"
+- !private "!="
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "Element"]
@@ -141,12 +146,15 @@ depends-member:
 - !private ["PSs9AnyObject", "deinit"]
 - !private ["PSs9AnyObject", "delegate"]
 - !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs9AnyObject", "destinationViewController"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
 - !private ["PSs9AnyObject", "dispatch_async"]
 - !private ["PSs9AnyObject", "dispatch_get_main_queue"]
 - !private ["PSs9AnyObject", "fbId"]
+- ["PSs9AnyObject", "fbIdDesafiado"]
 - ["PSs9AnyObject", "fbIds"]
 - !private ["PSs9AnyObject", "hidesWhenStopped"]
+- !private ["PSs9AnyObject", "identifier"]
 - ["PSs9AnyObject", "idsLikes"]
 - !private ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "imgPeople"]
@@ -164,7 +172,7 @@ depends-member:
 - ["PSs9AnyObject", "people"]
 - !private ["PSs9AnyObject", "performSegueWithIdentifier"]
 - ["PSs9AnyObject", "point"]
-- !private ["PSs9AnyObject", "presentViewController"]
+- ["PSs9AnyObject", "prepareForSegue"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "registerNib"]
 - !private ["PSs9AnyObject", "reloadData"]
@@ -330,12 +338,15 @@ depends-member:
 - !private ["PSs11CVarArgType", "dataWithJSONObject"]
 - !private ["PSs11CVarArgType", "delegate"]
 - !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs11CVarArgType", "destinationViewController"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
 - !private ["PSs11CVarArgType", "dispatch_async"]
 - !private ["PSs11CVarArgType", "dispatch_get_main_queue"]
 - !private ["PSs11CVarArgType", "fbId"]
+- ["PSs11CVarArgType", "fbIdDesafiado"]
 - ["PSs11CVarArgType", "fbIds"]
 - !private ["PSs11CVarArgType", "hidesWhenStopped"]
+- !private ["PSs11CVarArgType", "identifier"]
 - ["PSs11CVarArgType", "idsLikes"]
 - !private ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "imgPeople"]
@@ -353,7 +364,7 @@ depends-member:
 - ["PSs11CVarArgType", "people"]
 - !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
 - ["PSs11CVarArgType", "point"]
-- !private ["PSs11CVarArgType", "presentViewController"]
+- ["PSs11CVarArgType", "prepareForSegue"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "registerNib"]
 - !private ["PSs11CVarArgType", "reloadData"]
@@ -512,12 +523,15 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dataWithJSONObject"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs23CustomStringConvertible", "destinationViewController"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["PSs23CustomStringConvertible", "dispatch_async"]
 - !private ["PSs23CustomStringConvertible", "dispatch_get_main_queue"]
 - !private ["PSs23CustomStringConvertible", "fbId"]
+- ["PSs23CustomStringConvertible", "fbIdDesafiado"]
 - ["PSs23CustomStringConvertible", "fbIds"]
 - !private ["PSs23CustomStringConvertible", "hidesWhenStopped"]
+- !private ["PSs23CustomStringConvertible", "identifier"]
 - ["PSs23CustomStringConvertible", "idsLikes"]
 - !private ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "imgPeople"]
@@ -535,7 +549,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "people"]
 - !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
 - ["PSs23CustomStringConvertible", "point"]
-- !private ["PSs23CustomStringConvertible", "presentViewController"]
+- ["PSs23CustomStringConvertible", "prepareForSegue"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "registerNib"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
@@ -589,6 +603,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["C6Tatari22DesafiosViewController", "fbIdDesafiado"]
 - !private ["VSs10Dictionary", "Key"]
 - !private ["VSs10Dictionary", "Value"]
 - !private ["VSs10Dictionary", "deinit"]
@@ -675,12 +690,15 @@ depends-member:
 - !private ["PSs9Equatable", "dataWithJSONObject"]
 - !private ["PSs9Equatable", "delegate"]
 - !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs9Equatable", "destinationViewController"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
 - !private ["PSs9Equatable", "dispatch_async"]
 - !private ["PSs9Equatable", "dispatch_get_main_queue"]
 - !private ["PSs9Equatable", "fbId"]
+- ["PSs9Equatable", "fbIdDesafiado"]
 - ["PSs9Equatable", "fbIds"]
 - !private ["PSs9Equatable", "hidesWhenStopped"]
+- !private ["PSs9Equatable", "identifier"]
 - ["PSs9Equatable", "idsLikes"]
 - !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "imgPeople"]
@@ -698,7 +716,7 @@ depends-member:
 - ["PSs9Equatable", "people"]
 - !private ["PSs9Equatable", "performSegueWithIdentifier"]
 - ["PSs9Equatable", "point"]
-- !private ["PSs9Equatable", "presentViewController"]
+- ["PSs9Equatable", "prepareForSegue"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "registerNib"]
 - !private ["PSs9Equatable", "reloadData"]
@@ -838,12 +856,15 @@ depends-member:
 - !private ["PSs8Hashable", "dataWithJSONObject"]
 - !private ["PSs8Hashable", "delegate"]
 - !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
+- !private ["PSs8Hashable", "destinationViewController"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
 - !private ["PSs8Hashable", "dispatch_async"]
 - !private ["PSs8Hashable", "dispatch_get_main_queue"]
 - !private ["PSs8Hashable", "fbId"]
+- ["PSs8Hashable", "fbIdDesafiado"]
 - ["PSs8Hashable", "fbIds"]
 - !private ["PSs8Hashable", "hidesWhenStopped"]
+- !private ["PSs8Hashable", "identifier"]
 - ["PSs8Hashable", "idsLikes"]
 - !private ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "imgPeople"]
@@ -861,7 +882,7 @@ depends-member:
 - ["PSs8Hashable", "people"]
 - !private ["PSs8Hashable", "performSegueWithIdentifier"]
 - ["PSs8Hashable", "point"]
-- !private ["PSs8Hashable", "presentViewController"]
+- ["PSs8Hashable", "prepareForSegue"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "registerNib"]
 - !private ["PSs8Hashable", "reloadData"]
@@ -1053,6 +1074,7 @@ depends-member:
 - !private ["PSo8NSCoding", "dispatch_async"]
 - !private ["PSo8NSCoding", "dispatch_get_main_queue"]
 - !private ["PSo8NSCoding", "fbId"]
+- ["PSo8NSCoding", "fbIdDesafiado"]
 - ["PSo8NSCoding", "fbIds"]
 - !private ["PSo8NSCoding", "hidesWhenStopped"]
 - ["PSo8NSCoding", "idsLikes"]
@@ -1071,7 +1093,7 @@ depends-member:
 - ["PSo8NSCoding", "people"]
 - !private ["PSo8NSCoding", "performSegueWithIdentifier"]
 - ["PSo8NSCoding", "point"]
-- !private ["PSo8NSCoding", "presentViewController"]
+- ["PSo8NSCoding", "prepareForSegue"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "registerNib"]
 - !private ["PSo8NSCoding", "reloadData"]
@@ -1173,6 +1195,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_async"]
 - !private ["PSo26NSExtensionRequestHandling", "dispatch_get_main_queue"]
+- ["PSo26NSExtensionRequestHandling", "fbIdDesafiado"]
 - ["PSo26NSExtensionRequestHandling", "fbIds"]
 - ["PSo26NSExtensionRequestHandling", "idsLikes"]
 - ["PSo26NSExtensionRequestHandling", "imgPeople"]
@@ -1185,7 +1208,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "people"]
 - !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
 - ["PSo26NSExtensionRequestHandling", "point"]
-- !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
+- ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -1244,6 +1267,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGColor"]
 - ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "DesafiosViewController"]
 - !private ["CSo8NSObject", "Element"]
 - !private ["CSo8NSObject", "FBSDKAccessToken"]
 - !private ["CSo8NSObject", "HTTPBody"]
@@ -1280,6 +1304,7 @@ depends-member:
 - ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIImageView"]
 - !private ["CSo8NSObject", "UINib"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
 - ["CSo8NSObject", "UITextField"]
@@ -1307,12 +1332,15 @@ depends-member:
 - !private ["CSo8NSObject", "dataWithJSONObject"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo8NSObject", "destinationViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - !private ["CSo8NSObject", "dispatch_async"]
 - !private ["CSo8NSObject", "dispatch_get_main_queue"]
 - !private ["CSo8NSObject", "fbId"]
+- ["CSo8NSObject", "fbIdDesafiado"]
 - ["CSo8NSObject", "fbIds"]
 - !private ["CSo8NSObject", "hidesWhenStopped"]
+- !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "idsLikes"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imgPeople"]
@@ -1331,7 +1359,7 @@ depends-member:
 - !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - !private ["CSo8NSObject", "personTableViewCell"]
 - ["CSo8NSObject", "point"]
-- !private ["CSo8NSObject", "presentViewController"]
+- ["CSo8NSObject", "prepareForSegue"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "registerNib"]
 - !private ["CSo8NSObject", "reloadData"]
@@ -1436,12 +1464,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dataWithJSONObject"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo16NSObjectProtocol", "destinationViewController"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "dispatch_async"]
 - !private ["PSo16NSObjectProtocol", "dispatch_get_main_queue"]
 - !private ["PSo16NSObjectProtocol", "fbId"]
+- ["PSo16NSObjectProtocol", "fbIdDesafiado"]
 - ["PSo16NSObjectProtocol", "fbIds"]
 - !private ["PSo16NSObjectProtocol", "hidesWhenStopped"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "idsLikes"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imgPeople"]
@@ -1459,7 +1490,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "people"]
 - !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - ["PSo16NSObjectProtocol", "point"]
-- !private ["PSo16NSObjectProtocol", "presentViewController"]
+- ["PSo16NSObjectProtocol", "prepareForSegue"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "registerNib"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
@@ -1586,6 +1617,7 @@ depends-member:
 - ["C6Tatari16SearchController", "AnyObject"]
 - ["C6Tatari16SearchController", "Bool"]
 - ["C6Tatari16SearchController", "CGFloat"]
+- !private ["C6Tatari16SearchController", "DesafiosViewController"]
 - !private ["C6Tatari16SearchController", "FBSDKAccessToken"]
 - ["C6Tatari16SearchController", "HTTPPostJSON"]
 - ["C6Tatari16SearchController", "HTTPsendRequest"]
@@ -1619,6 +1651,7 @@ depends-member:
 - ["C6Tatari16SearchController", "UIImage"]
 - !private ["C6Tatari16SearchController", "UIImageView"]
 - !private ["C6Tatari16SearchController", "UINib"]
+- ["C6Tatari16SearchController", "UIStoryboardSegue"]
 - ["C6Tatari16SearchController", "UITableView"]
 - ["C6Tatari16SearchController", "UITableViewCell"]
 - ["C6Tatari16SearchController", "UITextField"]
@@ -1631,6 +1664,7 @@ depends-member:
 - ["C6Tatari16SearchController", "didReceiveMemoryWarning"]
 - !private ["C6Tatari16SearchController", "dispatch_async"]
 - !private ["C6Tatari16SearchController", "dispatch_get_main_queue"]
+- ["C6Tatari16SearchController", "fbIdDesafiado"]
 - ["C6Tatari16SearchController", "fbIds"]
 - ["C6Tatari16SearchController", "idsLikes"]
 - ["C6Tatari16SearchController", "imgPeople"]
@@ -1643,7 +1677,7 @@ depends-member:
 - !private ["C6Tatari16SearchController", "performSegueWithIdentifier"]
 - !private ["C6Tatari16SearchController", "personTableViewCell"]
 - ["C6Tatari16SearchController", "point"]
-- !private ["C6Tatari16SearchController", "presentViewController"]
+- ["C6Tatari16SearchController", "prepareForSegue"]
 - !private ["C6Tatari16SearchController", "print"]
 - ["C6Tatari16SearchController", "scrollViewDidEndDecelerating"]
 - ["C6Tatari16SearchController", "scrollViewDidEndDragging"]
@@ -1830,6 +1864,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "dispatch_async"]
 - !private ["PSo21UIAppearanceContainer", "dispatch_get_main_queue"]
 - !private ["PSo21UIAppearanceContainer", "fbId"]
+- ["PSo21UIAppearanceContainer", "fbIdDesafiado"]
 - ["PSo21UIAppearanceContainer", "fbIds"]
 - !private ["PSo21UIAppearanceContainer", "hidesWhenStopped"]
 - ["PSo21UIAppearanceContainer", "idsLikes"]
@@ -1847,7 +1882,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "people"]
 - !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "point"]
-- !private ["PSo21UIAppearanceContainer", "presentViewController"]
+- ["PSo21UIAppearanceContainer", "prepareForSegue"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "registerNib"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
@@ -1932,6 +1967,7 @@ depends-member:
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "dispatch_async"]
 - !private ["PSo18UIContentContainer", "dispatch_get_main_queue"]
+- ["PSo18UIContentContainer", "fbIdDesafiado"]
 - ["PSo18UIContentContainer", "fbIds"]
 - ["PSo18UIContentContainer", "idsLikes"]
 - ["PSo18UIContentContainer", "imgPeople"]
@@ -1944,7 +1980,7 @@ depends-member:
 - ["PSo18UIContentContainer", "people"]
 - !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
 - ["PSo18UIContentContainer", "point"]
-- !private ["PSo18UIContentContainer", "presentViewController"]
+- ["PSo18UIContentContainer", "prepareForSegue"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -2084,6 +2120,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "dispatch_async"]
 - !private ["PSo18UIFocusEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UIFocusEnvironment", "fbId"]
+- ["PSo18UIFocusEnvironment", "fbIdDesafiado"]
 - ["PSo18UIFocusEnvironment", "fbIds"]
 - !private ["PSo18UIFocusEnvironment", "hidesWhenStopped"]
 - ["PSo18UIFocusEnvironment", "idsLikes"]
@@ -2101,7 +2138,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "people"]
 - !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "point"]
-- !private ["PSo18UIFocusEnvironment", "presentViewController"]
+- ["PSo18UIFocusEnvironment", "prepareForSegue"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "registerNib"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
@@ -2166,6 +2203,7 @@ depends-member:
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
+- !private ["CSo11UIResponder", "DesafiosViewController"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
 - ["CSo11UIResponder", "HTTPPostJSON"]
 - ["CSo11UIResponder", "HTTPsendRequest"]
@@ -2199,6 +2237,7 @@ depends-member:
 - ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIImageView"]
 - !private ["CSo11UIResponder", "UINib"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
 - ["CSo11UIResponder", "UITextField"]
@@ -2221,6 +2260,7 @@ depends-member:
 - !private ["CSo11UIResponder", "dispatch_async"]
 - !private ["CSo11UIResponder", "dispatch_get_main_queue"]
 - !private ["CSo11UIResponder", "fbId"]
+- ["CSo11UIResponder", "fbIdDesafiado"]
 - ["CSo11UIResponder", "fbIds"]
 - !private ["CSo11UIResponder", "hidesWhenStopped"]
 - ["CSo11UIResponder", "idsLikes"]
@@ -2239,7 +2279,7 @@ depends-member:
 - !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - !private ["CSo11UIResponder", "personTableViewCell"]
 - ["CSo11UIResponder", "point"]
-- !private ["CSo11UIResponder", "presentViewController"]
+- ["CSo11UIResponder", "prepareForSegue"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "registerNib"]
 - !private ["CSo11UIResponder", "reloadData"]
@@ -2321,6 +2361,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dataPerson"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_async"]
 - !private ["PSo20UIScrollViewDelegate", "dispatch_get_main_queue"]
+- !private ["PSo20UIScrollViewDelegate", "fbIdDesafiado"]
 - !private ["PSo20UIScrollViewDelegate", "fbIds"]
 - !private ["PSo20UIScrollViewDelegate", "idsLikes"]
 - !private ["PSo20UIScrollViewDelegate", "imgPeople"]
@@ -2331,7 +2372,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "people"]
 - !private ["PSo20UIScrollViewDelegate", "performSegueWithIdentifier"]
 - !private ["PSo20UIScrollViewDelegate", "point"]
-- !private ["PSo20UIScrollViewDelegate", "presentViewController"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
@@ -2395,6 +2435,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "dispatch_async"]
 - !private ["PSo16UIStateRestoring", "dispatch_get_main_queue"]
+- ["PSo16UIStateRestoring", "fbIdDesafiado"]
 - ["PSo16UIStateRestoring", "fbIds"]
 - ["PSo16UIStateRestoring", "idsLikes"]
 - ["PSo16UIStateRestoring", "imgPeople"]
@@ -2407,7 +2448,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "people"]
 - !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
 - ["PSo16UIStateRestoring", "point"]
-- !private ["PSo16UIStateRestoring", "presentViewController"]
+- ["PSo16UIStateRestoring", "prepareForSegue"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -2440,6 +2481,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["CSo17UIStoryboardSegue", "destinationViewController"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
 - !private ["CSo11UITableView", "allowsSelection"]
 - !private ["CSo11UITableView", "backgroundView"]
 - !private ["CSo11UITableView", "delegate"]
@@ -2488,6 +2531,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "dataPerson"]
 - !private ["PSo21UITableViewDataSource", "dispatch_async"]
 - !private ["PSo21UITableViewDataSource", "dispatch_get_main_queue"]
+- !private ["PSo21UITableViewDataSource", "fbIdDesafiado"]
 - !private ["PSo21UITableViewDataSource", "fbIds"]
 - !private ["PSo21UITableViewDataSource", "idsLikes"]
 - !private ["PSo21UITableViewDataSource", "imgPeople"]
@@ -2498,7 +2542,6 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "people"]
 - !private ["PSo21UITableViewDataSource", "performSegueWithIdentifier"]
 - !private ["PSo21UITableViewDataSource", "point"]
-- !private ["PSo21UITableViewDataSource", "presentViewController"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
@@ -2559,6 +2602,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "dataPerson"]
 - !private ["PSo19UITableViewDelegate", "dispatch_async"]
 - !private ["PSo19UITableViewDelegate", "dispatch_get_main_queue"]
+- !private ["PSo19UITableViewDelegate", "fbIdDesafiado"]
 - !private ["PSo19UITableViewDelegate", "fbIds"]
 - !private ["PSo19UITableViewDelegate", "idsLikes"]
 - !private ["PSo19UITableViewDelegate", "imgPeople"]
@@ -2569,7 +2613,6 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "people"]
 - !private ["PSo19UITableViewDelegate", "performSegueWithIdentifier"]
 - !private ["PSo19UITableViewDelegate", "point"]
-- !private ["PSo19UITableViewDelegate", "presentViewController"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
@@ -2634,6 +2677,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "dataPerson"]
 - !private ["PSo19UITextFieldDelegate", "dispatch_async"]
 - !private ["PSo19UITextFieldDelegate", "dispatch_get_main_queue"]
+- !private ["PSo19UITextFieldDelegate", "fbIdDesafiado"]
 - !private ["PSo19UITextFieldDelegate", "fbIds"]
 - !private ["PSo19UITextFieldDelegate", "idsLikes"]
 - !private ["PSo19UITextFieldDelegate", "imgPeople"]
@@ -2644,7 +2688,6 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "people"]
 - !private ["PSo19UITextFieldDelegate", "performSegueWithIdentifier"]
 - !private ["PSo19UITextFieldDelegate", "point"]
-- !private ["PSo19UITextFieldDelegate", "presentViewController"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITextFieldDelegate", "scrollViewDidEndDragging"]
@@ -2726,6 +2769,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "dispatch_async"]
 - !private ["PSo18UITraitEnvironment", "dispatch_get_main_queue"]
 - !private ["PSo18UITraitEnvironment", "fbId"]
+- ["PSo18UITraitEnvironment", "fbIdDesafiado"]
 - ["PSo18UITraitEnvironment", "fbIds"]
 - !private ["PSo18UITraitEnvironment", "hidesWhenStopped"]
 - ["PSo18UITraitEnvironment", "idsLikes"]
@@ -2743,7 +2787,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "people"]
 - !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - ["PSo18UITraitEnvironment", "point"]
-- !private ["PSo18UITraitEnvironment", "presentViewController"]
+- ["PSo18UITraitEnvironment", "prepareForSegue"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "registerNib"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
@@ -2816,6 +2860,7 @@ depends-member:
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - ["CSo16UIViewController", "CGFloat"]
+- !private ["CSo16UIViewController", "DesafiosViewController"]
 - !private ["CSo16UIViewController", "FBSDKAccessToken"]
 - ["CSo16UIViewController", "HTTPPostJSON"]
 - ["CSo16UIViewController", "HTTPsendRequest"]
@@ -2849,6 +2894,7 @@ depends-member:
 - ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIImageView"]
 - !private ["CSo16UIViewController", "UINib"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "UITextField"]
@@ -2858,9 +2904,11 @@ depends-member:
 - !private ["CSo16UIViewController", "addAction"]
 - ["CSo16UIViewController", "buttonDesafiarAction"]
 - ["CSo16UIViewController", "dataPerson"]
+- !private ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - !private ["CSo16UIViewController", "dispatch_async"]
 - !private ["CSo16UIViewController", "dispatch_get_main_queue"]
+- ["CSo16UIViewController", "fbIdDesafiado"]
 - ["CSo16UIViewController", "fbIds"]
 - ["CSo16UIViewController", "idsLikes"]
 - ["CSo16UIViewController", "imgPeople"]
@@ -2874,7 +2922,7 @@ depends-member:
 - !private ["CSo16UIViewController", "performSegueWithIdentifier"]
 - !private ["CSo16UIViewController", "personTableViewCell"]
 - ["CSo16UIViewController", "point"]
-- !private ["CSo16UIViewController", "presentViewController"]
+- ["CSo16UIViewController", "prepareForSegue"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
@@ -3051,6 +3099,7 @@ depends-nominal:
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- !private "C6Tatari22DesafiosViewController"
 - !private "VSs10Dictionary"
 - !private "PSs28DictionaryLiteralConvertible"
 - !private "Sd"
@@ -3155,6 +3204,7 @@ depends-nominal:
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- !private "CSo17UIStoryboardSegue"
 - !private "CSo11UITableView"
 - !private "CSo15UITableViewCell"
 - !private "OSC29UITableViewCellSeparatorStyle"
@@ -3256,4 +3306,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "26d08766e99700115cb5891bea5ab9f3"
+interface-hash: "eeb869755e690ecde4e41654ec0490f6"
