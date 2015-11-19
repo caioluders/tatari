@@ -18,13 +18,14 @@ class ConfigViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         let defaults = NSUserDefaults.standardUserDefaults()
-        let avatar_url = NSURL(string: defaults.stringForKey("fb_avatar")!)
-        let data = NSData(contentsOfURL: avatar_url!)
-        let avatar_img = Toucan(image: UIImage(data: data!)!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
-        let maskingImage = Toucan(image: UIImage(named: "check2.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
-        
-        self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
+//        let avatar_url = NSURL(string: defaults.stringForKey("fb_avatar")!)
+//        let data = NSData(contentsOfURL: avatar_url!)
+//        let avatar_img = Toucan(image: UIImage(data: data!)!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
+//        let maskingImage = Toucan(image: UIImage(named: "check2.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
+//        
+//        self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
     }
     
 

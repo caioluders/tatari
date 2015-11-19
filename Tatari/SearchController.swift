@@ -23,6 +23,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+        
         self.tableView.delegate = self
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)

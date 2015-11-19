@@ -21,6 +21,8 @@ class MainController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
 
         // Location
         locationManager.delegate = self
@@ -37,7 +39,6 @@ class MainController: UIViewController,CLLocationManagerDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Home"
         //self.navigationController?.navigationBarHidden = true
         // Accelerometer and Gyro
         motionManager.startAccelerometerUpdates()
