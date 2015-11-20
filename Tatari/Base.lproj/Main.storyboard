@@ -78,9 +78,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visibilidade" translatesAutoresizingMaskIntoConstraints="NO" id="nCa-Rg-w41">
                                 <rect key="frame" x="86" y="303" width="203" height="61"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visibilidade check text" translatesAutoresizingMaskIntoConstraints="NO" id="4Vk-ox-dVp">
-                                <rect key="frame" x="34" y="388" width="207" height="40"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="AK2-Re-L5e">
                                 <rect key="frame" x="161" y="455" width="66" height="13"/>
                             </imageView>
@@ -114,20 +111,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
                                 <rect key="frame" x="129" y="109" width="111" height="173"/>
                             </imageView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQO-QO-3s1">
-                                <rect key="frame" x="226" y="372" width="51" height="31"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rq8-GW-AjH">
-                                <rect key="frame" x="226" y="411" width="51" height="31"/>
-                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FML-KG-D1x">
+                                <rect key="frame" x="48" y="388" width="272" height="29"/>
+                                <segments>
+                                    <segment title="Ninguém"/>
+                                    <segment title="Amigos"/>
+                                    <segment title="Todo mundo"/>
+                                </segments>
+                                <connections>
+                                    <action selector="seg_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="mDu-0q-lyk"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Configurações" id="nng-jt-tyG"/>
                     <connections>
-                        <outlet property="all_switch" destination="JQO-QO-3s1" id="cpA-YG-7d4"/>
-                        <outlet property="friends_switch" destination="Rq8-GW-AjH" id="8Hz-c0-2fJ"/>
                         <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
+                        <outlet property="visi_control" destination="FML-KG-D1x" id="HJd-SE-sPJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -543,6 +544,5 @@
         <image name="tabPesquisa" width="30" height="30"/>
         <image name="tabTatari" width="31" height="31"/>
         <image name="visibilidade" width="187" height="48"/>
-        <image name="visibilidade check text" width="125" height="36"/>
     </resources>
 </document>

@@ -6,14 +6,14 @@
 //  Copyright © 2015 Caio Araújo. All rights reserved.
 //
 
-import Toucan
+//import Toucan
 import UIKit
 
 class ConfigViewController: UIViewController {
 
-    @IBOutlet weak var all_switch: UISwitch!
     @IBOutlet weak var pin_avatar: UIImageView!
-    @IBOutlet weak var friends_switch: UISwitch!
+
+    @IBOutlet weak var visi_control: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,4 +58,5 @@ class ConfigViewController: UIViewController {
         
         return maskedImage
     }
+
 }
