@@ -20,6 +20,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     var dataPerson: [(String, UIImage, String)] = []
     var idsLikes: [String] = []
     var point : NSNumber = 0
+    var fbIdDesafiado = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -210,9 +212,21 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         })
         alertController.addAction(cancelar)
         
-        presentViewController(alertController, animated: true, completion: nil)
+        //presentViewController(alertController, animated: true, completion: nil)
+        self.fbIdDesafiado = self.fbIds[sender.tag]
+        self.performSegueWithIdentifier("callChallengeTable", sender: self)
        
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "callChallengeTable" {
+            var vc = segue.destinationViewController as! DesafiosViewController
+            vc.fbIdDesafiado = self.fbIdDesafiado //you can do whatever you want with it in the 2nd VC
+        }
+    }
+    
+  
+    
     
     func send_chall(fb_id:NSString , challenge_desc:NSString) -> Void {
         let mutable_result =  NSMutableDictionary()
@@ -227,6 +241,10 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 150
+    }
+    
+    override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        
     }
 
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{

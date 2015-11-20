@@ -7,6 +7,8 @@
     <customFonts key="customFonts">
         <mutableArray key="Rodina-Regular.otf">
             <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -57,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="-1272.5" y="941.5"/>
         </scene>
-        <!--Configurações-->
+        <!--Ajustes-->
         <scene sceneID="VYA-Rh-qay">
             <objects>
                 <viewController id="3Ai-Qg-ERc" customClass="ConfigViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,9 +71,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Configuracoes" translatesAutoresizingMaskIntoConstraints="NO" id="gJx-8K-xxT">
-                                <rect key="frame" x="112" y="17" width="150" height="31"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-yK-xQa">
                                 <rect key="frame" x="0.0" y="139" width="375" height="104"/>
                             </imageView>
@@ -125,7 +124,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Configurações" id="nng-jt-tyG"/>
+                    <navigationItem key="navigationItem" title="Ajustes" id="nng-jt-tyG"/>
                     <connections>
                         <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
                         <outlet property="visi_control" destination="FML-KG-D1x" id="HJd-SE-sPJ"/>
@@ -147,9 +146,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bepifantasy_smaller" translatesAutoresizingMaskIntoConstraints="NO" id="zj7-lJ-0qI">
-                                <rect key="frame" x="128" y="17" width="113" height="32"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-e2-9jj">
                                 <rect key="frame" x="304" y="65" width="41" height="41"/>
                                 <state key="normal" title="settings" image="conf icon"/>
@@ -226,9 +222,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Avisos" translatesAutoresizingMaskIntoConstraints="NO" id="i8T-qm-iMN">
-                                <rect key="frame" x="128" y="17" width="113" height="31"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CUx-xE-tIn">
                                 <rect key="frame" x="133" y="64" width="335" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -287,9 +280,6 @@
                                     <outlet property="delegate" destination="OTj-vo-FEF" id="6cK-SM-1yI"/>
                                 </connections>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Concurso" translatesAutoresizingMaskIntoConstraints="NO" id="WMt-ey-lJc">
-                                <rect key="frame" x="128" y="17" width="113" height="31"/>
-                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8x3-WP-VB1">
                                 <rect key="frame" x="282" y="314" width="37" height="37"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -335,9 +325,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pessoas" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-eW-2x6">
-                                <rect key="frame" x="113" y="17" width="150" height="31"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesquisar por pessoas" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-Mx-NWb">
                                 <rect key="frame" x="30" y="72" width="540" height="30"/>
                                 <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="14"/>
@@ -384,14 +371,14 @@
                         <outlet property="activityLoadingSearch" destination="S4J-bd-dmI" id="9mh-CJ-UYA"/>
                         <outlet property="tableView" destination="DhB-Os-weJ" id="Cm6-bz-SH7"/>
                         <outlet property="txtFieldSearch" destination="mPI-Mx-NWb" id="UNT-Le-Xkh"/>
-                        <segue destination="ncg-kN-VOe" kind="show" identifier="oi" id="l4Z-mQ-ZKs"/>
+                        <segue destination="ncg-kN-VOe" kind="show" identifier="callChallengeTable" id="l4Z-mQ-ZKs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGB-aw-DOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1194" y="2609"/>
         </scene>
-        <!--Desafios View Controller-->
+        <!--Title-->
         <scene sceneID="B9D-sA-I5v">
             <objects>
                 <viewController storyboardIdentifier="desafios" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ncg-kN-VOe" customClass="DesafiosViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -403,16 +390,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Desafios" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-Mw-RSz">
-                                <rect key="frame" x="27" y="92" width="320" height="510"/>
-                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dsW-zh-ksh">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="lHA-My-3Oh">
+                                    <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellDesafio" textLabel="aDf-KG-LdF" imageView="sYC-r6-JtH" style="IBUITableViewCellStyleDefault" id="dVg-OX-ZK3">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dVg-OX-ZK3" id="1yT-AV-83l">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aDf-KG-LdF">
+                                                    <rect key="frame" x="72" y="0.0" width="513" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Dado 1" id="sYC-r6-JtH">
+                                                    <rect key="frame" x="15" y="0.0" width="42" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ncg-kN-VOe" id="fed-Jt-jx7"/>
+                                    <outlet property="delegate" destination="ncg-kN-VOe" id="6XP-hv-XOc"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Desafios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLn-9O-5NY">
+                                <rect key="frame" x="269" y="87" width="52" height="21"/>
+                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dsW-zh-ksh" secondAttribute="trailing" id="6Lm-66-7Kn"/>
+                            <constraint firstItem="dsW-zh-ksh" firstAttribute="bottom" secondItem="6JM-4L-e5p" secondAttribute="top" id="9vX-UF-9Bu"/>
+                            <constraint firstItem="VLn-9O-5NY" firstAttribute="top" secondItem="36o-01-a0R" secondAttribute="bottom" constant="23" id="KsC-O5-nI9"/>
+                            <constraint firstItem="VLn-9O-5NY" firstAttribute="centerX" secondItem="EWw-01-Lcg" secondAttribute="centerX" id="VXC-np-cw4"/>
+                            <constraint firstItem="dsW-zh-ksh" firstAttribute="leading" secondItem="EWw-01-Lcg" secondAttribute="leading" id="lFf-fi-Gsx"/>
+                            <constraint firstItem="dsW-zh-ksh" firstAttribute="top" secondItem="36o-01-a0R" secondAttribute="bottom" id="zUs-db-cYa"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="uqI-dB-erD">
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="ucK-Og-5iL"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="dsW-zh-ksh" id="fkz-2i-PBB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uxz-FS-vbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="1833"/>
+            <point key="canvasLocation" x="1902" y="1845"/>
         </scene>
         <!--Item-->
         <scene sceneID="nBN-dx-3bQ">
@@ -511,15 +551,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Avisos" width="60" height="25"/>
         <image name="Background 2" width="375" height="104"/>
         <image name="Bepifantasy" width="257" height="55"/>
-        <image name="Bepifantasy_smaller" width="111" height="25"/>
-        <image name="Concurso" width="89" height="21"/>
-        <image name="Configuracoes" width="134" height="25"/>
-        <image name="Desafios" width="320" height="510"/>
+        <image name="Dado 1" width="42" height="42"/>
         <image name="Participar" width="112" height="22"/>
-        <image name="Pessoas" width="78" height="21"/>
         <image name="Pin Avatar" width="111" height="173"/>
         <image name="Pin Azul" width="35" height="54"/>
         <image name="Pin Laranja" width="35" height="54"/>
