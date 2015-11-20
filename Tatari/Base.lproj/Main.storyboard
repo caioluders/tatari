@@ -9,6 +9,8 @@
             <string>Rodina-Regular</string>
             <string>Rodina-Regular</string>
             <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -79,61 +81,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-yK-xQa">
-                                <rect key="frame" x="0.0" y="139" width="375" height="104"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-yK-xQa">
+                                <rect key="frame" x="113" y="144" width="375" height="104"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visibilidade" translatesAutoresizingMaskIntoConstraints="NO" id="nCa-Rg-w41">
-                                <rect key="frame" x="86" y="303" width="203" height="61"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visibilidade check text" translatesAutoresizingMaskIntoConstraints="NO" id="4Vk-ox-dVp">
-                                <rect key="frame" x="34" y="388" width="207" height="40"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="AK2-Re-L5e">
-                                <rect key="frame" x="161" y="455" width="66" height="13"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCg-UX-8d2">
-                                <rect key="frame" x="80" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Marrom"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq0-Hi-vMb">
-                                <rect key="frame" x="125" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Pink"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brV-Rx-n7l">
-                                <rect key="frame" x="170" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Verde"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vba-iZ-Zr9">
-                                <rect key="frame" x="215" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Azul"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpq-nU-WId">
-                                <rect key="frame" x="260" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Laranja"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtK-UP-MIH">
-                                <rect key="frame" x="154" y="583" width="60" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtK-UP-MIH">
+                                <rect key="frame" x="270" y="491" width="60" height="22"/>
                                 <state key="normal" image="log out"/>
                                 <connections>
                                     <action selector="btLogoutPressed:" destination="3Ai-Qg-ERc" eventType="touchUpInside" id="Pgt-a1-cCk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
-                                <rect key="frame" x="129" y="109" width="111" height="173"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
+                                <rect key="frame" x="245" y="115" width="111" height="173"/>
                             </imageView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JQO-QO-3s1">
-                                <rect key="frame" x="226" y="372" width="51" height="31"/>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rq8-GW-AjH">
-                                <rect key="frame" x="226" y="411" width="51" height="31"/>
-                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="visibilidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBH-BG-pLV">
+                                <rect key="frame" x="195" y="290" width="221" height="73"/>
+                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="53"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYz-wB-MuW">
+                                <rect key="frame" x="201" y="348" width="198" height="21"/>
+                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.51372549019607838" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eZ5-69-4m7" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="51" id="6Wf-MV-nS1"/>
+                            <constraint firstItem="qBH-BG-pLV" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="226" id="6fl-JE-3Cw"/>
+                            <constraint firstItem="NYz-wB-MuW" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="IsP-vp-BEd"/>
+                            <constraint firstItem="yns-Z3-up9" firstAttribute="top" secondItem="dtK-UP-MIH" secondAttribute="bottom" constant="38" id="RQv-iK-kEK"/>
+                            <constraint firstItem="NYz-wB-MuW" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="284" id="TaP-em-iig"/>
+                            <constraint firstItem="eZ5-69-4m7" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="Xtr-bM-kaT"/>
+                            <constraint firstItem="dtK-UP-MIH" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="ap6-SF-TKe"/>
+                            <constraint firstItem="qBH-BG-pLV" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="bgx-Pf-pm3"/>
+                            <constraint firstItem="JcL-yK-xQa" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="80" id="lBC-4O-x0v"/>
+                            <constraint firstItem="JcL-yK-xQa" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="z4g-9c-Ybr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ajustes" id="nng-jt-tyG"/>
                     <connections>
-                        <outlet property="all_switch" destination="JQO-QO-3s1" id="cpA-YG-7d4"/>
-                        <outlet property="friends_switch" destination="Rq8-GW-AjH" id="8Hz-c0-2fJ"/>
                         <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
                     </connections>
                 </viewController>
@@ -277,11 +266,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-F9-M7U">
-                                <rect key="frame" x="113" y="64" width="375" height="487"/>
+                                <rect key="frame" x="113" y="106" width="375" height="445"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="0g5-tl-Mcj"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="fxk-6w-sBf" imageView="NFB-Dj-jKm" style="IBUITableViewCellStyleDefault" id="mfG-03-QL3">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mfG-03-QL3" id="p4t-Mz-TNC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Oi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fxk-6w-sBf">
+                                                    <rect key="frame" x="66" y="0.0" width="294" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="DesafioCellIcon" id="NFB-Dj-jKm">
+                                                    <rect key="frame" x="15" y="3" width="36" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="OTj-vo-FEF" id="bPc-rC-CX6"/>
                                     <outlet property="delegate" destination="OTj-vo-FEF" id="6cK-SM-1yI"/>
@@ -302,12 +314,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VWb-F9-M7U" firstAttribute="centerX" secondItem="7qh-6H-iOM" secondAttribute="centerX" id="1jZ-yh-eHt"/>
-                            <constraint firstItem="VWb-F9-M7U" firstAttribute="centerY" secondItem="7qh-6H-iOM" secondAttribute="centerY" constant="7.5" id="1pC-83-FnU"/>
-                            <constraint firstItem="8x3-WP-VB1" firstAttribute="centerY" secondItem="VWb-F9-M7U" secondAttribute="centerY" constant="25" id="6TH-kS-wG7"/>
-                            <constraint firstItem="Sri-rP-8c5" firstAttribute="top" secondItem="VWb-F9-M7U" secondAttribute="top" constant="8" id="D69-RR-fWS"/>
+                            <constraint firstItem="VWb-F9-M7U" firstAttribute="centerY" secondItem="7qh-6H-iOM" secondAttribute="centerY" constant="28.5" id="1pC-83-FnU"/>
+                            <constraint firstItem="8x3-WP-VB1" firstAttribute="centerY" secondItem="VWb-F9-M7U" secondAttribute="centerY" constant="4" id="6TH-kS-wG7"/>
+                            <constraint firstItem="Sri-rP-8c5" firstAttribute="top" secondItem="VWb-F9-M7U" secondAttribute="top" constant="-34" id="D69-RR-fWS"/>
                             <constraint firstItem="8x3-WP-VB1" firstAttribute="centerX" secondItem="VWb-F9-M7U" secondAttribute="centerX" id="H4g-QV-Zez"/>
                             <constraint firstItem="Sri-rP-8c5" firstAttribute="leading" secondItem="VWb-F9-M7U" secondAttribute="trailing" constant="-142" id="ZHq-4i-UtD"/>
-                            <constraint firstItem="VWb-F9-M7U" firstAttribute="height" secondItem="7qh-6H-iOM" secondAttribute="height" constant="-113" id="rMs-iB-QOc"/>
+                            <constraint firstItem="VWb-F9-M7U" firstAttribute="height" secondItem="7qh-6H-iOM" secondAttribute="height" constant="-155" id="rMs-iB-QOc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Concurso" id="Cgl-p9-5Ab"/>
@@ -461,11 +473,11 @@
             </objects>
             <point key="canvasLocation" x="1902" y="1845"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="nBN-dx-3bQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G7W-Uo-V3P" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabConf" id="d7L-st-bxW"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabConf" id="d7L-st-bxW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jcs-3O-zOk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -480,11 +492,11 @@
             </objects>
             <point key="canvasLocation" x="-1600.5" y="125.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="fPr-I8-MRe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="maM-GV-WRX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabFeed" id="6bb-hb-GPh"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabFeed" id="6bb-hb-GPh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="guR-tO-RXh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -499,11 +511,11 @@
             </objects>
             <point key="canvasLocation" x="-71.5" y="61.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="TOn-HH-2Dd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ofB-Px-KRP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabConcurso" id="Bb2-7V-qux"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabConcurso" id="Bb2-7V-qux"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HbI-d3-dtc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -518,11 +530,11 @@
             </objects>
             <point key="canvasLocation" x="-414.5" y="889.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="wfc-De-VX2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hft-FE-Yg2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabTatari" id="avl-1V-G6D"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabHome" id="avl-1V-G6D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZHz-2P-kOe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -537,11 +549,11 @@
             </objects>
             <point key="canvasLocation" x="-1272.5" y="1853.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="mk1-eE-bnP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4gX-5Z-Kgl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabPesquisa" id="XcQ-K4-yEl"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabPesquisa" id="XcQ-K4-yEl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bnT-bO-v9O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -560,14 +572,9 @@
     <resources>
         <image name="Background 2" width="375" height="104"/>
         <image name="Dado 1" width="42" height="42"/>
+        <image name="DesafioCellIcon" width="36" height="36"/>
         <image name="Participar" width="112" height="22"/>
         <image name="Pin Avatar" width="111" height="173"/>
-        <image name="Pin Azul" width="35" height="54"/>
-        <image name="Pin Laranja" width="35" height="54"/>
-        <image name="Pin Marrom" width="35" height="54"/>
-        <image name="Pin Pink" width="35" height="54"/>
-        <image name="Pin Verde" width="35" height="54"/>
-        <image name="Pontos" width="66" height="13"/>
         <image name="banheiro" width="42" height="50"/>
         <image name="bar" width="42" height="50"/>
         <image name="concurso icon" width="33" height="41"/>
@@ -582,10 +589,8 @@
         <image name="tabConcurso" width="25" height="30"/>
         <image name="tabConf" width="30" height="30"/>
         <image name="tabFeed" width="30" height="30"/>
+        <image name="tabHome" width="29" height="30"/>
         <image name="tabPesquisa" width="30" height="30"/>
-        <image name="tabTatari" width="31" height="31"/>
         <image name="tatari" width="201" height="94"/>
-        <image name="visibilidade" width="187" height="48"/>
-        <image name="visibilidade check text" width="125" height="36"/>
     </resources>
 </document>

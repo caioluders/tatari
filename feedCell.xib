@@ -39,6 +39,9 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="Xad-kk-LhB">
+                        <rect key="frame" x="127" y="109" width="66" height="13"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="8ZR-JP-HKq" firstAttribute="leading" secondItem="Dn1-SY-jh2" secondAttribute="leadingMargin" constant="31" id="1Z4-TU-dec"/>
@@ -61,5 +64,6 @@
     </objects>
     <resources>
         <image name="DesafioCellIcon" width="36" height="36"/>
+        <image name="Pontos" width="66" height="13"/>
     </resources>
 </document>

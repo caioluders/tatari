@@ -33,6 +33,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         
         //self.tableView.separatorStyle = .None
+        self.tableView.separatorColor = UIColor(patternImage: UIImage(named: "Pontos")!)
         //self.tableView.estimatedRowHeight = 150.0
         //self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 330.0;
