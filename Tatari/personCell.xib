@@ -18,11 +18,11 @@
             <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JHf-Nh-qFc" id="XBd-Al-LgS">
-                <rect key="frame" x="0.0" y="0.0" width="335" height="149.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="335" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZ7-bw-sjg">
-                        <rect key="frame" x="0.0" y="0.5" width="335" height="128.5"/>
+                        <rect key="frame" x="0.0" y="1" width="335" height="129"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="curtir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBe-tw-FTb">
