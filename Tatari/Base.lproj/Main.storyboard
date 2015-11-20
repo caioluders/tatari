@@ -454,11 +454,11 @@
             </objects>
             <point key="canvasLocation" x="1902" y="1845"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="nBN-dx-3bQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G7W-Uo-V3P" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabConf" id="d7L-st-bxW"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabConf" id="d7L-st-bxW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jcs-3O-zOk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -473,11 +473,11 @@
             </objects>
             <point key="canvasLocation" x="-1600.5" y="125.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="fPr-I8-MRe">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="maM-GV-WRX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabFeed" id="6bb-hb-GPh"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabFeed" id="6bb-hb-GPh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="guR-tO-RXh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -492,11 +492,11 @@
             </objects>
             <point key="canvasLocation" x="-71.5" y="61.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="TOn-HH-2Dd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ofB-Px-KRP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabConcurso" id="Bb2-7V-qux"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabConcurso" id="Bb2-7V-qux"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HbI-d3-dtc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -511,11 +511,11 @@
             </objects>
             <point key="canvasLocation" x="-414.5" y="889.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="wfc-De-VX2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hft-FE-Yg2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabTatari" id="avl-1V-G6D"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabTatari" id="avl-1V-G6D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZHz-2P-kOe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -530,11 +530,11 @@
             </objects>
             <point key="canvasLocation" x="-1272.5" y="1853.5"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="mk1-eE-bnP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4gX-5Z-Kgl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="tabPesquisa" id="XcQ-K4-yEl"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabPesquisa" id="XcQ-K4-yEl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bnT-bO-v9O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

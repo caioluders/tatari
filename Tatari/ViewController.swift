@@ -69,7 +69,7 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
                     let mutable_result =  NSMutableDictionary(dictionary:resultdict)
                     mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
                     let push_woosh = PushNotificationManager.pushManager()
-                    
+                    mutable_result.setObject(push_woosh.getPushToken(),forKey:"device_token")
                     
                     
                     
