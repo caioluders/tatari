@@ -87,12 +87,13 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }else{
             cell.imgMessageTagType.image = UIImage(named: "OrganizadorCellIcon")
         }
-        
+        /**
         cell.cnstHeightBorderView.constant = cell.txtBody.frame.height + 70
         print(cell.cnstHeightBorderView.constant )
         cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
         cell.borderView.layer.borderWidth = 1
         cell.borderView.layer.cornerRadius = 12
+        **/
 //
 //        let cell_height = cell.txtBody.frame.height + 140
 //        self.computeCellHeight(cell_height, indexArray: indexPath.row)

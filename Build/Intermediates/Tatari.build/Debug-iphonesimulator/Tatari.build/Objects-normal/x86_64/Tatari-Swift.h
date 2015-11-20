@@ -275,6 +275,7 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 - (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)unwindForSegue:(UIStoryboardSegue * __nonnull)unwindSegue towardsViewController:(UIViewController * __nonnull)subsequentVC;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;

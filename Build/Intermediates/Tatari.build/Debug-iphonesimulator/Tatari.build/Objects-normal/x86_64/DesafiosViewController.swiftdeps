@@ -6,49 +6,49 @@ provides-nominal:
 provides-member:
 - ["C6Tatari22DesafiosViewController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "fbIdDesafiado"
-- "didReceiveMemoryWarning"
-- "imageArray"
-- "send_chall"
-- "HTTPPostJSON"
 - "viewDidLoad"
-- "HTTPsendRequest"
-- "textArray"
+- "HTTPPostJSON"
+- "imageArray"
 - "JSONStringify"
+- "didReceiveMemoryWarning"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "HTTPsendRequest"
+- "fbIdDesafiado"
+- "textArray"
+- "send_chall"
 depends-top-level:
-- !private "FBSDKAccessToken"
-- "NSMutableURLRequest"
-- "DesafiosViewController"
-- "BooleanLiteralType"
-- "Int"
-- !private "!="
 - !private "print"
-- "UITableViewDelegate"
+- !private "FBSDKAccessToken"
+- "Void"
 - "UIViewController"
-- "UITableViewDataSource"
-- !private "UITableViewAutomaticDimension"
+- !private "NSURLSession"
+- !private "NSUTF8StringEncoding"
+- "StringLiteralType"
 - "UITableViewCell"
+- "Bool"
+- "NSIndexPath"
 - !private "UIImage"
+- !private "NSJSONSerialization"
+- "AnyObject"
+- !private "UITableViewAutomaticDimension"
+- "Int"
+- "NSString"
+- "DesafiosViewController"
+- "NSMutableURLRequest"
+- !private "BooleanLiteralType"
+- "UITableViewDelegate"
+- "UITableViewDataSource"
+- !private "NSData"
+- "UITableView"
+- "NSMutableArray"
+- !private "!="
 - !private "NSJSONWritingOptions"
+- !private "NSURL"
 - "String"
 - !private "NSMutableDictionary"
-- "Void"
-- "NSIndexPath"
-- "UITableView"
-- "AnyObject"
-- !private "NSUTF8StringEncoding"
-- !private "NSURL"
-- !private "NSJSONSerialization"
-- "NSMutableArray"
-- !private "NSURLSession"
-- "NSString"
-- "StringLiteralType"
-- "Bool"
-- !private "NSData"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "HTTPBody"]
@@ -78,6 +78,7 @@ depends-member:
 - !private ["PSs9AnyObject", "deinit"]
 - !private ["PSs9AnyObject", "dequeueReusableCellWithIdentifier"]
 - ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
 - !private ["PSs9AnyObject", "estimatedRowHeight"]
 - ["PSs9AnyObject", "fbIdDesafiado"]
 - !private ["PSs9AnyObject", "image"]
@@ -89,7 +90,6 @@ depends-member:
 - !private ["PSs9AnyObject", "localizedDescription"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - !private ["PSs9AnyObject", "objectAtIndex"]
-- !private ["PSs9AnyObject", "performSegueWithIdentifier"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "resume"]
 - !private ["PSs9AnyObject", "row"]
@@ -154,6 +154,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "dataWithJSONObject"]
 - !private ["PSs11CVarArgType", "dequeueReusableCellWithIdentifier"]
 - ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
 - !private ["PSs11CVarArgType", "estimatedRowHeight"]
 - ["PSs11CVarArgType", "fbIdDesafiado"]
 - !private ["PSs11CVarArgType", "image"]
@@ -165,7 +166,6 @@ depends-member:
 - !private ["PSs11CVarArgType", "localizedDescription"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["PSs11CVarArgType", "objectAtIndex"]
-- !private ["PSs11CVarArgType", "performSegueWithIdentifier"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "resume"]
 - !private ["PSs11CVarArgType", "row"]
@@ -227,6 +227,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "dataWithJSONObject"]
 - !private ["PSs23CustomStringConvertible", "dequeueReusableCellWithIdentifier"]
 - ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
 - !private ["PSs23CustomStringConvertible", "estimatedRowHeight"]
 - ["PSs23CustomStringConvertible", "fbIdDesafiado"]
 - !private ["PSs23CustomStringConvertible", "image"]
@@ -238,7 +239,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["PSs23CustomStringConvertible", "objectAtIndex"]
-- !private ["PSs23CustomStringConvertible", "performSegueWithIdentifier"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "resume"]
 - !private ["PSs23CustomStringConvertible", "row"]
@@ -293,12 +293,12 @@ depends-member:
 - ["C6Tatari22DesafiosViewController", "Void"]
 - ["C6Tatari22DesafiosViewController", "deinit"]
 - ["C6Tatari22DesafiosViewController", "didReceiveMemoryWarning"]
+- !private ["C6Tatari22DesafiosViewController", "dismissViewControllerAnimated"]
 - ["C6Tatari22DesafiosViewController", "fbIdDesafiado"]
 - ["C6Tatari22DesafiosViewController", "imageArray"]
 - ["C6Tatari22DesafiosViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C6Tatari22DesafiosViewController", "init"]
 - ["C6Tatari22DesafiosViewController", "numberOfSectionsInTableView"]
-- !private ["C6Tatari22DesafiosViewController", "performSegueWithIdentifier"]
 - !private ["C6Tatari22DesafiosViewController", "print"]
 - ["C6Tatari22DesafiosViewController", "scrollViewDidEndDecelerating"]
 - ["C6Tatari22DesafiosViewController", "scrollViewDidEndDragging"]
@@ -349,6 +349,7 @@ depends-member:
 - !private ["PSs9Equatable", "dataWithJSONObject"]
 - !private ["PSs9Equatable", "dequeueReusableCellWithIdentifier"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
 - !private ["PSs9Equatable", "estimatedRowHeight"]
 - ["PSs9Equatable", "fbIdDesafiado"]
 - !private ["PSs9Equatable", "image"]
@@ -360,7 +361,6 @@ depends-member:
 - !private ["PSs9Equatable", "localizedDescription"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "objectAtIndex"]
-- !private ["PSs9Equatable", "performSegueWithIdentifier"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "resume"]
 - !private ["PSs9Equatable", "row"]
@@ -424,6 +424,7 @@ depends-member:
 - !private ["PSs8Hashable", "dataWithJSONObject"]
 - !private ["PSs8Hashable", "dequeueReusableCellWithIdentifier"]
 - ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
 - !private ["PSs8Hashable", "estimatedRowHeight"]
 - ["PSs8Hashable", "fbIdDesafiado"]
 - !private ["PSs8Hashable", "image"]
@@ -435,7 +436,6 @@ depends-member:
 - !private ["PSs8Hashable", "localizedDescription"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - !private ["PSs8Hashable", "objectAtIndex"]
-- !private ["PSs8Hashable", "performSegueWithIdentifier"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "resume"]
 - !private ["PSs8Hashable", "row"]
@@ -498,6 +498,7 @@ depends-member:
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
 - !private ["PSo8NSCoding", "dequeueReusableCellWithIdentifier"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
 - !private ["PSo8NSCoding", "estimatedRowHeight"]
 - ["PSo8NSCoding", "fbIdDesafiado"]
 - !private ["PSo8NSCoding", "image"]
@@ -508,7 +509,6 @@ depends-member:
 - !private ["PSo8NSCoding", "localizedDescription"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "objectAtIndex"]
-- !private ["PSo8NSCoding", "performSegueWithIdentifier"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "row"]
 - !private ["PSo8NSCoding", "rowHeight"]
@@ -570,12 +570,12 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewAutomaticDimension"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
 - ["PSo26NSExtensionRequestHandling", "fbIdDesafiado"]
 - ["PSo26NSExtensionRequestHandling", "imageArray"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
-- !private ["PSo26NSExtensionRequestHandling", "performSegueWithIdentifier"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
@@ -660,6 +660,7 @@ depends-member:
 - !private ["CSo8NSObject", "dataWithJSONObject"]
 - !private ["CSo8NSObject", "dequeueReusableCellWithIdentifier"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
 - !private ["CSo8NSObject", "estimatedRowHeight"]
 - ["CSo8NSObject", "fbIdDesafiado"]
 - !private ["CSo8NSObject", "image"]
@@ -671,7 +672,6 @@ depends-member:
 - !private ["CSo8NSObject", "localizedDescription"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "objectAtIndex"]
-- !private ["CSo8NSObject", "performSegueWithIdentifier"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "resume"]
 - !private ["CSo8NSObject", "row"]
@@ -726,6 +726,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "dataWithJSONObject"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCellWithIdentifier"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
 - !private ["PSo16NSObjectProtocol", "estimatedRowHeight"]
 - ["PSo16NSObjectProtocol", "fbIdDesafiado"]
 - !private ["PSo16NSObjectProtocol", "image"]
@@ -737,7 +738,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "objectAtIndex"]
-- !private ["PSo16NSObjectProtocol", "performSegueWithIdentifier"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "resume"]
 - !private ["PSo16NSObjectProtocol", "row"]
@@ -849,6 +849,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UITableViewAutomaticDimension"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
 - !private ["PSo21UIAppearanceContainer", "estimatedRowHeight"]
 - ["PSo21UIAppearanceContainer", "fbIdDesafiado"]
 - !private ["PSo21UIAppearanceContainer", "image"]
@@ -857,7 +858,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
-- !private ["PSo21UIAppearanceContainer", "performSegueWithIdentifier"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "rowHeight"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
@@ -898,12 +898,12 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UITableViewAutomaticDimension"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
 - ["PSo18UIContentContainer", "fbIdDesafiado"]
 - ["PSo18UIContentContainer", "imageArray"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
-- !private ["PSo18UIContentContainer", "performSegueWithIdentifier"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
@@ -956,6 +956,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UIFocusEnvironment", "estimatedRowHeight"]
 - ["PSo18UIFocusEnvironment", "fbIdDesafiado"]
 - !private ["PSo18UIFocusEnvironment", "image"]
@@ -964,7 +965,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
-- !private ["PSo18UIFocusEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "rowHeight"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
@@ -1019,6 +1019,7 @@ depends-member:
 - ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "dequeueReusableCellWithIdentifier"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
 - !private ["CSo11UIResponder", "estimatedRowHeight"]
 - ["CSo11UIResponder", "fbIdDesafiado"]
 - !private ["CSo11UIResponder", "image"]
@@ -1027,7 +1028,6 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
-- !private ["CSo11UIResponder", "performSegueWithIdentifier"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "rowHeight"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
@@ -1069,11 +1069,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewAutomaticDimension"]
+- !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo20UIScrollViewDelegate", "fbIdDesafiado"]
 - !private ["PSo20UIScrollViewDelegate", "imageArray"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
-- !private ["PSo20UIScrollViewDelegate", "performSegueWithIdentifier"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
@@ -1110,12 +1110,12 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UITableViewAutomaticDimension"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
 - ["PSo16UIStateRestoring", "fbIdDesafiado"]
 - ["PSo16UIStateRestoring", "imageArray"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
-- !private ["PSo16UIStateRestoring", "performSegueWithIdentifier"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
@@ -1157,11 +1157,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UITableViewAutomaticDimension"]
+- !private ["PSo21UITableViewDataSource", "dismissViewControllerAnimated"]
 - !private ["PSo21UITableViewDataSource", "fbIdDesafiado"]
 - !private ["PSo21UITableViewDataSource", "imageArray"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
-- !private ["PSo21UITableViewDataSource", "performSegueWithIdentifier"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDragging"]
@@ -1197,11 +1197,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UITableViewAutomaticDimension"]
+- !private ["PSo19UITableViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo19UITableViewDelegate", "fbIdDesafiado"]
 - !private ["PSo19UITableViewDelegate", "imageArray"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
-- !private ["PSo19UITableViewDelegate", "performSegueWithIdentifier"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDragging"]
@@ -1239,6 +1239,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
 - !private ["PSo18UITraitEnvironment", "estimatedRowHeight"]
 - ["PSo18UITraitEnvironment", "fbIdDesafiado"]
 - !private ["PSo18UITraitEnvironment", "image"]
@@ -1247,7 +1248,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
-- !private ["PSo18UITraitEnvironment", "performSegueWithIdentifier"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "rowHeight"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
@@ -1303,12 +1303,12 @@ depends-member:
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
 - ["CSo16UIViewController", "fbIdDesafiado"]
 - ["CSo16UIViewController", "imageArray"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
-- !private ["CSo16UIViewController", "performSegueWithIdentifier"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]

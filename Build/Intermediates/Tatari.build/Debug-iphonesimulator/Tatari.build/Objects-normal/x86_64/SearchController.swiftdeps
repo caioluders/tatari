@@ -6,89 +6,90 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
-- "idsLikes"
-- "fbIdDesafiado"
-- "activityLoadingSearch"
-- "JSONStringify"
-- "viewDidLoad"
 - "txtFieldSearch"
+- "idsLikes"
 - "viewDidAppear"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "showChallengeView"
-- "point"
-- "imgPeople"
 - "HTTPPostJSON"
-- "HTTPsendRequest"
-- "people"
-- "send_chall"
 - "textFieldShouldReturn"
-- "didReceiveMemoryWarning"
-- "buttonDesafiarAction"
+- "fbIds"
+- "activityLoadingSearch"
+- "unwindForSegue"
 - "textFieldDidChange"
 - "search_people"
 - "prepareForSegue"
-- "fbIds"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "buttonDesafiarAction"
+- "HTTPsendRequest"
+- "point"
+- "JSONStringify"
+- "people"
+- "imgPeople"
 - "spinner"
+- "viewDidLoad"
+- "send_chall"
+- "showChallengeView"
+- "fbIdDesafiado"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "print"
-- "StringLiteralType"
-- "UIViewController"
-- !private "FBSDKAccessToken"
-- "UITableViewCell"
-- !private "personTableViewCell"
-- !private "NSMutableDictionary"
-- !private "UIColor"
-- !private "DesafiosViewController"
-- "Int"
 - !private "UINib"
-- "UITableViewDelegate"
-- "NSNumber"
-- "UITableViewDataSource"
-- "AnyObject"
-- "UIButton"
-- !private "UIControlState"
-- "NSString"
-- !private "NSJSONWritingOptions"
-- "UITextFieldDelegate"
-- !private "NSJSONSerialization"
-- !private "UIAlertControllerStyle"
-- !private "UIImageView"
-- !private "Dictionary"
-- "SearchController"
-- !private "Array"
-- !private "NSURLSession"
-- "UIActivityIndicatorView"
-- !private "UIViewContentMode"
-- !private "dispatch_get_main_queue"
-- !private "dispatch_async"
-- !private "UIAlertController"
-- "String"
-- !private "UIAlertActionStyle"
-- "UIImage"
+- "StringLiteralType"
 - "Bool"
-- "NSMutableURLRequest"
-- !private "NSURL"
-- "UITableView"
-- !private "UIControlEvents"
-- !private "+"
-- !private "NSUTF8StringEncoding"
-- !private "=="
-- !private "JSON"
-- "UIStoryboardSegue"
-- !private "UIFont"
+- "UIActivityIndicatorView"
 - "NSIndexPath"
-- !private "BooleanLiteralType"
-- "CGFloat"
-- !private "NSUserDefaults"
-- !private "UIAlertAction"
-- "Void"
-- !private "NSFontAttributeName"
-- "UITextField"
+- !private "UIViewContentMode"
+- !private "UIAlertControllerStyle"
+- !private "+"
+- "UITableView"
+- !private "UIControlState"
+- !private "UIAlertController"
+- !private "NSMutableDictionary"
 - !private "NSData"
+- !private "NSURLSession"
+- "UITextFieldDelegate"
+- !private "BooleanLiteralType"
+- !private "dispatch_async"
+- !private "personTableViewCell"
+- !private "dispatch_get_main_queue"
+- "NSMutableURLRequest"
+- "UITextField"
+- "UITableViewCell"
+- "SearchController"
 - !private "!="
+- "UIStoryboardSegue"
+- !private "NSUTF8StringEncoding"
+- !private "UIImageView"
+- !private "NSJSONWritingOptions"
+- !private "print"
+- "CGFloat"
+- "UIViewController"
+- "Int"
+- !private "=="
+- !private "Dictionary"
+- !private "DesafiosViewController"
+- "UITableViewDataSource"
+- !private "Array"
+- !private "UIColor"
+- "UITableViewDelegate"
+- "Void"
+- !private "UIAlertAction"
+- !private "NSJSONSerialization"
+- "AnyObject"
+- !private "UIControlEvents"
+- "NSString"
+- !private "NSUserDefaults"
+- "NSNumber"
+- !private "UIAlertActionStyle"
+- "String"
+- !private "NSFontAttributeName"
+- "UIButton"
+- !private "UIFont"
+- "UIImage"
+- !private "FBSDKAccessToken"
+- !private "NSURL"
+- !private "JSON"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "Element"]
@@ -219,6 +220,7 @@ depends-member:
 - !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
 - ["PSs9AnyObject", "txtFieldSearch"]
+- ["PSs9AnyObject", "unwindForSegue"]
 - ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
@@ -411,6 +413,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
 - ["PSs11CVarArgType", "txtFieldSearch"]
+- ["PSs11CVarArgType", "unwindForSegue"]
 - ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
@@ -599,6 +602,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
 - ["PSs23CustomStringConvertible", "txtFieldSearch"]
+- ["PSs23CustomStringConvertible", "unwindForSegue"]
 - ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -765,6 +769,7 @@ depends-member:
 - !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
 - ["PSs9Equatable", "txtFieldSearch"]
+- ["PSs9Equatable", "unwindForSegue"]
 - ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
@@ -929,6 +934,7 @@ depends-member:
 - !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
 - ["PSs8Hashable", "txtFieldSearch"]
+- ["PSs8Hashable", "unwindForSegue"]
 - ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
@@ -1136,6 +1142,7 @@ depends-member:
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
 - ["PSo8NSCoding", "txtFieldSearch"]
+- ["PSo8NSCoding", "unwindForSegue"]
 - ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -1237,6 +1244,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldEndEditing"]
 - ["PSo26NSExtensionRequestHandling", "textFieldShouldReturn"]
 - ["PSo26NSExtensionRequestHandling", "txtFieldSearch"]
+- ["PSo26NSExtensionRequestHandling", "unwindForSegue"]
 - ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
@@ -1309,6 +1317,7 @@ depends-member:
 - ["CSo8NSObject", "UITableViewCell"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "UIViewContentMode"]
+- ["CSo8NSObject", "UIViewController"]
 - ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "activityLoadingSearch"]
 - !private ["CSo8NSObject", "addAction"]
@@ -1406,6 +1415,7 @@ depends-member:
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
 - ["CSo8NSObject", "txtFieldSearch"]
+- ["CSo8NSObject", "unwindForSegue"]
 - ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -1537,6 +1547,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
 - ["PSo16NSObjectProtocol", "txtFieldSearch"]
+- ["PSo16NSObjectProtocol", "unwindForSegue"]
 - ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -1656,6 +1667,7 @@ depends-member:
 - ["C6Tatari16SearchController", "UITableViewCell"]
 - ["C6Tatari16SearchController", "UITextField"]
 - !private ["C6Tatari16SearchController", "UIViewContentMode"]
+- ["C6Tatari16SearchController", "UIViewController"]
 - ["C6Tatari16SearchController", "Void"]
 - ["C6Tatari16SearchController", "activityLoadingSearch"]
 - ["C6Tatari16SearchController", "buttonDesafiarAction"]
@@ -1706,6 +1718,7 @@ depends-member:
 - ["C6Tatari16SearchController", "textFieldShouldEndEditing"]
 - ["C6Tatari16SearchController", "textFieldShouldReturn"]
 - ["C6Tatari16SearchController", "txtFieldSearch"]
+- ["C6Tatari16SearchController", "unwindForSegue"]
 - ["C6Tatari16SearchController", "viewDidAppear"]
 - ["C6Tatari16SearchController", "viewDidLoad"]
 - ["C6Tatari16SearchController", "viewForZoomingInScrollView"]
@@ -1921,6 +1934,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "textFieldShouldReturn"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "txtFieldSearch"]
+- ["PSo21UIAppearanceContainer", "unwindForSegue"]
 - ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
@@ -2009,6 +2023,7 @@ depends-member:
 - ["PSo18UIContentContainer", "textFieldShouldEndEditing"]
 - ["PSo18UIContentContainer", "textFieldShouldReturn"]
 - ["PSo18UIContentContainer", "txtFieldSearch"]
+- ["PSo18UIContentContainer", "unwindForSegue"]
 - ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
@@ -2177,6 +2192,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "textFieldShouldReturn"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "txtFieldSearch"]
+- ["PSo18UIFocusEnvironment", "unwindForSegue"]
 - ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
@@ -2242,6 +2258,7 @@ depends-member:
 - ["CSo11UIResponder", "UITableViewCell"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "UIViewContentMode"]
+- ["CSo11UIResponder", "UIViewController"]
 - ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "activityLoadingSearch"]
 - !private ["CSo11UIResponder", "addAction"]
@@ -2318,6 +2335,7 @@ depends-member:
 - ["CSo11UIResponder", "textFieldShouldReturn"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "txtFieldSearch"]
+- ["CSo11UIResponder", "unwindForSegue"]
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
@@ -2477,6 +2495,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "textFieldShouldEndEditing"]
 - ["PSo16UIStateRestoring", "textFieldShouldReturn"]
 - ["PSo16UIStateRestoring", "txtFieldSearch"]
+- ["PSo16UIStateRestoring", "unwindForSegue"]
 - ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
@@ -2826,6 +2845,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "textFieldShouldReturn"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "txtFieldSearch"]
+- ["PSo18UITraitEnvironment", "unwindForSegue"]
 - ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
@@ -2899,6 +2919,7 @@ depends-member:
 - ["CSo16UIViewController", "UITableViewCell"]
 - ["CSo16UIViewController", "UITextField"]
 - !private ["CSo16UIViewController", "UIViewContentMode"]
+- ["CSo16UIViewController", "UIViewController"]
 - ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "activityLoadingSearch"]
 - !private ["CSo16UIViewController", "addAction"]
@@ -2951,6 +2972,7 @@ depends-member:
 - ["CSo16UIViewController", "textFieldShouldEndEditing"]
 - ["CSo16UIViewController", "textFieldShouldReturn"]
 - ["CSo16UIViewController", "txtFieldSearch"]
+- ["CSo16UIViewController", "unwindForSegue"]
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
@@ -3306,4 +3328,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "eeb869755e690ecde4e41654ec0490f6"
+interface-hash: "95b169c77b61a3bdb6318d159cb9d69b"

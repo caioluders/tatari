@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="-1272.5" y="941.5"/>
         </scene>
-        <!--Configurações-->
+        <!--Ajustes-->
         <scene sceneID="VYA-Rh-qay">
             <objects>
                 <viewController id="3Ai-Qg-ERc" customClass="ConfigViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -122,7 +122,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Configurações" id="nng-jt-tyG"/>
+                    <navigationItem key="navigationItem" title="Ajustes" id="nng-jt-tyG"/>
                     <connections>
                         <outlet property="all_switch" destination="JQO-QO-3s1" id="cpA-YG-7d4"/>
                         <outlet property="friends_switch" destination="Rq8-GW-AjH" id="8Hz-c0-2fJ"/>
@@ -324,12 +324,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesquisar por pessoas" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-Mx-NWb">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pesquisar por pessoas" textAlignment="natural" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-Mx-NWb">
                                 <rect key="frame" x="30" y="72" width="540" height="30"/>
                                 <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-Os-weJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-Os-weJ">
                                 <rect key="frame" x="133" y="115" width="335" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -377,7 +377,7 @@
             </objects>
             <point key="canvasLocation" x="1194" y="2609"/>
         </scene>
-        <!--Desafios View Controller-->
+        <!--Title-->
         <scene sceneID="B9D-sA-I5v">
             <objects>
                 <viewController storyboardIdentifier="desafios" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ncg-kN-VOe" customClass="DesafiosViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -442,6 +442,9 @@
                             <constraint firstItem="dsW-zh-ksh" firstAttribute="top" secondItem="36o-01-a0R" secondAttribute="bottom" id="zUs-db-cYa"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="uqI-dB-erD">
+                        <barButtonItem key="leftBarButtonItem" title="Voltar" id="ucK-Og-5iL"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="dsW-zh-ksh" id="fkz-2i-PBB"/>
                     </connections>

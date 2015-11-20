@@ -20,16 +20,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="335" height="129.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Srz-lE-xym">
-                        <rect key="frame" x="18" y="19" width="300" height="93"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="300" id="fAF-gM-3Ck"/>
-                            <constraint firstAttribute="height" constant="93" id="hd9-gW-alQ"/>
-                        </constraints>
-                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="DesafioCellIcon" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-LJ-zoe">
-                        <rect key="frame" x="0.0" y="11" width="38" height="36"/>
+                        <rect key="frame" x="8" y="14" width="30" height="30"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZR-JP-HKq">
                         <rect key="frame" x="39" y="66" width="269" height="18"/>
@@ -41,8 +33,8 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOt-Aa-Fnm">
-                        <rect key="frame" x="148" y="22" width="38" height="23"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOt-Aa-Fnm">
+                        <rect key="frame" x="57" y="17" width="38" height="23"/>
                         <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="19"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -50,20 +42,16 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="8ZR-JP-HKq" firstAttribute="leading" secondItem="Dn1-SY-jh2" secondAttribute="leadingMargin" constant="31" id="1Z4-TU-dec"/>
-                    <constraint firstItem="Srz-lE-xym" firstAttribute="centerY" secondItem="Dn1-SY-jh2" secondAttribute="centerY" id="BWl-xd-ueg"/>
-                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="14" id="GMd-14-NK0"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="bIB-LJ-zoe" secondAttribute="leading" id="GTJ-Ol-QcC"/>
                     <constraint firstItem="bIB-LJ-zoe" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="3" id="NFB-qD-czB"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="sOt-Aa-Fnm" secondAttribute="bottom" constant="76.5" id="WnX-wb-MjK"/>
-                    <constraint firstItem="Srz-lE-xym" firstAttribute="leading" secondItem="bIB-LJ-zoe" secondAttribute="trailing" constant="-20.5" id="cxE-0F-6s9"/>
-                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="centerX" secondItem="Dn1-SY-jh2" secondAttribute="centerX" id="k9S-yF-zFJ"/>
-                    <constraint firstItem="Srz-lE-xym" firstAttribute="centerX" secondItem="Dn1-SY-jh2" secondAttribute="centerX" id="lnU-9R-OxU"/>
+                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="leading" secondItem="bIB-LJ-zoe" secondAttribute="trailing" constant="15" id="hQ0-L3-saj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sOt-Aa-Fnm" secondAttribute="bottom" constant="81.5" id="ke8-2G-xAv"/>
                     <constraint firstItem="8ZR-JP-HKq" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="58" id="vO3-wT-Owg"/>
+                    <constraint firstItem="sOt-Aa-Fnm" firstAttribute="top" secondItem="Dn1-SY-jh2" secondAttribute="topMargin" constant="9" id="vbC-um-LXZ"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="borderView" destination="Srz-lE-xym" id="ReA-PT-aHC"/>
-                <outlet property="cnstHeightBorderView" destination="hd9-gW-alQ" id="8f3-1m-Y9G"/>
                 <outlet property="imgMessageTagType" destination="bIB-LJ-zoe" id="Obu-Tg-t9u"/>
                 <outlet property="lblTitle" destination="sOt-Aa-Fnm" id="TlX-uJ-xHE"/>
                 <outlet property="txtBody" destination="8ZR-JP-HKq" id="wZT-ql-VrU"/>

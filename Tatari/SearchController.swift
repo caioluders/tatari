@@ -225,6 +225,9 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         }
     }
     
+  
+    
+    
     func send_chall(fb_id:NSString , challenge_desc:NSString) -> Void {
         let mutable_result =  NSMutableDictionary()
         mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
@@ -238,6 +241,10 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 150
+    }
+    
+    override func unwindForSegue(unwindSegue: UIStoryboardSegue, towardsViewController subsequentVC: UIViewController) {
+        
     }
 
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{

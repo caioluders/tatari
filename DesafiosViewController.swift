@@ -15,6 +15,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
     var imageArray: NSMutableArray! = NSMutableArray()
     var fbIdDesafiado: String = ""
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -59,7 +60,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         self.send_chall(self.fbIdDesafiado, challenge_desc: self.textArray.objectAtIndex(indexPath.row) as! NSString)
         print("mandou desafio para: ")
         print(self.fbIdDesafiado)
-        self.performSegueWithIdentifier("backFromChallengeView", sender: self)
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func send_chall(fb_id:NSString , challenge_desc:NSString) -> Void {
