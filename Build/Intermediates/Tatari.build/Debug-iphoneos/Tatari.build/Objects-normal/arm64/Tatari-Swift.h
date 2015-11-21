@@ -123,16 +123,15 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 @end
 
 @class UIImage;
-@class UISwitch;
 @class UIImageView;
+@class UISegmentedControl;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @interface ConfigViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified all_switch;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
-@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified friends_switch;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified visi_control;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btLogoutPressed:(id __nonnull)sender;
@@ -222,7 +221,6 @@ SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 
 @class CMMotionManager;
 @class CLLocationManager;
-@class UISegmentedControl;
 @class CLLocation;
 
 SWIFT_CLASS("_TtC6Tatari14MainController")

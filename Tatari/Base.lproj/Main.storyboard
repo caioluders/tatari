@@ -610,7 +610,7 @@
         <scene sceneID="wfc-De-VX2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hft-FE-Yg2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="tabTatari" id="avl-1V-G6D"/>
+                    <tabBarItem key="tabBarItem" title="" image="tabHome" id="avl-1V-G6D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZHz-2P-kOe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -672,8 +672,8 @@
         <image name="tabConcurso" width="25" height="30"/>
         <image name="tabConf" width="30" height="30"/>
         <image name="tabFeed" width="30" height="30"/>
+        <image name="tabHome" width="29" height="30"/>
         <image name="tabPesquisa" width="30" height="30"/>
-        <image name="tabTatari" width="31" height="31"/>
         <image name="tatari" width="201" height="94"/>
         <image name="visibilidade" width="187" height="48"/>
     </resources>

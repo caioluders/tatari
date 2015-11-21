@@ -6,21 +6,21 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17FeedTableViewCell", ""]
 provides-dynamic-lookup:
+- "lblTitle"
+- "awakeFromNib"
 - "txtBody"
 - "cnstHeightBorderView"
-- "awakeFromNib"
-- "lblTitle"
 - "setSelected"
-- "borderView"
 - "imgMessageTagType"
+- "borderView"
 depends-top-level:
 - "NSLayoutConstraint"
 - "UITableViewCell"
 - "UIImageView"
 - "UILabel"
-- "UIView"
 - "Bool"
 - "FeedTableViewCell"
+- "UIView"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "borderView"]
