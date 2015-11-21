@@ -163,7 +163,7 @@
                                 <rect key="frame" x="312" y="65" width="33" height="41"/>
                                 <state key="normal" title="vote" image="concurso icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
                                 <rect key="frame" x="0.0" y="309" width="42" height="50"/>
                                 <state key="normal" image="saida"/>
                             </button>
@@ -171,28 +171,41 @@
                                 <rect key="frame" x="59" y="309" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
                                 <rect key="frame" x="59" y="194" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
                                 <rect key="frame" x="299" y="502" width="42" height="50"/>
                                 <state key="normal" image="banheiro"/>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-Jn-9OA">
-                                <rect key="frame" x="113" y="107" width="375" height="445"/>
+                                <rect key="frame" x="0.0" y="107" width="600" height="445"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                        <rect key="frame" x="17" y="-21" width="340" height="487"/>
-                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABY-ot-6RO">
+                                        <rect key="frame" x="0.0" y="0.0" width="737" height="445"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa_grande" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                                <rect key="frame" x="0.0" y="0.0" width="737" height="445"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="QiX-lX-wkX" firstAttribute="top" secondItem="ABY-ot-6RO" secondAttribute="top" id="1i1-Ex-wZq"/>
+                                            <constraint firstAttribute="bottom" secondItem="QiX-lX-wkX" secondAttribute="bottom" id="4t8-jy-foP"/>
+                                            <constraint firstAttribute="width" constant="737" id="F3k-gv-2kv"/>
+                                            <constraint firstAttribute="trailing" secondItem="QiX-lX-wkX" secondAttribute="trailing" id="MGz-Qd-IYJ"/>
+                                            <constraint firstAttribute="height" constant="445" id="Pk4-3p-qyU"/>
+                                            <constraint firstItem="QiX-lX-wkX" firstAttribute="leading" secondItem="ABY-ot-6RO" secondAttribute="leading" id="rYo-Vo-k36"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="QiX-lX-wkX" secondAttribute="bottom" constant="-21" id="6kQ-uu-sas"/>
-                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="centerX" secondItem="x2D-Jn-9OA" secondAttribute="centerX" id="AIW-Lb-yy5"/>
-                                    <constraint firstAttribute="trailing" secondItem="QiX-lX-wkX" secondAttribute="trailing" constant="18" id="Fua-qn-onR"/>
-                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="leading" secondItem="x2D-Jn-9OA" secondAttribute="leading" constant="17" id="Xk3-Rx-cnO"/>
-                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="centerY" secondItem="x2D-Jn-9OA" secondAttribute="centerY" id="rxg-KX-zYx"/>
-                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="top" secondItem="x2D-Jn-9OA" secondAttribute="top" constant="-21" id="zW3-7K-gp0"/>
+                                    <constraint firstItem="ABY-ot-6RO" firstAttribute="top" secondItem="x2D-Jn-9OA" secondAttribute="top" id="5od-1w-gNk"/>
+                                    <constraint firstAttribute="bottom" secondItem="ABY-ot-6RO" secondAttribute="bottom" id="9wv-3w-2En"/>
+                                    <constraint firstAttribute="trailing" secondItem="ABY-ot-6RO" secondAttribute="trailing" id="Gn2-cu-dFZ"/>
+                                    <constraint firstItem="ABY-ot-6RO" firstAttribute="centerY" secondItem="x2D-Jn-9OA" secondAttribute="centerY" id="ltu-7i-szS"/>
+                                    <constraint firstItem="ABY-ot-6RO" firstAttribute="leading" secondItem="x2D-Jn-9OA" secondAttribute="leading" id="pHF-er-BaW"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
@@ -206,12 +219,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="x2D-Jn-9OA" secondAttribute="bottom" constant="48" id="52L-Jw-PdC"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="x2D-Jn-9OA" secondAttribute="trailing" constant="92" id="Nqa-Zt-gia"/>
-                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="top" secondItem="oXB-Wo-Nov" secondAttribute="bottom" constant="43" id="bFi-7Q-lIR"/>
-                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="bottom" secondItem="bkd-XC-wlV" secondAttribute="bottom" id="djw-Fg-H9h"/>
-                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="leading" secondItem="WQu-9N-r8r" secondAttribute="trailing" constant="12" id="ogI-7T-04A"/>
-                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="centerX" secondItem="Oxb-rz-rRZ" secondAttribute="centerX" id="xbp-KS-qmV"/>
+                            <constraint firstAttribute="trailing" secondItem="x2D-Jn-9OA" secondAttribute="trailing" id="Hki-1N-V3H"/>
+                            <constraint firstItem="mT2-Am-HHx" firstAttribute="top" secondItem="x2D-Jn-9OA" secondAttribute="bottom" constant="-1" id="e6s-NK-Ezi"/>
+                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="leading" secondItem="Oxb-rz-rRZ" secondAttribute="leading" id="e7T-HQ-uKa"/>
+                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="leading" secondItem="YZL-5h-IUS" secondAttribute="leading" id="jx5-1n-KZy"/>
+                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="top" secondItem="oXB-Wo-Nov" secondAttribute="bottom" constant="43" id="koi-Ui-3sv"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -636,7 +648,7 @@
         <image name="escada" width="42" height="50"/>
         <image name="info icon" width="40" height="41"/>
         <image name="log out" width="60" height="20"/>
-        <image name="mapa" width="375" height="501"/>
+        <image name="mapa_grande" width="594" height="444"/>
         <image name="pesquisar icon" width="40" height="41"/>
         <image name="saida" width="43" height="50"/>
         <image name="tabConcurso" width="25" height="30"/>
