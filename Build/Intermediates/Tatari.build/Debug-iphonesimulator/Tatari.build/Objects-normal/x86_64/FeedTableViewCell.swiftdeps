@@ -7,20 +7,20 @@ provides-member:
 - ["C6Tatari17FeedTableViewCell", ""]
 provides-dynamic-lookup:
 - "cnstHeightBorderView"
-- "awakeFromNib"
-- "imgMessageTagType"
-- "borderView"
 - "setSelected"
-- "txtBody"
 - "lblTitle"
+- "borderView"
+- "imgMessageTagType"
+- "txtBody"
+- "awakeFromNib"
 depends-top-level:
-- "FeedTableViewCell"
-- "UIView"
 - "UILabel"
-- "UIImageView"
-- "Bool"
-- "UITableViewCell"
 - "NSLayoutConstraint"
+- "UIImageView"
+- "UITableViewCell"
+- "Bool"
+- "UIView"
+- "FeedTableViewCell"
 depends-member:
 - ["PSs9AnyObject", "awakeFromNib"]
 - ["PSs9AnyObject", "borderView"]

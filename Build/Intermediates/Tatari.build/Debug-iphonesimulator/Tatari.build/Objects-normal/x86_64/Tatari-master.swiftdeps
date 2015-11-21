@@ -1,16 +1,16 @@
 version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
-options: "9961ceaf7a6769a9c97eb212a75e3dcf"
-build_time: [501451026, 372176000]
+options: "9a160a6e6931adf01ec226852a50d913"
+build_time: [501452112, 45338000]
 inputs:
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/AppDelegate.swift": [501433768, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/personTableViewCell.swift": [500775360, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedController.swift": [501447960, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/DesafiosViewController.swift": [501447960, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ConfigViewController.swift": [501450074, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/MainController.swift": [501447960, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VotoTableViewCell.swift": [500181959, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VoteController.swift": [501447960, 0]
-  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ViewController.swift": [501450074, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ConfigViewController.swift": [501452108, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SwiftyJSON.swift": [499226986, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/ViewController.swift": [501452108, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VotoTableViewCell.swift": [500181959, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedTableViewCell.swift": [501208157, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/VoteController.swift": [501447960, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/DesafiosViewController.swift": [501447960, 0]
   "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/SearchController.swift": [501447960, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/personTableViewCell.swift": [500775360, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/AppDelegate.swift": [501433768, 0]
+  "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FeedController.swift": [501447960, 0]

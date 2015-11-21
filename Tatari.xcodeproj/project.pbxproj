@@ -12,8 +12,6 @@
 		420683011BED3A95003E4C84 /* personCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420683001BED3A95003E4C84 /* personCell.xib */; };
 		420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420683021BED3E15003E4C84 /* personTableViewCell.swift */; };
 		427C42361BE2BE1700F3A219 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427C42351BE2BE1700F3A219 /* AVFoundation.framework */; };
-		429118591BFD0C3C00AA18C5 /* Toucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429118561BFD0C2800AA18C5 /* Toucan.framework */; };
-		4291185C1BFD0C6000AA18C5 /* Toucan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 429118561BFD0C2800AA18C5 /* Toucan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFC61BDFE6E80098A62D /* feedCell.xib */; };
 		42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */; };
 		42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFCA1BE0006D0098A62D /* votoCell.xib */; };
@@ -36,35 +34,17 @@
 		627355EA1BD813DC00F7124A /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627355E91BD813DC00F7124A /* MainController.swift */; };
 		62939ED01BDC488600CAB491 /* VoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62939ECF1BDC488600CAB491 /* VoteController.swift */; };
 		62939ED21BDD39F300CAB491 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62939ED11BDD39F300CAB491 /* SearchController.swift */; };
-		62C097301BFCFDAD00312B1A /* check2.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C0972F1BFCFDAD00312B1A /* check2.png */; };
 		62E068221BEC668C001455E7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068211BEC668C001455E7 /* libz.tbd */; };
 		62E068241BEC6782001455E7 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068231BEC6782001455E7 /* libstdc++.tbd */; };
 		62E068261BEC6834001455E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068251BEC6834001455E7 /* SystemConfiguration.framework */; };
 		62E068281BEC6856001455E7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068271BEC6856001455E7 /* ImageIO.framework */; };
+		62EFDDF61BFF838B00D13D4C /* Toucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */; };
+		62EFDDF71BFF838B00D13D4C /* Toucan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		62EFDDFB1BFF848900D13D4C /* OctagonMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 62EFDDFA1BFF848900D13D4C /* OctagonMask.png */; };
+		62EFDDFD1BFF99BC00D13D4C /* check3.png in Resources */ = {isa = PBXBuildFile; fileRef = 62EFDDFC1BFF99BC00D13D4C /* check3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		429118551BFD0C2800AA18C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 429118501BFD0C2800AA18C5 /* Toucan.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 740AC3EA1999799900AB9A86;
-			remoteInfo = Toucan;
-		};
-		429118571BFD0C2800AA18C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 429118501BFD0C2800AA18C5 /* Toucan.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 740AC3F51999799900AB9A86;
-			remoteInfo = ToucanTests;
-		};
-		4291185A1BFD0C4200AA18C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 429118501BFD0C2800AA18C5 /* Toucan.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 740AC3E91999799900AB9A86;
-			remoteInfo = Toucan;
-		};
 		627355BB1BD8079400F7124A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6273559E1BD8079400F7124A /* Project object */;
@@ -79,6 +59,27 @@
 			remoteGlobalIDString = 627355A51BD8079400F7124A;
 			remoteInfo = Tatari;
 		};
+		62EFDDF21BFE4B2D00D13D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 740AC3EA1999799900AB9A86;
+			remoteInfo = Toucan;
+		};
+		62EFDDF41BFE4B2D00D13D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 740AC3F51999799900AB9A86;
+			remoteInfo = ToucanTests;
+		};
+		62EFDDF81BFF838B00D13D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 740AC3E91999799900AB9A86;
+			remoteInfo = Toucan;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,7 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4291185C1BFD0C6000AA18C5 /* Toucan.framework in Embed Frameworks */,
+				62EFDDF71BFF838B00D13D4C /* Toucan.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,7 +102,6 @@
 		420683001BED3A95003E4C84 /* personCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personCell.xib; sourceTree = "<group>"; };
 		420683021BED3E15003E4C84 /* personTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = personTableViewCell.swift; path = ../personTableViewCell.swift; sourceTree = "<group>"; };
 		427C42351BE2BE1700F3A219 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		429118501BFD0C2800AA18C5 /* Toucan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Toucan.xcodeproj; path = "../../../../Downloads/Toucan-master/Toucan.xcodeproj"; sourceTree = "<group>"; };
 		42F4CFC61BDFE6E80098A62D /* feedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = feedCell.xib; path = ../feedCell.xib; sourceTree = "<group>"; };
 		42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		42F4CFCA1BE0006D0098A62D /* votoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = votoCell.xib; sourceTree = "<group>"; };
@@ -131,11 +131,13 @@
 		627355E91BD813DC00F7124A /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainController.swift; path = ../MainController.swift; sourceTree = "<group>"; };
 		62939ECF1BDC488600CAB491 /* VoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoteController.swift; sourceTree = "<group>"; };
 		62939ED11BDD39F300CAB491 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
-		62C0972F1BFCFDAD00312B1A /* check2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check2.png; sourceTree = "<group>"; };
 		62E068211BEC668C001455E7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		62E068231BEC6782001455E7 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		62E068251BEC6834001455E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		62E068271BEC6856001455E7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Toucan.xcodeproj; path = "../../../Downloads/Toucan-master 2/Toucan.xcodeproj"; sourceTree = "<group>"; };
+		62EFDDFA1BFF848900D13D4C /* OctagonMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OctagonMask.png; sourceTree = "<group>"; };
+		62EFDDFC1BFF99BC00D13D4C /* check3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,9 +145,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429118591BFD0C3C00AA18C5 /* Toucan.framework in Frameworks */,
 				62E068281BEC6856001455E7 /* ImageIO.framework in Frameworks */,
 				62E068261BEC6834001455E7 /* SystemConfiguration.framework in Frameworks */,
+				62EFDDF61BFF838B00D13D4C /* Toucan.framework in Frameworks */,
 				62E068241BEC6782001455E7 /* libstdc++.tbd in Frameworks */,
 				420682F91BED3207003E4C84 /* Pushwoosh.framework in Frameworks */,
 				62E068221BEC668C001455E7 /* libz.tbd in Frameworks */,
@@ -174,15 +176,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		429118511BFD0C2800AA18C5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				429118561BFD0C2800AA18C5 /* Toucan.framework */,
-				429118581BFD0C2800AA18C5 /* ToucanTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		42FC42ED1BF66D8900E5AF51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,8 +233,9 @@
 				42FC42EE1BF66DA700E5AF51 /* Cells */,
 				627355AD1BD8079400F7124A /* Main.storyboard */,
 				627355B01BD8079400F7124A /* Assets.xcassets */,
+				62EFDDFC1BFF99BC00D13D4C /* check3.png */,
+				62EFDDFA1BFF848900D13D4C /* OctagonMask.png */,
 				627355B21BD8079400F7124A /* LaunchScreen.storyboard */,
-				62C0972F1BFCFDAD00312B1A /* check2.png */,
 				627355B51BD8079400F7124A /* Info.plist */,
 				42FC42EF1BF67D0E00E5AF51 /* Rodina-Regular.otf */,
 			);
@@ -269,7 +263,7 @@
 		627355DB1BD80B3E00F7124A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				429118501BFD0C2800AA18C5 /* Toucan.xcodeproj */,
+				62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */,
 				62E068271BEC6856001455E7 /* ImageIO.framework */,
 				62E068251BEC6834001455E7 /* SystemConfiguration.framework */,
 				62E068231BEC6782001455E7 /* libstdc++.tbd */,
@@ -283,6 +277,15 @@
 				627355DF1BD80CAA00F7124A /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		62EFDDEE1BFE4B2D00D13D4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */,
+				62EFDDF51BFE4B2D00D13D4C /* ToucanTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4291185B1BFD0C4200AA18C5 /* PBXTargetDependency */,
+				62EFDDF91BFF838B00D13D4C /* PBXTargetDependency */,
 			);
 			name = Tatari;
 			productName = Tatari;
@@ -355,7 +358,7 @@
 				TargetAttributes = {
 					627355A51BD8079400F7124A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = P6BZVZZ56C;
+						DevelopmentTeam = EHBSXGFU8H;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -388,8 +391,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 429118511BFD0C2800AA18C5 /* Products */;
-					ProjectRef = 429118501BFD0C2800AA18C5 /* Toucan.xcodeproj */;
+					ProductGroup = 62EFDDEE1BFE4B2D00D13D4C /* Products */;
+					ProjectRef = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -402,18 +405,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		429118561BFD0C2800AA18C5 /* Toucan.framework */ = {
+		62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Toucan.framework;
-			remoteRef = 429118551BFD0C2800AA18C5 /* PBXContainerItemProxy */;
+			remoteRef = 62EFDDF21BFE4B2D00D13D4C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		429118581BFD0C2800AA18C5 /* ToucanTests.xctest */ = {
+		62EFDDF51BFE4B2D00D13D4C /* ToucanTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ToucanTests.xctest;
-			remoteRef = 429118571BFD0C2800AA18C5 /* PBXContainerItemProxy */;
+			remoteRef = 62EFDDF41BFE4B2D00D13D4C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -425,11 +428,12 @@
 			files = (
 				42FC42F01BF67F2300E5AF51 /* Rodina-Regular.otf in Resources */,
 				627355B41BD8079400F7124A /* LaunchScreen.storyboard in Resources */,
-				62C097301BFCFDAD00312B1A /* check2.png in Resources */,
+				62EFDDFB1BFF848900D13D4C /* OctagonMask.png in Resources */,
 				42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */,
 				627355B11BD8079400F7124A /* Assets.xcassets in Resources */,
 				627355AF1BD8079400F7124A /* Main.storyboard in Resources */,
 				420683011BED3A95003E4C84 /* personCell.xib in Resources */,
+				62EFDDFD1BFF99BC00D13D4C /* check3.png in Resources */,
 				42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,11 +493,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4291185B1BFD0C4200AA18C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Toucan;
-			targetProxy = 4291185A1BFD0C4200AA18C5 /* PBXContainerItemProxy */;
-		};
 		627355BC1BD8079400F7124A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 627355A51BD8079400F7124A /* Tatari */;
@@ -503,6 +502,11 @@
 			isa = PBXTargetDependency;
 			target = 627355A51BD8079400F7124A /* Tatari */;
 			targetProxy = 627355C61BD8079400F7124A /* PBXContainerItemProxy */;
+		};
+		62EFDDF91BFF838B00D13D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toucan;
+			targetProxy = 62EFDDF81BFF838B00D13D4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -614,6 +618,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Tatari",
@@ -621,7 +626,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2d.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";
@@ -637,6 +642,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Tatari",
@@ -644,7 +650,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2d.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";
