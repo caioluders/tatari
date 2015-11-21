@@ -9,8 +9,6 @@
             <string>Rodina-Regular</string>
             <string>Rodina-Regular</string>
             <string>Rodina-Regular</string>
-            <string>Rodina-Regular</string>
-            <string>Rodina-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -82,9 +80,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-yK-xQa">
-                                <rect key="frame" x="113" y="144" width="375" height="104"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtK-UP-MIH">
                                 <rect key="frame" x="270" y="491" width="60" height="22"/>
                                 <state key="normal" image="log out"/>
@@ -92,46 +87,20 @@
                                     <action selector="btLogoutPressed:" destination="3Ai-Qg-ERc" eventType="touchUpInside" id="Pgt-a1-cCk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
-                                <rect key="frame" x="245" y="115" width="111" height="173"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="visibilidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBH-BG-pLV">
-                                <rect key="frame" x="195" y="290" width="221" height="73"/>
-                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="53"/>
-                                <color key="textColor" red="0.015686274509803921" green="0.062745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYz-wB-MuW">
-                                <rect key="frame" x="201" y="348" width="198" height="21"/>
-                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.51372549019607838" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="eZ5-69-4m7" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="51" id="6Wf-MV-nS1"/>
-                            <constraint firstItem="qBH-BG-pLV" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="226" id="6fl-JE-3Cw"/>
-                            <constraint firstItem="NYz-wB-MuW" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="IsP-vp-BEd"/>
                             <constraint firstItem="yns-Z3-up9" firstAttribute="top" secondItem="dtK-UP-MIH" secondAttribute="bottom" constant="38" id="RQv-iK-kEK"/>
-                            <constraint firstItem="NYz-wB-MuW" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="284" id="TaP-em-iig"/>
-                            <constraint firstItem="eZ5-69-4m7" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="Xtr-bM-kaT"/>
                             <constraint firstItem="dtK-UP-MIH" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="ap6-SF-TKe"/>
-                            <constraint firstItem="qBH-BG-pLV" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="bgx-Pf-pm3"/>
-                            <constraint firstItem="JcL-yK-xQa" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="80" id="lBC-4O-x0v"/>
-                            <constraint firstItem="JcL-yK-xQa" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="z4g-9c-Ybr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ajustes" id="nng-jt-tyG"/>
-                    <connections>
-                        <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-886" y="125"/>
         </scene>
-        <!--Tatari-->
+        <!--Mapa-->
         <scene sceneID="ck6-0f-9qJ">
             <objects>
                 <viewController storyboardIdentifier="MainController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kwk-kb-dqM" customClass="MainController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -234,7 +203,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Tatari" id="5kw-L4-XaM"/>
+                    <navigationItem key="navigationItem" title="Mapa" id="5kw-L4-XaM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kv-bT-k2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -634,12 +603,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background 2" width="375" height="104"/>
         <image name="Dado 1" width="42" height="42"/>
         <image name="DesafioCellIcon" width="36" height="36"/>
         <image name="OrganizadorCellIcon" width="36" height="36"/>
         <image name="Participar" width="112" height="22"/>
-        <image name="Pin Avatar" width="111" height="173"/>
         <image name="banheiro" width="42" height="50"/>
         <image name="bar" width="42" height="50"/>
         <image name="concurso icon" width="33" height="41"/>
