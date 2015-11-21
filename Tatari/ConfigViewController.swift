@@ -28,6 +28,7 @@ class ConfigViewController: UIViewController {
         let maskingImage = Toucan(image: UIImage(named: "check3.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
         
         self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
+
     }
     
 

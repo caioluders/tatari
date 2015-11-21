@@ -212,7 +212,7 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let fb_id = defaults.stringForKey("fb_id")
-        
+       
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         mutable_result.setObject(self.point,forKey:"pointer")
         

@@ -9,6 +9,11 @@
             <string>Rodina-Regular</string>
             <string>Rodina-Regular</string>
             <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
+            <string>Rodina-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -83,65 +88,131 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background 2" translatesAutoresizingMaskIntoConstraints="NO" id="JcL-yK-xQa">
                                 <rect key="frame" x="0.0" y="139" width="375" height="104"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="visibilidade" translatesAutoresizingMaskIntoConstraints="NO" id="nCa-Rg-w41">
-                                <rect key="frame" x="86" y="303" width="203" height="61"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="AK2-Re-L5e">
-                                <rect key="frame" x="161" y="455" width="66" height="13"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCg-UX-8d2">
-                                <rect key="frame" x="80" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Marrom"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uq0-Hi-vMb">
-                                <rect key="frame" x="125" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Pink"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brV-Rx-n7l">
-                                <rect key="frame" x="170" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Verde"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vba-iZ-Zr9">
-                                <rect key="frame" x="215" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Azul"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jpq-nU-WId">
-                                <rect key="frame" x="260" y="504" width="35" height="54"/>
-                                <state key="normal" image="Pin Laranja"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtK-UP-MIH">
-                                <rect key="frame" x="154" y="583" width="60" height="22"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dtK-UP-MIH">
+                                <rect key="frame" x="279" y="529" width="60" height="22"/>
                                 <state key="normal" image="log out"/>
                                 <connections>
                                     <action selector="btLogoutPressed:" destination="3Ai-Qg-ERc" eventType="touchUpInside" id="Pgt-a1-cCk"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
-                                <rect key="frame" x="129" y="109" width="111" height="173"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
+                                <rect key="frame" x="251" y="104" width="111" height="173"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FML-KG-D1x">
-                                <rect key="frame" x="48" y="388" width="272" height="29"/>
-                                <segments>
-                                    <segment title="Ninguém"/>
-                                    <segment title="Amigos"/>
-                                    <segment title="Todo mundo"/>
-                                </segments>
-                                <connections>
-                                    <action selector="seg_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="mDu-0q-lyk"/>
-                                </connections>
-                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-c2-eVc">
+                                <rect key="frame" x="201" y="344" width="204" height="25.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="UBL-i9-9FE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.58823529411764708" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="visibilidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBE-Oj-d3h">
+                                <rect key="frame" x="201" y="290" width="210" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="210" id="9FR-iA-BnH"/>
+                                    <constraint firstAttribute="height" constant="64" id="pqP-zc-2iG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="53"/>
+                                <color key="textColor" red="0.015686274509803921" green="0.062745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jW8-Ej-MkG">
+                                <rect key="frame" x="175" y="370" width="250" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visível para todos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ue-Zb-dGi">
+                                        <rect key="frame" x="41" y="14" width="136" height="26"/>
+                                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="21"/>
+                                        <color key="textColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-Zn-ix9">
+                                        <rect key="frame" x="193" y="11" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="E64-l1-syG"/>
+                                    <constraint firstAttribute="width" constant="250" id="gjw-PM-0zN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KzQ-YT-AjK">
+                                <rect key="frame" x="176" y="415" width="250" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visível para amigos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-wa-LYK">
+                                        <rect key="frame" x="30" y="12" width="147" height="26"/>
+                                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="21"/>
+                                        <color key="textColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-sR-yWm">
+                                        <rect key="frame" x="193" y="11" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="lFJ-Jt-b2t"/>
+                                    <constraint firstAttribute="width" constant="250" id="rEK-gB-LBM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3h3-4t-wvs">
+                                <rect key="frame" x="176" y="460" width="250" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visível para ninguém" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKf-Ea-RPI">
+                                        <rect key="frame" x="19" y="12" width="158" height="26"/>
+                                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="21"/>
+                                        <color key="textColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0C-gq-otq">
+                                        <rect key="frame" x="193" y="11" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ise-Gv-oRq"/>
+                                    <constraint firstAttribute="width" constant="250" id="ZQm-6s-Osl"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="AK2-Re-L5e">
+                                <rect key="frame" x="276" y="508" width="66" height="13"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FBE-Oj-d3h" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" constant="6" id="0jN-LY-QBU"/>
+                            <constraint firstItem="FBE-Oj-d3h" firstAttribute="top" secondItem="XR7-lc-2ZY" secondAttribute="top" constant="290" id="3Bc-4u-sDp"/>
+                            <constraint firstItem="jW8-Ej-MkG" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="7R4-YJ-h8E"/>
+                            <constraint firstItem="3h3-4t-wvs" firstAttribute="top" secondItem="FBE-Oj-d3h" secondAttribute="bottom" constant="106" id="BHy-0b-S7k"/>
+                            <constraint firstItem="n7C-c2-eVc" firstAttribute="top" secondItem="eZ5-69-4m7" secondAttribute="bottom" constant="62" id="DbW-xA-5cL"/>
+                            <constraint firstItem="AK2-Re-L5e" firstAttribute="top" secondItem="3h3-4t-wvs" secondAttribute="bottom" constant="5" id="I4h-Sn-4Af"/>
+                            <constraint firstItem="eZ5-69-4m7" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="NXy-Fv-e0I"/>
+                            <constraint firstItem="KzQ-YT-AjK" firstAttribute="top" secondItem="FBE-Oj-d3h" secondAttribute="bottom" constant="61" id="R1d-5B-VHu"/>
+                            <constraint firstItem="jW8-Ej-MkG" firstAttribute="top" secondItem="FBE-Oj-d3h" secondAttribute="bottom" constant="16" id="S7g-VX-Zcm"/>
+                            <constraint firstItem="KzQ-YT-AjK" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="Vvc-oi-SvG"/>
+                            <constraint firstItem="3h3-4t-wvs" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="bB5-ZJ-6bu"/>
+                            <constraint firstItem="yns-Z3-up9" firstAttribute="top" secondItem="dtK-UP-MIH" secondAttribute="bottom" constant="10" id="bTg-5Z-bFe"/>
+                            <constraint firstItem="AK2-Re-L5e" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="dPr-hU-yeg"/>
+                            <constraint firstItem="eZ5-69-4m7" firstAttribute="top" secondItem="6h5-FD-WMH" secondAttribute="bottom" constant="40" id="hfA-MH-wCk"/>
+                            <constraint firstItem="FBE-Oj-d3h" firstAttribute="top" secondItem="eZ5-69-4m7" secondAttribute="bottom" constant="8" symbolic="YES" id="oKG-u2-7WJ"/>
+                            <constraint firstItem="dtK-UP-MIH" firstAttribute="centerX" secondItem="XR7-lc-2ZY" secondAttribute="centerX" id="uYx-ix-Ygx"/>
+                            <constraint firstItem="n7C-c2-eVc" firstAttribute="centerX" secondItem="FBE-Oj-d3h" secondAttribute="centerX" constant="-3" id="wAb-HA-wz6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ajustes" id="nng-jt-tyG"/>
                     <connections>
                         <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
-                        <outlet property="visi_control" destination="FML-KG-D1x" id="HJd-SE-sPJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-886" y="125"/>
+            <point key="canvasLocation" x="-904" y="119"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="ck6-0f-9qJ">
@@ -558,6 +629,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jcs-3O-zOk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="16"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -577,6 +651,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="guR-tO-RXh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="11"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -615,6 +692,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZHz-2P-kOe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="11"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -634,6 +714,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bnT-bO-v9O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="15"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -652,11 +735,6 @@
         <image name="OrganizadorCellIcon" width="36" height="36"/>
         <image name="Participar" width="112" height="22"/>
         <image name="Pin Avatar" width="111" height="173"/>
-        <image name="Pin Azul" width="35" height="54"/>
-        <image name="Pin Laranja" width="35" height="54"/>
-        <image name="Pin Marrom" width="35" height="54"/>
-        <image name="Pin Pink" width="35" height="54"/>
-        <image name="Pin Verde" width="35" height="54"/>
         <image name="Pontos" width="66" height="13"/>
         <image name="banheiro" width="42" height="50"/>
         <image name="bar" width="42" height="50"/>
@@ -675,6 +753,5 @@
         <image name="tabHome" width="29" height="30"/>
         <image name="tabPesquisa" width="30" height="30"/>
         <image name="tatari" width="201" height="94"/>
-        <image name="visibilidade" width="187" height="48"/>
     </resources>
 </document>
