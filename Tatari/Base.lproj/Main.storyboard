@@ -56,6 +56,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.015686274509803921" green="0.062745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="G7W-Uo-V3P" kind="relationship" relationship="viewControllers" id="dDo-68-2sH"/>
@@ -448,7 +449,7 @@
             </objects>
             <point key="canvasLocation" x="1194" y="2609"/>
         </scene>
-        <!--Title-->
+        <!--Desafios View Controller-->
         <scene sceneID="B9D-sA-I5v">
             <objects>
                 <viewController storyboardIdentifier="desafios" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ncg-kN-VOe" customClass="DesafiosViewController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
@@ -480,7 +481,7 @@
                                                     <rect key="frame" x="72" y="0.0" width="513" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="20"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.015686274509803921" green="0.062745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Dado 1" id="sYC-r6-JtH">
@@ -499,7 +500,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Desafios" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLn-9O-5NY">
                                 <rect key="frame" x="269" y="87" width="52" height="21"/>
                                 <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="28"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.015686274509803921" green="0.062745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -513,7 +514,7 @@
                             <constraint firstItem="dsW-zh-ksh" firstAttribute="top" secondItem="36o-01-a0R" secondAttribute="bottom" id="zUs-db-cYa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="uqI-dB-erD">
+                    <navigationItem key="navigationItem" id="uqI-dB-erD">
                         <barButtonItem key="leftBarButtonItem" title="Voltar" id="ucK-Og-5iL"/>
                     </navigationItem>
                     <connections>

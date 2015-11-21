@@ -6,90 +6,91 @@ provides-nominal:
 provides-member:
 - ["C6Tatari16SearchController", ""]
 provides-dynamic-lookup:
-- "txtFieldSearch"
-- "idsLikes"
-- "viewDidAppear"
-- "HTTPPostJSON"
-- "textFieldShouldReturn"
-- "fbIds"
 - "activityLoadingSearch"
-- "unwindForSegue"
-- "textFieldDidChange"
-- "search_people"
-- "prepareForSegue"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "buttonDesafiarAction"
 - "HTTPsendRequest"
+- "fbIds"
+- "idsLikes"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "imgPeople"
+- "fbIdDesafiado"
+- "txtFieldSearch"
+- "buttonDesafiarAction"
+- "prepareForSegue"
+- "send_chall"
+- "unwindForSegue"
 - "point"
 - "JSONStringify"
-- "people"
-- "imgPeople"
-- "spinner"
-- "viewDidLoad"
-- "send_chall"
+- "viewDidAppear"
 - "showChallengeView"
-- "fbIdDesafiado"
-- "didReceiveMemoryWarning"
+- "textFieldDidChange"
+- "spinner"
+- "search_people"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "textFieldShouldReturn"
+- "people"
+- "HTTPPostJSON"
 depends-top-level:
-- !private "UINib"
-- "StringLiteralType"
-- "Bool"
-- "UIActivityIndicatorView"
-- "NSIndexPath"
-- !private "UIViewContentMode"
-- !private "UIAlertControllerStyle"
-- !private "+"
-- "UITableView"
-- !private "UIControlState"
-- !private "UIAlertController"
-- !private "NSMutableDictionary"
-- !private "NSData"
-- !private "NSURLSession"
-- "UITextFieldDelegate"
 - !private "BooleanLiteralType"
-- !private "dispatch_async"
 - !private "personTableViewCell"
-- !private "dispatch_get_main_queue"
-- "NSMutableURLRequest"
-- "UITextField"
-- "UITableViewCell"
-- "SearchController"
-- !private "!="
-- "UIStoryboardSegue"
-- !private "NSUTF8StringEncoding"
-- !private "UIImageView"
-- !private "NSJSONWritingOptions"
-- !private "print"
-- "CGFloat"
+- !private "FBSDKAccessToken"
 - "UIViewController"
+- "UITableViewCell"
+- !private "NSMutableDictionary"
 - "Int"
-- !private "=="
-- !private "Dictionary"
-- !private "DesafiosViewController"
-- "UITableViewDataSource"
-- !private "Array"
-- !private "UIColor"
-- "UITableViewDelegate"
-- "Void"
-- !private "UIAlertAction"
-- !private "NSJSONSerialization"
+- "SearchController"
+- "UIButton"
+- !private "UIControlState"
 - "AnyObject"
-- !private "UIControlEvents"
-- "NSString"
-- !private "NSUserDefaults"
-- "NSNumber"
-- !private "UIAlertActionStyle"
+- "UITableView"
+- "UIActivityIndicatorView"
+- !private "UIColor"
+- !private "NSJSONSerialization"
+- "StringLiteralType"
+- !private "UIViewContentMode"
+- "Void"
 - "String"
 - !private "NSFontAttributeName"
-- "UIButton"
+- "NSString"
+- !private "NSUserDefaults"
+- !private "UIAlertController"
 - !private "UIFont"
-- "UIImage"
-- !private "FBSDKAccessToken"
-- !private "NSURL"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_async"
+- !private "+"
+- !private "UIControlEvents"
 - !private "JSON"
+- "UIImage"
+- !private "NSJSONWritingOptions"
+- "NSMutableURLRequest"
+- !private "NSURLSession"
+- !private "UINib"
+- "Bool"
+- !private "!="
+- !private "UIAlertControllerStyle"
+- !private "NSUTF8StringEncoding"
+- !private "NSURL"
+- "UIStoryboardSegue"
+- !private "UIAlertActionStyle"
+- !private "NSForegroundColorAttributeName"
+- !private "Dictionary"
+- !private "print"
+- "NSNumber"
+- !private "UIImageView"
+- !private "DesafiosViewController"
+- !private "NSData"
+- "UITableViewDataSource"
+- "NSIndexPath"
+- "CGFloat"
+- "UITextField"
+- "UITableViewDelegate"
+- !private "Array"
+- !private "UIAlertAction"
+- !private "=="
+- "UITextFieldDelegate"
 depends-member:
 - !private ["PSs9AnyObject", "CGColor"]
 - !private ["PSs9AnyObject", "Element"]
@@ -102,6 +103,7 @@ depends-member:
 - ["PSs9AnyObject", "JSONStringify"]
 - !private ["PSs9AnyObject", "NSData"]
 - !private ["PSs9AnyObject", "NSFontAttributeName"]
+- !private ["PSs9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["PSs9AnyObject", "NSJSONSerialization"]
 - !private ["PSs9AnyObject", "NSJSONWritingOptions"]
 - !private ["PSs9AnyObject", "NSMutableDictionary"]
@@ -129,14 +131,15 @@ depends-member:
 - !private ["PSs9AnyObject", "addTarget"]
 - !private ["PSs9AnyObject", "addValue"]
 - !private ["PSs9AnyObject", "allowsSelection"]
+- !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "backgroundView"]
-- !private ["PSs9AnyObject", "blackColor"]
 - !private ["PSs9AnyObject", "borderColor"]
 - !private ["PSs9AnyObject", "borderView"]
 - !private ["PSs9AnyObject", "borderWidth"]
 - !private ["PSs9AnyObject", "btCurtir"]
 - !private ["PSs9AnyObject", "btDesafiar"]
 - ["PSs9AnyObject", "buttonDesafiarAction"]
+- !private ["PSs9AnyObject", "clearColor"]
 - !private ["PSs9AnyObject", "contentMode"]
 - !private ["PSs9AnyObject", "cornerRadius"]
 - !private ["PSs9AnyObject", "currentAccessToken"]
@@ -296,6 +299,7 @@ depends-member:
 - ["PSs11CVarArgType", "JSONStringify"]
 - !private ["PSs11CVarArgType", "NSData"]
 - !private ["PSs11CVarArgType", "NSFontAttributeName"]
+- !private ["PSs11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["PSs11CVarArgType", "NSJSONSerialization"]
 - !private ["PSs11CVarArgType", "NSJSONWritingOptions"]
 - !private ["PSs11CVarArgType", "NSMutableDictionary"]
@@ -323,14 +327,15 @@ depends-member:
 - !private ["PSs11CVarArgType", "addTarget"]
 - !private ["PSs11CVarArgType", "addValue"]
 - !private ["PSs11CVarArgType", "allowsSelection"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "backgroundView"]
-- !private ["PSs11CVarArgType", "blackColor"]
 - !private ["PSs11CVarArgType", "borderColor"]
 - !private ["PSs11CVarArgType", "borderView"]
 - !private ["PSs11CVarArgType", "borderWidth"]
 - !private ["PSs11CVarArgType", "btCurtir"]
 - !private ["PSs11CVarArgType", "btDesafiar"]
 - ["PSs11CVarArgType", "buttonDesafiarAction"]
+- !private ["PSs11CVarArgType", "clearColor"]
 - !private ["PSs11CVarArgType", "contentMode"]
 - !private ["PSs11CVarArgType", "cornerRadius"]
 - !private ["PSs11CVarArgType", "currentAccessToken"]
@@ -475,6 +480,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Key"]
 - !private ["PSs23CustomStringConvertible", "NSData"]
 - !private ["PSs23CustomStringConvertible", "NSFontAttributeName"]
+- !private ["PSs23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
 - !private ["PSs23CustomStringConvertible", "NSJSONWritingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSMutableDictionary"]
@@ -507,14 +513,15 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "addValue"]
 - !private ["PSs23CustomStringConvertible", "allowsSelection"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "backgroundView"]
-- !private ["PSs23CustomStringConvertible", "blackColor"]
 - !private ["PSs23CustomStringConvertible", "borderColor"]
 - !private ["PSs23CustomStringConvertible", "borderView"]
 - !private ["PSs23CustomStringConvertible", "borderWidth"]
 - !private ["PSs23CustomStringConvertible", "btCurtir"]
 - !private ["PSs23CustomStringConvertible", "btDesafiar"]
 - ["PSs23CustomStringConvertible", "buttonDesafiarAction"]
+- !private ["PSs23CustomStringConvertible", "clearColor"]
 - !private ["PSs23CustomStringConvertible", "contains"]
 - !private ["PSs23CustomStringConvertible", "contentMode"]
 - !private ["PSs23CustomStringConvertible", "cornerRadius"]
@@ -641,6 +648,7 @@ depends-member:
 - ["PSs9Equatable", "JSONStringify"]
 - !private ["PSs9Equatable", "NSData"]
 - !private ["PSs9Equatable", "NSFontAttributeName"]
+- !private ["PSs9Equatable", "NSForegroundColorAttributeName"]
 - !private ["PSs9Equatable", "NSJSONSerialization"]
 - !private ["PSs9Equatable", "NSJSONWritingOptions"]
 - !private ["PSs9Equatable", "NSMutableDictionary"]
@@ -677,14 +685,15 @@ depends-member:
 - !private ["PSs9Equatable", "addTarget"]
 - !private ["PSs9Equatable", "addValue"]
 - !private ["PSs9Equatable", "allowsSelection"]
+- !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "backgroundView"]
-- !private ["PSs9Equatable", "blackColor"]
 - !private ["PSs9Equatable", "borderColor"]
 - !private ["PSs9Equatable", "borderView"]
 - !private ["PSs9Equatable", "borderWidth"]
 - !private ["PSs9Equatable", "btCurtir"]
 - !private ["PSs9Equatable", "btDesafiar"]
 - ["PSs9Equatable", "buttonDesafiarAction"]
+- !private ["PSs9Equatable", "clearColor"]
 - !private ["PSs9Equatable", "contentMode"]
 - !private ["PSs9Equatable", "cornerRadius"]
 - !private ["PSs9Equatable", "currentAccessToken"]
@@ -814,6 +823,7 @@ depends-member:
 - ["PSs8Hashable", "JSONStringify"]
 - !private ["PSs8Hashable", "NSData"]
 - !private ["PSs8Hashable", "NSFontAttributeName"]
+- !private ["PSs8Hashable", "NSForegroundColorAttributeName"]
 - !private ["PSs8Hashable", "NSJSONSerialization"]
 - !private ["PSs8Hashable", "NSJSONWritingOptions"]
 - !private ["PSs8Hashable", "NSMutableDictionary"]
@@ -844,14 +854,15 @@ depends-member:
 - !private ["PSs8Hashable", "addTarget"]
 - !private ["PSs8Hashable", "addValue"]
 - !private ["PSs8Hashable", "allowsSelection"]
+- !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "backgroundView"]
-- !private ["PSs8Hashable", "blackColor"]
 - !private ["PSs8Hashable", "borderColor"]
 - !private ["PSs8Hashable", "borderView"]
 - !private ["PSs8Hashable", "borderWidth"]
 - !private ["PSs8Hashable", "btCurtir"]
 - !private ["PSs8Hashable", "btDesafiar"]
 - ["PSs8Hashable", "buttonDesafiarAction"]
+- !private ["PSs8Hashable", "clearColor"]
 - !private ["PSs8Hashable", "contentMode"]
 - !private ["PSs8Hashable", "cornerRadius"]
 - !private ["PSs8Hashable", "currentAccessToken"]
@@ -1034,6 +1045,7 @@ depends-member:
 - ["PSo8NSCoding", "JSONStringify"]
 - !private ["PSo8NSCoding", "NSData"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "NSJSONSerialization"]
 - !private ["PSo8NSCoding", "NSJSONWritingOptions"]
 - !private ["PSo8NSCoding", "NSMutableDictionary"]
@@ -1061,14 +1073,15 @@ depends-member:
 - !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "addValue"]
 - !private ["PSo8NSCoding", "allowsSelection"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "backgroundView"]
-- !private ["PSo8NSCoding", "blackColor"]
 - !private ["PSo8NSCoding", "borderColor"]
 - !private ["PSo8NSCoding", "borderView"]
 - !private ["PSo8NSCoding", "borderWidth"]
 - !private ["PSo8NSCoding", "btCurtir"]
 - !private ["PSo8NSCoding", "btDesafiar"]
 - ["PSo8NSCoding", "buttonDesafiarAction"]
+- !private ["PSo8NSCoding", "clearColor"]
 - !private ["PSo8NSCoding", "contentMode"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "currentAccessToken"]
@@ -1152,7 +1165,7 @@ depends-member:
 - !private ["PSo9NSCopying", "HTTPBody"]
 - !private ["PSo9NSCopying", "HTTPMethod"]
 - !private ["PSo9NSCopying", "addValue"]
-- !private ["PSo9NSCopying", "blackColor"]
+- !private ["PSo9NSCopying", "clearColor"]
 - !private ["PSo9NSCopying", "currentAccessToken"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "deinit"]
@@ -1173,6 +1186,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "JSONStringify"]
 - !private ["PSo26NSExtensionRequestHandling", "NSData"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONWritingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSMutableDictionary"]
@@ -1287,6 +1301,7 @@ depends-member:
 - ["CSo8NSObject", "JSONStringify"]
 - !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
 - !private ["CSo8NSObject", "NSJSONWritingOptions"]
@@ -1324,14 +1339,15 @@ depends-member:
 - !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "addValue"]
 - !private ["CSo8NSObject", "allowsSelection"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "backgroundView"]
-- !private ["CSo8NSObject", "blackColor"]
 - !private ["CSo8NSObject", "borderColor"]
 - !private ["CSo8NSObject", "borderView"]
 - !private ["CSo8NSObject", "borderWidth"]
 - !private ["CSo8NSObject", "btCurtir"]
 - !private ["CSo8NSObject", "btDesafiar"]
 - ["CSo8NSObject", "buttonDesafiarAction"]
+- !private ["CSo8NSObject", "clearColor"]
 - !private ["CSo8NSObject", "contentMode"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "currentAccessToken"]
@@ -1430,6 +1446,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "JSONStringify"]
 - !private ["PSo16NSObjectProtocol", "NSData"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
 - !private ["PSo16NSObjectProtocol", "NSJSONWritingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSMutableDictionary"]
@@ -1457,14 +1474,15 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - !private ["PSo16NSObjectProtocol", "allowsSelection"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
-- !private ["PSo16NSObjectProtocol", "blackColor"]
 - !private ["PSo16NSObjectProtocol", "borderColor"]
 - !private ["PSo16NSObjectProtocol", "borderView"]
 - !private ["PSo16NSObjectProtocol", "borderWidth"]
 - !private ["PSo16NSObjectProtocol", "btCurtir"]
 - !private ["PSo16NSObjectProtocol", "btDesafiar"]
 - ["PSo16NSObjectProtocol", "buttonDesafiarAction"]
+- !private ["PSo16NSObjectProtocol", "clearColor"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "currentAccessToken"]
@@ -1557,7 +1575,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "HTTPBody"]
 - !private ["PSo14NSSecureCoding", "HTTPMethod"]
 - !private ["PSo14NSSecureCoding", "addValue"]
-- !private ["PSo14NSSecureCoding", "blackColor"]
+- !private ["PSo14NSSecureCoding", "clearColor"]
 - !private ["PSo14NSSecureCoding", "currentAccessToken"]
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -1637,6 +1655,7 @@ depends-member:
 - ["C6Tatari16SearchController", "JSONStringify"]
 - !private ["C6Tatari16SearchController", "NSData"]
 - !private ["C6Tatari16SearchController", "NSFontAttributeName"]
+- !private ["C6Tatari16SearchController", "NSForegroundColorAttributeName"]
 - ["C6Tatari16SearchController", "NSIndexPath"]
 - !private ["C6Tatari16SearchController", "NSJSONSerialization"]
 - !private ["C6Tatari16SearchController", "NSJSONWritingOptions"]
@@ -1772,6 +1791,7 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "subscript"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsSelection"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundView"]
 - !private ["PSo29UIAccessibilityIdentification", "borderView"]
 - !private ["PSo29UIAccessibilityIdentification", "btCurtir"]
@@ -1807,6 +1827,7 @@ depends-member:
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "allowsSelection"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "backgroundView"]
 - !private ["PSo12UIAppearance", "borderView"]
 - !private ["PSo12UIAppearance", "btCurtir"]
@@ -1838,6 +1859,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "JSONStringify"]
 - !private ["PSo21UIAppearanceContainer", "NSData"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONWritingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSMutableDictionary"]
@@ -1864,6 +1886,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - !private ["PSo21UIAppearanceContainer", "addTarget"]
 - !private ["PSo21UIAppearanceContainer", "allowsSelection"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
 - !private ["PSo21UIAppearanceContainer", "borderView"]
 - !private ["PSo21UIAppearanceContainer", "btCurtir"]
@@ -1944,7 +1967,8 @@ depends-member:
 - !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "tag"]
 - !private ["CSo7UIColor", "CGColor"]
-- !private ["CSo7UIColor", "blackColor"]
+- !private ["CSo7UIColor", "clearColor"]
+- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - ["PSo18UIContentContainer", "HTTPPostJSON"]
 - ["PSo18UIContentContainer", "HTTPsendRequest"]
@@ -1952,6 +1976,7 @@ depends-member:
 - ["PSo18UIContentContainer", "JSONStringify"]
 - !private ["PSo18UIContentContainer", "NSData"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "NSJSONSerialization"]
 - !private ["PSo18UIContentContainer", "NSJSONWritingOptions"]
 - !private ["PSo18UIContentContainer", "NSMutableDictionary"]
@@ -2039,6 +2064,7 @@ depends-member:
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "allowsSelection"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
 - !private ["PSo17UICoordinateSpace", "borderView"]
 - !private ["PSo17UICoordinateSpace", "btCurtir"]
@@ -2065,6 +2091,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "allowsSelection"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
 - !private ["PSo13UIDynamicItem", "borderView"]
 - !private ["PSo13UIDynamicItem", "btCurtir"]
@@ -2096,6 +2123,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "JSONStringify"]
 - !private ["PSo18UIFocusEnvironment", "NSData"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSMutableDictionary"]
@@ -2122,6 +2150,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - !private ["PSo18UIFocusEnvironment", "addTarget"]
 - !private ["PSo18UIFocusEnvironment", "allowsSelection"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundView"]
 - !private ["PSo18UIFocusEnvironment", "borderView"]
 - !private ["PSo18UIFocusEnvironment", "btCurtir"]
@@ -2198,6 +2227,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "borderView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btCurtir"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btDesafiar"]
@@ -2228,6 +2258,7 @@ depends-member:
 - ["CSo11UIResponder", "JSONStringify"]
 - !private ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
 - !private ["CSo11UIResponder", "NSJSONWritingOptions"]
@@ -2264,6 +2295,7 @@ depends-member:
 - !private ["CSo11UIResponder", "addAction"]
 - !private ["CSo11UIResponder", "addTarget"]
 - !private ["CSo11UIResponder", "allowsSelection"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "backgroundView"]
 - !private ["CSo11UIResponder", "borderView"]
 - !private ["CSo11UIResponder", "btCurtir"]
@@ -2353,6 +2385,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "JSONStringify"]
 - !private ["PSo20UIScrollViewDelegate", "NSData"]
 - !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONSerialization"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSMutableDictionary"]
@@ -2424,6 +2457,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "JSONStringify"]
 - !private ["PSo16UIStateRestoring", "NSData"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
 - !private ["PSo16UIStateRestoring", "NSJSONWritingOptions"]
 - !private ["PSo16UIStateRestoring", "NSMutableDictionary"]
@@ -2509,6 +2543,7 @@ depends-member:
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "separatorStyle"]
+- !private ["CSo15UITableViewCell", "backgroundColor"]
 - !private ["CSo15UITableViewCell", "borderView"]
 - !private ["CSo15UITableViewCell", "btCurtir"]
 - !private ["CSo15UITableViewCell", "btDesafiar"]
@@ -2524,6 +2559,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "JSONStringify"]
 - !private ["PSo21UITableViewDataSource", "NSData"]
 - !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
+- !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
 - !private ["PSo21UITableViewDataSource", "NSJSONSerialization"]
 - !private ["PSo21UITableViewDataSource", "NSJSONWritingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSMutableDictionary"]
@@ -2595,6 +2631,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "JSONStringify"]
 - !private ["PSo19UITableViewDelegate", "NSData"]
 - !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
+- !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo19UITableViewDelegate", "NSJSONSerialization"]
 - !private ["PSo19UITableViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSMutableDictionary"]
@@ -2670,6 +2707,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "JSONStringify"]
 - !private ["PSo19UITextFieldDelegate", "NSData"]
 - !private ["PSo19UITextFieldDelegate", "NSFontAttributeName"]
+- !private ["PSo19UITextFieldDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo19UITextFieldDelegate", "NSJSONSerialization"]
 - !private ["PSo19UITextFieldDelegate", "NSJSONWritingOptions"]
 - !private ["PSo19UITextFieldDelegate", "NSMutableDictionary"]
@@ -2749,6 +2787,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "JSONStringify"]
 - !private ["PSo18UITraitEnvironment", "NSData"]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UITraitEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSMutableDictionary"]
@@ -2775,6 +2814,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - !private ["PSo18UITraitEnvironment", "addTarget"]
 - !private ["PSo18UITraitEnvironment", "allowsSelection"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
 - !private ["PSo18UITraitEnvironment", "borderView"]
 - !private ["PSo18UITraitEnvironment", "btCurtir"]
@@ -2852,6 +2892,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "allowsSelection"]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "backgroundView"]
 - !private ["CSo6UIView", "borderView"]
 - !private ["CSo6UIView", "btCurtir"]
@@ -2889,6 +2930,7 @@ depends-member:
 - ["CSo16UIViewController", "JSONStringify"]
 - !private ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
 - !private ["CSo16UIViewController", "NSJSONWritingOptions"]
@@ -3009,7 +3051,8 @@ depends-member:
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_ColorLiteralConvertible", "CGColor"]
-- !private ["PSs24_ColorLiteralConvertible", "blackColor"]
+- !private ["PSs24_ColorLiteralConvertible", "clearColor"]
+- !private ["PSs24_ColorLiteralConvertible", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
@@ -3063,6 +3106,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "allowsSelection"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "backgroundView"]
 - !private ["PSs12_Reflectable", "borderView"]
 - !private ["PSs12_Reflectable", "btCurtir"]
@@ -3097,6 +3141,7 @@ depends-member:
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["C6Tatari19personTableViewCell", "backgroundColor"]
 - !private ["C6Tatari19personTableViewCell", "borderView"]
 - !private ["C6Tatari19personTableViewCell", "btCurtir"]
 - !private ["C6Tatari19personTableViewCell", "btDesafiar"]

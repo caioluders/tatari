@@ -29,8 +29,9 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
                
         
-        self.navigationItem.title = "Concurso de Fantasias"
+        self.navigationItem.title = "Concurso"
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.98, green: 0.573, blue: 0.0, alpha: 1)]
         
         self.tableView.separatorStyle = .None
         
@@ -169,6 +170,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if (self.idsVotadas.contains(self.ids[indexPath.row])){
             cell.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
         }
+        
+        cell.backgroundColor = UIColor.clearColor()
         
         return cell
     }

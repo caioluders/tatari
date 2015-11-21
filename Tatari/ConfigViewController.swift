@@ -19,6 +19,8 @@ class ConfigViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.98, green: 0.573, blue: 0.0, alpha: 1)]
+        
         let defaults = NSUserDefaults.standardUserDefaults()
 //        let avatar_url = NSURL(string: defaults.stringForKey("fb_avatar")!)
 //        let data = NSData(contentsOfURL: avatar_url!)

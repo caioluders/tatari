@@ -18,6 +18,8 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.98, green: 0.573, blue: 0.0, alpha: 1)]
 
         self.textArray.addObject("Beba uma lapada de cana!")
         self.textArray.addObject("Grite 'TOCA RUSH'")

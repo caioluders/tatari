@@ -26,6 +26,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         super.viewDidLoad()
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.98, green: 0.573, blue: 0.0, alpha: 1)]
         
         self.tableView.delegate = self
         let bgImage = UIImage(named: "Background")
@@ -143,9 +144,11 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             cell.btCurtir.setImage(UIImage(named: "Heart Full"), forState: UIControlState.Normal)
         }
         
-        cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
+        cell.borderView.layer.borderColor = UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1).CGColor
         cell.borderView.layer.borderWidth = 3
         cell.borderView.layer.cornerRadius = 12
+        
+        cell.backgroundColor = UIColor.clearColor()
         
         return cell
     }
