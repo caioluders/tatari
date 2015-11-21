@@ -6,60 +6,64 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14MainController", ""]
 provides-dynamic-lookup:
-- "viewWillAppear"
-- "locationManager"
-- "locationManager"
 - "updateSensorDataArray"
-- "btSauda"
 - "viewDidLoad"
-- "motionManager"
 - "didReceiveMemoryWarning"
-- "viewWillDisappear"
+- "viewWillAppear"
+- "btSauda"
 - "accuracyChanged"
+- "viewWillDisappear"
+- "locationManager"
+- "locationManager"
+- "motionManager"
 depends-top-level:
-- !private "StringLiteralType"
-- !private "+"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- !private "NSURLResponse"
-- !private "NSURLSession"
-- !private "kCLLocationAccuracyHundredMeters"
-- !private "Void"
-- !private "BooleanLiteralType"
+- !private "Dictionary"
 - !private "kCLLocationAccuracyKilometer"
-- !private "Array"
-- !private "kCLLocationAccuracyThreeKilometers"
-- !private "=="
-- "CLLocation"
-- !private "||"
-- "CLLocationManagerDelegate"
-- !private "kCLLocationAccuracyBest"
-- !private "!="
-- !private "NSOperationQueue"
-- "CMMotionManager"
-- "String"
-- !private "NSURL"
-- !private "CLAuthorizationStatus"
-- !private "MKPointAnnotation"
-- !private "UIAlertController"
-- !private "+="
-- !private "NSURLRequest"
-- "MainController"
-- "AnyObject"
-- !private "print"
-- "Bool"
-- "UISegmentedControl"
-- !private "NSData"
 - !private "UIAlertAction"
-- !private "kCLLocationAccuracyBestForNavigation"
-- !private "NSURLConnection"
+- "CLLocationManagerDelegate"
+- "CMMotionManager"
+- !private "kCLLocationAccuracyHundredMeters"
+- !private "!="
+- !private "Void"
+- "CLLocation"
+- !private "NSFontAttributeName"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private "+"
 - !private "NSError"
+- !private "UIAlertController"
+- !private "NSURLRequest"
 - "UIViewController"
+- !private "NSURL"
 - "CLLocationManager"
+- !private "print"
+- "UISegmentedControl"
+- "AnyObject"
+- !private "kCLLocationAccuracyThreeKilometers"
+- !private "kCLLocationAccuracyBest"
+- !private "NSData"
+- !private "NSOperationQueue"
+- "String"
+- "Bool"
+- !private "||"
+- !private "NSURLSession"
+- !private "+="
+- !private "BooleanLiteralType"
+- !private "CLAuthorizationStatus"
+- !private "NSURLConnection"
+- "MainController"
+- !private "StringLiteralType"
+- !private "=="
+- !private "Array"
+- !private "UIFont"
+- !private "kCLLocationAccuracyBestForNavigation"
+- !private "NSURLResponse"
+- !private "MKPointAnnotation"
 depends-member:
 - !private ["PSs9AnyObject", "CLAuthorizationStatus"]
 - !private ["PSs9AnyObject", "CLLocationManager"]
 - ["PSs9AnyObject", "CMMotionManager"]
 - !private ["PSs9AnyObject", "MKPointAnnotation"]
+- !private ["PSs9AnyObject", "NSFontAttributeName"]
 - !private ["PSs9AnyObject", "NSOperationQueue"]
 - !private ["PSs9AnyObject", "NSURL"]
 - !private ["PSs9AnyObject", "NSURLConnection"]
@@ -68,6 +72,7 @@ depends-member:
 - ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIAlertAction"]
 - !private ["PSs9AnyObject", "UIAlertController"]
+- !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "acceleration"]
 - !private ["PSs9AnyObject", "accelerometerData"]
 - ["PSs9AnyObject", "accuracyChanged"]
@@ -99,7 +104,8 @@ depends-member:
 - !private ["PSs9AnyObject", "magneticField"]
 - !private ["PSs9AnyObject", "magnetometerData"]
 - ["PSs9AnyObject", "motionManager"]
-- !private ["PSs9AnyObject", "navigationItem"]
+- !private ["PSs9AnyObject", "navigationBar"]
+- !private ["PSs9AnyObject", "navigationController"]
 - !private ["PSs9AnyObject", "presentViewController"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "requestAlwaysAuthorization"]
@@ -117,7 +123,7 @@ depends-member:
 - !private ["PSs9AnyObject", "stopGyroUpdates"]
 - !private ["PSs9AnyObject", "stopMagnetometerUpdates"]
 - !private ["PSs9AnyObject", "stopUpdatingLocation"]
-- !private ["PSs9AnyObject", "title"]
+- !private ["PSs9AnyObject", "titleTextAttributes"]
 - ["PSs9AnyObject", "updateSensorDataArray"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewWillAppear"]
@@ -150,6 +156,7 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["OSC21CLAuthorizationStatus", "AuthorizedAlways"]
 - !private ["OSC21CLAuthorizationStatus", "AuthorizedWhenInUse"]
 - !private ["OSC21CLAuthorizationStatus", "RawValue"]
@@ -170,6 +177,7 @@ depends-member:
 - !private ["PSo25CLLocationManagerDelegate", "CLLocationManager"]
 - ["PSo25CLLocationManagerDelegate", "CMMotionManager"]
 - !private ["PSo25CLLocationManagerDelegate", "MKPointAnnotation"]
+- !private ["PSo25CLLocationManagerDelegate", "NSFontAttributeName"]
 - !private ["PSo25CLLocationManagerDelegate", "NSOperationQueue"]
 - !private ["PSo25CLLocationManagerDelegate", "NSURL"]
 - !private ["PSo25CLLocationManagerDelegate", "NSURLConnection"]
@@ -178,6 +186,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "String"]
 - !private ["PSo25CLLocationManagerDelegate", "UIAlertAction"]
 - !private ["PSo25CLLocationManagerDelegate", "UIAlertController"]
+- !private ["PSo25CLLocationManagerDelegate", "UIFont"]
 - !private ["PSo25CLLocationManagerDelegate", "getAccelerometerData"]
 - !private ["PSo25CLLocationManagerDelegate", "getGyroData"]
 - !private ["PSo25CLLocationManagerDelegate", "getLocationData"]
@@ -193,7 +202,7 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "locationManagerDidResumeLocationUpdates"]
 - ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo25CLLocationManagerDelegate", "motionManager"]
-- !private ["PSo25CLLocationManagerDelegate", "navigationItem"]
+- !private ["PSo25CLLocationManagerDelegate", "navigationController"]
 - !private ["PSo25CLLocationManagerDelegate", "presentViewController"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "sensorDataArray"]
@@ -230,6 +239,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "Distance"]
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "MKPointAnnotation"]
+- !private ["PSs11CVarArgType", "NSFontAttributeName"]
 - !private ["PSs11CVarArgType", "NSOperationQueue"]
 - !private ["PSs11CVarArgType", "NSURL"]
 - !private ["PSs11CVarArgType", "NSURLConnection"]
@@ -238,6 +248,7 @@ depends-member:
 - ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIAlertAction"]
 - !private ["PSs11CVarArgType", "UIAlertController"]
+- !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "acceleration"]
 - !private ["PSs11CVarArgType", "accelerometerData"]
 - ["PSs11CVarArgType", "accuracyChanged"]
@@ -269,7 +280,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "magneticField"]
 - !private ["PSs11CVarArgType", "magnetometerData"]
 - ["PSs11CVarArgType", "motionManager"]
-- !private ["PSs11CVarArgType", "navigationItem"]
+- !private ["PSs11CVarArgType", "navigationBar"]
+- !private ["PSs11CVarArgType", "navigationController"]
 - !private ["PSs11CVarArgType", "presentViewController"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "requestAlwaysAuthorization"]
@@ -287,7 +299,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "stopGyroUpdates"]
 - !private ["PSs11CVarArgType", "stopMagnetometerUpdates"]
 - !private ["PSs11CVarArgType", "stopUpdatingLocation"]
-- !private ["PSs11CVarArgType", "title"]
+- !private ["PSs11CVarArgType", "titleTextAttributes"]
 - ["PSs11CVarArgType", "updateSensorDataArray"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewWillAppear"]
@@ -297,7 +309,9 @@ depends-member:
 - !private ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "Key"]
 - !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "Value"]
 - !private ["PSs14CollectionType", "_Buffer"]
 - !private ["PSs14CollectionType", "_Element"]
 - ["PSs14CollectionType", "init"]
@@ -308,8 +322,10 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
 - !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "_Buffer"]
 - !private ["PSs28CustomDebugStringConvertible", "_Element"]
 - ["PSs28CustomDebugStringConvertible", "init"]
@@ -322,7 +338,9 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Generator"]
 - !private ["PSs23CustomStringConvertible", "Index"]
 - !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "Key"]
 - !private ["PSs23CustomStringConvertible", "MKPointAnnotation"]
+- !private ["PSs23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["PSs23CustomStringConvertible", "NSOperationQueue"]
 - !private ["PSs23CustomStringConvertible", "NSURL"]
 - !private ["PSs23CustomStringConvertible", "NSURLConnection"]
@@ -332,6 +350,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIAlertAction"]
 - !private ["PSs23CustomStringConvertible", "UIAlertController"]
+- !private ["PSs23CustomStringConvertible", "UIFont"]
+- !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_Buffer"]
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -366,7 +386,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "magneticField"]
 - !private ["PSs23CustomStringConvertible", "magnetometerData"]
 - ["PSs23CustomStringConvertible", "motionManager"]
-- !private ["PSs23CustomStringConvertible", "navigationItem"]
+- !private ["PSs23CustomStringConvertible", "navigationBar"]
+- !private ["PSs23CustomStringConvertible", "navigationController"]
 - !private ["PSs23CustomStringConvertible", "presentViewController"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "requestAlwaysAuthorization"]
@@ -385,12 +406,16 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "stopMagnetometerUpdates"]
 - !private ["PSs23CustomStringConvertible", "stopUpdatingLocation"]
 - !private ["PSs23CustomStringConvertible", "subscript"]
-- !private ["PSs23CustomStringConvertible", "title"]
+- !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - ["PSs23CustomStringConvertible", "updateSensorDataArray"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewWillAppear"]
 - ["PSs23CustomStringConvertible", "viewWillDisappear"]
 - ["PSs23CustomStringConvertible", ""]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "Alert"]
 - !private ["PSs9Equatable", "AuthorizedAlways"]
@@ -402,6 +427,7 @@ depends-member:
 - !private ["PSs9Equatable", "Distance"]
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "MKPointAnnotation"]
+- !private ["PSs9Equatable", "NSFontAttributeName"]
 - !private ["PSs9Equatable", "NSOperationQueue"]
 - !private ["PSs9Equatable", "NSURL"]
 - !private ["PSs9Equatable", "NSURLConnection"]
@@ -411,6 +437,7 @@ depends-member:
 - ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "UIAlertAction"]
 - !private ["PSs9Equatable", "UIAlertController"]
+- !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "acceleration"]
 - !private ["PSs9Equatable", "accelerometerData"]
@@ -443,7 +470,8 @@ depends-member:
 - !private ["PSs9Equatable", "magneticField"]
 - !private ["PSs9Equatable", "magnetometerData"]
 - ["PSs9Equatable", "motionManager"]
-- !private ["PSs9Equatable", "navigationItem"]
+- !private ["PSs9Equatable", "navigationBar"]
+- !private ["PSs9Equatable", "navigationController"]
 - !private ["PSs9Equatable", "presentViewController"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "requestAlwaysAuthorization"]
@@ -461,7 +489,7 @@ depends-member:
 - !private ["PSs9Equatable", "stopGyroUpdates"]
 - !private ["PSs9Equatable", "stopMagnetometerUpdates"]
 - !private ["PSs9Equatable", "stopUpdatingLocation"]
-- !private ["PSs9Equatable", "title"]
+- !private ["PSs9Equatable", "titleTextAttributes"]
 - ["PSs9Equatable", "updateSensorDataArray"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewWillAppear"]
@@ -482,6 +510,7 @@ depends-member:
 - !private ["PSs8Hashable", "Distance"]
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "MKPointAnnotation"]
+- !private ["PSs8Hashable", "NSFontAttributeName"]
 - !private ["PSs8Hashable", "NSOperationQueue"]
 - !private ["PSs8Hashable", "NSURL"]
 - !private ["PSs8Hashable", "NSURLConnection"]
@@ -491,6 +520,7 @@ depends-member:
 - ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIAlertAction"]
 - !private ["PSs8Hashable", "UIAlertController"]
+- !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "acceleration"]
 - !private ["PSs8Hashable", "accelerometerData"]
@@ -523,7 +553,8 @@ depends-member:
 - !private ["PSs8Hashable", "magneticField"]
 - !private ["PSs8Hashable", "magnetometerData"]
 - ["PSs8Hashable", "motionManager"]
-- !private ["PSs8Hashable", "navigationItem"]
+- !private ["PSs8Hashable", "navigationBar"]
+- !private ["PSs8Hashable", "navigationController"]
 - !private ["PSs8Hashable", "presentViewController"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "requestAlwaysAuthorization"]
@@ -541,7 +572,7 @@ depends-member:
 - !private ["PSs8Hashable", "stopGyroUpdates"]
 - !private ["PSs8Hashable", "stopMagnetometerUpdates"]
 - !private ["PSs8Hashable", "stopUpdatingLocation"]
-- !private ["PSs8Hashable", "title"]
+- !private ["PSs8Hashable", "titleTextAttributes"]
 - ["PSs8Hashable", "updateSensorDataArray"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewWillAppear"]
@@ -550,7 +581,9 @@ depends-member:
 - !private ["PSs9Indexable", "Element"]
 - !private ["PSs9Indexable", "Generator"]
 - !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "Key"]
 - !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "Value"]
 - !private ["PSs9Indexable", "_Buffer"]
 - !private ["PSs9Indexable", "_Element"]
 - ["PSs9Indexable", "init"]
@@ -587,6 +620,7 @@ depends-member:
 - !private ["C6Tatari14MainController", "MKPointAnnotation"]
 - !private ["C6Tatari14MainController", "NSData"]
 - !private ["C6Tatari14MainController", "NSError"]
+- !private ["C6Tatari14MainController", "NSFontAttributeName"]
 - !private ["C6Tatari14MainController", "NSOperationQueue"]
 - !private ["C6Tatari14MainController", "NSURL"]
 - !private ["C6Tatari14MainController", "NSURLConnection"]
@@ -596,6 +630,7 @@ depends-member:
 - ["C6Tatari14MainController", "String"]
 - !private ["C6Tatari14MainController", "UIAlertAction"]
 - !private ["C6Tatari14MainController", "UIAlertController"]
+- !private ["C6Tatari14MainController", "UIFont"]
 - ["C6Tatari14MainController", "UISegmentedControl"]
 - !private ["C6Tatari14MainController", "Void"]
 - ["C6Tatari14MainController", "accuracyChanged"]
@@ -619,7 +654,7 @@ depends-member:
 - ["C6Tatari14MainController", "locationManagerDidResumeLocationUpdates"]
 - ["C6Tatari14MainController", "locationManagerShouldDisplayHeadingCalibration"]
 - ["C6Tatari14MainController", "motionManager"]
-- !private ["C6Tatari14MainController", "navigationItem"]
+- !private ["C6Tatari14MainController", "navigationController"]
 - !private ["C6Tatari14MainController", "presentViewController"]
 - !private ["C6Tatari14MainController", "print"]
 - ["C6Tatari14MainController", "sensorDataArray"]
@@ -658,6 +693,7 @@ depends-member:
 - !private ["PSo8NSCoding", "CLLocationManager"]
 - ["PSo8NSCoding", "CMMotionManager"]
 - !private ["PSo8NSCoding", "MKPointAnnotation"]
+- !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "NSOperationQueue"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "NSURLConnection"]
@@ -666,6 +702,7 @@ depends-member:
 - ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIAlertAction"]
 - !private ["PSo8NSCoding", "UIAlertController"]
+- !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "acceleration"]
 - ["PSo8NSCoding", "accuracyChanged"]
 - !private ["PSo8NSCoding", "addAction"]
@@ -690,13 +727,14 @@ depends-member:
 - ["PSo8NSCoding", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo8NSCoding", "magneticField"]
 - ["PSo8NSCoding", "motionManager"]
-- !private ["PSo8NSCoding", "navigationItem"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "presentViewController"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rotationRate"]
 - !private ["PSo8NSCoding", "selectedSegmentIndex"]
 - ["PSo8NSCoding", "sensorDataArray"]
-- !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
 - ["PSo8NSCoding", "updateSensorDataArray"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
@@ -711,6 +749,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "CLLocationManager"]
 - ["PSo26NSExtensionRequestHandling", "CMMotionManager"]
 - !private ["PSo26NSExtensionRequestHandling", "MKPointAnnotation"]
+- !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSOperationQueue"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURLConnection"]
@@ -719,6 +758,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertAction"]
 - !private ["PSo26NSExtensionRequestHandling", "UIAlertController"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - ["PSo26NSExtensionRequestHandling", "accuracyChanged"]
 - !private ["PSo26NSExtensionRequestHandling", "addAction"]
 - ["PSo26NSExtensionRequestHandling", "btSauda"]
@@ -740,7 +780,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "locationManagerDidResumeLocationUpdates"]
 - ["PSo26NSExtensionRequestHandling", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo26NSExtensionRequestHandling", "motionManager"]
-- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "presentViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "sensorDataArray"]
@@ -759,6 +800,7 @@ depends-member:
 - !private ["CSo8NSObject", "MKPointAnnotation"]
 - !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "NSOperationQueue"]
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSURLConnection"]
@@ -768,6 +810,7 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIAlertAction"]
 - !private ["CSo8NSObject", "UIAlertController"]
+- !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UISegmentedControl"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "acceleration"]
@@ -801,7 +844,8 @@ depends-member:
 - !private ["CSo8NSObject", "magneticField"]
 - !private ["CSo8NSObject", "magnetometerData"]
 - ["CSo8NSObject", "motionManager"]
-- !private ["CSo8NSObject", "navigationItem"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "presentViewController"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "requestAlwaysAuthorization"]
@@ -819,7 +863,7 @@ depends-member:
 - !private ["CSo8NSObject", "stopGyroUpdates"]
 - !private ["CSo8NSObject", "stopMagnetometerUpdates"]
 - !private ["CSo8NSObject", "stopUpdatingLocation"]
-- !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
 - ["CSo8NSObject", "updateSensorDataArray"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
@@ -828,6 +872,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CLLocationManager"]
 - ["PSo16NSObjectProtocol", "CMMotionManager"]
 - !private ["PSo16NSObjectProtocol", "MKPointAnnotation"]
+- !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSOperationQueue"]
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "NSURLConnection"]
@@ -836,6 +881,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIAlertAction"]
 - !private ["PSo16NSObjectProtocol", "UIAlertController"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "acceleration"]
 - !private ["PSo16NSObjectProtocol", "accelerometerData"]
 - ["PSo16NSObjectProtocol", "accuracyChanged"]
@@ -867,7 +913,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "magneticField"]
 - !private ["PSo16NSObjectProtocol", "magnetometerData"]
 - ["PSo16NSObjectProtocol", "motionManager"]
-- !private ["PSo16NSObjectProtocol", "navigationItem"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "presentViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "requestAlwaysAuthorization"]
@@ -885,7 +932,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "stopGyroUpdates"]
 - !private ["PSo16NSObjectProtocol", "stopMagnetometerUpdates"]
 - !private ["PSo16NSObjectProtocol", "stopUpdatingLocation"]
-- !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - ["PSo16NSObjectProtocol", "updateSensorDataArray"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
@@ -924,7 +971,9 @@ depends-member:
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "Key"]
 - !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "Value"]
 - !private ["PSs12SequenceType", "_Buffer"]
 - !private ["PSs12SequenceType", "_Element"]
 - ["PSs12SequenceType", "init"]
@@ -944,16 +993,19 @@ depends-member:
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "selectedSegmentIndex"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["CSo13UIAlertAction", "init"]
 - !private ["OSC18UIAlertActionStyle", "Default"]
 - !private ["CSo17UIAlertController", "addAction"]
 - !private ["CSo17UIAlertController", "init"]
 - !private ["OSC22UIAlertControllerStyle", "Alert"]
 - !private ["PSo12UIAppearance", "selectedSegmentIndex"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "CLAuthorizationStatus"]
 - !private ["PSo21UIAppearanceContainer", "CLLocationManager"]
 - ["PSo21UIAppearanceContainer", "CMMotionManager"]
 - !private ["PSo21UIAppearanceContainer", "MKPointAnnotation"]
+- !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSOperationQueue"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "NSURLConnection"]
@@ -962,6 +1014,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertAction"]
 - !private ["PSo21UIAppearanceContainer", "UIAlertController"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - ["PSo21UIAppearanceContainer", "accuracyChanged"]
 - !private ["PSo21UIAppearanceContainer", "addAction"]
 - ["PSo21UIAppearanceContainer", "btSauda"]
@@ -983,20 +1036,24 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "locationManagerDidResumeLocationUpdates"]
 - ["PSo21UIAppearanceContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo21UIAppearanceContainer", "motionManager"]
-- !private ["PSo21UIAppearanceContainer", "navigationItem"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "presentViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
 - ["PSo21UIAppearanceContainer", "sensorDataArray"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "updateSensorDataArray"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["PSo18UIContentContainer", "CLAuthorizationStatus"]
 - !private ["PSo18UIContentContainer", "CLLocationManager"]
 - ["PSo18UIContentContainer", "CMMotionManager"]
 - !private ["PSo18UIContentContainer", "MKPointAnnotation"]
+- !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "NSOperationQueue"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "NSURLConnection"]
@@ -1005,6 +1062,7 @@ depends-member:
 - ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIAlertAction"]
 - !private ["PSo18UIContentContainer", "UIAlertController"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - ["PSo18UIContentContainer", "accuracyChanged"]
 - !private ["PSo18UIContentContainer", "addAction"]
 - ["PSo18UIContentContainer", "btSauda"]
@@ -1026,7 +1084,8 @@ depends-member:
 - ["PSo18UIContentContainer", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UIContentContainer", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UIContentContainer", "motionManager"]
-- !private ["PSo18UIContentContainer", "navigationItem"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "presentViewController"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "sensorDataArray"]
@@ -1037,11 +1096,14 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "selectedSegmentIndex"]
 - !private ["PSo17UICoordinateSpace", "selectedSegmentIndex"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "CLAuthorizationStatus"]
 - !private ["PSo18UIFocusEnvironment", "CLLocationManager"]
 - ["PSo18UIFocusEnvironment", "CMMotionManager"]
 - !private ["PSo18UIFocusEnvironment", "MKPointAnnotation"]
+- !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSOperationQueue"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "NSURLConnection"]
@@ -1050,6 +1112,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertAction"]
 - !private ["PSo18UIFocusEnvironment", "UIAlertController"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
 - ["PSo18UIFocusEnvironment", "accuracyChanged"]
 - !private ["PSo18UIFocusEnvironment", "addAction"]
 - ["PSo18UIFocusEnvironment", "btSauda"]
@@ -1071,17 +1134,21 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UIFocusEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UIFocusEnvironment", "motionManager"]
-- !private ["PSo18UIFocusEnvironment", "navigationItem"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "presentViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
 - ["PSo18UIFocusEnvironment", "sensorDataArray"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "updateSensorDataArray"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["CSo16UINavigationItem", "title"]
+- !private ["CSo6UIFont", "init"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
+- !private ["CSo22UINavigationController", "navigationBar"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CLAuthorizationStatus"]
@@ -1091,6 +1158,7 @@ depends-member:
 - !private ["CSo11UIResponder", "MKPointAnnotation"]
 - !private ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "NSOperationQueue"]
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSURLConnection"]
@@ -1100,6 +1168,7 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIAlertAction"]
 - !private ["CSo11UIResponder", "UIAlertController"]
+- !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UISegmentedControl"]
 - !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "accuracyChanged"]
@@ -1123,11 +1192,13 @@ depends-member:
 - ["CSo11UIResponder", "locationManagerDidResumeLocationUpdates"]
 - ["CSo11UIResponder", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo11UIResponder", "motionManager"]
-- !private ["CSo11UIResponder", "navigationItem"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "presentViewController"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
 - ["CSo11UIResponder", "sensorDataArray"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "updateSensorDataArray"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
@@ -1137,6 +1208,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "CLLocationManager"]
 - ["PSo16UIStateRestoring", "CMMotionManager"]
 - !private ["PSo16UIStateRestoring", "MKPointAnnotation"]
+- !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSOperationQueue"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "NSURLConnection"]
@@ -1145,6 +1217,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIAlertAction"]
 - !private ["PSo16UIStateRestoring", "UIAlertController"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - ["PSo16UIStateRestoring", "accuracyChanged"]
 - !private ["PSo16UIStateRestoring", "addAction"]
 - ["PSo16UIStateRestoring", "btSauda"]
@@ -1166,7 +1239,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "locationManagerDidResumeLocationUpdates"]
 - ["PSo16UIStateRestoring", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo16UIStateRestoring", "motionManager"]
-- !private ["PSo16UIStateRestoring", "navigationItem"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "presentViewController"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "sensorDataArray"]
@@ -1179,6 +1253,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "CLLocationManager"]
 - ["PSo18UITraitEnvironment", "CMMotionManager"]
 - !private ["PSo18UITraitEnvironment", "MKPointAnnotation"]
+- !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSOperationQueue"]
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "NSURLConnection"]
@@ -1187,6 +1262,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIAlertAction"]
 - !private ["PSo18UITraitEnvironment", "UIAlertController"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - ["PSo18UITraitEnvironment", "accuracyChanged"]
 - !private ["PSo18UITraitEnvironment", "addAction"]
 - ["PSo18UITraitEnvironment", "btSauda"]
@@ -1208,17 +1284,20 @@ depends-member:
 - ["PSo18UITraitEnvironment", "locationManagerDidResumeLocationUpdates"]
 - ["PSo18UITraitEnvironment", "locationManagerShouldDisplayHeadingCalibration"]
 - ["PSo18UITraitEnvironment", "motionManager"]
-- !private ["PSo18UITraitEnvironment", "navigationItem"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "presentViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
 - ["PSo18UITraitEnvironment", "sensorDataArray"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "updateSensorDataArray"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "selectedSegmentIndex"]
+- !private ["CSo6UIView", "titleTextAttributes"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CLAuthorizationStatus"]
@@ -1228,6 +1307,7 @@ depends-member:
 - !private ["CSo16UIViewController", "MKPointAnnotation"]
 - !private ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSFontAttributeName"]
 - !private ["CSo16UIViewController", "NSOperationQueue"]
 - !private ["CSo16UIViewController", "NSURL"]
 - !private ["CSo16UIViewController", "NSURLConnection"]
@@ -1237,6 +1317,7 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIAlertAction"]
 - !private ["CSo16UIViewController", "UIAlertController"]
+- !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UISegmentedControl"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "accuracyChanged"]
@@ -1260,7 +1341,8 @@ depends-member:
 - ["CSo16UIViewController", "locationManagerDidResumeLocationUpdates"]
 - ["CSo16UIViewController", "locationManagerShouldDisplayHeadingCalibration"]
 - ["CSo16UIViewController", "motionManager"]
-- !private ["CSo16UIViewController", "navigationItem"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "presentViewController"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "sensorDataArray"]
@@ -1312,7 +1394,9 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "Generator"]
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Buffer"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
@@ -1326,14 +1410,17 @@ depends-member:
 - !private ["PSs12_Reflectable", "Generator"]
 - !private ["PSs12_Reflectable", "Index"]
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Key"]
 - ["PSs12_Reflectable", "Some"]
 - !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_Buffer"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "selectedSegmentIndex"]
 - !private ["PSs12_Reflectable", "subscript"]
+- !private ["PSs12_Reflectable", "titleTextAttributes"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs11_Strideable", "Distance"]
@@ -1348,6 +1435,7 @@ depends-nominal:
 - !private "Sb"
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
 - !private "OSC21CLAuthorizationStatus"
 - !private "CSo10CLLocation"
 - !private "VSC22CLLocationCoordinate2D"
@@ -1367,6 +1455,8 @@ depends-nominal:
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
+- !private "VSs10Dictionary"
+- !private "PSs28DictionaryLiteralConvertible"
 - !private "Sd"
 - "PSs9Equatable"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
@@ -1428,12 +1518,15 @@ depends-nominal:
 - !private "OSC22UIAlertControllerStyle"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
-- !private "CSo16UINavigationItem"
+- !private "CSo6UIFont"
+- !private "CSo15UINavigationBar"
+- !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - !private "CSo18UISegmentedControl"
 - "PSo16UIStateRestoring"

@@ -97,7 +97,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="visibilidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBH-BG-pLV">
                                 <rect key="frame" x="195" y="290" width="221" height="73"/>
                                 <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="53"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.015686274509803921" green="0.062745098039215685" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYz-wB-MuW">
@@ -170,17 +170,30 @@
                                 <rect key="frame" x="59" y="309" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
                                 <rect key="frame" x="59" y="194" width="42" height="50"/>
                                 <state key="normal" image="elevador"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
                                 <rect key="frame" x="299" y="502" width="42" height="50"/>
                                 <state key="normal" image="banheiro"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                <rect key="frame" x="130" y="64" width="340" height="487"/>
-                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-Jn-9OA">
+                                <rect key="frame" x="113" y="107" width="375" height="445"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                        <rect key="frame" x="17" y="-21" width="340" height="487"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="QiX-lX-wkX" secondAttribute="bottom" constant="-21" id="6kQ-uu-sas"/>
+                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="centerX" secondItem="x2D-Jn-9OA" secondAttribute="centerX" id="AIW-Lb-yy5"/>
+                                    <constraint firstAttribute="trailing" secondItem="QiX-lX-wkX" secondAttribute="trailing" constant="18" id="Fua-qn-onR"/>
+                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="leading" secondItem="x2D-Jn-9OA" secondAttribute="leading" constant="17" id="Xk3-Rx-cnO"/>
+                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="centerY" secondItem="x2D-Jn-9OA" secondAttribute="centerY" id="rxg-KX-zYx"/>
+                                    <constraint firstItem="QiX-lX-wkX" firstAttribute="top" secondItem="x2D-Jn-9OA" secondAttribute="top" constant="-21" id="zW3-7K-gp0"/>
+                                </constraints>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Nn-jRv">
                                 <rect key="frame" x="305" y="65" width="40" height="41"/>
                                 <state key="normal" title="feed" image="info icon"/>
@@ -191,6 +204,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="x2D-Jn-9OA" secondAttribute="bottom" constant="48" id="52L-Jw-PdC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x2D-Jn-9OA" secondAttribute="trailing" constant="92" id="Nqa-Zt-gia"/>
+                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="top" secondItem="oXB-Wo-Nov" secondAttribute="bottom" constant="43" id="bFi-7Q-lIR"/>
+                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="bottom" secondItem="bkd-XC-wlV" secondAttribute="bottom" id="djw-Fg-H9h"/>
+                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="leading" secondItem="WQu-9N-r8r" secondAttribute="trailing" constant="12" id="ogI-7T-04A"/>
+                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="centerX" secondItem="Oxb-rz-rRZ" secondAttribute="centerX" id="xbp-KS-qmV"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="3k7-e2-9jj"/>

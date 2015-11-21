@@ -141,21 +141,34 @@ SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSMutableArray;
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+@class NSString;
+@class NSMutableURLRequest;
 
 SWIFT_CLASS("_TtC6Tatari22DesafiosViewController")
-@interface DesafiosViewController : UIViewController
+@interface DesafiosViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic, strong) NSMutableArray * __null_unspecified textArray;
+@property (nonatomic, strong) NSMutableArray * __null_unspecified imageArray;
+@property (nonatomic, copy) NSString * __nonnull fbIdDesafiado;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
+- (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
+- (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
 @class NSMutableData;
 @class UIRefreshControl;
-@class NSIndexPath;
-@class UITableViewCell;
-@class NSMutableURLRequest;
 @class UIActivityIndicatorView;
 
 SWIFT_CLASS("_TtC6Tatari14FeedController")
@@ -181,7 +194,6 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView willDisplayCell:(UITableViewCell * __nonnull)cell forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
@@ -235,8 +247,8 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @end
 
 @class UITextField;
-@class NSString;
 @class UIButton;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
@@ -249,6 +261,7 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull idsLikes;
 @property (nonatomic, strong) NSNumber * __nonnull point;
+@property (nonatomic, copy) NSString * __nonnull fbIdDesafiado;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
@@ -259,8 +272,10 @@ SWIFT_CLASS("_TtC6Tatari16SearchController")
 - (void)viewDidAppear:(BOOL)animated;
 - (void)showChallengeView:(NSString * __nonnull)fbId;
 - (void)buttonDesafiarAction:(UIButton * __null_unspecified)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
 - (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)unwindForSegue:(UIStoryboardSegue * __nonnull)unwindSegue towardsViewController:(UIViewController * __nonnull)subsequentVC;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;

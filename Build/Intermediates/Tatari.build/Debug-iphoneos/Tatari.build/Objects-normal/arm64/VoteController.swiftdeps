@@ -6,99 +6,101 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14VoteController", ""]
 provides-dynamic-lookup:
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "JSONStringify"
-- "idsVotadas"
-- "add_photo"
-- "voted"
-- "pictures"
-- "idBotaoVoto"
-- "buttonVoteAction"
-- "names"
-- "activityVote"
 - "btParticipar"
-- "imagePickerController"
-- "viewDidLoad"
-- "imagePicker"
-- "items"
-- "getDataFromServer"
-- "HTTPsendRequest"
 - "qtdVotes"
-- "cleanAllArrays"
-- "HTTPPostJSON"
-- "data"
-- "didReceiveMemoryWarning"
-- "vote_for"
 - "ids"
+- "items"
+- "imagePicker"
+- "idBotaoVoto"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "getDataFromServer"
+- "imagePickerController"
+- "JSONStringify"
+- "activityVote"
+- "buttonVoteAction"
+- "idsVotadas"
+- "pictures"
+- "add_photo"
+- "data"
+- "cleanAllArrays"
+- "HTTPsendRequest"
+- "HTTPPostJSON"
+- "voted"
+- "names"
+- "vote_for"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "UITableViewCell"
-- !private "NSLog"
-- "UIViewController"
-- "NSIndexPath"
-- "UITableViewDataSource"
-- !private "NSMutableDictionary"
-- !private "!="
-- "UITableViewDelegate"
-- !private "UIControlState"
-- !private "FBSDKGraphRequest"
-- "CGFloat"
-- "NSURLConnectionDelegate"
-- !private "FBSDKGraphRequestConnection"
-- "UIImagePickerControllerDelegate"
-- !private "NSString"
-- "UINavigationControllerDelegate"
-- !private "print"
-- !private "NSError"
-- "UIButton"
-- "StringLiteralType"
-- !private "FBSDKAccessToken"
-- !private "CFStringCompareFlags"
-- !private "UIImageJPEGRepresentation"
 - !private "JSON"
-- "UITableView"
-- !private "UIViewContentMode"
-- "VoteController"
-- !private "NSUTF8StringEncoding"
+- "String"
+- "UIImagePickerController"
+- !private "dispatch_async"
+- "NSMutableData"
+- "UIButton"
+- !private "dispatch_get_main_queue"
 - !private "UIImagePickerControllerMediaType"
+- !private "UIControlEvents"
+- "Bool"
+- "UIImagePickerControllerDelegate"
+- !private "UIImagePickerControllerSourceType"
 - "UIActivityIndicatorView"
+- "UINavigationControllerDelegate"
+- !private "NSJSONSerialization"
+- !private "=="
+- "NSMutableURLRequest"
+- "NSURLConnectionDelegate"
+- !private "Array"
+- !private "NSData"
+- !private "UIViewContentMode"
+- !private "CFStringCompare"
+- !private "NSFontAttributeName"
 - !private "VotoTableViewCell"
-- !private "NSJSONWritingOptions"
+- !private "NSURLSession"
+- "Void"
+- !private "UIControlState"
+- !private "UINib"
+- !private "NSLog"
+- !private "+"
+- "UITableView"
+- !private "NSURL"
+- !private "UIImageJPEGRepresentation"
+- !private "NSUserDefaults"
+- !private "FBSDKAccessToken"
+- "UIViewController"
+- !private "NSError"
+- !private "CFStringCompareFlags"
+- "StringLiteralType"
+- "Int"
+- !private "NSMutableDictionary"
+- !private "FBSDKGraphRequestConnection"
+- !private "!="
+- !private "UIImagePickerControllerOriginalImage"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
+- !private "UIImageView"
+- !private "print"
+- !private "UIFont"
+- "NSIndexPath"
+- "UITableViewCell"
 - !private "CFComparisonResult"
 - !private "Dictionary"
-- !private "BooleanLiteralType"
-- !private "Array"
-- !private "UIImagePickerControllerOriginalImage"
 - "UIImage"
-- "String"
-- "AnyObject"
-- !private "NSJSONSerialization"
-- !private "UIControlEvents"
-- "Void"
-- !private "NSUserDefaults"
-- !private "NSData"
-- !private "NSURL"
-- "NSMutableURLRequest"
-- !private "CFStringCompare"
-- "Bool"
-- !private "NSURLSession"
-- "Int"
-- !private "UIImagePickerControllerSourceType"
-- !private "dispatch_async"
-- !private "UIImageView"
-- !private "dispatch_get_main_queue"
-- "UIImagePickerController"
-- !private "UIImagePickerControllerEditedImage"
-- !private "+"
-- !private "NSDataBase64EncodingOptions"
-- !private "=="
-- !private "UINib"
-- "NSMutableData"
-- !private "NSDataBase64DecodingOptions"
+- !private "FBSDKGraphRequest"
+- !private "NSString"
+- !private "BooleanLiteralType"
 - !private "kUTTypeImage"
+- !private "UIImagePickerControllerEditedImage"
+- !private "NSUTF8StringEncoding"
+- "CGFloat"
+- "AnyObject"
+- "VoteController"
+- !private "NSJSONWritingOptions"
+- !private "NSDataBase64DecodingOptions"
+- !private "NSDataBase64EncodingOptions"
 depends-member:
 - !private ["PSs9AnyObject", "CFComparisonResult"]
 - !private ["PSs9AnyObject", "CFStringCompare"]
@@ -115,6 +117,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSData"]
 - !private ["PSs9AnyObject", "NSDataBase64DecodingOptions"]
 - !private ["PSs9AnyObject", "NSDataBase64EncodingOptions"]
+- !private ["PSs9AnyObject", "NSFontAttributeName"]
 - !private ["PSs9AnyObject", "NSJSONSerialization"]
 - !private ["PSs9AnyObject", "NSJSONWritingOptions"]
 - !private ["PSs9AnyObject", "NSLog"]
@@ -129,6 +132,7 @@ depends-member:
 - !private ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "UIControlState"]
+- !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UIImageJPEGRepresentation"]
 - !private ["PSs9AnyObject", "UIImagePickerController"]
@@ -188,6 +192,7 @@ depends-member:
 - !private ["PSs9AnyObject", "localizedDescription"]
 - !private ["PSs9AnyObject", "mediaTypes"]
 - ["PSs9AnyObject", "names"]
+- !private ["PSs9AnyObject", "navigationBar"]
 - ["PSs9AnyObject", "navigationController"]
 - ["PSs9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -229,6 +234,7 @@ depends-member:
 - !private ["PSs9AnyObject", "tag"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "title"]
+- !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
@@ -313,6 +319,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSData"]
 - !private ["PSs11CVarArgType", "NSDataBase64DecodingOptions"]
 - !private ["PSs11CVarArgType", "NSDataBase64EncodingOptions"]
+- !private ["PSs11CVarArgType", "NSFontAttributeName"]
 - !private ["PSs11CVarArgType", "NSJSONSerialization"]
 - !private ["PSs11CVarArgType", "NSJSONWritingOptions"]
 - !private ["PSs11CVarArgType", "NSLog"]
@@ -328,6 +335,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UIControlState"]
+- !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UIImageJPEGRepresentation"]
 - !private ["PSs11CVarArgType", "UIImagePickerController"]
@@ -386,6 +394,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "localizedDescription"]
 - !private ["PSs11CVarArgType", "mediaTypes"]
 - ["PSs11CVarArgType", "names"]
+- !private ["PSs11CVarArgType", "navigationBar"]
 - ["PSs11CVarArgType", "navigationController"]
 - ["PSs11CVarArgType", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs11CVarArgType", "navigationControllerSupportedInterfaceOrientations"]
@@ -426,6 +435,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "tag"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "title"]
+- !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
@@ -496,6 +506,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSData"]
 - !private ["PSs23CustomStringConvertible", "NSDataBase64DecodingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSDataBase64EncodingOptions"]
+- !private ["PSs23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
 - !private ["PSs23CustomStringConvertible", "NSJSONWritingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSLog"]
@@ -512,6 +523,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UIControlState"]
+- !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UIImageJPEGRepresentation"]
 - !private ["PSs23CustomStringConvertible", "UIImagePickerController"]
@@ -576,6 +588,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - !private ["PSs23CustomStringConvertible", "mediaTypes"]
 - ["PSs23CustomStringConvertible", "names"]
+- !private ["PSs23CustomStringConvertible", "navigationBar"]
 - ["PSs23CustomStringConvertible", "navigationController"]
 - ["PSs23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
@@ -619,6 +632,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "tag"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "title"]
+- !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -663,6 +677,7 @@ depends-member:
 - !private ["PSs9Equatable", "NSData"]
 - !private ["PSs9Equatable", "NSDataBase64DecodingOptions"]
 - !private ["PSs9Equatable", "NSDataBase64EncodingOptions"]
+- !private ["PSs9Equatable", "NSFontAttributeName"]
 - !private ["PSs9Equatable", "NSJSONSerialization"]
 - !private ["PSs9Equatable", "NSJSONWritingOptions"]
 - !private ["PSs9Equatable", "NSLog"]
@@ -685,6 +700,7 @@ depends-member:
 - !private ["PSs9Equatable", "TouchUpInside"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UIControlState"]
+- !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UIImageJPEGRepresentation"]
 - !private ["PSs9Equatable", "UIImagePickerController"]
@@ -746,6 +762,7 @@ depends-member:
 - !private ["PSs9Equatable", "localizedDescription"]
 - !private ["PSs9Equatable", "mediaTypes"]
 - ["PSs9Equatable", "names"]
+- !private ["PSs9Equatable", "navigationBar"]
 - ["PSs9Equatable", "navigationController"]
 - ["PSs9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs9Equatable", "navigationControllerSupportedInterfaceOrientations"]
@@ -788,6 +805,7 @@ depends-member:
 - !private ["PSs9Equatable", "tag"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "title"]
+- !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
@@ -842,6 +860,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSData"]
 - !private ["PSs8Hashable", "NSDataBase64DecodingOptions"]
 - !private ["PSs8Hashable", "NSDataBase64EncodingOptions"]
+- !private ["PSs8Hashable", "NSFontAttributeName"]
 - !private ["PSs8Hashable", "NSJSONSerialization"]
 - !private ["PSs8Hashable", "NSJSONWritingOptions"]
 - !private ["PSs8Hashable", "NSLog"]
@@ -860,6 +879,7 @@ depends-member:
 - !private ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UIControlState"]
+- !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UIImageJPEGRepresentation"]
 - !private ["PSs8Hashable", "UIImagePickerController"]
@@ -919,6 +939,7 @@ depends-member:
 - !private ["PSs8Hashable", "localizedDescription"]
 - !private ["PSs8Hashable", "mediaTypes"]
 - ["PSs8Hashable", "names"]
+- !private ["PSs8Hashable", "navigationBar"]
 - ["PSs8Hashable", "navigationController"]
 - ["PSs8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs8Hashable", "navigationControllerSupportedInterfaceOrientations"]
@@ -959,6 +980,7 @@ depends-member:
 - !private ["PSs8Hashable", "tag"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "title"]
+- !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
@@ -1076,6 +1098,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSData"]
 - !private ["PSo8NSCoding", "NSDataBase64DecodingOptions"]
 - !private ["PSo8NSCoding", "NSDataBase64EncodingOptions"]
+- !private ["PSo8NSCoding", "NSFontAttributeName"]
 - !private ["PSo8NSCoding", "NSJSONSerialization"]
 - !private ["PSo8NSCoding", "NSJSONWritingOptions"]
 - !private ["PSo8NSCoding", "NSLog"]
@@ -1090,6 +1113,7 @@ depends-member:
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIControlState"]
+- !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageJPEGRepresentation"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
@@ -1145,6 +1169,7 @@ depends-member:
 - !private ["PSo8NSCoding", "localizedDescription"]
 - !private ["PSo8NSCoding", "mediaTypes"]
 - ["PSo8NSCoding", "names"]
+- !private ["PSo8NSCoding", "navigationBar"]
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
@@ -1180,6 +1205,7 @@ depends-member:
 - !private ["PSo8NSCoding", "tag"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -1220,6 +1246,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSData"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDataBase64DecodingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDataBase64EncodingOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONWritingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLog"]
@@ -1234,6 +1261,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageJPEGRepresentation"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
@@ -1273,6 +1301,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "kUTTypeImage"]
 - !private ["PSo26NSExtensionRequestHandling", "mediaTypes"]
 - ["PSo26NSExtensionRequestHandling", "names"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
@@ -1343,6 +1372,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSDataBase64DecodingOptions"]
 - !private ["CSo8NSObject", "NSDataBase64EncodingOptions"]
 - !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSFontAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
 - !private ["CSo8NSObject", "NSJSONWritingOptions"]
@@ -1360,6 +1390,7 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIControlState"]
+- !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIImageJPEGRepresentation"]
 - ["CSo8NSObject", "UIImagePickerController"]
@@ -1423,6 +1454,7 @@ depends-member:
 - !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "mediaTypes"]
 - ["CSo8NSObject", "names"]
+- !private ["CSo8NSObject", "navigationBar"]
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -1463,6 +1495,7 @@ depends-member:
 - !private ["CSo8NSObject", "tag"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -1483,6 +1516,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSData"]
 - !private ["PSo16NSObjectProtocol", "NSDataBase64DecodingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSDataBase64EncodingOptions"]
+- !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
 - !private ["PSo16NSObjectProtocol", "NSJSONWritingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSLog"]
@@ -1497,6 +1531,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIControlState"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageJPEGRepresentation"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerController"]
@@ -1555,6 +1590,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "mediaTypes"]
 - ["PSo16NSObjectProtocol", "names"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
@@ -1595,6 +1631,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "tag"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -1629,6 +1666,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "NSData"]
 - !private ["PSo23NSURLConnectionDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo23NSURLConnectionDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo23NSURLConnectionDelegate", "NSFontAttributeName"]
 - !private ["PSo23NSURLConnectionDelegate", "NSJSONSerialization"]
 - !private ["PSo23NSURLConnectionDelegate", "NSJSONWritingOptions"]
 - !private ["PSo23NSURLConnectionDelegate", "NSLog"]
@@ -1643,6 +1681,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "String"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlEvents"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlState"]
+- !private ["PSo23NSURLConnectionDelegate", "UIFont"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImage"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImagePickerController"]
@@ -1826,6 +1865,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "stopAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["CSo23UIActivityIndicatorView", "hidesWhenStopped"]
 - !private ["CSo23UIActivityIndicatorView", "startAnimating"]
 - !private ["CSo23UIActivityIndicatorView", "stopAnimating"]
@@ -1849,6 +1889,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "CFComparisonResult"]
 - !private ["PSo21UIAppearanceContainer", "CFStringCompare"]
 - !private ["PSo21UIAppearanceContainer", "CFStringCompareFlags"]
@@ -1862,6 +1903,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSData"]
 - !private ["PSo21UIAppearanceContainer", "NSDataBase64DecodingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSDataBase64EncodingOptions"]
+- !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONWritingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSLog"]
@@ -1876,6 +1918,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIControlState"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageJPEGRepresentation"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
@@ -1926,6 +1969,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "lblVoteCount"]
 - !private ["PSo21UIAppearanceContainer", "mediaTypes"]
 - ["PSo21UIAppearanceContainer", "names"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -1958,11 +2002,13 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "vote_for"]
 - ["PSo21UIAppearanceContainer", "voted"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "tag"]
@@ -1979,6 +2025,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSData"]
 - !private ["PSo18UIContentContainer", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UIContentContainer", "NSDataBase64EncodingOptions"]
+- !private ["PSo18UIContentContainer", "NSFontAttributeName"]
 - !private ["PSo18UIContentContainer", "NSJSONSerialization"]
 - !private ["PSo18UIContentContainer", "NSJSONWritingOptions"]
 - !private ["PSo18UIContentContainer", "NSLog"]
@@ -1993,6 +2040,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIControlState"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageJPEGRepresentation"]
 - !private ["PSo18UIContentContainer", "UIImagePickerController"]
@@ -2032,6 +2080,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "kUTTypeImage"]
 - !private ["PSo18UIContentContainer", "mediaTypes"]
 - ["PSo18UIContentContainer", "names"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -2086,6 +2135,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "stopAnimating"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "allowsSelection"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
@@ -2106,6 +2156,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "CFComparisonResult"]
 - !private ["PSo18UIFocusEnvironment", "CFStringCompare"]
 - !private ["PSo18UIFocusEnvironment", "CFStringCompareFlags"]
@@ -2119,6 +2170,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSData"]
 - !private ["PSo18UIFocusEnvironment", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSDataBase64EncodingOptions"]
+- !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSLog"]
@@ -2133,6 +2185,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIControlState"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImageJPEGRepresentation"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
@@ -2183,6 +2236,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "lblVoteCount"]
 - !private ["PSo18UIFocusEnvironment", "mediaTypes"]
 - ["PSo18UIFocusEnvironment", "names"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -2215,11 +2269,13 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", "vote_for"]
 - ["PSo18UIFocusEnvironment", "voted"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo6UIFont", "init"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btVote"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblName"]
@@ -2245,6 +2301,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "NSData"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo31UIImagePickerControllerDelegate", "NSFontAttributeName"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSJSONSerialization"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSJSONWritingOptions"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSLog"]
@@ -2259,6 +2316,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "String"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlEvents"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlState"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIFont"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
@@ -2315,12 +2373,14 @@ depends-member:
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "init"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - !private ["CSo22UINavigationController", "allowsEditing"]
 - !private ["CSo22UINavigationController", "delegate"]
 - !private ["CSo22UINavigationController", "dismissViewControllerAnimated"]
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "isSourceTypeAvailable"]
 - !private ["CSo22UINavigationController", "mediaTypes"]
+- !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo22UINavigationController", "sourceType"]
 - !private ["PSo30UINavigationControllerDelegate", "CFComparisonResult"]
 - !private ["PSo30UINavigationControllerDelegate", "CFStringCompare"]
@@ -2335,6 +2395,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSData"]
 - !private ["PSo30UINavigationControllerDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo30UINavigationControllerDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo30UINavigationControllerDelegate", "NSFontAttributeName"]
 - !private ["PSo30UINavigationControllerDelegate", "NSJSONSerialization"]
 - !private ["PSo30UINavigationControllerDelegate", "NSJSONWritingOptions"]
 - !private ["PSo30UINavigationControllerDelegate", "NSLog"]
@@ -2349,6 +2410,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "String"]
 - !private ["PSo30UINavigationControllerDelegate", "UIControlEvents"]
 - !private ["PSo30UINavigationControllerDelegate", "UIControlState"]
+- !private ["PSo30UINavigationControllerDelegate", "UIFont"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImage"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
@@ -2421,6 +2483,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSDataBase64DecodingOptions"]
 - !private ["CSo11UIResponder", "NSDataBase64EncodingOptions"]
 - !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSFontAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
 - !private ["CSo11UIResponder", "NSJSONWritingOptions"]
@@ -2438,6 +2501,7 @@ depends-member:
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIControlState"]
+- !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIImageJPEGRepresentation"]
 - ["CSo11UIResponder", "UIImagePickerController"]
@@ -2492,6 +2556,7 @@ depends-member:
 - !private ["CSo11UIResponder", "lblVoteCount"]
 - !private ["CSo11UIResponder", "mediaTypes"]
 - ["CSo11UIResponder", "names"]
+- !private ["CSo11UIResponder", "navigationBar"]
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
@@ -2524,6 +2589,7 @@ depends-member:
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "tag"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "vote_for"]
@@ -2547,6 +2613,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSData"]
 - !private ["PSo20UIScrollViewDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONSerialization"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSLog"]
@@ -2561,6 +2628,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlState"]
+- !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerController"]
@@ -2626,6 +2694,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSData"]
 - !private ["PSo16UIStateRestoring", "NSDataBase64DecodingOptions"]
 - !private ["PSo16UIStateRestoring", "NSDataBase64EncodingOptions"]
+- !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
 - !private ["PSo16UIStateRestoring", "NSJSONWritingOptions"]
 - !private ["PSo16UIStateRestoring", "NSLog"]
@@ -2640,6 +2709,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIControlState"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageJPEGRepresentation"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerController"]
@@ -2679,6 +2749,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "kUTTypeImage"]
 - !private ["PSo16UIStateRestoring", "mediaTypes"]
 - ["PSo16UIStateRestoring", "names"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
@@ -2733,6 +2804,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSData"]
 - !private ["PSo21UITableViewDataSource", "NSDataBase64DecodingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSDataBase64EncodingOptions"]
+- !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
 - !private ["PSo21UITableViewDataSource", "NSJSONSerialization"]
 - !private ["PSo21UITableViewDataSource", "NSJSONWritingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSLog"]
@@ -2747,6 +2819,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
 - !private ["PSo21UITableViewDataSource", "UIControlState"]
+- !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UIImageJPEGRepresentation"]
 - !private ["PSo21UITableViewDataSource", "UIImagePickerController"]
@@ -2812,6 +2885,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSData"]
 - !private ["PSo19UITableViewDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
 - !private ["PSo19UITableViewDelegate", "NSJSONSerialization"]
 - !private ["PSo19UITableViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSLog"]
@@ -2826,6 +2900,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
 - !private ["PSo19UITableViewDelegate", "UIControlState"]
+- !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo19UITableViewDelegate", "UIImagePickerController"]
@@ -2891,6 +2966,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSData"]
 - !private ["PSo18UITraitEnvironment", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSDataBase64EncodingOptions"]
+- !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UITraitEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSLog"]
@@ -2905,6 +2981,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIControlState"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageJPEGRepresentation"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
@@ -2955,6 +3032,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "lblVoteCount"]
 - !private ["PSo18UITraitEnvironment", "mediaTypes"]
 - ["PSo18UITraitEnvironment", "names"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -2987,6 +3065,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "tag"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", "vote_for"]
@@ -3012,6 +3091,7 @@ depends-member:
 - !private ["CSo6UIView", "stopAnimating"]
 - !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["OSC17UIViewContentMode", "ScaleAspectFit"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
@@ -3031,6 +3111,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSDataBase64DecodingOptions"]
 - !private ["CSo16UIViewController", "NSDataBase64EncodingOptions"]
 - !private ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSFontAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
 - !private ["CSo16UIViewController", "NSJSONWritingOptions"]
@@ -3048,6 +3129,7 @@ depends-member:
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIControlState"]
+- !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIImageJPEGRepresentation"]
 - ["CSo16UIViewController", "UIImagePickerController"]
@@ -3091,6 +3173,7 @@ depends-member:
 - !private ["CSo16UIViewController", "kUTTypeImage"]
 - !private ["CSo16UIViewController", "mediaTypes"]
 - ["CSo16UIViewController", "names"]
+- !private ["CSo16UIViewController", "navigationBar"]
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
@@ -3152,6 +3235,7 @@ depends-member:
 - !private ["C6Tatari14VoteController", "NSDataBase64DecodingOptions"]
 - !private ["C6Tatari14VoteController", "NSDataBase64EncodingOptions"]
 - !private ["C6Tatari14VoteController", "NSError"]
+- !private ["C6Tatari14VoteController", "NSFontAttributeName"]
 - ["C6Tatari14VoteController", "NSIndexPath"]
 - !private ["C6Tatari14VoteController", "NSJSONSerialization"]
 - !private ["C6Tatari14VoteController", "NSJSONWritingOptions"]
@@ -3169,6 +3253,7 @@ depends-member:
 - ["C6Tatari14VoteController", "UIButton"]
 - !private ["C6Tatari14VoteController", "UIControlEvents"]
 - !private ["C6Tatari14VoteController", "UIControlState"]
+- !private ["C6Tatari14VoteController", "UIFont"]
 - ["C6Tatari14VoteController", "UIImage"]
 - !private ["C6Tatari14VoteController", "UIImageJPEGRepresentation"]
 - ["C6Tatari14VoteController", "UIImagePickerController"]
@@ -3351,6 +3436,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "tag"]
 - !private ["PSs12_Reflectable", "text"]
+- !private ["PSs12_Reflectable", "titleTextAttributes"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs18_SignedIntegerType", "Stride"]
@@ -3462,6 +3548,7 @@ depends-nominal:
 - !private "CSo23UIActivityIndicatorView"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
 - !private "CSo8UIButton"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
@@ -3470,6 +3557,7 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo6UIFont"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UIImage"
 - !private "CSo23UIImagePickerController"
@@ -3477,6 +3565,7 @@ depends-nominal:
 - !private "OSC33UIImagePickerControllerSourceType"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
 - "PSo30UINavigationControllerDelegate"
 - !private "CSo16UINavigationItem"

@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate , PushNotificationDelegate
         PushNotificationManager.pushManager().handlePushReceived(launchOptions)
         PushNotificationManager.pushManager().sendAppOpen()
         PushNotificationManager.pushManager().registerForPushNotifications()
+        
+        //UITabBar.appearance().tintColor = UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1)
+        UITabBar.appearance().tintColor = UIColor(colorLiteralRed: 0.98, green: 0.573, blue: 0.0, alpha: 1)
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
