@@ -32,12 +32,10 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationItem.title = "Avisos"
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         
-        //self.tableView.separatorStyle = .None
         self.tableView.separatorColor = UIColor(patternImage: UIImage(named: "Pontos")!)
-        //self.tableView.estimatedRowHeight = 150.0
-        //self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 330.0;
         self.tableView.rowHeight = UITableViewAutomaticDimension;
+        self.tableView.estimatedRowHeight = 430.0;
+        
         
         let bgImage = UIImage(named: "Background")
         self.tableView.backgroundView = UIImageView(image: bgImage)
@@ -64,43 +62,60 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Dispose of any resources that can be recreated.
     }
     
-    func computeCellHeight(cell_height: CGFloat, indexArray: Int){
-        self.arraySorted[indexArray]["cell_height"] = String(cell_height)
-        print(self.arraySorted[indexArray]["cell_height"])
-    }
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arraySorted.count;
-        //return self.items.count;
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:FeedTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("feedcell")! as! FeedTableViewCell
-        cell.lblTitle.text = self.arraySorted[indexPath.row]["title"]
-        cell.txtBody.text = self.arraySorted[indexPath.row]["body"]
+        
+        let cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("newFeedCell", forIndexPath: indexPath)
+        
+        cell.textLabel?.text = self.arraySorted[indexPath.row]["title"]
+        cell.textLabel?.font = UIFont(name: "Rodina", size: 20)
+        cell.detailTextLabel?.font = UIFont(name: "Rodina", size: 15)
+        cell.detailTextLabel?.numberOfLines = 0
+        cell.detailTextLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        cell.detailTextLabel?.text = self.arraySorted[indexPath.row]["body"]
+        
         
         var messageTagType: String
-        messageTagType = String(self.arraySorted[indexPath.row]["tag"])
+        messageTagType = self.arraySorted[indexPath.row]["title"]!
         if (messageTagType == "desafio"){
-            cell.imgMessageTagType.image = UIImage(named: "DesafioCellIcon")
+            cell.imageView?.image = UIImage(named: "DesafioCellIcon")
         }else if(messageTagType == "like"){
-            cell.imgMessageTagType.image = UIImage(named: "LikeCellIcon")
+            cell.imageView?.image = UIImage(named: "LikeCellIcon")
         }else{
-            cell.imgMessageTagType.image = UIImage(named: "OrganizadorCellIcon")
+            cell.imageView?.image = UIImage(named: "OrganizadorCellIcon")
         }
-        /**
-        cell.cnstHeightBorderView.constant = cell.txtBody.frame.height + 70
-        print(cell.cnstHeightBorderView.constant )
-        cell.borderView.layer.borderColor = UIColor.blackColor().CGColor
-        cell.borderView.layer.borderWidth = 1
-        cell.borderView.layer.cornerRadius = 12
-        **/
-//
-//        let cell_height = cell.txtBody.frame.height + 140
-//        self.computeCellHeight(cell_height, indexArray: indexPath.row)
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let text = UILabel()
+        text.text = self.arraySorted[indexPath.row]["body"]
+        text.font =  UIFont(name: "Rodina", size: 15)
+        text.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        text.numberOfLines = 10
+        text.sizeToFit()
+        text.intrinsicContentSize()
+        print(String(text.intrinsicContentSize()))
+        let tamanho = text.intrinsicContentSize().width
+        var tamanhoCelula = CGFloat(0.0)
+        if (tamanho < 100){
+            tamanhoCelula = 50
+        }else if (tamanho < 300){
+            tamanhoCelula = 100
+        }else{
+            tamanhoCelula = 300
+        }
+        print(tamanho)
+        return tamanhoCelula
+    }
+    
+
+    
+   
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         if !loadingData && indexPath.row == 15 - 1 {

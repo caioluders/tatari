@@ -24,7 +24,7 @@ class DesafiosViewController: UIViewController, UITableViewDataSource, UITableVi
         self.textArray.addObject("Elogie o bigode de alguém")
         self.textArray.addObject("Foto com uma das bandas")
         self.textArray.addObject("Crie uma dancinha")
-        self.textArray.addObject("Texto só pra ver se a célula vai se ajustar ou não ao tamanho")
+        self.textArray.addObject("Texto só pra ver se a célula vai se ajustar ou não ao tamanho mesmo mesmo mesmo")
         
         self.imageArray.addObject(UIImage(named: "Dado 1")!)
         self.imageArray.addObject(UIImage(named: "Dado 2")!)

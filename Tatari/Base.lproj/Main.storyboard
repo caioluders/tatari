@@ -245,6 +245,36 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="J9d-lh-bp2"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newFeedCell" textLabel="Kqd-vs-8HM" detailTextLabel="EQb-hs-9uL" imageView="PFP-Xe-YjI" style="IBUITableViewCellStyleSubtitle" id="OHJ-rg-jBf">
+                                        <rect key="frame" x="0.0" y="92" width="335" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OHJ-rg-jBf" id="ryI-wb-xEs">
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kqd-vs-8HM">
+                                                    <rect key="frame" x="66" y="6" width="31.5" height="19.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EQb-hs-9uL">
+                                                    <rect key="frame" x="66" y="25.5" width="30.5" height="13.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="OrganizadorCellIcon" id="PFP-Xe-YjI">
+                                                    <rect key="frame" x="15" y="3" width="36" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="pVq-cJ-qf5" id="FZH-6V-dBF"/>
                                     <outlet property="delegate" destination="pVq-cJ-qf5" id="NSU-of-NCE"/>
@@ -594,6 +624,7 @@
         <image name="Background 2" width="375" height="104"/>
         <image name="Dado 1" width="42" height="42"/>
         <image name="DesafioCellIcon" width="36" height="36"/>
+        <image name="OrganizadorCellIcon" width="36" height="36"/>
         <image name="Participar" width="112" height="22"/>
         <image name="Pin Avatar" width="111" height="173"/>
         <image name="banheiro" width="42" height="50"/>
