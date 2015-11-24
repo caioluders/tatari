@@ -139,6 +139,7 @@ SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btLogoutPressed:(id __nonnull)sender;
 - (UIImage * __nonnull)maskImage:(UIImage * __nonnull)image mask:(UIImage * __nonnull)mask;
