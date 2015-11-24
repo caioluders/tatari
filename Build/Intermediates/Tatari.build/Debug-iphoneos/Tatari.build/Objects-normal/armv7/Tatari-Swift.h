@@ -123,16 +123,15 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 @end
 
 @class UIImage;
-@class UISwitch;
 @class UIImageView;
+@class UISegmentedControl;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @interface ConfigViewController : UIViewController
-@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified all_switch;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
-@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified friends_switch;
+@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified visi_control;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btLogoutPressed:(id __nonnull)sender;
@@ -189,9 +188,9 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @property (nonatomic, strong) UIRefreshControl * __null_unspecified refreshControl;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (void)computeCellHeight:(CGFloat)cell_height indexArray:(NSInteger)indexArray;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView willDisplayCell:(UITableViewCell * __nonnull)cell forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
@@ -222,7 +221,6 @@ SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 
 @class CMMotionManager;
 @class CLLocationManager;
-@class UISegmentedControl;
 @class CLLocation;
 
 SWIFT_CLASS("_TtC6Tatari14MainController")

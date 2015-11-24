@@ -24,8 +24,8 @@ class ConfigViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         let avatar_url = NSURL(string: defaults.stringForKey("fb_avatar")!)
         let data = NSData(contentsOfURL: avatar_url!)
-        let avatar_img = Toucan(image: UIImage(data: data!)!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
-        let maskingImage = Toucan(image: UIImage(named: "check3.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Scale).image
+        let avatar_img = Toucan(image: UIImage(data: data!)!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Clip).image
+        let maskingImage = Toucan(image: UIImage(named: "circle_mask.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Clip).image
         
         self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
 

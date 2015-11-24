@@ -11,6 +11,8 @@
 		420682F91BED3207003E4C84 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420682F81BED3207003E4C84 /* Pushwoosh.framework */; };
 		420683011BED3A95003E4C84 /* personCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420683001BED3A95003E4C84 /* personCell.xib */; };
 		420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420683021BED3E15003E4C84 /* personTableViewCell.swift */; };
+		425324131C04E49100D4BB88 /* black_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 425324121C04E49100D4BB88 /* black_circle.png */; };
+		425324151C04E60100D4BB88 /* circle_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 425324141C04E60100D4BB88 /* circle_mask.png */; };
 		427C42361BE2BE1700F3A219 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427C42351BE2BE1700F3A219 /* AVFoundation.framework */; };
 		42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFC61BDFE6E80098A62D /* feedCell.xib */; };
 		42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */; };
@@ -101,6 +103,8 @@
 		420682F81BED3207003E4C84 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		420683001BED3A95003E4C84 /* personCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personCell.xib; sourceTree = "<group>"; };
 		420683021BED3E15003E4C84 /* personTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = personTableViewCell.swift; path = ../personTableViewCell.swift; sourceTree = "<group>"; };
+		425324121C04E49100D4BB88 /* black_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_circle.png; sourceTree = "<group>"; };
+		425324141C04E60100D4BB88 /* circle_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_mask.png; sourceTree = "<group>"; };
 		427C42351BE2BE1700F3A219 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		42F4CFC61BDFE6E80098A62D /* feedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = feedCell.xib; path = ../feedCell.xib; sourceTree = "<group>"; };
 		42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -233,6 +237,8 @@
 				42FC42EE1BF66DA700E5AF51 /* Cells */,
 				627355AD1BD8079400F7124A /* Main.storyboard */,
 				627355B01BD8079400F7124A /* Assets.xcassets */,
+				425324121C04E49100D4BB88 /* black_circle.png */,
+				425324141C04E60100D4BB88 /* circle_mask.png */,
 				62EFDDFC1BFF99BC00D13D4C /* check3.png */,
 				62EFDDFA1BFF848900D13D4C /* OctagonMask.png */,
 				627355B21BD8079400F7124A /* LaunchScreen.storyboard */,
@@ -429,12 +435,14 @@
 				42FC42F01BF67F2300E5AF51 /* Rodina-Regular.otf in Resources */,
 				627355B41BD8079400F7124A /* LaunchScreen.storyboard in Resources */,
 				62EFDDFB1BFF848900D13D4C /* OctagonMask.png in Resources */,
+				425324151C04E60100D4BB88 /* circle_mask.png in Resources */,
 				42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */,
 				627355B11BD8079400F7124A /* Assets.xcassets in Resources */,
 				627355AF1BD8079400F7124A /* Main.storyboard in Resources */,
 				420683011BED3A95003E4C84 /* personCell.xib in Resources */,
 				62EFDDFD1BFF99BC00D13D4C /* check3.png in Resources */,
 				42F4CFCB1BE0006D0098A62D /* votoCell.xib in Resources */,
+				425324131C04E49100D4BB88 /* black_circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

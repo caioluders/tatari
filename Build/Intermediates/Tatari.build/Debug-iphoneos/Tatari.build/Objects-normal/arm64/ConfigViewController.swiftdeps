@@ -6,39 +6,39 @@ provides-nominal:
 provides-member:
 - ["C6Tatari20ConfigViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "visi_control"
 - "btLogoutPressed"
-- "maskImage"
-- "didReceiveMemoryWarning"
+- "visi_control"
 - "pin_avatar"
+- "didReceiveMemoryWarning"
+- "maskImage"
+- "viewDidLoad"
 depends-top-level:
+- !private "NSData"
 - !private "CGImageGetBitsPerPixel"
-- "AnyObject"
-- "UISegmentedControl"
-- !private "Toucan"
-- !private "CGImageCreateWithMask"
-- "UIViewController"
-- !private "CGImageGetBitsPerComponent"
-- !private "CGImageGetBytesPerRow"
-- !private "StringLiteralType"
 - "ConfigViewController"
-- "UIImage"
 - !private "NSForegroundColorAttributeName"
 - !private "UIColor"
+- !private "StringLiteralType"
 - !private "NSURL"
-- !private "CGImageGetHeight"
-- !private "CGImageGetDataProvider"
-- !private "FBSDKLoginManager"
-- !private "NSData"
-- "UIImageView"
-- !private "NSFontAttributeName"
-- !private "NSUserDefaults"
+- "UIViewController"
+- !private "CGImageMaskCreate"
+- !private "CGImageGetBytesPerRow"
 - !private "Dictionary"
 - !private "CGImageGetWidth"
-- !private "CGImageMaskCreate"
-- !private "UIFont"
+- "UIImageView"
+- "UIImage"
+- !private "Toucan"
+- !private "CGImageGetDataProvider"
+- "AnyObject"
+- !private "CGImageGetHeight"
 - !private "BooleanLiteralType"
+- !private "CGImageCreateWithMask"
+- !private "UIFont"
+- !private "CGImageGetBitsPerComponent"
+- "UISegmentedControl"
+- !private "NSUserDefaults"
+- !private "NSFontAttributeName"
+- !private "FBSDKLoginManager"
 depends-member:
 - !private ["PSs9AnyObject", "CGImage"]
 - !private ["PSs9AnyObject", "CGImageCreateWithMask"]
@@ -204,6 +204,7 @@ depends-member:
 - !private ["PSs9Equatable", "CGImageGetHeight"]
 - !private ["PSs9Equatable", "CGImageGetWidth"]
 - !private ["PSs9Equatable", "CGImageMaskCreate"]
+- !private ["PSs9Equatable", "Clip"]
 - !private ["PSs9Equatable", "FBSDKLoginManager"]
 - !private ["PSs9Equatable", "NSData"]
 - !private ["PSs9Equatable", "NSFontAttributeName"]
@@ -211,7 +212,6 @@ depends-member:
 - !private ["PSs9Equatable", "NSURL"]
 - !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "Resize"]
-- !private ["PSs9Equatable", "Scale"]
 - !private ["PSs9Equatable", "Toucan"]
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIFont"]
@@ -236,7 +236,7 @@ depends-member:
 - ["PSs9Equatable", ""]
 - !private ["CSo17FBSDKLoginManager", "init"]
 - !private ["CSo17FBSDKLoginManager", "logOut"]
-- !private ["OVC6Toucan6Toucan6Resize7FitMode", "Scale"]
+- !private ["OVC6Toucan6Toucan6Resize7FitMode", "Clip"]
 - !private ["PSs8Hashable", "CGImage"]
 - !private ["PSs8Hashable", "CGImageCreateWithMask"]
 - !private ["PSs8Hashable", "CGImageGetBitsPerComponent"]
@@ -246,6 +246,7 @@ depends-member:
 - !private ["PSs8Hashable", "CGImageGetHeight"]
 - !private ["PSs8Hashable", "CGImageGetWidth"]
 - !private ["PSs8Hashable", "CGImageMaskCreate"]
+- !private ["PSs8Hashable", "Clip"]
 - !private ["PSs8Hashable", "FBSDKLoginManager"]
 - !private ["PSs8Hashable", "NSData"]
 - !private ["PSs8Hashable", "NSFontAttributeName"]
@@ -253,7 +254,6 @@ depends-member:
 - !private ["PSs8Hashable", "NSURL"]
 - !private ["PSs8Hashable", "NSUserDefaults"]
 - !private ["PSs8Hashable", "Resize"]
-- !private ["PSs8Hashable", "Scale"]
 - !private ["PSs8Hashable", "Toucan"]
 - !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIFont"]

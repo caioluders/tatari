@@ -6,49 +6,52 @@ provides-nominal:
 provides-member:
 - ["C6Tatari22DesafiosViewController", ""]
 provides-dynamic-lookup:
+- "send_chall"
+- "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "JSONStringify"
+- "imageArray"
 - "didReceiveMemoryWarning"
 - "fbIdDesafiado"
-- "imageArray"
-- "viewDidLoad"
-- "send_chall"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
 - "HTTPPostJSON"
-- "JSONStringify"
-- "HTTPsendRequest"
 - "textArray"
+- "HTTPsendRequest"
 depends-top-level:
-- !private "!="
-- "StringLiteralType"
-- "UITableViewDataSource"
-- "NSMutableArray"
-- "UITableViewDelegate"
-- "NSString"
-- !private "UITableViewAutomaticDimension"
-- !private "NSJSONSerialization"
-- !private "print"
-- !private "NSURL"
-- "AnyObject"
 - !private "NSURLSession"
-- !private "FBSDKAccessToken"
-- "NSMutableURLRequest"
-- !private "NSData"
-- "Bool"
-- "UITableViewCell"
-- "NSIndexPath"
-- !private "UIImage"
-- !private "NSJSONWritingOptions"
-- !private "BooleanLiteralType"
 - "Void"
-- !private "NSUTF8StringEncoding"
-- "DesafiosViewController"
-- "UIViewController"
-- "String"
-- "Int"
+- "NSMutableURLRequest"
+- !private "FBSDKAccessToken"
+- "NSMutableArray"
 - "UITableView"
+- !private "BooleanLiteralType"
+- !private "NSJSONSerialization"
+- "UITableViewDataSource"
 - !private "NSMutableDictionary"
+- "UITableViewDelegate"
+- !private "Dictionary"
+- !private "NSForegroundColorAttributeName"
+- "Int"
+- "NSIndexPath"
+- "NSString"
+- "String"
+- "UIViewController"
+- !private "UITableViewAutomaticDimension"
+- "UITableViewCell"
+- "AnyObject"
+- "DesafiosViewController"
+- !private "UIColor"
+- !private "NSURL"
+- !private "!="
+- !private "UIImage"
+- !private "NSData"
+- "StringLiteralType"
+- !private "NSUTF8StringEncoding"
+- !private "NSJSONWritingOptions"
+- !private "print"
+- "Bool"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "HTTPBody"]
@@ -56,6 +59,7 @@ depends-member:
 - ["PSs9AnyObject", "HTTPPostJSON"]
 - ["PSs9AnyObject", "HTTPsendRequest"]
 - ["PSs9AnyObject", "JSONStringify"]
+- !private ["PSs9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["PSs9AnyObject", "NSJSONSerialization"]
 - !private ["PSs9AnyObject", "NSJSONWritingOptions"]
 - ["PSs9AnyObject", "NSMutableArray"]
@@ -66,6 +70,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSURLSession"]
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
 - !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UITableViewAutomaticDimension"]
 - !private ["PSs9AnyObject", "addObject"]
@@ -88,6 +93,8 @@ depends-member:
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "isValidJSONObject"]
 - !private ["PSs9AnyObject", "localizedDescription"]
+- !private ["PSs9AnyObject", "navigationBar"]
+- !private ["PSs9AnyObject", "navigationController"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - !private ["PSs9AnyObject", "objectAtIndex"]
 - !private ["PSs9AnyObject", "print"]
@@ -114,6 +121,7 @@ depends-member:
 - !private ["PSs9AnyObject", "text"]
 - ["PSs9AnyObject", "textArray"]
 - !private ["PSs9AnyObject", "textLabel"]
+- !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
@@ -133,6 +141,7 @@ depends-member:
 - ["PSs11CVarArgType", "HTTPPostJSON"]
 - ["PSs11CVarArgType", "HTTPsendRequest"]
 - ["PSs11CVarArgType", "JSONStringify"]
+- !private ["PSs11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["PSs11CVarArgType", "NSJSONSerialization"]
 - !private ["PSs11CVarArgType", "NSJSONWritingOptions"]
 - ["PSs11CVarArgType", "NSMutableArray"]
@@ -143,6 +152,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UITableViewAutomaticDimension"]
 - !private ["PSs11CVarArgType", "addObject"]
@@ -164,6 +174,8 @@ depends-member:
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "isValidJSONObject"]
 - !private ["PSs11CVarArgType", "localizedDescription"]
+- !private ["PSs11CVarArgType", "navigationBar"]
+- !private ["PSs11CVarArgType", "navigationController"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - !private ["PSs11CVarArgType", "objectAtIndex"]
 - !private ["PSs11CVarArgType", "print"]
@@ -190,13 +202,18 @@ depends-member:
 - !private ["PSs11CVarArgType", "text"]
 - ["PSs11CVarArgType", "textArray"]
 - !private ["PSs11CVarArgType", "textLabel"]
+- !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Key"]
+- !private ["PSs14CollectionType", "Value"]
 - !private ["PSs10Comparable", "dataUsingEncoding"]
 - !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Key"]
 - ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "FBSDKAccessToken"]
@@ -205,6 +222,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "HTTPPostJSON"]
 - ["PSs23CustomStringConvertible", "HTTPsendRequest"]
 - ["PSs23CustomStringConvertible", "JSONStringify"]
+- !private ["PSs23CustomStringConvertible", "Key"]
+- !private ["PSs23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
 - !private ["PSs23CustomStringConvertible", "NSJSONWritingOptions"]
 - ["PSs23CustomStringConvertible", "NSMutableArray"]
@@ -215,8 +234,10 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["PSs23CustomStringConvertible", "String"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UITableViewAutomaticDimension"]
+- !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addObject"]
 - !private ["PSs23CustomStringConvertible", "addValue"]
@@ -237,6 +258,8 @@ depends-member:
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "isValidJSONObject"]
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
+- !private ["PSs23CustomStringConvertible", "navigationBar"]
+- !private ["PSs23CustomStringConvertible", "navigationController"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - !private ["PSs23CustomStringConvertible", "objectAtIndex"]
 - !private ["PSs23CustomStringConvertible", "print"]
@@ -263,6 +286,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "text"]
 - ["PSs23CustomStringConvertible", "textArray"]
 - !private ["PSs23CustomStringConvertible", "textLabel"]
+- !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -275,6 +299,7 @@ depends-member:
 - ["C6Tatari22DesafiosViewController", "Int"]
 - ["C6Tatari22DesafiosViewController", "JSONStringify"]
 - !private ["C6Tatari22DesafiosViewController", "NSData"]
+- !private ["C6Tatari22DesafiosViewController", "NSForegroundColorAttributeName"]
 - ["C6Tatari22DesafiosViewController", "NSIndexPath"]
 - !private ["C6Tatari22DesafiosViewController", "NSJSONSerialization"]
 - !private ["C6Tatari22DesafiosViewController", "NSJSONWritingOptions"]
@@ -286,6 +311,7 @@ depends-member:
 - !private ["C6Tatari22DesafiosViewController", "NSURLSession"]
 - !private ["C6Tatari22DesafiosViewController", "NSUTF8StringEncoding"]
 - ["C6Tatari22DesafiosViewController", "String"]
+- !private ["C6Tatari22DesafiosViewController", "UIColor"]
 - !private ["C6Tatari22DesafiosViewController", "UIImage"]
 - ["C6Tatari22DesafiosViewController", "UITableView"]
 - !private ["C6Tatari22DesafiosViewController", "UITableViewAutomaticDimension"]
@@ -298,6 +324,7 @@ depends-member:
 - ["C6Tatari22DesafiosViewController", "imageArray"]
 - ["C6Tatari22DesafiosViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C6Tatari22DesafiosViewController", "init"]
+- !private ["C6Tatari22DesafiosViewController", "navigationController"]
 - ["C6Tatari22DesafiosViewController", "numberOfSectionsInTableView"]
 - !private ["C6Tatari22DesafiosViewController", "print"]
 - ["C6Tatari22DesafiosViewController", "scrollViewDidEndDecelerating"]
@@ -318,6 +345,10 @@ depends-member:
 - ["C6Tatari22DesafiosViewController", "textArray"]
 - ["C6Tatari22DesafiosViewController", "viewDidLoad"]
 - ["C6Tatari22DesafiosViewController", "viewForZoomingInScrollView"]
+- !private ["VSs10Dictionary", "Key"]
+- !private ["VSs10Dictionary", "Value"]
+- !private ["PSs28DictionaryLiteralConvertible", "Key"]
+- !private ["PSs28DictionaryLiteralConvertible", "Value"]
 - !private ["PSs28DictionaryLiteralConvertible", "init"]
 - !private ["PSs28DictionaryLiteralConvertible", "setObject"]
 - !private ["PSs9Equatable", "FBSDKAccessToken"]
@@ -326,6 +357,7 @@ depends-member:
 - ["PSs9Equatable", "HTTPPostJSON"]
 - ["PSs9Equatable", "HTTPsendRequest"]
 - ["PSs9Equatable", "JSONStringify"]
+- !private ["PSs9Equatable", "NSForegroundColorAttributeName"]
 - !private ["PSs9Equatable", "NSJSONSerialization"]
 - !private ["PSs9Equatable", "NSJSONWritingOptions"]
 - ["PSs9Equatable", "NSMutableArray"]
@@ -337,6 +369,7 @@ depends-member:
 - !private ["PSs9Equatable", "NSUTF8StringEncoding"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
 - !private ["PSs9Equatable", "String"]
+- !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UITableViewAutomaticDimension"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
@@ -359,6 +392,8 @@ depends-member:
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "isValidJSONObject"]
 - !private ["PSs9Equatable", "localizedDescription"]
+- !private ["PSs9Equatable", "navigationBar"]
+- !private ["PSs9Equatable", "navigationController"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - !private ["PSs9Equatable", "objectAtIndex"]
 - !private ["PSs9Equatable", "print"]
@@ -385,6 +420,7 @@ depends-member:
 - !private ["PSs9Equatable", "text"]
 - ["PSs9Equatable", "textArray"]
 - !private ["PSs9Equatable", "textLabel"]
+- !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
@@ -402,6 +438,7 @@ depends-member:
 - ["PSs8Hashable", "HTTPPostJSON"]
 - ["PSs8Hashable", "HTTPsendRequest"]
 - ["PSs8Hashable", "JSONStringify"]
+- !private ["PSs8Hashable", "NSForegroundColorAttributeName"]
 - !private ["PSs8Hashable", "NSJSONSerialization"]
 - !private ["PSs8Hashable", "NSJSONWritingOptions"]
 - ["PSs8Hashable", "NSMutableArray"]
@@ -412,6 +449,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSURLSession"]
 - !private ["PSs8Hashable", "NSUTF8StringEncoding"]
 - !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UITableViewAutomaticDimension"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
@@ -434,6 +472,8 @@ depends-member:
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "isValidJSONObject"]
 - !private ["PSs8Hashable", "localizedDescription"]
+- !private ["PSs8Hashable", "navigationBar"]
+- !private ["PSs8Hashable", "navigationController"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - !private ["PSs8Hashable", "objectAtIndex"]
 - !private ["PSs8Hashable", "print"]
@@ -460,11 +500,14 @@ depends-member:
 - !private ["PSs8Hashable", "text"]
 - ["PSs8Hashable", "textArray"]
 - !private ["PSs8Hashable", "textLabel"]
+- !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Key"]
+- !private ["PSs9Indexable", "Value"]
 - !private ["P6Tatari17JSONSubscriptType", "dataUsingEncoding"]
 - !private ["P6Tatari17JSONSubscriptType", "init"]
 - !private ["PSs14MirrorPathType", "dataUsingEncoding"]
@@ -479,6 +522,7 @@ depends-member:
 - ["PSo8NSCoding", "HTTPPostJSON"]
 - ["PSo8NSCoding", "HTTPsendRequest"]
 - ["PSo8NSCoding", "JSONStringify"]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "NSJSONSerialization"]
 - !private ["PSo8NSCoding", "NSJSONWritingOptions"]
 - ["PSo8NSCoding", "NSMutableArray"]
@@ -489,6 +533,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSURLSession"]
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UITableViewAutomaticDimension"]
 - !private ["PSo8NSCoding", "addObject"]
@@ -507,6 +552,8 @@ depends-member:
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "localizedDescription"]
+- !private ["PSo8NSCoding", "navigationBar"]
+- !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - !private ["PSo8NSCoding", "objectAtIndex"]
 - !private ["PSo8NSCoding", "print"]
@@ -531,6 +578,7 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textArray"]
 - !private ["PSo8NSCoding", "textLabel"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -557,6 +605,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "HTTPPostJSON"]
 - ["PSo26NSExtensionRequestHandling", "HTTPsendRequest"]
 - ["PSo26NSExtensionRequestHandling", "JSONStringify"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONWritingOptions"]
 - ["PSo26NSExtensionRequestHandling", "NSMutableArray"]
@@ -567,6 +616,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UITableViewAutomaticDimension"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
@@ -575,6 +625,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "imageArray"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
@@ -635,6 +687,7 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "JSONStringify"]
 - !private ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
 - !private ["CSo8NSObject", "NSJSONWritingOptions"]
@@ -646,6 +699,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSURLSession"]
 - !private ["CSo8NSObject", "NSUTF8StringEncoding"]
 - ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UITableView"]
 - !private ["CSo8NSObject", "UITableViewAutomaticDimension"]
@@ -670,6 +724,8 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isValidJSONObject"]
 - !private ["CSo8NSObject", "localizedDescription"]
+- !private ["CSo8NSObject", "navigationBar"]
+- !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - !private ["CSo8NSObject", "objectAtIndex"]
 - !private ["CSo8NSObject", "print"]
@@ -696,6 +752,7 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textArray"]
 - !private ["CSo8NSObject", "textLabel"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -705,6 +762,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "HTTPPostJSON"]
 - ["PSo16NSObjectProtocol", "HTTPsendRequest"]
 - ["PSo16NSObjectProtocol", "JSONStringify"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
 - !private ["PSo16NSObjectProtocol", "NSJSONWritingOptions"]
 - ["PSo16NSObjectProtocol", "NSMutableArray"]
@@ -715,6 +773,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UITableViewAutomaticDimension"]
 - !private ["PSo16NSObjectProtocol", "addObject"]
@@ -736,6 +795,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isValidJSONObject"]
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - !private ["PSo16NSObjectProtocol", "objectAtIndex"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -762,6 +823,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textArray"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -800,6 +862,8 @@ depends-member:
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "init"]
+- !private ["PSs12SequenceType", "Key"]
+- !private ["PSs12SequenceType", "Value"]
 - !private ["PSs12SequenceType", "addObject"]
 - !private ["PSs12SequenceType", "count"]
 - ["PSs12SequenceType", "init"]
@@ -824,6 +888,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo29UIAccessibilityIdentification", "textLabel"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "estimatedRowHeight"]
 - !private ["PSo12UIAppearance", "image"]
@@ -831,10 +896,12 @@ depends-member:
 - !private ["PSo12UIAppearance", "rowHeight"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo12UIAppearance", "textLabel"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
 - ["PSo21UIAppearanceContainer", "HTTPPostJSON"]
 - ["PSo21UIAppearanceContainer", "HTTPsendRequest"]
 - ["PSo21UIAppearanceContainer", "JSONStringify"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONWritingOptions"]
 - ["PSo21UIAppearanceContainer", "NSMutableArray"]
@@ -845,6 +912,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UITableViewAutomaticDimension"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCellWithIdentifier"]
@@ -857,6 +925,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "imageView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "rowHeight"]
@@ -878,13 +948,17 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textArray"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
+- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - ["PSo18UIContentContainer", "HTTPPostJSON"]
 - ["PSo18UIContentContainer", "HTTPsendRequest"]
 - ["PSo18UIContentContainer", "JSONStringify"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "NSJSONSerialization"]
 - !private ["PSo18UIContentContainer", "NSJSONWritingOptions"]
 - ["PSo18UIContentContainer", "NSMutableArray"]
@@ -895,6 +969,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSURLSession"]
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UITableViewAutomaticDimension"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
@@ -903,6 +978,8 @@ depends-member:
 - ["PSo18UIContentContainer", "imageArray"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
+- !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
@@ -931,6 +1008,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "textLabel"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "estimatedRowHeight"]
 - !private ["PSo13UIDynamicItem", "image"]
@@ -938,10 +1016,12 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "rowHeight"]
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo13UIDynamicItem", "textLabel"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
 - ["PSo18UIFocusEnvironment", "HTTPPostJSON"]
 - ["PSo18UIFocusEnvironment", "HTTPsendRequest"]
 - ["PSo18UIFocusEnvironment", "JSONStringify"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
 - ["PSo18UIFocusEnvironment", "NSMutableArray"]
@@ -952,6 +1032,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCellWithIdentifier"]
@@ -964,6 +1045,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "imageView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "rowHeight"]
@@ -985,6 +1068,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textArray"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -993,6 +1077,8 @@ depends-member:
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
+- !private ["CSo22UINavigationController", "navigationBar"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
@@ -1001,6 +1087,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "JSONStringify"]
 - !private ["CSo11UIResponder", "NSData"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
 - !private ["CSo11UIResponder", "NSJSONWritingOptions"]
@@ -1012,6 +1099,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURLSession"]
 - !private ["CSo11UIResponder", "NSUTF8StringEncoding"]
 - ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UITableView"]
 - !private ["CSo11UIResponder", "UITableViewAutomaticDimension"]
@@ -1027,6 +1115,8 @@ depends-member:
 - !private ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationBar"]
+- !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "rowHeight"]
@@ -1048,6 +1138,7 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textArray"]
 - !private ["CSo11UIResponder", "textLabel"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
@@ -1057,6 +1148,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "HTTPPostJSON"]
 - !private ["PSo20UIScrollViewDelegate", "HTTPsendRequest"]
 - !private ["PSo20UIScrollViewDelegate", "JSONStringify"]
+- !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONSerialization"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONWritingOptions"]
 - ["PSo20UIScrollViewDelegate", "NSMutableArray"]
@@ -1067,12 +1159,14 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSURLSession"]
 - !private ["PSo20UIScrollViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo20UIScrollViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo20UIScrollViewDelegate", "fbIdDesafiado"]
 - !private ["PSo20UIScrollViewDelegate", "imageArray"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1097,6 +1191,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "HTTPPostJSON"]
 - ["PSo16UIStateRestoring", "HTTPsendRequest"]
 - ["PSo16UIStateRestoring", "JSONStringify"]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
 - !private ["PSo16UIStateRestoring", "NSJSONWritingOptions"]
 - ["PSo16UIStateRestoring", "NSMutableArray"]
@@ -1107,6 +1202,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSURLSession"]
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UITableViewAutomaticDimension"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
@@ -1115,6 +1211,8 @@ depends-member:
 - ["PSo16UIStateRestoring", "imageArray"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
@@ -1145,6 +1243,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "HTTPPostJSON"]
 - !private ["PSo21UITableViewDataSource", "HTTPsendRequest"]
 - !private ["PSo21UITableViewDataSource", "JSONStringify"]
+- !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
 - !private ["PSo21UITableViewDataSource", "NSJSONSerialization"]
 - !private ["PSo21UITableViewDataSource", "NSJSONWritingOptions"]
 - ["PSo21UITableViewDataSource", "NSMutableArray"]
@@ -1155,12 +1254,14 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSURLSession"]
 - !private ["PSo21UITableViewDataSource", "NSUTF8StringEncoding"]
 - !private ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UITableViewAutomaticDimension"]
 - !private ["PSo21UITableViewDataSource", "dismissViewControllerAnimated"]
 - !private ["PSo21UITableViewDataSource", "fbIdDesafiado"]
 - !private ["PSo21UITableViewDataSource", "imageArray"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - !private ["PSo21UITableViewDataSource", "print"]
 - ["PSo21UITableViewDataSource", "scrollViewDidEndDecelerating"]
@@ -1185,6 +1286,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "HTTPPostJSON"]
 - !private ["PSo19UITableViewDelegate", "HTTPsendRequest"]
 - !private ["PSo19UITableViewDelegate", "JSONStringify"]
+- !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo19UITableViewDelegate", "NSJSONSerialization"]
 - !private ["PSo19UITableViewDelegate", "NSJSONWritingOptions"]
 - ["PSo19UITableViewDelegate", "NSMutableArray"]
@@ -1195,12 +1297,14 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSURLSession"]
 - !private ["PSo19UITableViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UITableViewAutomaticDimension"]
 - !private ["PSo19UITableViewDelegate", "dismissViewControllerAnimated"]
 - !private ["PSo19UITableViewDelegate", "fbIdDesafiado"]
 - !private ["PSo19UITableViewDelegate", "imageArray"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - !private ["PSo19UITableViewDelegate", "print"]
 - ["PSo19UITableViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1225,6 +1329,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "HTTPPostJSON"]
 - ["PSo18UITraitEnvironment", "HTTPsendRequest"]
 - ["PSo18UITraitEnvironment", "JSONStringify"]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UITraitEnvironment", "NSJSONWritingOptions"]
 - ["PSo18UITraitEnvironment", "NSMutableArray"]
@@ -1235,6 +1340,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UITableViewAutomaticDimension"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCellWithIdentifier"]
@@ -1247,6 +1353,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "imageView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "rowHeight"]
@@ -1268,6 +1376,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textArray"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -1278,6 +1387,7 @@ depends-member:
 - !private ["CSo6UIView", "rowHeight"]
 - !private ["CSo6UIView", "text"]
 - !private ["CSo6UIView", "textLabel"]
+- !private ["CSo6UIView", "titleTextAttributes"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "FBSDKAccessToken"]
@@ -1286,6 +1396,7 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "JSONStringify"]
 - !private ["CSo16UIViewController", "NSData"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
 - !private ["CSo16UIViewController", "NSJSONWritingOptions"]
@@ -1297,6 +1408,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSURLSession"]
 - !private ["CSo16UIViewController", "NSUTF8StringEncoding"]
 - ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UITableView"]
 - !private ["CSo16UIViewController", "UITableViewAutomaticDimension"]
@@ -1308,6 +1420,8 @@ depends-member:
 - ["CSo16UIViewController", "imageArray"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationBar"]
+- !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
@@ -1342,13 +1456,18 @@ depends-member:
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "init"]
 - !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs24_ImageLiteralConvertible", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Value"]
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs12_Reflectable", "Key"]
 - ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["PSs12_Reflectable", "addObject"]
 - !private ["PSs12_Reflectable", "count"]
@@ -1363,6 +1482,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "setObject"]
 - !private ["PSs12_Reflectable", "text"]
 - !private ["PSs12_Reflectable", "textLabel"]
+- !private ["PSs12_Reflectable", "titleTextAttributes"]
 depends-nominal:
 - "PSs9AnyObject"
 - "PSs23ArrayLiteralConvertible"
@@ -1371,10 +1491,12 @@ depends-nominal:
 - !private "PSs11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
 - "PSs11CVarArgType"
+- !private "PSs14CollectionType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - "C6Tatari22DesafiosViewController"
+- !private "VSs10Dictionary"
 - !private "PSs28DictionaryLiteralConvertible"
 - "PSs9Equatable"
 - !private "PSs9ErrorType"
@@ -1383,6 +1505,7 @@ depends-nominal:
 - !private "PSo12FBSDKCopying"
 - "PSs8Hashable"
 - !private "SQ"
+- !private "PSs9Indexable"
 - !private "P6Tatari17JSONSubscriptType"
 - !private "PSs14MirrorPathType"
 - "CSo7NSArray"
@@ -1422,6 +1545,8 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
@@ -1430,6 +1555,8 @@ depends-nominal:
 - !private "CSo7UIImage"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "CSo15UINavigationBar"
+- !private "CSo22UINavigationController"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
@@ -1448,6 +1575,7 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs24_ImageLiteralConvertible"
 - !private "PSs21_ObjectiveCBridgeable"
