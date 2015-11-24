@@ -96,10 +96,14 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
                 fbId = object["id"].stringValue
                 image = UIImage(data: data!)!
                 
-                self.dataPerson.append((name,image,fbId))
-                self.people.append(object["name"].stringValue)
+                if(!self.people.contains(name)){
+                    self.people.append(object["name"].stringValue)
+                    print(object["name"].stringValue)
+                    self.fbIds.append(object["id"].stringValue)
+                }
                 
-                self.fbIds.append(object["id"].stringValue)
+                //self.dataPerson.append((name,image,fbId))
+                
                 
                 var likes: [String] = []
                 for (_,id_like) in object["likes"]{
@@ -128,6 +132,8 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("numberOfRows")
+        print(self.people.count)
         return self.people.count
     }
     
