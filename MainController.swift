@@ -30,7 +30,6 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         
-        
         locationManager.startUpdatingLocation()
     }
 

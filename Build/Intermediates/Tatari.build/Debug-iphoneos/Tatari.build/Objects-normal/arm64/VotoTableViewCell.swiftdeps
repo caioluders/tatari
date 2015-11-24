@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C6Tatari17VotoTableViewCell", ""]
 provides-dynamic-lookup:
-- "imgPerson"
-- "btVote"
-- "lblVoteCount"
 - "lblName"
+- "imgPerson"
 - "setSelected"
+- "lblVoteCount"
 - "awakeFromNib"
+- "btVote"
 - "btVotePressed"
 depends-top-level:
+- "UITableViewCell"
 - !private "StringLiteralType"
+- !private "UIImage"
 - !private "print"
 - "Bool"
-- "VotoTableViewCell"
-- "UILabel"
-- "AnyObject"
-- "UITableViewCell"
-- "UIImageView"
-- "UIButton"
-- !private "UIImage"
 - !private "UIControlState"
+- "UIButton"
+- "AnyObject"
+- "UILabel"
+- "VotoTableViewCell"
+- "UIImageView"
 depends-member:
 - !private ["PSs9AnyObject", "UIControlState"]
 - !private ["PSs9AnyObject", "UIImage"]
