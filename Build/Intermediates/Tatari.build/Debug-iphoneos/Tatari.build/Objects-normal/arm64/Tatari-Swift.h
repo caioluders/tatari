@@ -122,6 +122,7 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
 @class UIImage;
 @class UIImageView;
 @class UISegmentedControl;
@@ -129,10 +130,16 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
-@interface ConfigViewController : UIViewController
+@interface ConfigViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified visi_control;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified picker;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull pickerData;
 - (void)viewDidLoad;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btLogoutPressed:(id __nonnull)sender;
 - (UIImage * __nonnull)maskImage:(UIImage * __nonnull)image mask:(UIImage * __nonnull)mask;

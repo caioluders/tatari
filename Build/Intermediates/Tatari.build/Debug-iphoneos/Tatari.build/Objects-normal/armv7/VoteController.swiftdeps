@@ -11,96 +11,98 @@ provides-dynamic-lookup:
 - "tableView"
 - "tableView"
 - "tableView"
-- "JSONStringify"
-- "pictures"
-- "voted"
-- "buttonVoteAction"
-- "idBotaoVoto"
-- "viewDidLoad"
-- "vote_for"
-- "add_photo"
-- "ids"
 - "cleanAllArrays"
-- "didReceiveMemoryWarning"
-- "items"
-- "qtdVotes"
-- "imagePicker"
-- "btParticipar"
-- "getDataFromServer"
-- "data"
-- "HTTPPostJSON"
-- "HTTPsendRequest"
-- "activityVote"
+- "viewDidLoad"
 - "names"
-- "imagePickerController"
+- "getDataFromServer"
+- "buttonVoteAction"
+- "JSONStringify"
+- "add_photo"
+- "pictures"
+- "activityVote"
 - "idsVotadas"
+- "HTTPPostJSON"
+- "btParticipar"
+- "vote_for"
+- "ids"
+- "didReceiveMemoryWarning"
+- "idBotaoVoto"
+- "HTTPsendRequest"
+- "voted"
+- "imagePicker"
+- "imagePickerController"
+- "items"
+- "data"
+- "qtdVotes"
 depends-top-level:
-- "UITableView"
-- !private "CFComparisonResult"
-- !private "NSString"
-- "UIActivityIndicatorView"
-- !private "UIControlState"
-- !private "UIFont"
-- "String"
-- "Void"
-- !private "FBSDKAccessToken"
-- "Bool"
-- "NSMutableURLRequest"
-- "VoteController"
-- !private "UIImageJPEGRepresentation"
-- !private "=="
-- !private "VotoTableViewCell"
-- !private "kUTTypeImage"
-- !private "JSON"
-- !private "CFStringCompareFlags"
-- "Int"
-- !private "FBSDKGraphRequestConnection"
-- !private "Dictionary"
-- !private "BooleanLiteralType"
-- !private "NSURLSession"
-- "UIImagePickerController"
-- !private "+"
 - "NSURLConnectionDelegate"
-- "UIImage"
-- !private "NSJSONSerialization"
-- !private "UIImagePickerControllerOriginalImage"
-- "UINavigationControllerDelegate"
-- !private "NSUTF8StringEncoding"
-- !private "UIImagePickerControllerSourceType"
+- !private "UIImageJPEGRepresentation"
+- !private "FBSDKGraphRequest"
+- "String"
+- "AnyObject"
 - "UIButton"
-- !private "NSJSONWritingOptions"
+- !private "NSJSONSerialization"
+- !private "dispatch_get_main_queue"
+- "UIImagePickerController"
+- !private "UIImagePickerControllerMediaType"
+- !private "CFStringCompareFlags"
+- "UINavigationControllerDelegate"
+- "UITableViewCell"
+- "UIActivityIndicatorView"
 - "UIImagePickerControllerDelegate"
+- "Void"
+- "NSMutableURLRequest"
+- !private "dispatch_async"
+- !private "=="
+- !private "JSON"
+- !private "UIImagePickerControllerEditedImage"
+- !private "UIControlEvents"
+- "UIImage"
+- !private "UINib"
+- !private "FBSDKGraphRequestConnection"
+- !private "NSDataBase64DecodingOptions"
+- !private "NSFontAttributeName"
+- !private "VotoTableViewCell"
+- !private "NSURL"
+- !private "!="
+- !private "+"
+- !private "kUTTypeImage"
+- !private "NSURLSession"
+- !private "NSLog"
+- "NSMutableData"
+- !private "NSData"
 - !private "NSUserDefaults"
+- !private "NSError"
+- !private "print"
 - "StringLiteralType"
 - "UITableViewDataSource"
-- !private "CFStringCompare"
-- !private "NSMutableDictionary"
-- "UITableViewDelegate"
-- !private "UIImageView"
-- !private "NSLog"
-- !private "NSURL"
-- !private "print"
-- !private "UIControlEvents"
-- !private "NSData"
-- !private "FBSDKGraphRequest"
-- !private "NSDataBase64EncodingOptions"
-- !private "NSFontAttributeName"
-- !private "UIImagePickerControllerEditedImage"
 - !private "Array"
-- "CGFloat"
-- "NSMutableData"
-- "AnyObject"
-- !private "UINib"
-- !private "NSDataBase64DecodingOptions"
-- !private "!="
-- !private "UIImagePickerControllerMediaType"
-- "UIViewController"
-- !private "dispatch_async"
-- "UITableViewCell"
 - !private "UIViewContentMode"
-- !private "dispatch_get_main_queue"
+- !private "FBSDKAccessToken"
+- !private "UIColor"
+- !private "UIControlState"
+- "UITableViewDelegate"
+- !private "Dictionary"
+- !private "NSMutableDictionary"
+- !private "NSForegroundColorAttributeName"
+- !private "UIImagePickerControllerSourceType"
+- !private "UIImageView"
 - "NSIndexPath"
-- !private "NSError"
+- !private "UIFont"
+- !private "NSJSONWritingOptions"
+- !private "NSString"
+- "Int"
+- !private "BooleanLiteralType"
+- "CGFloat"
+- !private "NSUTF8StringEncoding"
+- "UITableView"
+- !private "CFStringCompare"
+- "Bool"
+- "UIViewController"
+- "VoteController"
+- !private "CFComparisonResult"
+- !private "NSDataBase64EncodingOptions"
+- !private "UIImagePickerControllerOriginalImage"
 depends-member:
 - !private ["PSs9AnyObject", "CFComparisonResult"]
 - !private ["PSs9AnyObject", "CFStringCompare"]
@@ -118,6 +120,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSDataBase64DecodingOptions"]
 - !private ["PSs9AnyObject", "NSDataBase64EncodingOptions"]
 - !private ["PSs9AnyObject", "NSFontAttributeName"]
+- !private ["PSs9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["PSs9AnyObject", "NSJSONSerialization"]
 - !private ["PSs9AnyObject", "NSJSONWritingOptions"]
 - !private ["PSs9AnyObject", "NSLog"]
@@ -130,6 +133,7 @@ depends-member:
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
 - !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "UIControlState"]
 - !private ["PSs9AnyObject", "UIFont"]
@@ -149,12 +153,14 @@ depends-member:
 - ["PSs9AnyObject", "add_photo"]
 - !private ["PSs9AnyObject", "allowsEditing"]
 - !private ["PSs9AnyObject", "allowsSelection"]
+- !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "backgroundView"]
 - !private ["PSs9AnyObject", "base64EncodedStringWithOptions"]
 - ["PSs9AnyObject", "btParticipar"]
 - !private ["PSs9AnyObject", "btVote"]
 - ["PSs9AnyObject", "buttonVoteAction"]
 - ["PSs9AnyObject", "cleanAllArrays"]
+- !private ["PSs9AnyObject", "clearColor"]
 - ["PSs9AnyObject", "connection"]
 - ["PSs9AnyObject", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9AnyObject", "contentMode"]
@@ -320,6 +326,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSDataBase64DecodingOptions"]
 - !private ["PSs11CVarArgType", "NSDataBase64EncodingOptions"]
 - !private ["PSs11CVarArgType", "NSFontAttributeName"]
+- !private ["PSs11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["PSs11CVarArgType", "NSJSONSerialization"]
 - !private ["PSs11CVarArgType", "NSJSONWritingOptions"]
 - !private ["PSs11CVarArgType", "NSLog"]
@@ -333,6 +340,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
 - !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UIControlState"]
 - !private ["PSs11CVarArgType", "UIFont"]
@@ -352,12 +360,14 @@ depends-member:
 - ["PSs11CVarArgType", "add_photo"]
 - !private ["PSs11CVarArgType", "allowsEditing"]
 - !private ["PSs11CVarArgType", "allowsSelection"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "backgroundView"]
 - !private ["PSs11CVarArgType", "base64EncodedStringWithOptions"]
 - ["PSs11CVarArgType", "btParticipar"]
 - !private ["PSs11CVarArgType", "btVote"]
 - ["PSs11CVarArgType", "buttonVoteAction"]
 - ["PSs11CVarArgType", "cleanAllArrays"]
+- !private ["PSs11CVarArgType", "clearColor"]
 - ["PSs11CVarArgType", "connection"]
 - ["PSs11CVarArgType", "connectionShouldUseCredentialStorage"]
 - !private ["PSs11CVarArgType", "contentMode"]
@@ -507,6 +517,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSDataBase64DecodingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSDataBase64EncodingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSFontAttributeName"]
+- !private ["PSs23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
 - !private ["PSs23CustomStringConvertible", "NSJSONWritingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSLog"]
@@ -521,6 +532,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UIControlState"]
 - !private ["PSs23CustomStringConvertible", "UIFont"]
@@ -544,12 +556,14 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "allowsEditing"]
 - !private ["PSs23CustomStringConvertible", "allowsSelection"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "backgroundView"]
 - !private ["PSs23CustomStringConvertible", "base64EncodedStringWithOptions"]
 - ["PSs23CustomStringConvertible", "btParticipar"]
 - !private ["PSs23CustomStringConvertible", "btVote"]
 - ["PSs23CustomStringConvertible", "buttonVoteAction"]
 - ["PSs23CustomStringConvertible", "cleanAllArrays"]
+- !private ["PSs23CustomStringConvertible", "clearColor"]
 - ["PSs23CustomStringConvertible", "connection"]
 - ["PSs23CustomStringConvertible", "connectionShouldUseCredentialStorage"]
 - !private ["PSs23CustomStringConvertible", "contains"]
@@ -678,6 +692,7 @@ depends-member:
 - !private ["PSs9Equatable", "NSDataBase64DecodingOptions"]
 - !private ["PSs9Equatable", "NSDataBase64EncodingOptions"]
 - !private ["PSs9Equatable", "NSFontAttributeName"]
+- !private ["PSs9Equatable", "NSForegroundColorAttributeName"]
 - !private ["PSs9Equatable", "NSJSONSerialization"]
 - !private ["PSs9Equatable", "NSJSONWritingOptions"]
 - !private ["PSs9Equatable", "NSLog"]
@@ -698,6 +713,7 @@ depends-member:
 - !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "SubSequence"]
 - !private ["PSs9Equatable", "TouchUpInside"]
+- !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UIControlState"]
 - !private ["PSs9Equatable", "UIFont"]
@@ -720,12 +736,14 @@ depends-member:
 - ["PSs9Equatable", "add_photo"]
 - !private ["PSs9Equatable", "allowsEditing"]
 - !private ["PSs9Equatable", "allowsSelection"]
+- !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "backgroundView"]
 - !private ["PSs9Equatable", "base64EncodedStringWithOptions"]
 - ["PSs9Equatable", "btParticipar"]
 - !private ["PSs9Equatable", "btVote"]
 - ["PSs9Equatable", "buttonVoteAction"]
 - ["PSs9Equatable", "cleanAllArrays"]
+- !private ["PSs9Equatable", "clearColor"]
 - ["PSs9Equatable", "connection"]
 - ["PSs9Equatable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9Equatable", "contentMode"]
@@ -861,6 +879,7 @@ depends-member:
 - !private ["PSs8Hashable", "NSDataBase64DecodingOptions"]
 - !private ["PSs8Hashable", "NSDataBase64EncodingOptions"]
 - !private ["PSs8Hashable", "NSFontAttributeName"]
+- !private ["PSs8Hashable", "NSForegroundColorAttributeName"]
 - !private ["PSs8Hashable", "NSJSONSerialization"]
 - !private ["PSs8Hashable", "NSJSONWritingOptions"]
 - !private ["PSs8Hashable", "NSLog"]
@@ -877,6 +896,7 @@ depends-member:
 - !private ["PSs8Hashable", "ScaleAspectFit"]
 - !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UIControlState"]
 - !private ["PSs8Hashable", "UIFont"]
@@ -897,12 +917,14 @@ depends-member:
 - ["PSs8Hashable", "add_photo"]
 - !private ["PSs8Hashable", "allowsEditing"]
 - !private ["PSs8Hashable", "allowsSelection"]
+- !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "backgroundView"]
 - !private ["PSs8Hashable", "base64EncodedStringWithOptions"]
 - ["PSs8Hashable", "btParticipar"]
 - !private ["PSs8Hashable", "btVote"]
 - ["PSs8Hashable", "buttonVoteAction"]
 - ["PSs8Hashable", "cleanAllArrays"]
+- !private ["PSs8Hashable", "clearColor"]
 - ["PSs8Hashable", "connection"]
 - ["PSs8Hashable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs8Hashable", "contentMode"]
@@ -1099,6 +1121,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSDataBase64DecodingOptions"]
 - !private ["PSo8NSCoding", "NSDataBase64EncodingOptions"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "NSJSONSerialization"]
 - !private ["PSo8NSCoding", "NSJSONWritingOptions"]
 - !private ["PSo8NSCoding", "NSLog"]
@@ -1111,6 +1134,7 @@ depends-member:
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIControlState"]
 - !private ["PSo8NSCoding", "UIFont"]
@@ -1130,12 +1154,14 @@ depends-member:
 - ["PSo8NSCoding", "add_photo"]
 - !private ["PSo8NSCoding", "allowsEditing"]
 - !private ["PSo8NSCoding", "allowsSelection"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "backgroundView"]
 - !private ["PSo8NSCoding", "base64EncodedStringWithOptions"]
 - ["PSo8NSCoding", "btParticipar"]
 - !private ["PSo8NSCoding", "btVote"]
 - ["PSo8NSCoding", "buttonVoteAction"]
 - ["PSo8NSCoding", "cleanAllArrays"]
+- !private ["PSo8NSCoding", "clearColor"]
 - ["PSo8NSCoding", "connection"]
 - ["PSo8NSCoding", "connectionShouldUseCredentialStorage"]
 - !private ["PSo8NSCoding", "contentMode"]
@@ -1216,6 +1242,7 @@ depends-member:
 - !private ["PSo9NSCopying", "HTTPMethod"]
 - !private ["PSo9NSCopying", "addValue"]
 - !private ["PSo9NSCopying", "base64EncodedStringWithOptions"]
+- !private ["PSo9NSCopying", "clearColor"]
 - !private ["PSo9NSCopying", "currentAccessToken"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "deinit"]
@@ -1247,6 +1274,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSDataBase64DecodingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDataBase64EncodingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONWritingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLog"]
@@ -1259,6 +1287,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
@@ -1373,6 +1402,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSDataBase64EncodingOptions"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
 - !private ["CSo8NSObject", "NSJSONWritingOptions"]
@@ -1388,6 +1418,7 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIActivityIndicatorView"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIControlState"]
 - !private ["CSo8NSObject", "UIFont"]
@@ -1411,12 +1442,14 @@ depends-member:
 - ["CSo8NSObject", "add_photo"]
 - !private ["CSo8NSObject", "allowsEditing"]
 - !private ["CSo8NSObject", "allowsSelection"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "backgroundView"]
 - !private ["CSo8NSObject", "base64EncodedStringWithOptions"]
 - ["CSo8NSObject", "btParticipar"]
 - !private ["CSo8NSObject", "btVote"]
 - ["CSo8NSObject", "buttonVoteAction"]
 - ["CSo8NSObject", "cleanAllArrays"]
+- !private ["CSo8NSObject", "clearColor"]
 - ["CSo8NSObject", "connection"]
 - ["CSo8NSObject", "connectionShouldUseCredentialStorage"]
 - !private ["CSo8NSObject", "contentMode"]
@@ -1517,6 +1550,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSDataBase64DecodingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSDataBase64EncodingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
 - !private ["PSo16NSObjectProtocol", "NSJSONWritingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSLog"]
@@ -1529,6 +1563,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIControlState"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
@@ -1548,12 +1583,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "add_photo"]
 - !private ["PSo16NSObjectProtocol", "allowsEditing"]
 - !private ["PSo16NSObjectProtocol", "allowsSelection"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
 - !private ["PSo16NSObjectProtocol", "base64EncodedStringWithOptions"]
 - ["PSo16NSObjectProtocol", "btParticipar"]
 - !private ["PSo16NSObjectProtocol", "btVote"]
 - ["PSo16NSObjectProtocol", "buttonVoteAction"]
 - ["PSo16NSObjectProtocol", "cleanAllArrays"]
+- !private ["PSo16NSObjectProtocol", "clearColor"]
 - ["PSo16NSObjectProtocol", "connection"]
 - ["PSo16NSObjectProtocol", "connectionShouldUseCredentialStorage"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
@@ -1642,6 +1679,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "HTTPMethod"]
 - !private ["PSo14NSSecureCoding", "addValue"]
 - !private ["PSo14NSSecureCoding", "base64EncodedStringWithOptions"]
+- !private ["PSo14NSSecureCoding", "clearColor"]
 - !private ["PSo14NSSecureCoding", "currentAccessToken"]
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - ["PSo14NSSecureCoding", "init"]
@@ -1667,6 +1705,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo23NSURLConnectionDelegate", "NSDataBase64EncodingOptions"]
 - !private ["PSo23NSURLConnectionDelegate", "NSFontAttributeName"]
+- !private ["PSo23NSURLConnectionDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo23NSURLConnectionDelegate", "NSJSONSerialization"]
 - !private ["PSo23NSURLConnectionDelegate", "NSJSONWritingOptions"]
 - !private ["PSo23NSURLConnectionDelegate", "NSLog"]
@@ -1679,6 +1718,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo23NSURLConnectionDelegate", "NSUserDefaults"]
 - !private ["PSo23NSURLConnectionDelegate", "String"]
+- !private ["PSo23NSURLConnectionDelegate", "UIColor"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlEvents"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlState"]
 - !private ["PSo23NSURLConnectionDelegate", "UIFont"]
@@ -1847,6 +1887,7 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "subscript"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsSelection"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundView"]
 - !private ["PSo29UIAccessibilityIdentification", "btVote"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
@@ -1871,6 +1912,7 @@ depends-member:
 - !private ["CSo23UIActivityIndicatorView", "stopAnimating"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "allowsSelection"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "backgroundView"]
 - !private ["PSo12UIAppearance", "btVote"]
 - !private ["PSo12UIAppearance", "contentMode"]
@@ -1904,6 +1946,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSDataBase64DecodingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSDataBase64EncodingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONWritingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSLog"]
@@ -1916,6 +1959,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIControlState"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
@@ -1934,6 +1978,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "add_photo"]
 - !private ["PSo21UIAppearanceContainer", "allowsEditing"]
 - !private ["PSo21UIAppearanceContainer", "allowsSelection"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
 - ["PSo21UIAppearanceContainer", "btParticipar"]
 - !private ["PSo21UIAppearanceContainer", "btVote"]
@@ -2012,6 +2057,8 @@ depends-member:
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "tag"]
+- !private ["CSo7UIColor", "clearColor"]
+- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "CFComparisonResult"]
 - !private ["PSo18UIContentContainer", "CFStringCompare"]
 - !private ["PSo18UIContentContainer", "CFStringCompareFlags"]
@@ -2026,6 +2073,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UIContentContainer", "NSDataBase64EncodingOptions"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "NSJSONSerialization"]
 - !private ["PSo18UIContentContainer", "NSJSONWritingOptions"]
 - !private ["PSo18UIContentContainer", "NSLog"]
@@ -2038,6 +2086,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIControlState"]
 - !private ["PSo18UIContentContainer", "UIFont"]
@@ -2117,6 +2166,7 @@ depends-member:
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "allowsSelection"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
 - !private ["PSo17UICoordinateSpace", "btVote"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
@@ -2138,6 +2188,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "allowsSelection"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
 - !private ["PSo13UIDynamicItem", "btVote"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
@@ -2171,6 +2222,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSDataBase64EncodingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSLog"]
@@ -2183,6 +2235,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIControlState"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
@@ -2201,6 +2254,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "add_photo"]
 - !private ["PSo18UIFocusEnvironment", "allowsEditing"]
 - !private ["PSo18UIFocusEnvironment", "allowsSelection"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundView"]
 - ["PSo18UIFocusEnvironment", "btParticipar"]
 - !private ["PSo18UIFocusEnvironment", "btVote"]
@@ -2276,6 +2330,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "voted"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btVote"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblName"]
@@ -2302,6 +2357,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSDataBase64EncodingOptions"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSFontAttributeName"]
+- !private ["PSo31UIImagePickerControllerDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSJSONSerialization"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSJSONWritingOptions"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSLog"]
@@ -2314,6 +2370,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSUserDefaults"]
 - !private ["PSo31UIImagePickerControllerDelegate", "String"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIColor"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlEvents"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlState"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIFont"]
@@ -2396,6 +2453,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo30UINavigationControllerDelegate", "NSDataBase64EncodingOptions"]
 - !private ["PSo30UINavigationControllerDelegate", "NSFontAttributeName"]
+- !private ["PSo30UINavigationControllerDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo30UINavigationControllerDelegate", "NSJSONSerialization"]
 - !private ["PSo30UINavigationControllerDelegate", "NSJSONWritingOptions"]
 - !private ["PSo30UINavigationControllerDelegate", "NSLog"]
@@ -2408,6 +2466,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo30UINavigationControllerDelegate", "NSUserDefaults"]
 - !private ["PSo30UINavigationControllerDelegate", "String"]
+- !private ["PSo30UINavigationControllerDelegate", "UIColor"]
 - !private ["PSo30UINavigationControllerDelegate", "UIControlEvents"]
 - !private ["PSo30UINavigationControllerDelegate", "UIControlState"]
 - !private ["PSo30UINavigationControllerDelegate", "UIFont"]
@@ -2484,6 +2543,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSDataBase64EncodingOptions"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
 - !private ["CSo11UIResponder", "NSJSONWritingOptions"]
@@ -2499,6 +2559,7 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIActivityIndicatorView"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIControlState"]
 - !private ["CSo11UIResponder", "UIFont"]
@@ -2521,6 +2582,7 @@ depends-member:
 - ["CSo11UIResponder", "add_photo"]
 - !private ["CSo11UIResponder", "allowsEditing"]
 - !private ["CSo11UIResponder", "allowsSelection"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "backgroundView"]
 - ["CSo11UIResponder", "btParticipar"]
 - !private ["CSo11UIResponder", "btVote"]
@@ -2614,6 +2676,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSDataBase64EncodingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONSerialization"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSLog"]
@@ -2626,6 +2689,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlState"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
@@ -2695,6 +2759,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSDataBase64DecodingOptions"]
 - !private ["PSo16UIStateRestoring", "NSDataBase64EncodingOptions"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
 - !private ["PSo16UIStateRestoring", "NSJSONWritingOptions"]
 - !private ["PSo16UIStateRestoring", "NSLog"]
@@ -2707,6 +2772,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIControlState"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
@@ -2785,6 +2851,7 @@ depends-member:
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "separatorStyle"]
+- !private ["CSo15UITableViewCell", "backgroundColor"]
 - !private ["CSo15UITableViewCell", "btVote"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "imgPerson"]
@@ -2805,6 +2872,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSDataBase64DecodingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSDataBase64EncodingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
+- !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
 - !private ["PSo21UITableViewDataSource", "NSJSONSerialization"]
 - !private ["PSo21UITableViewDataSource", "NSJSONWritingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSLog"]
@@ -2817,6 +2885,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSUTF8StringEncoding"]
 - !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
 - !private ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
 - !private ["PSo21UITableViewDataSource", "UIControlState"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
@@ -2886,6 +2955,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSDataBase64EncodingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
+- !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo19UITableViewDelegate", "NSJSONSerialization"]
 - !private ["PSo19UITableViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSLog"]
@@ -2898,6 +2968,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo19UITableViewDelegate", "NSUserDefaults"]
 - !private ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
 - !private ["PSo19UITableViewDelegate", "UIControlState"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
@@ -2967,6 +3038,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSDataBase64EncodingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UITraitEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSLog"]
@@ -2979,6 +3051,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIControlState"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
@@ -2997,6 +3070,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "add_photo"]
 - !private ["PSo18UITraitEnvironment", "allowsEditing"]
 - !private ["PSo18UITraitEnvironment", "allowsSelection"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
 - ["PSo18UITraitEnvironment", "btParticipar"]
 - !private ["PSo18UITraitEnvironment", "btVote"]
@@ -3073,6 +3147,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "allowsSelection"]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "backgroundView"]
 - !private ["CSo6UIView", "btVote"]
 - !private ["CSo6UIView", "contentMode"]
@@ -3112,6 +3187,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSDataBase64EncodingOptions"]
 - !private ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
 - !private ["CSo16UIViewController", "NSJSONWritingOptions"]
@@ -3127,6 +3203,7 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIActivityIndicatorView"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIControlState"]
 - !private ["CSo16UIViewController", "UIFont"]
@@ -3236,6 +3313,7 @@ depends-member:
 - !private ["C6Tatari14VoteController", "NSDataBase64EncodingOptions"]
 - !private ["C6Tatari14VoteController", "NSError"]
 - !private ["C6Tatari14VoteController", "NSFontAttributeName"]
+- !private ["C6Tatari14VoteController", "NSForegroundColorAttributeName"]
 - ["C6Tatari14VoteController", "NSIndexPath"]
 - !private ["C6Tatari14VoteController", "NSJSONSerialization"]
 - !private ["C6Tatari14VoteController", "NSJSONWritingOptions"]
@@ -3251,6 +3329,7 @@ depends-member:
 - ["C6Tatari14VoteController", "String"]
 - ["C6Tatari14VoteController", "UIActivityIndicatorView"]
 - ["C6Tatari14VoteController", "UIButton"]
+- !private ["C6Tatari14VoteController", "UIColor"]
 - !private ["C6Tatari14VoteController", "UIControlEvents"]
 - !private ["C6Tatari14VoteController", "UIControlState"]
 - !private ["C6Tatari14VoteController", "UIFont"]
@@ -3320,6 +3399,7 @@ depends-member:
 - ["C6Tatari14VoteController", "viewForZoomingInScrollView"]
 - ["C6Tatari14VoteController", "vote_for"]
 - ["C6Tatari14VoteController", "voted"]
+- !private ["C6Tatari17VotoTableViewCell", "backgroundColor"]
 - !private ["C6Tatari17VotoTableViewCell", "btVote"]
 - !private ["C6Tatari17VotoTableViewCell", "imgPerson"]
 - !private ["C6Tatari17VotoTableViewCell", "lblName"]
@@ -3349,6 +3429,8 @@ depends-member:
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "clearColor"]
+- !private ["PSs24_ColorLiteralConvertible", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
@@ -3412,6 +3494,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "allowsSelection"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "backgroundView"]
 - !private ["PSs12_Reflectable", "btVote"]
 - !private ["PSs12_Reflectable", "contains"]
@@ -3550,6 +3633,7 @@ depends-nominal:
 - "PSo21UIAppearanceContainer"
 - !private "PSo16UIBarPositioning"
 - !private "CSo8UIButton"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "VSC15UIControlEvents"
@@ -3600,6 +3684,7 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - !private "PSs24_DestructorSafeContainer"
 - !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs24_ImageLiteralConvertible"
