@@ -99,7 +99,7 @@
                                 <rect key="frame" x="251" y="104" width="111" height="173"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-c2-eVc">
-                                <rect key="frame" x="201" y="344" width="204" height="25.5"/>
+                                <rect key="frame" x="201" y="344" width="204" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="204" id="UBL-i9-9FE"/>
                                 </constraints>
@@ -130,6 +130,9 @@
                                         <rect key="frame" x="193" y="11" width="51" height="31"/>
                                         <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="swt_all_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="xbI-Y3-9UM"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,6 +154,9 @@
                                         <rect key="frame" x="193" y="11" width="51" height="31"/>
                                         <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="swt_friends_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="cda-sn-iJ5"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -172,6 +178,9 @@
                                         <rect key="frame" x="193" y="11" width="51" height="31"/>
                                         <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="swt_nobody_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="xeo-74-ZN6"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -208,6 +217,9 @@
                     <navigationItem key="navigationItem" title="Ajustes" id="nng-jt-tyG"/>
                     <connections>
                         <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
+                        <outlet property="swt_all" destination="EXh-Zn-ix9" id="Ldg-HT-bBs"/>
+                        <outlet property="swt_friends" destination="VOU-sR-yWm" id="nOh-It-43F"/>
+                        <outlet property="swt_nobody" destination="v0C-gq-otq" id="sXD-SF-cDt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>

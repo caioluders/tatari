@@ -213,12 +213,5 @@ class MainController: UIViewController,CLLocationManagerDelegate {
             var err: NSError
         })
     }
-    
-    @IBAction func btSauda(sender: AnyObject) {
-        let alertView = UIAlertController(title: "AlertView title here", message: "AlertView message comes here", preferredStyle: .Alert)
-        alertView.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-        presentViewController(alertView, animated: true, completion: nil)
-    }
-    
 
 }
