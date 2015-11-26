@@ -122,20 +122,33 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
 @class UIImage;
+@class NSMutableURLRequest;
+@class UISwitch;
 @class UIImageView;
-@class UISegmentedControl;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
-@interface ConfigViewController : UIViewController
+@interface ConfigViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_all;
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_friends;
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_nobody;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
-@property (nonatomic, weak) IBOutlet UISegmentedControl * __null_unspecified visi_control;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified picker;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull pickerData;
 - (void)viewDidLoad;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)didReceiveMemoryWarning;
 - (IBAction)btLogoutPressed:(id __nonnull)sender;
 - (UIImage * __nonnull)maskImage:(UIImage * __nonnull)image mask:(UIImage * __nonnull)mask;
+- (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
+- (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -145,7 +158,6 @@ SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @class NSIndexPath;
 @class UITableViewCell;
 @class NSString;
-@class NSMutableURLRequest;
 
 SWIFT_CLASS("_TtC6Tatari22DesafiosViewController")
 @interface DesafiosViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
@@ -221,6 +233,7 @@ SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 
 @class CMMotionManager;
 @class CLLocationManager;
+@class UISegmentedControl;
 @class CLLocation;
 
 SWIFT_CLASS("_TtC6Tatari14MainController")
@@ -234,7 +247,6 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @property (nonatomic, strong) CLLocationManager * __null_unspecified locationManager;
 - (IBAction)accuracyChanged:(UISegmentedControl * __nonnull)sender;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateToLocation:(CLLocation * __nonnull)newLocation fromLocation:(CLLocation * __nonnull)oldLocation;
-- (IBAction)btSauda:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
