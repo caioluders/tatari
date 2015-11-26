@@ -92,7 +92,7 @@
                                     <action selector="btLogoutPressed:" destination="3Ai-Qg-ERc" eventType="touchUpInside" id="Pgt-a1-cCk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-c2-eVc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-c2-eVc">
                                 <rect key="frame" x="201" y="344" width="204" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="204" id="UBL-i9-9FE"/>
@@ -110,79 +110,7 @@
                                 <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="53"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jW8-Ej-MkG">
-                                <rect key="frame" x="175" y="370" width="250" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visível para todos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ue-Zb-dGi">
-                                        <rect key="frame" x="41" y="14" width="136" height="26"/>
-                                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="21"/>
-                                        <color key="textColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXh-Zn-ix9">
-                                        <rect key="frame" x="193" y="11" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="swt_all_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="xbI-Y3-9UM"/>
-                                        </connections>
-                                    </switch>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="E64-l1-syG"/>
-                                    <constraint firstAttribute="width" constant="250" id="gjw-PM-0zN"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KzQ-YT-AjK">
-                                <rect key="frame" x="176" y="415" width="250" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visível para amigos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-wa-LYK">
-                                        <rect key="frame" x="30" y="12" width="147" height="26"/>
-                                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="21"/>
-                                        <color key="textColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VOU-sR-yWm">
-                                        <rect key="frame" x="193" y="11" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="swt_friends_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="cda-sn-iJ5"/>
-                                        </connections>
-                                    </switch>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="lFJ-Jt-b2t"/>
-                                    <constraint firstAttribute="width" constant="250" id="rEK-gB-LBM"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3h3-4t-wvs">
-                                <rect key="frame" x="176" y="460" width="250" height="50"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="visível para ninguém" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKf-Ea-RPI">
-                                        <rect key="frame" x="19" y="12" width="158" height="26"/>
-                                        <fontDescription key="fontDescription" name="Rodina-Regular" family="Rodina" pointSize="21"/>
-                                        <color key="textColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0C-gq-otq">
-                                        <rect key="frame" x="193" y="11" width="51" height="31"/>
-                                        <color key="onTintColor" red="0.015686274510000001" green="0.062745098040000002" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="thumbTintColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="swt_nobody_changed:" destination="3Ai-Qg-ERc" eventType="valueChanged" id="xeo-74-ZN6"/>
-                                        </connections>
-                                    </switch>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ise-Gv-oRq"/>
-                                    <constraint firstAttribute="width" constant="250" id="ZQm-6s-Osl"/>
-                                </constraints>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="AK2-Re-L5e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pontos" translatesAutoresizingMaskIntoConstraints="NO" id="AK2-Re-L5e">
                                 <rect key="frame" x="276" y="508" width="66" height="13"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pin Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="eZ5-69-4m7">
@@ -215,9 +143,6 @@
                     <connections>
                         <outlet property="picker" destination="ueQ-iO-4rS" id="lPu-8E-Y2Z"/>
                         <outlet property="pin_avatar" destination="eZ5-69-4m7" id="GyP-UW-SIh"/>
-                        <outlet property="swt_all" destination="EXh-Zn-ix9" id="Ldg-HT-bBs"/>
-                        <outlet property="swt_friends" destination="VOU-sR-yWm" id="nOh-It-43F"/>
-                        <outlet property="swt_nobody" destination="v0C-gq-otq" id="sXD-SF-cDt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-Xw-VAH" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -54,6 +54,26 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // Send data about visibility to server
+        
+        let mutable_result =  NSMutableDictionary()
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let fb_id = defaults.stringForKey("fb_id")
+        
+        mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        
+        if ( row == 0 ) {
+            mutable_result.setObject("all",forKey:"visibility")
+        } else if ( row == 1 ) {
+            mutable_result.setObject("friends",forKey:"visibility")
+        } else if ( row == 2 ) {
+            mutable_result.setObject("nope",forKey:"visibility")
+        }
+        
+        self.HTTPPostJSON("http://45.55.146.229:116/change_settings", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
+        })
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -86,62 +106,6 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         return maskedImage
     }
 
-    @IBAction func swt_all_changed(sender: AnyObject) {
-        if (self.swt_all.on == true ) {
-            let mutable_result =  NSMutableDictionary()
-            
-            let defaults = NSUserDefaults.standardUserDefaults()
-            let fb_id = defaults.stringForKey("fb_id")
-            
-            mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
-            mutable_result.setObject("all",forKey:"visibility")
-            
-            self.HTTPPostJSON("http://45.55.146.229:116/change_settings", jsonObj: mutable_result, callback: { (data,error) -> Void in
-                let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
-            })
-            
-            self.swt_friends.on = true ;
-            self.swt_nobody.on = false ;
-        }
-    }
-
-    @IBAction func swt_friends_changed(sender: AnyObject) {
-        if (self.swt_friends.on == true ) {
-            let mutable_result =  NSMutableDictionary()
-            
-            let defaults = NSUserDefaults.standardUserDefaults()
-            let fb_id = defaults.stringForKey("fb_id")
-            
-            self.swt_all.on = true
-            self.swt_nobody.on = false
-            
-            mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
-            mutable_result.setObject("friends",forKey:"visibility")
-            
-            self.HTTPPostJSON("http://45.55.146.229:116/change_settings", jsonObj: mutable_result, callback: { (data,error) -> Void in
-                let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
-            })
-        }
-    }
-    @IBAction func swt_nobody_changed(sender: AnyObject) {
-        if (self.swt_nobody.on == true ) {
-            let mutable_result =  NSMutableDictionary()
-            
-            let defaults = NSUserDefaults.standardUserDefaults()
-            let fb_id = defaults.stringForKey("fb_id")
-            
-            mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
-            mutable_result.setObject("nope",forKey:"visibility")
-            
-            self.HTTPPostJSON("http://45.55.146.229:116/change_settings", jsonObj: mutable_result, callback: { (data,error) -> Void in
-                let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
-            })
-            
-            self.swt_all.on = false
-            self.swt_friends.on = false
-        }
-    }
-    
     func JSONStringify(value: AnyObject,prettyPrinted:Bool = false) -> String{
         
         let options = prettyPrinted ? NSJSONWritingOptions.PrettyPrinted : NSJSONWritingOptions(rawValue: 0)

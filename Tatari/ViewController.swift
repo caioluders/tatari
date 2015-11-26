@@ -58,9 +58,10 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
     
     func getFBUserData(){
         if((FBSDKAccessToken.currentAccessToken()) != nil){
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, user_friends , picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
                 if (error == nil){
                     let resultdict = result as! NSMutableDictionary
+//                    print(resultdict)
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setValue(resultdict["id"] as! String, forKey: "fb_id")
                     defaults.setValue(resultdict["picture"]!["data"]!!["url"]!! as! String, forKey: "fb_avatar")
