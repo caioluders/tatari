@@ -100,20 +100,15 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         text.text = self.arraySorted[indexPath.row]["body"]
         text.font =  UIFont(name: "Rodina", size: 15)
         text.lineBreakMode = NSLineBreakMode.ByWordWrapping
+        text.preferredMaxLayoutWidth = 335
         text.numberOfLines = 10
         text.sizeToFit()
         text.intrinsicContentSize()
         print(String(text.intrinsicContentSize()))
-        let tamanho = text.intrinsicContentSize().width
+        let tamanhoHeight = text.intrinsicContentSize().height
         var tamanhoCelula = CGFloat(0.0)
-        if (tamanho < 100){
-            tamanhoCelula = 50
-        }else if (tamanho < 300){
-            tamanhoCelula = 100
-        }else{
-            tamanhoCelula = 300
-        }
-        print(tamanho)
+        tamanhoCelula = (tamanhoHeight/18)*50
+        
         return tamanhoCelula
     }
     

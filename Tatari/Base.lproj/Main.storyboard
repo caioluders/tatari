@@ -92,7 +92,7 @@
                                     <action selector="btLogoutPressed:" destination="3Ai-Qg-ERc" eventType="touchUpInside" id="Pgt-a1-cCk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-c2-eVc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="escolha quem pode te ver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-c2-eVc">
                                 <rect key="frame" x="201" y="344" width="204" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="204" id="UBL-i9-9FE"/>

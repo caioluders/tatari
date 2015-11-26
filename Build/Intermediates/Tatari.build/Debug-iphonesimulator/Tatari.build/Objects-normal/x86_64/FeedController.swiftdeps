@@ -6,90 +6,91 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14FeedController", ""]
 provides-dynamic-lookup:
-- "HTTPsendRequest"
-- "itemsTitle"
-- "messageDict"
-- "loadingData"
-- "JSONStringify"
-- "arrayOfMessages"
-- "viewDidLoad"
-- "load_feed"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "activityFeed"
+- "didReceiveMemoryWarning"
 - "point"
-- "data"
-- "HTTPPostJSON"
 - "itemsBody"
+- "spinner"
 - "challengeDict"
 - "arraySorted"
-- "didReceiveMemoryWarning"
-- "refreshControl"
-- "refresh_feed"
+- "load_feed"
+- "arrayOfMessages"
+- "HTTPPostJSON"
+- "HTTPsendRequest"
+- "activityFeed"
+- "itemsTitle"
 - "items"
-- "spinner"
+- "refresh_feed"
+- "messageDict"
+- "JSONStringify"
+- "viewDidLoad"
+- "data"
+- "loadingData"
+- "refreshControl"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
 depends-top-level:
-- "UIActivityIndicatorView"
-- !private "FBSDKAccessToken"
-- "UITableView"
-- !private "=="
-- "NSIndexPath"
-- !private "NSForegroundColorAttributeName"
-- !private "UIViewContentMode"
-- "UITableViewDataSource"
 - "UITableViewDelegate"
-- !private "!"
-- "String"
-- !private "<"
-- !private "UILabel"
-- "NSURLConnectionDelegate"
+- !private "NSFontAttributeName"
 - !private "NSJSONWritingOptions"
-- !private "UIImage"
+- !private "!="
+- !private "print"
+- "BooleanLiteralType"
+- !private "/"
+- "UIViewController"
+- !private "-"
+- !private "&&"
+- !private "UIFont"
+- !private ">"
+- "UITableViewCell"
+- !private "JSON"
+- !private "*"
+- "UIRefreshControl"
+- "StringLiteralType"
+- !private "NSLineBreakMode"
+- "String"
+- "Int"
+- "NSMutableURLRequest"
+- !private "NSString"
+- !private "NSJSONSerialization"
+- !private "UIViewContentMode"
+- !private "NSURLSession"
+- "Bool"
+- !private "UINib"
+- !private "dispatch_async"
+- !private "UIColor"
+- !private "NSUTF8StringEncoding"
+- !private "UILabel"
 - !private "NSUserDefaults"
 - !private "dispatch_get_main_queue"
-- "Array"
-- !private "NSData"
-- !private "NSJSONSerialization"
-- !private "UIColor"
-- !private ">"
-- "Dictionary"
-- !private "dispatch_async"
-- "UIRefreshControl"
-- "NSMutableURLRequest"
-- !private "NSLineBreakMode"
-- !private "NSURLSession"
-- "StringLiteralType"
-- !private "&&"
-- !private "NSFontAttributeName"
-- "Bool"
-- !private "NSURL"
-- !private "UITableViewAutomaticDimension"
-- "NSMutableData"
-- "FeedController"
-- "CGFloat"
-- !private "UINib"
-- !private "NSUTF8StringEncoding"
-- "Void"
-- !private "+"
-- "UITableViewCell"
-- !private "NSMutableDictionary"
-- "UIViewController"
-- !private "UIFont"
-- !private "print"
-- !private "UIImageView"
-- !private "-"
-- !private "NSString"
-- !private "!="
-- "Int"
-- !private "Selector"
-- !private "UIControlEvents"
 - "AnyObject"
-- "BooleanLiteralType"
-- !private "JSON"
+- !private "NSForegroundColorAttributeName"
+- !private "UIControlEvents"
+- !private "FBSDKAccessToken"
+- !private "UITableViewAutomaticDimension"
+- "CGFloat"
+- "Void"
+- "FeedController"
+- "NSMutableData"
+- !private "UIImage"
+- !private "NSMutableDictionary"
+- !private "!"
+- !private "NSURL"
+- "Array"
+- "UIActivityIndicatorView"
+- "NSURLConnectionDelegate"
+- "UITableViewDataSource"
+- !private "Selector"
+- !private "+"
+- !private "UIImageView"
+- "UITableView"
+- "Dictionary"
+- !private "=="
+- !private "NSData"
+- "NSIndexPath"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - ["PSs9AnyObject", "Array"]
@@ -176,6 +177,7 @@ depends-member:
 - !private ["PSs9AnyObject", "numberOfLines"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - ["PSs9AnyObject", "point"]
+- !private ["PSs9AnyObject", "preferredMaxLayoutWidth"]
 - !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "refreshControl"]
 - ["PSs9AnyObject", "refresh_feed"]
@@ -268,7 +270,7 @@ depends-member:
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC6CGSize", "deinit"]
-- !private ["VSC6CGSize", "width"]
+- !private ["VSC6CGSize", "height"]
 - ["PSs11CVarArgType", "Array"]
 - !private ["PSs11CVarArgType", "CGFloat"]
 - ["PSs11CVarArgType", "Dictionary"]
@@ -356,6 +358,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "numberOfLines"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - ["PSs11CVarArgType", "point"]
+- !private ["PSs11CVarArgType", "preferredMaxLayoutWidth"]
 - !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "refreshControl"]
 - ["PSs11CVarArgType", "refresh_feed"]
@@ -532,6 +535,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "numberOfLines"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["PSs23CustomStringConvertible", "point"]
+- !private ["PSs23CustomStringConvertible", "preferredMaxLayoutWidth"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "refreshControl"]
 - ["PSs23CustomStringConvertible", "refresh_feed"]
@@ -674,6 +678,7 @@ depends-member:
 - !private ["PSs9Equatable", "endRefreshing"]
 - !private ["PSs9Equatable", "estimatedRowHeight"]
 - !private ["PSs9Equatable", "font"]
+- !private ["PSs9Equatable", "height"]
 - !private ["PSs9Equatable", "hidesWhenStopped"]
 - !private ["PSs9Equatable", "image"]
 - !private ["PSs9Equatable", "imageView"]
@@ -695,6 +700,7 @@ depends-member:
 - !private ["PSs9Equatable", "numberOfLines"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - ["PSs9Equatable", "point"]
+- !private ["PSs9Equatable", "preferredMaxLayoutWidth"]
 - !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "refreshControl"]
 - ["PSs9Equatable", "refresh_feed"]
@@ -736,7 +742,6 @@ depends-member:
 - !private ["PSs9Equatable", "tokenString"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
-- !private ["PSs9Equatable", "width"]
 - ["PSs9Equatable", ""]
 - !private ["PSs9ErrorType", "localizedDescription"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "Generator"]
@@ -942,6 +947,7 @@ depends-member:
 - !private ["PSs8Hashable", "numberOfLines"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - ["PSs8Hashable", "point"]
+- !private ["PSs8Hashable", "preferredMaxLayoutWidth"]
 - !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "refreshControl"]
 - ["PSs8Hashable", "refresh_feed"]
@@ -1155,6 +1161,7 @@ depends-member:
 - !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "point"]
+- !private ["PSo8NSCoding", "preferredMaxLayoutWidth"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "refreshControl"]
 - ["PSo8NSCoding", "refresh_feed"]
@@ -1400,6 +1407,7 @@ depends-member:
 - !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "point"]
+- !private ["CSo8NSObject", "preferredMaxLayoutWidth"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "refreshControl"]
 - ["CSo8NSObject", "refresh_feed"]
@@ -1523,6 +1531,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "point"]
+- !private ["PSo16NSObjectProtocol", "preferredMaxLayoutWidth"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "refreshControl"]
 - ["PSo16NSObjectProtocol", "refresh_feed"]
@@ -1764,6 +1773,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "intrinsicContentSize"]
 - !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
+- !private ["PSo29UIAccessibilityIdentification", "preferredMaxLayoutWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
@@ -1796,6 +1806,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "intrinsicContentSize"]
 - !private ["PSo12UIAppearance", "lineBreakMode"]
 - !private ["PSo12UIAppearance", "numberOfLines"]
+- !private ["PSo12UIAppearance", "preferredMaxLayoutWidth"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "rowHeight"]
@@ -1881,6 +1892,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "point"]
+- !private ["PSo21UIAppearanceContainer", "preferredMaxLayoutWidth"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "refreshControl"]
 - ["PSo21UIAppearanceContainer", "refresh_feed"]
@@ -2016,6 +2028,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "intrinsicContentSize"]
 - !private ["PSo17UICoordinateSpace", "lineBreakMode"]
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
+- !private ["PSo17UICoordinateSpace", "preferredMaxLayoutWidth"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
@@ -2045,6 +2058,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "intrinsicContentSize"]
 - !private ["PSo13UIDynamicItem", "lineBreakMode"]
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
+- !private ["PSo13UIDynamicItem", "preferredMaxLayoutWidth"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "rowHeight"]
@@ -2130,6 +2144,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "numberOfLines"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "point"]
+- !private ["PSo18UIFocusEnvironment", "preferredMaxLayoutWidth"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "refreshControl"]
 - ["PSo18UIFocusEnvironment", "refresh_feed"]
@@ -2175,6 +2190,7 @@ depends-member:
 - !private ["CSo7UILabel", "intrinsicContentSize"]
 - !private ["CSo7UILabel", "lineBreakMode"]
 - !private ["CSo7UILabel", "numberOfLines"]
+- !private ["CSo7UILabel", "preferredMaxLayoutWidth"]
 - !private ["CSo7UILabel", "sizeToFit"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
@@ -2268,6 +2284,7 @@ depends-member:
 - !private ["CSo11UIResponder", "numberOfLines"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "point"]
+- !private ["CSo11UIResponder", "preferredMaxLayoutWidth"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "refreshControl"]
 - ["CSo11UIResponder", "refresh_feed"]
@@ -2674,6 +2691,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "point"]
+- !private ["PSo18UITraitEnvironment", "preferredMaxLayoutWidth"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "refreshControl"]
 - ["PSo18UITraitEnvironment", "refresh_feed"]
@@ -2724,6 +2742,7 @@ depends-member:
 - !private ["CSo6UIView", "intrinsicContentSize"]
 - !private ["CSo6UIView", "lineBreakMode"]
 - !private ["CSo6UIView", "numberOfLines"]
+- !private ["CSo6UIView", "preferredMaxLayoutWidth"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "rowHeight"]
@@ -2934,6 +2953,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "endRefreshing"]
 - !private ["PSs12_Reflectable", "estimatedRowHeight"]
 - !private ["PSs12_Reflectable", "font"]
+- !private ["PSs12_Reflectable", "height"]
 - !private ["PSs12_Reflectable", "hidesWhenStopped"]
 - !private ["PSs12_Reflectable", "image"]
 - !private ["PSs12_Reflectable", "imageView"]
@@ -2941,6 +2961,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "intrinsicContentSize"]
 - !private ["PSs12_Reflectable", "lineBreakMode"]
 - !private ["PSs12_Reflectable", "numberOfLines"]
+- !private ["PSs12_Reflectable", "preferredMaxLayoutWidth"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "removeAll"]
@@ -2956,7 +2977,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "textColor"]
 - !private ["PSs12_Reflectable", "textLabel"]
 - !private ["PSs12_Reflectable", "titleTextAttributes"]
-- !private ["PSs12_Reflectable", "width"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs18_SignedIntegerType", "Stride"]

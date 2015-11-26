@@ -29,7 +29,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
                
         
-        self.navigationItem.title = "Concurso"
+        self.navigationItem.title = "Votacao"
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1)]
         
