@@ -58,7 +58,7 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
     
     func getFBUserData(){
         if((FBSDKAccessToken.currentAccessToken()) != nil){
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, user_friends , picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name , picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
                 if (error == nil){
                     let resultdict = result as! NSMutableDictionary
 //                    print(resultdict)
@@ -69,16 +69,28 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
                     let mutable_result =  NSMutableDictionary(dictionary:resultdict)
                     mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
                     let push_woosh = PushNotificationManager.pushManager()
-//                    mutable_result.setObject(push_woosh.getPushToken(),forKey:"device_token")
+                    mutable_result.setObject(push_woosh.getPushToken(),forKey:"device_token")
                     
                     
                     
-                    print(mutable_result)
-                    self.HTTPPostJSON("http://45.55.146.229:116/user", jsonObj: mutable_result, callback: { (data,error) -> Void in
-                        print(data)
-                   })
+                    var request = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil);
                     
-                    self.performSegueWithIdentifier("main_segue", sender: self)
+                    request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
+                        if error == nil {
+                            let result_dict = result as! NSDictionary!
+                            mutable_result.setObject(result_dict["data"]!,forKey:"friends")
+                            
+                            self.HTTPPostJSON("http://45.55.146.229:116/user", jsonObj: mutable_result, callback: { (data,error) -> Void in
+                                print(data)
+                            })
+                            
+                            self.performSegueWithIdentifier("main_segue", sender: self)
+                        } else {
+                            print("Error Getting Friends \(error)");
+                        }
+                    }
+                    
+            
                 }
             })
         }
