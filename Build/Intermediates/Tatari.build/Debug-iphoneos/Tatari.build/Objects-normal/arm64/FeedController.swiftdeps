@@ -6,91 +6,92 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14FeedController", ""]
 provides-dynamic-lookup:
-- "messageDict"
-- "activityFeed"
-- "itemsTitle"
-- "load_feed"
-- "refreshControl"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "point"
+- "loadingData"
+- "viewDidLoad"
+- "HTTPsendRequest"
 - "items"
+- "spinner"
+- "itemsTitle"
+- "messageDict"
 - "arrayOfMessages"
-- "itemsBody"
+- "didReceiveMemoryWarning"
+- "point"
+- "data"
+- "refresh_feed"
+- "refreshControl"
+- "activityFeed"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidAppear"
+- "load_feed"
 - "challengeDict"
 - "arraySorted"
-- "HTTPPostJSON"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "JSONStringify"
-- "HTTPsendRequest"
-- "loadingData"
-- "spinner"
-- "refresh_feed"
-- "data"
+- "itemsBody"
+- "HTTPPostJSON"
 depends-top-level:
-- !private "NSJSONWritingOptions"
-- !private "-"
-- "CGFloat"
-- "StringLiteralType"
-- !private "UIViewContentMode"
-- !private "NSUTF8StringEncoding"
-- !private "dispatch_async"
-- !private "*"
-- !private "UIImage"
-- !private "dispatch_get_main_queue"
-- !private "NSURL"
-- "Void"
-- "UITableView"
-- !private "NSForegroundColorAttributeName"
-- !private "NSData"
-- !private "/"
-- "UIActivityIndicatorView"
-- !private "NSURLSession"
-- !private "Selector"
-- "AnyObject"
-- "NSMutableData"
-- "Bool"
-- !private "NSJSONSerialization"
-- !private "NSUserDefaults"
-- "FeedController"
-- !private "UITableViewAutomaticDimension"
-- !private ">"
-- "Array"
-- "UITableViewDelegate"
-- !private "+"
-- "UITableViewCell"
-- "String"
 - "UIViewController"
-- "UITableViewDataSource"
-- "Int"
-- "Dictionary"
-- !private "&&"
-- !private "UIFont"
-- !private "=="
-- !private "UILabel"
-- !private "NSFontAttributeName"
-- "NSURLConnectionDelegate"
-- !private "!="
-- "UIRefreshControl"
-- !private "NSString"
-- !private "UIImageView"
-- !private "!"
-- "NSIndexPath"
-- !private "NSLineBreakMode"
-- !private "print"
-- !private "UINib"
 - !private "JSON"
-- "BooleanLiteralType"
-- !private "UIControlEvents"
-- "NSMutableURLRequest"
+- !private "NSData"
 - !private "NSMutableDictionary"
+- !private ">"
 - !private "FBSDKAccessToken"
+- !private "UIFont"
+- !private "+"
+- !private "!"
+- !private "&&"
+- !private "NSFontAttributeName"
+- !private "UIViewContentMode"
+- !private "Selector"
+- !private "NSUTF8StringEncoding"
+- "Dictionary"
+- !private "UILabel"
+- "UITableViewCell"
+- !private "=="
+- !private "NSJSONWritingOptions"
+- "Int"
+- "UIActivityIndicatorView"
+- "Array"
+- !private "NSURL"
+- !private "UIControlEvents"
+- !private "UIImage"
+- "Void"
+- !private "NSString"
 - !private "UIColor"
+- !private "UINib"
+- "String"
+- "Bool"
+- "AnyObject"
+- !private "*"
+- "NSIndexPath"
+- "StringLiteralType"
+- !private "dispatch_get_main_queue"
+- !private "/"
+- "CGFloat"
+- !private "NSURLSession"
+- !private "dispatch_async"
+- "UITableViewDataSource"
+- "NSMutableData"
+- !private "-"
+- "UITableViewDelegate"
+- "FeedController"
+- "UIRefreshControl"
+- !private "NSUserDefaults"
+- !private "UITableViewAutomaticDimension"
+- !private "UIImageView"
+- !private "NSForegroundColorAttributeName"
+- !private "NSLineBreakMode"
+- "BooleanLiteralType"
+- !private "!="
+- "UITableView"
+- !private "NSJSONSerialization"
+- "NSMutableURLRequest"
+- !private "print"
+- "NSURLConnectionDelegate"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - ["PSs9AnyObject", "Array"]
@@ -215,6 +216,7 @@ depends-member:
 - !private ["PSs9AnyObject", "title"]
 - !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", ""]
@@ -396,6 +398,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "title"]
 - !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", ""]
@@ -577,6 +580,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "title"]
 - !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", ""]
@@ -740,6 +744,7 @@ depends-member:
 - !private ["PSs9Equatable", "title"]
 - !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", ""]
@@ -840,6 +845,7 @@ depends-member:
 - ["C6Tatari14FeedController", "sectionIndexTitlesForTableView"]
 - ["C6Tatari14FeedController", "spinner"]
 - ["C6Tatari14FeedController", "tableView"]
+- ["C6Tatari14FeedController", "viewDidAppear"]
 - ["C6Tatari14FeedController", "viewDidLoad"]
 - ["C6Tatari14FeedController", "viewForZoomingInScrollView"]
 - !private ["Sf", "deinit"]
@@ -984,6 +990,7 @@ depends-member:
 - !private ["PSs8Hashable", "title"]
 - !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", ""]
@@ -1194,6 +1201,7 @@ depends-member:
 - !private ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
@@ -1289,6 +1297,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "spinner"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -1444,6 +1453,7 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "Array"]
@@ -1568,6 +1578,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1921,6 +1932,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -2002,6 +2014,7 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "spinner"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
@@ -2173,6 +2186,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -2313,6 +2327,7 @@ depends-member:
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "textLabel"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "addSubview"]
@@ -2466,6 +2481,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "spinner"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
@@ -2720,6 +2736,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -2838,6 +2855,7 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "spinner"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
@@ -3211,4 +3229,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "b5588e06f8cb62d9308628f9010803c1"
+interface-hash: "039260275b48480f5c04928aa6fa64c6"

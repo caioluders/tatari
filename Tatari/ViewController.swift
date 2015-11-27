@@ -17,6 +17,7 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
     
     override func viewDidAppear(animated: Bool) {
         
+        
         if (FBSDKAccessToken.currentAccessToken() != nil) {
             // User is already logged in, do work such as go to next view controller.
             print("wtf")

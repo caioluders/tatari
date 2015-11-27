@@ -18,6 +18,10 @@ class MainController: UIViewController,CLLocationManagerDelegate {
     // Accelerometer and Gyro
     var motionManager : CMMotionManager = CMMotionManager()
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

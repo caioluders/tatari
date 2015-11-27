@@ -138,6 +138,7 @@ SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified picker;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull pickerData;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
 - (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
@@ -198,6 +199,7 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 @property (nonatomic) BOOL loadingData;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
 @property (nonatomic, strong) UIRefreshControl * __null_unspecified refreshControl;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -239,6 +241,7 @@ SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 SWIFT_CLASS("_TtC6Tatari14MainController")
 @interface MainController : UIViewController <CLLocationManagerDelegate>
 @property (nonatomic, strong) CMMotionManager * __nonnull motionManager;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
@@ -331,6 +334,7 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull idsVotadas;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
 @property (nonatomic, copy) NSString * __nonnull idBotaoVoto;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)getDataFromServer;
 - (void)cleanAllArrays;

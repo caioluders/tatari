@@ -26,7 +26,6 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         super.viewDidLoad()
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1)]
         
         self.tableView.delegate = self
         let bgImage = UIImage(named: "Background")
@@ -150,16 +149,19 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
             cell.btCurtir.setImage(UIImage(named: "Heart Full"), forState: UIControlState.Normal)
         }
         
+        /**
         cell.borderView.layer.borderColor = UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1).CGColor
         cell.borderView.layer.borderWidth = 3
         cell.borderView.layer.cornerRadius = 12
         
         cell.backgroundColor = UIColor.clearColor()
+        **/
         
         return cell
     }
     
     override func viewDidAppear(animated: Bool) {
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         self.activityLoadingSearch.startAnimating()
         search_people(txtFieldSearch.text!)
     }

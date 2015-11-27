@@ -6,70 +6,71 @@ provides-nominal:
 provides-member:
 - ["C6Tatari20ConfigViewController", ""]
 provides-dynamic-lookup:
-- "picker"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "JSONStringify"
-- "swt_all"
-- "pickerData"
-- "didReceiveMemoryWarning"
-- "HTTPPostJSON"
-- "swt_nobody"
-- "HTTPsendRequest"
-- "pin_avatar"
-- "btLogoutPressed"
-- "maskImage"
 - "viewDidLoad"
 - "swt_friends"
+- "viewDidAppear"
+- "maskImage"
+- "JSONStringify"
+- "HTTPPostJSON"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "pin_avatar"
+- "HTTPsendRequest"
+- "pickerData"
 - "numberOfComponentsInPickerView"
+- "didReceiveMemoryWarning"
+- "swt_all"
+- "btLogoutPressed"
+- "swt_nobody"
+- "picker"
 depends-top-level:
-- !private "NSUserDefaults"
-- "UIPickerViewDelegate"
-- !private "JSON"
-- !private "CGImageGetDataProvider"
-- !private "CGImageGetHeight"
-- !private "FBSDKLoginManager"
-- "AnyObject"
-- !private "StringLiteralType"
-- "UIViewController"
-- "UIPickerView"
-- !private "FBSDKAccessToken"
-- "NSMutableURLRequest"
-- !private "UIFont"
-- !private "NSFontAttributeName"
-- !private "=="
-- !private "CGImageGetBitsPerComponent"
-- "UIImage"
-- "Int"
-- "UIPickerViewDataSource"
-- !private "NSURL"
-- !private "BooleanLiteralType"
-- !private "NSData"
-- "UIImageView"
-- !private "NSMutableDictionary"
-- !private "Toucan"
-- "String"
-- !private "CGImageGetBitsPerPixel"
-- "Bool"
-- !private "NSURLSession"
-- !private "CGImageCreateWithMask"
-- !private "NSString"
-- !private "NSForegroundColorAttributeName"
-- "UISwitch"
-- !private "Array"
-- !private "CGImageMaskCreate"
-- !private "CGImageGetBytesPerRow"
-- !private "CGImageGetWidth"
-- !private "print"
 - !private "NSUTF8StringEncoding"
-- "Void"
-- "ConfigViewController"
-- !private "NSJSONWritingOptions"
-- !private "UIColor"
 - !private "Dictionary"
+- !private "=="
+- "ConfigViewController"
+- "UIImage"
+- !private "UIColor"
+- !private "FBSDKLoginManager"
+- !private "print"
+- !private "CGImageGetBitsPerComponent"
+- !private "NSData"
+- !private "CGImageGetHeight"
+- "Bool"
+- !private "CGImageGetDataProvider"
+- !private "StringLiteralType"
+- !private "NSURL"
+- !private "Toucan"
+- !private "NSString"
+- "UIViewController"
+- "AnyObject"
+- !private "NSMutableDictionary"
+- !private "Array"
+- "UISwitch"
+- "UIPickerViewDataSource"
+- !private "UIFont"
+- !private "FBSDKAccessToken"
+- !private "NSForegroundColorAttributeName"
+- !private "CGImageGetWidth"
+- "String"
+- !private "NSURLSession"
+- !private "NSUserDefaults"
+- "NSMutableURLRequest"
+- !private "CGImageGetBytesPerRow"
+- "UIImageView"
+- !private "BooleanLiteralType"
+- !private "CGImageCreateWithMask"
+- !private "CGImageMaskCreate"
+- !private "NSJSONWritingOptions"
+- !private "JSON"
 - !private "!="
 - !private "NSJSONSerialization"
+- "UIPickerViewDelegate"
+- !private "NSFontAttributeName"
+- "UIPickerView"
+- "Int"
+- !private "CGImageGetBitsPerPixel"
+- "Void"
 depends-member:
 - !private ["PSs9AnyObject", "CGImage"]
 - !private ["PSs9AnyObject", "CGImageCreateWithMask"]
@@ -143,6 +144,7 @@ depends-member:
 - ["PSs9AnyObject", "swt_nobody"]
 - !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", ""]
 - !private ["Sa", "Element"]
@@ -246,6 +248,7 @@ depends-member:
 - ["PSs11CVarArgType", "swt_nobody"]
 - !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
 - !private ["PSs14CollectionType", "Element"]
@@ -315,6 +318,7 @@ depends-member:
 - ["C6Tatari20ConfigViewController", "swt_all"]
 - ["C6Tatari20ConfigViewController", "swt_friends"]
 - ["C6Tatari20ConfigViewController", "swt_nobody"]
+- ["C6Tatari20ConfigViewController", "viewDidAppear"]
 - ["C6Tatari20ConfigViewController", "viewDidLoad"]
 - !private ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
@@ -409,6 +413,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "swt_nobody"]
 - !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["VSs10Dictionary", "Key"]
@@ -493,6 +498,7 @@ depends-member:
 - ["PSs9Equatable", "swt_nobody"]
 - !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", ""]
 - !private ["PSs9ErrorType", "localizedDescription"]
@@ -584,6 +590,7 @@ depends-member:
 - ["PSs8Hashable", "swt_nobody"]
 - !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", ""]
 - !private ["SQ", "deinit"]
@@ -696,6 +703,7 @@ depends-member:
 - ["PSo8NSCoding", "swt_nobody"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "HTTPBody"]
@@ -759,6 +767,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "swt_all"]
 - ["PSo26NSExtensionRequestHandling", "swt_friends"]
 - ["PSo26NSExtensionRequestHandling", "swt_nobody"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "init"]
@@ -857,6 +866,7 @@ depends-member:
 - ["CSo8NSObject", "swt_nobody"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - !private ["PSo16NSObjectProtocol", "CGImage"]
 - !private ["PSo16NSObjectProtocol", "CGImageCreateWithMask"]
@@ -929,6 +939,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "swt_nobody"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "CGImage"]
@@ -1070,6 +1081,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "swt_friends"]
 - ["PSo21UIAppearanceContainer", "swt_nobody"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
@@ -1120,6 +1132,7 @@ depends-member:
 - ["PSo18UIContentContainer", "swt_all"]
 - ["PSo18UIContentContainer", "swt_friends"]
 - ["PSo18UIContentContainer", "swt_nobody"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
@@ -1180,6 +1193,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "swt_friends"]
 - ["PSo18UIFocusEnvironment", "swt_nobody"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "init"]
@@ -1326,6 +1340,7 @@ depends-member:
 - ["CSo11UIResponder", "swt_friends"]
 - ["CSo11UIResponder", "swt_nobody"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["PSo16UIStateRestoring", "CGImageCreateWithMask"]
 - !private ["PSo16UIStateRestoring", "CGImageGetBitsPerComponent"]
@@ -1373,6 +1388,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "swt_all"]
 - ["PSo16UIStateRestoring", "swt_friends"]
 - ["PSo16UIStateRestoring", "swt_nobody"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["PSo21UITableViewDataSource", "dataSource"]
@@ -1427,6 +1443,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "swt_friends"]
 - ["PSo18UITraitEnvironment", "swt_nobody"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dataSource"]
@@ -1486,6 +1503,7 @@ depends-member:
 - ["CSo16UIViewController", "swt_all"]
 - ["CSo16UIViewController", "swt_friends"]
 - ["CSo16UIViewController", "swt_nobody"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
@@ -1757,4 +1775,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "bb0d4e23027460b32b90656cd26d6a8c"
+interface-hash: "e8742ac574b086a45f54ba6e97684aa3"
