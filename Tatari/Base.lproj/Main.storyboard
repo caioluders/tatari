@@ -165,37 +165,9 @@
                                 <rect key="frame" x="304" y="65" width="41" height="41"/>
                                 <state key="normal" title="settings" image="conf icon"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-gL-pOW">
-                                <rect key="frame" x="206" y="544" width="42" height="50"/>
-                                <state key="normal" image="bar"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-KH-lpG">
-                                <rect key="frame" x="128" y="537" width="42" height="50"/>
-                                <state key="normal" image="escada"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
-                                <rect key="frame" x="20" y="511" width="42" height="50"/>
-                                <state key="normal" image="elevador"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-cR-bgj">
                                 <rect key="frame" x="312" y="65" width="33" height="41"/>
                                 <state key="normal" title="vote" image="concurso icon"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
-                                <rect key="frame" x="0.0" y="309" width="42" height="50"/>
-                                <state key="normal" image="saida"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-sz-h2B">
-                                <rect key="frame" x="59" y="309" width="42" height="50"/>
-                                <state key="normal" image="elevador"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
-                                <rect key="frame" x="59" y="194" width="42" height="50"/>
-                                <state key="normal" image="elevador"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
-                                <rect key="frame" x="299" y="502" width="42" height="50"/>
-                                <state key="normal" image="banheiro"/>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-Jn-9OA">
                                 <rect key="frame" x="0.0" y="107" width="600" height="445"/>
@@ -206,6 +178,34 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa_grande" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
                                                 <rect key="frame" x="0.0" y="0.0" width="737" height="445"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-KH-lpG">
+                                                <rect key="frame" x="313" y="356" width="42" height="50"/>
+                                                <state key="normal" image="escada"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
+                                                <rect key="frame" x="361" y="74" width="42" height="50"/>
+                                                <state key="normal" image="elevador"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZL-5h-IUS">
+                                                <rect key="frame" x="373" y="283" width="42" height="50"/>
+                                                <state key="normal" image="saida"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-sz-h2B">
+                                                <rect key="frame" x="158" y="301" width="42" height="50"/>
+                                                <state key="normal" image="academia"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
+                                                <rect key="frame" x="146" y="157" width="42" height="50"/>
+                                                <state key="normal" image="palco"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
+                                                <rect key="frame" x="319" y="218" width="42" height="50"/>
+                                                <state key="normal" image="banheiro"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-gL-pOW">
+                                                <rect key="frame" x="70" y="316" width="42" height="50"/>
+                                                <state key="normal" image="bar"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -240,7 +240,6 @@
                             <constraint firstAttribute="trailing" secondItem="x2D-Jn-9OA" secondAttribute="trailing" id="Hki-1N-V3H"/>
                             <constraint firstItem="mT2-Am-HHx" firstAttribute="top" secondItem="x2D-Jn-9OA" secondAttribute="bottom" constant="-1" id="e6s-NK-Ezi"/>
                             <constraint firstItem="x2D-Jn-9OA" firstAttribute="leading" secondItem="Oxb-rz-rRZ" secondAttribute="leading" id="e7T-HQ-uKa"/>
-                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="leading" secondItem="YZL-5h-IUS" secondAttribute="leading" id="jx5-1n-KZy"/>
                             <constraint firstItem="x2D-Jn-9OA" firstAttribute="top" secondItem="oXB-Wo-Nov" secondAttribute="bottom" constant="43" id="koi-Ui-3sv"/>
                         </constraints>
                         <variation key="default">
@@ -681,17 +680,19 @@
         <image name="Participar" width="112" height="22"/>
         <image name="Pin Avatar" width="111" height="173"/>
         <image name="Pontos" width="66" height="13"/>
-        <image name="banheiro" width="42" height="50"/>
-        <image name="bar" width="42" height="50"/>
+        <image name="academia" width="38" height="40"/>
+        <image name="banheiro" width="39" height="39"/>
+        <image name="bar" width="39" height="39"/>
         <image name="concurso icon" width="33" height="41"/>
         <image name="conf icon" width="41" height="41"/>
-        <image name="elevador" width="42" height="50"/>
-        <image name="escada" width="42" height="50"/>
+        <image name="elevador" width="39" height="39"/>
+        <image name="escada" width="38" height="40"/>
         <image name="info icon" width="40" height="41"/>
         <image name="log out" width="60" height="20"/>
         <image name="mapa_grande" width="594" height="444"/>
+        <image name="palco" width="38" height="40"/>
         <image name="pesquisar icon" width="40" height="41"/>
-        <image name="saida" width="43" height="50"/>
+        <image name="saida" width="38" height="40"/>
         <image name="tabConcurso" width="25" height="30"/>
         <image name="tabConf" width="30" height="30"/>
         <image name="tabFeed" width="30" height="30"/>

@@ -6,45 +6,47 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14ViewController", ""]
 provides-dynamic-lookup:
-- "HTTPsendRequest"
-- "viewDidLoad"
 - "getFBUserData"
-- "loginButtonDidLogOut"
 - "JSONStringify"
 - "HTTPPostJSON"
+- "loginButtonDidLogOut"
 - "viewDidAppear"
+- "HTTPsendRequest"
+- "viewDidLoad"
 - "loginButton"
 depends-top-level:
-- "FBSDKLoginButtonDelegate"
-- "FBSDKLoginManagerLoginResult"
-- "BooleanLiteralType"
-- !private "NSJSONWritingOptions"
-- "Bool"
-- !private "print"
-- "Void"
-- !private "FBSDKGraphRequest"
-- !private "PushNotificationManager"
-- !private "NSString"
-- "NSError"
-- !private "Dictionary"
-- "UIViewController"
-- "String"
-- !private "StringLiteralType"
-- !private "NSData"
-- !private "NSURLSession"
-- "FBSDKLoginButton"
-- !private "FBSDKAccessToken"
-- "ViewController"
-- !private "Array"
-- !private "NSMutableDictionary"
-- !private "NSURL"
-- !private "NSJSONSerialization"
-- "AnyObject"
-- "NSMutableURLRequest"
-- !private "=="
-- !private "NSUserDefaults"
 - !private "NSUTF8StringEncoding"
+- !private "NSURL"
+- !private "NSData"
+- !private "NSString"
+- !private "NSJSONSerialization"
+- !private "=="
+- !private "Dictionary"
+- "ViewController"
+- !private "FBSDKAccessToken"
+- !private "StringLiteralType"
+- !private "FBSDKGraphRequest"
+- !private "NSUserDefaults"
+- !private "PushNotificationManager"
+- "FBSDKLoginButton"
+- "AnyObject"
+- "Void"
 - !private "!="
+- !private "print"
+- "UIViewController"
+- !private "NSDictionary"
+- !private "NSURLSession"
+- "FBSDKLoginButtonDelegate"
+- "String"
+- "NSMutableURLRequest"
+- "Bool"
+- "NSError"
+- !private "NSMutableDictionary"
+- "FBSDKLoginManagerLoginResult"
+- !private "NSJSONWritingOptions"
+- "BooleanLiteralType"
+- !private "Array"
+- !private "FBSDKGraphRequestConnection"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAccessToken"]
 - !private ["PSs9AnyObject", "FBSDKGraphRequest"]
@@ -107,6 +109,7 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "contains"]
 - !private ["PSs23ArrayLiteralConvertible", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
 - !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["PSs11CVarArgType", "FBSDKAccessToken"]
@@ -162,12 +165,14 @@ depends-member:
 - ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", ""]
+- !private ["VSs9Character", "deinit"]
 - !private ["PSs14CollectionType", "Element"]
 - !private ["PSs14CollectionType", "Generator"]
 - !private ["PSs14CollectionType", "Key"]
 - !private ["PSs14CollectionType", "Value"]
 - !private ["PSs14CollectionType", "contains"]
 - !private ["PSs10Comparable", "dataUsingEncoding"]
+- !private ["PSs10Comparable", "init"]
 - !private ["PSs28CustomDebugStringConvertible", "Element"]
 - !private ["PSs28CustomDebugStringConvertible", "Generator"]
 - !private ["PSs28CustomDebugStringConvertible", "Key"]
@@ -175,6 +180,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "Value"]
 - !private ["PSs28CustomDebugStringConvertible", "contains"]
 - !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
+- !private ["PSs28CustomDebugStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "Element"]
 - !private ["PSs23CustomStringConvertible", "FBSDKAccessToken"]
 - !private ["PSs23CustomStringConvertible", "FBSDKGraphRequest"]
@@ -241,6 +247,7 @@ depends-member:
 - !private ["PSs28DictionaryLiteralConvertible", "init"]
 - !private ["PSs28DictionaryLiteralConvertible", "setObject"]
 - !private ["PSs28DictionaryLiteralConvertible", "subscript"]
+- !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "FBSDKAccessToken"]
 - !private ["PSs9Equatable", "FBSDKGraphRequest"]
 - !private ["PSs9Equatable", "FBSDKLoginButton"]
@@ -342,6 +349,7 @@ depends-member:
 - ["PSo24FBSDKLoginButtonDelegate", ""]
 - !private ["CSo28FBSDKLoginManagerLoginResult", "grantedPermissions"]
 - !private ["CSo28FBSDKLoginManagerLoginResult", "isCancelled"]
+- !private ["Sf", "deinit"]
 - !private ["PSs13GeneratorType", "Element"]
 - !private ["PSs8Hashable", "FBSDKAccessToken"]
 - !private ["PSs8Hashable", "FBSDKGraphRequest"]
@@ -405,8 +413,15 @@ depends-member:
 - !private ["PSs9Indexable", "Key"]
 - !private ["PSs9Indexable", "Value"]
 - !private ["PSs9Indexable", "contains"]
+- !private ["Si", "deinit"]
+- !private ["VSs5Int16", "deinit"]
+- !private ["VSs5Int32", "deinit"]
+- !private ["VSs5Int64", "deinit"]
+- !private ["VSs4Int8", "deinit"]
 - !private ["P6Tatari17JSONSubscriptType", "dataUsingEncoding"]
+- !private ["P6Tatari17JSONSubscriptType", "init"]
 - !private ["PSs14MirrorPathType", "dataUsingEncoding"]
+- !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs21MutableCollectionType", "Element"]
 - !private ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableSliceable", "Element"]
@@ -519,6 +534,7 @@ depends-member:
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "FBSDKAccessToken"]
 - !private ["CSo8NSObject", "FBSDKGraphRequest"]
+- !private ["CSo8NSObject", "FBSDKGraphRequestConnection"]
 - ["CSo8NSObject", "FBSDKLoginButton"]
 - ["CSo8NSObject", "FBSDKLoginManagerLoginResult"]
 - !private ["CSo8NSObject", "HTTPBody"]
@@ -527,6 +543,7 @@ depends-member:
 - ["CSo8NSObject", "HTTPsendRequest"]
 - ["CSo8NSObject", "JSONStringify"]
 - !private ["CSo8NSObject", "NSData"]
+- !private ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
 - !private ["CSo8NSObject", "NSJSONWritingOptions"]
@@ -659,6 +676,7 @@ depends-member:
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
 - !private ["PSs16OutputStreamType", "dataUsingEncoding"]
+- !private ["PSs16OutputStreamType", "init"]
 - !private ["CSo23PushNotificationManager", "getPushToken"]
 - !private ["CSo23PushNotificationManager", "pushManager"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
@@ -680,9 +698,12 @@ depends-member:
 - !private ["PSs14SetAlgebraType", "init"]
 - !private ["VSs12SetGenerator", "Element"]
 - !private ["PSs10Streamable", "dataUsingEncoding"]
+- !private ["PSs10Streamable", "init"]
 - !private ["SS", "dataUsingEncoding"]
 - !private ["SS", "deinit"]
+- !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "dataUsingEncoding"]
+- !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
@@ -806,12 +827,14 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
 - !private ["CSo11UIResponder", "FBSDKGraphRequest"]
+- !private ["CSo11UIResponder", "FBSDKGraphRequestConnection"]
 - ["CSo11UIResponder", "FBSDKLoginButton"]
 - ["CSo11UIResponder", "FBSDKLoginManagerLoginResult"]
 - ["CSo11UIResponder", "HTTPPostJSON"]
 - ["CSo11UIResponder", "HTTPsendRequest"]
 - ["CSo11UIResponder", "JSONStringify"]
 - !private ["CSo11UIResponder", "NSData"]
+- !private ["CSo11UIResponder", "NSDictionary"]
 - ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
 - !private ["CSo11UIResponder", "NSJSONWritingOptions"]
@@ -906,12 +929,14 @@ depends-member:
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "FBSDKAccessToken"]
 - !private ["CSo16UIViewController", "FBSDKGraphRequest"]
+- !private ["CSo16UIViewController", "FBSDKGraphRequestConnection"]
 - ["CSo16UIViewController", "FBSDKLoginButton"]
 - ["CSo16UIViewController", "FBSDKLoginManagerLoginResult"]
 - ["CSo16UIViewController", "HTTPPostJSON"]
 - ["CSo16UIViewController", "HTTPsendRequest"]
 - ["CSo16UIViewController", "JSONStringify"]
 - !private ["CSo16UIViewController", "NSData"]
+- !private ["CSo16UIViewController", "NSDictionary"]
 - ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
 - !private ["CSo16UIViewController", "NSJSONWritingOptions"]
@@ -936,18 +961,26 @@ depends-member:
 - ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["VSs6UInt16", "deinit"]
+- !private ["VSs6UInt32", "deinit"]
+- !private ["VSs6UInt64", "deinit"]
+- !private ["VSs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs31UnicodeScalarLiteralConvertible", "init"]
 - ["C6Tatari14ViewController", "AnyObject"]
 - ["C6Tatari14ViewController", "Bool"]
 - !private ["C6Tatari14ViewController", "FBSDKAccessToken"]
 - !private ["C6Tatari14ViewController", "FBSDKGraphRequest"]
+- !private ["C6Tatari14ViewController", "FBSDKGraphRequestConnection"]
 - ["C6Tatari14ViewController", "FBSDKLoginButton"]
 - ["C6Tatari14ViewController", "FBSDKLoginManagerLoginResult"]
 - ["C6Tatari14ViewController", "HTTPPostJSON"]
 - ["C6Tatari14ViewController", "HTTPsendRequest"]
 - ["C6Tatari14ViewController", "JSONStringify"]
 - !private ["C6Tatari14ViewController", "NSData"]
+- !private ["C6Tatari14ViewController", "NSDictionary"]
 - ["C6Tatari14ViewController", "NSError"]
 - !private ["C6Tatari14ViewController", "NSJSONSerialization"]
 - !private ["C6Tatari14ViewController", "NSJSONWritingOptions"]
@@ -975,9 +1008,13 @@ depends-member:
 - !private ["PSs10_ArrayType", "Element"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "dataUsingEncoding"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
@@ -989,6 +1026,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["PSs21_ObjectiveCBridgeable", "contains"]
 - !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs12_Reflectable", "Element"]
 - !private ["PSs12_Reflectable", "Generator"]
@@ -1013,12 +1051,14 @@ depends-nominal:
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
 - "PSs11CVarArgType"
+- !private "VSs9Character"
 - !private "PSs14CollectionType"
 - !private "PSs10Comparable"
 - "PSs28CustomDebugStringConvertible"
 - "PSs23CustomStringConvertible"
 - !private "VSs10Dictionary"
 - !private "PSs28DictionaryLiteralConvertible"
+- !private "Sd"
 - "PSs9Equatable"
 - !private "PSs9ErrorType"
 - !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
@@ -1029,10 +1069,16 @@ depends-nominal:
 - !private "CSo16FBSDKLoginButton"
 - "PSo24FBSDKLoginButtonDelegate"
 - !private "CSo28FBSDKLoginManagerLoginResult"
+- !private "Sf"
 - !private "PSs13GeneratorType"
 - "PSs8Hashable"
 - !private "SQ"
 - !private "PSs9Indexable"
+- !private "Si"
+- !private "VSs5Int16"
+- !private "VSs5Int32"
+- !private "VSs5Int64"
+- !private "VSs4Int8"
 - !private "P6Tatari17JSONSubscriptType"
 - !private "PSs14MirrorPathType"
 - !private "PSs21MutableCollectionType"
@@ -1089,6 +1135,12 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "VSs6UInt16"
+- !private "VSs6UInt32"
+- !private "VSs6UInt64"
+- !private "VSs5UInt8"
+- !private "Sc"
 - !private "PSs31UnicodeScalarLiteralConvertible"
 - "C6Tatari14ViewController"
 - !private "PSs10_ArrayType"
