@@ -19,6 +19,10 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var picker: UIPickerView!
     var pickerData: [String] = [String]()
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

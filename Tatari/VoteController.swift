@@ -25,6 +25,10 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     lazy var data = NSMutableData()
     var idBotaoVoto: String = ""
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                

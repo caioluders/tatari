@@ -6,55 +6,56 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14MainController", ""]
 provides-dynamic-lookup:
-- "viewWillAppear"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
-- "motionManager"
-- "locationManager"
-- "locationManager"
 - "accuracyChanged"
+- "viewWillAppear"
 - "viewWillDisappear"
+- "motionManager"
 - "updateSensorDataArray"
+- "viewDidLoad"
+- "didReceiveMemoryWarning"
+- "locationManager"
+- "locationManager"
+- "viewDidAppear"
 depends-top-level:
 - !private "NSURLRequest"
-- "CLLocationManager"
-- !private "kCLLocationAccuracyThreeKilometers"
-- !private "NSURLSession"
-- "CLLocation"
-- !private "NSFontAttributeName"
-- !private "=="
+- !private "NSError"
+- "String"
 - !private "kCLLocationAccuracyNearestTenMeters"
+- !private "NSOperationQueue"
+- "UIViewController"
+- !private "kCLLocationAccuracyHundredMeters"
+- !private "NSURLSession"
+- !private "||"
+- !private "kCLLocationAccuracyBest"
+- !private "Dictionary"
+- !private "UIColor"
+- !private "Void"
+- "MainController"
+- !private "NSForegroundColorAttributeName"
+- "UISegmentedControl"
+- !private "NSFontAttributeName"
+- !private "+"
+- !private "StringLiteralType"
+- !private "+="
+- !private "NSURLConnection"
+- "CMMotionManager"
+- !private "kCLLocationAccuracyBestForNavigation"
+- "CLLocationManagerDelegate"
+- "Bool"
+- !private "Array"
+- "CLLocation"
+- !private "NSURL"
+- "CLLocationManager"
+- !private "print"
+- !private "MKPointAnnotation"
+- !private "kCLLocationAccuracyThreeKilometers"
+- !private "UIFont"
 - !private "NSData"
 - !private "kCLLocationAccuracyKilometer"
-- !private "UIColor"
-- !private "NSOperationQueue"
-- "MainController"
-- !private "kCLLocationAccuracyHundredMeters"
-- !private "||"
-- !private "NSError"
-- !private "StringLiteralType"
-- "UISegmentedControl"
-- !private "+="
-- !private "NSURL"
-- "CMMotionManager"
-- "CLLocationManagerDelegate"
-- !private "MKPointAnnotation"
-- "UIViewController"
-- !private "+"
-- !private "!="
-- !private "UIFont"
-- !private "kCLLocationAccuracyBestForNavigation"
 - !private "NSURLResponse"
-- !private "NSForegroundColorAttributeName"
-- "String"
-- !private "kCLLocationAccuracyBest"
-- "Bool"
-- !private "Void"
-- !private "Array"
-- !private "Dictionary"
-- !private "NSURLConnection"
 - !private "CLAuthorizationStatus"
-- !private "print"
+- !private "=="
+- !private "!="
 depends-member:
 - !private ["PSs9AnyObject", "CLAuthorizationStatus"]
 - !private ["PSs9AnyObject", "CLLocationManager"]
@@ -119,6 +120,7 @@ depends-member:
 - !private ["PSs9AnyObject", "stopUpdatingLocation"]
 - !private ["PSs9AnyObject", "titleTextAttributes"]
 - ["PSs9AnyObject", "updateSensorDataArray"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewWillAppear"]
 - ["PSs9AnyObject", "viewWillDisappear"]
@@ -291,6 +293,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "stopUpdatingLocation"]
 - !private ["PSs11CVarArgType", "titleTextAttributes"]
 - ["PSs11CVarArgType", "updateSensorDataArray"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewWillAppear"]
 - ["PSs11CVarArgType", "viewWillDisappear"]
@@ -395,6 +398,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - ["PSs23CustomStringConvertible", "updateSensorDataArray"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewWillAppear"]
 - ["PSs23CustomStringConvertible", "viewWillDisappear"]
@@ -473,6 +477,7 @@ depends-member:
 - !private ["PSs9Equatable", "stopUpdatingLocation"]
 - !private ["PSs9Equatable", "titleTextAttributes"]
 - ["PSs9Equatable", "updateSensorDataArray"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewWillAppear"]
 - ["PSs9Equatable", "viewWillDisappear"]
@@ -551,6 +556,7 @@ depends-member:
 - !private ["PSs8Hashable", "stopUpdatingLocation"]
 - !private ["PSs8Hashable", "titleTextAttributes"]
 - ["PSs8Hashable", "updateSensorDataArray"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewWillAppear"]
 - ["PSs8Hashable", "viewWillDisappear"]
@@ -633,6 +639,7 @@ depends-member:
 - !private ["C6Tatari14MainController", "print"]
 - ["C6Tatari14MainController", "sensorDataArray"]
 - ["C6Tatari14MainController", "updateSensorDataArray"]
+- ["C6Tatari14MainController", "viewDidAppear"]
 - ["C6Tatari14MainController", "viewDidLoad"]
 - ["C6Tatari14MainController", "viewWillAppear"]
 - ["C6Tatari14MainController", "viewWillDisappear"]
@@ -707,6 +714,7 @@ depends-member:
 - ["PSo8NSCoding", "sensorDataArray"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - ["PSo8NSCoding", "updateSensorDataArray"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
@@ -754,6 +762,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "sensorDataArray"]
 - ["PSo26NSExtensionRequestHandling", "updateSensorDataArray"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
@@ -829,6 +838,7 @@ depends-member:
 - !private ["CSo8NSObject", "stopUpdatingLocation"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - ["CSo8NSObject", "updateSensorDataArray"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
@@ -895,6 +905,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "stopUpdatingLocation"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - ["PSo16NSObjectProtocol", "updateSensorDataArray"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
@@ -995,6 +1006,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "sensorDataArray"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "updateSensorDataArray"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
@@ -1039,6 +1051,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "sensorDataArray"]
 - ["PSo18UIContentContainer", "updateSensorDataArray"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
@@ -1088,6 +1101,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "sensorDataArray"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "updateSensorDataArray"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
@@ -1142,6 +1156,7 @@ depends-member:
 - ["CSo11UIResponder", "sensorDataArray"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "updateSensorDataArray"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
@@ -1184,6 +1199,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "sensorDataArray"]
 - ["PSo16UIStateRestoring", "updateSensorDataArray"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
@@ -1228,6 +1244,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "sensorDataArray"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "updateSensorDataArray"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
@@ -1279,6 +1296,7 @@ depends-member:
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "sensorDataArray"]
 - ["CSo16UIViewController", "updateSensorDataArray"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
@@ -1555,4 +1573,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
-interface-hash: "9a95d1311178ac1e8d7c027ef865a969"
+interface-hash: "2d70dade9e4adb045323a91b1ae61b99"
