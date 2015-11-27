@@ -25,7 +25,7 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
         }
         else
         {
-            let loginView : FBSDKLoginButton = FBSDKLoginButton()
+            let loginView : FBSDKLoginButton = FBSDKLoginButton() // add constrain
             self.view.addSubview(loginView)
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
@@ -61,7 +61,6 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
             FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name , picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
                 if (error == nil){
                     let resultdict = result as! NSMutableDictionary
-//                    print(resultdict)
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setValue(resultdict["id"] as! String, forKey: "fb_id")
                     defaults.setValue(resultdict["picture"]!["data"]!!["url"]!! as! String, forKey: "fb_avatar")
@@ -78,7 +77,12 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
                     request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
                         if error == nil {
                             let result_dict = result as! NSDictionary!
-                            mutable_result.setObject(result_dict["data"]!,forKey:"friends")
+                            let fbs_friends : NSMutableArray = []
+                            for i in 0...Int((result_dict["data"]?.count)!)-1 {
+                                let fb_c_id = result_dict["data"]![i]["id"]!
+                                fbs_friends.addObject(fb_c_id!)
+                            }
+                            mutable_result.setObject(fbs_friends,forKey:"friends")
                             
                             self.HTTPPostJSON("http://45.55.146.229:116/user", jsonObj: mutable_result, callback: { (data,error) -> Void in
                                 print(data)

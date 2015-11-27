@@ -66,6 +66,9 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         // uses the callback to get the result3
         var json: JSON = JSON([])
         
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let idString = defaults.stringForKey("fb_id")
+        
         var mutable_result =  NSMutableDictionary()
         self.people.removeAll()
         self.imgPeople.removeAll()
@@ -74,13 +77,13 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         self.idsLikes.removeAll()
         mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
         mutable_result.setObject(ssearch,forKey:"search")
+        mutable_result.setObject(idString!,forKey:"fb_id")
         mutable_result.setObject(self.point,forKey:"pointer")
         
         self.HTTPPostJSON("http://45.55.146.229:116/search_people", jsonObj: mutable_result, callback: { (data,error) -> Void in
             json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)
             
-            let defaults = NSUserDefaults.standardUserDefaults()
-            let idString = defaults.stringForKey("fb_id")
+            
             
             var name = ""
             var fbId = ""
