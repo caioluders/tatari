@@ -175,7 +175,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABY-ot-6RO">
                                         <rect key="frame" x="0.0" y="0.0" width="737" height="445"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa_grande" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa_grande_laranja" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
                                                 <rect key="frame" x="0.0" y="0.0" width="737" height="445"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-KH-lpG">
@@ -677,7 +677,7 @@
         <image name="Dado 1" width="42" height="42"/>
         <image name="DesafioCellIcon" width="36" height="36"/>
         <image name="OrganizadorCellIcon" width="36" height="36"/>
-        <image name="Participar" width="112" height="22"/>
+        <image name="Participar" width="120" height="24"/>
         <image name="Pin Avatar" width="111" height="173"/>
         <image name="Pontos" width="66" height="13"/>
         <image name="academia" width="38" height="40"/>
@@ -689,7 +689,7 @@
         <image name="escada" width="38" height="40"/>
         <image name="info icon" width="40" height="41"/>
         <image name="log out" width="60" height="20"/>
-        <image name="mapa_grande" width="594" height="444"/>
+        <image name="mapa_grande_laranja" width="594" height="444"/>
         <image name="palco" width="38" height="40"/>
         <image name="pesquisar icon" width="40" height="41"/>
         <image name="saida" width="38" height="40"/>
