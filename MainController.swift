@@ -20,14 +20,44 @@ class MainController: UIViewController,CLLocationManagerDelegate {
     
     override func viewDidAppear(animated: Bool) {
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+        self.popupBar.hidden = true
+        self.popupMesa.hidden = true
+        self.popupPalco.hidden = true
+        self.popupBanheiroMasc.hidden = true
+        self.popupBanheiroFem.hidden = true
     }
     
+    @IBOutlet weak var popupBar: UIView!
+    @IBOutlet weak var popupMesa: UIView!
+    @IBOutlet weak var popupPalco: UIView!
+    @IBOutlet weak var popupBanheiroMasc: UIView!
+    @IBOutlet weak var popupBanheiroFem: UIView!
+    
+    @IBAction func btBar(sender: AnyObject) {
+        self.popupBar.hidden = !(self.popupBar.hidden)
+    }
+    
+    @IBAction func btMesa(sender: AnyObject) {
+        self.popupMesa.hidden = !(self.popupMesa.hidden)
+    }
+    
+    @IBAction func btPalco(sender: AnyObject) {
+        self.popupPalco.hidden = !(self.popupPalco.hidden)
+    }
+    
+    @IBAction func btBanheiroMasc(sender: AnyObject) {
+        self.popupBanheiroMasc.hidden = !(self.popupBanheiroMasc.hidden)
+    }
+   
+    @IBAction func btBanheiroFem(sender: AnyObject) {
+        self.popupBanheiroFem.hidden = !(self.popupBanheiroFem.hidden)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
-        self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1)]
+        
 
         // Location
         locationManager.delegate = self

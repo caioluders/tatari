@@ -242,6 +242,16 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @interface MainController : UIViewController <CLLocationManagerDelegate>
 @property (nonatomic, strong) CMMotionManager * __nonnull motionManager;
 - (void)viewDidAppear:(BOOL)animated;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupBar;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupMesa;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupPalco;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupBanheiroMasc;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupBanheiroFem;
+- (IBAction)btBar:(id __nonnull)sender;
+- (IBAction)btMesa:(id __nonnull)sender;
+- (IBAction)btPalco:(id __nonnull)sender;
+- (IBAction)btBanheiroMasc:(id __nonnull)sender;
+- (IBAction)btBanheiroFem:(id __nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
