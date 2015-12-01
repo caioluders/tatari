@@ -6,90 +6,92 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14FeedController", ""]
 provides-dynamic-lookup:
-- "refresh_feed"
 - "spinner"
-- "challengeDict"
-- "point"
-- "HTTPsendRequest"
-- "arraySorted"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "items"
-- "itemsBody"
-- "loadingData"
-- "viewDidLoad"
-- "itemsTitle"
-- "messageDict"
-- "didReceiveMemoryWarning"
-- "load_feed"
-- "activityFeed"
-- "refreshControl"
-- "HTTPPostJSON"
 - "JSONStringify"
-- "arrayOfMessages"
+- "HTTPPostJSON"
+- "arraySorted"
+- "itemsBody"
+- "didReceiveMemoryWarning"
+- "refreshControl"
+- "refresh_feed"
+- "load_feed"
+- "items"
+- "viewDidLoad"
+- "viewDidAppear"
+- "itemsTitle"
 - "data"
+- "messageDict"
+- "loadingData"
+- "arrayOfMessages"
+- "activityFeed"
+- "point"
+- "challengeDict"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "HTTPsendRequest"
 depends-top-level:
-- "AnyObject"
-- "Dictionary"
-- !private "NSFontAttributeName"
-- "Int"
-- "CGFloat"
-- !private "NSJSONWritingOptions"
-- !private "NSUTF8StringEncoding"
-- !private "Selector"
-- !private "NSString"
-- !private "!"
-- "Array"
-- !private "UIImage"
-- !private "!="
-- "UITableViewDelegate"
-- !private "=="
-- !private "print"
-- !private "+"
-- "UITableViewDataSource"
-- "UIActivityIndicatorView"
-- "Bool"
-- "NSMutableURLRequest"
-- !private "NSJSONSerialization"
-- "UITableView"
-- !private "UILabel"
-- "NSMutableData"
-- !private "UIControlEvents"
-- !private "NSMutableDictionary"
-- !private ">"
 - !private "NSForegroundColorAttributeName"
-- "StringLiteralType"
-- !private "&&"
-- "UITableViewCell"
 - !private "UIViewContentMode"
-- "UIViewController"
-- !private "dispatch_async"
-- !private "UIColor"
-- !private "UINib"
-- !private "NSURL"
-- !private "JSON"
-- !private "dispatch_get_main_queue"
 - !private "NSURLSession"
-- !private "NSLineBreakMode"
-- !private "NSData"
-- !private "NSUserDefaults"
-- "Void"
-- !private "FBSDKAccessToken"
-- "NSIndexPath"
-- "FeedController"
-- !private "UIFont"
-- "BooleanLiteralType"
-- "String"
-- "UIRefreshControl"
-- !private "UITableViewAutomaticDimension"
 - "NSURLConnectionDelegate"
 - !private "UIImageView"
+- !private "NSJSONSerialization"
+- !private "!"
+- "Int"
+- !private "NSURL"
+- "UIRefreshControl"
+- !private "UIControlEvents"
+- !private "=="
+- !private "NSUserDefaults"
+- !private "NSLineBreakMode"
+- !private "NSFontAttributeName"
+- !private "UIColor"
+- "Dictionary"
+- "NSMutableData"
+- !private "/"
+- !private "!="
+- "UITableViewDataSource"
+- "String"
+- !private "dispatch_async"
+- !private "dispatch_get_main_queue"
+- "UITableViewDelegate"
+- "UIViewController"
+- "Array"
+- !private "UITableViewAutomaticDimension"
+- !private "UIFont"
+- !private "NSData"
+- !private "print"
+- "UITableViewCell"
+- !private "UINib"
+- "FeedController"
+- !private "Selector"
+- "Void"
+- "UITableView"
+- "UIActivityIndicatorView"
+- "NSIndexPath"
+- "NSMutableURLRequest"
+- !private ">"
+- !private "*"
+- "StringLiteralType"
+- !private "&&"
+- !private "NSString"
+- !private "JSON"
+- !private "+"
+- !private "NSUTF8StringEncoding"
+- !private "NSMutableDictionary"
+- "AnyObject"
+- !private "FBSDKAccessToken"
+- "CGFloat"
+- !private "NSJSONWritingOptions"
 - !private "-"
-- !private "<"
+- "Bool"
+- !private "UIImage"
+- "BooleanLiteralType"
+- !private "UILabel"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - ["PSs9AnyObject", "Array"]
@@ -176,6 +178,7 @@ depends-member:
 - !private ["PSs9AnyObject", "numberOfLines"]
 - ["PSs9AnyObject", "numberOfSectionsInTableView"]
 - ["PSs9AnyObject", "point"]
+- !private ["PSs9AnyObject", "preferredMaxLayoutWidth"]
 - !private ["PSs9AnyObject", "print"]
 - ["PSs9AnyObject", "refreshControl"]
 - ["PSs9AnyObject", "refresh_feed"]
@@ -213,6 +216,7 @@ depends-member:
 - !private ["PSs9AnyObject", "title"]
 - !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", ""]
@@ -268,7 +272,7 @@ depends-member:
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["V12CoreGraphics7CGFloat", "init"]
 - !private ["VSC6CGSize", "deinit"]
-- !private ["VSC6CGSize", "width"]
+- !private ["VSC6CGSize", "height"]
 - ["PSs11CVarArgType", "Array"]
 - !private ["PSs11CVarArgType", "CGFloat"]
 - ["PSs11CVarArgType", "Dictionary"]
@@ -356,6 +360,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "numberOfLines"]
 - ["PSs11CVarArgType", "numberOfSectionsInTableView"]
 - ["PSs11CVarArgType", "point"]
+- !private ["PSs11CVarArgType", "preferredMaxLayoutWidth"]
 - !private ["PSs11CVarArgType", "print"]
 - ["PSs11CVarArgType", "refreshControl"]
 - ["PSs11CVarArgType", "refresh_feed"]
@@ -393,6 +398,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "title"]
 - !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", ""]
@@ -532,6 +538,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "numberOfLines"]
 - ["PSs23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["PSs23CustomStringConvertible", "point"]
+- !private ["PSs23CustomStringConvertible", "preferredMaxLayoutWidth"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - ["PSs23CustomStringConvertible", "refreshControl"]
 - ["PSs23CustomStringConvertible", "refresh_feed"]
@@ -573,6 +580,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "title"]
 - !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", ""]
@@ -674,6 +682,7 @@ depends-member:
 - !private ["PSs9Equatable", "endRefreshing"]
 - !private ["PSs9Equatable", "estimatedRowHeight"]
 - !private ["PSs9Equatable", "font"]
+- !private ["PSs9Equatable", "height"]
 - !private ["PSs9Equatable", "hidesWhenStopped"]
 - !private ["PSs9Equatable", "image"]
 - !private ["PSs9Equatable", "imageView"]
@@ -695,6 +704,7 @@ depends-member:
 - !private ["PSs9Equatable", "numberOfLines"]
 - ["PSs9Equatable", "numberOfSectionsInTableView"]
 - ["PSs9Equatable", "point"]
+- !private ["PSs9Equatable", "preferredMaxLayoutWidth"]
 - !private ["PSs9Equatable", "print"]
 - ["PSs9Equatable", "refreshControl"]
 - ["PSs9Equatable", "refresh_feed"]
@@ -734,9 +744,9 @@ depends-member:
 - !private ["PSs9Equatable", "title"]
 - !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
-- !private ["PSs9Equatable", "width"]
 - ["PSs9Equatable", ""]
 - !private ["PSs9ErrorType", "localizedDescription"]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "Generator"]
@@ -835,6 +845,7 @@ depends-member:
 - ["C6Tatari14FeedController", "sectionIndexTitlesForTableView"]
 - ["C6Tatari14FeedController", "spinner"]
 - ["C6Tatari14FeedController", "tableView"]
+- ["C6Tatari14FeedController", "viewDidAppear"]
 - ["C6Tatari14FeedController", "viewDidLoad"]
 - ["C6Tatari14FeedController", "viewForZoomingInScrollView"]
 - !private ["Sf", "deinit"]
@@ -941,6 +952,7 @@ depends-member:
 - !private ["PSs8Hashable", "numberOfLines"]
 - ["PSs8Hashable", "numberOfSectionsInTableView"]
 - ["PSs8Hashable", "point"]
+- !private ["PSs8Hashable", "preferredMaxLayoutWidth"]
 - !private ["PSs8Hashable", "print"]
 - ["PSs8Hashable", "refreshControl"]
 - ["PSs8Hashable", "refresh_feed"]
@@ -978,6 +990,7 @@ depends-member:
 - !private ["PSs8Hashable", "title"]
 - !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", ""]
@@ -1154,6 +1167,7 @@ depends-member:
 - !private ["PSo8NSCoding", "numberOfLines"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "point"]
+- !private ["PSo8NSCoding", "preferredMaxLayoutWidth"]
 - !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "refreshControl"]
 - ["PSo8NSCoding", "refresh_feed"]
@@ -1187,6 +1201,7 @@ depends-member:
 - !private ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
@@ -1282,6 +1297,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "spinner"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -1399,6 +1415,7 @@ depends-member:
 - !private ["CSo8NSObject", "numberOfLines"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "point"]
+- !private ["CSo8NSObject", "preferredMaxLayoutWidth"]
 - !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "refreshControl"]
 - ["CSo8NSObject", "refresh_feed"]
@@ -1436,6 +1453,7 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "Array"]
@@ -1522,6 +1540,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "numberOfLines"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "point"]
+- !private ["PSo16NSObjectProtocol", "preferredMaxLayoutWidth"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "refreshControl"]
 - ["PSo16NSObjectProtocol", "refresh_feed"]
@@ -1559,6 +1578,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1763,6 +1783,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "intrinsicContentSize"]
 - !private ["PSo29UIAccessibilityIdentification", "lineBreakMode"]
 - !private ["PSo29UIAccessibilityIdentification", "numberOfLines"]
+- !private ["PSo29UIAccessibilityIdentification", "preferredMaxLayoutWidth"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "rowHeight"]
@@ -1795,6 +1816,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "intrinsicContentSize"]
 - !private ["PSo12UIAppearance", "lineBreakMode"]
 - !private ["PSo12UIAppearance", "numberOfLines"]
+- !private ["PSo12UIAppearance", "preferredMaxLayoutWidth"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "rowHeight"]
@@ -1880,6 +1902,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "numberOfLines"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "point"]
+- !private ["PSo21UIAppearanceContainer", "preferredMaxLayoutWidth"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "refreshControl"]
 - ["PSo21UIAppearanceContainer", "refresh_feed"]
@@ -1909,6 +1932,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -1990,6 +2014,7 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "spinner"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
@@ -2015,6 +2040,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "intrinsicContentSize"]
 - !private ["PSo17UICoordinateSpace", "lineBreakMode"]
 - !private ["PSo17UICoordinateSpace", "numberOfLines"]
+- !private ["PSo17UICoordinateSpace", "preferredMaxLayoutWidth"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "rowHeight"]
@@ -2044,6 +2070,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "intrinsicContentSize"]
 - !private ["PSo13UIDynamicItem", "lineBreakMode"]
 - !private ["PSo13UIDynamicItem", "numberOfLines"]
+- !private ["PSo13UIDynamicItem", "preferredMaxLayoutWidth"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "rowHeight"]
@@ -2129,6 +2156,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "numberOfLines"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "point"]
+- !private ["PSo18UIFocusEnvironment", "preferredMaxLayoutWidth"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "refreshControl"]
 - ["PSo18UIFocusEnvironment", "refresh_feed"]
@@ -2158,6 +2186,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -2174,6 +2203,7 @@ depends-member:
 - !private ["CSo7UILabel", "intrinsicContentSize"]
 - !private ["CSo7UILabel", "lineBreakMode"]
 - !private ["CSo7UILabel", "numberOfLines"]
+- !private ["CSo7UILabel", "preferredMaxLayoutWidth"]
 - !private ["CSo7UILabel", "sizeToFit"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
@@ -2267,6 +2297,7 @@ depends-member:
 - !private ["CSo11UIResponder", "numberOfLines"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "point"]
+- !private ["CSo11UIResponder", "preferredMaxLayoutWidth"]
 - !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "refreshControl"]
 - ["CSo11UIResponder", "refresh_feed"]
@@ -2296,6 +2327,7 @@ depends-member:
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "textLabel"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "addSubview"]
@@ -2449,6 +2481,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "spinner"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
@@ -2673,6 +2706,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "numberOfLines"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "point"]
+- !private ["PSo18UITraitEnvironment", "preferredMaxLayoutWidth"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "refreshControl"]
 - ["PSo18UITraitEnvironment", "refresh_feed"]
@@ -2702,6 +2736,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -2723,6 +2758,7 @@ depends-member:
 - !private ["CSo6UIView", "intrinsicContentSize"]
 - !private ["CSo6UIView", "lineBreakMode"]
 - !private ["CSo6UIView", "numberOfLines"]
+- !private ["CSo6UIView", "preferredMaxLayoutWidth"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "rowHeight"]
@@ -2819,6 +2855,7 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "spinner"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
@@ -2933,6 +2970,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "endRefreshing"]
 - !private ["PSs12_Reflectable", "estimatedRowHeight"]
 - !private ["PSs12_Reflectable", "font"]
+- !private ["PSs12_Reflectable", "height"]
 - !private ["PSs12_Reflectable", "hidesWhenStopped"]
 - !private ["PSs12_Reflectable", "image"]
 - !private ["PSs12_Reflectable", "imageView"]
@@ -2940,6 +2978,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "intrinsicContentSize"]
 - !private ["PSs12_Reflectable", "lineBreakMode"]
 - !private ["PSs12_Reflectable", "numberOfLines"]
+- !private ["PSs12_Reflectable", "preferredMaxLayoutWidth"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "removeAll"]
@@ -2955,7 +2994,6 @@ depends-member:
 - !private ["PSs12_Reflectable", "textColor"]
 - !private ["PSs12_Reflectable", "textLabel"]
 - !private ["PSs12_Reflectable", "titleTextAttributes"]
-- !private ["PSs12_Reflectable", "width"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
 - !private ["PSs18_SignedIntegerType", "Stride"]
@@ -3129,47 +3167,47 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
@@ -3177,18 +3215,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/Toucan.swiftmodule/arm.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan-Swift.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/Toucan.swiftmodule/arm.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan-Swift.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Headers/Toucan.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphoneos/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
-interface-hash: "b5588e06f8cb62d9308628f9010803c1"
+interface-hash: "039260275b48480f5c04928aa6fa64c6"
