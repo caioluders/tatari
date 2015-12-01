@@ -6,74 +6,90 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14MainController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "updateSensorDataArray"
-- "accuracyChanged"
 - "motionManager"
-- "locationManager"
-- "locationManager"
+- "popupMesa"
+- "btPalco"
+- "popupBanheiroFem"
+- "viewWillDisappear"
+- "btBar"
 - "viewWillAppear"
 - "viewDidLoad"
-- "viewWillDisappear"
+- "btBanheiroFem"
+- "didReceiveMemoryWarning"
+- "locationManager"
+- "locationManager"
+- "accuracyChanged"
+- "viewDidAppear"
+- "btMesa"
+- "popupPalco"
+- "btBanheiroMasc"
+- "updateSensorDataArray"
+- "popupBar"
+- "popupBanheiroMasc"
 depends-top-level:
-- !private "NSFontAttributeName"
-- "UISegmentedControl"
-- !private "NSForegroundColorAttributeName"
-- !private "kCLLocationAccuracyKilometer"
-- !private "NSURLSession"
-- !private "UIFont"
-- "UIViewController"
-- !private "kCLLocationAccuracyHundredMeters"
-- !private "||"
-- !private "NSURLResponse"
-- !private "print"
-- !private "NSURLConnection"
-- !private "NSError"
-- !private "kCLLocationAccuracyBest"
-- !private "kCLLocationAccuracyNearestTenMeters"
-- "CLLocationManagerDelegate"
-- !private "Void"
-- !private "MKPointAnnotation"
-- !private "CLAuthorizationStatus"
-- "CMMotionManager"
-- !private "kCLLocationAccuracyBestForNavigation"
-- !private "NSURLRequest"
-- !private "Dictionary"
 - "MainController"
-- "CLLocationManager"
+- "UIViewController"
 - "String"
-- !private "UIColor"
-- !private "=="
-- !private "NSData"
-- !private "+"
-- !private "NSOperationQueue"
-- "CLLocation"
-- !private "Array"
-- "Bool"
+- !private "CLAuthorizationStatus"
 - !private "+="
-- !private "!="
-- !private "NSURL"
-- !private "StringLiteralType"
+- !private "=="
+- "UISegmentedControl"
+- !private "NSFontAttributeName"
+- !private "!"
+- !private "MKPointAnnotation"
+- !private "NSURLResponse"
 - !private "kCLLocationAccuracyThreeKilometers"
+- !private "||"
+- !private "NSURLConnection"
+- !private "NSOperationQueue"
+- "Bool"
+- "CLLocationManagerDelegate"
+- !private "StringLiteralType"
+- !private "Array"
+- !private "NSData"
+- !private "print"
+- "CMMotionManager"
+- "CLLocation"
+- "UIView"
+- !private "NSURL"
+- !private "NSURLSession"
+- !private "NSURLRequest"
+- !private "kCLLocationAccuracyNearestTenMeters"
+- !private "!="
+- "AnyObject"
+- !private "UIFont"
+- !private "kCLLocationAccuracyBestForNavigation"
+- !private "NSError"
+- !private "+"
+- !private "Void"
+- !private "Dictionary"
+- !private "kCLLocationAccuracyKilometer"
+- !private "BooleanLiteralType"
+- "CLLocationManager"
+- !private "kCLLocationAccuracyHundredMeters"
+- !private "kCLLocationAccuracyBest"
 depends-member:
 - !private ["PSs9AnyObject", "CLAuthorizationStatus"]
 - !private ["PSs9AnyObject", "CLLocationManager"]
 - ["PSs9AnyObject", "CMMotionManager"]
 - !private ["PSs9AnyObject", "MKPointAnnotation"]
 - !private ["PSs9AnyObject", "NSFontAttributeName"]
-- !private ["PSs9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["PSs9AnyObject", "NSOperationQueue"]
 - !private ["PSs9AnyObject", "NSURL"]
 - !private ["PSs9AnyObject", "NSURLConnection"]
 - !private ["PSs9AnyObject", "NSURLRequest"]
 - !private ["PSs9AnyObject", "NSURLSession"]
 - ["PSs9AnyObject", "String"]
-- !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "acceleration"]
 - !private ["PSs9AnyObject", "accelerometerData"]
 - ["PSs9AnyObject", "accuracyChanged"]
 - !private ["PSs9AnyObject", "authorizationStatus"]
+- ["PSs9AnyObject", "btBanheiroFem"]
+- ["PSs9AnyObject", "btBanheiroMasc"]
+- ["PSs9AnyObject", "btBar"]
+- ["PSs9AnyObject", "btMesa"]
+- ["PSs9AnyObject", "btPalco"]
 - !private ["PSs9AnyObject", "coordinate"]
 - !private ["PSs9AnyObject", "delegate"]
 - !private ["PSs9AnyObject", "desiredAccuracy"]
@@ -83,6 +99,7 @@ depends-member:
 - ["PSs9AnyObject", "getLocationData"]
 - ["PSs9AnyObject", "getMagnetometerData"]
 - !private ["PSs9AnyObject", "gyroData"]
+- !private ["PSs9AnyObject", "hidden"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "kCLLocationAccuracyBest"]
 - !private ["PSs9AnyObject", "kCLLocationAccuracyBestForNavigation"]
@@ -101,6 +118,11 @@ depends-member:
 - ["PSs9AnyObject", "motionManager"]
 - !private ["PSs9AnyObject", "navigationBar"]
 - !private ["PSs9AnyObject", "navigationController"]
+- ["PSs9AnyObject", "popupBanheiroFem"]
+- ["PSs9AnyObject", "popupBanheiroMasc"]
+- ["PSs9AnyObject", "popupBar"]
+- ["PSs9AnyObject", "popupMesa"]
+- ["PSs9AnyObject", "popupPalco"]
 - !private ["PSs9AnyObject", "print"]
 - !private ["PSs9AnyObject", "requestAlwaysAuthorization"]
 - !private ["PSs9AnyObject", "requestWhenInUseAuthorization"]
@@ -119,6 +141,7 @@ depends-member:
 - !private ["PSs9AnyObject", "stopUpdatingLocation"]
 - !private ["PSs9AnyObject", "titleTextAttributes"]
 - ["PSs9AnyObject", "updateSensorDataArray"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewWillAppear"]
 - ["PSs9AnyObject", "viewWillDisappear"]
@@ -172,14 +195,12 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "CMMotionManager"]
 - !private ["PSo25CLLocationManagerDelegate", "MKPointAnnotation"]
 - !private ["PSo25CLLocationManagerDelegate", "NSFontAttributeName"]
-- !private ["PSo25CLLocationManagerDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo25CLLocationManagerDelegate", "NSOperationQueue"]
 - !private ["PSo25CLLocationManagerDelegate", "NSURL"]
 - !private ["PSo25CLLocationManagerDelegate", "NSURLConnection"]
 - !private ["PSo25CLLocationManagerDelegate", "NSURLRequest"]
 - !private ["PSo25CLLocationManagerDelegate", "NSURLSession"]
 - ["PSo25CLLocationManagerDelegate", "String"]
-- !private ["PSo25CLLocationManagerDelegate", "UIColor"]
 - !private ["PSo25CLLocationManagerDelegate", "UIFont"]
 - !private ["PSo25CLLocationManagerDelegate", "getAccelerometerData"]
 - !private ["PSo25CLLocationManagerDelegate", "getGyroData"]
@@ -197,6 +218,11 @@ depends-member:
 - ["PSo25CLLocationManagerDelegate", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["PSo25CLLocationManagerDelegate", "motionManager"]
 - !private ["PSo25CLLocationManagerDelegate", "navigationController"]
+- !private ["PSo25CLLocationManagerDelegate", "popupBanheiroFem"]
+- !private ["PSo25CLLocationManagerDelegate", "popupBanheiroMasc"]
+- !private ["PSo25CLLocationManagerDelegate", "popupBar"]
+- !private ["PSo25CLLocationManagerDelegate", "popupMesa"]
+- !private ["PSo25CLLocationManagerDelegate", "popupPalco"]
 - !private ["PSo25CLLocationManagerDelegate", "print"]
 - !private ["PSo25CLLocationManagerDelegate", "sensorDataArray"]
 - !private ["PSo25CLLocationManagerDelegate", "updateSensorDataArray"]
@@ -233,19 +259,22 @@ depends-member:
 - !private ["PSs11CVarArgType", "IntegerLiteralType"]
 - !private ["PSs11CVarArgType", "MKPointAnnotation"]
 - !private ["PSs11CVarArgType", "NSFontAttributeName"]
-- !private ["PSs11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["PSs11CVarArgType", "NSOperationQueue"]
 - !private ["PSs11CVarArgType", "NSURL"]
 - !private ["PSs11CVarArgType", "NSURLConnection"]
 - !private ["PSs11CVarArgType", "NSURLRequest"]
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - ["PSs11CVarArgType", "String"]
-- !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "acceleration"]
 - !private ["PSs11CVarArgType", "accelerometerData"]
 - ["PSs11CVarArgType", "accuracyChanged"]
 - !private ["PSs11CVarArgType", "authorizationStatus"]
+- ["PSs11CVarArgType", "btBanheiroFem"]
+- ["PSs11CVarArgType", "btBanheiroMasc"]
+- ["PSs11CVarArgType", "btBar"]
+- ["PSs11CVarArgType", "btMesa"]
+- ["PSs11CVarArgType", "btPalco"]
 - !private ["PSs11CVarArgType", "coordinate"]
 - !private ["PSs11CVarArgType", "delegate"]
 - !private ["PSs11CVarArgType", "desiredAccuracy"]
@@ -255,6 +284,7 @@ depends-member:
 - ["PSs11CVarArgType", "getLocationData"]
 - ["PSs11CVarArgType", "getMagnetometerData"]
 - !private ["PSs11CVarArgType", "gyroData"]
+- !private ["PSs11CVarArgType", "hidden"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "kCLLocationAccuracyBest"]
 - !private ["PSs11CVarArgType", "kCLLocationAccuracyBestForNavigation"]
@@ -273,6 +303,11 @@ depends-member:
 - ["PSs11CVarArgType", "motionManager"]
 - !private ["PSs11CVarArgType", "navigationBar"]
 - !private ["PSs11CVarArgType", "navigationController"]
+- ["PSs11CVarArgType", "popupBanheiroFem"]
+- ["PSs11CVarArgType", "popupBanheiroMasc"]
+- ["PSs11CVarArgType", "popupBar"]
+- ["PSs11CVarArgType", "popupMesa"]
+- ["PSs11CVarArgType", "popupPalco"]
 - !private ["PSs11CVarArgType", "print"]
 - !private ["PSs11CVarArgType", "requestAlwaysAuthorization"]
 - !private ["PSs11CVarArgType", "requestWhenInUseAuthorization"]
@@ -291,6 +326,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "stopUpdatingLocation"]
 - !private ["PSs11CVarArgType", "titleTextAttributes"]
 - ["PSs11CVarArgType", "updateSensorDataArray"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewWillAppear"]
 - ["PSs11CVarArgType", "viewWillDisappear"]
@@ -331,7 +367,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "Key"]
 - !private ["PSs23CustomStringConvertible", "MKPointAnnotation"]
 - !private ["PSs23CustomStringConvertible", "NSFontAttributeName"]
-- !private ["PSs23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["PSs23CustomStringConvertible", "NSOperationQueue"]
 - !private ["PSs23CustomStringConvertible", "NSURL"]
 - !private ["PSs23CustomStringConvertible", "NSURLConnection"]
@@ -339,7 +374,6 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
-- !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_Buffer"]
@@ -349,6 +383,11 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "accelerometerData"]
 - ["PSs23CustomStringConvertible", "accuracyChanged"]
 - !private ["PSs23CustomStringConvertible", "authorizationStatus"]
+- ["PSs23CustomStringConvertible", "btBanheiroFem"]
+- ["PSs23CustomStringConvertible", "btBanheiroMasc"]
+- ["PSs23CustomStringConvertible", "btBar"]
+- ["PSs23CustomStringConvertible", "btMesa"]
+- ["PSs23CustomStringConvertible", "btPalco"]
 - !private ["PSs23CustomStringConvertible", "coordinate"]
 - !private ["PSs23CustomStringConvertible", "delegate"]
 - !private ["PSs23CustomStringConvertible", "desiredAccuracy"]
@@ -358,6 +397,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "getLocationData"]
 - ["PSs23CustomStringConvertible", "getMagnetometerData"]
 - !private ["PSs23CustomStringConvertible", "gyroData"]
+- !private ["PSs23CustomStringConvertible", "hidden"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "kCLLocationAccuracyBest"]
 - !private ["PSs23CustomStringConvertible", "kCLLocationAccuracyBestForNavigation"]
@@ -376,6 +416,11 @@ depends-member:
 - ["PSs23CustomStringConvertible", "motionManager"]
 - !private ["PSs23CustomStringConvertible", "navigationBar"]
 - !private ["PSs23CustomStringConvertible", "navigationController"]
+- ["PSs23CustomStringConvertible", "popupBanheiroFem"]
+- ["PSs23CustomStringConvertible", "popupBanheiroMasc"]
+- ["PSs23CustomStringConvertible", "popupBar"]
+- ["PSs23CustomStringConvertible", "popupMesa"]
+- ["PSs23CustomStringConvertible", "popupPalco"]
 - !private ["PSs23CustomStringConvertible", "print"]
 - !private ["PSs23CustomStringConvertible", "requestAlwaysAuthorization"]
 - !private ["PSs23CustomStringConvertible", "requestWhenInUseAuthorization"]
@@ -395,6 +440,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - ["PSs23CustomStringConvertible", "updateSensorDataArray"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewWillAppear"]
 - ["PSs23CustomStringConvertible", "viewWillDisappear"]
@@ -413,7 +459,6 @@ depends-member:
 - !private ["PSs9Equatable", "IntegerLiteralType"]
 - !private ["PSs9Equatable", "MKPointAnnotation"]
 - !private ["PSs9Equatable", "NSFontAttributeName"]
-- !private ["PSs9Equatable", "NSForegroundColorAttributeName"]
 - !private ["PSs9Equatable", "NSOperationQueue"]
 - !private ["PSs9Equatable", "NSURL"]
 - !private ["PSs9Equatable", "NSURLConnection"]
@@ -421,13 +466,17 @@ depends-member:
 - !private ["PSs9Equatable", "NSURLSession"]
 - !private ["PSs9Equatable", "RawValue"]
 - ["PSs9Equatable", "String"]
-- !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "acceleration"]
 - !private ["PSs9Equatable", "accelerometerData"]
 - ["PSs9Equatable", "accuracyChanged"]
 - !private ["PSs9Equatable", "authorizationStatus"]
+- ["PSs9Equatable", "btBanheiroFem"]
+- ["PSs9Equatable", "btBanheiroMasc"]
+- ["PSs9Equatable", "btBar"]
+- ["PSs9Equatable", "btMesa"]
+- ["PSs9Equatable", "btPalco"]
 - !private ["PSs9Equatable", "coordinate"]
 - !private ["PSs9Equatable", "delegate"]
 - !private ["PSs9Equatable", "desiredAccuracy"]
@@ -437,6 +486,7 @@ depends-member:
 - ["PSs9Equatable", "getLocationData"]
 - ["PSs9Equatable", "getMagnetometerData"]
 - !private ["PSs9Equatable", "gyroData"]
+- !private ["PSs9Equatable", "hidden"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "kCLLocationAccuracyBest"]
 - !private ["PSs9Equatable", "kCLLocationAccuracyBestForNavigation"]
@@ -455,6 +505,11 @@ depends-member:
 - ["PSs9Equatable", "motionManager"]
 - !private ["PSs9Equatable", "navigationBar"]
 - !private ["PSs9Equatable", "navigationController"]
+- ["PSs9Equatable", "popupBanheiroFem"]
+- ["PSs9Equatable", "popupBanheiroMasc"]
+- ["PSs9Equatable", "popupBar"]
+- ["PSs9Equatable", "popupMesa"]
+- ["PSs9Equatable", "popupPalco"]
 - !private ["PSs9Equatable", "print"]
 - !private ["PSs9Equatable", "requestAlwaysAuthorization"]
 - !private ["PSs9Equatable", "requestWhenInUseAuthorization"]
@@ -473,6 +528,7 @@ depends-member:
 - !private ["PSs9Equatable", "stopUpdatingLocation"]
 - !private ["PSs9Equatable", "titleTextAttributes"]
 - ["PSs9Equatable", "updateSensorDataArray"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewWillAppear"]
 - ["PSs9Equatable", "viewWillDisappear"]
@@ -491,7 +547,6 @@ depends-member:
 - !private ["PSs8Hashable", "IntegerLiteralType"]
 - !private ["PSs8Hashable", "MKPointAnnotation"]
 - !private ["PSs8Hashable", "NSFontAttributeName"]
-- !private ["PSs8Hashable", "NSForegroundColorAttributeName"]
 - !private ["PSs8Hashable", "NSOperationQueue"]
 - !private ["PSs8Hashable", "NSURL"]
 - !private ["PSs8Hashable", "NSURLConnection"]
@@ -499,13 +554,17 @@ depends-member:
 - !private ["PSs8Hashable", "NSURLSession"]
 - !private ["PSs8Hashable", "RawValue"]
 - ["PSs8Hashable", "String"]
-- !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "acceleration"]
 - !private ["PSs8Hashable", "accelerometerData"]
 - ["PSs8Hashable", "accuracyChanged"]
 - !private ["PSs8Hashable", "authorizationStatus"]
+- ["PSs8Hashable", "btBanheiroFem"]
+- ["PSs8Hashable", "btBanheiroMasc"]
+- ["PSs8Hashable", "btBar"]
+- ["PSs8Hashable", "btMesa"]
+- ["PSs8Hashable", "btPalco"]
 - !private ["PSs8Hashable", "coordinate"]
 - !private ["PSs8Hashable", "delegate"]
 - !private ["PSs8Hashable", "desiredAccuracy"]
@@ -515,6 +574,7 @@ depends-member:
 - ["PSs8Hashable", "getLocationData"]
 - ["PSs8Hashable", "getMagnetometerData"]
 - !private ["PSs8Hashable", "gyroData"]
+- !private ["PSs8Hashable", "hidden"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "kCLLocationAccuracyBest"]
 - !private ["PSs8Hashable", "kCLLocationAccuracyBestForNavigation"]
@@ -533,6 +593,11 @@ depends-member:
 - ["PSs8Hashable", "motionManager"]
 - !private ["PSs8Hashable", "navigationBar"]
 - !private ["PSs8Hashable", "navigationController"]
+- ["PSs8Hashable", "popupBanheiroFem"]
+- ["PSs8Hashable", "popupBanheiroMasc"]
+- ["PSs8Hashable", "popupBar"]
+- ["PSs8Hashable", "popupMesa"]
+- ["PSs8Hashable", "popupPalco"]
 - !private ["PSs8Hashable", "print"]
 - !private ["PSs8Hashable", "requestAlwaysAuthorization"]
 - !private ["PSs8Hashable", "requestWhenInUseAuthorization"]
@@ -551,6 +616,7 @@ depends-member:
 - !private ["PSs8Hashable", "stopUpdatingLocation"]
 - !private ["PSs8Hashable", "titleTextAttributes"]
 - ["PSs8Hashable", "updateSensorDataArray"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewWillAppear"]
 - ["PSs8Hashable", "viewWillDisappear"]
@@ -588,6 +654,7 @@ depends-member:
 - !private ["CSo17MKPointAnnotation", "init"]
 - !private ["CSo7MKShape", "coordinate"]
 - !private ["CSo7MKShape", "init"]
+- ["C6Tatari14MainController", "AnyObject"]
 - ["C6Tatari14MainController", "Bool"]
 - !private ["C6Tatari14MainController", "CLAuthorizationStatus"]
 - ["C6Tatari14MainController", "CLLocation"]
@@ -597,7 +664,6 @@ depends-member:
 - !private ["C6Tatari14MainController", "NSData"]
 - !private ["C6Tatari14MainController", "NSError"]
 - !private ["C6Tatari14MainController", "NSFontAttributeName"]
-- !private ["C6Tatari14MainController", "NSForegroundColorAttributeName"]
 - !private ["C6Tatari14MainController", "NSOperationQueue"]
 - !private ["C6Tatari14MainController", "NSURL"]
 - !private ["C6Tatari14MainController", "NSURLConnection"]
@@ -605,11 +671,16 @@ depends-member:
 - !private ["C6Tatari14MainController", "NSURLResponse"]
 - !private ["C6Tatari14MainController", "NSURLSession"]
 - ["C6Tatari14MainController", "String"]
-- !private ["C6Tatari14MainController", "UIColor"]
 - !private ["C6Tatari14MainController", "UIFont"]
 - ["C6Tatari14MainController", "UISegmentedControl"]
+- ["C6Tatari14MainController", "UIView"]
 - !private ["C6Tatari14MainController", "Void"]
 - ["C6Tatari14MainController", "accuracyChanged"]
+- ["C6Tatari14MainController", "btBanheiroFem"]
+- ["C6Tatari14MainController", "btBanheiroMasc"]
+- ["C6Tatari14MainController", "btBar"]
+- ["C6Tatari14MainController", "btMesa"]
+- ["C6Tatari14MainController", "btPalco"]
 - ["C6Tatari14MainController", "deinit"]
 - ["C6Tatari14MainController", "didReceiveMemoryWarning"]
 - ["C6Tatari14MainController", "getAccelerometerData"]
@@ -630,9 +701,15 @@ depends-member:
 - ["C6Tatari14MainController", "locationManagerShouldDisplayHeadingCalibration"]
 - ["C6Tatari14MainController", "motionManager"]
 - !private ["C6Tatari14MainController", "navigationController"]
+- ["C6Tatari14MainController", "popupBanheiroFem"]
+- ["C6Tatari14MainController", "popupBanheiroMasc"]
+- ["C6Tatari14MainController", "popupBar"]
+- ["C6Tatari14MainController", "popupMesa"]
+- ["C6Tatari14MainController", "popupPalco"]
 - !private ["C6Tatari14MainController", "print"]
 - ["C6Tatari14MainController", "sensorDataArray"]
 - ["C6Tatari14MainController", "updateSensorDataArray"]
+- ["C6Tatari14MainController", "viewDidAppear"]
 - ["C6Tatari14MainController", "viewDidLoad"]
 - ["C6Tatari14MainController", "viewWillAppear"]
 - ["C6Tatari14MainController", "viewWillDisappear"]
@@ -668,23 +745,27 @@ depends-member:
 - ["PSo8NSCoding", "CMMotionManager"]
 - !private ["PSo8NSCoding", "MKPointAnnotation"]
 - !private ["PSo8NSCoding", "NSFontAttributeName"]
-- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "NSOperationQueue"]
 - !private ["PSo8NSCoding", "NSURL"]
 - !private ["PSo8NSCoding", "NSURLConnection"]
 - !private ["PSo8NSCoding", "NSURLRequest"]
 - !private ["PSo8NSCoding", "NSURLSession"]
 - ["PSo8NSCoding", "String"]
-- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "acceleration"]
 - ["PSo8NSCoding", "accuracyChanged"]
+- ["PSo8NSCoding", "btBanheiroFem"]
+- ["PSo8NSCoding", "btBanheiroMasc"]
+- ["PSo8NSCoding", "btBar"]
+- ["PSo8NSCoding", "btMesa"]
+- ["PSo8NSCoding", "btPalco"]
 - !private ["PSo8NSCoding", "coordinate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "getAccelerometerData"]
 - ["PSo8NSCoding", "getGyroData"]
 - ["PSo8NSCoding", "getLocationData"]
 - ["PSo8NSCoding", "getMagnetometerData"]
+- !private ["PSo8NSCoding", "hidden"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "kCLLocationAccuracyBest"]
 - !private ["PSo8NSCoding", "kCLLocationAccuracyBestForNavigation"]
@@ -701,12 +782,18 @@ depends-member:
 - ["PSo8NSCoding", "motionManager"]
 - !private ["PSo8NSCoding", "navigationBar"]
 - !private ["PSo8NSCoding", "navigationController"]
+- ["PSo8NSCoding", "popupBanheiroFem"]
+- ["PSo8NSCoding", "popupBanheiroMasc"]
+- ["PSo8NSCoding", "popupBar"]
+- ["PSo8NSCoding", "popupMesa"]
+- ["PSo8NSCoding", "popupPalco"]
 - !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "rotationRate"]
 - !private ["PSo8NSCoding", "selectedSegmentIndex"]
 - ["PSo8NSCoding", "sensorDataArray"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - ["PSo8NSCoding", "updateSensorDataArray"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
@@ -721,16 +808,19 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "CMMotionManager"]
 - !private ["PSo26NSExtensionRequestHandling", "MKPointAnnotation"]
 - !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
-- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSOperationQueue"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURL"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURLConnection"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURLRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "NSURLSession"]
 - ["PSo26NSExtensionRequestHandling", "String"]
-- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - ["PSo26NSExtensionRequestHandling", "accuracyChanged"]
+- ["PSo26NSExtensionRequestHandling", "btBanheiroFem"]
+- ["PSo26NSExtensionRequestHandling", "btBanheiroMasc"]
+- ["PSo26NSExtensionRequestHandling", "btBar"]
+- ["PSo26NSExtensionRequestHandling", "btMesa"]
+- ["PSo26NSExtensionRequestHandling", "btPalco"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "getAccelerometerData"]
 - ["PSo26NSExtensionRequestHandling", "getGyroData"]
@@ -751,14 +841,21 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "motionManager"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- ["PSo26NSExtensionRequestHandling", "popupBanheiroFem"]
+- ["PSo26NSExtensionRequestHandling", "popupBanheiroMasc"]
+- ["PSo26NSExtensionRequestHandling", "popupBar"]
+- ["PSo26NSExtensionRequestHandling", "popupMesa"]
+- ["PSo26NSExtensionRequestHandling", "popupPalco"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "sensorDataArray"]
 - ["PSo26NSExtensionRequestHandling", "updateSensorDataArray"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CLAuthorizationStatus"]
 - ["CSo8NSObject", "CLLocation"]
@@ -768,7 +865,6 @@ depends-member:
 - !private ["CSo8NSObject", "NSData"]
 - !private ["CSo8NSObject", "NSError"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
-- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - !private ["CSo8NSObject", "NSOperationQueue"]
 - !private ["CSo8NSObject", "NSURL"]
 - !private ["CSo8NSObject", "NSURLConnection"]
@@ -776,14 +872,19 @@ depends-member:
 - !private ["CSo8NSObject", "NSURLResponse"]
 - !private ["CSo8NSObject", "NSURLSession"]
 - ["CSo8NSObject", "String"]
-- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UISegmentedControl"]
+- ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "acceleration"]
 - !private ["CSo8NSObject", "accelerometerData"]
 - ["CSo8NSObject", "accuracyChanged"]
 - !private ["CSo8NSObject", "authorizationStatus"]
+- ["CSo8NSObject", "btBanheiroFem"]
+- ["CSo8NSObject", "btBanheiroMasc"]
+- ["CSo8NSObject", "btBar"]
+- ["CSo8NSObject", "btMesa"]
+- ["CSo8NSObject", "btPalco"]
 - !private ["CSo8NSObject", "coordinate"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "desiredAccuracy"]
@@ -793,6 +894,7 @@ depends-member:
 - ["CSo8NSObject", "getLocationData"]
 - ["CSo8NSObject", "getMagnetometerData"]
 - !private ["CSo8NSObject", "gyroData"]
+- !private ["CSo8NSObject", "hidden"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "kCLLocationAccuracyBest"]
 - !private ["CSo8NSObject", "kCLLocationAccuracyBestForNavigation"]
@@ -811,6 +913,11 @@ depends-member:
 - ["CSo8NSObject", "motionManager"]
 - !private ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "navigationController"]
+- ["CSo8NSObject", "popupBanheiroFem"]
+- ["CSo8NSObject", "popupBanheiroMasc"]
+- ["CSo8NSObject", "popupBar"]
+- ["CSo8NSObject", "popupMesa"]
+- ["CSo8NSObject", "popupPalco"]
 - !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "requestAlwaysAuthorization"]
 - !private ["CSo8NSObject", "requestWhenInUseAuthorization"]
@@ -829,6 +936,7 @@ depends-member:
 - !private ["CSo8NSObject", "stopUpdatingLocation"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - ["CSo8NSObject", "updateSensorDataArray"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
@@ -837,19 +945,22 @@ depends-member:
 - ["PSo16NSObjectProtocol", "CMMotionManager"]
 - !private ["PSo16NSObjectProtocol", "MKPointAnnotation"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
-- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSOperationQueue"]
 - !private ["PSo16NSObjectProtocol", "NSURL"]
 - !private ["PSo16NSObjectProtocol", "NSURLConnection"]
 - !private ["PSo16NSObjectProtocol", "NSURLRequest"]
 - !private ["PSo16NSObjectProtocol", "NSURLSession"]
 - ["PSo16NSObjectProtocol", "String"]
-- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "acceleration"]
 - !private ["PSo16NSObjectProtocol", "accelerometerData"]
 - ["PSo16NSObjectProtocol", "accuracyChanged"]
 - !private ["PSo16NSObjectProtocol", "authorizationStatus"]
+- ["PSo16NSObjectProtocol", "btBanheiroFem"]
+- ["PSo16NSObjectProtocol", "btBanheiroMasc"]
+- ["PSo16NSObjectProtocol", "btBar"]
+- ["PSo16NSObjectProtocol", "btMesa"]
+- ["PSo16NSObjectProtocol", "btPalco"]
 - !private ["PSo16NSObjectProtocol", "coordinate"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "desiredAccuracy"]
@@ -859,6 +970,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "getLocationData"]
 - ["PSo16NSObjectProtocol", "getMagnetometerData"]
 - !private ["PSo16NSObjectProtocol", "gyroData"]
+- !private ["PSo16NSObjectProtocol", "hidden"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyBest"]
 - !private ["PSo16NSObjectProtocol", "kCLLocationAccuracyBestForNavigation"]
@@ -877,6 +989,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "motionManager"]
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
+- ["PSo16NSObjectProtocol", "popupBanheiroFem"]
+- ["PSo16NSObjectProtocol", "popupBanheiroMasc"]
+- ["PSo16NSObjectProtocol", "popupBar"]
+- ["PSo16NSObjectProtocol", "popupMesa"]
+- ["PSo16NSObjectProtocol", "popupPalco"]
 - !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "requestAlwaysAuthorization"]
 - !private ["PSo16NSObjectProtocol", "requestWhenInUseAuthorization"]
@@ -895,6 +1012,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "stopUpdatingLocation"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - ["PSo16NSObjectProtocol", "updateSensorDataArray"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
@@ -951,8 +1069,10 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "hidden"]
 - !private ["PSo29UIAccessibilityIdentification", "selectedSegmentIndex"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
+- !private ["PSo12UIAppearance", "hidden"]
 - !private ["PSo12UIAppearance", "selectedSegmentIndex"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "CLAuthorizationStatus"]
@@ -960,21 +1080,25 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "CMMotionManager"]
 - !private ["PSo21UIAppearanceContainer", "MKPointAnnotation"]
 - !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
-- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSOperationQueue"]
 - !private ["PSo21UIAppearanceContainer", "NSURL"]
 - !private ["PSo21UIAppearanceContainer", "NSURLConnection"]
 - !private ["PSo21UIAppearanceContainer", "NSURLRequest"]
 - !private ["PSo21UIAppearanceContainer", "NSURLSession"]
 - ["PSo21UIAppearanceContainer", "String"]
-- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - ["PSo21UIAppearanceContainer", "accuracyChanged"]
+- ["PSo21UIAppearanceContainer", "btBanheiroFem"]
+- ["PSo21UIAppearanceContainer", "btBanheiroMasc"]
+- ["PSo21UIAppearanceContainer", "btBar"]
+- ["PSo21UIAppearanceContainer", "btMesa"]
+- ["PSo21UIAppearanceContainer", "btPalco"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "getAccelerometerData"]
 - ["PSo21UIAppearanceContainer", "getGyroData"]
 - ["PSo21UIAppearanceContainer", "getLocationData"]
 - ["PSo21UIAppearanceContainer", "getMagnetometerData"]
+- !private ["PSo21UIAppearanceContainer", "hidden"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyBest"]
 - !private ["PSo21UIAppearanceContainer", "kCLLocationAccuracyBestForNavigation"]
@@ -990,32 +1114,40 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "motionManager"]
 - !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
+- ["PSo21UIAppearanceContainer", "popupBanheiroFem"]
+- ["PSo21UIAppearanceContainer", "popupBanheiroMasc"]
+- ["PSo21UIAppearanceContainer", "popupBar"]
+- ["PSo21UIAppearanceContainer", "popupMesa"]
+- ["PSo21UIAppearanceContainer", "popupPalco"]
 - !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "selectedSegmentIndex"]
 - ["PSo21UIAppearanceContainer", "sensorDataArray"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - ["PSo21UIAppearanceContainer", "updateSensorDataArray"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
-- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "CLAuthorizationStatus"]
 - !private ["PSo18UIContentContainer", "CLLocationManager"]
 - ["PSo18UIContentContainer", "CMMotionManager"]
 - !private ["PSo18UIContentContainer", "MKPointAnnotation"]
 - !private ["PSo18UIContentContainer", "NSFontAttributeName"]
-- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "NSOperationQueue"]
 - !private ["PSo18UIContentContainer", "NSURL"]
 - !private ["PSo18UIContentContainer", "NSURLConnection"]
 - !private ["PSo18UIContentContainer", "NSURLRequest"]
 - !private ["PSo18UIContentContainer", "NSURLSession"]
 - ["PSo18UIContentContainer", "String"]
-- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - ["PSo18UIContentContainer", "accuracyChanged"]
+- ["PSo18UIContentContainer", "btBanheiroFem"]
+- ["PSo18UIContentContainer", "btBanheiroMasc"]
+- ["PSo18UIContentContainer", "btBar"]
+- ["PSo18UIContentContainer", "btMesa"]
+- ["PSo18UIContentContainer", "btPalco"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "getAccelerometerData"]
 - ["PSo18UIContentContainer", "getGyroData"]
@@ -1036,16 +1168,24 @@ depends-member:
 - ["PSo18UIContentContainer", "motionManager"]
 - !private ["PSo18UIContentContainer", "navigationBar"]
 - !private ["PSo18UIContentContainer", "navigationController"]
+- ["PSo18UIContentContainer", "popupBanheiroFem"]
+- ["PSo18UIContentContainer", "popupBanheiroMasc"]
+- ["PSo18UIContentContainer", "popupBar"]
+- ["PSo18UIContentContainer", "popupMesa"]
+- ["PSo18UIContentContainer", "popupPalco"]
 - !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "sensorDataArray"]
 - ["PSo18UIContentContainer", "updateSensorDataArray"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "selectedSegmentIndex"]
+- !private ["PSo17UICoordinateSpace", "hidden"]
 - !private ["PSo17UICoordinateSpace", "selectedSegmentIndex"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "hidden"]
 - !private ["PSo13UIDynamicItem", "selectedSegmentIndex"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "CLAuthorizationStatus"]
@@ -1053,21 +1193,25 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "CMMotionManager"]
 - !private ["PSo18UIFocusEnvironment", "MKPointAnnotation"]
 - !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
-- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSOperationQueue"]
 - !private ["PSo18UIFocusEnvironment", "NSURL"]
 - !private ["PSo18UIFocusEnvironment", "NSURLConnection"]
 - !private ["PSo18UIFocusEnvironment", "NSURLRequest"]
 - !private ["PSo18UIFocusEnvironment", "NSURLSession"]
 - ["PSo18UIFocusEnvironment", "String"]
-- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - ["PSo18UIFocusEnvironment", "accuracyChanged"]
+- ["PSo18UIFocusEnvironment", "btBanheiroFem"]
+- ["PSo18UIFocusEnvironment", "btBanheiroMasc"]
+- ["PSo18UIFocusEnvironment", "btBar"]
+- ["PSo18UIFocusEnvironment", "btMesa"]
+- ["PSo18UIFocusEnvironment", "btPalco"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "getAccelerometerData"]
 - ["PSo18UIFocusEnvironment", "getGyroData"]
 - ["PSo18UIFocusEnvironment", "getLocationData"]
 - ["PSo18UIFocusEnvironment", "getMagnetometerData"]
+- !private ["PSo18UIFocusEnvironment", "hidden"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBest"]
 - !private ["PSo18UIFocusEnvironment", "kCLLocationAccuracyBestForNavigation"]
@@ -1083,11 +1227,17 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "motionManager"]
 - !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
+- ["PSo18UIFocusEnvironment", "popupBanheiroFem"]
+- ["PSo18UIFocusEnvironment", "popupBanheiroMasc"]
+- ["PSo18UIFocusEnvironment", "popupBar"]
+- ["PSo18UIFocusEnvironment", "popupMesa"]
+- ["PSo18UIFocusEnvironment", "popupPalco"]
 - !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "selectedSegmentIndex"]
 - ["PSo18UIFocusEnvironment", "sensorDataArray"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - ["PSo18UIFocusEnvironment", "updateSensorDataArray"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
@@ -1095,6 +1245,7 @@ depends-member:
 - !private ["CSo6UIFont", "init"]
 - !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - !private ["CSo22UINavigationController", "navigationBar"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CLAuthorizationStatus"]
 - ["CSo11UIResponder", "CLLocation"]
@@ -1104,7 +1255,6 @@ depends-member:
 - !private ["CSo11UIResponder", "NSData"]
 - !private ["CSo11UIResponder", "NSError"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
-- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - !private ["CSo11UIResponder", "NSOperationQueue"]
 - !private ["CSo11UIResponder", "NSURL"]
 - !private ["CSo11UIResponder", "NSURLConnection"]
@@ -1112,16 +1262,22 @@ depends-member:
 - !private ["CSo11UIResponder", "NSURLResponse"]
 - !private ["CSo11UIResponder", "NSURLSession"]
 - ["CSo11UIResponder", "String"]
-- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UISegmentedControl"]
+- ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "accuracyChanged"]
+- ["CSo11UIResponder", "btBanheiroFem"]
+- ["CSo11UIResponder", "btBanheiroMasc"]
+- ["CSo11UIResponder", "btBar"]
+- ["CSo11UIResponder", "btMesa"]
+- ["CSo11UIResponder", "btPalco"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "getAccelerometerData"]
 - ["CSo11UIResponder", "getGyroData"]
 - ["CSo11UIResponder", "getLocationData"]
 - ["CSo11UIResponder", "getMagnetometerData"]
+- !private ["CSo11UIResponder", "hidden"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyBest"]
 - !private ["CSo11UIResponder", "kCLLocationAccuracyBestForNavigation"]
@@ -1137,11 +1293,17 @@ depends-member:
 - ["CSo11UIResponder", "motionManager"]
 - !private ["CSo11UIResponder", "navigationBar"]
 - !private ["CSo11UIResponder", "navigationController"]
+- ["CSo11UIResponder", "popupBanheiroFem"]
+- ["CSo11UIResponder", "popupBanheiroMasc"]
+- ["CSo11UIResponder", "popupBar"]
+- ["CSo11UIResponder", "popupMesa"]
+- ["CSo11UIResponder", "popupPalco"]
 - !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "selectedSegmentIndex"]
 - ["CSo11UIResponder", "sensorDataArray"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "updateSensorDataArray"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
@@ -1151,16 +1313,19 @@ depends-member:
 - ["PSo16UIStateRestoring", "CMMotionManager"]
 - !private ["PSo16UIStateRestoring", "MKPointAnnotation"]
 - !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
-- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSOperationQueue"]
 - !private ["PSo16UIStateRestoring", "NSURL"]
 - !private ["PSo16UIStateRestoring", "NSURLConnection"]
 - !private ["PSo16UIStateRestoring", "NSURLRequest"]
 - !private ["PSo16UIStateRestoring", "NSURLSession"]
 - ["PSo16UIStateRestoring", "String"]
-- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - ["PSo16UIStateRestoring", "accuracyChanged"]
+- ["PSo16UIStateRestoring", "btBanheiroFem"]
+- ["PSo16UIStateRestoring", "btBanheiroMasc"]
+- ["PSo16UIStateRestoring", "btBar"]
+- ["PSo16UIStateRestoring", "btMesa"]
+- ["PSo16UIStateRestoring", "btPalco"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "getAccelerometerData"]
 - ["PSo16UIStateRestoring", "getGyroData"]
@@ -1181,9 +1346,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "motionManager"]
 - !private ["PSo16UIStateRestoring", "navigationBar"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
+- ["PSo16UIStateRestoring", "popupBanheiroFem"]
+- ["PSo16UIStateRestoring", "popupBanheiroMasc"]
+- ["PSo16UIStateRestoring", "popupBar"]
+- ["PSo16UIStateRestoring", "popupMesa"]
+- ["PSo16UIStateRestoring", "popupPalco"]
 - !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "sensorDataArray"]
 - ["PSo16UIStateRestoring", "updateSensorDataArray"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
@@ -1193,21 +1364,25 @@ depends-member:
 - ["PSo18UITraitEnvironment", "CMMotionManager"]
 - !private ["PSo18UITraitEnvironment", "MKPointAnnotation"]
 - !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
-- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSOperationQueue"]
 - !private ["PSo18UITraitEnvironment", "NSURL"]
 - !private ["PSo18UITraitEnvironment", "NSURLConnection"]
 - !private ["PSo18UITraitEnvironment", "NSURLRequest"]
 - !private ["PSo18UITraitEnvironment", "NSURLSession"]
 - ["PSo18UITraitEnvironment", "String"]
-- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - ["PSo18UITraitEnvironment", "accuracyChanged"]
+- ["PSo18UITraitEnvironment", "btBanheiroFem"]
+- ["PSo18UITraitEnvironment", "btBanheiroMasc"]
+- ["PSo18UITraitEnvironment", "btBar"]
+- ["PSo18UITraitEnvironment", "btMesa"]
+- ["PSo18UITraitEnvironment", "btPalco"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "getAccelerometerData"]
 - ["PSo18UITraitEnvironment", "getGyroData"]
 - ["PSo18UITraitEnvironment", "getLocationData"]
 - ["PSo18UITraitEnvironment", "getMagnetometerData"]
+- !private ["PSo18UITraitEnvironment", "hidden"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyBest"]
 - !private ["PSo18UITraitEnvironment", "kCLLocationAccuracyBestForNavigation"]
@@ -1223,17 +1398,25 @@ depends-member:
 - ["PSo18UITraitEnvironment", "motionManager"]
 - !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
+- ["PSo18UITraitEnvironment", "popupBanheiroFem"]
+- ["PSo18UITraitEnvironment", "popupBanheiroMasc"]
+- ["PSo18UITraitEnvironment", "popupBar"]
+- ["PSo18UITraitEnvironment", "popupMesa"]
+- ["PSo18UITraitEnvironment", "popupPalco"]
 - !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "selectedSegmentIndex"]
 - ["PSo18UITraitEnvironment", "sensorDataArray"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - ["PSo18UITraitEnvironment", "updateSensorDataArray"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "hidden"]
 - !private ["CSo6UIView", "selectedSegmentIndex"]
 - !private ["CSo6UIView", "titleTextAttributes"]
+- ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CLAuthorizationStatus"]
 - ["CSo16UIViewController", "CLLocation"]
@@ -1243,7 +1426,6 @@ depends-member:
 - !private ["CSo16UIViewController", "NSData"]
 - !private ["CSo16UIViewController", "NSError"]
 - !private ["CSo16UIViewController", "NSFontAttributeName"]
-- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - !private ["CSo16UIViewController", "NSOperationQueue"]
 - !private ["CSo16UIViewController", "NSURL"]
 - !private ["CSo16UIViewController", "NSURLConnection"]
@@ -1251,11 +1433,16 @@ depends-member:
 - !private ["CSo16UIViewController", "NSURLResponse"]
 - !private ["CSo16UIViewController", "NSURLSession"]
 - ["CSo16UIViewController", "String"]
-- !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UISegmentedControl"]
+- ["CSo16UIViewController", "UIView"]
 - !private ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "accuracyChanged"]
+- ["CSo16UIViewController", "btBanheiroFem"]
+- ["CSo16UIViewController", "btBanheiroMasc"]
+- ["CSo16UIViewController", "btBar"]
+- ["CSo16UIViewController", "btMesa"]
+- ["CSo16UIViewController", "btPalco"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "getAccelerometerData"]
 - ["CSo16UIViewController", "getGyroData"]
@@ -1276,9 +1463,15 @@ depends-member:
 - ["CSo16UIViewController", "motionManager"]
 - !private ["CSo16UIViewController", "navigationBar"]
 - !private ["CSo16UIViewController", "navigationController"]
+- ["CSo16UIViewController", "popupBanheiroFem"]
+- ["CSo16UIViewController", "popupBanheiroMasc"]
+- ["CSo16UIViewController", "popupBar"]
+- ["CSo16UIViewController", "popupMesa"]
+- ["CSo16UIViewController", "popupPalco"]
 - !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "sensorDataArray"]
 - ["CSo16UIViewController", "updateSensorDataArray"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
@@ -1306,7 +1499,6 @@ depends-member:
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
-- !private ["PSs24_ColorLiteralConvertible", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
@@ -1350,6 +1542,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "_Buffer"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "hidden"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "selectedSegmentIndex"]
 - !private ["PSs12_Reflectable", "subscript"]
@@ -1448,7 +1641,6 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "PSo16UIBarPositioning"
-- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
@@ -1478,7 +1670,6 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
-- !private "PSs24_ColorLiteralConvertible"
 - "PSs24_DestructorSafeContainer"
 - !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs14_Incrementable"
@@ -1493,47 +1684,47 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
@@ -1541,18 +1732,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/Toucan.swiftmodule/x86_64.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/Toucan.swiftmodule/x86_64.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "9a95d1311178ac1e8d7c027ef865a969"
+interface-hash: "684f7d3cc5cb890f53ce4e5030d0091d"

@@ -93,7 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import FBSDKLoginKit;
 #endif
 
-#import "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+#import "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Bridging-Header.h"
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"

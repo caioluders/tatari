@@ -6,91 +6,92 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14FeedController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "point"
-- "itemsBody"
-- "spinner"
-- "challengeDict"
-- "arraySorted"
-- "load_feed"
-- "arrayOfMessages"
-- "HTTPPostJSON"
-- "HTTPsendRequest"
-- "activityFeed"
-- "itemsTitle"
-- "items"
-- "refresh_feed"
-- "messageDict"
 - "JSONStringify"
+- "viewDidAppear"
+- "activityFeed"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "HTTPPostJSON"
+- "refresh_feed"
+- "refreshControl"
+- "messageDict"
+- "itemsTitle"
+- "arrayOfMessages"
+- "didReceiveMemoryWarning"
+- "items"
+- "HTTPsendRequest"
+- "challengeDict"
+- "spinner"
+- "itemsBody"
+- "load_feed"
 - "viewDidLoad"
 - "data"
 - "loadingData"
-- "refreshControl"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
+- "arraySorted"
 depends-top-level:
-- "UITableViewDelegate"
-- !private "NSFontAttributeName"
-- !private "NSJSONWritingOptions"
-- !private "!="
-- !private "print"
-- "BooleanLiteralType"
-- !private "/"
-- "UIViewController"
-- !private "-"
-- !private "&&"
-- !private "UIFont"
-- !private ">"
-- "UITableViewCell"
-- !private "JSON"
-- !private "*"
-- "UIRefreshControl"
-- "StringLiteralType"
-- !private "NSLineBreakMode"
-- "String"
-- "Int"
-- "NSMutableURLRequest"
-- !private "NSString"
-- !private "NSJSONSerialization"
-- !private "UIViewContentMode"
-- !private "NSURLSession"
-- "Bool"
-- !private "UINib"
-- !private "dispatch_async"
-- !private "UIColor"
-- !private "NSUTF8StringEncoding"
-- !private "UILabel"
-- !private "NSUserDefaults"
-- !private "dispatch_get_main_queue"
-- "AnyObject"
-- !private "NSForegroundColorAttributeName"
-- !private "UIControlEvents"
-- !private "FBSDKAccessToken"
-- !private "UITableViewAutomaticDimension"
-- "CGFloat"
-- "Void"
-- "FeedController"
-- "NSMutableData"
-- !private "UIImage"
-- !private "NSMutableDictionary"
 - !private "!"
-- !private "NSURL"
-- "Array"
-- "UIActivityIndicatorView"
-- "NSURLConnectionDelegate"
-- "UITableViewDataSource"
-- !private "Selector"
-- !private "+"
-- !private "UIImageView"
-- "UITableView"
-- "Dictionary"
-- !private "=="
+- !private "NSLineBreakMode"
+- !private "UIControlEvents"
+- !private "UIFont"
 - !private "NSData"
+- "FeedController"
+- !private "NSFontAttributeName"
+- !private "NSJSONSerialization"
+- "UIActivityIndicatorView"
+- !private "NSUserDefaults"
+- !private "=="
+- "UITableViewCell"
+- "Void"
+- !private "NSUTF8StringEncoding"
+- "CGFloat"
+- "NSMutableData"
+- !private "JSON"
+- !private "UITableViewAutomaticDimension"
+- !private "&&"
+- !private "NSURLSession"
+- !private "UINib"
+- "String"
+- !private "NSJSONWritingOptions"
+- !private "UILabel"
+- !private "dispatch_get_main_queue"
+- "UITableView"
+- !private "dispatch_async"
+- "Bool"
+- "UITableViewDataSource"
+- !private "UIViewContentMode"
+- "UIViewController"
+- "UITableViewDelegate"
+- !private "NSURL"
+- !private "NSString"
+- !private "+"
+- !private "!="
 - "NSIndexPath"
+- "Array"
+- !private "Selector"
+- "StringLiteralType"
+- "AnyObject"
+- !private "FBSDKAccessToken"
+- !private "UIImage"
+- "UIRefreshControl"
+- !private "UIImageView"
+- !private "NSMutableDictionary"
+- "Dictionary"
+- "Int"
+- !private "UIColor"
+- "NSMutableURLRequest"
+- "NSURLConnectionDelegate"
+- !private "/"
+- !private "-"
+- !private ">"
+- !private "NSForegroundColorAttributeName"
+- !private "print"
+- !private "*"
+- "BooleanLiteralType"
 depends-member:
 - !private ["PSs16AbsoluteValuable", "init"]
 - ["PSs9AnyObject", "Array"]
@@ -215,6 +216,7 @@ depends-member:
 - !private ["PSs9AnyObject", "title"]
 - !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", ""]
@@ -396,6 +398,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "title"]
 - !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", ""]
@@ -577,6 +580,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "title"]
 - !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", ""]
@@ -740,6 +744,7 @@ depends-member:
 - !private ["PSs9Equatable", "title"]
 - !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", ""]
@@ -840,6 +845,7 @@ depends-member:
 - ["C6Tatari14FeedController", "sectionIndexTitlesForTableView"]
 - ["C6Tatari14FeedController", "spinner"]
 - ["C6Tatari14FeedController", "tableView"]
+- ["C6Tatari14FeedController", "viewDidAppear"]
 - ["C6Tatari14FeedController", "viewDidLoad"]
 - ["C6Tatari14FeedController", "viewForZoomingInScrollView"]
 - !private ["Sf", "deinit"]
@@ -985,6 +991,7 @@ depends-member:
 - !private ["PSs8Hashable", "title"]
 - !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", ""]
@@ -1195,6 +1202,7 @@ depends-member:
 - !private ["PSo8NSCoding", "title"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", ""]
@@ -1290,6 +1298,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - ["PSo26NSExtensionRequestHandling", "spinner"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", ""]
@@ -1445,6 +1454,7 @@ depends-member:
 - !private ["CSo8NSObject", "title"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "Array"]
@@ -1569,6 +1579,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "title"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", ""]
@@ -1922,6 +1933,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -2003,6 +2015,7 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - ["PSo18UIContentContainer", "spinner"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", ""]
@@ -2174,6 +2187,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", ""]
@@ -2314,6 +2328,7 @@ depends-member:
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "textLabel"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - !private ["CSo12UIScrollView", "addSubview"]
@@ -2467,6 +2482,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - ["PSo16UIStateRestoring", "spinner"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", ""]
@@ -2721,6 +2737,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", ""]
@@ -2839,6 +2856,7 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - ["CSo16UIViewController", "spinner"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", ""]
@@ -3151,47 +3169,47 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
@@ -3199,18 +3217,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/Toucan.swiftmodule/x86_64.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/Toucan.swiftmodule/x86_64.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "b5588e06f8cb62d9308628f9010803c1"
+interface-hash: "039260275b48480f5c04928aa6fa64c6"

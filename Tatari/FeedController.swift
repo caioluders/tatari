@@ -76,10 +76,10 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("newFeedCell", forIndexPath: indexPath)
         
         cell.textLabel?.text = self.arraySorted[indexPath.row]["title"]
-        cell.textLabel?.font = UIFont(name: "Rodina", size: 23)
+        cell.textLabel?.font = UIFont(name: "Gill Sans", size: 22)
         cell.textLabel?.textColor = UIColor(colorLiteralRed: 0.98, green: 0.573, blue: 0.0, alpha: 1)
         
-        cell.detailTextLabel?.font = UIFont(name: "Rodina", size: 15)
+        cell.detailTextLabel?.font = UIFont(name: "Gill Sans", size: 14)
         cell.detailTextLabel?.numberOfLines = 0
         cell.detailTextLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping
         cell.detailTextLabel?.text = self.arraySorted[indexPath.row]["body"]
