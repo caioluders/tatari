@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers",
+      'name': "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Toucan-Swift.h",
-          'external-contents': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
+          'external-contents': "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
         },
         {
           'type': 'file',
@@ -20,12 +20,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules",
+      'name': "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/deborahmesquita1/Documents/Code/tatari/Build/Intermediates/Toucan.build/Debug-iphonesimulator/Toucan.build/module.modulemap"
+          'external-contents': "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Intermediates/Toucan.build/Debug-iphonesimulator/Toucan.build/module.modulemap"
         }
       ]
     }

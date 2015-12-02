@@ -16,6 +16,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var tableView: UITableView!
     @IBOutlet weak var activityVote: UIActivityIndicatorView!
     var items: [String] = ["We", "Heart", "Swift"]
+    //var contestItems =
     var pictures: [UIImage] = []
     var qtdVotes: [Int] = []
     var voted: [Int] = []
@@ -164,6 +165,11 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:VotoTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("votocell")! as! VotoTableViewCell
         
+        var nomes = self.names.count
+        var fotos = self.pictures.count
+        var qtdVotes = self.qtdVotes.count
+        
+        /**
         cell.lblName.text = self.names[indexPath.row]
         cell.imgPerson.image = self.pictures[indexPath.row]
         cell.btVote.tag = indexPath.row
@@ -176,7 +182,8 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         cell.backgroundColor = UIColor.clearColor()
-        
+        **/
+        cell.lblName.text = "tnccccc"
         return cell
     }
     

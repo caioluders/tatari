@@ -346,7 +346,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newFeedCell" textLabel="Kqd-vs-8HM" detailTextLabel="EQb-hs-9uL" imageView="PFP-Xe-YjI" style="IBUITableViewCellStyleSubtitle" id="OHJ-rg-jBf">
-                                        <rect key="frame" x="0.0" y="92" width="335" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="335" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OHJ-rg-jBf" id="ryI-wb-xEs">
                                             <rect key="frame" x="0.0" y="0.0" width="335" height="43.5"/>
