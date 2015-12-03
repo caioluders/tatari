@@ -11,9 +11,11 @@ import CoreMotion
 import MapKit
 import CoreLocation
 
-class MainController: UIViewController,CLLocationManagerDelegate {
+class MainController: UIViewController,CLLocationManagerDelegate,EILIndoorLocationManagerDelegate {
 
     var sensorDataArray = [(String, String)]()
+    let estimote_manager = EILIndoorLocationManager()
+    var location: EILLocation!
     
     // Accelerometer and Gyro
     var motionManager : CMMotionManager = CMMotionManager()
@@ -58,13 +60,31 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         
-
+        
         // Location
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         
         locationManager.startUpdatingLocation()
+        
+        self.estimote_manager.delegate = self
+        
+        ESTConfig.setupAppID("caioluders-gmail-com-s-you-20y", andAppToken: "7ee5ad908110749b7786156ebe2dcc3f")
+        
+        let fetchLocationRequest = EILRequestFetchLocation(locationIdentifier: "auditorio-beps")
+        fetchLocationRequest.sendRequestWithCompletion { (location, error) in
+            if location != nil {
+                self.location = location!
+            } else {
+                println("can't fetch location: \(error)")
+            }
+        }
+        
+        self.location = location!
+        self.estimote_manager.startPositionUpdatesForLocation(self.location)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -245,6 +265,27 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         NSURLConnection.sendAsynchronousRequest(request, queue: queue, completionHandler:{ (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
             var err: NSError
         })
+    }
+    
+    func indoorLocationManager(manager: EILIndoorLocationManager!,
+        didFailToUpdatePositionWithError error: NSError!) {
+            print("failed to update position: \(error)")
+    }
+    
+    func indoorLocationManager(manager: EILIndoorLocationManager!,
+        didUpdatePosition position: EILOrientedPoint!,
+        withAccuracy positionAccuracy: EILPositionAccuracy,
+        inLocation location: EILLocation!) {
+            var accuracy: String!
+            switch positionAccuracy {
+            case .VeryHigh: accuracy = "+/- 1.00m"
+            case .High:     accuracy = "+/- 1.62m"
+            case .Medium:   accuracy = "+/- 2.62m"
+            case .Low:      accuracy = "+/- 4.24m"
+            case .VeryLow:  accuracy = "+/- ? :-("
+            }
+            println(String(format: "x: %5.2f, y: %5.2f, orientation: %3.0f, accuracy: %@",
+                position.x, position.y, position.orientation, accuracy))
     }
 
 }
