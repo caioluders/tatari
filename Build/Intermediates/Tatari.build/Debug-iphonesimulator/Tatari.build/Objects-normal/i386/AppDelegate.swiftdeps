@@ -6,42 +6,47 @@ provides-nominal:
 provides-member:
 - ["C6Tatari11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "application"
-- "application"
-- "application"
-- "application"
-- "application"
 - "applicationDidEnterBackground"
-- "applicationWillTerminate"
-- "applicationWillResignActive"
-- "window"
-- "onPushAccepted"
+- "application"
+- "application"
+- "application"
+- "application"
+- "application"
 - "applicationDidBecomeActive"
+- "applicationWillTerminate"
+- "window"
+- "applicationWillResignActive"
+- "applicationWillEnterForeground"
+- "onPushAccepted"
 depends-top-level:
+- "NSData"
 - "Bool"
 - !private "print"
-- !private "StringLiteralType"
-- "NSObject"
-- "AppDelegate"
-- "UIResponder"
 - !private "FBSDKAppEvents"
-- "NSURL"
-- "UIApplicationDelegate"
+- "AppDelegate"
+- "NSObject"
 - "PushNotificationManager"
-- "PushNotificationDelegate"
-- "UIApplication"
-- "String"
-- "AnyObject"
-- "NSError"
-- !private "FBSDKApplicationDelegate"
 - "UIWindow"
-- "NSData"
+- "UIApplication"
+- !private "StringLiteralType"
+- "String"
+- !private "FBSDKApplicationDelegate"
+- "UIApplicationDelegate"
+- "UIResponder"
+- "AnyObject"
+- "PushNotificationDelegate"
+- !private "UIColor"
+- "NSError"
+- "NSURL"
+- !private "UITabBar"
 depends-member:
 - !private ["PSs9AnyObject", "FBSDKAppEvents"]
 - !private ["PSs9AnyObject", "FBSDKApplicationDelegate"]
 - !private ["PSs9AnyObject", "PushNotificationManager"]
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UITabBar"]
 - !private ["PSs9AnyObject", "activateApp"]
+- !private ["PSs9AnyObject", "appearance"]
 - ["PSs9AnyObject", "application"]
 - ["PSs9AnyObject", "applicationDidBecomeActive"]
 - ["PSs9AnyObject", "applicationDidEnterBackground"]
@@ -74,6 +79,7 @@ depends-member:
 - !private ["PSs9AnyObject", "registerForPushNotifications"]
 - !private ["PSs9AnyObject", "sendAppOpen"]
 - !private ["PSs9AnyObject", "sharedInstance"]
+- !private ["PSs9AnyObject", "tintColor"]
 - ["PSs9AnyObject", "window"]
 - ["PSs9AnyObject", ""]
 - ["C6Tatari11AppDelegate", "AnyObject"]
@@ -87,6 +93,8 @@ depends-member:
 - ["C6Tatari11AppDelegate", "PushNotificationManager"]
 - ["C6Tatari11AppDelegate", "String"]
 - ["C6Tatari11AppDelegate", "UIApplication"]
+- !private ["C6Tatari11AppDelegate", "UIColor"]
+- !private ["C6Tatari11AppDelegate", "UITabBar"]
 - ["C6Tatari11AppDelegate", "UIWindow"]
 - ["C6Tatari11AppDelegate", "application"]
 - ["C6Tatari11AppDelegate", "applicationDidBecomeActive"]
@@ -118,7 +126,10 @@ depends-member:
 - !private ["PSs11CVarArgType", "FBSDKAppEvents"]
 - !private ["PSs11CVarArgType", "FBSDKApplicationDelegate"]
 - !private ["PSs11CVarArgType", "PushNotificationManager"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UITabBar"]
 - !private ["PSs11CVarArgType", "activateApp"]
+- !private ["PSs11CVarArgType", "appearance"]
 - ["PSs11CVarArgType", "application"]
 - ["PSs11CVarArgType", "applicationDidBecomeActive"]
 - ["PSs11CVarArgType", "applicationDidEnterBackground"]
@@ -151,6 +162,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "registerForPushNotifications"]
 - !private ["PSs11CVarArgType", "sendAppOpen"]
 - !private ["PSs11CVarArgType", "sharedInstance"]
+- !private ["PSs11CVarArgType", "tintColor"]
 - ["PSs11CVarArgType", "window"]
 - ["PSs11CVarArgType", ""]
 - !private ["VSs9Character", "deinit"]
@@ -159,7 +171,10 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "FBSDKAppEvents"]
 - !private ["PSs23CustomStringConvertible", "FBSDKApplicationDelegate"]
 - !private ["PSs23CustomStringConvertible", "PushNotificationManager"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UITabBar"]
 - !private ["PSs23CustomStringConvertible", "activateApp"]
+- !private ["PSs23CustomStringConvertible", "appearance"]
 - ["PSs23CustomStringConvertible", "application"]
 - ["PSs23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["PSs23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -192,13 +207,17 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "registerForPushNotifications"]
 - !private ["PSs23CustomStringConvertible", "sendAppOpen"]
 - !private ["PSs23CustomStringConvertible", "sharedInstance"]
+- !private ["PSs23CustomStringConvertible", "tintColor"]
 - ["PSs23CustomStringConvertible", "window"]
 - ["PSs23CustomStringConvertible", ""]
 - !private ["Sd", "deinit"]
 - !private ["PSs9Equatable", "FBSDKAppEvents"]
 - !private ["PSs9Equatable", "FBSDKApplicationDelegate"]
 - !private ["PSs9Equatable", "PushNotificationManager"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UITabBar"]
 - !private ["PSs9Equatable", "activateApp"]
+- !private ["PSs9Equatable", "appearance"]
 - ["PSs9Equatable", "application"]
 - ["PSs9Equatable", "applicationDidBecomeActive"]
 - ["PSs9Equatable", "applicationDidEnterBackground"]
@@ -231,6 +250,7 @@ depends-member:
 - !private ["PSs9Equatable", "registerForPushNotifications"]
 - !private ["PSs9Equatable", "sendAppOpen"]
 - !private ["PSs9Equatable", "sharedInstance"]
+- !private ["PSs9Equatable", "tintColor"]
 - ["PSs9Equatable", "window"]
 - ["PSs9Equatable", ""]
 - !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -241,7 +261,10 @@ depends-member:
 - !private ["PSs8Hashable", "FBSDKAppEvents"]
 - !private ["PSs8Hashable", "FBSDKApplicationDelegate"]
 - !private ["PSs8Hashable", "PushNotificationManager"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UITabBar"]
 - !private ["PSs8Hashable", "activateApp"]
+- !private ["PSs8Hashable", "appearance"]
 - ["PSs8Hashable", "application"]
 - ["PSs8Hashable", "applicationDidBecomeActive"]
 - ["PSs8Hashable", "applicationDidEnterBackground"]
@@ -274,6 +297,7 @@ depends-member:
 - !private ["PSs8Hashable", "registerForPushNotifications"]
 - !private ["PSs8Hashable", "sendAppOpen"]
 - !private ["PSs8Hashable", "sharedInstance"]
+- !private ["PSs8Hashable", "tintColor"]
 - ["PSs8Hashable", "window"]
 - ["PSs8Hashable", ""]
 - !private ["Si", "deinit"]
@@ -283,7 +307,9 @@ depends-member:
 - !private ["VSs4Int8", "deinit"]
 - !private ["P6Tatari17JSONSubscriptType", "init"]
 - !private ["PSs14MirrorPathType", "init"]
+- !private ["PSo8NSCoding", "appearance"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "tintColor"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "AnyObject"]
@@ -297,8 +323,11 @@ depends-member:
 - ["CSo8NSObject", "PushNotificationManager"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIApplication"]
+- !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UITabBar"]
 - ["CSo8NSObject", "UIWindow"]
 - !private ["CSo8NSObject", "activateApp"]
+- !private ["CSo8NSObject", "appearance"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -331,11 +360,15 @@ depends-member:
 - !private ["CSo8NSObject", "registerForPushNotifications"]
 - !private ["CSo8NSObject", "sendAppOpen"]
 - !private ["CSo8NSObject", "sharedInstance"]
+- !private ["CSo8NSObject", "tintColor"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "FBSDKAppEvents"]
 - !private ["PSo16NSObjectProtocol", "FBSDKApplicationDelegate"]
 - !private ["PSo16NSObjectProtocol", "PushNotificationManager"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UITabBar"]
 - !private ["PSo16NSObjectProtocol", "activateApp"]
+- !private ["PSo16NSObjectProtocol", "appearance"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -368,6 +401,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "registerForPushNotifications"]
 - !private ["PSo16NSObjectProtocol", "sendAppOpen"]
 - !private ["PSo16NSObjectProtocol", "sharedInstance"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -378,6 +412,8 @@ depends-member:
 - !private ["PSo24PushNotificationDelegate", "FBSDKAppEvents"]
 - !private ["PSo24PushNotificationDelegate", "FBSDKApplicationDelegate"]
 - !private ["PSo24PushNotificationDelegate", "PushNotificationManager"]
+- !private ["PSo24PushNotificationDelegate", "UIColor"]
+- !private ["PSo24PushNotificationDelegate", "UITabBar"]
 - ["PSo24PushNotificationDelegate", "application"]
 - ["PSo24PushNotificationDelegate", "applicationDidBecomeActive"]
 - ["PSo24PushNotificationDelegate", "applicationDidEnterBackground"]
@@ -421,9 +457,17 @@ depends-member:
 - !private ["SS", "init"]
 - !private ["PSs30StringInterpolationConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "appearance"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
+- !private ["PSo12UIAppearance", "appearance"]
+- !private ["PSo12UIAppearance", "tintColor"]
+- !private ["PSo21UIAppearanceContainer", "appearance"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
 - !private ["PSo21UIApplicationDelegate", "FBSDKAppEvents"]
 - !private ["PSo21UIApplicationDelegate", "FBSDKApplicationDelegate"]
 - !private ["PSo21UIApplicationDelegate", "PushNotificationManager"]
+- !private ["PSo21UIApplicationDelegate", "UIColor"]
+- !private ["PSo21UIApplicationDelegate", "UITabBar"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -449,6 +493,13 @@ depends-member:
 - !private ["PSo21UIApplicationDelegate", "print"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
+- !private ["CSo7UIColor", "init"]
+- !private ["PSo17UICoordinateSpace", "appearance"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
+- !private ["PSo13UIDynamicItem", "appearance"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
+- !private ["PSo18UIFocusEnvironment", "appearance"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
 - ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "FBSDKAppEvents"]
@@ -460,7 +511,10 @@ depends-member:
 - ["CSo11UIResponder", "PushNotificationManager"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIApplication"]
+- !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UITabBar"]
 - ["CSo11UIResponder", "UIWindow"]
+- !private ["CSo11UIResponder", "appearance"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -485,8 +539,15 @@ depends-member:
 - ["CSo11UIResponder", "onTagsFailedToReceive"]
 - ["CSo11UIResponder", "onTagsReceived"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "tintColor"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
+- !private ["CSo8UITabBar", "appearance"]
+- !private ["CSo8UITabBar", "tintColor"]
+- !private ["PSo18UITraitEnvironment", "appearance"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
+- !private ["CSo6UIView", "appearance"]
+- !private ["CSo6UIView", "tintColor"]
 - !private ["Su", "deinit"]
 - !private ["VSs6UInt16", "deinit"]
 - !private ["VSs6UInt32", "deinit"]
@@ -499,8 +560,11 @@ depends-member:
 - !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "appearance"]
 - !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "tintColor"]
 depends-nominal:
 - "PSs9AnyObject"
 - "C6Tatari11AppDelegate"
@@ -540,8 +604,18 @@ depends-nominal:
 - !private "SS"
 - !private "PSs30StringInterpolationConvertible"
 - !private "PSs24StringLiteralConvertible"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- !private "PSo21UIAppearanceContainer"
 - "PSo21UIApplicationDelegate"
+- !private "CSo7UIColor"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "PSo18UIFocusEnvironment"
 - "CSo11UIResponder"
+- !private "CSo8UITabBar"
+- !private "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
 - !private "Su"
 - !private "VSs6UInt16"
 - !private "VSs6UInt32"
@@ -554,52 +628,53 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - !private "PSs21_ObjectiveCBridgeable"
 - !private "PSs12_Reflectable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
@@ -607,14 +682,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/Toucan.swiftmodule/i386.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
 interface-hash: "f5e2f2dd3b481e46906220c46818583b"

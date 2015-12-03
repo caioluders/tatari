@@ -6,102 +6,104 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14VoteController", ""]
 provides-dynamic-lookup:
-- "pictures"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "imagePickerController"
-- "vote_for"
-- "idsVotadas"
-- "names"
 - "HTTPPostJSON"
-- "qtdVotes"
-- "getDataFromServer"
-- "viewDidLoad"
-- "HTTPsendRequest"
-- "cleanAllArrays"
 - "ids"
-- "viewDidAppear"
-- "imagePicker"
+- "qtdVotes"
 - "items"
+- "imagePicker"
 - "add_photo"
-- "voted"
-- "buttonVoteAction"
-- "data"
-- "idBotaoVoto"
+- "cleanAllArrays"
 - "JSONStringify"
+- "viewDidAppear"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "pictures"
+- "getDataFromServer"
 - "didReceiveMemoryWarning"
+- "data"
+- "vote_for"
+- "viewDidLoad"
+- "names"
+- "buttonVoteAction"
 - "btParticipar"
+- "imagePickerController"
+- "voted"
+- "HTTPsendRequest"
+- "idBotaoVoto"
 - "activityVote"
+- "idsVotadas"
 depends-top-level:
-- !private "Array"
-- !private "NSError"
-- !private "NSUserDefaults"
-- !private "NSURL"
-- !private "UIImagePickerControllerSourceType"
-- !private "+"
-- !private "VotoTableViewCell"
-- !private "UINib"
-- "CGFloat"
-- "AnyObject"
-- !private "UIImagePickerControllerMediaType"
-- "UIViewController"
-- !private "NSForegroundColorAttributeName"
-- !private "NSJSONSerialization"
-- !private "NSDataBase64DecodingOptions"
-- !private "Dictionary"
-- !private "CFStringCompareFlags"
-- !private "FBSDKGraphRequest"
-- !private "UIImageJPEGRepresentation"
-- "UITableView"
-- !private "UIViewContentMode"
-- !private "NSLog"
-- !private "NSURLSession"
-- !private "!="
-- "Int"
-- !private "NSData"
-- "UIActivityIndicatorView"
-- "UIButton"
-- "UINavigationControllerDelegate"
-- !private "NSFontAttributeName"
-- "UIImagePickerControllerDelegate"
-- !private "print"
-- "NSURLConnectionDelegate"
-- !private "NSMutableDictionary"
-- "UIImage"
-- "UITableViewDelegate"
-- "StringLiteralType"
-- "UITableViewDataSource"
-- !private "UIImagePickerControllerEditedImage"
-- !private "NSDataBase64EncodingOptions"
-- "NSMutableURLRequest"
-- !private "UIFont"
-- "VoteController"
-- !private "BooleanLiteralType"
-- !private "kUTTypeImage"
-- "UITableViewCell"
-- !private "FBSDKGraphRequestConnection"
-- "NSIndexPath"
-- "UIImagePickerController"
 - "NSMutableData"
+- !private "=="
+- !private "kUTTypeImage"
+- !private "UIControlState"
+- !private "NSForegroundColorAttributeName"
+- !private "UIImageJPEGRepresentation"
 - !private "dispatch_async"
+- "Bool"
+- !private "NSString"
+- "UIViewController"
+- "CGFloat"
+- "UITableViewDelegate"
+- !private "UIFont"
+- "UITableViewDataSource"
+- !private "+"
+- "String"
+- !private "UIImagePickerControllerEditedImage"
+- !private "VotoTableViewCell"
+- !private "NSFontAttributeName"
+- !private "FBSDKAccessToken"
+- "UINavigationControllerDelegate"
+- "UIActivityIndicatorView"
+- "NSIndexPath"
+- !private "NSDataBase64EncodingOptions"
+- !private "BooleanLiteralType"
+- "UIButton"
 - "Void"
+- "NSURLConnectionDelegate"
+- "UIImage"
+- "UIImagePickerControllerDelegate"
+- !private "NSData"
+- !private "NSDataBase64DecodingOptions"
+- !private "NSUserDefaults"
+- !private "FBSDKGraphRequest"
+- "NSMutableURLRequest"
+- !private "UIImagePickerControllerMediaType"
+- !private "print"
+- !private "NSURL"
+- !private "Array"
+- !private "NSLog"
+- !private "UINib"
+- "VoteController"
+- !private "JSON"
+- !private "NSURLSession"
+- "AnyObject"
+- !private "Dictionary"
+- !private "!="
+- "UITableView"
+- !private "CFStringCompareFlags"
+- "StringLiteralType"
+- !private "UIViewContentMode"
+- !private "FBSDKGraphRequestConnection"
+- !private "NSMutableDictionary"
+- "Int"
+- !private "NSError"
+- !private "NSUTF8StringEncoding"
+- !private "CFStringCompare"
+- !private "NSJSONWritingOptions"
+- !private "UIImageView"
+- !private "UIColor"
+- !private "CFComparisonResult"
+- !private "UIControlEvents"
+- "UIImagePickerController"
+- !private "UIImagePickerControllerSourceType"
 - !private "dispatch_get_main_queue"
 - !private "UIImagePickerControllerOriginalImage"
-- !private "=="
-- !private "UIImageView"
-- !private "FBSDKAccessToken"
-- !private "NSJSONWritingOptions"
-- !private "CFStringCompare"
-- !private "NSUTF8StringEncoding"
-- "String"
-- !private "CFComparisonResult"
-- !private "UIColor"
-- !private "NSString"
-- "Bool"
-- !private "JSON"
+- !private "NSJSONSerialization"
+- "UITableViewCell"
 depends-member:
 - !private ["PSs9AnyObject", "CFComparisonResult"]
 - !private ["PSs9AnyObject", "CFStringCompare"]
@@ -133,6 +135,8 @@ depends-member:
 - !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "String"]
 - !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UIControlEvents"]
+- !private ["PSs9AnyObject", "UIControlState"]
 - !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UIImageJPEGRepresentation"]
@@ -145,15 +149,19 @@ depends-member:
 - !private ["PSs9AnyObject", "UINib"]
 - !private ["PSs9AnyObject", "UIViewContentMode"]
 - ["PSs9AnyObject", "activityVote"]
+- !private ["PSs9AnyObject", "addTarget"]
 - !private ["PSs9AnyObject", "addValue"]
 - ["PSs9AnyObject", "add_photo"]
 - !private ["PSs9AnyObject", "allowsEditing"]
 - !private ["PSs9AnyObject", "allowsSelection"]
+- !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "backgroundView"]
 - !private ["PSs9AnyObject", "base64EncodedStringWithOptions"]
 - ["PSs9AnyObject", "btParticipar"]
+- !private ["PSs9AnyObject", "btVote"]
 - ["PSs9AnyObject", "buttonVoteAction"]
 - ["PSs9AnyObject", "cleanAllArrays"]
+- !private ["PSs9AnyObject", "clearColor"]
 - ["PSs9AnyObject", "connection"]
 - ["PSs9AnyObject", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9AnyObject", "contentMode"]
@@ -175,9 +183,11 @@ depends-member:
 - ["PSs9AnyObject", "idBotaoVoto"]
 - ["PSs9AnyObject", "ids"]
 - ["PSs9AnyObject", "idsVotadas"]
+- !private ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "imagePicker"]
 - ["PSs9AnyObject", "imagePickerController"]
 - ["PSs9AnyObject", "imagePickerControllerDidCancel"]
+- !private ["PSs9AnyObject", "imgPerson"]
 - ["PSs9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs9AnyObject", "init"]
 - !private ["PSs9AnyObject", "isSourceTypeAvailable"]
@@ -185,6 +195,7 @@ depends-member:
 - ["PSs9AnyObject", "items"]
 - !private ["PSs9AnyObject", "kUTTypeImage"]
 - !private ["PSs9AnyObject", "lblName"]
+- !private ["PSs9AnyObject", "lblVoteCount"]
 - !private ["PSs9AnyObject", "localizedDescription"]
 - !private ["PSs9AnyObject", "mediaTypes"]
 - ["PSs9AnyObject", "names"]
@@ -201,6 +212,7 @@ depends-member:
 - !private ["PSs9AnyObject", "registerNib"]
 - !private ["PSs9AnyObject", "reloadData"]
 - !private ["PSs9AnyObject", "resume"]
+- !private ["PSs9AnyObject", "row"]
 - ["PSs9AnyObject", "scrollViewDidEndDecelerating"]
 - ["PSs9AnyObject", "scrollViewDidEndDragging"]
 - ["PSs9AnyObject", "scrollViewDidEndScrollingAnimation"]
@@ -215,6 +227,7 @@ depends-member:
 - ["PSs9AnyObject", "scrollViewWillEndDragging"]
 - ["PSs9AnyObject", "sectionIndexTitlesForTableView"]
 - !private ["PSs9AnyObject", "separatorStyle"]
+- !private ["PSs9AnyObject", "setImage"]
 - !private ["PSs9AnyObject", "setObject"]
 - !private ["PSs9AnyObject", "sharedSession"]
 - !private ["PSs9AnyObject", "sourceType"]
@@ -246,12 +259,15 @@ depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
 - !private ["Sa", "reverse"]
+- !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "CompareCaseInsensitive"]
 - !private ["PSs23ArrayLiteralConvertible", "Element"]
 - !private ["PSs23ArrayLiteralConvertible", "Generator"]
 - !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "Normal"]
 - !private ["PSs23ArrayLiteralConvertible", "PrettyPrinted"]
 - !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["PSs23ArrayLiteralConvertible", "_Element"]
 - !private ["PSs23ArrayLiteralConvertible", "append"]
 - !private ["PSs23ArrayLiteralConvertible", "contains"]
@@ -327,6 +343,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "String"]
 - !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UIControlEvents"]
+- !private ["PSs11CVarArgType", "UIControlState"]
 - !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UIImageJPEGRepresentation"]
@@ -339,15 +357,19 @@ depends-member:
 - !private ["PSs11CVarArgType", "UINib"]
 - !private ["PSs11CVarArgType", "UIViewContentMode"]
 - ["PSs11CVarArgType", "activityVote"]
+- !private ["PSs11CVarArgType", "addTarget"]
 - !private ["PSs11CVarArgType", "addValue"]
 - ["PSs11CVarArgType", "add_photo"]
 - !private ["PSs11CVarArgType", "allowsEditing"]
 - !private ["PSs11CVarArgType", "allowsSelection"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "backgroundView"]
 - !private ["PSs11CVarArgType", "base64EncodedStringWithOptions"]
 - ["PSs11CVarArgType", "btParticipar"]
+- !private ["PSs11CVarArgType", "btVote"]
 - ["PSs11CVarArgType", "buttonVoteAction"]
 - ["PSs11CVarArgType", "cleanAllArrays"]
+- !private ["PSs11CVarArgType", "clearColor"]
 - ["PSs11CVarArgType", "connection"]
 - ["PSs11CVarArgType", "connectionShouldUseCredentialStorage"]
 - !private ["PSs11CVarArgType", "contentMode"]
@@ -368,9 +390,11 @@ depends-member:
 - ["PSs11CVarArgType", "idBotaoVoto"]
 - ["PSs11CVarArgType", "ids"]
 - ["PSs11CVarArgType", "idsVotadas"]
+- !private ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "imagePicker"]
 - ["PSs11CVarArgType", "imagePickerController"]
 - ["PSs11CVarArgType", "imagePickerControllerDidCancel"]
+- !private ["PSs11CVarArgType", "imgPerson"]
 - ["PSs11CVarArgType", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs11CVarArgType", "init"]
 - !private ["PSs11CVarArgType", "isSourceTypeAvailable"]
@@ -378,6 +402,7 @@ depends-member:
 - ["PSs11CVarArgType", "items"]
 - !private ["PSs11CVarArgType", "kUTTypeImage"]
 - !private ["PSs11CVarArgType", "lblName"]
+- !private ["PSs11CVarArgType", "lblVoteCount"]
 - !private ["PSs11CVarArgType", "localizedDescription"]
 - !private ["PSs11CVarArgType", "mediaTypes"]
 - ["PSs11CVarArgType", "names"]
@@ -394,6 +419,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "registerNib"]
 - !private ["PSs11CVarArgType", "reloadData"]
 - !private ["PSs11CVarArgType", "resume"]
+- !private ["PSs11CVarArgType", "row"]
 - ["PSs11CVarArgType", "scrollViewDidEndDecelerating"]
 - ["PSs11CVarArgType", "scrollViewDidEndDragging"]
 - ["PSs11CVarArgType", "scrollViewDidEndScrollingAnimation"]
@@ -408,6 +434,7 @@ depends-member:
 - ["PSs11CVarArgType", "scrollViewWillEndDragging"]
 - ["PSs11CVarArgType", "sectionIndexTitlesForTableView"]
 - !private ["PSs11CVarArgType", "separatorStyle"]
+- !private ["PSs11CVarArgType", "setImage"]
 - !private ["PSs11CVarArgType", "setObject"]
 - !private ["PSs11CVarArgType", "sharedSession"]
 - !private ["PSs11CVarArgType", "sourceType"]
@@ -509,6 +536,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
 - !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UIControlEvents"]
+- !private ["PSs23CustomStringConvertible", "UIControlState"]
 - !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UIImageJPEGRepresentation"]
@@ -524,16 +553,20 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "_Element"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["PSs23CustomStringConvertible", "activityVote"]
+- !private ["PSs23CustomStringConvertible", "addTarget"]
 - !private ["PSs23CustomStringConvertible", "addValue"]
 - ["PSs23CustomStringConvertible", "add_photo"]
 - !private ["PSs23CustomStringConvertible", "allowsEditing"]
 - !private ["PSs23CustomStringConvertible", "allowsSelection"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "backgroundView"]
 - !private ["PSs23CustomStringConvertible", "base64EncodedStringWithOptions"]
 - ["PSs23CustomStringConvertible", "btParticipar"]
+- !private ["PSs23CustomStringConvertible", "btVote"]
 - ["PSs23CustomStringConvertible", "buttonVoteAction"]
 - ["PSs23CustomStringConvertible", "cleanAllArrays"]
+- !private ["PSs23CustomStringConvertible", "clearColor"]
 - ["PSs23CustomStringConvertible", "connection"]
 - ["PSs23CustomStringConvertible", "connectionShouldUseCredentialStorage"]
 - !private ["PSs23CustomStringConvertible", "contains"]
@@ -556,9 +589,11 @@ depends-member:
 - ["PSs23CustomStringConvertible", "idBotaoVoto"]
 - ["PSs23CustomStringConvertible", "ids"]
 - ["PSs23CustomStringConvertible", "idsVotadas"]
+- !private ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "imagePicker"]
 - ["PSs23CustomStringConvertible", "imagePickerController"]
 - ["PSs23CustomStringConvertible", "imagePickerControllerDidCancel"]
+- !private ["PSs23CustomStringConvertible", "imgPerson"]
 - ["PSs23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs23CustomStringConvertible", "init"]
 - !private ["PSs23CustomStringConvertible", "isSourceTypeAvailable"]
@@ -566,6 +601,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "items"]
 - !private ["PSs23CustomStringConvertible", "kUTTypeImage"]
 - !private ["PSs23CustomStringConvertible", "lblName"]
+- !private ["PSs23CustomStringConvertible", "lblVoteCount"]
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - !private ["PSs23CustomStringConvertible", "mediaTypes"]
 - ["PSs23CustomStringConvertible", "names"]
@@ -583,6 +619,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "resume"]
 - !private ["PSs23CustomStringConvertible", "reverse"]
+- !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndScrollingAnimation"]
@@ -597,6 +634,7 @@ depends-member:
 - ["PSs23CustomStringConvertible", "scrollViewWillEndDragging"]
 - ["PSs23CustomStringConvertible", "sectionIndexTitlesForTableView"]
 - !private ["PSs23CustomStringConvertible", "separatorStyle"]
+- !private ["PSs23CustomStringConvertible", "setImage"]
 - !private ["PSs23CustomStringConvertible", "setObject"]
 - !private ["PSs23CustomStringConvertible", "sharedSession"]
 - !private ["PSs23CustomStringConvertible", "sourceType"]
@@ -671,13 +709,17 @@ depends-member:
 - !private ["PSs9Equatable", "NSUTF8StringEncoding"]
 - !private ["PSs9Equatable", "NSUserDefaults"]
 - !private ["PSs9Equatable", "None"]
+- !private ["PSs9Equatable", "Normal"]
 - !private ["PSs9Equatable", "PrettyPrinted"]
 - !private ["PSs9Equatable", "RawValue"]
 - !private ["PSs9Equatable", "ScaleAspectFit"]
 - !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "SubSequence"]
+- !private ["PSs9Equatable", "TouchUpInside"]
 - !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UIControlEvents"]
+- !private ["PSs9Equatable", "UIControlState"]
 - !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UIImageJPEGRepresentation"]
@@ -693,15 +735,19 @@ depends-member:
 - !private ["PSs9Equatable", "_Element"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - ["PSs9Equatable", "activityVote"]
+- !private ["PSs9Equatable", "addTarget"]
 - !private ["PSs9Equatable", "addValue"]
 - ["PSs9Equatable", "add_photo"]
 - !private ["PSs9Equatable", "allowsEditing"]
 - !private ["PSs9Equatable", "allowsSelection"]
+- !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "backgroundView"]
 - !private ["PSs9Equatable", "base64EncodedStringWithOptions"]
 - ["PSs9Equatable", "btParticipar"]
+- !private ["PSs9Equatable", "btVote"]
 - ["PSs9Equatable", "buttonVoteAction"]
 - ["PSs9Equatable", "cleanAllArrays"]
+- !private ["PSs9Equatable", "clearColor"]
 - ["PSs9Equatable", "connection"]
 - ["PSs9Equatable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9Equatable", "contentMode"]
@@ -722,9 +768,11 @@ depends-member:
 - ["PSs9Equatable", "idBotaoVoto"]
 - ["PSs9Equatable", "ids"]
 - ["PSs9Equatable", "idsVotadas"]
+- !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "imagePicker"]
 - ["PSs9Equatable", "imagePickerController"]
 - ["PSs9Equatable", "imagePickerControllerDidCancel"]
+- !private ["PSs9Equatable", "imgPerson"]
 - ["PSs9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "isSourceTypeAvailable"]
@@ -732,6 +780,7 @@ depends-member:
 - ["PSs9Equatable", "items"]
 - !private ["PSs9Equatable", "kUTTypeImage"]
 - !private ["PSs9Equatable", "lblName"]
+- !private ["PSs9Equatable", "lblVoteCount"]
 - !private ["PSs9Equatable", "localizedDescription"]
 - !private ["PSs9Equatable", "mediaTypes"]
 - ["PSs9Equatable", "names"]
@@ -748,6 +797,7 @@ depends-member:
 - !private ["PSs9Equatable", "registerNib"]
 - !private ["PSs9Equatable", "reloadData"]
 - !private ["PSs9Equatable", "resume"]
+- !private ["PSs9Equatable", "row"]
 - ["PSs9Equatable", "scrollViewDidEndDecelerating"]
 - ["PSs9Equatable", "scrollViewDidEndDragging"]
 - ["PSs9Equatable", "scrollViewDidEndScrollingAnimation"]
@@ -762,6 +812,7 @@ depends-member:
 - ["PSs9Equatable", "scrollViewWillEndDragging"]
 - ["PSs9Equatable", "sectionIndexTitlesForTableView"]
 - !private ["PSs9Equatable", "separatorStyle"]
+- !private ["PSs9Equatable", "setImage"]
 - !private ["PSs9Equatable", "setObject"]
 - !private ["PSs9Equatable", "sharedSession"]
 - !private ["PSs9Equatable", "sourceType"]
@@ -851,6 +902,8 @@ depends-member:
 - !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "String"]
 - !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UIControlEvents"]
+- !private ["PSs8Hashable", "UIControlState"]
 - !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UIImageJPEGRepresentation"]
@@ -864,15 +917,19 @@ depends-member:
 - !private ["PSs8Hashable", "UIViewContentMode"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - ["PSs8Hashable", "activityVote"]
+- !private ["PSs8Hashable", "addTarget"]
 - !private ["PSs8Hashable", "addValue"]
 - ["PSs8Hashable", "add_photo"]
 - !private ["PSs8Hashable", "allowsEditing"]
 - !private ["PSs8Hashable", "allowsSelection"]
+- !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "backgroundView"]
 - !private ["PSs8Hashable", "base64EncodedStringWithOptions"]
 - ["PSs8Hashable", "btParticipar"]
+- !private ["PSs8Hashable", "btVote"]
 - ["PSs8Hashable", "buttonVoteAction"]
 - ["PSs8Hashable", "cleanAllArrays"]
+- !private ["PSs8Hashable", "clearColor"]
 - ["PSs8Hashable", "connection"]
 - ["PSs8Hashable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs8Hashable", "contentMode"]
@@ -893,9 +950,11 @@ depends-member:
 - ["PSs8Hashable", "idBotaoVoto"]
 - ["PSs8Hashable", "ids"]
 - ["PSs8Hashable", "idsVotadas"]
+- !private ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "imagePicker"]
 - ["PSs8Hashable", "imagePickerController"]
 - ["PSs8Hashable", "imagePickerControllerDidCancel"]
+- !private ["PSs8Hashable", "imgPerson"]
 - ["PSs8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSs8Hashable", "init"]
 - !private ["PSs8Hashable", "isSourceTypeAvailable"]
@@ -903,6 +962,7 @@ depends-member:
 - ["PSs8Hashable", "items"]
 - !private ["PSs8Hashable", "kUTTypeImage"]
 - !private ["PSs8Hashable", "lblName"]
+- !private ["PSs8Hashable", "lblVoteCount"]
 - !private ["PSs8Hashable", "localizedDescription"]
 - !private ["PSs8Hashable", "mediaTypes"]
 - ["PSs8Hashable", "names"]
@@ -919,6 +979,7 @@ depends-member:
 - !private ["PSs8Hashable", "registerNib"]
 - !private ["PSs8Hashable", "reloadData"]
 - !private ["PSs8Hashable", "resume"]
+- !private ["PSs8Hashable", "row"]
 - ["PSs8Hashable", "scrollViewDidEndDecelerating"]
 - ["PSs8Hashable", "scrollViewDidEndDragging"]
 - ["PSs8Hashable", "scrollViewDidEndScrollingAnimation"]
@@ -933,6 +994,7 @@ depends-member:
 - ["PSs8Hashable", "scrollViewWillEndDragging"]
 - ["PSs8Hashable", "sectionIndexTitlesForTableView"]
 - !private ["PSs8Hashable", "separatorStyle"]
+- !private ["PSs8Hashable", "setImage"]
 - !private ["PSs8Hashable", "setObject"]
 - !private ["PSs8Hashable", "sharedSession"]
 - !private ["PSs8Hashable", "sourceType"]
@@ -1028,6 +1090,7 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "contains"]
 - !private ["PSs21MutableCollectionType", "count"]
 - !private ["PSs21MutableCollectionType", "reverse"]
+- !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
 - !private ["PSs16MutableIndexable", "Index"]
@@ -1037,6 +1100,7 @@ depends-member:
 - !private ["PSs16MutableIndexable", "contains"]
 - !private ["PSs16MutableIndexable", "count"]
 - !private ["PSs16MutableIndexable", "reverse"]
+- !private ["PSs16MutableIndexable", "subscript"]
 - !private ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
 - !private ["PSs16MutableSliceable", "Index"]
@@ -1046,6 +1110,7 @@ depends-member:
 - !private ["PSs16MutableSliceable", "contains"]
 - !private ["PSs16MutableSliceable", "count"]
 - !private ["PSs16MutableSliceable", "reverse"]
+- !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CFComparisonResult"]
 - !private ["PSo8NSCoding", "CFStringCompare"]
 - !private ["PSo8NSCoding", "CFStringCompareFlags"]
@@ -1076,6 +1141,8 @@ depends-member:
 - !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIControlEvents"]
+- !private ["PSo8NSCoding", "UIControlState"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageJPEGRepresentation"]
@@ -1088,15 +1155,19 @@ depends-member:
 - !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "UIViewContentMode"]
 - ["PSo8NSCoding", "activityVote"]
+- !private ["PSo8NSCoding", "addTarget"]
 - !private ["PSo8NSCoding", "addValue"]
 - ["PSo8NSCoding", "add_photo"]
 - !private ["PSo8NSCoding", "allowsEditing"]
 - !private ["PSo8NSCoding", "allowsSelection"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "backgroundView"]
 - !private ["PSo8NSCoding", "base64EncodedStringWithOptions"]
 - ["PSo8NSCoding", "btParticipar"]
+- !private ["PSo8NSCoding", "btVote"]
 - ["PSo8NSCoding", "buttonVoteAction"]
 - ["PSo8NSCoding", "cleanAllArrays"]
+- !private ["PSo8NSCoding", "clearColor"]
 - ["PSo8NSCoding", "connection"]
 - ["PSo8NSCoding", "connectionShouldUseCredentialStorage"]
 - !private ["PSo8NSCoding", "contentMode"]
@@ -1115,15 +1186,18 @@ depends-member:
 - ["PSo8NSCoding", "idBotaoVoto"]
 - ["PSo8NSCoding", "ids"]
 - ["PSo8NSCoding", "idsVotadas"]
+- !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imagePicker"]
 - ["PSo8NSCoding", "imagePickerController"]
 - ["PSo8NSCoding", "imagePickerControllerDidCancel"]
+- !private ["PSo8NSCoding", "imgPerson"]
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "isSourceTypeAvailable"]
 - ["PSo8NSCoding", "items"]
 - !private ["PSo8NSCoding", "kUTTypeImage"]
 - !private ["PSo8NSCoding", "lblName"]
+- !private ["PSo8NSCoding", "lblVoteCount"]
 - !private ["PSo8NSCoding", "localizedDescription"]
 - !private ["PSo8NSCoding", "mediaTypes"]
 - ["PSo8NSCoding", "names"]
@@ -1139,6 +1213,7 @@ depends-member:
 - ["PSo8NSCoding", "qtdVotes"]
 - !private ["PSo8NSCoding", "registerNib"]
 - !private ["PSo8NSCoding", "reloadData"]
+- !private ["PSo8NSCoding", "row"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
 - ["PSo8NSCoding", "scrollViewDidEndScrollingAnimation"]
@@ -1153,6 +1228,7 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - ["PSo8NSCoding", "sectionIndexTitlesForTableView"]
 - !private ["PSo8NSCoding", "separatorStyle"]
+- !private ["PSo8NSCoding", "setImage"]
 - !private ["PSo8NSCoding", "setObject"]
 - !private ["PSo8NSCoding", "sourceType"]
 - !private ["PSo8NSCoding", "startAnimating"]
@@ -1173,12 +1249,14 @@ depends-member:
 - !private ["PSo9NSCopying", "HTTPMethod"]
 - !private ["PSo9NSCopying", "addValue"]
 - !private ["PSo9NSCopying", "base64EncodedStringWithOptions"]
+- !private ["PSo9NSCopying", "clearColor"]
 - !private ["PSo9NSCopying", "currentAccessToken"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "deinit"]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "localizedDescription"]
 - !private ["PSo9NSCopying", "resume"]
+- !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "setObject"]
 - !private ["PSo9NSCopying", "tokenString"]
 - !private ["CSo6NSData", "base64EncodedStringWithOptions"]
@@ -1217,6 +1295,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
+- !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageJPEGRepresentation"]
@@ -1290,6 +1370,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo17NSFastEnumeration", "init"]
 - !private ["PSo17NSFastEnumeration", "setObject"]
+- !private ["CSo11NSIndexPath", "row"]
 - !private ["CSo19NSJSONSerialization", "dataWithJSONObject"]
 - !private ["CSo19NSJSONSerialization", "isValidJSONObject"]
 - !private ["VSC20NSJSONWritingOptions", "PrettyPrinted"]
@@ -1346,6 +1427,8 @@ depends-member:
 - ["CSo8NSObject", "UIActivityIndicatorView"]
 - ["CSo8NSObject", "UIButton"]
 - !private ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIControlEvents"]
+- !private ["CSo8NSObject", "UIControlState"]
 - !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIImageJPEGRepresentation"]
@@ -1362,15 +1445,19 @@ depends-member:
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "VotoTableViewCell"]
 - ["CSo8NSObject", "activityVote"]
+- !private ["CSo8NSObject", "addTarget"]
 - !private ["CSo8NSObject", "addValue"]
 - ["CSo8NSObject", "add_photo"]
 - !private ["CSo8NSObject", "allowsEditing"]
 - !private ["CSo8NSObject", "allowsSelection"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "backgroundView"]
 - !private ["CSo8NSObject", "base64EncodedStringWithOptions"]
 - ["CSo8NSObject", "btParticipar"]
+- !private ["CSo8NSObject", "btVote"]
 - ["CSo8NSObject", "buttonVoteAction"]
 - ["CSo8NSObject", "cleanAllArrays"]
+- !private ["CSo8NSObject", "clearColor"]
 - ["CSo8NSObject", "connection"]
 - ["CSo8NSObject", "connectionShouldUseCredentialStorage"]
 - !private ["CSo8NSObject", "contentMode"]
@@ -1392,9 +1479,11 @@ depends-member:
 - ["CSo8NSObject", "idBotaoVoto"]
 - ["CSo8NSObject", "ids"]
 - ["CSo8NSObject", "idsVotadas"]
+- !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePicker"]
 - ["CSo8NSObject", "imagePickerController"]
 - ["CSo8NSObject", "imagePickerControllerDidCancel"]
+- !private ["CSo8NSObject", "imgPerson"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "isSourceTypeAvailable"]
@@ -1402,6 +1491,7 @@ depends-member:
 - ["CSo8NSObject", "items"]
 - !private ["CSo8NSObject", "kUTTypeImage"]
 - !private ["CSo8NSObject", "lblName"]
+- !private ["CSo8NSObject", "lblVoteCount"]
 - !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "mediaTypes"]
 - ["CSo8NSObject", "names"]
@@ -1418,6 +1508,7 @@ depends-member:
 - !private ["CSo8NSObject", "registerNib"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "resume"]
+- !private ["CSo8NSObject", "row"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
 - ["CSo8NSObject", "scrollViewDidEndScrollingAnimation"]
@@ -1432,6 +1523,7 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - ["CSo8NSObject", "sectionIndexTitlesForTableView"]
 - !private ["CSo8NSObject", "separatorStyle"]
+- !private ["CSo8NSObject", "setImage"]
 - !private ["CSo8NSObject", "setObject"]
 - !private ["CSo8NSObject", "sharedSession"]
 - !private ["CSo8NSObject", "sourceType"]
@@ -1481,6 +1573,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIControlEvents"]
+- !private ["PSo16NSObjectProtocol", "UIControlState"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageJPEGRepresentation"]
@@ -1493,15 +1587,19 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "UIViewContentMode"]
 - ["PSo16NSObjectProtocol", "activityVote"]
+- !private ["PSo16NSObjectProtocol", "addTarget"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
 - ["PSo16NSObjectProtocol", "add_photo"]
 - !private ["PSo16NSObjectProtocol", "allowsEditing"]
 - !private ["PSo16NSObjectProtocol", "allowsSelection"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
 - !private ["PSo16NSObjectProtocol", "base64EncodedStringWithOptions"]
 - ["PSo16NSObjectProtocol", "btParticipar"]
+- !private ["PSo16NSObjectProtocol", "btVote"]
 - ["PSo16NSObjectProtocol", "buttonVoteAction"]
 - ["PSo16NSObjectProtocol", "cleanAllArrays"]
+- !private ["PSo16NSObjectProtocol", "clearColor"]
 - ["PSo16NSObjectProtocol", "connection"]
 - ["PSo16NSObjectProtocol", "connectionShouldUseCredentialStorage"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
@@ -1522,9 +1620,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "idBotaoVoto"]
 - ["PSo16NSObjectProtocol", "ids"]
 - ["PSo16NSObjectProtocol", "idsVotadas"]
+- !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imagePicker"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
 - ["PSo16NSObjectProtocol", "imagePickerControllerDidCancel"]
+- !private ["PSo16NSObjectProtocol", "imgPerson"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "isSourceTypeAvailable"]
@@ -1532,6 +1632,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "items"]
 - !private ["PSo16NSObjectProtocol", "kUTTypeImage"]
 - !private ["PSo16NSObjectProtocol", "lblName"]
+- !private ["PSo16NSObjectProtocol", "lblVoteCount"]
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "mediaTypes"]
 - ["PSo16NSObjectProtocol", "names"]
@@ -1548,6 +1649,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "registerNib"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "resume"]
+- !private ["PSo16NSObjectProtocol", "row"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndScrollingAnimation"]
@@ -1562,6 +1664,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - ["PSo16NSObjectProtocol", "sectionIndexTitlesForTableView"]
 - !private ["PSo16NSObjectProtocol", "separatorStyle"]
+- !private ["PSo16NSObjectProtocol", "setImage"]
 - !private ["PSo16NSObjectProtocol", "setObject"]
 - !private ["PSo16NSObjectProtocol", "sharedSession"]
 - !private ["PSo16NSObjectProtocol", "sourceType"]
@@ -1586,10 +1689,12 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "HTTPMethod"]
 - !private ["PSo14NSSecureCoding", "addValue"]
 - !private ["PSo14NSSecureCoding", "base64EncodedStringWithOptions"]
+- !private ["PSo14NSSecureCoding", "clearColor"]
 - !private ["PSo14NSSecureCoding", "currentAccessToken"]
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "localizedDescription"]
+- !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "setObject"]
 - !private ["PSo14NSSecureCoding", "tokenString"]
 - !private ["CSo8NSString", "dataUsingEncoding"]
@@ -1624,6 +1729,8 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "NSUserDefaults"]
 - !private ["PSo23NSURLConnectionDelegate", "String"]
 - !private ["PSo23NSURLConnectionDelegate", "UIColor"]
+- !private ["PSo23NSURLConnectionDelegate", "UIControlEvents"]
+- !private ["PSo23NSURLConnectionDelegate", "UIControlState"]
 - !private ["PSo23NSURLConnectionDelegate", "UIFont"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImage"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImageJPEGRepresentation"]
@@ -1696,7 +1803,9 @@ depends-member:
 - !private ["PSs21NilLiteralConvertible", "stringValue"]
 - !private ["PSs21NilLiteralConvertible", "subscript"]
 - !private ["PSs13OptionSetType", "CompareCaseInsensitive"]
+- !private ["PSs13OptionSetType", "Normal"]
 - !private ["PSs13OptionSetType", "PrettyPrinted"]
+- !private ["PSs13OptionSetType", "TouchUpInside"]
 - !private ["PSs13OptionSetType", "init"]
 - ["Sq", "Some"]
 - !private ["Sq", "deinit"]
@@ -1716,20 +1825,24 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "contains"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
 - !private ["PSs30RangeReplaceableCollectionType", "reverse"]
+- !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Camera"]
 - !private ["PSs16RawRepresentable", "CompareCaseInsensitive"]
 - !private ["PSs16RawRepresentable", "CompareEqualTo"]
 - !private ["PSs16RawRepresentable", "Generator"]
 - !private ["PSs16RawRepresentable", "Index"]
 - !private ["PSs16RawRepresentable", "None"]
+- !private ["PSs16RawRepresentable", "Normal"]
 - !private ["PSs16RawRepresentable", "PrettyPrinted"]
 - !private ["PSs16RawRepresentable", "RawValue"]
 - !private ["PSs16RawRepresentable", "ScaleAspectFit"]
 - !private ["PSs16RawRepresentable", "SubSequence"]
+- !private ["PSs16RawRepresentable", "TouchUpInside"]
 - !private ["PSs16RawRepresentable", "_Element"]
 - !private ["PSs16RawRepresentable", "init"]
 - !private ["PSs16RawRepresentable", "stringValue"]
 - !private ["PSs16RawRepresentable", "subscript"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["PSs12SequenceType", "Element"]
 - !private ["PSs12SequenceType", "Generator"]
 - !private ["PSs12SequenceType", "Index"]
@@ -1746,7 +1859,9 @@ depends-member:
 - !private ["PSs12SequenceType", "stringValue"]
 - !private ["PSs12SequenceType", "subscript"]
 - !private ["PSs14SetAlgebraType", "CompareCaseInsensitive"]
+- !private ["PSs14SetAlgebraType", "Normal"]
 - !private ["PSs14SetAlgebraType", "PrettyPrinted"]
+- !private ["PSs14SetAlgebraType", "TouchUpInside"]
 - !private ["PSs14SetAlgebraType", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
@@ -1780,16 +1895,23 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "init"]
 - !private ["PSs24StringLiteralConvertible", "stringValue"]
 - !private ["PSs24StringLiteralConvertible", "subscript"]
+- !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsSelection"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundView"]
+- !private ["PSo29UIAccessibilityIdentification", "btVote"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "hidesWhenStopped"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "imgPerson"]
 - !private ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "lblName"]
+- !private ["PSo29UIAccessibilityIdentification", "lblVoteCount"]
 - !private ["PSo29UIAccessibilityIdentification", "registerNib"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "separatorStyle"]
+- !private ["PSo29UIAccessibilityIdentification", "setImage"]
 - !private ["PSo29UIAccessibilityIdentification", "startAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "stopAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
@@ -1798,16 +1920,23 @@ depends-member:
 - !private ["CSo23UIActivityIndicatorView", "hidesWhenStopped"]
 - !private ["CSo23UIActivityIndicatorView", "startAnimating"]
 - !private ["CSo23UIActivityIndicatorView", "stopAnimating"]
+- !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "allowsSelection"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "backgroundView"]
+- !private ["PSo12UIAppearance", "btVote"]
 - !private ["PSo12UIAppearance", "contentMode"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "hidesWhenStopped"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "imgPerson"]
 - !private ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "lblName"]
+- !private ["PSo12UIAppearance", "lblVoteCount"]
 - !private ["PSo12UIAppearance", "registerNib"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "separatorStyle"]
+- !private ["PSo12UIAppearance", "setImage"]
 - !private ["PSo12UIAppearance", "startAnimating"]
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo12UIAppearance", "tag"]
@@ -1841,6 +1970,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
+- !private ["PSo21UIAppearanceContainer", "UIControlState"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageJPEGRepresentation"]
@@ -1853,11 +1984,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "UIViewContentMode"]
 - ["PSo21UIAppearanceContainer", "activityVote"]
+- !private ["PSo21UIAppearanceContainer", "addTarget"]
 - ["PSo21UIAppearanceContainer", "add_photo"]
 - !private ["PSo21UIAppearanceContainer", "allowsEditing"]
 - !private ["PSo21UIAppearanceContainer", "allowsSelection"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
 - ["PSo21UIAppearanceContainer", "btParticipar"]
+- !private ["PSo21UIAppearanceContainer", "btVote"]
 - ["PSo21UIAppearanceContainer", "buttonVoteAction"]
 - ["PSo21UIAppearanceContainer", "cleanAllArrays"]
 - ["PSo21UIAppearanceContainer", "connection"]
@@ -1876,15 +2010,18 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "idBotaoVoto"]
 - ["PSo21UIAppearanceContainer", "ids"]
 - ["PSo21UIAppearanceContainer", "idsVotadas"]
+- !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imagePicker"]
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
 - ["PSo21UIAppearanceContainer", "imagePickerControllerDidCancel"]
+- !private ["PSo21UIAppearanceContainer", "imgPerson"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "isSourceTypeAvailable"]
 - ["PSo21UIAppearanceContainer", "items"]
 - !private ["PSo21UIAppearanceContainer", "kUTTypeImage"]
 - !private ["PSo21UIAppearanceContainer", "lblName"]
+- !private ["PSo21UIAppearanceContainer", "lblVoteCount"]
 - !private ["PSo21UIAppearanceContainer", "mediaTypes"]
 - ["PSo21UIAppearanceContainer", "names"]
 - !private ["PSo21UIAppearanceContainer", "navigationBar"]
@@ -1913,6 +2050,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - ["PSo21UIAppearanceContainer", "sectionIndexTitlesForTableView"]
 - !private ["PSo21UIAppearanceContainer", "separatorStyle"]
+- !private ["PSo21UIAppearanceContainer", "setImage"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
 - !private ["PSo21UIAppearanceContainer", "startAnimating"]
 - !private ["PSo21UIAppearanceContainer", "stopAnimating"]
@@ -1927,7 +2065,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "voted"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
+- !private ["CSo8UIButton", "addTarget"]
+- !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "tag"]
+- !private ["CSo7UIColor", "clearColor"]
 - !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "CFComparisonResult"]
 - !private ["PSo18UIContentContainer", "CFStringCompare"]
@@ -1957,6 +2098,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIControlEvents"]
+- !private ["PSo18UIContentContainer", "UIControlState"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageJPEGRepresentation"]
@@ -2028,32 +2171,50 @@ depends-member:
 - ["PSo18UIContentContainer", "vote_for"]
 - ["PSo18UIContentContainer", "voted"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "addTarget"]
+- !private ["CSo9UIControl", "setImage"]
 - !private ["CSo9UIControl", "tag"]
+- !private ["VSC15UIControlEvents", "TouchUpInside"]
+- !private ["VSC14UIControlState", "Normal"]
+- !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "allowsSelection"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
+- !private ["PSo17UICoordinateSpace", "btVote"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "hidesWhenStopped"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "imgPerson"]
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "lblName"]
+- !private ["PSo17UICoordinateSpace", "lblVoteCount"]
 - !private ["PSo17UICoordinateSpace", "registerNib"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "separatorStyle"]
+- !private ["PSo17UICoordinateSpace", "setImage"]
 - !private ["PSo17UICoordinateSpace", "startAnimating"]
 - !private ["PSo17UICoordinateSpace", "stopAnimating"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
+- !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "allowsSelection"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
+- !private ["PSo13UIDynamicItem", "btVote"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "hidesWhenStopped"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "imgPerson"]
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "lblName"]
+- !private ["PSo13UIDynamicItem", "lblVoteCount"]
 - !private ["PSo13UIDynamicItem", "registerNib"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "separatorStyle"]
+- !private ["PSo13UIDynamicItem", "setImage"]
 - !private ["PSo13UIDynamicItem", "startAnimating"]
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo13UIDynamicItem", "tag"]
@@ -2087,6 +2248,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
+- !private ["PSo18UIFocusEnvironment", "UIControlState"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImageJPEGRepresentation"]
@@ -2099,11 +2262,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "UIViewContentMode"]
 - ["PSo18UIFocusEnvironment", "activityVote"]
+- !private ["PSo18UIFocusEnvironment", "addTarget"]
 - ["PSo18UIFocusEnvironment", "add_photo"]
 - !private ["PSo18UIFocusEnvironment", "allowsEditing"]
 - !private ["PSo18UIFocusEnvironment", "allowsSelection"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundView"]
 - ["PSo18UIFocusEnvironment", "btParticipar"]
+- !private ["PSo18UIFocusEnvironment", "btVote"]
 - ["PSo18UIFocusEnvironment", "buttonVoteAction"]
 - ["PSo18UIFocusEnvironment", "cleanAllArrays"]
 - ["PSo18UIFocusEnvironment", "connection"]
@@ -2122,15 +2288,18 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "idBotaoVoto"]
 - ["PSo18UIFocusEnvironment", "ids"]
 - ["PSo18UIFocusEnvironment", "idsVotadas"]
+- !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imagePicker"]
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
 - ["PSo18UIFocusEnvironment", "imagePickerControllerDidCancel"]
+- !private ["PSo18UIFocusEnvironment", "imgPerson"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "isSourceTypeAvailable"]
 - ["PSo18UIFocusEnvironment", "items"]
 - !private ["PSo18UIFocusEnvironment", "kUTTypeImage"]
 - !private ["PSo18UIFocusEnvironment", "lblName"]
+- !private ["PSo18UIFocusEnvironment", "lblVoteCount"]
 - !private ["PSo18UIFocusEnvironment", "mediaTypes"]
 - ["PSo18UIFocusEnvironment", "names"]
 - !private ["PSo18UIFocusEnvironment", "navigationBar"]
@@ -2159,6 +2328,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UIFocusEnvironment", "sectionIndexTitlesForTableView"]
 - !private ["PSo18UIFocusEnvironment", "separatorStyle"]
+- !private ["PSo18UIFocusEnvironment", "setImage"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
 - !private ["PSo18UIFocusEnvironment", "startAnimating"]
 - !private ["PSo18UIFocusEnvironment", "stopAnimating"]
@@ -2173,7 +2343,11 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "voted"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo6UIFont", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
+- !private ["PSo27UIGestureRecognizerDelegate", "btVote"]
+- !private ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblName"]
+- !private ["PSo27UIGestureRecognizerDelegate", "lblVoteCount"]
 - !private ["CSo7UIImage", "init"]
 - !private ["CSo23UIImagePickerController", "allowsEditing"]
 - !private ["CSo23UIImagePickerController", "delegate"]
@@ -2210,6 +2384,8 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "NSUserDefaults"]
 - !private ["PSo31UIImagePickerControllerDelegate", "String"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIColor"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIControlEvents"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIControlState"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIFont"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImageJPEGRepresentation"]
@@ -2264,6 +2440,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "vote_for"]
 - ["PSo31UIImagePickerControllerDelegate", ""]
 - !private ["OSC33UIImagePickerControllerSourceType", "Camera"]
+- !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "init"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo15UINavigationBar", "titleTextAttributes"]
@@ -2303,6 +2480,8 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSUserDefaults"]
 - !private ["PSo30UINavigationControllerDelegate", "String"]
 - !private ["PSo30UINavigationControllerDelegate", "UIColor"]
+- !private ["PSo30UINavigationControllerDelegate", "UIControlEvents"]
+- !private ["PSo30UINavigationControllerDelegate", "UIControlState"]
 - !private ["PSo30UINavigationControllerDelegate", "UIFont"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImage"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImageJPEGRepresentation"]
@@ -2394,6 +2573,8 @@ depends-member:
 - ["CSo11UIResponder", "UIActivityIndicatorView"]
 - ["CSo11UIResponder", "UIButton"]
 - !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIControlEvents"]
+- !private ["CSo11UIResponder", "UIControlState"]
 - !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIImageJPEGRepresentation"]
@@ -2410,11 +2591,14 @@ depends-member:
 - ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "VotoTableViewCell"]
 - ["CSo11UIResponder", "activityVote"]
+- !private ["CSo11UIResponder", "addTarget"]
 - ["CSo11UIResponder", "add_photo"]
 - !private ["CSo11UIResponder", "allowsEditing"]
 - !private ["CSo11UIResponder", "allowsSelection"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "backgroundView"]
 - ["CSo11UIResponder", "btParticipar"]
+- !private ["CSo11UIResponder", "btVote"]
 - ["CSo11UIResponder", "buttonVoteAction"]
 - ["CSo11UIResponder", "cleanAllArrays"]
 - ["CSo11UIResponder", "connection"]
@@ -2433,15 +2617,18 @@ depends-member:
 - ["CSo11UIResponder", "idBotaoVoto"]
 - ["CSo11UIResponder", "ids"]
 - ["CSo11UIResponder", "idsVotadas"]
+- !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imagePicker"]
 - ["CSo11UIResponder", "imagePickerController"]
 - ["CSo11UIResponder", "imagePickerControllerDidCancel"]
+- !private ["CSo11UIResponder", "imgPerson"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "isSourceTypeAvailable"]
 - ["CSo11UIResponder", "items"]
 - !private ["CSo11UIResponder", "kUTTypeImage"]
 - !private ["CSo11UIResponder", "lblName"]
+- !private ["CSo11UIResponder", "lblVoteCount"]
 - !private ["CSo11UIResponder", "mediaTypes"]
 - ["CSo11UIResponder", "names"]
 - !private ["CSo11UIResponder", "navigationBar"]
@@ -2470,6 +2657,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - ["CSo11UIResponder", "sectionIndexTitlesForTableView"]
 - !private ["CSo11UIResponder", "separatorStyle"]
+- !private ["CSo11UIResponder", "setImage"]
 - !private ["CSo11UIResponder", "sourceType"]
 - !private ["CSo11UIResponder", "startAnimating"]
 - !private ["CSo11UIResponder", "stopAnimating"]
@@ -2516,6 +2704,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
+- !private ["PSo20UIScrollViewDelegate", "UIControlState"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIImageJPEGRepresentation"]
@@ -2597,6 +2787,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIControlEvents"]
+- !private ["PSo16UIStateRestoring", "UIControlState"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageJPEGRepresentation"]
@@ -2674,8 +2866,12 @@ depends-member:
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "separatorStyle"]
+- !private ["CSo15UITableViewCell", "backgroundColor"]
+- !private ["CSo15UITableViewCell", "btVote"]
 - !private ["CSo15UITableViewCell", "deinit"]
+- !private ["CSo15UITableViewCell", "imgPerson"]
 - !private ["CSo15UITableViewCell", "lblName"]
+- !private ["CSo15UITableViewCell", "lblVoteCount"]
 - !private ["OSC29UITableViewCellSeparatorStyle", "None"]
 - !private ["PSo21UITableViewDataSource", "CFComparisonResult"]
 - !private ["PSo21UITableViewDataSource", "CFStringCompare"]
@@ -2705,6 +2901,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
 - !private ["PSo21UITableViewDataSource", "String"]
 - !private ["PSo21UITableViewDataSource", "UIColor"]
+- !private ["PSo21UITableViewDataSource", "UIControlEvents"]
+- !private ["PSo21UITableViewDataSource", "UIControlState"]
 - !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UIImageJPEGRepresentation"]
@@ -2786,6 +2984,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSUserDefaults"]
 - !private ["PSo19UITableViewDelegate", "String"]
 - !private ["PSo19UITableViewDelegate", "UIColor"]
+- !private ["PSo19UITableViewDelegate", "UIControlEvents"]
+- !private ["PSo19UITableViewDelegate", "UIControlState"]
 - !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UIImageJPEGRepresentation"]
@@ -2867,6 +3067,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIControlEvents"]
+- !private ["PSo18UITraitEnvironment", "UIControlState"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageJPEGRepresentation"]
@@ -2879,11 +3081,14 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "UIViewContentMode"]
 - ["PSo18UITraitEnvironment", "activityVote"]
+- !private ["PSo18UITraitEnvironment", "addTarget"]
 - ["PSo18UITraitEnvironment", "add_photo"]
 - !private ["PSo18UITraitEnvironment", "allowsEditing"]
 - !private ["PSo18UITraitEnvironment", "allowsSelection"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
 - ["PSo18UITraitEnvironment", "btParticipar"]
+- !private ["PSo18UITraitEnvironment", "btVote"]
 - ["PSo18UITraitEnvironment", "buttonVoteAction"]
 - ["PSo18UITraitEnvironment", "cleanAllArrays"]
 - ["PSo18UITraitEnvironment", "connection"]
@@ -2902,15 +3107,18 @@ depends-member:
 - ["PSo18UITraitEnvironment", "idBotaoVoto"]
 - ["PSo18UITraitEnvironment", "ids"]
 - ["PSo18UITraitEnvironment", "idsVotadas"]
+- !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imagePicker"]
 - ["PSo18UITraitEnvironment", "imagePickerController"]
 - ["PSo18UITraitEnvironment", "imagePickerControllerDidCancel"]
+- !private ["PSo18UITraitEnvironment", "imgPerson"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "isSourceTypeAvailable"]
 - ["PSo18UITraitEnvironment", "items"]
 - !private ["PSo18UITraitEnvironment", "kUTTypeImage"]
 - !private ["PSo18UITraitEnvironment", "lblName"]
+- !private ["PSo18UITraitEnvironment", "lblVoteCount"]
 - !private ["PSo18UITraitEnvironment", "mediaTypes"]
 - ["PSo18UITraitEnvironment", "names"]
 - !private ["PSo18UITraitEnvironment", "navigationBar"]
@@ -2939,6 +3147,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - ["PSo18UITraitEnvironment", "sectionIndexTitlesForTableView"]
 - !private ["PSo18UITraitEnvironment", "separatorStyle"]
+- !private ["PSo18UITraitEnvironment", "setImage"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
 - !private ["PSo18UITraitEnvironment", "startAnimating"]
 - !private ["PSo18UITraitEnvironment", "stopAnimating"]
@@ -2952,16 +3161,23 @@ depends-member:
 - ["PSo18UITraitEnvironment", "vote_for"]
 - ["PSo18UITraitEnvironment", "voted"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "allowsSelection"]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "backgroundView"]
+- !private ["CSo6UIView", "btVote"]
 - !private ["CSo6UIView", "contentMode"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "hidesWhenStopped"]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "imgPerson"]
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "lblName"]
+- !private ["CSo6UIView", "lblVoteCount"]
 - !private ["CSo6UIView", "registerNib"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "separatorStyle"]
+- !private ["CSo6UIView", "setImage"]
 - !private ["CSo6UIView", "startAnimating"]
 - !private ["CSo6UIView", "stopAnimating"]
 - !private ["CSo6UIView", "tag"]
@@ -3004,6 +3220,8 @@ depends-member:
 - ["CSo16UIViewController", "UIActivityIndicatorView"]
 - ["CSo16UIViewController", "UIButton"]
 - !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIControlEvents"]
+- !private ["CSo16UIViewController", "UIControlState"]
 - !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIImageJPEGRepresentation"]
@@ -3129,6 +3347,8 @@ depends-member:
 - ["C6Tatari14VoteController", "UIActivityIndicatorView"]
 - ["C6Tatari14VoteController", "UIButton"]
 - !private ["C6Tatari14VoteController", "UIColor"]
+- !private ["C6Tatari14VoteController", "UIControlEvents"]
+- !private ["C6Tatari14VoteController", "UIControlState"]
 - !private ["C6Tatari14VoteController", "UIFont"]
 - ["C6Tatari14VoteController", "UIImage"]
 - !private ["C6Tatari14VoteController", "UIImageJPEGRepresentation"]
@@ -3197,7 +3417,11 @@ depends-member:
 - ["C6Tatari14VoteController", "viewForZoomingInScrollView"]
 - ["C6Tatari14VoteController", "vote_for"]
 - ["C6Tatari14VoteController", "voted"]
+- !private ["C6Tatari17VotoTableViewCell", "backgroundColor"]
+- !private ["C6Tatari17VotoTableViewCell", "btVote"]
+- !private ["C6Tatari17VotoTableViewCell", "imgPerson"]
 - !private ["C6Tatari17VotoTableViewCell", "lblName"]
+- !private ["C6Tatari17VotoTableViewCell", "lblVoteCount"]
 - !private ["PSs10_ArrayType", "Element"]
 - !private ["PSs10_ArrayType", "Generator"]
 - !private ["PSs10_ArrayType", "Index"]
@@ -3207,6 +3431,7 @@ depends-member:
 - !private ["PSs10_ArrayType", "contains"]
 - !private ["PSs10_ArrayType", "count"]
 - !private ["PSs10_ArrayType", "reverse"]
+- !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -3222,6 +3447,7 @@ depends-member:
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "clearColor"]
 - !private ["PSs24_ColorLiteralConvertible", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
@@ -3232,6 +3458,7 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "contains"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
 - !private ["PSs24_DestructorSafeContainer", "reverse"]
+- !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs24_ImageLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
@@ -3282,21 +3509,28 @@ depends-member:
 - !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_Element"]
 - !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "allowsSelection"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "backgroundView"]
+- !private ["PSs12_Reflectable", "btVote"]
 - !private ["PSs12_Reflectable", "contains"]
 - !private ["PSs12_Reflectable", "contentMode"]
 - !private ["PSs12_Reflectable", "count"]
 - !private ["PSs12_Reflectable", "dataUsingEncoding"]
 - !private ["PSs12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["PSs12_Reflectable", "hidesWhenStopped"]
+- !private ["PSs12_Reflectable", "image"]
+- !private ["PSs12_Reflectable", "imgPerson"]
 - !private ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "lblName"]
+- !private ["PSs12_Reflectable", "lblVoteCount"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
 - !private ["PSs12_Reflectable", "reverse"]
 - !private ["PSs12_Reflectable", "separatorStyle"]
+- !private ["PSs12_Reflectable", "setImage"]
 - !private ["PSs12_Reflectable", "setObject"]
 - !private ["PSs12_Reflectable", "startAnimating"]
 - !private ["PSs12_Reflectable", "stopAnimating"]
@@ -3374,6 +3608,7 @@ depends-nominal:
 - !private "CSo7NSError"
 - "PSo26NSExtensionRequestHandling"
 - !private "PSo17NSFastEnumeration"
+- !private "CSo11NSIndexPath"
 - !private "CSo19NSJSONSerialization"
 - !private "VSC20NSJSONWritingOptions"
 - "PSo16NSMutableCopying"
@@ -3399,6 +3634,7 @@ depends-nominal:
 - !private "VSs5Range"
 - !private "PSs30RangeReplaceableCollectionType"
 - !private "PSs16RawRepresentable"
+- !private "V10ObjectiveC8Selector"
 - !private "PSs12SequenceType"
 - !private "PSs14SetAlgebraType"
 - !private "PSs17SignedIntegerType"
@@ -3418,6 +3654,8 @@ depends-nominal:
 - !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
+- !private "VSC15UIControlEvents"
+- !private "VSC14UIControlState"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"

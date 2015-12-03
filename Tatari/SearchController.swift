@@ -117,6 +117,7 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
                     self.idsLikes.append(fbId)
                 }
             }
+            
             dispatch_async(dispatch_get_main_queue()) { [unowned self] in
                 self.tableView.reloadData()
                 self.activityLoadingSearch.stopAnimating()

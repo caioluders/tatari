@@ -169,21 +169,21 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var fotos = self.pictures.count
         var qtdVotes = self.qtdVotes.count
         
-        /**
+        
         cell.lblName.text = self.names[indexPath.row]
         cell.imgPerson.image = self.pictures[indexPath.row]
         cell.btVote.tag = indexPath.row
         cell.btVote.addTarget(self, action: "buttonVoteAction:", forControlEvents: UIControlEvents.TouchUpInside)
         cell.lblVoteCount.text = String(self.qtdVotes[indexPath.row])
-        cell.btVote.tag = Int(self.ids[indexPath.row])!
+        
+        cell.btVote.tag = indexPath.row
         
         if (self.idsVotadas.contains(self.ids[indexPath.row])){
             cell.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
         }
         
         cell.backgroundColor = UIColor.clearColor()
-        **/
-        cell.lblName.text = "tnccccc"
+        
         return cell
     }
     
@@ -271,7 +271,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
             if error == nil {
                 mutable_result.setObject(result["id"] as! NSString,forKey:"fb_id")
-                mutable_result.setObject(id,forKey:"id")
+                mutable_result.setObject(self.ids[id],forKey:"id")
                 print(mutable_result)
                 self.HTTPPostJSON("http://45.55.146.229:116/poll", jsonObj: mutable_result, callback: { (data,error) -> Void in
                     print(data)
