@@ -6,71 +6,80 @@ provides-nominal:
 provides-member:
 - ["C6Tatari20ConfigViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "maskImage"
-- "swt_nobody"
-- "swt_all"
-- "pickerData"
-- "HTTPPostJSON"
-- "pin_avatar"
-- "didReceiveMemoryWarning"
-- "viewDidAppear"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "JSONStringify"
-- "swt_friends"
-- "HTTPsendRequest"
 - "picker"
+- "swt_all"
+- "constLegendaToPicker"
+- "viewDidLoad"
 - "btLogoutPressed"
+- "swt_nobody"
+- "constButtonToBotton"
+- "constPontosToVisibilidade"
+- "HTTPPostJSON"
+- "didReceiveMemoryWarning"
+- "swt_friends"
+- "constVisibilidadeToPicker"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "constPickerToLogout"
+- "pin_avatar"
+- "HTTPsendRequest"
+- "maskImage"
+- "pickerData"
 - "numberOfComponentsInPickerView"
+- "JSONStringify"
+- "viewDidAppear"
+- "contPinToVisibilidade"
 depends-top-level:
+- !private "CGImageMaskCreate"
 - !private "!="
-- "Bool"
-- "UIPickerViewDelegate"
-- !private "NSUserDefaults"
-- !private "print"
-- !private "CGImageGetBitsPerPixel"
-- "UIPickerViewDataSource"
-- !private "CGImageGetBitsPerComponent"
-- !private "CGImageCreateWithMask"
-- "UIViewController"
-- !private "NSUTF8StringEncoding"
-- !private "StringLiteralType"
-- !private "CGImageGetBytesPerRow"
-- !private "=="
-- !private "UIFont"
-- "UIImage"
-- !private "CGImageGetHeight"
-- "String"
-- !private "FBSDKAccessToken"
-- !private "NSMutableDictionary"
-- "AnyObject"
-- !private "NSString"
-- !private "Toucan"
-- !private "CGImageGetDataProvider"
-- !private "NSJSONWritingOptions"
-- !private "NSJSONSerialization"
-- !private "FBSDKLoginManager"
-- !private "CGImageGetWidth"
-- !private "Array"
-- "Void"
-- !private "NSData"
-- !private "JSON"
-- "UIPickerView"
-- "UIImageView"
-- "ConfigViewController"
 - !private "NSFontAttributeName"
-- !private "NSURL"
-- !private "Dictionary"
-- "UISwitch"
-- "NSMutableURLRequest"
+- !private "UIColor"
+- !private "NSString"
+- !private "CGImageGetWidth"
+- "Bool"
 - !private "NSForegroundColorAttributeName"
+- !private "Dictionary"
+- "Void"
+- "UIPickerViewDelegate"
+- !private "=="
+- !private "CGImageCreateWithMask"
+- !private "NSJSONWritingOptions"
+- "UIPickerViewDataSource"
+- !private "Array"
+- "ConfigViewController"
 - "Int"
 - !private "BooleanLiteralType"
-- !private "CGImageMaskCreate"
+- "String"
+- !private "UIScreen"
+- !private "FBSDKAccessToken"
+- "AnyObject"
+- "UIImage"
+- !private "CGImageGetDataProvider"
+- !private "Toucan"
+- !private "FBSDKLoginManager"
+- !private "NSURL"
+- !private "CGImageGetBytesPerRow"
+- "UIImageView"
+- !private "NSData"
+- !private "NSJSONSerialization"
+- !private "print"
+- !private "CGImageGetBitsPerPixel"
+- !private "CGRect"
+- !private "JSON"
+- !private "StringLiteralType"
+- !private "NSUserDefaults"
+- !private "CGImageGetBitsPerComponent"
+- !private "NSUTF8StringEncoding"
+- "UIViewController"
+- !private "NSMutableDictionary"
+- !private "UIFont"
+- "UISwitch"
+- !private "CGImageGetHeight"
+- "NSLayoutConstraint"
 - !private "NSURLSession"
-- !private "UIColor"
+- "UIPickerView"
+- "NSMutableURLRequest"
 depends-member:
 - !private ["PSs9AnyObject", "CGImage"]
 - !private ["PSs9AnyObject", "CGImageCreateWithMask"]
@@ -107,8 +116,17 @@ depends-member:
 - !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "UIImage"]
+- !private ["PSs9AnyObject", "UIScreen"]
 - !private ["PSs9AnyObject", "addValue"]
+- !private ["PSs9AnyObject", "bounds"]
 - ["PSs9AnyObject", "btLogoutPressed"]
+- ["PSs9AnyObject", "constButtonToBotton"]
+- ["PSs9AnyObject", "constLegendaToPicker"]
+- ["PSs9AnyObject", "constPickerToLogout"]
+- ["PSs9AnyObject", "constPontosToVisibilidade"]
+- ["PSs9AnyObject", "constVisibilidadeToPicker"]
+- !private ["PSs9AnyObject", "constant"]
+- ["PSs9AnyObject", "contPinToVisibilidade"]
 - !private ["PSs9AnyObject", "currentAccessToken"]
 - !private ["PSs9AnyObject", "dataSource"]
 - !private ["PSs9AnyObject", "dataTaskWithRequest"]
@@ -122,6 +140,7 @@ depends-member:
 - !private ["PSs9AnyObject", "isValidJSONObject"]
 - !private ["PSs9AnyObject", "localizedDescription"]
 - !private ["PSs9AnyObject", "logOut"]
+- !private ["PSs9AnyObject", "mainScreen"]
 - ["PSs9AnyObject", "maskImage"]
 - !private ["PSs9AnyObject", "maskWithImage"]
 - !private ["PSs9AnyObject", "navigationBar"]
@@ -175,6 +194,7 @@ depends-member:
 - !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
 - !private ["PSs11BooleanType", "init"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC6CGRect", "height"]
 - !private ["PSs11CVarArgType", "CGImage"]
 - !private ["PSs11CVarArgType", "CGImageCreateWithMask"]
 - !private ["PSs11CVarArgType", "CGImageGetBitsPerComponent"]
@@ -212,8 +232,17 @@ depends-member:
 - !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "UIImage"]
+- !private ["PSs11CVarArgType", "UIScreen"]
 - !private ["PSs11CVarArgType", "addValue"]
+- !private ["PSs11CVarArgType", "bounds"]
 - ["PSs11CVarArgType", "btLogoutPressed"]
+- ["PSs11CVarArgType", "constButtonToBotton"]
+- ["PSs11CVarArgType", "constLegendaToPicker"]
+- ["PSs11CVarArgType", "constPickerToLogout"]
+- ["PSs11CVarArgType", "constPontosToVisibilidade"]
+- ["PSs11CVarArgType", "constVisibilidadeToPicker"]
+- !private ["PSs11CVarArgType", "constant"]
+- ["PSs11CVarArgType", "contPinToVisibilidade"]
 - !private ["PSs11CVarArgType", "currentAccessToken"]
 - !private ["PSs11CVarArgType", "dataSource"]
 - !private ["PSs11CVarArgType", "dataTaskWithRequest"]
@@ -226,6 +255,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "isValidJSONObject"]
 - !private ["PSs11CVarArgType", "localizedDescription"]
 - !private ["PSs11CVarArgType", "logOut"]
+- !private ["PSs11CVarArgType", "mainScreen"]
 - ["PSs11CVarArgType", "maskImage"]
 - !private ["PSs11CVarArgType", "maskWithImage"]
 - !private ["PSs11CVarArgType", "navigationBar"]
@@ -275,6 +305,7 @@ depends-member:
 - !private ["C6Tatari20ConfigViewController", "CGImageGetHeight"]
 - !private ["C6Tatari20ConfigViewController", "CGImageGetWidth"]
 - !private ["C6Tatari20ConfigViewController", "CGImageMaskCreate"]
+- !private ["C6Tatari20ConfigViewController", "CGRect"]
 - !private ["C6Tatari20ConfigViewController", "FBSDKAccessToken"]
 - !private ["C6Tatari20ConfigViewController", "FBSDKLoginManager"]
 - ["C6Tatari20ConfigViewController", "HTTPPostJSON"]
@@ -287,6 +318,7 @@ depends-member:
 - !private ["C6Tatari20ConfigViewController", "NSForegroundColorAttributeName"]
 - !private ["C6Tatari20ConfigViewController", "NSJSONSerialization"]
 - !private ["C6Tatari20ConfigViewController", "NSJSONWritingOptions"]
+- ["C6Tatari20ConfigViewController", "NSLayoutConstraint"]
 - !private ["C6Tatari20ConfigViewController", "NSMutableDictionary"]
 - ["C6Tatari20ConfigViewController", "NSMutableURLRequest"]
 - !private ["C6Tatari20ConfigViewController", "NSString"]
@@ -301,9 +333,16 @@ depends-member:
 - ["C6Tatari20ConfigViewController", "UIImage"]
 - ["C6Tatari20ConfigViewController", "UIImageView"]
 - ["C6Tatari20ConfigViewController", "UIPickerView"]
+- !private ["C6Tatari20ConfigViewController", "UIScreen"]
 - ["C6Tatari20ConfigViewController", "UISwitch"]
 - ["C6Tatari20ConfigViewController", "Void"]
 - ["C6Tatari20ConfigViewController", "btLogoutPressed"]
+- ["C6Tatari20ConfigViewController", "constButtonToBotton"]
+- ["C6Tatari20ConfigViewController", "constLegendaToPicker"]
+- ["C6Tatari20ConfigViewController", "constPickerToLogout"]
+- ["C6Tatari20ConfigViewController", "constPontosToVisibilidade"]
+- ["C6Tatari20ConfigViewController", "constVisibilidadeToPicker"]
+- ["C6Tatari20ConfigViewController", "contPinToVisibilidade"]
 - ["C6Tatari20ConfigViewController", "deinit"]
 - ["C6Tatari20ConfigViewController", "didReceiveMemoryWarning"]
 - ["C6Tatari20ConfigViewController", "init"]
@@ -373,10 +412,19 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
+- !private ["PSs23CustomStringConvertible", "UIScreen"]
 - !private ["PSs23CustomStringConvertible", "Value"]
 - !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs23CustomStringConvertible", "addValue"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
 - ["PSs23CustomStringConvertible", "btLogoutPressed"]
+- ["PSs23CustomStringConvertible", "constButtonToBotton"]
+- ["PSs23CustomStringConvertible", "constLegendaToPicker"]
+- ["PSs23CustomStringConvertible", "constPickerToLogout"]
+- ["PSs23CustomStringConvertible", "constPontosToVisibilidade"]
+- ["PSs23CustomStringConvertible", "constVisibilidadeToPicker"]
+- !private ["PSs23CustomStringConvertible", "constant"]
+- ["PSs23CustomStringConvertible", "contPinToVisibilidade"]
 - !private ["PSs23CustomStringConvertible", "count"]
 - !private ["PSs23CustomStringConvertible", "currentAccessToken"]
 - !private ["PSs23CustomStringConvertible", "dataSource"]
@@ -390,6 +438,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "isValidJSONObject"]
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - !private ["PSs23CustomStringConvertible", "logOut"]
+- !private ["PSs23CustomStringConvertible", "mainScreen"]
 - ["PSs23CustomStringConvertible", "maskImage"]
 - !private ["PSs23CustomStringConvertible", "maskWithImage"]
 - !private ["PSs23CustomStringConvertible", "navigationBar"]
@@ -461,9 +510,18 @@ depends-member:
 - !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "UIImage"]
+- !private ["PSs9Equatable", "UIScreen"]
 - !private ["PSs9Equatable", "_getBuiltinLogicValue"]
 - !private ["PSs9Equatable", "addValue"]
+- !private ["PSs9Equatable", "bounds"]
 - ["PSs9Equatable", "btLogoutPressed"]
+- ["PSs9Equatable", "constButtonToBotton"]
+- ["PSs9Equatable", "constLegendaToPicker"]
+- ["PSs9Equatable", "constPickerToLogout"]
+- ["PSs9Equatable", "constPontosToVisibilidade"]
+- ["PSs9Equatable", "constVisibilidadeToPicker"]
+- !private ["PSs9Equatable", "constant"]
+- ["PSs9Equatable", "contPinToVisibilidade"]
 - !private ["PSs9Equatable", "currentAccessToken"]
 - !private ["PSs9Equatable", "dataSource"]
 - !private ["PSs9Equatable", "dataTaskWithRequest"]
@@ -471,11 +529,13 @@ depends-member:
 - !private ["PSs9Equatable", "dataWithJSONObject"]
 - !private ["PSs9Equatable", "delegate"]
 - ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "height"]
 - !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "init"]
 - !private ["PSs9Equatable", "isValidJSONObject"]
 - !private ["PSs9Equatable", "localizedDescription"]
 - !private ["PSs9Equatable", "logOut"]
+- !private ["PSs9Equatable", "mainScreen"]
 - ["PSs9Equatable", "maskImage"]
 - !private ["PSs9Equatable", "maskWithImage"]
 - !private ["PSs9Equatable", "navigationBar"]
@@ -553,9 +613,18 @@ depends-member:
 - !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "UIImage"]
+- !private ["PSs8Hashable", "UIScreen"]
 - !private ["PSs8Hashable", "_getBuiltinLogicValue"]
 - !private ["PSs8Hashable", "addValue"]
+- !private ["PSs8Hashable", "bounds"]
 - ["PSs8Hashable", "btLogoutPressed"]
+- ["PSs8Hashable", "constButtonToBotton"]
+- ["PSs8Hashable", "constLegendaToPicker"]
+- ["PSs8Hashable", "constPickerToLogout"]
+- ["PSs8Hashable", "constPontosToVisibilidade"]
+- ["PSs8Hashable", "constVisibilidadeToPicker"]
+- !private ["PSs8Hashable", "constant"]
+- ["PSs8Hashable", "contPinToVisibilidade"]
 - !private ["PSs8Hashable", "currentAccessToken"]
 - !private ["PSs8Hashable", "dataSource"]
 - !private ["PSs8Hashable", "dataTaskWithRequest"]
@@ -568,6 +637,7 @@ depends-member:
 - !private ["PSs8Hashable", "isValidJSONObject"]
 - !private ["PSs8Hashable", "localizedDescription"]
 - !private ["PSs8Hashable", "logOut"]
+- !private ["PSs8Hashable", "mainScreen"]
 - ["PSs8Hashable", "maskImage"]
 - !private ["PSs8Hashable", "maskWithImage"]
 - !private ["PSs8Hashable", "navigationBar"]
@@ -677,8 +747,15 @@ depends-member:
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
+- !private ["PSo8NSCoding", "UIScreen"]
 - !private ["PSo8NSCoding", "addValue"]
 - ["PSo8NSCoding", "btLogoutPressed"]
+- ["PSo8NSCoding", "constButtonToBotton"]
+- ["PSo8NSCoding", "constLegendaToPicker"]
+- ["PSo8NSCoding", "constPickerToLogout"]
+- ["PSo8NSCoding", "constPontosToVisibilidade"]
+- ["PSo8NSCoding", "constVisibilidadeToPicker"]
+- ["PSo8NSCoding", "contPinToVisibilidade"]
 - !private ["PSo8NSCoding", "currentAccessToken"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "dataUsingEncoding"]
@@ -752,7 +829,14 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
+- !private ["PSo26NSExtensionRequestHandling", "UIScreen"]
 - ["PSo26NSExtensionRequestHandling", "btLogoutPressed"]
+- ["PSo26NSExtensionRequestHandling", "constButtonToBotton"]
+- ["PSo26NSExtensionRequestHandling", "constLegendaToPicker"]
+- ["PSo26NSExtensionRequestHandling", "constPickerToLogout"]
+- ["PSo26NSExtensionRequestHandling", "constPontosToVisibilidade"]
+- ["PSo26NSExtensionRequestHandling", "constVisibilidadeToPicker"]
+- ["PSo26NSExtensionRequestHandling", "contPinToVisibilidade"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "maskImage"]
@@ -776,6 +860,7 @@ depends-member:
 - !private ["CSo19NSJSONSerialization", "isValidJSONObject"]
 - !private ["VSC20NSJSONWritingOptions", "PrettyPrinted"]
 - !private ["VSC20NSJSONWritingOptions", "init"]
+- !private ["CSo18NSLayoutConstraint", "constant"]
 - !private ["PSo16NSMutableCopying", "HTTPBody"]
 - !private ["PSo16NSMutableCopying", "HTTPMethod"]
 - !private ["PSo16NSMutableCopying", "addValue"]
@@ -799,6 +884,7 @@ depends-member:
 - !private ["CSo8NSObject", "CGImageGetHeight"]
 - !private ["CSo8NSObject", "CGImageGetWidth"]
 - !private ["CSo8NSObject", "CGImageMaskCreate"]
+- !private ["CSo8NSObject", "CGRect"]
 - !private ["CSo8NSObject", "FBSDKAccessToken"]
 - !private ["CSo8NSObject", "FBSDKLoginManager"]
 - !private ["CSo8NSObject", "HTTPBody"]
@@ -813,6 +899,7 @@ depends-member:
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
 - !private ["CSo8NSObject", "NSJSONWritingOptions"]
+- ["CSo8NSObject", "NSLayoutConstraint"]
 - !private ["CSo8NSObject", "NSMutableDictionary"]
 - ["CSo8NSObject", "NSMutableURLRequest"]
 - !private ["CSo8NSObject", "NSString"]
@@ -828,10 +915,19 @@ depends-member:
 - ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "UIImageView"]
 - ["CSo8NSObject", "UIPickerView"]
+- !private ["CSo8NSObject", "UIScreen"]
 - ["CSo8NSObject", "UISwitch"]
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addValue"]
+- !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "btLogoutPressed"]
+- ["CSo8NSObject", "constButtonToBotton"]
+- ["CSo8NSObject", "constLegendaToPicker"]
+- ["CSo8NSObject", "constPickerToLogout"]
+- ["CSo8NSObject", "constPontosToVisibilidade"]
+- ["CSo8NSObject", "constVisibilidadeToPicker"]
+- !private ["CSo8NSObject", "constant"]
+- ["CSo8NSObject", "contPinToVisibilidade"]
 - !private ["CSo8NSObject", "currentAccessToken"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "dataTaskWithRequest"]
@@ -844,6 +940,7 @@ depends-member:
 - !private ["CSo8NSObject", "isValidJSONObject"]
 - !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "logOut"]
+- !private ["CSo8NSObject", "mainScreen"]
 - ["CSo8NSObject", "maskImage"]
 - !private ["CSo8NSObject", "maskWithImage"]
 - !private ["CSo8NSObject", "navigationBar"]
@@ -903,8 +1000,17 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
+- !private ["PSo16NSObjectProtocol", "UIScreen"]
 - !private ["PSo16NSObjectProtocol", "addValue"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "btLogoutPressed"]
+- ["PSo16NSObjectProtocol", "constButtonToBotton"]
+- ["PSo16NSObjectProtocol", "constLegendaToPicker"]
+- ["PSo16NSObjectProtocol", "constPickerToLogout"]
+- ["PSo16NSObjectProtocol", "constPontosToVisibilidade"]
+- ["PSo16NSObjectProtocol", "constVisibilidadeToPicker"]
+- !private ["PSo16NSObjectProtocol", "constant"]
+- ["PSo16NSObjectProtocol", "contPinToVisibilidade"]
 - !private ["PSo16NSObjectProtocol", "currentAccessToken"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "dataTaskWithRequest"]
@@ -917,6 +1023,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isValidJSONObject"]
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "logOut"]
+- !private ["PSo16NSObjectProtocol", "mainScreen"]
 - ["PSo16NSObjectProtocol", "maskImage"]
 - !private ["PSo16NSObjectProtocol", "maskWithImage"]
 - !private ["PSo16NSObjectProtocol", "navigationBar"]
@@ -1062,7 +1169,14 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
+- !private ["PSo21UIAppearanceContainer", "UIScreen"]
 - ["PSo21UIAppearanceContainer", "btLogoutPressed"]
+- ["PSo21UIAppearanceContainer", "constButtonToBotton"]
+- ["PSo21UIAppearanceContainer", "constLegendaToPicker"]
+- ["PSo21UIAppearanceContainer", "constPickerToLogout"]
+- ["PSo21UIAppearanceContainer", "constPontosToVisibilidade"]
+- ["PSo21UIAppearanceContainer", "constVisibilidadeToPicker"]
+- ["PSo21UIAppearanceContainer", "contPinToVisibilidade"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
@@ -1117,7 +1231,14 @@ depends-member:
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
+- !private ["PSo18UIContentContainer", "UIScreen"]
 - ["PSo18UIContentContainer", "btLogoutPressed"]
+- ["PSo18UIContentContainer", "constButtonToBotton"]
+- ["PSo18UIContentContainer", "constLegendaToPicker"]
+- ["PSo18UIContentContainer", "constPickerToLogout"]
+- ["PSo18UIContentContainer", "constPontosToVisibilidade"]
+- ["PSo18UIContentContainer", "constVisibilidadeToPicker"]
+- ["PSo18UIContentContainer", "contPinToVisibilidade"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "maskImage"]
@@ -1174,7 +1295,14 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
+- !private ["PSo18UIFocusEnvironment", "UIScreen"]
 - ["PSo18UIFocusEnvironment", "btLogoutPressed"]
+- ["PSo18UIFocusEnvironment", "constButtonToBotton"]
+- ["PSo18UIFocusEnvironment", "constLegendaToPicker"]
+- ["PSo18UIFocusEnvironment", "constPickerToLogout"]
+- ["PSo18UIFocusEnvironment", "constPontosToVisibilidade"]
+- ["PSo18UIFocusEnvironment", "constVisibilidadeToPicker"]
+- ["PSo18UIFocusEnvironment", "contPinToVisibilidade"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
@@ -1236,6 +1364,8 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "UIColor"]
 - !private ["PSo22UIPickerViewDataSource", "UIFont"]
 - !private ["PSo22UIPickerViewDataSource", "UIImage"]
+- !private ["PSo22UIPickerViewDataSource", "UIScreen"]
+- !private ["PSo22UIPickerViewDataSource", "constButtonToBotton"]
 - !private ["PSo22UIPickerViewDataSource", "navigationController"]
 - ["PSo22UIPickerViewDataSource", "numberOfComponentsInPickerView"]
 - !private ["PSo22UIPickerViewDataSource", "picker"]
@@ -1275,6 +1405,8 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "UIColor"]
 - !private ["PSo20UIPickerViewDelegate", "UIFont"]
 - !private ["PSo20UIPickerViewDelegate", "UIImage"]
+- !private ["PSo20UIPickerViewDelegate", "UIScreen"]
+- !private ["PSo20UIPickerViewDelegate", "constButtonToBotton"]
 - !private ["PSo20UIPickerViewDelegate", "navigationController"]
 - ["PSo20UIPickerViewDelegate", "numberOfComponentsInPickerView"]
 - !private ["PSo20UIPickerViewDelegate", "picker"]
@@ -1293,6 +1425,7 @@ depends-member:
 - !private ["CSo11UIResponder", "CGImageGetHeight"]
 - !private ["CSo11UIResponder", "CGImageGetWidth"]
 - !private ["CSo11UIResponder", "CGImageMaskCreate"]
+- !private ["CSo11UIResponder", "CGRect"]
 - !private ["CSo11UIResponder", "FBSDKAccessToken"]
 - !private ["CSo11UIResponder", "FBSDKLoginManager"]
 - ["CSo11UIResponder", "HTTPPostJSON"]
@@ -1305,6 +1438,7 @@ depends-member:
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
 - !private ["CSo11UIResponder", "NSJSONWritingOptions"]
+- ["CSo11UIResponder", "NSLayoutConstraint"]
 - !private ["CSo11UIResponder", "NSMutableDictionary"]
 - ["CSo11UIResponder", "NSMutableURLRequest"]
 - !private ["CSo11UIResponder", "NSString"]
@@ -1319,9 +1453,16 @@ depends-member:
 - ["CSo11UIResponder", "UIImage"]
 - ["CSo11UIResponder", "UIImageView"]
 - ["CSo11UIResponder", "UIPickerView"]
+- !private ["CSo11UIResponder", "UIScreen"]
 - ["CSo11UIResponder", "UISwitch"]
 - ["CSo11UIResponder", "Void"]
 - ["CSo11UIResponder", "btLogoutPressed"]
+- ["CSo11UIResponder", "constButtonToBotton"]
+- ["CSo11UIResponder", "constLegendaToPicker"]
+- ["CSo11UIResponder", "constPickerToLogout"]
+- ["CSo11UIResponder", "constPontosToVisibilidade"]
+- ["CSo11UIResponder", "constVisibilidadeToPicker"]
+- ["CSo11UIResponder", "contPinToVisibilidade"]
 - !private ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
@@ -1342,6 +1483,8 @@ depends-member:
 - !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["CSo8UIScreen", "bounds"]
+- !private ["CSo8UIScreen", "mainScreen"]
 - !private ["PSo16UIStateRestoring", "CGImageCreateWithMask"]
 - !private ["PSo16UIStateRestoring", "CGImageGetBitsPerComponent"]
 - !private ["PSo16UIStateRestoring", "CGImageGetBitsPerPixel"]
@@ -1373,7 +1516,14 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
+- !private ["PSo16UIStateRestoring", "UIScreen"]
 - ["PSo16UIStateRestoring", "btLogoutPressed"]
+- ["PSo16UIStateRestoring", "constButtonToBotton"]
+- ["PSo16UIStateRestoring", "constLegendaToPicker"]
+- ["PSo16UIStateRestoring", "constPickerToLogout"]
+- ["PSo16UIStateRestoring", "constPontosToVisibilidade"]
+- ["PSo16UIStateRestoring", "constVisibilidadeToPicker"]
+- ["PSo16UIStateRestoring", "contPinToVisibilidade"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "maskImage"]
@@ -1424,12 +1574,21 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
+- !private ["PSo18UITraitEnvironment", "UIScreen"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "btLogoutPressed"]
+- ["PSo18UITraitEnvironment", "constButtonToBotton"]
+- ["PSo18UITraitEnvironment", "constLegendaToPicker"]
+- ["PSo18UITraitEnvironment", "constPickerToLogout"]
+- ["PSo18UITraitEnvironment", "constPontosToVisibilidade"]
+- ["PSo18UITraitEnvironment", "constVisibilidadeToPicker"]
+- ["PSo18UITraitEnvironment", "contPinToVisibilidade"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "mainScreen"]
 - ["PSo18UITraitEnvironment", "maskImage"]
 - !private ["PSo18UITraitEnvironment", "navigationBar"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
@@ -1460,6 +1619,7 @@ depends-member:
 - !private ["CSo16UIViewController", "CGImageGetHeight"]
 - !private ["CSo16UIViewController", "CGImageGetWidth"]
 - !private ["CSo16UIViewController", "CGImageMaskCreate"]
+- !private ["CSo16UIViewController", "CGRect"]
 - !private ["CSo16UIViewController", "FBSDKAccessToken"]
 - !private ["CSo16UIViewController", "FBSDKLoginManager"]
 - ["CSo16UIViewController", "HTTPPostJSON"]
@@ -1472,6 +1632,7 @@ depends-member:
 - !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
 - !private ["CSo16UIViewController", "NSJSONWritingOptions"]
+- ["CSo16UIViewController", "NSLayoutConstraint"]
 - !private ["CSo16UIViewController", "NSMutableDictionary"]
 - ["CSo16UIViewController", "NSMutableURLRequest"]
 - !private ["CSo16UIViewController", "NSString"]
@@ -1486,9 +1647,16 @@ depends-member:
 - ["CSo16UIViewController", "UIImage"]
 - ["CSo16UIViewController", "UIImageView"]
 - ["CSo16UIViewController", "UIPickerView"]
+- !private ["CSo16UIViewController", "UIScreen"]
 - ["CSo16UIViewController", "UISwitch"]
 - ["CSo16UIViewController", "Void"]
 - ["CSo16UIViewController", "btLogoutPressed"]
+- ["CSo16UIViewController", "constButtonToBotton"]
+- ["CSo16UIViewController", "constLegendaToPicker"]
+- ["CSo16UIViewController", "constPickerToLogout"]
+- ["CSo16UIViewController", "constPontosToVisibilidade"]
+- ["CSo16UIViewController", "constVisibilidadeToPicker"]
+- ["CSo16UIViewController", "contPinToVisibilidade"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "maskImage"]
@@ -1572,6 +1740,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "dataSource"]
 - !private ["PSs12_Reflectable", "dataUsingEncoding"]
 - !private ["PSs12_Reflectable", "delegate"]
+- !private ["PSs12_Reflectable", "height"]
 - !private ["PSs12_Reflectable", "image"]
 - ["PSs12_Reflectable", "init"]
 - !private ["PSs12_Reflectable", "setObject"]
@@ -1592,6 +1761,7 @@ depends-nominal:
 - !private "PSs25BooleanLiteralConvertible"
 - !private "PSs11BooleanType"
 - !private "V12CoreGraphics7CGFloat"
+- !private "VSC6CGRect"
 - "PSs11CVarArgType"
 - "PSs14CollectionType"
 - !private "PSs10Comparable"
@@ -1633,6 +1803,7 @@ depends-nominal:
 - !private "PSo17NSFastEnumeration"
 - !private "CSo19NSJSONSerialization"
 - !private "VSC20NSJSONWritingOptions"
+- !private "CSo18NSLayoutConstraint"
 - !private "PSo16NSMutableCopying"
 - !private "CSo19NSMutableDictionary"
 - !private "CSo19NSMutableURLRequest"
@@ -1683,6 +1854,7 @@ depends-nominal:
 - "PSo22UIPickerViewDataSource"
 - "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
+- !private "CSo8UIScreen"
 - "PSo16UIStateRestoring"
 - !private "PSo21UITableViewDataSource"
 - "PSo18UITraitEnvironment"
@@ -1775,4 +1947,4 @@ depends-external:
 - "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
 - "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
-interface-hash: "e8742ac574b086a45f54ba6e97684aa3"
+interface-hash: "82629707de0d7f70e534faf0c3b3b2e6"

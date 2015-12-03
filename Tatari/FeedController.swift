@@ -211,9 +211,12 @@ class FeedController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let defaults = NSUserDefaults.standardUserDefaults()
         let fb_id = defaults.stringForKey("fb_id")
+        
+        if(FBSDKAccessToken.currentAccessToken() != nil){
        
-        mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
-        mutable_result.setObject(self.point,forKey:"pointer")
+            mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+            mutable_result.setObject(self.point,forKey:"pointer")
+        }
         
         self.HTTPPostJSON("http://45.55.146.229:116/feed", jsonObj: mutable_result, callback: { (data,error) -> Void in
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!)

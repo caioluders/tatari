@@ -59,7 +59,11 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.cleanAllArrays()
         self.activityVote.startAnimating()
         let mutable_result =  NSMutableDictionary()
-        mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        
+        if(FBSDKAccessToken.currentAccessToken() != nil){
+            mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        }
+        
         self.HTTPPostJSON("http://45.55.146.229:116/poll", jsonObj: mutable_result, callback: { (data,error) -> Void in
             var err:NSError?
             let json = JSON(data: data.dataUsingEncoding(NSUTF8StringEncoding)!,error:&err)

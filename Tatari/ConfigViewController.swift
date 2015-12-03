@@ -15,12 +15,27 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var swt_friends: UISwitch!
     @IBOutlet weak var swt_nobody: UISwitch!
     @IBOutlet weak var pin_avatar: UIImageView!
+    @IBOutlet weak var constPickerToLogout: NSLayoutConstraint!
+    @IBOutlet weak var constLegendaToPicker: NSLayoutConstraint!
+    @IBOutlet weak var constVisibilidadeToPicker: NSLayoutConstraint!
     
+    @IBOutlet weak var constPontosToVisibilidade: NSLayoutConstraint!
+    @IBOutlet weak var contPinToVisibilidade: NSLayoutConstraint!
+    
+    @IBOutlet weak var constButtonToBotton: NSLayoutConstraint!
     @IBOutlet weak var picker: UIPickerView!
     var pickerData: [String] = [String]()
     
     override func viewDidAppear(animated: Bool) {
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
+        
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        var height = screenSize.height
+        
+        if(height == 667){
+            self.constButtonToBotton.constant = 90
+        }
+        
     }
     
     override func viewDidLoad() {

@@ -1,0 +1,1 @@
+/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Intermediates/ArchiveIntermediates/Tatari/InstallationBuildProductsLocation/Applications/Tatari.app
