@@ -69,33 +69,34 @@ class ViewController: UIViewController,FBSDKLoginButtonDelegate {
                     let mutable_result =  NSMutableDictionary(dictionary:resultdict)
                     mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
                     let push_woosh = PushNotificationManager.pushManager()
-                    mutable_result.setObject(push_woosh.getPushToken(),forKey:"device_token")
                     
-                    
-                    
-                    var request = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil);
-                    
-                    request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
-                        if error == nil {
-                            let result_dict = result as! NSDictionary!
-                            let fbs_friends : NSMutableArray = []
-                            for i in 0...Int((result_dict["data"]?.count)!)-1 {
-                                let fb_c_id = result_dict["data"]![i]["id"]!
-                                fbs_friends.addObject(fb_c_id!)
+                    if(push_woosh.getPushToken() != nil){
+                        mutable_result.setObject(push_woosh.getPushToken(),forKey:"device_token")
+
+                        var request = FBSDKGraphRequest(graphPath:"/me/friends", parameters: nil);
+                        
+                        request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
+                            if error == nil {
+                                let result_dict = result as! NSDictionary!
+                                let fbs_friends : NSMutableArray = []
+                                for i in 0...Int((result_dict["data"]?.count)!)-1 {
+                                    let fb_c_id = result_dict["data"]![i]["id"]!
+                                    fbs_friends.addObject(fb_c_id!)
+                                }
+                                mutable_result.setObject(fbs_friends,forKey:"friends")
+                                
+                                self.HTTPPostJSON("http://45.55.146.229:116/user", jsonObj: mutable_result, callback: { (data,error) -> Void in
+                                    print(data)
+                                })
+                                
+                                self.performSegueWithIdentifier("main_segue", sender: self)
+                            } else {
+                                print("Error Getting Friends \(error)");
                             }
-                            mutable_result.setObject(fbs_friends,forKey:"friends")
-                            
-                            self.HTTPPostJSON("http://45.55.146.229:116/user", jsonObj: mutable_result, callback: { (data,error) -> Void in
-                                print(data)
-                            })
-                            
-                            self.performSegueWithIdentifier("main_segue", sender: self)
-                        } else {
-                            print("Error Getting Friends \(error)");
                         }
-                    }
                     
-            
+                    }
+                    self.performSegueWithIdentifier("main_segue", sender: self)
                 }
             })
         }

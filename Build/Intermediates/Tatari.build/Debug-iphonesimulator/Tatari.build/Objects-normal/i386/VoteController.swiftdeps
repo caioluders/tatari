@@ -6,98 +6,104 @@ provides-nominal:
 provides-member:
 - ["C6Tatari14VoteController", ""]
 provides-dynamic-lookup:
-- "cleanAllArrays"
-- "imagePickerController"
-- "names"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "getDataFromServer"
-- "qtdVotes"
-- "buttonVoteAction"
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
-- "idBotaoVoto"
+- "HTTPsendRequest"
 - "ids"
+- "qtdVotes"
+- "data"
 - "HTTPPostJSON"
 - "vote_for"
+- "viewDidAppear"
 - "imagePicker"
-- "HTTPsendRequest"
-- "items"
-- "data"
-- "voted"
 - "add_photo"
-- "btParticipar"
-- "JSONStringify"
+- "cleanAllArrays"
+- "items"
+- "names"
+- "imagePickerController"
 - "pictures"
+- "buttonVoteAction"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "didReceiveMemoryWarning"
 - "activityVote"
+- "btParticipar"
+- "idsVotadas"
+- "idBotaoVoto"
+- "getDataFromServer"
+- "JSONStringify"
+- "voted"
 depends-top-level:
-- !private "CFStringCompareFlags"
-- !private "UIImagePickerControllerSourceType"
-- "AnyObject"
-- !private "VotoTableViewCell"
 - "UIImage"
-- !private "print"
-- !private "Dictionary"
-- !private "Array"
-- "UITableViewDataSource"
-- "UIImagePickerController"
-- !private "UIImageJPEGRepresentation"
-- !private "=="
-- "UITableViewDelegate"
-- !private "NSData"
-- !private "UIImagePickerControllerOriginalImage"
-- "UIActivityIndicatorView"
-- !private "FBSDKGraphRequest"
-- "UIButton"
-- !private "CFComparisonResult"
-- !private "FBSDKGraphRequestConnection"
-- !private "UIImagePickerControllerMediaType"
-- "UITableView"
-- "NSIndexPath"
-- !private "UINib"
-- !private "CFStringCompare"
-- !private "dispatch_get_main_queue"
-- "NSMutableURLRequest"
-- !private "NSUTF8StringEncoding"
-- !private "NSURL"
-- "String"
-- !private "NSJSONWritingOptions"
-- !private "NSError"
-- !private "dispatch_async"
-- !private "UIControlState"
-- "StringLiteralType"
-- !private "UIImagePickerControllerEditedImage"
-- !private "NSUserDefaults"
-- "UIViewController"
-- "Void"
-- !private "UIControlEvents"
-- !private "NSString"
-- !private "NSURLSession"
 - "NSMutableData"
-- !private "NSDataBase64EncodingOptions"
-- "UITableViewCell"
-- "CGFloat"
-- !private "FBSDKAccessToken"
-- !private "NSDataBase64DecodingOptions"
-- "VoteController"
-- !private "UIViewContentMode"
-- "Bool"
-- !private "NSLog"
-- !private "NSJSONSerialization"
+- "Void"
+- !private "UIControlState"
+- !private "FBSDKGraphRequestConnection"
+- !private "CFComparisonResult"
+- "StringLiteralType"
+- !private "NSJSONWritingOptions"
+- !private "UINib"
 - !private "kUTTypeImage"
-- !private "JSON"
-- !private "!="
-- !private "BooleanLiteralType"
+- !private "CFStringCompare"
+- !private "VotoTableViewCell"
+- !private "Array"
+- "UIViewController"
+- !private "Dictionary"
+- !private "UIImagePickerControllerSourceType"
+- !private "UIControlEvents"
+- "UITableViewDelegate"
+- !private "FBSDKGraphRequest"
 - !private "+"
+- !private "NSString"
+- "UITableViewDataSource"
+- !private "NSDataBase64EncodingOptions"
+- !private "NSJSONSerialization"
+- "UITableViewCell"
+- "String"
+- !private "NSFontAttributeName"
+- !private "NSError"
+- !private "dispatch_get_main_queue"
+- !private "UIImagePickerControllerOriginalImage"
+- !private "NSURLSession"
+- "Bool"
+- !private "dispatch_async"
+- "VoteController"
+- !private "FBSDKAccessToken"
+- "NSMutableURLRequest"
+- !private "UIColor"
 - !private "UIImageView"
-- "UINavigationControllerDelegate"
-- "UIImagePickerControllerDelegate"
-- !private "NSMutableDictionary"
+- !private "!="
 - "Int"
+- !private "=="
+- !private "NSDataBase64DecodingOptions"
+- !private "UIImagePickerControllerMediaType"
+- !private "UIViewContentMode"
+- "UITableView"
+- !private "UIImageJPEGRepresentation"
+- !private "NSUserDefaults"
+- !private "UIImagePickerControllerEditedImage"
+- !private "BooleanLiteralType"
+- "NSIndexPath"
+- !private "CFStringCompareFlags"
+- !private "UIFont"
 - "NSURLConnectionDelegate"
+- !private "NSForegroundColorAttributeName"
+- "UIImagePickerControllerDelegate"
+- !private "NSURL"
+- !private "JSON"
+- "UINavigationControllerDelegate"
+- "UIActivityIndicatorView"
+- "CGFloat"
+- "UIButton"
+- "AnyObject"
+- "UIImagePickerController"
+- !private "NSUTF8StringEncoding"
+- !private "NSLog"
+- !private "NSMutableDictionary"
+- !private "NSData"
+- !private "print"
 depends-member:
 - !private ["PSs9AnyObject", "CFComparisonResult"]
 - !private ["PSs9AnyObject", "CFStringCompare"]
@@ -114,6 +120,8 @@ depends-member:
 - !private ["PSs9AnyObject", "NSData"]
 - !private ["PSs9AnyObject", "NSDataBase64DecodingOptions"]
 - !private ["PSs9AnyObject", "NSDataBase64EncodingOptions"]
+- !private ["PSs9AnyObject", "NSFontAttributeName"]
+- !private ["PSs9AnyObject", "NSForegroundColorAttributeName"]
 - !private ["PSs9AnyObject", "NSJSONSerialization"]
 - !private ["PSs9AnyObject", "NSJSONWritingOptions"]
 - !private ["PSs9AnyObject", "NSLog"]
@@ -126,8 +134,10 @@ depends-member:
 - !private ["PSs9AnyObject", "NSUTF8StringEncoding"]
 - !private ["PSs9AnyObject", "NSUserDefaults"]
 - !private ["PSs9AnyObject", "String"]
+- !private ["PSs9AnyObject", "UIColor"]
 - !private ["PSs9AnyObject", "UIControlEvents"]
 - !private ["PSs9AnyObject", "UIControlState"]
+- !private ["PSs9AnyObject", "UIFont"]
 - !private ["PSs9AnyObject", "UIImage"]
 - !private ["PSs9AnyObject", "UIImageJPEGRepresentation"]
 - !private ["PSs9AnyObject", "UIImagePickerController"]
@@ -144,12 +154,14 @@ depends-member:
 - ["PSs9AnyObject", "add_photo"]
 - !private ["PSs9AnyObject", "allowsEditing"]
 - !private ["PSs9AnyObject", "allowsSelection"]
+- !private ["PSs9AnyObject", "backgroundColor"]
 - !private ["PSs9AnyObject", "backgroundView"]
 - !private ["PSs9AnyObject", "base64EncodedStringWithOptions"]
 - ["PSs9AnyObject", "btParticipar"]
 - !private ["PSs9AnyObject", "btVote"]
 - ["PSs9AnyObject", "buttonVoteAction"]
 - ["PSs9AnyObject", "cleanAllArrays"]
+- !private ["PSs9AnyObject", "clearColor"]
 - ["PSs9AnyObject", "connection"]
 - ["PSs9AnyObject", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9AnyObject", "contentMode"]
@@ -170,6 +182,7 @@ depends-member:
 - !private ["PSs9AnyObject", "hidesWhenStopped"]
 - ["PSs9AnyObject", "idBotaoVoto"]
 - ["PSs9AnyObject", "ids"]
+- ["PSs9AnyObject", "idsVotadas"]
 - !private ["PSs9AnyObject", "image"]
 - ["PSs9AnyObject", "imagePicker"]
 - ["PSs9AnyObject", "imagePickerController"]
@@ -186,6 +199,7 @@ depends-member:
 - !private ["PSs9AnyObject", "localizedDescription"]
 - !private ["PSs9AnyObject", "mediaTypes"]
 - ["PSs9AnyObject", "names"]
+- !private ["PSs9AnyObject", "navigationBar"]
 - ["PSs9AnyObject", "navigationController"]
 - ["PSs9AnyObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs9AnyObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -227,7 +241,9 @@ depends-member:
 - !private ["PSs9AnyObject", "tag"]
 - !private ["PSs9AnyObject", "text"]
 - !private ["PSs9AnyObject", "title"]
+- !private ["PSs9AnyObject", "titleTextAttributes"]
 - !private ["PSs9AnyObject", "tokenString"]
+- ["PSs9AnyObject", "viewDidAppear"]
 - ["PSs9AnyObject", "viewDidLoad"]
 - ["PSs9AnyObject", "viewForZoomingInScrollView"]
 - ["PSs9AnyObject", "vote_for"]
@@ -242,6 +258,7 @@ depends-member:
 - !private ["Sa", "contains"]
 - !private ["Sa", "count"]
 - !private ["Sa", "deinit"]
+- !private ["Sa", "reverse"]
 - !private ["Sa", "subscript"]
 - !private ["PSs23ArrayLiteralConvertible", "CompareCaseInsensitive"]
 - !private ["PSs23ArrayLiteralConvertible", "Element"]
@@ -256,15 +273,18 @@ depends-member:
 - !private ["PSs23ArrayLiteralConvertible", "contains"]
 - !private ["PSs23ArrayLiteralConvertible", "count"]
 - !private ["PSs23ArrayLiteralConvertible", "init"]
+- !private ["PSs23ArrayLiteralConvertible", "reverse"]
 - !private ["PSs23ArrayLiteralConvertible", "stringValue"]
 - !private ["PSs23ArrayLiteralConvertible", "subscript"]
 - !private ["VSs10ArraySlice", "Generator"]
 - !private ["VSs10ArraySlice", "Index"]
 - !private ["PSs22BidirectionalIndexType", "Distance"]
 - !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "Stride"]
 - !private ["PSs22BidirectionalIndexType", "init"]
 - !private ["PSs21BitwiseOperationsType", "Distance"]
 - !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Stride"]
 - !private ["PSs21BitwiseOperationsType", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
@@ -307,6 +327,8 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSData"]
 - !private ["PSs11CVarArgType", "NSDataBase64DecodingOptions"]
 - !private ["PSs11CVarArgType", "NSDataBase64EncodingOptions"]
+- !private ["PSs11CVarArgType", "NSFontAttributeName"]
+- !private ["PSs11CVarArgType", "NSForegroundColorAttributeName"]
 - !private ["PSs11CVarArgType", "NSJSONSerialization"]
 - !private ["PSs11CVarArgType", "NSJSONWritingOptions"]
 - !private ["PSs11CVarArgType", "NSLog"]
@@ -318,9 +340,12 @@ depends-member:
 - !private ["PSs11CVarArgType", "NSURLSession"]
 - !private ["PSs11CVarArgType", "NSUTF8StringEncoding"]
 - !private ["PSs11CVarArgType", "NSUserDefaults"]
+- !private ["PSs11CVarArgType", "Stride"]
 - !private ["PSs11CVarArgType", "String"]
+- !private ["PSs11CVarArgType", "UIColor"]
 - !private ["PSs11CVarArgType", "UIControlEvents"]
 - !private ["PSs11CVarArgType", "UIControlState"]
+- !private ["PSs11CVarArgType", "UIFont"]
 - !private ["PSs11CVarArgType", "UIImage"]
 - !private ["PSs11CVarArgType", "UIImageJPEGRepresentation"]
 - !private ["PSs11CVarArgType", "UIImagePickerController"]
@@ -337,12 +362,14 @@ depends-member:
 - ["PSs11CVarArgType", "add_photo"]
 - !private ["PSs11CVarArgType", "allowsEditing"]
 - !private ["PSs11CVarArgType", "allowsSelection"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
 - !private ["PSs11CVarArgType", "backgroundView"]
 - !private ["PSs11CVarArgType", "base64EncodedStringWithOptions"]
 - ["PSs11CVarArgType", "btParticipar"]
 - !private ["PSs11CVarArgType", "btVote"]
 - ["PSs11CVarArgType", "buttonVoteAction"]
 - ["PSs11CVarArgType", "cleanAllArrays"]
+- !private ["PSs11CVarArgType", "clearColor"]
 - ["PSs11CVarArgType", "connection"]
 - ["PSs11CVarArgType", "connectionShouldUseCredentialStorage"]
 - !private ["PSs11CVarArgType", "contentMode"]
@@ -362,6 +389,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "hidesWhenStopped"]
 - ["PSs11CVarArgType", "idBotaoVoto"]
 - ["PSs11CVarArgType", "ids"]
+- ["PSs11CVarArgType", "idsVotadas"]
 - !private ["PSs11CVarArgType", "image"]
 - ["PSs11CVarArgType", "imagePicker"]
 - ["PSs11CVarArgType", "imagePickerController"]
@@ -378,6 +406,7 @@ depends-member:
 - !private ["PSs11CVarArgType", "localizedDescription"]
 - !private ["PSs11CVarArgType", "mediaTypes"]
 - ["PSs11CVarArgType", "names"]
+- !private ["PSs11CVarArgType", "navigationBar"]
 - ["PSs11CVarArgType", "navigationController"]
 - ["PSs11CVarArgType", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs11CVarArgType", "navigationControllerSupportedInterfaceOrientations"]
@@ -418,7 +447,9 @@ depends-member:
 - !private ["PSs11CVarArgType", "tag"]
 - !private ["PSs11CVarArgType", "text"]
 - !private ["PSs11CVarArgType", "title"]
+- !private ["PSs11CVarArgType", "titleTextAttributes"]
 - !private ["PSs11CVarArgType", "tokenString"]
+- ["PSs11CVarArgType", "viewDidAppear"]
 - ["PSs11CVarArgType", "viewDidLoad"]
 - ["PSs11CVarArgType", "viewForZoomingInScrollView"]
 - ["PSs11CVarArgType", "vote_for"]
@@ -436,12 +467,14 @@ depends-member:
 - !private ["PSs14CollectionType", "contains"]
 - !private ["PSs14CollectionType", "count"]
 - !private ["PSs14CollectionType", "init"]
+- !private ["PSs14CollectionType", "reverse"]
 - !private ["PSs14CollectionType", "stringValue"]
 - !private ["PSs14CollectionType", "subscript"]
 - !private ["PSs10Comparable", "Distance"]
 - !private ["PSs10Comparable", "Generator"]
 - !private ["PSs10Comparable", "Index"]
 - !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "Stride"]
 - !private ["PSs10Comparable", "SubSequence"]
 - !private ["PSs10Comparable", "_DisabledRangeIndex"]
 - !private ["PSs10Comparable", "_Element"]
@@ -462,6 +495,7 @@ depends-member:
 - !private ["PSs28CustomDebugStringConvertible", "count"]
 - !private ["PSs28CustomDebugStringConvertible", "dataUsingEncoding"]
 - !private ["PSs28CustomDebugStringConvertible", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "reverse"]
 - !private ["PSs28CustomDebugStringConvertible", "stringValue"]
 - !private ["PSs28CustomDebugStringConvertible", "subscript"]
 - !private ["PSs23CustomStringConvertible", "CFComparisonResult"]
@@ -485,6 +519,8 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSData"]
 - !private ["PSs23CustomStringConvertible", "NSDataBase64DecodingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSDataBase64EncodingOptions"]
+- !private ["PSs23CustomStringConvertible", "NSFontAttributeName"]
+- !private ["PSs23CustomStringConvertible", "NSForegroundColorAttributeName"]
 - !private ["PSs23CustomStringConvertible", "NSJSONSerialization"]
 - !private ["PSs23CustomStringConvertible", "NSJSONWritingOptions"]
 - !private ["PSs23CustomStringConvertible", "NSLog"]
@@ -496,10 +532,13 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "NSURLSession"]
 - !private ["PSs23CustomStringConvertible", "NSUTF8StringEncoding"]
 - !private ["PSs23CustomStringConvertible", "NSUserDefaults"]
+- !private ["PSs23CustomStringConvertible", "Stride"]
 - !private ["PSs23CustomStringConvertible", "String"]
 - !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
 - !private ["PSs23CustomStringConvertible", "UIControlEvents"]
 - !private ["PSs23CustomStringConvertible", "UIControlState"]
+- !private ["PSs23CustomStringConvertible", "UIFont"]
 - !private ["PSs23CustomStringConvertible", "UIImage"]
 - !private ["PSs23CustomStringConvertible", "UIImageJPEGRepresentation"]
 - !private ["PSs23CustomStringConvertible", "UIImagePickerController"]
@@ -520,12 +559,14 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "allowsEditing"]
 - !private ["PSs23CustomStringConvertible", "allowsSelection"]
 - !private ["PSs23CustomStringConvertible", "append"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
 - !private ["PSs23CustomStringConvertible", "backgroundView"]
 - !private ["PSs23CustomStringConvertible", "base64EncodedStringWithOptions"]
 - ["PSs23CustomStringConvertible", "btParticipar"]
 - !private ["PSs23CustomStringConvertible", "btVote"]
 - ["PSs23CustomStringConvertible", "buttonVoteAction"]
 - ["PSs23CustomStringConvertible", "cleanAllArrays"]
+- !private ["PSs23CustomStringConvertible", "clearColor"]
 - ["PSs23CustomStringConvertible", "connection"]
 - ["PSs23CustomStringConvertible", "connectionShouldUseCredentialStorage"]
 - !private ["PSs23CustomStringConvertible", "contains"]
@@ -547,6 +588,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "hidesWhenStopped"]
 - ["PSs23CustomStringConvertible", "idBotaoVoto"]
 - ["PSs23CustomStringConvertible", "ids"]
+- ["PSs23CustomStringConvertible", "idsVotadas"]
 - !private ["PSs23CustomStringConvertible", "image"]
 - ["PSs23CustomStringConvertible", "imagePicker"]
 - ["PSs23CustomStringConvertible", "imagePickerController"]
@@ -563,6 +605,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "localizedDescription"]
 - !private ["PSs23CustomStringConvertible", "mediaTypes"]
 - ["PSs23CustomStringConvertible", "names"]
+- !private ["PSs23CustomStringConvertible", "navigationBar"]
 - ["PSs23CustomStringConvertible", "navigationController"]
 - ["PSs23CustomStringConvertible", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs23CustomStringConvertible", "navigationControllerSupportedInterfaceOrientations"]
@@ -575,6 +618,7 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "registerNib"]
 - !private ["PSs23CustomStringConvertible", "reloadData"]
 - !private ["PSs23CustomStringConvertible", "resume"]
+- !private ["PSs23CustomStringConvertible", "reverse"]
 - !private ["PSs23CustomStringConvertible", "row"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["PSs23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -605,7 +649,9 @@ depends-member:
 - !private ["PSs23CustomStringConvertible", "tag"]
 - !private ["PSs23CustomStringConvertible", "text"]
 - !private ["PSs23CustomStringConvertible", "title"]
+- !private ["PSs23CustomStringConvertible", "titleTextAttributes"]
 - !private ["PSs23CustomStringConvertible", "tokenString"]
+- ["PSs23CustomStringConvertible", "viewDidAppear"]
 - ["PSs23CustomStringConvertible", "viewDidLoad"]
 - ["PSs23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["PSs23CustomStringConvertible", "vote_for"]
@@ -649,6 +695,8 @@ depends-member:
 - !private ["PSs9Equatable", "NSData"]
 - !private ["PSs9Equatable", "NSDataBase64DecodingOptions"]
 - !private ["PSs9Equatable", "NSDataBase64EncodingOptions"]
+- !private ["PSs9Equatable", "NSFontAttributeName"]
+- !private ["PSs9Equatable", "NSForegroundColorAttributeName"]
 - !private ["PSs9Equatable", "NSJSONSerialization"]
 - !private ["PSs9Equatable", "NSJSONWritingOptions"]
 - !private ["PSs9Equatable", "NSLog"]
@@ -665,11 +713,14 @@ depends-member:
 - !private ["PSs9Equatable", "PrettyPrinted"]
 - !private ["PSs9Equatable", "RawValue"]
 - !private ["PSs9Equatable", "ScaleAspectFit"]
+- !private ["PSs9Equatable", "Stride"]
 - !private ["PSs9Equatable", "String"]
 - !private ["PSs9Equatable", "SubSequence"]
 - !private ["PSs9Equatable", "TouchUpInside"]
+- !private ["PSs9Equatable", "UIColor"]
 - !private ["PSs9Equatable", "UIControlEvents"]
 - !private ["PSs9Equatable", "UIControlState"]
+- !private ["PSs9Equatable", "UIFont"]
 - !private ["PSs9Equatable", "UIImage"]
 - !private ["PSs9Equatable", "UIImageJPEGRepresentation"]
 - !private ["PSs9Equatable", "UIImagePickerController"]
@@ -689,12 +740,14 @@ depends-member:
 - ["PSs9Equatable", "add_photo"]
 - !private ["PSs9Equatable", "allowsEditing"]
 - !private ["PSs9Equatable", "allowsSelection"]
+- !private ["PSs9Equatable", "backgroundColor"]
 - !private ["PSs9Equatable", "backgroundView"]
 - !private ["PSs9Equatable", "base64EncodedStringWithOptions"]
 - ["PSs9Equatable", "btParticipar"]
 - !private ["PSs9Equatable", "btVote"]
 - ["PSs9Equatable", "buttonVoteAction"]
 - ["PSs9Equatable", "cleanAllArrays"]
+- !private ["PSs9Equatable", "clearColor"]
 - ["PSs9Equatable", "connection"]
 - ["PSs9Equatable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs9Equatable", "contentMode"]
@@ -714,6 +767,7 @@ depends-member:
 - !private ["PSs9Equatable", "hidesWhenStopped"]
 - ["PSs9Equatable", "idBotaoVoto"]
 - ["PSs9Equatable", "ids"]
+- ["PSs9Equatable", "idsVotadas"]
 - !private ["PSs9Equatable", "image"]
 - ["PSs9Equatable", "imagePicker"]
 - ["PSs9Equatable", "imagePickerController"]
@@ -730,6 +784,7 @@ depends-member:
 - !private ["PSs9Equatable", "localizedDescription"]
 - !private ["PSs9Equatable", "mediaTypes"]
 - ["PSs9Equatable", "names"]
+- !private ["PSs9Equatable", "navigationBar"]
 - ["PSs9Equatable", "navigationController"]
 - ["PSs9Equatable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs9Equatable", "navigationControllerSupportedInterfaceOrientations"]
@@ -772,7 +827,9 @@ depends-member:
 - !private ["PSs9Equatable", "tag"]
 - !private ["PSs9Equatable", "text"]
 - !private ["PSs9Equatable", "title"]
+- !private ["PSs9Equatable", "titleTextAttributes"]
 - !private ["PSs9Equatable", "tokenString"]
+- ["PSs9Equatable", "viewDidAppear"]
 - ["PSs9Equatable", "viewDidLoad"]
 - ["PSs9Equatable", "viewForZoomingInScrollView"]
 - ["PSs9Equatable", "vote_for"]
@@ -803,6 +860,7 @@ depends-member:
 - !private ["PSs23FloatLiteralConvertible", "subscript"]
 - !private ["PSs16ForwardIndexType", "Distance"]
 - !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "Stride"]
 - !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
 - !private ["PSs16ForwardIndexType", "init"]
 - !private ["PSs13GeneratorType", "Element"]
@@ -825,6 +883,8 @@ depends-member:
 - !private ["PSs8Hashable", "NSData"]
 - !private ["PSs8Hashable", "NSDataBase64DecodingOptions"]
 - !private ["PSs8Hashable", "NSDataBase64EncodingOptions"]
+- !private ["PSs8Hashable", "NSFontAttributeName"]
+- !private ["PSs8Hashable", "NSForegroundColorAttributeName"]
 - !private ["PSs8Hashable", "NSJSONSerialization"]
 - !private ["PSs8Hashable", "NSJSONWritingOptions"]
 - !private ["PSs8Hashable", "NSLog"]
@@ -839,9 +899,12 @@ depends-member:
 - !private ["PSs8Hashable", "None"]
 - !private ["PSs8Hashable", "RawValue"]
 - !private ["PSs8Hashable", "ScaleAspectFit"]
+- !private ["PSs8Hashable", "Stride"]
 - !private ["PSs8Hashable", "String"]
+- !private ["PSs8Hashable", "UIColor"]
 - !private ["PSs8Hashable", "UIControlEvents"]
 - !private ["PSs8Hashable", "UIControlState"]
+- !private ["PSs8Hashable", "UIFont"]
 - !private ["PSs8Hashable", "UIImage"]
 - !private ["PSs8Hashable", "UIImageJPEGRepresentation"]
 - !private ["PSs8Hashable", "UIImagePickerController"]
@@ -859,12 +922,14 @@ depends-member:
 - ["PSs8Hashable", "add_photo"]
 - !private ["PSs8Hashable", "allowsEditing"]
 - !private ["PSs8Hashable", "allowsSelection"]
+- !private ["PSs8Hashable", "backgroundColor"]
 - !private ["PSs8Hashable", "backgroundView"]
 - !private ["PSs8Hashable", "base64EncodedStringWithOptions"]
 - ["PSs8Hashable", "btParticipar"]
 - !private ["PSs8Hashable", "btVote"]
 - ["PSs8Hashable", "buttonVoteAction"]
 - ["PSs8Hashable", "cleanAllArrays"]
+- !private ["PSs8Hashable", "clearColor"]
 - ["PSs8Hashable", "connection"]
 - ["PSs8Hashable", "connectionShouldUseCredentialStorage"]
 - !private ["PSs8Hashable", "contentMode"]
@@ -884,6 +949,7 @@ depends-member:
 - !private ["PSs8Hashable", "hidesWhenStopped"]
 - ["PSs8Hashable", "idBotaoVoto"]
 - ["PSs8Hashable", "ids"]
+- ["PSs8Hashable", "idsVotadas"]
 - !private ["PSs8Hashable", "image"]
 - ["PSs8Hashable", "imagePicker"]
 - ["PSs8Hashable", "imagePickerController"]
@@ -900,6 +966,7 @@ depends-member:
 - !private ["PSs8Hashable", "localizedDescription"]
 - !private ["PSs8Hashable", "mediaTypes"]
 - ["PSs8Hashable", "names"]
+- !private ["PSs8Hashable", "navigationBar"]
 - ["PSs8Hashable", "navigationController"]
 - ["PSs8Hashable", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSs8Hashable", "navigationControllerSupportedInterfaceOrientations"]
@@ -940,7 +1007,9 @@ depends-member:
 - !private ["PSs8Hashable", "tag"]
 - !private ["PSs8Hashable", "text"]
 - !private ["PSs8Hashable", "title"]
+- !private ["PSs8Hashable", "titleTextAttributes"]
 - !private ["PSs8Hashable", "tokenString"]
+- ["PSs8Hashable", "viewDidAppear"]
 - ["PSs8Hashable", "viewDidLoad"]
 - ["PSs8Hashable", "viewForZoomingInScrollView"]
 - ["PSs8Hashable", "vote_for"]
@@ -958,11 +1027,13 @@ depends-member:
 - !private ["PSs9Indexable", "contains"]
 - !private ["PSs9Indexable", "count"]
 - !private ["PSs9Indexable", "init"]
+- !private ["PSs9Indexable", "reverse"]
 - !private ["PSs9Indexable", "stringValue"]
 - !private ["PSs9Indexable", "subscript"]
 - !private ["VSs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
 - !private ["Si", "deinit"]
 - !private ["Si", "init"]
 - !private ["VSs5Int16", "deinit"]
@@ -971,11 +1042,13 @@ depends-member:
 - !private ["VSs4Int8", "deinit"]
 - !private ["PSs21IntegerArithmeticType", "Distance"]
 - !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Stride"]
 - !private ["PSs21IntegerArithmeticType", "init"]
 - !private ["PSs25IntegerLiteralConvertible", "Distance"]
 - !private ["PSs25IntegerLiteralConvertible", "Generator"]
 - !private ["PSs25IntegerLiteralConvertible", "Index"]
 - !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Stride"]
 - !private ["PSs25IntegerLiteralConvertible", "SubSequence"]
 - !private ["PSs25IntegerLiteralConvertible", "_Element"]
 - !private ["PSs25IntegerLiteralConvertible", "init"]
@@ -983,6 +1056,7 @@ depends-member:
 - !private ["PSs25IntegerLiteralConvertible", "subscript"]
 - !private ["PSs11IntegerType", "Distance"]
 - !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Stride"]
 - !private ["PSs11IntegerType", "init"]
 - !private ["V6Tatari4JSON", "Generator"]
 - !private ["V6Tatari4JSON", "Index"]
@@ -999,10 +1073,12 @@ depends-member:
 - !private ["V6Tatari9JSONIndex", "deinit"]
 - !private ["P6Tatari17JSONSubscriptType", "Distance"]
 - !private ["P6Tatari17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P6Tatari17JSONSubscriptType", "Stride"]
 - !private ["P6Tatari17JSONSubscriptType", "dataUsingEncoding"]
 - !private ["P6Tatari17JSONSubscriptType", "init"]
 - !private ["PSs14MirrorPathType", "Distance"]
 - !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Stride"]
 - !private ["PSs14MirrorPathType", "dataUsingEncoding"]
 - !private ["PSs14MirrorPathType", "init"]
 - !private ["PSs21MutableCollectionType", "Element"]
@@ -1013,6 +1089,7 @@ depends-member:
 - !private ["PSs21MutableCollectionType", "append"]
 - !private ["PSs21MutableCollectionType", "contains"]
 - !private ["PSs21MutableCollectionType", "count"]
+- !private ["PSs21MutableCollectionType", "reverse"]
 - !private ["PSs21MutableCollectionType", "subscript"]
 - !private ["PSs16MutableIndexable", "Element"]
 - !private ["PSs16MutableIndexable", "Generator"]
@@ -1022,6 +1099,7 @@ depends-member:
 - !private ["PSs16MutableIndexable", "append"]
 - !private ["PSs16MutableIndexable", "contains"]
 - !private ["PSs16MutableIndexable", "count"]
+- !private ["PSs16MutableIndexable", "reverse"]
 - !private ["PSs16MutableIndexable", "subscript"]
 - !private ["PSs16MutableSliceable", "Element"]
 - !private ["PSs16MutableSliceable", "Generator"]
@@ -1031,6 +1109,7 @@ depends-member:
 - !private ["PSs16MutableSliceable", "append"]
 - !private ["PSs16MutableSliceable", "contains"]
 - !private ["PSs16MutableSliceable", "count"]
+- !private ["PSs16MutableSliceable", "reverse"]
 - !private ["PSs16MutableSliceable", "subscript"]
 - !private ["PSo8NSCoding", "CFComparisonResult"]
 - !private ["PSo8NSCoding", "CFStringCompare"]
@@ -1047,6 +1126,8 @@ depends-member:
 - !private ["PSo8NSCoding", "NSData"]
 - !private ["PSo8NSCoding", "NSDataBase64DecodingOptions"]
 - !private ["PSo8NSCoding", "NSDataBase64EncodingOptions"]
+- !private ["PSo8NSCoding", "NSFontAttributeName"]
+- !private ["PSo8NSCoding", "NSForegroundColorAttributeName"]
 - !private ["PSo8NSCoding", "NSJSONSerialization"]
 - !private ["PSo8NSCoding", "NSJSONWritingOptions"]
 - !private ["PSo8NSCoding", "NSLog"]
@@ -1059,8 +1140,10 @@ depends-member:
 - !private ["PSo8NSCoding", "NSUTF8StringEncoding"]
 - !private ["PSo8NSCoding", "NSUserDefaults"]
 - !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIControlEvents"]
 - !private ["PSo8NSCoding", "UIControlState"]
+- !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "UIImage"]
 - !private ["PSo8NSCoding", "UIImageJPEGRepresentation"]
 - !private ["PSo8NSCoding", "UIImagePickerController"]
@@ -1077,12 +1160,14 @@ depends-member:
 - ["PSo8NSCoding", "add_photo"]
 - !private ["PSo8NSCoding", "allowsEditing"]
 - !private ["PSo8NSCoding", "allowsSelection"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "backgroundView"]
 - !private ["PSo8NSCoding", "base64EncodedStringWithOptions"]
 - ["PSo8NSCoding", "btParticipar"]
 - !private ["PSo8NSCoding", "btVote"]
 - ["PSo8NSCoding", "buttonVoteAction"]
 - ["PSo8NSCoding", "cleanAllArrays"]
+- !private ["PSo8NSCoding", "clearColor"]
 - ["PSo8NSCoding", "connection"]
 - ["PSo8NSCoding", "connectionShouldUseCredentialStorage"]
 - !private ["PSo8NSCoding", "contentMode"]
@@ -1100,6 +1185,7 @@ depends-member:
 - !private ["PSo8NSCoding", "hidesWhenStopped"]
 - ["PSo8NSCoding", "idBotaoVoto"]
 - ["PSo8NSCoding", "ids"]
+- ["PSo8NSCoding", "idsVotadas"]
 - !private ["PSo8NSCoding", "image"]
 - ["PSo8NSCoding", "imagePicker"]
 - ["PSo8NSCoding", "imagePickerController"]
@@ -1115,6 +1201,7 @@ depends-member:
 - !private ["PSo8NSCoding", "localizedDescription"]
 - !private ["PSo8NSCoding", "mediaTypes"]
 - ["PSo8NSCoding", "names"]
+- !private ["PSo8NSCoding", "navigationBar"]
 - ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo8NSCoding", "navigationControllerSupportedInterfaceOrientations"]
@@ -1150,7 +1237,9 @@ depends-member:
 - !private ["PSo8NSCoding", "tag"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "title"]
+- !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "tokenString"]
+- ["PSo8NSCoding", "viewDidAppear"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "vote_for"]
@@ -1160,6 +1249,7 @@ depends-member:
 - !private ["PSo9NSCopying", "HTTPMethod"]
 - !private ["PSo9NSCopying", "addValue"]
 - !private ["PSo9NSCopying", "base64EncodedStringWithOptions"]
+- !private ["PSo9NSCopying", "clearColor"]
 - !private ["PSo9NSCopying", "currentAccessToken"]
 - !private ["PSo9NSCopying", "dataUsingEncoding"]
 - !private ["PSo9NSCopying", "deinit"]
@@ -1190,6 +1280,8 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSData"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDataBase64DecodingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDataBase64EncodingOptions"]
+- !private ["PSo26NSExtensionRequestHandling", "NSFontAttributeName"]
+- !private ["PSo26NSExtensionRequestHandling", "NSForegroundColorAttributeName"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONSerialization"]
 - !private ["PSo26NSExtensionRequestHandling", "NSJSONWritingOptions"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLog"]
@@ -1202,8 +1294,10 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "NSUTF8StringEncoding"]
 - !private ["PSo26NSExtensionRequestHandling", "NSUserDefaults"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlEvents"]
 - !private ["PSo26NSExtensionRequestHandling", "UIControlState"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImage"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImageJPEGRepresentation"]
 - !private ["PSo26NSExtensionRequestHandling", "UIImagePickerController"]
@@ -1232,6 +1326,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "getDataFromServer"]
 - ["PSo26NSExtensionRequestHandling", "idBotaoVoto"]
 - ["PSo26NSExtensionRequestHandling", "ids"]
+- ["PSo26NSExtensionRequestHandling", "idsVotadas"]
 - ["PSo26NSExtensionRequestHandling", "imagePicker"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerController"]
 - ["PSo26NSExtensionRequestHandling", "imagePickerControllerDidCancel"]
@@ -1242,6 +1337,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "kUTTypeImage"]
 - !private ["PSo26NSExtensionRequestHandling", "mediaTypes"]
 - ["PSo26NSExtensionRequestHandling", "names"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo26NSExtensionRequestHandling", "navigationControllerSupportedInterfaceOrientations"]
@@ -1266,6 +1362,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "sectionIndexTitlesForTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "viewDidAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
 - ["PSo26NSExtensionRequestHandling", "vote_for"]
@@ -1312,6 +1409,8 @@ depends-member:
 - !private ["CSo8NSObject", "NSDataBase64DecodingOptions"]
 - !private ["CSo8NSObject", "NSDataBase64EncodingOptions"]
 - !private ["CSo8NSObject", "NSError"]
+- !private ["CSo8NSObject", "NSFontAttributeName"]
+- !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSJSONSerialization"]
 - !private ["CSo8NSObject", "NSJSONWritingOptions"]
@@ -1327,8 +1426,10 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIActivityIndicatorView"]
 - ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIColor"]
 - !private ["CSo8NSObject", "UIControlEvents"]
 - !private ["CSo8NSObject", "UIControlState"]
+- !private ["CSo8NSObject", "UIFont"]
 - ["CSo8NSObject", "UIImage"]
 - !private ["CSo8NSObject", "UIImageJPEGRepresentation"]
 - ["CSo8NSObject", "UIImagePickerController"]
@@ -1349,12 +1450,14 @@ depends-member:
 - ["CSo8NSObject", "add_photo"]
 - !private ["CSo8NSObject", "allowsEditing"]
 - !private ["CSo8NSObject", "allowsSelection"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "backgroundView"]
 - !private ["CSo8NSObject", "base64EncodedStringWithOptions"]
 - ["CSo8NSObject", "btParticipar"]
 - !private ["CSo8NSObject", "btVote"]
 - ["CSo8NSObject", "buttonVoteAction"]
 - ["CSo8NSObject", "cleanAllArrays"]
+- !private ["CSo8NSObject", "clearColor"]
 - ["CSo8NSObject", "connection"]
 - ["CSo8NSObject", "connectionShouldUseCredentialStorage"]
 - !private ["CSo8NSObject", "contentMode"]
@@ -1375,6 +1478,7 @@ depends-member:
 - !private ["CSo8NSObject", "hidesWhenStopped"]
 - ["CSo8NSObject", "idBotaoVoto"]
 - ["CSo8NSObject", "ids"]
+- ["CSo8NSObject", "idsVotadas"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "imagePicker"]
 - ["CSo8NSObject", "imagePickerController"]
@@ -1391,6 +1495,7 @@ depends-member:
 - !private ["CSo8NSObject", "localizedDescription"]
 - !private ["CSo8NSObject", "mediaTypes"]
 - ["CSo8NSObject", "names"]
+- !private ["CSo8NSObject", "navigationBar"]
 - ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo8NSObject", "navigationControllerSupportedInterfaceOrientations"]
@@ -1431,7 +1536,9 @@ depends-member:
 - !private ["CSo8NSObject", "tag"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "title"]
+- !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "tokenString"]
+- ["CSo8NSObject", "viewDidAppear"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "vote_for"]
@@ -1451,6 +1558,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSData"]
 - !private ["PSo16NSObjectProtocol", "NSDataBase64DecodingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSDataBase64EncodingOptions"]
+- !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
+- !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSJSONSerialization"]
 - !private ["PSo16NSObjectProtocol", "NSJSONWritingOptions"]
 - !private ["PSo16NSObjectProtocol", "NSLog"]
@@ -1463,8 +1572,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "NSUTF8StringEncoding"]
 - !private ["PSo16NSObjectProtocol", "NSUserDefaults"]
 - !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIControlEvents"]
 - !private ["PSo16NSObjectProtocol", "UIControlState"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "UIImageJPEGRepresentation"]
 - !private ["PSo16NSObjectProtocol", "UIImagePickerController"]
@@ -1481,12 +1592,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "add_photo"]
 - !private ["PSo16NSObjectProtocol", "allowsEditing"]
 - !private ["PSo16NSObjectProtocol", "allowsSelection"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundView"]
 - !private ["PSo16NSObjectProtocol", "base64EncodedStringWithOptions"]
 - ["PSo16NSObjectProtocol", "btParticipar"]
 - !private ["PSo16NSObjectProtocol", "btVote"]
 - ["PSo16NSObjectProtocol", "buttonVoteAction"]
 - ["PSo16NSObjectProtocol", "cleanAllArrays"]
+- !private ["PSo16NSObjectProtocol", "clearColor"]
 - ["PSo16NSObjectProtocol", "connection"]
 - ["PSo16NSObjectProtocol", "connectionShouldUseCredentialStorage"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
@@ -1506,6 +1619,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "hidesWhenStopped"]
 - ["PSo16NSObjectProtocol", "idBotaoVoto"]
 - ["PSo16NSObjectProtocol", "ids"]
+- ["PSo16NSObjectProtocol", "idsVotadas"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - ["PSo16NSObjectProtocol", "imagePicker"]
 - ["PSo16NSObjectProtocol", "imagePickerController"]
@@ -1522,6 +1636,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "localizedDescription"]
 - !private ["PSo16NSObjectProtocol", "mediaTypes"]
 - ["PSo16NSObjectProtocol", "names"]
+- !private ["PSo16NSObjectProtocol", "navigationBar"]
 - ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16NSObjectProtocol", "navigationControllerSupportedInterfaceOrientations"]
@@ -1562,7 +1677,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "tag"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "title"]
+- !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "tokenString"]
+- ["PSo16NSObjectProtocol", "viewDidAppear"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "vote_for"]
@@ -1572,6 +1689,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "HTTPMethod"]
 - !private ["PSo14NSSecureCoding", "addValue"]
 - !private ["PSo14NSSecureCoding", "base64EncodedStringWithOptions"]
+- !private ["PSo14NSSecureCoding", "clearColor"]
 - !private ["PSo14NSSecureCoding", "currentAccessToken"]
 - !private ["PSo14NSSecureCoding", "dataUsingEncoding"]
 - ["PSo14NSSecureCoding", "init"]
@@ -1596,6 +1714,8 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "NSData"]
 - !private ["PSo23NSURLConnectionDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo23NSURLConnectionDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo23NSURLConnectionDelegate", "NSFontAttributeName"]
+- !private ["PSo23NSURLConnectionDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo23NSURLConnectionDelegate", "NSJSONSerialization"]
 - !private ["PSo23NSURLConnectionDelegate", "NSJSONWritingOptions"]
 - !private ["PSo23NSURLConnectionDelegate", "NSLog"]
@@ -1608,8 +1728,10 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo23NSURLConnectionDelegate", "NSUserDefaults"]
 - !private ["PSo23NSURLConnectionDelegate", "String"]
+- !private ["PSo23NSURLConnectionDelegate", "UIColor"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlEvents"]
 - !private ["PSo23NSURLConnectionDelegate", "UIControlState"]
+- !private ["PSo23NSURLConnectionDelegate", "UIFont"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImage"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo23NSURLConnectionDelegate", "UIImagePickerController"]
@@ -1630,6 +1752,7 @@ depends-member:
 - !private ["PSo23NSURLConnectionDelegate", "getDataFromServer"]
 - !private ["PSo23NSURLConnectionDelegate", "idBotaoVoto"]
 - !private ["PSo23NSURLConnectionDelegate", "ids"]
+- !private ["PSo23NSURLConnectionDelegate", "idsVotadas"]
 - ["PSo23NSURLConnectionDelegate", "imagePickerController"]
 - ["PSo23NSURLConnectionDelegate", "imagePickerControllerDidCancel"]
 - ["PSo23NSURLConnectionDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -1690,6 +1813,7 @@ depends-member:
 - !private ["PSs16OutputStreamType", "init"]
 - !private ["PSs21RandomAccessIndexType", "Distance"]
 - !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "Stride"]
 - !private ["PSs21RandomAccessIndexType", "init"]
 - !private ["VSs5Range", "deinit"]
 - !private ["PSs30RangeReplaceableCollectionType", "Element"]
@@ -1700,6 +1824,7 @@ depends-member:
 - !private ["PSs30RangeReplaceableCollectionType", "append"]
 - !private ["PSs30RangeReplaceableCollectionType", "contains"]
 - !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs30RangeReplaceableCollectionType", "reverse"]
 - !private ["PSs30RangeReplaceableCollectionType", "subscript"]
 - !private ["PSs16RawRepresentable", "Camera"]
 - !private ["PSs16RawRepresentable", "CompareCaseInsensitive"]
@@ -1729,6 +1854,7 @@ depends-member:
 - !private ["PSs12SequenceType", "contains"]
 - !private ["PSs12SequenceType", "count"]
 - !private ["PSs12SequenceType", "init"]
+- !private ["PSs12SequenceType", "reverse"]
 - !private ["PSs12SequenceType", "setObject"]
 - !private ["PSs12SequenceType", "stringValue"]
 - !private ["PSs12SequenceType", "subscript"]
@@ -1739,9 +1865,11 @@ depends-member:
 - !private ["PSs14SetAlgebraType", "init"]
 - !private ["PSs17SignedIntegerType", "Distance"]
 - !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs17SignedIntegerType", "Stride"]
 - !private ["PSs17SignedIntegerType", "init"]
 - !private ["PSs16SignedNumberType", "Distance"]
 - !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Stride"]
 - !private ["PSs16SignedNumberType", "init"]
 - !private ["VSs5Slice", "Generator"]
 - !private ["VSs5Slice", "Index"]
@@ -1752,6 +1880,7 @@ depends-member:
 - !private ["PSs10Streamable", "init"]
 - !private ["PSs10Strideable", "Distance"]
 - !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Stride"]
 - !private ["PSs10Strideable", "init"]
 - !private ["SS", "dataUsingEncoding"]
 - !private ["SS", "deinit"]
@@ -1768,6 +1897,7 @@ depends-member:
 - !private ["PSs24StringLiteralConvertible", "subscript"]
 - !private ["PSo29UIAccessibilityIdentification", "addTarget"]
 - !private ["PSo29UIAccessibilityIdentification", "allowsSelection"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundView"]
 - !private ["PSo29UIAccessibilityIdentification", "btVote"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
@@ -1786,11 +1916,13 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "stopAnimating"]
 - !private ["PSo29UIAccessibilityIdentification", "tag"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["CSo23UIActivityIndicatorView", "hidesWhenStopped"]
 - !private ["CSo23UIActivityIndicatorView", "startAnimating"]
 - !private ["CSo23UIActivityIndicatorView", "stopAnimating"]
 - !private ["PSo12UIAppearance", "addTarget"]
 - !private ["PSo12UIAppearance", "allowsSelection"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "backgroundView"]
 - !private ["PSo12UIAppearance", "btVote"]
 - !private ["PSo12UIAppearance", "contentMode"]
@@ -1809,6 +1941,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "stopAnimating"]
 - !private ["PSo12UIAppearance", "tag"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "CFComparisonResult"]
 - !private ["PSo21UIAppearanceContainer", "CFStringCompare"]
 - !private ["PSo21UIAppearanceContainer", "CFStringCompareFlags"]
@@ -1822,6 +1955,8 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSData"]
 - !private ["PSo21UIAppearanceContainer", "NSDataBase64DecodingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSDataBase64EncodingOptions"]
+- !private ["PSo21UIAppearanceContainer", "NSFontAttributeName"]
+- !private ["PSo21UIAppearanceContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONSerialization"]
 - !private ["PSo21UIAppearanceContainer", "NSJSONWritingOptions"]
 - !private ["PSo21UIAppearanceContainer", "NSLog"]
@@ -1834,8 +1969,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "NSUTF8StringEncoding"]
 - !private ["PSo21UIAppearanceContainer", "NSUserDefaults"]
 - !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIControlEvents"]
 - !private ["PSo21UIAppearanceContainer", "UIControlState"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "UIImage"]
 - !private ["PSo21UIAppearanceContainer", "UIImageJPEGRepresentation"]
 - !private ["PSo21UIAppearanceContainer", "UIImagePickerController"]
@@ -1851,6 +1988,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "add_photo"]
 - !private ["PSo21UIAppearanceContainer", "allowsEditing"]
 - !private ["PSo21UIAppearanceContainer", "allowsSelection"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundView"]
 - ["PSo21UIAppearanceContainer", "btParticipar"]
 - !private ["PSo21UIAppearanceContainer", "btVote"]
@@ -1871,6 +2009,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "hidesWhenStopped"]
 - ["PSo21UIAppearanceContainer", "idBotaoVoto"]
 - ["PSo21UIAppearanceContainer", "ids"]
+- ["PSo21UIAppearanceContainer", "idsVotadas"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - ["PSo21UIAppearanceContainer", "imagePicker"]
 - ["PSo21UIAppearanceContainer", "imagePickerController"]
@@ -1885,6 +2024,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "lblVoteCount"]
 - !private ["PSo21UIAppearanceContainer", "mediaTypes"]
 - ["PSo21UIAppearanceContainer", "names"]
+- !private ["PSo21UIAppearanceContainer", "navigationBar"]
 - ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo21UIAppearanceContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -1917,14 +2057,19 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "tag"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
+- ["PSo21UIAppearanceContainer", "viewDidAppear"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
 - ["PSo21UIAppearanceContainer", "vote_for"]
 - ["PSo21UIAppearanceContainer", "voted"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - !private ["CSo8UIButton", "addTarget"]
 - !private ["CSo8UIButton", "setImage"]
 - !private ["CSo8UIButton", "tag"]
+- !private ["CSo7UIColor", "clearColor"]
+- !private ["CSo7UIColor", "init"]
 - !private ["PSo18UIContentContainer", "CFComparisonResult"]
 - !private ["PSo18UIContentContainer", "CFStringCompare"]
 - !private ["PSo18UIContentContainer", "CFStringCompareFlags"]
@@ -1938,6 +2083,8 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSData"]
 - !private ["PSo18UIContentContainer", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UIContentContainer", "NSDataBase64EncodingOptions"]
+- !private ["PSo18UIContentContainer", "NSFontAttributeName"]
+- !private ["PSo18UIContentContainer", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIContentContainer", "NSJSONSerialization"]
 - !private ["PSo18UIContentContainer", "NSJSONWritingOptions"]
 - !private ["PSo18UIContentContainer", "NSLog"]
@@ -1950,8 +2097,10 @@ depends-member:
 - !private ["PSo18UIContentContainer", "NSUTF8StringEncoding"]
 - !private ["PSo18UIContentContainer", "NSUserDefaults"]
 - !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UIControlEvents"]
 - !private ["PSo18UIContentContainer", "UIControlState"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - !private ["PSo18UIContentContainer", "UIImage"]
 - !private ["PSo18UIContentContainer", "UIImageJPEGRepresentation"]
 - !private ["PSo18UIContentContainer", "UIImagePickerController"]
@@ -1980,6 +2129,7 @@ depends-member:
 - ["PSo18UIContentContainer", "getDataFromServer"]
 - ["PSo18UIContentContainer", "idBotaoVoto"]
 - ["PSo18UIContentContainer", "ids"]
+- ["PSo18UIContentContainer", "idsVotadas"]
 - ["PSo18UIContentContainer", "imagePicker"]
 - ["PSo18UIContentContainer", "imagePickerController"]
 - ["PSo18UIContentContainer", "imagePickerControllerDidCancel"]
@@ -1990,6 +2140,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "kUTTypeImage"]
 - !private ["PSo18UIContentContainer", "mediaTypes"]
 - ["PSo18UIContentContainer", "names"]
+- !private ["PSo18UIContentContainer", "navigationBar"]
 - ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIContentContainer", "navigationControllerSupportedInterfaceOrientations"]
@@ -2014,6 +2165,7 @@ depends-member:
 - ["PSo18UIContentContainer", "sectionIndexTitlesForTableView"]
 - !private ["PSo18UIContentContainer", "sourceType"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "viewDidAppear"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "vote_for"]
@@ -2026,6 +2178,7 @@ depends-member:
 - !private ["VSC14UIControlState", "Normal"]
 - !private ["PSo17UICoordinateSpace", "addTarget"]
 - !private ["PSo17UICoordinateSpace", "allowsSelection"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "backgroundView"]
 - !private ["PSo17UICoordinateSpace", "btVote"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
@@ -2044,8 +2197,10 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "stopAnimating"]
 - !private ["PSo17UICoordinateSpace", "tag"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "addTarget"]
 - !private ["PSo13UIDynamicItem", "allowsSelection"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "backgroundView"]
 - !private ["PSo13UIDynamicItem", "btVote"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
@@ -2064,6 +2219,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "stopAnimating"]
 - !private ["PSo13UIDynamicItem", "tag"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "CFComparisonResult"]
 - !private ["PSo18UIFocusEnvironment", "CFStringCompare"]
 - !private ["PSo18UIFocusEnvironment", "CFStringCompareFlags"]
@@ -2077,6 +2233,8 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSData"]
 - !private ["PSo18UIFocusEnvironment", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSDataBase64EncodingOptions"]
+- !private ["PSo18UIFocusEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UIFocusEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UIFocusEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UIFocusEnvironment", "NSLog"]
@@ -2089,8 +2247,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UIFocusEnvironment", "NSUserDefaults"]
 - !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIControlEvents"]
 - !private ["PSo18UIFocusEnvironment", "UIControlState"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "UIImage"]
 - !private ["PSo18UIFocusEnvironment", "UIImageJPEGRepresentation"]
 - !private ["PSo18UIFocusEnvironment", "UIImagePickerController"]
@@ -2106,6 +2266,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "add_photo"]
 - !private ["PSo18UIFocusEnvironment", "allowsEditing"]
 - !private ["PSo18UIFocusEnvironment", "allowsSelection"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundView"]
 - ["PSo18UIFocusEnvironment", "btParticipar"]
 - !private ["PSo18UIFocusEnvironment", "btVote"]
@@ -2126,6 +2287,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "hidesWhenStopped"]
 - ["PSo18UIFocusEnvironment", "idBotaoVoto"]
 - ["PSo18UIFocusEnvironment", "ids"]
+- ["PSo18UIFocusEnvironment", "idsVotadas"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - ["PSo18UIFocusEnvironment", "imagePicker"]
 - ["PSo18UIFocusEnvironment", "imagePickerController"]
@@ -2140,6 +2302,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "lblVoteCount"]
 - !private ["PSo18UIFocusEnvironment", "mediaTypes"]
 - ["PSo18UIFocusEnvironment", "names"]
+- !private ["PSo18UIFocusEnvironment", "navigationBar"]
 - ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UIFocusEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -2172,11 +2335,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "tag"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
+- ["PSo18UIFocusEnvironment", "viewDidAppear"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UIFocusEnvironment", "vote_for"]
 - ["PSo18UIFocusEnvironment", "voted"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo6UIFont", "init"]
+- !private ["PSo27UIGestureRecognizerDelegate", "backgroundColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "btVote"]
 - !private ["PSo27UIGestureRecognizerDelegate", "imgPerson"]
 - !private ["PSo27UIGestureRecognizerDelegate", "lblName"]
@@ -2202,6 +2369,8 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "NSData"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo31UIImagePickerControllerDelegate", "NSFontAttributeName"]
+- !private ["PSo31UIImagePickerControllerDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSJSONSerialization"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSJSONWritingOptions"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSLog"]
@@ -2214,8 +2383,10 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo31UIImagePickerControllerDelegate", "NSUserDefaults"]
 - !private ["PSo31UIImagePickerControllerDelegate", "String"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIColor"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlEvents"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIControlState"]
+- !private ["PSo31UIImagePickerControllerDelegate", "UIFont"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImage"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo31UIImagePickerControllerDelegate", "UIImagePickerController"]
@@ -2236,6 +2407,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "getDataFromServer"]
 - !private ["PSo31UIImagePickerControllerDelegate", "idBotaoVoto"]
 - !private ["PSo31UIImagePickerControllerDelegate", "ids"]
+- !private ["PSo31UIImagePickerControllerDelegate", "idsVotadas"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerController"]
 - ["PSo31UIImagePickerControllerDelegate", "imagePickerControllerDidCancel"]
 - ["PSo31UIImagePickerControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2271,12 +2443,14 @@ depends-member:
 - !private ["CSo11UIImageView", "image"]
 - !private ["CSo11UIImageView", "init"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo15UINavigationBar", "titleTextAttributes"]
 - !private ["CSo22UINavigationController", "allowsEditing"]
 - !private ["CSo22UINavigationController", "delegate"]
 - !private ["CSo22UINavigationController", "dismissViewControllerAnimated"]
 - !private ["CSo22UINavigationController", "init"]
 - !private ["CSo22UINavigationController", "isSourceTypeAvailable"]
 - !private ["CSo22UINavigationController", "mediaTypes"]
+- !private ["CSo22UINavigationController", "navigationBar"]
 - !private ["CSo22UINavigationController", "sourceType"]
 - !private ["PSo30UINavigationControllerDelegate", "CFComparisonResult"]
 - !private ["PSo30UINavigationControllerDelegate", "CFStringCompare"]
@@ -2291,6 +2465,8 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSData"]
 - !private ["PSo30UINavigationControllerDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo30UINavigationControllerDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo30UINavigationControllerDelegate", "NSFontAttributeName"]
+- !private ["PSo30UINavigationControllerDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo30UINavigationControllerDelegate", "NSJSONSerialization"]
 - !private ["PSo30UINavigationControllerDelegate", "NSJSONWritingOptions"]
 - !private ["PSo30UINavigationControllerDelegate", "NSLog"]
@@ -2303,8 +2479,10 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo30UINavigationControllerDelegate", "NSUserDefaults"]
 - !private ["PSo30UINavigationControllerDelegate", "String"]
+- !private ["PSo30UINavigationControllerDelegate", "UIColor"]
 - !private ["PSo30UINavigationControllerDelegate", "UIControlEvents"]
 - !private ["PSo30UINavigationControllerDelegate", "UIControlState"]
+- !private ["PSo30UINavigationControllerDelegate", "UIFont"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImage"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo30UINavigationControllerDelegate", "UIImagePickerController"]
@@ -2325,6 +2503,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "getDataFromServer"]
 - !private ["PSo30UINavigationControllerDelegate", "idBotaoVoto"]
 - !private ["PSo30UINavigationControllerDelegate", "ids"]
+- !private ["PSo30UINavigationControllerDelegate", "idsVotadas"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerController"]
 - ["PSo30UINavigationControllerDelegate", "imagePickerControllerDidCancel"]
 - ["PSo30UINavigationControllerDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2376,6 +2555,8 @@ depends-member:
 - !private ["CSo11UIResponder", "NSDataBase64DecodingOptions"]
 - !private ["CSo11UIResponder", "NSDataBase64EncodingOptions"]
 - !private ["CSo11UIResponder", "NSError"]
+- !private ["CSo11UIResponder", "NSFontAttributeName"]
+- !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSJSONSerialization"]
 - !private ["CSo11UIResponder", "NSJSONWritingOptions"]
@@ -2391,8 +2572,10 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIActivityIndicatorView"]
 - ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIColor"]
 - !private ["CSo11UIResponder", "UIControlEvents"]
 - !private ["CSo11UIResponder", "UIControlState"]
+- !private ["CSo11UIResponder", "UIFont"]
 - ["CSo11UIResponder", "UIImage"]
 - !private ["CSo11UIResponder", "UIImageJPEGRepresentation"]
 - ["CSo11UIResponder", "UIImagePickerController"]
@@ -2412,6 +2595,7 @@ depends-member:
 - ["CSo11UIResponder", "add_photo"]
 - !private ["CSo11UIResponder", "allowsEditing"]
 - !private ["CSo11UIResponder", "allowsSelection"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "backgroundView"]
 - ["CSo11UIResponder", "btParticipar"]
 - !private ["CSo11UIResponder", "btVote"]
@@ -2432,6 +2616,7 @@ depends-member:
 - !private ["CSo11UIResponder", "hidesWhenStopped"]
 - ["CSo11UIResponder", "idBotaoVoto"]
 - ["CSo11UIResponder", "ids"]
+- ["CSo11UIResponder", "idsVotadas"]
 - !private ["CSo11UIResponder", "image"]
 - ["CSo11UIResponder", "imagePicker"]
 - ["CSo11UIResponder", "imagePickerController"]
@@ -2446,6 +2631,7 @@ depends-member:
 - !private ["CSo11UIResponder", "lblVoteCount"]
 - !private ["CSo11UIResponder", "mediaTypes"]
 - ["CSo11UIResponder", "names"]
+- !private ["CSo11UIResponder", "navigationBar"]
 - ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo11UIResponder", "navigationControllerSupportedInterfaceOrientations"]
@@ -2478,6 +2664,8 @@ depends-member:
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "tag"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "titleTextAttributes"]
+- ["CSo11UIResponder", "viewDidAppear"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
 - ["CSo11UIResponder", "vote_for"]
@@ -2501,6 +2689,8 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSData"]
 - !private ["PSo20UIScrollViewDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo20UIScrollViewDelegate", "NSFontAttributeName"]
+- !private ["PSo20UIScrollViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONSerialization"]
 - !private ["PSo20UIScrollViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo20UIScrollViewDelegate", "NSLog"]
@@ -2513,8 +2703,10 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo20UIScrollViewDelegate", "NSUserDefaults"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlEvents"]
 - !private ["PSo20UIScrollViewDelegate", "UIControlState"]
+- !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "UIImage"]
 - !private ["PSo20UIScrollViewDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo20UIScrollViewDelegate", "UIImagePickerController"]
@@ -2535,6 +2727,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "getDataFromServer"]
 - !private ["PSo20UIScrollViewDelegate", "idBotaoVoto"]
 - !private ["PSo20UIScrollViewDelegate", "ids"]
+- !private ["PSo20UIScrollViewDelegate", "idsVotadas"]
 - ["PSo20UIScrollViewDelegate", "imagePickerController"]
 - ["PSo20UIScrollViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2579,6 +2772,8 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSData"]
 - !private ["PSo16UIStateRestoring", "NSDataBase64DecodingOptions"]
 - !private ["PSo16UIStateRestoring", "NSDataBase64EncodingOptions"]
+- !private ["PSo16UIStateRestoring", "NSFontAttributeName"]
+- !private ["PSo16UIStateRestoring", "NSForegroundColorAttributeName"]
 - !private ["PSo16UIStateRestoring", "NSJSONSerialization"]
 - !private ["PSo16UIStateRestoring", "NSJSONWritingOptions"]
 - !private ["PSo16UIStateRestoring", "NSLog"]
@@ -2591,8 +2786,10 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "NSUTF8StringEncoding"]
 - !private ["PSo16UIStateRestoring", "NSUserDefaults"]
 - !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UIControlEvents"]
 - !private ["PSo16UIStateRestoring", "UIControlState"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - !private ["PSo16UIStateRestoring", "UIImage"]
 - !private ["PSo16UIStateRestoring", "UIImageJPEGRepresentation"]
 - !private ["PSo16UIStateRestoring", "UIImagePickerController"]
@@ -2621,6 +2818,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "getDataFromServer"]
 - ["PSo16UIStateRestoring", "idBotaoVoto"]
 - ["PSo16UIStateRestoring", "ids"]
+- ["PSo16UIStateRestoring", "idsVotadas"]
 - ["PSo16UIStateRestoring", "imagePicker"]
 - ["PSo16UIStateRestoring", "imagePickerController"]
 - ["PSo16UIStateRestoring", "imagePickerControllerDidCancel"]
@@ -2631,6 +2829,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "kUTTypeImage"]
 - !private ["PSo16UIStateRestoring", "mediaTypes"]
 - ["PSo16UIStateRestoring", "names"]
+- !private ["PSo16UIStateRestoring", "navigationBar"]
 - ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo16UIStateRestoring", "navigationControllerSupportedInterfaceOrientations"]
@@ -2655,6 +2854,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "sectionIndexTitlesForTableView"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "viewDidAppear"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "vote_for"]
@@ -2666,6 +2866,7 @@ depends-member:
 - !private ["CSo11UITableView", "registerNib"]
 - !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo11UITableView", "separatorStyle"]
+- !private ["CSo15UITableViewCell", "backgroundColor"]
 - !private ["CSo15UITableViewCell", "btVote"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "imgPerson"]
@@ -2685,6 +2886,8 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSData"]
 - !private ["PSo21UITableViewDataSource", "NSDataBase64DecodingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSDataBase64EncodingOptions"]
+- !private ["PSo21UITableViewDataSource", "NSFontAttributeName"]
+- !private ["PSo21UITableViewDataSource", "NSForegroundColorAttributeName"]
 - !private ["PSo21UITableViewDataSource", "NSJSONSerialization"]
 - !private ["PSo21UITableViewDataSource", "NSJSONWritingOptions"]
 - !private ["PSo21UITableViewDataSource", "NSLog"]
@@ -2697,8 +2900,10 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "NSUTF8StringEncoding"]
 - !private ["PSo21UITableViewDataSource", "NSUserDefaults"]
 - !private ["PSo21UITableViewDataSource", "String"]
+- !private ["PSo21UITableViewDataSource", "UIColor"]
 - !private ["PSo21UITableViewDataSource", "UIControlEvents"]
 - !private ["PSo21UITableViewDataSource", "UIControlState"]
+- !private ["PSo21UITableViewDataSource", "UIFont"]
 - !private ["PSo21UITableViewDataSource", "UIImage"]
 - !private ["PSo21UITableViewDataSource", "UIImageJPEGRepresentation"]
 - !private ["PSo21UITableViewDataSource", "UIImagePickerController"]
@@ -2719,6 +2924,7 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "getDataFromServer"]
 - !private ["PSo21UITableViewDataSource", "idBotaoVoto"]
 - !private ["PSo21UITableViewDataSource", "ids"]
+- !private ["PSo21UITableViewDataSource", "idsVotadas"]
 - ["PSo21UITableViewDataSource", "imagePickerController"]
 - ["PSo21UITableViewDataSource", "imagePickerControllerDidCancel"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
@@ -2763,6 +2969,8 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSData"]
 - !private ["PSo19UITableViewDelegate", "NSDataBase64DecodingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSDataBase64EncodingOptions"]
+- !private ["PSo19UITableViewDelegate", "NSFontAttributeName"]
+- !private ["PSo19UITableViewDelegate", "NSForegroundColorAttributeName"]
 - !private ["PSo19UITableViewDelegate", "NSJSONSerialization"]
 - !private ["PSo19UITableViewDelegate", "NSJSONWritingOptions"]
 - !private ["PSo19UITableViewDelegate", "NSLog"]
@@ -2775,8 +2983,10 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "NSUTF8StringEncoding"]
 - !private ["PSo19UITableViewDelegate", "NSUserDefaults"]
 - !private ["PSo19UITableViewDelegate", "String"]
+- !private ["PSo19UITableViewDelegate", "UIColor"]
 - !private ["PSo19UITableViewDelegate", "UIControlEvents"]
 - !private ["PSo19UITableViewDelegate", "UIControlState"]
+- !private ["PSo19UITableViewDelegate", "UIFont"]
 - !private ["PSo19UITableViewDelegate", "UIImage"]
 - !private ["PSo19UITableViewDelegate", "UIImageJPEGRepresentation"]
 - !private ["PSo19UITableViewDelegate", "UIImagePickerController"]
@@ -2797,6 +3007,7 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "getDataFromServer"]
 - !private ["PSo19UITableViewDelegate", "idBotaoVoto"]
 - !private ["PSo19UITableViewDelegate", "ids"]
+- !private ["PSo19UITableViewDelegate", "idsVotadas"]
 - ["PSo19UITableViewDelegate", "imagePickerController"]
 - ["PSo19UITableViewDelegate", "imagePickerControllerDidCancel"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
@@ -2841,6 +3052,8 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSData"]
 - !private ["PSo18UITraitEnvironment", "NSDataBase64DecodingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSDataBase64EncodingOptions"]
+- !private ["PSo18UITraitEnvironment", "NSFontAttributeName"]
+- !private ["PSo18UITraitEnvironment", "NSForegroundColorAttributeName"]
 - !private ["PSo18UITraitEnvironment", "NSJSONSerialization"]
 - !private ["PSo18UITraitEnvironment", "NSJSONWritingOptions"]
 - !private ["PSo18UITraitEnvironment", "NSLog"]
@@ -2853,8 +3066,10 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "NSUTF8StringEncoding"]
 - !private ["PSo18UITraitEnvironment", "NSUserDefaults"]
 - !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIControlEvents"]
 - !private ["PSo18UITraitEnvironment", "UIControlState"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "UIImage"]
 - !private ["PSo18UITraitEnvironment", "UIImageJPEGRepresentation"]
 - !private ["PSo18UITraitEnvironment", "UIImagePickerController"]
@@ -2870,6 +3085,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "add_photo"]
 - !private ["PSo18UITraitEnvironment", "allowsEditing"]
 - !private ["PSo18UITraitEnvironment", "allowsSelection"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "backgroundView"]
 - ["PSo18UITraitEnvironment", "btParticipar"]
 - !private ["PSo18UITraitEnvironment", "btVote"]
@@ -2890,6 +3106,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "hidesWhenStopped"]
 - ["PSo18UITraitEnvironment", "idBotaoVoto"]
 - ["PSo18UITraitEnvironment", "ids"]
+- ["PSo18UITraitEnvironment", "idsVotadas"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - ["PSo18UITraitEnvironment", "imagePicker"]
 - ["PSo18UITraitEnvironment", "imagePickerController"]
@@ -2904,6 +3121,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "lblVoteCount"]
 - !private ["PSo18UITraitEnvironment", "mediaTypes"]
 - ["PSo18UITraitEnvironment", "names"]
+- !private ["PSo18UITraitEnvironment", "navigationBar"]
 - ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["PSo18UITraitEnvironment", "navigationControllerSupportedInterfaceOrientations"]
@@ -2936,6 +3154,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "tag"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
+- ["PSo18UITraitEnvironment", "viewDidAppear"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
 - ["PSo18UITraitEnvironment", "vote_for"]
@@ -2943,6 +3163,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addTarget"]
 - !private ["CSo6UIView", "allowsSelection"]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "backgroundView"]
 - !private ["CSo6UIView", "btVote"]
 - !private ["CSo6UIView", "contentMode"]
@@ -2961,6 +3182,7 @@ depends-member:
 - !private ["CSo6UIView", "stopAnimating"]
 - !private ["CSo6UIView", "tag"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["OSC17UIViewContentMode", "ScaleAspectFit"]
 - ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
@@ -2980,6 +3202,8 @@ depends-member:
 - !private ["CSo16UIViewController", "NSDataBase64DecodingOptions"]
 - !private ["CSo16UIViewController", "NSDataBase64EncodingOptions"]
 - !private ["CSo16UIViewController", "NSError"]
+- !private ["CSo16UIViewController", "NSFontAttributeName"]
+- !private ["CSo16UIViewController", "NSForegroundColorAttributeName"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSJSONSerialization"]
 - !private ["CSo16UIViewController", "NSJSONWritingOptions"]
@@ -2995,8 +3219,10 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIActivityIndicatorView"]
 - ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIColor"]
 - !private ["CSo16UIViewController", "UIControlEvents"]
 - !private ["CSo16UIViewController", "UIControlState"]
+- !private ["CSo16UIViewController", "UIFont"]
 - ["CSo16UIViewController", "UIImage"]
 - !private ["CSo16UIViewController", "UIImageJPEGRepresentation"]
 - ["CSo16UIViewController", "UIImagePickerController"]
@@ -3029,6 +3255,7 @@ depends-member:
 - ["CSo16UIViewController", "getDataFromServer"]
 - ["CSo16UIViewController", "idBotaoVoto"]
 - ["CSo16UIViewController", "ids"]
+- ["CSo16UIViewController", "idsVotadas"]
 - ["CSo16UIViewController", "imagePicker"]
 - ["CSo16UIViewController", "imagePickerController"]
 - ["CSo16UIViewController", "imagePickerControllerDidCancel"]
@@ -3039,6 +3266,7 @@ depends-member:
 - !private ["CSo16UIViewController", "kUTTypeImage"]
 - !private ["CSo16UIViewController", "mediaTypes"]
 - ["CSo16UIViewController", "names"]
+- !private ["CSo16UIViewController", "navigationBar"]
 - ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "navigationControllerPreferredInterfaceOrientationForPresentation"]
 - ["CSo16UIViewController", "navigationControllerSupportedInterfaceOrientations"]
@@ -3063,6 +3291,7 @@ depends-member:
 - ["CSo16UIViewController", "sectionIndexTitlesForTableView"]
 - !private ["CSo16UIViewController", "sourceType"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "viewDidAppear"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "vote_for"]
@@ -3100,6 +3329,8 @@ depends-member:
 - !private ["C6Tatari14VoteController", "NSDataBase64DecodingOptions"]
 - !private ["C6Tatari14VoteController", "NSDataBase64EncodingOptions"]
 - !private ["C6Tatari14VoteController", "NSError"]
+- !private ["C6Tatari14VoteController", "NSFontAttributeName"]
+- !private ["C6Tatari14VoteController", "NSForegroundColorAttributeName"]
 - ["C6Tatari14VoteController", "NSIndexPath"]
 - !private ["C6Tatari14VoteController", "NSJSONSerialization"]
 - !private ["C6Tatari14VoteController", "NSJSONWritingOptions"]
@@ -3115,8 +3346,10 @@ depends-member:
 - ["C6Tatari14VoteController", "String"]
 - ["C6Tatari14VoteController", "UIActivityIndicatorView"]
 - ["C6Tatari14VoteController", "UIButton"]
+- !private ["C6Tatari14VoteController", "UIColor"]
 - !private ["C6Tatari14VoteController", "UIControlEvents"]
 - !private ["C6Tatari14VoteController", "UIControlState"]
+- !private ["C6Tatari14VoteController", "UIFont"]
 - ["C6Tatari14VoteController", "UIImage"]
 - !private ["C6Tatari14VoteController", "UIImageJPEGRepresentation"]
 - ["C6Tatari14VoteController", "UIImagePickerController"]
@@ -3147,6 +3380,7 @@ depends-member:
 - ["C6Tatari14VoteController", "getDataFromServer"]
 - ["C6Tatari14VoteController", "idBotaoVoto"]
 - ["C6Tatari14VoteController", "ids"]
+- ["C6Tatari14VoteController", "idsVotadas"]
 - ["C6Tatari14VoteController", "imagePicker"]
 - ["C6Tatari14VoteController", "imagePickerController"]
 - ["C6Tatari14VoteController", "imagePickerControllerDidCancel"]
@@ -3178,10 +3412,12 @@ depends-member:
 - ["C6Tatari14VoteController", "scrollViewWillEndDragging"]
 - ["C6Tatari14VoteController", "sectionIndexTitlesForTableView"]
 - ["C6Tatari14VoteController", "tableView"]
+- ["C6Tatari14VoteController", "viewDidAppear"]
 - ["C6Tatari14VoteController", "viewDidLoad"]
 - ["C6Tatari14VoteController", "viewForZoomingInScrollView"]
 - ["C6Tatari14VoteController", "vote_for"]
 - ["C6Tatari14VoteController", "voted"]
+- !private ["C6Tatari17VotoTableViewCell", "backgroundColor"]
 - !private ["C6Tatari17VotoTableViewCell", "btVote"]
 - !private ["C6Tatari17VotoTableViewCell", "imgPerson"]
 - !private ["C6Tatari17VotoTableViewCell", "lblName"]
@@ -3194,12 +3430,14 @@ depends-member:
 - !private ["PSs10_ArrayType", "append"]
 - !private ["PSs10_ArrayType", "contains"]
 - !private ["PSs10_ArrayType", "count"]
+- !private ["PSs10_ArrayType", "reverse"]
 - !private ["PSs10_ArrayType", "subscript"]
 - !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Stride"]
 - !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "dataUsingEncoding"]
 - !private ["PSs32_BuiltinStringLiteralConvertible", "init"]
@@ -3209,6 +3447,8 @@ depends-member:
 - !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["PSs16_CocoaStringType", "dataUsingEncoding"]
 - !private ["PSs16_CocoaStringType", "init"]
+- !private ["PSs24_ColorLiteralConvertible", "clearColor"]
+- !private ["PSs24_ColorLiteralConvertible", "init"]
 - !private ["PSs24_DestructorSafeContainer", "Element"]
 - !private ["PSs24_DestructorSafeContainer", "Generator"]
 - !private ["PSs24_DestructorSafeContainer", "Index"]
@@ -3217,18 +3457,22 @@ depends-member:
 - !private ["PSs24_DestructorSafeContainer", "append"]
 - !private ["PSs24_DestructorSafeContainer", "contains"]
 - !private ["PSs24_DestructorSafeContainer", "count"]
+- !private ["PSs24_DestructorSafeContainer", "reverse"]
 - !private ["PSs24_DestructorSafeContainer", "subscript"]
 - !private ["PSs32_FileReferenceLiteralConvertible", "init"]
 - !private ["PSs24_ImageLiteralConvertible", "init"]
 - !private ["PSs14_Incrementable", "Distance"]
 - !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "Stride"]
 - !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
 - !private ["PSs14_Incrementable", "init"]
 - !private ["PSs22_IntegerArithmeticType", "Distance"]
 - !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Stride"]
 - !private ["PSs22_IntegerArithmeticType", "init"]
 - !private ["PSs12_IntegerType", "Distance"]
 - !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Stride"]
 - !private ["PSs12_IntegerType", "init"]
 - !private ["PSs21_ObjectiveCBridgeable", "Distance"]
 - !private ["PSs21_ObjectiveCBridgeable", "Element"]
@@ -3236,6 +3480,7 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "Index"]
 - !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["PSs21_ObjectiveCBridgeable", "Key"]
+- !private ["PSs21_ObjectiveCBridgeable", "Stride"]
 - !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["PSs21_ObjectiveCBridgeable", "Value"]
 - !private ["PSs21_ObjectiveCBridgeable", "_Element"]
@@ -3245,10 +3490,12 @@ depends-member:
 - !private ["PSs21_ObjectiveCBridgeable", "count"]
 - !private ["PSs21_ObjectiveCBridgeable", "dataUsingEncoding"]
 - !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "reverse"]
 - !private ["PSs21_ObjectiveCBridgeable", "subscript"]
 - !private ["VSs26_OptionalNilComparisonType", "deinit"]
 - !private ["PSs22_RandomAccessAmbiguity", "Distance"]
 - !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "Stride"]
 - !private ["PSs22_RandomAccessAmbiguity", "init"]
 - !private ["PSs12_Reflectable", "Distance"]
 - !private ["PSs12_Reflectable", "Element"]
@@ -3257,6 +3504,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "IntegerLiteralType"]
 - !private ["PSs12_Reflectable", "Key"]
 - ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "Stride"]
 - !private ["PSs12_Reflectable", "SubSequence"]
 - !private ["PSs12_Reflectable", "Value"]
 - !private ["PSs12_Reflectable", "_Element"]
@@ -3264,6 +3512,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "addTarget"]
 - !private ["PSs12_Reflectable", "allowsSelection"]
 - !private ["PSs12_Reflectable", "append"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
 - !private ["PSs12_Reflectable", "backgroundView"]
 - !private ["PSs12_Reflectable", "btVote"]
 - !private ["PSs12_Reflectable", "contains"]
@@ -3279,6 +3528,7 @@ depends-member:
 - !private ["PSs12_Reflectable", "lblVoteCount"]
 - !private ["PSs12_Reflectable", "registerNib"]
 - !private ["PSs12_Reflectable", "reloadData"]
+- !private ["PSs12_Reflectable", "reverse"]
 - !private ["PSs12_Reflectable", "separatorStyle"]
 - !private ["PSs12_Reflectable", "setImage"]
 - !private ["PSs12_Reflectable", "setObject"]
@@ -3287,11 +3537,14 @@ depends-member:
 - !private ["PSs12_Reflectable", "subscript"]
 - !private ["PSs12_Reflectable", "tag"]
 - !private ["PSs12_Reflectable", "text"]
+- !private ["PSs12_Reflectable", "titleTextAttributes"]
 - !private ["PSs18_SignedIntegerType", "Distance"]
 - !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs18_SignedIntegerType", "Stride"]
 - !private ["PSs18_SignedIntegerType", "init"]
 - !private ["PSs11_Strideable", "Distance"]
 - !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Stride"]
 - !private ["PSs11_Strideable", "init"]
 depends-nominal:
 - "PSs9AnyObject"
@@ -3396,7 +3649,9 @@ depends-nominal:
 - !private "CSo23UIActivityIndicatorView"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
+- !private "PSo16UIBarPositioning"
 - !private "CSo8UIButton"
+- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "VSC15UIControlEvents"
@@ -3404,6 +3659,7 @@ depends-nominal:
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "CSo6UIFont"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "CSo7UIImage"
 - !private "CSo23UIImagePickerController"
@@ -3411,6 +3667,7 @@ depends-nominal:
 - !private "OSC33UIImagePickerControllerSourceType"
 - !private "CSo11UIImageView"
 - !private "CSo7UILabel"
+- !private "CSo15UINavigationBar"
 - !private "CSo22UINavigationController"
 - "PSo30UINavigationControllerDelegate"
 - !private "CSo16UINavigationItem"
@@ -3445,6 +3702,7 @@ depends-nominal:
 - !private "PSs37_BuiltinUTF16StringLiteralConvertible"
 - !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
 - !private "PSs16_CocoaStringType"
+- !private "PSs24_ColorLiteralConvertible"
 - !private "PSs24_DestructorSafeContainer"
 - !private "PSs32_FileReferenceLiteralConvertible"
 - !private "PSs24_ImageLiteralConvertible"
@@ -3461,47 +3719,47 @@ depends-dynamic-lookup:
 - !private "subscript"
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Swift.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Bridging-Header.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFURL.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFTask.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFDefines.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/BoltsVersion.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Headers/Bolts.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Bolts.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/Darwin.swiftmodule"
@@ -3509,14 +3767,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreImage.swiftmodule"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
-- "/Users/deborahmesquita1/Documents/Code/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Tatari/Pushwoosh.framework/Headers/PushNotificationManager.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/Toucan.swiftmodule/i386.swiftmodule"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan-Swift.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Headers/Toucan.h"
+- "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Build/Products/Debug-iphonesimulator/Toucan.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/i386/CoreLocation.swiftmodule"
-interface-hash: "a4407e8244c204d580345c743e92d80a"
+interface-hash: "ec28b6b7bf5f3e859edfb700047a99d8"

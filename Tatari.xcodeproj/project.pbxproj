@@ -13,6 +13,9 @@
 		420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420683021BED3E15003E4C84 /* personTableViewCell.swift */; };
 		425324131C04E49100D4BB88 /* black_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 425324121C04E49100D4BB88 /* black_circle.png */; };
 		425324151C04E60100D4BB88 /* circle_mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 425324141C04E60100D4BB88 /* circle_mask.png */; };
+		427151C31C0E2CA300DC380A /* Toucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427151C01C0E2C9600DC380A /* Toucan.framework */; };
+		427151C41C0E2CB100DC380A /* Toucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427151C01C0E2C9600DC380A /* Toucan.framework */; };
+		427151C51C0E2CB100DC380A /* Toucan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 427151C01C0E2C9600DC380A /* Toucan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		427C42361BE2BE1700F3A219 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427C42351BE2BE1700F3A219 /* AVFoundation.framework */; };
 		42F4CFC71BDFE6E80098A62D /* feedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42F4CFC61BDFE6E80098A62D /* feedCell.xib */; };
 		42F4CFC91BDFECAE0098A62D /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */; };
@@ -56,13 +59,32 @@
 		62E068241BEC6782001455E7 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068231BEC6782001455E7 /* libstdc++.tbd */; };
 		62E068261BEC6834001455E7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068251BEC6834001455E7 /* SystemConfiguration.framework */; };
 		62E068281BEC6856001455E7 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62E068271BEC6856001455E7 /* ImageIO.framework */; };
-		62EFDDF61BFF838B00D13D4C /* Toucan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */; };
-		62EFDDF71BFF838B00D13D4C /* Toucan.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		62EFDDFB1BFF848900D13D4C /* OctagonMask.png in Resources */ = {isa = PBXBuildFile; fileRef = 62EFDDFA1BFF848900D13D4C /* OctagonMask.png */; };
 		62EFDDFD1BFF99BC00D13D4C /* check3.png in Resources */ = {isa = PBXBuildFile; fileRef = 62EFDDFC1BFF99BC00D13D4C /* check3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		427151BF1C0E2C9600DC380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427151BA1C0E2C9500DC380A /* Toucan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 740AC3EA1999799900AB9A86;
+			remoteInfo = Toucan;
+		};
+		427151C11C0E2C9600DC380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427151BA1C0E2C9500DC380A /* Toucan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 740AC3F51999799900AB9A86;
+			remoteInfo = ToucanTests;
+		};
+		427151C61C0E2CB100DC380A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 427151BA1C0E2C9500DC380A /* Toucan.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 740AC3E91999799900AB9A86;
+			remoteInfo = Toucan;
+		};
 		627355BB1BD8079400F7124A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6273559E1BD8079400F7124A /* Project object */;
@@ -77,27 +99,6 @@
 			remoteGlobalIDString = 627355A51BD8079400F7124A;
 			remoteInfo = Tatari;
 		};
-		62EFDDF21BFE4B2D00D13D4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 740AC3EA1999799900AB9A86;
-			remoteInfo = Toucan;
-		};
-		62EFDDF41BFE4B2D00D13D4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 740AC3F51999799900AB9A86;
-			remoteInfo = ToucanTests;
-		};
-		62EFDDF81BFF838B00D13D4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 740AC3E91999799900AB9A86;
-			remoteInfo = Toucan;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -107,7 +108,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				62EFDDF71BFF838B00D13D4C /* Toucan.framework in Embed Frameworks */,
+				427151C51C0E2CB100DC380A /* Toucan.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +122,7 @@
 		420683021BED3E15003E4C84 /* personTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = personTableViewCell.swift; path = ../personTableViewCell.swift; sourceTree = "<group>"; };
 		425324121C04E49100D4BB88 /* black_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_circle.png; sourceTree = "<group>"; };
 		425324141C04E60100D4BB88 /* circle_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_mask.png; sourceTree = "<group>"; };
+		427151BA1C0E2C9500DC380A /* Toucan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Toucan.xcodeproj; path = "../../../../../Downloads/Toucan-master/Toucan.xcodeproj"; sourceTree = "<group>"; };
 		427C42351BE2BE1700F3A219 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		42F4CFC61BDFE6E80098A62D /* feedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = feedCell.xib; path = ../feedCell.xib; sourceTree = "<group>"; };
 		42F4CFC81BDFECAE0098A62D /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -187,7 +189,6 @@
 		62E068231BEC6782001455E7 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		62E068251BEC6834001455E7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		62E068271BEC6856001455E7 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Toucan.xcodeproj; path = "../../../Downloads/Toucan-master 2/Toucan.xcodeproj"; sourceTree = "<group>"; };
 		62EFDDFA1BFF848900D13D4C /* OctagonMask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OctagonMask.png; sourceTree = "<group>"; };
 		62EFDDFC1BFF99BC00D13D4C /* check3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,6 +235,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		427151BB1C0E2C9500DC380A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				427151C01C0E2C9600DC380A /* Toucan.framework */,
+				427151C21C0E2C9600DC380A /* ToucanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		42FC42ED1BF66D8900E5AF51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,15 +405,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		62EFDDEE1BFE4B2D00D13D4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */,
-				62EFDDF51BFE4B2D00D13D4C /* ToucanTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -419,7 +420,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				62EFDDF91BFF838B00D13D4C /* PBXTargetDependency */,
+				427151C71C0E2CB100DC380A /* PBXTargetDependency */,
 			);
 			name = Tatari;
 			productName = Tatari;
@@ -474,7 +475,7 @@
 				TargetAttributes = {
 					627355A51BD8079400F7124A = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = EHBSXGFU8H;
+						DevelopmentTeam = P6BZVZZ56C;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -507,8 +508,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 62EFDDEE1BFE4B2D00D13D4C /* Products */;
-					ProjectRef = 62EFDDED1BFE4B2D00D13D4C /* Toucan.xcodeproj */;
+					ProductGroup = 427151BB1C0E2C9500DC380A /* Products */;
+					ProjectRef = 427151BA1C0E2C9500DC380A /* Toucan.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -521,18 +522,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		62EFDDF31BFE4B2D00D13D4C /* Toucan.framework */ = {
+		427151C01C0E2C9600DC380A /* Toucan.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Toucan.framework;
-			remoteRef = 62EFDDF21BFE4B2D00D13D4C /* PBXContainerItemProxy */;
+			remoteRef = 427151BF1C0E2C9600DC380A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		62EFDDF51BFE4B2D00D13D4C /* ToucanTests.xctest */ = {
+		427151C21C0E2C9600DC380A /* ToucanTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ToucanTests.xctest;
-			remoteRef = 62EFDDF41BFE4B2D00D13D4C /* PBXContainerItemProxy */;
+			remoteRef = 427151C11C0E2C9600DC380A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -621,6 +622,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		427151C71C0E2CB100DC380A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Toucan;
+			targetProxy = 427151C61C0E2CB100DC380A /* PBXContainerItemProxy */;
+		};
 		627355BC1BD8079400F7124A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 627355A51BD8079400F7124A /* Tatari */;
@@ -630,11 +636,6 @@
 			isa = PBXTargetDependency;
 			target = 627355A51BD8079400F7124A /* Tatari */;
 			targetProxy = 627355C61BD8079400F7124A /* PBXContainerItemProxy */;
-		};
-		62EFDDF91BFF838B00D13D4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Toucan;
-			targetProxy = 62EFDDF81BFF838B00D13D4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

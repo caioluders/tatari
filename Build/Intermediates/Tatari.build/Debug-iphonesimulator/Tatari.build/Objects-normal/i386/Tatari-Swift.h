@@ -93,7 +93,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import FBSDKLoginKit;
 #endif
 
-#import "/Users/deborahmesquita1/Documents/Code/tatari/Bridging-Header.h"
+#import "/Users/deborahmesquita1/Documents/Code/tatari_fromweb/tatari/Bridging-Header.h"
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -122,29 +122,31 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class NSMutableData;
-@class NSIndexPath;
-@class UITableViewCell;
+@class UIPickerView;
+@class UIImage;
 @class NSMutableURLRequest;
-@class UIActivityIndicatorView;
+@class UISwitch;
+@class UIImageView;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC6Tatari14FeedController")
-@interface FeedController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UITableViewDelegate>
-@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
-@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityFeed;
-@property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
-@property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsTitle;
-@property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsBody;
-@property (nonatomic, strong) NSMutableData * __nonnull data;
+SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
+@interface ConfigViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_all;
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_friends;
+@property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_nobody;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
+@property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified picker;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull pickerData;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * __nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * __nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * __nullable)pickerView:(UIPickerView * __nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * __nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)didReceiveMemoryWarning;
-- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
-- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
-- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (IBAction)btLogoutPressed:(id __nonnull)sender;
+- (UIImage * __nonnull)maskImage:(UIImage * __nonnull)image mask:(UIImage * __nonnull)mask;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
@@ -152,13 +154,79 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSMutableArray;
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+@class NSString;
+
+SWIFT_CLASS("_TtC6Tatari22DesafiosViewController")
+@interface DesafiosViewController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic, strong) NSMutableArray * __null_unspecified textArray;
+@property (nonatomic, strong) NSMutableArray * __null_unspecified imageArray;
+@property (nonatomic, copy) NSString * __nonnull fbIdDesafiado;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
+- (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
+- (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSMutableData;
+@class UIRefreshControl;
+@class UIActivityIndicatorView;
+
+SWIFT_CLASS("_TtC6Tatari14FeedController")
+@interface FeedController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UITableViewDelegate>
+@property (nonatomic, strong) IBOutlet UITableView * __null_unspecified tableView;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityFeed;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified spinner;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull items;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsTitle;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull itemsBody;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arrayOfMessages;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * __nonnull arraySorted;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull messageDict;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * __nonnull challengeDict;
+@property (nonatomic) NSInteger point;
+@property (nonatomic) BOOL loadingData;
+@property (nonatomic, strong) NSMutableData * __nonnull data;
+@property (nonatomic, strong) UIRefreshControl * __null_unspecified refreshControl;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView willDisplayCell:(UITableViewCell * __nonnull)cell forRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)tableView:(UITableView * __nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
+- (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (void)load_feed:(BOOL)cfrc;
+- (void)refresh_feed;
+- (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UILabel;
-@class UITextView;
+@class UIView;
+@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 @interface FeedTableViewCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblTitle;
-@property (nonatomic, weak) IBOutlet UITextView * __null_unspecified txtBody;
+@property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified imgMessageTagType;
+@property (nonatomic, weak) IBOutlet UILabel * __null_unspecified txtBody;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified borderView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified cnstHeightBorderView;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -173,6 +241,17 @@ SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 SWIFT_CLASS("_TtC6Tatari14MainController")
 @interface MainController : UIViewController <CLLocationManagerDelegate>
 @property (nonatomic, strong) CMMotionManager * __nonnull motionManager;
+- (void)viewDidAppear:(BOOL)animated;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupBar;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupMesa;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupPalco;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupBanheiroMasc;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified popupBanheiroFem;
+- (IBAction)btBar:(id __nonnull)sender;
+- (IBAction)btMesa:(id __nonnull)sender;
+- (IBAction)btPalco:(id __nonnull)sender;
+- (IBAction)btBanheiroMasc:(id __nonnull)sender;
+- (IBAction)btBanheiroFem:(id __nonnull)sender;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
@@ -181,7 +260,6 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @property (nonatomic, strong) CLLocationManager * __null_unspecified locationManager;
 - (IBAction)accuracyChanged:(UISegmentedControl * __nonnull)sender;
 - (void)locationManager:(CLLocationManager * __nonnull)manager didUpdateToLocation:(CLLocation * __nonnull)newLocation fromLocation:(CLLocation * __nonnull)oldLocation;
-- (IBAction)btSauda:(id __nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -192,29 +270,45 @@ SWIFT_CLASS("_TtC6Tatari14MainController")
 @end
 
 @class UITextField;
-@class NSString;
 @class UIButton;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC6Tatari16SearchController")
 @interface SearchController : UIViewController <UIScrollViewDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified activityLoadingSearch;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView * __null_unspecified spinner;
 @property (nonatomic, weak) IBOutlet UITableView * __null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UITextField * __null_unspecified txtFieldSearch;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull people;
-@property (nonatomic, copy) NSArray<NSString *> * __nonnull imgPeople;
+@property (nonatomic, copy) NSArray<UIImage *> * __nonnull imgPeople;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull fbIds;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull idsLikes;
+@property (nonatomic, strong) NSNumber * __nonnull point;
+@property (nonatomic, copy) NSString * __nonnull fbIdDesafiado;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)textFieldDidChange:(UITextField * __nonnull)textField;
+- (BOOL)textFieldShouldReturn:(UITextField * __nonnull)textField;
 - (void)search_people:(NSString * __nonnull)ssearch;
 - (NSInteger)tableView:(UITableView * __nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * __nonnull)tableView:(UITableView * __nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)showChallengeView:(NSString * __nonnull)fbId;
 - (void)buttonDesafiarAction:(UIButton * __null_unspecified)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * __nonnull)segue sender:(id __nullable)sender;
+- (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
 - (CGFloat)tableView:(UITableView * __nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * __nonnull)indexPath;
+- (void)unwindForSegue:(UIStoryboardSegue * __nonnull)unwindSegue towardsViewController:(UIViewController * __nonnull)subsequentVC;
 - (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
 - (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
-- (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
 - (nonnull instancetype)initWithNibName:(NSString * __nullable)nibNameOrNil bundle:(NSBundle * __nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIApplication (SWIFT_EXTENSION(Tatari))
++ (void)tryURL:(NSArray<NSString *> * __nonnull)urls;
 @end
 
 @class FBSDKLoginButton;
@@ -235,7 +329,6 @@ SWIFT_CLASS("_TtC6Tatari14ViewController")
 @end
 
 @class UIImagePickerController;
-@class UIImage;
 
 SWIFT_CLASS("_TtC6Tatari14VoteController")
 @interface VoteController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, NSURLConnectionDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate>
@@ -248,8 +341,10 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 @property (nonatomic, copy) NSArray<NSNumber *> * __nonnull voted;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull names;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull ids;
+@property (nonatomic, copy) NSArray<NSString *> * __nonnull idsVotadas;
 @property (nonatomic, strong) NSMutableData * __nonnull data;
 @property (nonatomic, copy) NSString * __nonnull idBotaoVoto;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)viewDidLoad;
 - (void)getDataFromServer;
 - (void)cleanAllArrays;
@@ -270,7 +365,6 @@ SWIFT_CLASS("_TtC6Tatari14VoteController")
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIImageView;
 
 SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 @interface VotoTableViewCell : UITableViewCell
@@ -280,6 +374,7 @@ SWIFT_CLASS("_TtC6Tatari17VotoTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblName;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (IBAction)btVotePressed:(id __nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -295,8 +390,17 @@ SWIFT_CLASS("_TtC6Tatari19personTableViewCell")
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btFacebook;
 @property (nonatomic, weak) IBOutlet UIButton * __null_unspecified btDesafiar;
 @property (nonatomic, weak) IBOutlet UILabel * __null_unspecified lblNome;
+@property (nonatomic, weak) IBOutlet UIView * __null_unspecified borderView;
+@property (nonatomic, copy) NSString * __nonnull fbId;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (IBAction)btFacebookPressed:(UIButton * __nonnull)sender;
+- (IBAction)btDesafiarPressed:(UIButton * __nonnull)sender;
+- (IBAction)btCurtirPressed:(id __nonnull)sender;
+- (void)send_chall:(NSString * __nonnull)fb_id challenge_desc:(NSString * __nonnull)challenge_desc;
+- (NSString * __nonnull)JSONStringify:(id __nonnull)value prettyPrinted:(BOOL)prettyPrinted;
+- (void)HTTPsendRequest:(NSMutableURLRequest * __nonnull)request callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
+- (void)HTTPPostJSON:(NSString * __nonnull)url jsonObj:(id __nonnull)jsonObj callback:(void (^ __nonnull)(NSString * __nonnull, NSString * __nullable))callback;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * __nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * __nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

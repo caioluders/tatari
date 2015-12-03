@@ -16,6 +16,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var tableView: UITableView!
     @IBOutlet weak var activityVote: UIActivityIndicatorView!
     var items: [String] = ["We", "Heart", "Swift"]
+    //var contestItems =
     var pictures: [UIImage] = []
     var qtdVotes: [Int] = []
     var voted: [Int] = []
@@ -164,12 +165,18 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:VotoTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("votocell")! as! VotoTableViewCell
         
+        var nomes = self.names.count
+        var fotos = self.pictures.count
+        var qtdVotes = self.qtdVotes.count
+        
+        
         cell.lblName.text = self.names[indexPath.row]
         cell.imgPerson.image = self.pictures[indexPath.row]
         cell.btVote.tag = indexPath.row
         cell.btVote.addTarget(self, action: "buttonVoteAction:", forControlEvents: UIControlEvents.TouchUpInside)
         cell.lblVoteCount.text = String(self.qtdVotes[indexPath.row])
-        cell.btVote.tag = Int(self.ids[indexPath.row])!
+        
+        cell.btVote.tag = indexPath.row
         
         if (self.idsVotadas.contains(self.ids[indexPath.row])){
             cell.btVote.setImage(UIImage(named: "heart icon full"), forState:UIControlState.Normal)
@@ -264,7 +271,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         request.startWithCompletionHandler { (connection : FBSDKGraphRequestConnection!, result : AnyObject!, error : NSError!) -> Void in
             if error == nil {
                 mutable_result.setObject(result["id"] as! NSString,forKey:"fb_id")
-                mutable_result.setObject(id,forKey:"id")
+                mutable_result.setObject(self.ids[id],forKey:"id")
                 print(mutable_result)
                 self.HTTPPostJSON("http://45.55.146.229:116/poll", jsonObj: mutable_result, callback: { (data,error) -> Void in
                     print(data)
