@@ -51,7 +51,6 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let maskingImage = Toucan(image: UIImage(named: "circle_mask.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Clip).image
         
         self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
-        
         pickerData = ["Visível para todos", "Visível para amigos", "Visível para ninguém"]
         self.picker.delegate = self
         self.picker.dataSource = self
@@ -61,6 +60,17 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
+        let pickerLabel = UILabel()
+        pickerLabel.textColor = UIColor.blackColor()
+        pickerLabel.text = self.pickerData[row]
+        // pickerLabel.font = UIFont(name: pickerLabel.font.fontName, size: 15)
+        pickerLabel.font = UIFont(name: "Gill Sans", size: 24) // In this use your custom font
+        pickerLabel.sizeToFit()
+        pickerLabel.textAlignment = NSTextAlignment.Center
+        return pickerLabel
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
