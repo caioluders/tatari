@@ -34,7 +34,7 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
                
         
-        self.navigationItem.title = "Votacao"
+        self.navigationItem.title = "Enquete"
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1)]
         
@@ -53,6 +53,9 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.registerNib(nib, forCellReuseIdentifier: "votocell")
         
         self.getDataFromServer()
+        
+        self.automaticallyAdjustsScrollViewInsets = false;
+
     }
     
     func getDataFromServer(){
