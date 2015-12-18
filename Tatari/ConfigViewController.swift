@@ -52,6 +52,13 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         //self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
         self.pin_avatar.image = Toucan(image: avatar_img).maskWithEllipse(borderWidth: 4, borderColor: UIColor(colorLiteralRed: 203/256, green: 205/256, blue: 205/256, alpha: 1)).image
+        
+        //add shadow in pin_avatar
+        self.pin_avatar.layer.shadowColor = UIColor.blackColor().CGColor
+        self.pin_avatar.layer.shadowOffset = CGSizeMake(5, 5)
+        self.pin_avatar.layer.shadowOpacity = 0.8
+        self.pin_avatar.layer.shadowRadius = 5
+        
         pickerData = ["Visível para todos", "Visível para amigos", "Visível para ninguém"]
         self.picker.delegate = self
         self.picker.dataSource = self
