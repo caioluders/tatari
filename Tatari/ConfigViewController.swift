@@ -50,7 +50,8 @@ class ConfigViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let avatar_img = Toucan(image: UIImage(data: data!)!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Clip).image
         let maskingImage = Toucan(image: UIImage(named: "circle_mask.png")!).resize(self.pin_avatar.image!.size, fitMode: Toucan.Resize.FitMode.Clip).image
         
-        self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
+        //self.pin_avatar.image = Toucan(image: avatar_img).maskWithImage(maskImage: maskingImage).image
+        self.pin_avatar.image = Toucan(image: avatar_img).maskWithEllipse(borderWidth: 1, borderColor: UIColor.blackColor()).image
         pickerData = ["Visível para todos", "Visível para amigos", "Visível para ninguém"]
         self.picker.delegate = self
         self.picker.dataSource = self
