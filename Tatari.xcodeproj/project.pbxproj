@@ -62,6 +62,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3D932BAB1C1B184200404DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D932BA61C1B184100404DAA /* Toucan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 740AC3EA1999799900AB9A86;
+			remoteInfo = Toucan;
+		};
+		3D932BAD1C1B184200404DAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D932BA61C1B184100404DAA /* Toucan.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 740AC3F51999799900AB9A86;
+			remoteInfo = ToucanTests;
+		};
 		427151BF1C0E2C9600DC380A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 427151BA1C0E2C9500DC380A /* Toucan.xcodeproj */;
@@ -128,6 +142,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D932BA61C1B184100404DAA /* Toucan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Toucan.xcodeproj; path = "../../Toucan-master/Toucan.xcodeproj"; sourceTree = "<group>"; };
 		4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		420682F81BED3207003E4C84 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		420683001BED3A95003E4C84 /* personCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personCell.xib; sourceTree = "<group>"; };
@@ -247,6 +262,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D932BA71C1B184100404DAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D932BAC1C1B184200404DAA /* Toucan.framework */,
+				3D932BAE1C1B184200404DAA /* ToucanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		427151BB1C0E2C9500DC380A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -547,6 +571,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3D932BAC1C1B184200404DAA /* Toucan.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Toucan.framework;
+			remoteRef = 3D932BAB1C1B184200404DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D932BAE1C1B184200404DAA /* ToucanTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ToucanTests.xctest;
+			remoteRef = 3D932BAD1C1B184200404DAA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		427151C01C0E2C9600DC380A /* Toucan.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;

@@ -74,7 +74,10 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         self.fbIds.removeAll()
         self.dataPerson.removeAll()
         self.idsLikes.removeAll()
-        mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        
+        if(FBSDKAccessToken.currentAccessToken() != nil){
+            mutable_result.setObject(FBSDKAccessToken.currentAccessToken().tokenString,forKey:"current_token")
+        }
         mutable_result.setObject(ssearch,forKey:"search")
         mutable_result.setObject(idString!,forKey:"fb_id")
         mutable_result.setObject(self.point,forKey:"pointer")

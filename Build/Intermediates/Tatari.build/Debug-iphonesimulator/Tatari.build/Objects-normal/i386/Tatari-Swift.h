@@ -127,6 +127,7 @@ SWIFT_CLASS("_TtC6Tatari11AppDelegate")
 @class NSMutableURLRequest;
 @class UISwitch;
 @class UIImageView;
+@class NSLayoutConstraint;
 @class NSBundle;
 @class NSCoder;
 
@@ -136,6 +137,12 @@ SWIFT_CLASS("_TtC6Tatari20ConfigViewController")
 @property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_friends;
 @property (nonatomic, weak) IBOutlet UISwitch * __null_unspecified swt_nobody;
 @property (nonatomic, weak) IBOutlet UIImageView * __null_unspecified pin_avatar;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified constPickerToLogout;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified constLegendaToPicker;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified constVisibilidadeToPicker;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified constPontosToVisibilidade;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified contPinToVisibilidade;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint * __null_unspecified constButtonToBotton;
 @property (nonatomic, weak) IBOutlet UIPickerView * __null_unspecified picker;
 @property (nonatomic, copy) NSArray<NSString *> * __nonnull pickerData;
 - (void)viewDidAppear:(BOOL)animated;
@@ -218,7 +225,6 @@ SWIFT_CLASS("_TtC6Tatari14FeedController")
 
 @class UILabel;
 @class UIView;
-@class NSLayoutConstraint;
 
 SWIFT_CLASS("_TtC6Tatari17FeedTableViewCell")
 @interface FeedTableViewCell : UITableViewCell
