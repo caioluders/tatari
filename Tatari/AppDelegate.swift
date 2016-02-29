@@ -9,17 +9,12 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate , PushNotificationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        PushNotificationManager.pushManager().delegate = self
-        PushNotificationManager.pushManager().handlePushReceived(launchOptions)
-        PushNotificationManager.pushManager().sendAppOpen()
-        PushNotificationManager.pushManager().registerForPushNotifications()
-        
         //UITabBar.appearance().tintColor = UIColor(colorLiteralRed: 0.016, green: 0.063, blue: 0.271, alpha: 1)
         UITabBar.appearance().tintColor = UIColor(colorLiteralRed: 0.98, green: 0.573, blue: 0.0, alpha: 1)
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -53,26 +48,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate , PushNotificationDelegate
 
     func applicationDidBecomeActive(application: UIApplication) {
         FBSDKAppEvents.activateApp()
-    }
-
-    func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        PushNotificationManager.pushManager().handlePushRegistration(deviceToken)
-    }
-    
-    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        PushNotificationManager.pushManager().handlePushRegistrationFailure(error)
-    }
-    
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-        PushNotificationManager.pushManager().handlePushReceived(userInfo)
-    }
-    
-    func onPushAccepted(pushManager: PushNotificationManager!, withNotification pushNotification: [NSObject : AnyObject]!, onStart: Bool) {
-        print("Push notification accepted: \(pushNotification)");
     }
 }
 

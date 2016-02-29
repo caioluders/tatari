@@ -6,8 +6,6 @@
 //  Copyright © 2015 Caio Araújo. All rights reserved.
 //
 
-
-#import <Pushwoosh/PushNotificationManager.h>
 #import <EstimoteSDK/EstimoteSDK.h>
 
 #import "EILIndoorLocationManager.h"

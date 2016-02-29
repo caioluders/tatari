@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Rodina-Regular.otf">
@@ -76,11 +76,21 @@
                             <action selector="btDesafiarPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="QWg-Uk-LAp"/>
                         </connections>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTT-oB-2Gy">
+                        <rect key="frame" x="8" y="116" width="62" height="30"/>
+                        <state key="normal" title="Bloquear">
+                            <color key="titleColor" red="0.69008443809999997" green="0.023922824549999999" blue="0.17344686619999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btBloquearPressed:" destination="JHf-Nh-qFc" eventType="touchUpInside" id="C04-4j-MJL"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
             <connections>
                 <outlet property="borderView" destination="mZ7-bw-sjg" id="F5o-vv-3GL"/>
+                <outlet property="btBloquear" destination="vTT-oB-2Gy" id="fVw-iq-TMl"/>
                 <outlet property="btCurtir" destination="vQh-wi-jAy" id="xkb-l4-02p"/>
                 <outlet property="btDesafiar" destination="niH-XS-RY1" id="n4y-Sj-lXq"/>
                 <outlet property="btFacebook" destination="bVS-sK-Jph" id="db8-ab-Cp0"/>

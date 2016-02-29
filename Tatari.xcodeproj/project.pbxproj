@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4201EE6F1BEE55440045CDC1 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */; };
-		420682F91BED3207003E4C84 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420682F81BED3207003E4C84 /* Pushwoosh.framework */; };
 		420683011BED3A95003E4C84 /* personCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420683001BED3A95003E4C84 /* personCell.xib */; };
 		420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420683021BED3E15003E4C84 /* personTableViewCell.swift */; };
 		425324131C04E49100D4BB88 /* black_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 425324121C04E49100D4BB88 /* black_circle.png */; };
@@ -21,7 +20,6 @@
 		42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */; };
 		42FA91881BEDB5BF00D3849E /* DesafiosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */; };
 		42FC42F01BF67F2300E5AF51 /* Rodina-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 42FC42EF1BF67D0E00E5AF51 /* Rodina-Regular.otf */; };
-		6206FF631BEBF5B8009CE341 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */; };
 		62127A361C0F82CC001950D2 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62127A351C0F82CC001950D2 /* CoreMotion.framework */; };
 		62127A381C0F82D5001950D2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62127A371C0F82D5001950D2 /* AudioToolbox.framework */; };
 		62127A3A1C0F82E5001950D2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62127A391C0F82E5001950D2 /* MediaPlayer.framework */; };
@@ -62,20 +60,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D932BAB1C1B184200404DAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D932BA61C1B184100404DAA /* Toucan.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 740AC3EA1999799900AB9A86;
-			remoteInfo = Toucan;
-		};
-		3D932BAD1C1B184200404DAA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3D932BA61C1B184100404DAA /* Toucan.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 740AC3F51999799900AB9A86;
-			remoteInfo = ToucanTests;
-		};
 		427151BF1C0E2C9600DC380A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 427151BA1C0E2C9500DC380A /* Toucan.xcodeproj */;
@@ -142,9 +126,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D932BA61C1B184100404DAA /* Toucan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Toucan.xcodeproj; path = "../../Toucan-master/Toucan.xcodeproj"; sourceTree = "<group>"; };
 		4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
-		420682F81BED3207003E4C84 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		420683001BED3A95003E4C84 /* personCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = personCell.xib; sourceTree = "<group>"; };
 		420683021BED3E15003E4C84 /* personTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = personTableViewCell.swift; path = ../personTableViewCell.swift; sourceTree = "<group>"; };
 		425324121C04E49100D4BB88 /* black_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black_circle.png; sourceTree = "<group>"; };
@@ -157,7 +139,6 @@
 		42F4CFCC1BE005520098A62D /* VotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VotoTableViewCell.swift; sourceTree = "<group>"; };
 		42FA91871BEDB5BF00D3849E /* DesafiosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DesafiosViewController.swift; path = ../DesafiosViewController.swift; sourceTree = "<group>"; };
 		42FC42EF1BF67D0E00E5AF51 /* Rodina-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rodina-Regular.otf"; sourceTree = "<group>"; };
-		6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
 		62127A351C0F82CC001950D2 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		62127A371C0F82D5001950D2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		62127A391C0F82E5001950D2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -235,12 +216,10 @@
 				62E068281BEC6856001455E7 /* ImageIO.framework in Frameworks */,
 				62E068261BEC6834001455E7 /* SystemConfiguration.framework in Frameworks */,
 				62E068241BEC6782001455E7 /* libstdc++.tbd in Frameworks */,
-				420682F91BED3207003E4C84 /* Pushwoosh.framework in Frameworks */,
 				427C42361BE2BE1700F3A219 /* AVFoundation.framework in Frameworks */,
 				627355E41BD80DAD00F7124A /* Bolts.framework in Frameworks */,
 				627355E11BD80CAA00F7124A /* FBSDKLoginKit.framework in Frameworks */,
 				62127A411C10BA74001950D2 /* EstimoteSDK.framework in Frameworks */,
-				6206FF631BEBF5B8009CE341 /* Pushwoosh.framework in Frameworks */,
 				627355E01BD80CAA00F7124A /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,15 +241,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D932BA71C1B184100404DAA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3D932BAC1C1B184200404DAA /* Toucan.framework */,
-				3D932BAE1C1B184200404DAA /* ToucanTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		427151BB1C0E2C9500DC380A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,8 +409,6 @@
 				62E068251BEC6834001455E7 /* SystemConfiguration.framework */,
 				62E068231BEC6782001455E7 /* libstdc++.tbd */,
 				62E068211BEC668C001455E7 /* libz.tbd */,
-				420682F81BED3207003E4C84 /* Pushwoosh.framework */,
-				6206FF621BEBF5B8009CE341 /* Pushwoosh.framework */,
 				427C42351BE2BE1700F3A219 /* AVFoundation.framework */,
 				623DA9EB1BDB4EE400BCBFF4 /* SwiftyJSON.swift */,
 				627355E31BD80DAD00F7124A /* Bolts.framework */,
@@ -526,7 +494,7 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -571,20 +539,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3D932BAC1C1B184200404DAA /* Toucan.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Toucan.framework;
-			remoteRef = 3D932BAB1C1B184200404DAA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		3D932BAE1C1B184200404DAA /* ToucanTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ToucanTests.xctest;
-			remoteRef = 3D932BAD1C1B184200404DAA /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		427151C01C0E2C9600DC380A /* Toucan.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;

@@ -95,12 +95,18 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
                 let url = NSURL(string: object["picture"]["data"]["url"].stringValue)
                 let data = NSData(contentsOfURL: url!)
                 
-                self.imgPeople.append(UIImage(data: data!)!)
+                if(data != nil){
+                    self.imgPeople.append(UIImage(data: data!)!)
+                } else {
+                    self.imgPeople.append(UIImage(named: "Pin Avatar")!)
+                }
                 
                 name = object["name"].stringValue
                 fbId = object["id"].stringValue
-                image = UIImage(data: data!)!
-                
+                if(data != nil) {
+                    image = UIImage(data: data!)!
+                }
+                    
                 if(!self.people.contains(name)){
                     self.people.append(object["name"].stringValue)
                     print(object["name"].stringValue)
@@ -148,7 +154,10 @@ class SearchController: UIViewController, UITextFieldDelegate, UITableViewDelega
         var cell:personTableViewCell = self.tableView.dequeueReusableCellWithIdentifier("personcell")! as! personTableViewCell
         
         cell.lblNome.text = self.people[indexPath.row]
-        cell.imgPessoa.image = self.imgPeople[indexPath.row]
+        
+        if ( indexPath.row < self.imgPeople.count ) {
+            cell.imgPessoa.image = self.imgPeople[indexPath.row]
+        }
         cell.fbId = fbIds[indexPath.row]
         cell.btDesafiar.tag = indexPath.row
         cell.btDesafiar.addTarget(self, action: "buttonDesafiarAction:", forControlEvents: UIControlEvents.TouchUpInside)
