@@ -31,6 +31,7 @@ class personTableViewCell: UITableViewCell {
     @IBOutlet weak var btDesafiar: UIButton!
     @IBOutlet weak var lblNome: UILabel!
     @IBOutlet weak var borderView: UIView!
+    @IBOutlet weak var btBloquear: UIButton!
     
     var fbId = ""
     
@@ -71,6 +72,16 @@ class personTableViewCell: UITableViewCell {
         mutable_result.setObject(self.fbId,forKey:"liked_fb_id")
         
         self.HTTPPostJSON("http://45.55.146.229:116/like", jsonObj: mutable_result, callback: { (data,error) -> Void in
+            print(data)
+        })
+    }
+    
+    @IBAction func btBloquearPressed(sender: AnyObject) {
+        let mutable_result =  NSMutableDictionary()
+        mutable_result.setObject(String(FBSDKAccessToken.currentAccessToken().tokenString),forKey:"current_token")
+        mutable_result.setObject(self.fbId,forKey:"fb_id")
+        
+        self.HTTPPostJSON("http://45.55.146.229:116/block_user", jsonObj: mutable_result, callback: { (data,error) -> Void in
             print(data)
         })
     }

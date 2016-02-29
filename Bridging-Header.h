@@ -6,6 +6,15 @@
 //  Copyright © 2015 Caio Araújo. All rights reserved.
 //
 
+#import <EstimoteSDK/EstimoteSDK.h>
+
+#import "EILIndoorLocationManager.h"
+#import "EILLocation.h"
+#import "EILOrientedPoint.h"
+#import "EILIndoorLocationView.h"
+#import "EILLocationBuilder.h"
+#import "EILRequestFetchLocation.h"
+
 #ifndef FacebookTutorial_Bridging_Header_h
 #define FacebookTutorial_Bridging_Header_h
 
@@ -13,5 +22,3 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 #endif
-
-#import <Pushwoosh/PushNotificationManager.h>

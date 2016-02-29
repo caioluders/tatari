@@ -340,161 +340,16 @@ DQ
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2D-Jn-9OA">
-                                <rect key="frame" x="0.0" y="107" width="600" height="445"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ABY-ot-6RO">
-                                        <rect key="frame" x="0.0" y="0.0" width="737" height="445"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapa_grande_laranja" translatesAutoresizingMaskIntoConstraints="NO" id="QiX-lX-wkX">
-                                                <rect key="frame" x="0.0" y="0.0" width="737" height="445"/>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qs-rC-DxT">
-                                                <rect key="frame" x="615" y="470" width="142" height="42"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao_marcador" translatesAutoresizingMaskIntoConstraints="NO" id="nFX-Sd-L65">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="42"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Banheiro feminino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkW-s6-KIK">
-                                                        <rect key="frame" x="12" y="12" width="119" height="18"/>
-                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otr-sn-kHa">
-                                                <rect key="frame" x="8" y="363" width="142" height="42"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao_marcador" translatesAutoresizingMaskIntoConstraints="NO" id="ARI-Ir-nXf">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="42"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Palco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qy7-t6-lDF">
-                                                        <rect key="frame" x="53" y="12" width="37" height="20"/>
-                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dX2-hn-h93">
-                                                <rect key="frame" x="8" y="220" width="142" height="42"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao_marcador" translatesAutoresizingMaskIntoConstraints="NO" id="zwe-I4-GUs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="42"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mesa de som" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4U-Kv-sDw">
-                                                        <rect key="frame" x="26" y="10" width="91" height="24"/>
-                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBT-lH-K2K">
-                                                <rect key="frame" x="661" y="420" width="42" height="50"/>
-                                                <state key="normal" image="banheiro"/>
-                                                <connections>
-                                                    <action selector="btBanheiroFem:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="YtA-ru-2Yi"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWX-gL-pOW">
-                                                <rect key="frame" x="125" y="28" width="42" height="50"/>
-                                                <state key="normal" image="bar"/>
-                                                <connections>
-                                                    <action selector="btBar:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="hMV-zl-z92"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogt-mB-TjF">
-                                                <rect key="frame" x="58" y="173" width="42" height="50"/>
-                                                <state key="normal" image="som"/>
-                                                <connections>
-                                                    <action selector="btMesa:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="Qbd-bG-bbh"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-9N-r8r">
-                                                <rect key="frame" x="58" y="312" width="42" height="50"/>
-                                                <state key="normal" image="palco"/>
-                                                <connections>
-                                                    <action selector="btPalco:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="Xua-pO-iT3"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-XC-wlV">
-                                                <rect key="frame" x="584" y="420" width="42" height="50"/>
-                                                <state key="normal" image="banheiro"/>
-                                                <connections>
-                                                    <action selector="btBanheiroMasc:" destination="Kwk-kb-dqM" eventType="touchUpInside" id="kqN-48-Utm"/>
-                                                </connections>
-                                            </button>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k9d-A8-w4D">
-                                                <rect key="frame" x="75" y="77" width="142" height="42"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao_marcador" translatesAutoresizingMaskIntoConstraints="NO" id="A1I-4Q-Gia">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="42"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3or-Cf-DO4">
-                                                        <rect key="frame" x="59" y="10" width="24" height="24"/>
-                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WkC-wZ-4ZT">
-                                                <rect key="frame" x="537" y="470" width="142" height="42"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balao_marcador" translatesAutoresizingMaskIntoConstraints="NO" id="BTQ-Ns-Dvl">
-                                                        <rect key="frame" x="0.0" y="0.0" width="142" height="42"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Banheiro masculino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umU-HS-EN6">
-                                                        <rect key="frame" x="12" y="12" width="119" height="18"/>
-                                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstItem="QiX-lX-wkX" firstAttribute="top" secondItem="ABY-ot-6RO" secondAttribute="top" id="1i1-Ex-wZq"/>
-                                            <constraint firstAttribute="bottom" secondItem="QiX-lX-wkX" secondAttribute="bottom" id="4t8-jy-foP"/>
-                                            <constraint firstAttribute="width" constant="737" id="F3k-gv-2kv"/>
-                                            <constraint firstAttribute="trailing" secondItem="QiX-lX-wkX" secondAttribute="trailing" id="MGz-Qd-IYJ"/>
-                                            <constraint firstAttribute="height" constant="445" id="Pk4-3p-qyU"/>
-                                            <constraint firstItem="QiX-lX-wkX" firstAttribute="leading" secondItem="ABY-ot-6RO" secondAttribute="leading" id="rYo-Vo-k36"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="ABY-ot-6RO" firstAttribute="top" secondItem="x2D-Jn-9OA" secondAttribute="top" id="5od-1w-gNk"/>
-                                    <constraint firstAttribute="bottom" secondItem="ABY-ot-6RO" secondAttribute="bottom" id="9wv-3w-2En"/>
-                                    <constraint firstAttribute="trailing" secondItem="ABY-ot-6RO" secondAttribute="trailing" id="Gn2-cu-dFZ"/>
-                                    <constraint firstItem="ABY-ot-6RO" firstAttribute="centerY" secondItem="x2D-Jn-9OA" secondAttribute="centerY" id="ltu-7i-szS"/>
-                                    <constraint firstItem="ABY-ot-6RO" firstAttribute="leading" secondItem="x2D-Jn-9OA" secondAttribute="leading" id="pHF-er-BaW"/>
-                                </constraints>
-                            </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="meT-lc-40E" customClass="EILIndoorLocationView">
+                                <rect key="frame" x="0.0" y="64" width="384" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="x2D-Jn-9OA" secondAttribute="trailing" id="Hki-1N-V3H"/>
-                            <constraint firstItem="mT2-Am-HHx" firstAttribute="top" secondItem="x2D-Jn-9OA" secondAttribute="bottom" constant="-1" id="e6s-NK-Ezi"/>
-                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="leading" secondItem="Oxb-rz-rRZ" secondAttribute="leading" id="e7T-HQ-uKa"/>
-                            <constraint firstItem="x2D-Jn-9OA" firstAttribute="top" secondItem="oXB-Wo-Nov" secondAttribute="bottom" constant="43" id="koi-Ui-3sv"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Mapa" id="5kw-L4-XaM"/>
                     <connections>
-                        <outlet property="popupBanheiroFem" destination="4qs-rC-DxT" id="a2Y-gg-Xtk"/>
-                        <outlet property="popupBanheiroMasc" destination="WkC-wZ-4ZT" id="gFN-9G-6m8"/>
-                        <outlet property="popupBar" destination="k9d-A8-w4D" id="uRz-ym-Rme"/>
-                        <outlet property="popupMesa" destination="dX2-hn-h93" id="y5i-PQ-2cK"/>
-                        <outlet property="popupPalco" destination="otr-sn-kHa" id="NFo-4P-gAg"/>
+                        <outlet property="map_indoor" destination="meT-lc-40E" id="TZ6-Fm-uWu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kv-bT-k2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -924,13 +779,7 @@ DQ
         <image name="Participar" width="120" height="24"/>
         <image name="Pin Avatar" width="111" height="173"/>
         <image name="Pontos" width="66" height="13"/>
-        <image name="balao_marcador" width="120" height="52"/>
-        <image name="banheiro" width="39" height="39"/>
-        <image name="bar" width="39" height="39"/>
         <image name="log out" width="60" height="20"/>
-        <image name="mapa_grande_laranja" width="594" height="444"/>
-        <image name="palco" width="38" height="40"/>
-        <image name="som" width="37" height="40"/>
         <image name="tabConcurso" width="25" height="30"/>
         <image name="tabConf" width="30" height="30"/>
         <image name="tabFeed" width="30" height="30"/>

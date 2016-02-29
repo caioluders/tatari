@@ -176,7 +176,6 @@ class VoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var fotos = self.pictures.count
         var qtdVotes = self.qtdVotes.count
         
-        
         cell.lblName.text = self.names[indexPath.row]
         cell.imgPerson.image = self.pictures[indexPath.row]
         cell.btVote.tag = indexPath.row

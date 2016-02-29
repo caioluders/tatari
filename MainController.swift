@@ -11,60 +11,90 @@ import CoreMotion
 import MapKit
 import CoreLocation
 
-class MainController: UIViewController,CLLocationManagerDelegate {
+class MainController: UIViewController,CLLocationManagerDelegate,EILIndoorLocationManagerDelegate {
 
+    @IBOutlet weak var map_indoor: EILIndoorLocationView!
     var sensorDataArray = [(String, String)]()
+    let estimote_manager = EILIndoorLocationManager()
+    var loc: EILLocation?
     
     // Accelerometer and Gyro
     var motionManager : CMMotionManager = CMMotionManager()
     
     override func viewDidAppear(animated: Bool) {
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
-        self.popupBar.hidden = true
-        self.popupMesa.hidden = true
-        self.popupPalco.hidden = true
-        self.popupBanheiroMasc.hidden = true
-        self.popupBanheiroFem.hidden = true
+//        self.popupBar.hidden = true
+//        self.popupMesa.hidden = true
+//        self.popupPalco.hidden = true
+//        self.popupBanheiroMasc.hidden = true
+//        self.popupBanheiroFem.hidden = true
     }
     
-    @IBOutlet weak var popupBar: UIView!
-    @IBOutlet weak var popupMesa: UIView!
-    @IBOutlet weak var popupPalco: UIView!
-    @IBOutlet weak var popupBanheiroMasc: UIView!
-    @IBOutlet weak var popupBanheiroFem: UIView!
-    
-    @IBAction func btBar(sender: AnyObject) {
-        self.popupBar.hidden = !(self.popupBar.hidden)
-    }
-    
-    @IBAction func btMesa(sender: AnyObject) {
-        self.popupMesa.hidden = !(self.popupMesa.hidden)
-    }
-    
-    @IBAction func btPalco(sender: AnyObject) {
-        self.popupPalco.hidden = !(self.popupPalco.hidden)
-    }
-    
-    @IBAction func btBanheiroMasc(sender: AnyObject) {
-        self.popupBanheiroMasc.hidden = !(self.popupBanheiroMasc.hidden)
-    }
-   
-    @IBAction func btBanheiroFem(sender: AnyObject) {
-        self.popupBanheiroFem.hidden = !(self.popupBanheiroFem.hidden)
-    }
-    
+//    @IBOutlet weak var popupBar: UIView!
+//    @IBOutlet weak var popupMesa: UIView!
+//    @IBOutlet weak var popupPalco: UIView!
+//    @IBOutlet weak var popupBanheiroMasc: UIView!
+//    @IBOutlet weak var popupBanheiroFem: UIView!
+//    
+//    @IBAction func btBar(sender: AnyObject) {
+//        self.popupBar.hidden = !(self.popupBar.hidden)
+//    }
+//    
+//    @IBAction func btMesa(sender: AnyObject) {
+//        self.popupMesa.hidden = !(self.popupMesa.hidden)
+//    }
+//    
+//    @IBAction func btPalco(sender: AnyObject) {
+//        self.popupPalco.hidden = !(self.popupPalco.hidden)
+//    }
+//    
+//    @IBAction func btBanheiroMasc(sender: AnyObject) {
+//        self.popupBanheiroMasc.hidden = !(self.popupBanheiroMasc.hidden)
+//    }
+//   
+//    @IBAction func btBanheiroFem(sender: AnyObject) {
+//        self.popupBanheiroFem.hidden = !(self.popupBanheiroFem.hidden)
+//    }
+//    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Rodina", size: 20)!]
         
-
+        
         // Location
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         
         locationManager.startUpdatingLocation()
+
+        estimote_manager.delegate = self
+        
+        ESTConfig.setupAppID("caioluders-gmail-com-s-you-20y", andAppToken: "7ee5ad908110749b7786156ebe2dcc3f")
+        
+        let fetchLocationRequest = EILRequestFetchLocation(locationIdentifier: "auditorio-beps")
+        
+        fetchLocationRequest.sendRequestWithCompletion { (location, error) in
+            if location != nil {
+                self.loc = location!
+                self.map_indoor.drawLocation(self.loc)
+                self.estimote_manager.startPositionUpdatesForLocation(self.loc)
+                var imageView = UIImageView(frame: CGRectMake(300, 300, 300, 300));
+                var image = UIImage(named: "mapa_auditorio");
+                imageView.image = image;
+                let point = EILOrientedPoint.init(x: 0.0, y: 0.0, orientation: 300)
+                
+                self.map_indoor.drawObjectInForeground(imageView, withPosition: point, identifier: "mapa")
+                self.map_indoor.showTrace = false
+                self.map_indoor.showWallLengthLabels = false
+                self.map_indoor.showBeacons = false
+
+            } else {
+                print("can't fetch location: \(error)")
+            }
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,14 +108,24 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         motionManager.startAccelerometerUpdates()
         motionManager.startGyroUpdates()
         
-        // Magnetometer
-        motionManager.startMagnetometerUpdates()
-        
         // Location
         locationManager.startUpdatingLocation()
         
         
         updateSensorDataArray()
+        
+        map_indoor.backgroundColor = UIColor.clearColor()
+        map_indoor.showTrace = true
+        map_indoor.showWallLengthLabels = true
+        map_indoor.rotateOnPositionUpdate = false
+        
+        map_indoor.locationBorderColor = UIColor.blackColor()
+        map_indoor.locationBorderThickness = 6
+        map_indoor.doorColor = UIColor.brownColor()
+        map_indoor.doorThickness = 5
+        map_indoor.traceColor = UIColor.yellowColor()
+        map_indoor.traceThickness = 2
+        map_indoor.wallLengthLabelsColor = UIColor.blackColor()
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -93,11 +133,9 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         motionManager.stopAccelerometerUpdates()
         motionManager.stopGyroUpdates()
         
-        // Magnetometer
-        motionManager.stopMagnetometerUpdates()
-        
         // Location
         locationManager.stopUpdatingLocation()
+        
 
     }
     
@@ -108,28 +146,8 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         sensorDataArray += getLocationData()
         sensorDataArray += getAccelerometerData()
         sensorDataArray += getGyroData()
-        sensorDataArray += getMagnetometerData()
         
     }
-    
-    func getMagnetometerData() -> [(String, String)]{
-        var magnetometerData = [(String , String)]()
-        
-        if(motionManager.magnetometerData != nil)
-        {
-            let data = motionManager.magnetometerData
-            
-            magnetometerData += [("MagnetctField x" , "\(data!.magneticField.x)")]
-            magnetometerData += [("MagnetctField y" , "\(data!.magneticField.y)")]
-            magnetometerData += [("MagnetctField z" , "\(data!.magneticField.z)")]
-        } else {
-            magnetometerData += [("MagnetctField x" , "nope")]
-            magnetometerData += [("MagnetctField y" , "nope")]
-        }
-        
-        return magnetometerData
-    }
-    
     
     func getLocationData() -> [(String, String)] {
         
@@ -225,7 +243,6 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         sensorDataArray += getLocationData()
         sensorDataArray += getAccelerometerData()
         sensorDataArray += getGyroData()
-        sensorDataArray += getMagnetometerData()
         
         
         var url: String = "http://waho.io:116/send?lat="+(sensorDataArray[0].1 )+"&long="+sensorDataArray[1].1
@@ -237,14 +254,37 @@ class MainController: UIViewController,CLLocationManagerDelegate {
         //url += "&mf_x="+sensorDataArray[8].1+"&mf_y="+sensorDataArray[9].1+"&mf_z="+sensorDataArray[10].1
         
         let url2 = NSURL(string:url)!
-        print(url)
+//        print(url)
         //        let url = NSURL(string: "http://waho.io/tatari")
         let request : NSURLRequest = NSURLRequest(URL: url2)
-        let session = NSURLSession.sharedSession()
+        _ = NSURLSession.sharedSession()
         let queue:NSOperationQueue = NSOperationQueue()
         NSURLConnection.sendAsynchronousRequest(request, queue: queue, completionHandler:{ (response: NSURLResponse?, data: NSData?, error: NSError?) -> Void in
-            var err: NSError
+            var _: NSError
         })
+    }
+    
+    func indoorLocationManager(manager: EILIndoorLocationManager!,
+        didFailToUpdatePositionWithError error: NSError!) {
+            print("failed to update position: \(error)")
+    }
+    
+    func indoorLocationManager(manager: EILIndoorLocationManager!,
+        didUpdatePosition position: EILOrientedPoint!,
+        withAccuracy positionAccuracy: EILPositionAccuracy,
+        inLocation location: EILLocation!) {
+            var accuracy: String!
+            switch positionAccuracy {
+            case .VeryHigh: accuracy = "+/- 1.00m"
+            case .High:     accuracy = "+/- 1.62m"
+            case .Medium:   accuracy = "+/- 2.62m"
+            case .Low:      accuracy = "+/- 4.24m"
+            case .VeryLow:  accuracy = "+/- ? :-("
+            }
+            print(String(format: "x: %5.2f, y: %5.2f, orientation: %3.0f, accuracy: %@",
+                position.x, position.y, position.orientation, accuracy))
+            
+            self.map_indoor.updatePosition(position)
     }
 
 }
