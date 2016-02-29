@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Rodina-Regular.otf">
@@ -26,20 +27,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tatari" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-OW-Hqk">
-                                <rect key="frame" x="169" y="231" width="262" height="73"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tatari" translatesAutoresizingMaskIntoConstraints="NO" id="5y9-OW-Hqk">
+                                <rect key="frame" x="169" y="104" width="262" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="pif-76-osa"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Antes de logar, leia a" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoJ-II-vxO">
+                                <rect key="frame" x="160" y="534" width="140" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cB-ah-lsB">
+                                <rect key="frame" x="300" y="532" width="140" height="28"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="12"/>
+                                <state key="normal" title="LICENÇA DE USUÁRIO"/>
+                                <connections>
+                                    <segue destination="frI-lg-Idj" kind="show" id="3d2-1W-Zr8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="5y9-OW-Hqk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" multiplier="0.2" constant="100" id="BEY-dE-VW3"/>
+                            <constraint firstItem="eoJ-II-vxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-70" id="EZT-XY-Qis"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7cB-ah-lsB" secondAttribute="bottom" constant="40" id="QUj-lg-buC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eoJ-II-vxO" secondAttribute="bottom" constant="45" id="aJI-yu-de4"/>
+                            <constraint firstItem="7cB-ah-lsB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="70" id="mdb-0o-H49"/>
                             <constraint firstItem="5y9-OW-Hqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q24-e1-IgZ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5y9-OW-Hqk" secondAttribute="bottom" constant="296" id="rZ4-BI-qcw"/>
-                            <constraint firstItem="5y9-OW-Hqk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="211" id="vhu-s9-v6a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3jb-rL-ZRs"/>
                     <connections>
                         <segue destination="Og7-dJ-MU3" kind="show" identifier="main_segue" id="BES-nM-c7N"/>
                     </connections>
@@ -47,6 +66,158 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1992" y="941"/>
+        </scene>
+        <!--Terms Of Use Controller-->
+        <scene sceneID="azy-Ti-mfZ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c03-ub-dHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="frI-lg-Idj" customClass="TermsOfUseController" customModule="Tatari" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hmf-7h-oRQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="yrW-vw-QI7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Lq-Si-Zqj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEo-9q-HY6">
+                                <rect key="frame" x="20" y="64" width="560" height="1871"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content"> NORMAS REGULADORAS DO USO DO APLICATIVO </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Os termos presentes regulam o comportamento do Usuário final, doravante denominado USUÁRIO, quando se utilizar do Aplicativo Tatari, doravante denominado APLICATIVO, regulado pela equipe de desenvolvedores, doravante denominada TATARI. O descumprimento de qualquer uma das normas abaixo estipuladas implicará na revogação de acesso ao usuário e posteriores ações legais, nos termos da legislação brasileira. Ao clicar no botão “Login com Facebook” o USUÁRIO declara estar de acordo com o presente termo e ciente de seu conteúdo. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" paragraphSpacing="6" paragraphSpacingBefore="5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="1.Termos gerais ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+DQ
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="10" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">A. O TATARI torna disponível para download o APLICATIVO em versão para iOS exclusivamente através da App Store da Apple. Atualizações serão disponibilizadas conforme o necessário para manter padrões de qualidade ou conforme haja necessidade de reparo técnico;B. O primeiro e posteriores downloads serão isentos de cobrança pelo TATARI e pela App Store. Qualquer forma de exploração comercial derivada do download não é autorizada e é passível de punição criminal;C. O APLICATIVO, através de sensores nativos dos aparelhos iPhone como Acelerômetro, Câmera, Campo Magnético, Giroscópio e Localização coleta dados do aparelho com o TATARI instalado, esteja ele em uso na tela inicial ou em modo background. Esses dados poderão ser filtrados e/ou triangulados por hardware de responsabilidade do TATARI;D. Os dados coletados supra mencionados serão agrupados e vendidos a uma terceira parte, sob responsabilidade do TATARI e de tramitação exclusiva controlada por ele. Isso não implica, no entanto, que essa terceira parte terá acesso aos aparelhos com o APLICATIVO. Somente que os dados coletados pelo APLICATIVO, mencionados no item C, serão disponibilizados à terceira parte através de um website;E. Esse Contrato não cria vínculos, de ordem trabalhista ou de compra e venda, sob nenhuma hipótese, entre TATARI e o USUÁRIO;F. No caso de qualquer frase, cláusula ou item desse Contrato ser inválido ou não passível de ser implementado conforme a legislação vigente, os demais itens e cláusulas permanecem válidos para os demais fins;G. O TATARI se reserva ao direito de revogar o acesso, bloquear e monitorar o conteúdo postado do USUÁRIO o qual esteja em desacordo com os termos contidos no presente documento;H. O USUÁRIO e somente ele é responsável pela interação online e offline com os demais usuários. No aceite desse Contrato, o USUÁRIO isenta o TATARI de quaisquer responsabilidades acerca de sua conduta. Recomenda-se bom senso e uso de seu melhor juízo não só na interação direta com outros usuários, mas também na submissão de conteúdo ao APLICATIVO e compartilhamento do mesmo;I. Existirão conexões dentro do APLICATIVO com outros serviços de terceiros. Essas conexões, permitidas através de funcionalidades do APLICATIVO permitirão, por exemplo, o compartilhamento do conteúdo submetido pelo USUÁRIO através do APLICATIVO a website ou app de terceiros, o qual pode ou não ser visível a todos os usuários do website ou app referido. Ao utilizar essa funcionalidade, normalmente ao USUÁRIO é requerido o login no website ou app e o USUÁRIO concorda que caso o faça, ele isenta o TATARI dos riscos causados. O TATARI não controla ou tem qualquer responsabilidade legal sobre o comportamento do USUÁRIO ou funcionalidades do website ou app de terceiros;
+ J. O USUÁRIO concorda que é responsável por todos os custos extras que podem incorrer no uso de dados em sua franquia de celular durante o uso do APLICATIVO;K. É expressamente proibido o acesso ao APLICATIVO através de bots, ou quaisquer meios automatizados que não sejam da usabilidade comum do APLICATIVO. 2. Propriedade Intelectual</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg0
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="10" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">As marcas, nomes, logotipos, nomes de domínio e demais sinais distintivos, bem como todo e qualquer conteúdo, desenho, arte ou layout publicado no APLICATIVO, são de propriedade exclusiva do TATARI.São vedados quaisquer atos ou contribuições que tendam à descompilação, engenharia reversa, modificação das características, ampliação, alteração, mesclagem ou incorporação em quaisquer outros programas ou sistemas. Enfim, toda e qualquer forma de reprodução, total ou parcial, permanente, temporária ou provisória, de forma gratuita ou onerosa, sob quaisquer modalidades, formas ou títulos do APLICATIVO é expressamente vedada. 3. Submissão de Conteúdo Gerado pelo Usuário </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+DQ
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="10" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">O USUÁRIO é responsável pelo conteúdo postado no APLICATIVO, e está ciente de que caso tenha seu conteúdo denunciado por conter violência, nudez, discriminação, ilegalidade, discurso de ódio, pornografia ou sugestão sexual e posteriormente validado que o conteúdo atende a uma ou mais dessas infrações terá seu conteúdo removido e seu acesso negado ao APLICATIVO. O bom senso no uso do APLICATIVO é encorajado e o TATARI não permitirá atitudes que venham a ser condenadas como impróprias ou inadequadas.Ademais, o TATARI não se responsabiliza por perda ou destruição do conteúdo submetido pelo USUÁRIO no APLICATIVO. 4. Privacidade </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+DQ
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="10" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">O conteúdo postado no APLICATIVO pelo USUÁRIO é visível aos demais usuários presentes no local no qual o APLICATIVO está sendo utilizado, salvo quando o USUÁRIO é bloqueado por um outro.Os dados pessoais do USUÁRIO os quais ele forneceu indiretamente para o login no ato do uso inicial, tais como e-mail e token são protegidos e não são fornecidos à terceira parte que comprará os dados coletados pelo APLICATIVO, conforme explicitado nos itens C e D da cláusula primeira, denominada “Termos Gerais”. 5. Limitações de Responsabilidade </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+DQ
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="10" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">O USUÁRIO está ciente de que o TATARI não é responsável por nenhuma perda ou dano a este USUÁRIO, seja ela de ordem monetária, física, emocional ou moral.Todos os usuários declaram estar cientes dos termos de submissão de conteúdo e de sua responsabilidade perante suas ações sendo o TATARI isento das mesmas. 
+6.Bloqueio de Usuário e/ou conteúdo </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+DQ
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="10" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">De acordo com a cláusula terceira do presente documento, O USUÁRIO está ciente de que qualquer conteúdo que for marcado como impróprio e posteriormente analisado pela equipe do TATARI como tal, seja por conter violência, nudez, discriminação, ilegalidade, discurso de ódio, pornografia ou sugestão sexual será removido do APLICATIVO. Após a remoção do conteúdo, o USUÁRIO infrator terá seu acesso revogado.Caso um USUÁRIO bloqueie outro, o conteúdo postado pelo bloqueado ficará indisponível para aquele que o bloqueou, bem como as interações presentes na tela de busca. O TATARI não é responsável pela interação e funcionalidades em websites ou apps de terceiros, mesmo quando a comunicação tenha começado no APLICATIVO. As funcionalidades presentes no APLICATIVO estão de acordo com as normas aplicáveis ao conteúdo e, de nenhuma maneira, encorajam violência, pornografia, ou quaisquer comportamentos inadequados. 7. Escopo do Contrato </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+DQ
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="10" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">O Contrato constitui o acordo entre as duas partes, USUÁRIO e TATARI em relação ao uso do APLICATIVO. O presente documento sobrepõe-se a quaisquer acordos ou correspondências, orais ou por escrito. Nenhuma modificação a este terá efeito antes de o USUÁRIO ser notificado pelo TATARI através de comunicações oficiais dentro do aplicativo, ou por e-mail. Caso o USUÁRIO não concorde com os novos termos, o mesmo não terá acesso ao APLICATIVO.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="GillSans"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sEo-9q-HY6" firstAttribute="centerX" secondItem="2Lq-Si-Zqj" secondAttribute="centerX" id="Gl5-cM-6aZ"/>
+                            <constraint firstItem="sEo-9q-HY6" firstAttribute="top" secondItem="Hmf-7h-oRQ" secondAttribute="bottom" id="K5P-AK-vc5"/>
+                            <constraint firstItem="sEo-9q-HY6" firstAttribute="width" secondItem="2Lq-Si-Zqj" secondAttribute="width" constant="-40" id="X9R-7O-GAs"/>
+                            <constraint firstItem="yrW-vw-QI7" firstAttribute="top" secondItem="sEo-9q-HY6" secondAttribute="bottom" constant="8" id="kzA-3F-9GB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1992" y="1754"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GlR-TM-LEt">
@@ -420,7 +591,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VWb-F9-M7U">
-                                <rect key="frame" x="113" y="115.5" width="375" height="436"/>
+                                <rect key="frame" x="113" y="116" width="375" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="0g5-tl-Mcj"/>
@@ -454,7 +625,7 @@
                                 </connections>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8x3-WP-VB1">
-                                <rect key="frame" x="282" y="318.5" width="37" height="37"/>
+                                <rect key="frame" x="282" y="319" width="37" height="37"/>
                                 <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sri-rP-8c5">

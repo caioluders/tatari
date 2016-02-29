@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1D7DEA1C84A7F400DD2A36 /* TermsOfUseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D7DE91C84A7F400DD2A36 /* TermsOfUseController.swift */; };
 		4201EE6F1BEE55440045CDC1 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */; };
 		420682F91BED3207003E4C84 /* Pushwoosh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 420682F81BED3207003E4C84 /* Pushwoosh.framework */; };
 		420683011BED3A95003E4C84 /* personCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 420683001BED3A95003E4C84 /* personCell.xib */; };
@@ -114,6 +115,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D1D7DE91C84A7F400DD2A36 /* TermsOfUseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfUseController.swift; sourceTree = "<group>"; };
 		3D932BA61C1B184100404DAA /* Toucan.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Toucan.xcodeproj; path = "../../Toucan-master/Toucan.xcodeproj"; sourceTree = "<group>"; };
 		4201EE6E1BEE55440045CDC1 /* ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		420682F81BED3207003E4C84 /* Pushwoosh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pushwoosh.framework; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				62939ED11BDD39F300CAB491 /* SearchController.swift */,
 				62939ECF1BDC488600CAB491 /* VoteController.swift */,
 				623DA9E71BDB39D000BCBFF4 /* FeedController.swift */,
+				3D1D7DE91C84A7F400DD2A36 /* TermsOfUseController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				62939ED01BDC488600CAB491 /* VoteController.swift in Sources */,
 				623DA9EC1BDB4EE400BCBFF4 /* SwiftyJSON.swift in Sources */,
 				42F4CFCD1BE005520098A62D /* VotoTableViewCell.swift in Sources */,
+				3D1D7DEA1C84A7F400DD2A36 /* TermsOfUseController.swift in Sources */,
 				42FA91881BEDB5BF00D3849E /* DesafiosViewController.swift in Sources */,
 				420683031BED3E15003E4C84 /* personTableViewCell.swift in Sources */,
 				623DA9E81BDB39D000BCBFF4 /* FeedController.swift in Sources */,
@@ -679,7 +683,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";
@@ -703,7 +707,7 @@
 				INFOPLIST_FILE = Tatari/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla2.Tatari;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cla.Tatari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Tatari-Bridging-Header.h";
